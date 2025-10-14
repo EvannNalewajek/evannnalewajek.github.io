@@ -1,0 +1,36 @@
+<div class="page">
+  <div class="typewriter" [class.typing]="isTyping()" [class.erasing]="isErasing()">
+    <span class="text" aria-live="polite">{{ displayText() }}</span>
+    <span class="caret" aria-hidden="true"></span>
+  </div>
+
+  @if (showContainer()) {
+  <div class="container">
+    <div class="content">
+      <!-- Faux Bouton -->
+      <button
+        class="fake-button"
+        type="button"
+        (pointerdown)="onFakePointerDown($event)"
+        [style.--dx.px]="fakeButtonX()"
+        [style.--dy.px]="fakeButtonY()"
+        aria-label="Fake Button"
+      >
+      C'est parti !
+      </button>
+
+      <!-- Vrai Bouton -->
+      <button
+        class="real-button"
+        type="button"
+        (click)="onStartReal()"
+        [class.revealed]="uncovered()"
+        aria-label="Real Button"
+      >
+      ▶
+      </button>
+        
+    </div>
+  </div>
+}
+</div>

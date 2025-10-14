@@ -1,0 +1,46 @@
+<div class="home-container">
+
+  <!-- Navbar -->
+  <mat-toolbar color="primary" class="navbar">
+    <span class="logo">✨ Le bordel dans ma tête mais avec des paillettes ^^</span>
+    <span class="spacer"></span>
+  </mat-toolbar>
+
+  <!-- Titre -->
+  <header class="welcome">
+    <h1>Bibliothèque</h1>
+  </header>
+
+  <!-- Carrousel -->
+  <div class="container">
+    <swiper-container
+  class="mySwiper"
+  slides-per-view="1.1"
+  centered-slides="true"
+  effect="coverflow"
+  autoplay-delay="3000"
+  autoplay-disable-on-interaction="false"
+  coverflow-effect-rotate="25"
+  coverflow-effect-stretch="0"
+  coverflow-effect-depth="100"
+  coverflow-effect-modifier="1"
+  pagination="true"
+  navigation="true"
+>
+  <swiper-slide>
+    <div class="carousel-item">
+      <div class="carousel-item">
+      <h2>Idle Game</h2>
+      <a [routerLink]="['/guilde']" mat-raised-button>
+        Jouer
+      </a>
+    </div>
+      <h2>Énigme</h2>
+      <a [routerLink]="['/enigmemain']" mat-raised-button>
+        Jouer
+      </a>
+    </div>
+  </swiper-slide>
+  <!-- Slides futurs -->
+</swiper-container>
+</div>

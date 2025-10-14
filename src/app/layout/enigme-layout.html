@@ -1,0 +1,23 @@
+<div class="layout">
+    <header class="header">
+        <div class="titles">
+            <h1 class="title">
+                {{ title() }}
+            </h1>
+            <p class="desc">
+                {{ description() }}
+            </p>
+        </div>
+        <button class="quit" (click)="quit()">Quitter l'énigme</button>
+    </header>
+
+    <main class="content">
+        <router-outlet></router-outlet>
+    </main>
+
+    <footer class="tools">
+        <p>
+            <!-- Boîte à outils -->
+        </p>
+    </footer>
+</div>

@@ -1,0 +1,32 @@
+<section class="riddle">
+      <div
+            class="pad"
+            [class.shake]="shaking()"
+            [class.success]="success()"
+            [class.fade-out]="fadingOut()"
+            (animationend)="onFadeOutEnd()"
+        >
+        <div class="display">{{ input() || '- - - -' }}</div>
+        <span class="slots">
+            <span class="slot" *ngFor="let i of [0,1,2,3]; let idx = index" [class.filled]="idx < input().length"></span>
+        </span>
+        <div class="buttons">
+            <button
+                *ngFor="let key of keys; let i = index"
+                type="button"
+                class="key-btn"
+                [class.muted]="key.label === 'C' || key.label === '←'"
+                [style.--dx.px]="key.dx()"
+                [style.--dy.px]="key.dy()"
+                (pointerdown)="onKeyPointerDown(i, $event)"
+                (pointermove)="onKeyPointerMove(i, $event)"
+                (pointerup)="onKeyPointerUp(i, $event)"
+                (pointercancel)="onKeyPointerUp(i, $event)"
+            >
+                {{ key.label }}
+            </button>
+        </div>
+            <button class="submit" (click)="submit()" [disabled]="input().length === 0">VALIDER</button>
+            <p class="error"> {{ error()}} </p>
+      </div>
+</section>

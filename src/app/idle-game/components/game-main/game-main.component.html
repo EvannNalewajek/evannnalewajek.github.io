@@ -1,0 +1,16 @@
+<main class="app">
+    <header class="topbar">
+      <h1>Guilde d'Aventuriers</h1>
+      <div class="gold">🟡 {{ game.player().gold | number:'1.0-0' }}</div>
+    </header>
+
+    <nav class="tabs">
+      <button [class.active]="isGuild()" (click)="go('guild')">Guilde</button>
+      <button [class.active]="isForest()" (click)="go('forest')">Forest</button>
+    </nav>
+
+    <section class="view">
+      <app-guild *ngIf="isGuild()"></app-guild>
+      <app-forest *ngIf="isForest()"></app-forest>
+    </section>
+  </main>

@@ -1,0 +1,40 @@
+<section class="panel">
+    <h2>Guilde d'Aventuriers</h2>
+    <p>Bienvenue à la guilde ! Prépare-toi avant de partir dans la nature.</p>
+
+    <div class="stats">
+        <div>Or: <b>{{ game.player().gold | number:'1.0-0' }}</b></div>
+        <div>Niv: <b>{{ game.player().level }}</b></div>
+        <div>ATK: <b>{{ game.player().stats.strength }}</b></div>
+        <div>DEF: <b>{{ game.player().stats.resilience }}</b></div>
+        <div>PV: <b>{{ game.player().currentHealth| number:'1.0-0' }}</b> / {{ game.player().stats.vitality }}</div>
+        <div>Aura: <b>{{ game.player().stats.aura }}</b></div>
+        <div>Mental: <b>{{ game.player().stats.mental }}</b></div>
+    </div>
+
+    <div class="xp-bar">
+        <div class="fill" [style.width.%]="game.experiencePercent()"></div>
+    </div>
+
+    <div class="xp-label">{{ game.experiencePercent() | number:'1.0-0' }}%</div>
+
+    <div class="upgrade-panel" *ngIf="game.player().unspentStatPoints > 0">
+      <h3>Attribuer des points</h3>
+      <div class="grid">
+        <button (click)="addStat('strength')">+ Force</button>
+        <button (click)="addStat('resilience')">+ Résilience</button>
+        <button (click)="addStat('vitality')">+ Vitalité</button>
+        <button (click)="addStat('aura')">+ Aura</button>
+        <button (click)="addStat('mental')">+ Mental</button>
+      </div>
+    </div>
+
+    <div class="actions">
+        <button (click)="game.restAtGuild()">Se reposer (PV au max)</button>
+        <button class="primary" (click)="game.enterForest()">Partir à l'aventure</button>
+    </div>
+
+    <p style="opacity:.8;margin-top:.75rem">
+        Prochaines étapes : achats d'upgrades, recrutement, quêtes…
+    </p>
+</section>

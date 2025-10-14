@@ -1,0 +1,48 @@
+<section class="panel">
+    <header class="row header">
+        <h2>Forest</h2>
+        <button class="link" (click)="game.leaveForest()">Quitter</button>
+    </header>
+    <div class="stats">
+        <div>Or: <b>{{ game.player().gold | number:'1.0-0'}}</b></div>
+        <div>Niv: <b>{{ game.player().level }}</b></div>
+        <div>PV: <b>{{ game.player().currentHealth | number:'1.0-0' }}</b> / {{ game.player().stats.vitality }}</div>
+        <div>DPS: <b>{{ game.playerDPS() | number:'1.1-1' }}</b></div>
+    </div>
+
+    <div class="bar hp">
+        <div class="fill" [style.width.%]="game.playerHealthPercent()"></div>
+    </div>
+
+      <div class="xp-bar">
+        <div class="fill" [style.width.%]="game.experiencePercent()"></div>
+    </div>
+    <div class="xp-label">
+        XP: {{ game.player().experience }} / {{ game.getExperienceForLevel(game.player().level || 1) }}
+        ({{ game.experiencePercent() | number:'1.0-0' }}%)
+    </div>
+
+    <ng-container *ngIf="game.currentEnemy() as e; else loading">
+        <div class="enemy-card">
+            <h3>{{ e.name }}</h3>
+            <p>HP: {{ e.currentHealth | number:'1.0-0' }} / {{ e.baseHealth }}</p>
+            <div class="bar hp">
+                <div class="fill" [style.width.%]="game.enemyHealthPercent()"></div>
+            </div>
+            <p>ATK: {{ e.baseDamage }} - SPD: {{ e.attackSpeed }}</p>
+            <p>Butin: {{ e.baseGoldReward }}</p>
+
+            <button class="primary" (click)="game.clickAttack()">
+                Attaquer ({{ game.player().stats.strength }})
+            </button>
+        </div>
+    </ng-container>
+
+    <ng-template #loading>
+        <p>Un ennemi arrive...</p>
+    </ng-template>
+
+    <div *ngIf="showLevelUp()" class="levelup">
+        🎉 Niveau {{ game.player().level }} atteint !
+    </div>
+</section>

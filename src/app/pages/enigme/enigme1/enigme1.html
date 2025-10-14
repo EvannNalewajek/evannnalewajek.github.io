@@ -1,0 +1,33 @@
+<section class="riddle">
+    
+      <div
+            class="pad"
+            [class.shake]="shaking()"
+            [class.success]="success()"
+            [class.fade-out]="fadingOut()"
+            (animationend)="onFadeOutEnd()"
+        >
+        <div class="display">{{ input() || '- - - -' }}</div>
+        <span class="key">2907</span>
+        <span class="slots">
+            <span class="slot" *ngFor="let i of [0,1,2,3]; let idx = index" [class.filled]="idx < input().length"></span>
+        </span>
+
+        <div class="buttons">
+            <button type="button" (click)="press('1')">1</button>
+            <button type="button" (click)="press('2')">2</button>
+            <button type="button" (click)="press('3')">3</button>
+            <button type="button" (click)="press('4')">4</button>
+            <button type="button" (click)="press('5')">5</button>
+            <button type="button" (click)="press('6')">6</button>
+            <button type="button" (click)="press('7')">7</button>
+            <button type="button" (click)="press('8')">8</button>
+            <button type="button" (click)="press('9')">9</button>
+            <button type="button" (click)="clear()">C</button>
+            <button type="button" (click)="press('0')">0</button>
+            <button type="button" (click)="backspace()">&larr;</button>
+        </div>
+            <button class="submit" (click)="submit()" [disabled]="input().length === 0">VALIDER</button>
+            <p class="error"> {{ error()}} </p>
+      </div>
+</section>

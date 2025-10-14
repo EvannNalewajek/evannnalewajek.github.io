@@ -1,0 +1,96 @@
+.home-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #2b1055, #7597de, #ff0080);
+    color: #fff;
+    font-family: 'Orbitron', sans-serif; // police futuriste possible via Google Fonts
+}
+
+.navbar {
+    min-height: 50px;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #1a0033, #3b0a6e 50%, #7a2e8a 100%);
+    box-shadow: 0 6px 25px rgba(255, 0, 128, 0.35);
+}
+
+.spacer {
+  flex: 1;
+}
+
+.logo {
+  max-width: calc(100% - 56px);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  font-family: 'Orbitron', system-ui, sans-serif;
+  font-size: 1.3em;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+
+  background: linear-gradient(90deg, #ff66cc, #66e0ff, #00ffe0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow:
+    0 0 6px rgba(255, 102, 204, 0.6),
+    0 0 14px rgba(0, 255, 224, 0.35);
+  animation: neon-glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes neon-glow {
+  from {
+    text-shadow:
+      0 0 4px #ff33cc,
+      0 0 8px #ff33cc,
+      0 0 12px #00ffe0;
+  }
+  to {
+    text-shadow:
+      0 0 8px #ff33cc,
+      0 0 16px #00ffe0,
+      0 0 32px #ff00cc,
+      0 0 48px #00ffe0;
+  }
+}
+
+.welcome {
+  text-align: center;
+  margin: 2rem 0;
+
+  h1 {
+    font-size: 2.5rem;
+    color: #ff66cc;
+    text-shadow: 0 0 10px #ff66cc;
+  }
+  p {
+    color: #ffe6f7;
+  }
+}
+
+.mySwiper {
+  width: 100%;
+  max-width: 560px;
+  margin: 2rem auto;
+}
+
+.carousel-item {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 0 20px #ff66cc;
+  color: #fff;
+
+  h2 {
+    margin-bottom: 1rem;
+    color: #00ffe0;
+    text-shadow: 0 0 5px #00ffe0;
+  }
+}
