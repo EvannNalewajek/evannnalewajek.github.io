@@ -3,6 +3,15 @@
       <button class="exit-btn" (click)="exitGame()">Quitter le jeu</button>
       <h1>Guilde d'Aventuriers</h1>
       <div class="gold">🟡 {{ game.player().gold | number:'1.0-0' }}</div>
+      <button class="icon-btn" (click)="toggleSettings()">
+        <img src="/settings.png" alt="Paramètres" width="24" height="24">
+      </button>
+      <!-- Menu des paramètres -->
+      <div class="settings-menu" *ngIf="showSettings()">
+        <h2>Paramètres</h2>
+        <button class="reset-btn" (click)="resetProgress()">🔁 Réinitialiser la progression</button>
+        <button (click)="toggleSettings()">Fermer</button>
+      </div>
     </header>
 
     <nav class="tabs">
