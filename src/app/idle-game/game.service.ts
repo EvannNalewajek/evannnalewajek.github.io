@@ -27,6 +27,10 @@ export class GameService {
         { id: 'boar',   name: 'Boar',   baseHealth: 25, baseDamage: 2, attackSpeed: 0.4, baseGoldReward: 2 },
     ];
 
+    // --- Guild progression ---
+    private readonly GUILD_BASE_COST = 150;
+    private readonly GUILD_COST_FACTOR = 1.6;
+
     // Signals (state)
     location = signal<LocationKey>('guild');
 
@@ -38,6 +42,8 @@ export class GameService {
         experience: 0,
         unspentStatPoints: 0,
     });
+
+    guildLevel = signal<number>(1);
 
     levelUpTick = signal(0);
     currentEnemy = signal<EnemyInstance | null>(null);
@@ -60,6 +66,19 @@ export class GameService {
         });
         }
     }
+
+    // Cost calculation for the next guild upgrade
+    guildUpgradeCost = computed(() => {
+        const lvl = this.guildLevel();
+        return Math.floor(this.GUILD_BASE_COST * Math.pow(this.GUILD_COST_FACTOR, Math.max(0, lvl - 1)));
+    });
+
+    // Unlocked guild features flags
+    hasQuestBoard = computed(() => this.guildLevel() >= 2);
+    recruitSlots  = computed(() => (this.guildLevel() >= 5 ? 1 : 0)); // Temporary : only 1 slot unlocked at level 5
+
+    // Max Quests acceptable at once: 1 at level 2, then 1 more every 2 guild levels
+    maxAcceptedQuests = computed(() => 1 + Math.floor(Math.max(0, this.guildLevel() - 2) / 2));
 
     // Automated damage (Aura and Mental)
     playerDPS = computed(() => {
@@ -88,6 +107,18 @@ export class GameService {
     });
 
     // Public API
+    upgradeGuild(): boolean {
+        const p = this.player();
+        const cost = this.guildUpgradeCost();
+        if (p.gold < cost) return false;
+
+        this.player.set({ ...p, gold: p.gold - cost });
+        this.guildLevel.update(l => l + 1);
+
+        this.saveGame();
+        return true;
+    }
+
     enterForest() {
         if (this.location() === 'forest') return;
         this.location.set('forest');
@@ -148,11 +179,12 @@ export class GameService {
         if (!this.canPersist) return;
         try {
             const saveData = {
-            v: 1,
+            v: 2,
             player: this.player(),
             location: this.location(),
             currentEnemy: this.currentEnemy(),
             enemyIndex: this.enemyIndex(),
+            guildLevel: this.guildLevel(),
             ts: Date.now(),
             };
             localStorage.setItem('idle-game-save', JSON.stringify(saveData));
@@ -200,6 +232,8 @@ export class GameService {
 
                 this.location.set(saveData.location ?? 'guild');
                 this.enemyIndex.set(saveData.enemyIndex ?? 0);
+
+                this.guildLevel.set(typeof saveData.guildLevel === 'number' ? saveData.guildLevel : 1);
 
                 if (this.location() === 'forest' && saveData.currentEnemy) {
                     this.currentEnemy.set(saveData.currentEnemy);

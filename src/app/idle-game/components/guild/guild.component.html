@@ -38,3 +38,47 @@
         Prochaines étapes : achats d'upgrades, recrutement, quêtes…
     </p>
 </section>
+
+<section class="guild-hall card">
+  <h3>Salle de Guilde</h3>
+
+  <div class="row">
+    <div>Niveau actuel :</div>
+    <div class="badge">{{ game.guildLevel() }}</div>
+  </div>
+
+  <div class="row">
+    <div>Prochain palier :</div>
+    <div class="muted">
+      <ng-container *ngIf="game.guildLevel() < 2">Niv. 2 — Débloque le tableau de quêtes</ng-container>
+      <ng-container *ngIf="game.guildLevel() >= 2 && game.guildLevel() < 5">Niv. 5 — 1 emplacement de recrue</ng-container>
+      <ng-container *ngIf="game.guildLevel() >= 5">Prochains bonus à venir…</ng-container>
+    </div>
+  </div>
+
+  <div class="row">
+    <div>Coût d’amélioration :</div>
+    <div class="gold">{{ game.guildUpgradeCost() }} or</div>
+  </div>
+
+  <button class="upgrade-btn"
+          [disabled]="game.player().gold < game.guildUpgradeCost()"
+          (click)="game.upgradeGuild()">
+    Améliorer la Guilde
+  </button>
+
+  <div class="unlocks">
+    <div [class.locked]="!game.hasQuestBoard()">
+      <strong>Tableau de quêtes</strong>
+      <span *ngIf="game.hasQuestBoard(); else lockQuest">— déverrouillé</span>
+      <ng-template #lockQuest>— <em>débloqué au niveau 2</em></ng-template>
+      <div class="sub">Quêtes simultanées max : {{ game.maxAcceptedQuests() }}</div>
+    </div>
+
+    <div [class.locked]="game.recruitSlots() === 0">
+      <strong>Recrues</strong>
+      <span *ngIf="game.recruitSlots() > 0; else lockRec">— {{ game.recruitSlots() }} emplacement</span>
+      <ng-template #lockRec>— <em>1 emplacement au niveau 5</em></ng-template>
+    </div>
+  </div>
+</section>
