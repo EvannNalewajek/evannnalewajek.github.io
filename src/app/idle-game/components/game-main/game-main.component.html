@@ -1,5 +1,6 @@
 <main class="app">
     <header class="topbar">
+      <button class="exit-btn" (click)="exitGame()">Quitter le jeu</button>
       <h1>Guilde d'Aventuriers</h1>
       <div class="gold">🟡 {{ game.player().gold | number:'1.0-0' }}</div>
     </header>

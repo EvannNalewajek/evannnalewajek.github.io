@@ -1,8 +1,9 @@
-import { Component, OnDestroy, OnInit, computed } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, OnDestroy, OnInit, computed, inject, PLATFORM_ID, HostListener } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { GameService } from '../../game.service';
 import { GuildComponent } from '../guild/guild.component';
 import { ForestComponent } from '../forest/forest.component';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'app-guilde-game',
@@ -13,8 +14,9 @@ import { ForestComponent } from '../forest/forest.component';
 })
 export class GuildeGameComponent implements OnInit, OnDestroy {
     private autosaveId: any;
+    private readonly isBrowser = isPlatformBrowser(inject(PLATFORM_ID));
 
-    constructor(public game: GameService) {}
+    constructor(public game: GameService, private router: Router) {}
 
     ngOnInit() {
     this.game.loadGame();
@@ -34,4 +36,15 @@ export class GuildeGameComponent implements OnInit, OnDestroy {
     go(tab: 'guild'|'forest') {
     tab === 'guild' ? this.game.leaveForest() : this.game.enterForest();
     }
+
+    @HostListener('document:keydown.escape')
+  onEsc() { this.exitGame(); }
+
+  exitGame() {
+    if (this.isBrowser) {
+      this.game.saveGame();
+      this.game.stopGameLoop();
+    }
+    this.router.navigateByUrl('/');
+  }
 }
