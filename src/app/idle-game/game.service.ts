@@ -1,5 +1,5 @@
 import { Injectable, computed, signal, inject, PLATFORM_ID } from '@angular/core';
-import { LocationKey, EnemyInstance, EnemyTemplate, Player } from './models';
+import { LocationKey, EnemyInstance, EnemyTemplate, Player, QuestInstance } from './models';
 import { isPlatformBrowser } from '@angular/common';
 
 /**
@@ -24,12 +24,15 @@ export class GameService {
     // --- Enemies catalogue (can later be externalized)
     private ENNEMIES: EnemyTemplate[] = [
         { id: 'goblin', name: 'Goblin', baseHealth: 20, baseDamage: 1, attackSpeed: 0.5, baseGoldReward: 1 },
-        { id: 'boar',   name: 'Boar',   baseHealth: 25, baseDamage: 2, attackSpeed: 0.4, baseGoldReward: 2 },
+        { id: 'sanglier',   name: 'Sanglier',   baseHealth: 25, baseDamage: 2, attackSpeed: 0.4, baseGoldReward: 2 },
     ];
 
     // --- Guild progression ---
     private readonly GUILD_BASE_COST = 150;
     private readonly GUILD_COST_FACTOR = 1.6;
+
+    // Enemy list for quests
+    private ENEMY_TYPES = ["goblin", "sanglier"];
 
     // Signals (state)
     location = signal<LocationKey>('guild');
@@ -48,6 +51,14 @@ export class GameService {
     levelUpTick = signal(0);
     currentEnemy = signal<EnemyInstance | null>(null);
     private enemyIndex = signal(0);
+
+    // --- Quests state ---
+    questOffers = signal<QuestInstance[]>([]);
+    acceptedQuests = signal<QuestInstance[]>([]);
+
+    // Quest Complete Popup
+    questCompleteTick = signal(0);
+    lastCompletedQuest = signal<QuestInstance | null>(null);
 
     // Loop
     private running = signal(false);
@@ -113,7 +124,13 @@ export class GameService {
         if (p.gold < cost) return false;
 
         this.player.set({ ...p, gold: p.gold - cost });
+        const prev = this.guildLevel();
         this.guildLevel.update(l => l + 1);
+
+        const now = this.guildLevel();
+        if (prev < 2 && now >= 2) {
+            this.ensureQuestOffers();
+        }
 
         this.saveGame();
         return true;
@@ -185,6 +202,8 @@ export class GameService {
             currentEnemy: this.currentEnemy(),
             enemyIndex: this.enemyIndex(),
             guildLevel: this.guildLevel(),
+            questOffers: this.questOffers(),
+            acceptedQuests: this.acceptedQuests(),
             ts: Date.now(),
             };
             localStorage.setItem('idle-game-save', JSON.stringify(saveData));
@@ -201,10 +220,7 @@ export class GameService {
             if (!saveStr) return;
             try {
                 const saveData = JSON.parse(saveStr);
-                if (saveData.v !== 1) {
-                    console.warn('Unknown save version', saveData.v);
-                    return;
-                }
+                const version = Number(saveData.v ?? 1);
 
                 const defaultPlayer = this.player();
                 const savedPlayer = saveData.player ?? {};
@@ -235,6 +251,13 @@ export class GameService {
 
                 this.guildLevel.set(typeof saveData.guildLevel === 'number' ? saveData.guildLevel : 1);
 
+                this.questOffers.set(Array.isArray(saveData.questOffers) ? saveData.questOffers : []);
+                this.acceptedQuests.set(Array.isArray(saveData.acceptedQuests) ? saveData.acceptedQuests : []);
+
+                if (this.guildLevel() >= 2) {
+                    this.ensureQuestOffers();
+                }
+
                 if (this.location() === 'forest' && saveData.currentEnemy) {
                     this.currentEnemy.set(saveData.currentEnemy);
                 } else {
@@ -246,6 +269,53 @@ export class GameService {
         } catch (e) {
             console.error('Failed to access localStorage', e);
         }
+    }
+
+    acceptQuest(id: string): boolean {
+        if (this.guildLevel() < 2) return false;
+        const offers = this.questOffers();
+        const q = offers.find(o => o.id === id);
+        if (!q) return false;
+        if (this.acceptedQuests().length >= this.maxAcceptedQuests()) return false;
+
+        q.acceptedAt = Date.now();
+        this.acceptedQuests.set([...this.acceptedQuests(), q]);
+        this.questOffers.set(offers.filter(o => o.id !== id));
+        this.saveGame();
+        return true;
+    }
+
+    abandonQuest(id: string) {
+        const rest = this.acceptedQuests().filter(q => q.id !== id);
+        this.acceptedQuests.set(rest);
+        this.ensureQuestOffers();
+        this.saveGame();
+    }
+
+    private completeQuest(q: QuestInstance) {
+        if (!q.completed) return;
+
+        // Quest Complete Popup
+        this.lastCompletedQuest.set({ ...q });
+        this.questCompleteTick.update(n => n + 1);
+
+        // Reward
+        const p = this.player();
+        this.player.set({ ...p, gold: p.gold + q.goldReward });
+
+        // Remove from the list
+        this.acceptedQuests.set(this.acceptedQuests().filter(x => x.id !== q.id));
+        this.ensureQuestOffers();
+        
+        this.saveGame();
+    }
+
+    private ensureQuestOffers(target = 3) {
+        if (this.guildLevel() < 2) return;
+        const offers = [...this.questOffers()];
+        while (offers.length < target) offers.push(this.rollQuest());
+        this.questOffers.set(offers);
+        this.saveGame();
     }
 
     // Core combat loop
@@ -300,15 +370,45 @@ export class GameService {
     }
 
     private onEnemyKilled(enemy: EnemyInstance) {
+
+        // Gold reward
         const p = this.player();
         this.player.set({ ...p, gold: p.gold + enemy.baseGoldReward });
-
+        
+        // Experience reward
         const xpGain = Math.ceil(enemy.baseHealth / 5);
         this.gainExperience(xpGain);
 
+        // Quest progression
+        const type = this.enemyTypeOf(enemy);
+        const updated = this.acceptedQuests().map(q => {
+            if (q.kind === "HuntCountByType" && q.enemyType === type && !q.completed) {
+            const progress = Math.min(q.count, q.progress + 1);
+            const done = progress >= q.count;
+            return { ...q, progress, completed: done };
+            }
+            return q;
+        });
+
+        this.acceptedQuests.set(updated);
+        updated
+            .filter(q => q.completed)
+            .forEach(q => this.completeQuest(q));
+
+        // Spawn another ennemy
         const nextIndex = (this.enemyIndex() + 1) % this.ENNEMIES.length;
         this.enemyIndex.set(nextIndex);
         this.spawnEnemy();
+    }
+
+    private enemyTypeOf(e: EnemyInstance): string {
+        const t = (e as any).type as string | undefined;
+        if (t) return t;
+        const name = e.name.toLowerCase();
+        if (name.includes("goblin")) return "goblin";
+        if (name.includes("sanglier")) return "sanglier";
+        // fallback
+        return "goblin";
     }
 
     private spawnEnemy() {
@@ -355,5 +455,39 @@ export class GameService {
     getExperienceForLevel(level: number): number {
         const lvl = Number.isFinite(level) && level > 0 ? level : 1;
         return Math.floor(20 * Math.pow(1.2, lvl - 1));
+    }
+
+    private uid(): string {
+        return Math.random().toString(36).slice(2, 9);
+    }
+
+    private rollQuest(): QuestInstance {
+        const type = this.ENEMY_TYPES[Math.floor(Math.random() * this.ENEMY_TYPES.length)];
+
+        // Logic for now : more levels = more enemies to kill
+        const playerLvl = this.player().level;
+        const baseCount = 4 + Math.floor(playerLvl * 0.6) + Math.floor(this.enemyIndex ? this.enemyIndex() * 0.2 : 0);
+        const count = Math.max(3, Math.min(30, Math.round(baseCount + (Math.random()*3 - 1))));
+
+        // gold: ~ 6–10 per kill
+        const goldReward = count * (6 + Math.floor(Math.random() * 5));
+
+        return {
+            id: this.uid(),
+            kind: "HuntCountByType",
+            enemyType: type,
+            count,
+            goldReward,
+            progress: 0,
+            completed: false,
+        };
+    }
+
+    generateQuestOffers(n = 3) {
+    if (this.questOffers().length >= n) return; // If already 3 quests, don't create
+    const offers: QuestInstance[] = [];
+    for (let i = 0; i < n; i++) offers.push(this.rollQuest());
+    this.questOffers.set(offers);
+    this.saveGame();
     }
 }

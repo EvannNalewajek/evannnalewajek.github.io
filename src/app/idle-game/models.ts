@@ -38,7 +38,7 @@ export type QuestKind = "HuntCountByType"; // First idea for a quest system
 
 export interface QuestTemplate {    // 1st try
     kind: QuestKind;
-    ennemyType: string; // Ennemy name
+    enemyType: string; // Ennemy name
     count: number;  // Number of kills to get
     goldReward: number;
 }

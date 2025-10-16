@@ -57,7 +57,7 @@
   </div>
 
   <div class="row">
-    <div>Coût d’amélioration :</div>
+    <div>Coût d'amélioration :</div>
     <div class="gold">{{ game.guildUpgradeCost() }} or</div>
   </div>
 
@@ -79,6 +79,46 @@
       <strong>Recrues</strong>
       <span *ngIf="game.recruitSlots() > 0; else lockRec">— {{ game.recruitSlots() }} emplacement</span>
       <ng-template #lockRec>— <em>1 emplacement au niveau 5</em></ng-template>
+    </div>
+  </div>
+</section>
+
+<section class="quest-board card" *ngIf="game.hasQuestBoard()">
+  <h3>Tableau de quêtes</h3>
+
+  <div class="offers">
+    <h4>Offres</h4>
+    <p *ngIf="game.questOffers().length === 0">Aucune offre pour l’instant.</p>
+
+    <div class="offer" *ngFor="let q of game.questOffers()">
+      <div class="line">
+        <strong>Vaincre {{ q.count }} × {{ q.enemyType }}</strong>
+        <span class="gold">+{{ q.goldReward }} or</span>
+      </div>
+      <button
+        [disabled]="game.acceptedQuests().length >= game.maxAcceptedQuests()"
+        (click)="game.acceptQuest(q.id)">
+        Accepter
+      </button>
+    </div>
+  </div>
+
+  <div class="accepted">
+    <h4>Quêtes acceptées ({{ game.acceptedQuests().length }}/{{ game.maxAcceptedQuests() }})</h4>
+    <p *ngIf="game.acceptedQuests().length === 0">Aucune quête en cours.</p>
+
+    <div class="quest" *ngFor="let q of game.acceptedQuests()">
+      <div class="line">
+        <strong>{{ q.enemyType }}</strong>
+        <span>{{ q.progress }} / {{ q.count }}</span>
+        <span class="gold">Récompense: {{ q.goldReward }} or</span>
+      </div>
+      <div class="bar">
+        <div class="fill" [ngStyle]="{ 'width.%': (100 * q.progress / q.count) }"></div>
+      </div>
+      <div class="actions">
+        <button (click)="game.abandonQuest(q.id)">Abandonner</button>
+      </div>
     </div>
   </div>
 </section>

@@ -54,7 +54,7 @@
   margin-bottom: 0.75rem;
 }
 
-.levelup {
+.popup {
   position: fixed;
   bottom: 2rem;
   left: 50%;
@@ -66,10 +66,16 @@
   font-weight: 600;
   font-size: 1.2rem;
   box-shadow: 0 0 10px rgba(80, 150, 255, 0.8);
-  animation: popup 1.5s ease-out forwards;
+  animation: pop 1.5s ease-out forwards;
+}
+.popup.level {
+  box-shadow: 0 0 10px rgba(76, 192, 221, 0.85);
+}
+.popup.quest {
+  box-shadow: 0 0 10px rgba(90, 180, 90, 0.85);
 }
 
-@keyframes popup {
+@keyframes pop {
   0%   { transform: translate(-50%, 30px); opacity: 0; }
   20%  { transform: translate(-50%, 0); opacity: 1; }
   80%  { opacity: 1; }

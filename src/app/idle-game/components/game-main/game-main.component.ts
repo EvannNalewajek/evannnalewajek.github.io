@@ -70,6 +70,7 @@ export class GuildeGameComponent implements OnInit, OnDestroy {
         });
         this.game.location.set('guild');
         this.game.currentEnemy.set(null);
+        this.game.guildLevel.set(1);
 
         this.toggleSettings();
         alert('Progression réinitialisée ✅');

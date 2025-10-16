@@ -42,7 +42,10 @@
         <p>Un ennemi arrive...</p>
     </ng-template>
 
-    <div *ngIf="showLevelUp()" class="levelup">
-        🎉 Niveau {{ game.player().level }} atteint !
+    <div class="popup"
+            [class.level]="currentToast()?.type === 'level'"
+            [class.quest]="currentToast()?.type === 'quest'"
+            *ngIf="currentToast() as toast">
+        {{ toast.message }}
     </div>
 </section>
