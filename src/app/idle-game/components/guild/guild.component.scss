@@ -128,5 +128,76 @@
     border:none;
     cursor:pointer;
   }
+
+  .stats-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.stats-table th,
+.stats-table td {
+  padding: 8px 10px;
+  border-bottom: 1px dashed #e6e6e6;
+  vertical-align: middle;
+}
+
+.stats-table thead th {
+  border-bottom: 1px dashed #bdbdbd;
+  text-align: left;
+  font-weight: 600;
+}
+
+.col-name { width: auto; }
+.col-info { width: 44px; }
+.col-num { width: 120px; }
+.col-actions { width: 180px; }
+
+.stats-table td.name .label { font-weight: 500; }
+
+.stats-table td.info-cell {
+  text-align: center;
+}
+
+.info-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.08);
+  color: #333;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: default;
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.6;
+}
+
+.info-btn:hover {
+  background: rgba(0,0,0,0.08);
+}
+
+.num { 
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.actions .btn {
+  padding: 4px 8px;
+  border-radius: 8px;
+  border: 1px solid #2a2a2a;
+  background: #fafafa;
+  cursor: pointer;
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+.actions .btn:hover:not(:disabled) { background: #f0f0f0; }
+.actions .btn:disabled { cursor: not-allowed; opacity: 0.6; }
 }
 

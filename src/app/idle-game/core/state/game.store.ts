@@ -25,6 +25,13 @@ export class GameStore {
             aura: 0,
             mental: 0
         },
+        spentStats: {
+            strength: 0,
+            resilience: 0,
+            vitality:0,
+            aura: 0,
+            mental: 0
+        },
         currentHealth: 10,
         level: 1,
         experience: 0,

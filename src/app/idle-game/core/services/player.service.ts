@@ -75,11 +75,18 @@ export class PlayerService {
 
     addStat(stat: StatKey): boolean {
         const p = this.store.player();
-        if ((p.unspentStatPoints ?? 0) <= 0) return false;
+        const unspent = p.unspentStatPoints ?? 0;
+        if (unspent <= 0) return false;
 
-        const nextStats = { ...p.stats, [stat]: (p.stats as any)[stat] + 1 };
+        const currentStat = (p.stats as any)[stat] ?? 0;
+        const nextStats = { ...p.stats, [stat]: currentStat + 1 };
 
-        let nextHealth = p.currentHealth;
+        const spent = (p as any).spentStats ?? {
+            strength: 0, resilience: 0, vitality: 0, aura: 0, mental: 0,
+        };
+        const nextSpent = { ...spent, [stat]: (spent as any)[stat] + 1 };
+
+        let nextHealth = p.currentHealth ?? nextStats.vitality;
         if (stat === 'vitality') {
             const newMax = nextStats.vitality;
             if (nextHealth > newMax) nextHealth = newMax;
@@ -87,8 +94,9 @@ export class PlayerService {
 
         this.store.player.set({
             ...p,
-            unspentStatPoints: (p.unspentStatPoints ?? 0) - 1,
+            unspentStatPoints: unspent - 1,
             stats: nextStats,
+            spentStats: nextSpent,
             currentHealth: nextHealth,
         });
 
@@ -96,17 +104,38 @@ export class PlayerService {
         return true;
     }
 
-    // Add several stat points at once
     addStatBulk(stat: StatKey, count: number): number {
-        const n = Math.max(0, Math.floor(count));
-        if (n === 0) return 0;
+        const p = this.store.player();
+        const available = p.unspentStatPoints ?? 0;
+        const n = Math.min(available, Math.max(0, Math.floor(count)));
+        if (n <= 0) return 0;
 
-        let spent = 0;
-        for (; spent < n; spent++) {
-            if (!this.addStat(stat)) break;
+        const currentStat = (p.stats as any)[stat] ?? 0;
+        const nextStats = { ...p.stats, [stat]: currentStat + n };
+
+        const spent = (p as any).spentStats ?? {
+            strength: 0, resilience: 0, vitality: 0, aura: 0, mental: 0,
+        };
+        const nextSpent = { ...spent, [stat]: (spent as any)[stat] + n };
+
+        let nextHealth = p.currentHealth ?? nextStats.vitality;
+        if (stat === 'vitality') {
+            const newMax = nextStats.vitality;
+            if (nextHealth > newMax) nextHealth = newMax;
         }
-        return spent;
+
+        this.store.player.set({
+            ...p,
+            unspentStatPoints: available - n,
+            stats: nextStats,
+            spentStats: nextSpent,
+            currentHealth: nextHealth,
+        });
+
+        this.persist.saveFrom(this.store);
+        return n;
     }
+
 
     // --------- Heal / Rest ---------
 

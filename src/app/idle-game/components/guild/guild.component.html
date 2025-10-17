@@ -1,33 +1,88 @@
 <section class="panel">
-    <h2>Guilde d'Aventuriers</h2>
-    <p>Bienvenue à la guilde ! Prépare-toi avant de partir dans la nature.</p>
+  <h2>Guilde d'Aventuriers</h2>
+  <p>Bienvenue à la guilde ! Prépare-toi avant de partir dans la nature.</p>
 
-    <div class="stats">
-        <div>Or: <b>{{ game.player().gold | number:'1.0-0' }}</b></div>
-        <div>Niv: <b>{{ game.player().level }}</b></div>
-        <div>ATK: <b>{{ game.player().stats.strength }}</b></div>
-        <div>DEF: <b>{{ game.player().stats.resilience }}</b></div>
-        <div>PV: <b>{{ game.player().currentHealth| number:'1.0-0' }}</b> / {{ game.player().stats.vitality }}</div>
-        <div>Aura: <b>{{ game.player().stats.aura }}</b></div>
-        <div>Mental: <b>{{ game.player().stats.mental }}</b></div>
+  <div class="stats">
+      <div>Or: <b>{{ game.player().gold | number:'1.0-0' }}</b></div>
+      <div>Niv: <b>{{ game.player().level }}</b></div>
+      <div>ATK: <b>{{ game.player().stats.strength }}</b></div>
+      <div>DEF: <b>{{ game.player().stats.resilience }}</b></div>
+      <div>PV: <b>{{ game.player().currentHealth| number:'1.0-0' }}</b> / {{ game.player().stats.vitality }}</div>
+      <div>Aura: <b>{{ game.player().stats.aura }}</b></div>
+      <div>Mental: <b>{{ game.player().stats.mental }}</b></div>
+  </div>
+
+  <div class="xp-bar">
+      <div class="fill" [style.width.%]="game.experiencePercent()"></div>
+  </div>
+
+  <div class="xp-label">{{ game.experiencePercent() | number:'1.0-0' }}%</div>
+
+  <div class="stats-card">
+    <div class="stats-header">
+      Points de statistiques disponibles :
+      <strong>{{ game.player().unspentStatPoints | number:'1.0-0' }}</strong>
     </div>
 
-    <div class="xp-bar">
-        <div class="fill" [style.width.%]="game.experiencePercent()"></div>
-    </div>
+    <table class="stats-table">
+  <colgroup>
+    <col class="col-name" />
+    <col class="col-info" />
+    <col class="col-num" />
+    <col class="col-actions" />
+  </colgroup>
 
-    <div class="xp-label">{{ game.experiencePercent() | number:'1.0-0' }}%</div>
+  <thead>
+    <tr>
+      <th>Statistique</th>
+      <th aria-label="Infos"></th>
+      <th class="num">Points alloués</th>
+      <th class="actions">Actions</th>
+    </tr>
+  </thead>
 
-    <div class="upgrade-panel" *ngIf="game.player().unspentStatPoints > 0">
-      <h3>Attribuer des points</h3>
-      <div class="grid">
-        <button (click)="addStat('strength')">+ Force</button>
-        <button (click)="addStat('resilience')">+ Résilience</button>
-        <button (click)="addStat('vitality')">+ Vitalité</button>
-        <button (click)="addStat('aura')">+ Aura</button>
-        <button (click)="addStat('mental')">+ Mental</button>
-      </div>
-    </div>
+  <tbody>
+    <tr *ngFor="let s of STAT_ENTRIES">
+      <td class="name">
+        <span class="label">{{ s.label }}</span>
+      </td>
+
+      <td class="info-cell">
+        <button
+          class="info-btn"
+          type="button"
+          [title]="s.info"
+          aria-label="Infos"
+        >i</button>
+      </td>
+
+      <td class="num">
+        {{ getAllocatedStatValue(s.key) }}
+      </td>
+
+      <td class="actions">
+        <button
+          class="btn"
+          type="button"
+          (click)="investOne(s.key)"
+          [disabled]="availablePoints <= 0"
+          title="Attribuer 1 point"
+        >+1</button>
+
+        <button
+          class="btn"
+          type="button"
+          (click)="investBulk(s.key)"
+          [disabled]="availablePoints < 2"
+          title="Attribuer plusieurs points (2 à 5 selon le stock)"
+        >+{{ bulkCount() }}</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+
 
     <div class="actions">
         <button (click)="game.restAtGuild()">Se reposer (PV au max)</button>

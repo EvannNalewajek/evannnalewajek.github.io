@@ -137,6 +137,13 @@ export class GameFacadeService {
         return this.playerSvc.addStat(stat as any);
     }
 
+    addStatBulk(
+        stat: keyof ReturnType<GameStore['player']>['stats'],
+        count: number
+    ): number {
+        return this.playerSvc.addStatBulk(stat as any, count);
+    }
+
     getExperienceForLevel(level: number): number {
         return this.store.getExperienceForLevel(level);
     }

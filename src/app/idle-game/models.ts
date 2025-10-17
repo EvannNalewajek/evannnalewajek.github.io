@@ -11,6 +11,7 @@ export interface Stats {
 export interface Player {
     gold: number;
     stats: Stats;
+    spentStats: Stats;
     currentHealth: number;
     level: number;
     experience: number;

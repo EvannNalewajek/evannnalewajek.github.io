@@ -63,6 +63,7 @@ export class GuildeGameComponent implements OnInit, OnDestroy {
         this.game.player.set({
             gold: 0,
             stats: { strength: 1, resilience: 0, vitality: 10, aura: 0, mental: 0 },
+            spentStats: { strength: 0, resilience: 0, vitality: 0, aura: 0, mental: 0 },
             currentHealth: 10,
             level: 1,
             experience: 0,

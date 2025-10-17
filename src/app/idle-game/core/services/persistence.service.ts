@@ -79,6 +79,13 @@ export class PersistenceService {
                 aura:      sp.stats?.aura      ?? def.stats.aura,
                 mental:    sp.stats?.mental    ?? def.stats.mental,
                 },
+                spentStats: {
+                strength: sp.spentStats?.strength ?? def.spentStats.strength,
+                resilience: sp.spentStats?.resilience ?? def.spentStats.resilience,
+                vitality:  sp.spentStats?.vitality  ?? def.spentStats.vitality,
+                aura:      sp.spentStats?.aura      ?? def.spentStats.aura,
+                mental:    sp.spentStats?.mental    ?? def.spentStats.mental,
+                },
                 currentHealth: 0,
                 level: sp.level ?? 1,
                 experience: sp.experience ?? 0,
