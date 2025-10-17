@@ -1,6 +1,6 @@
 import { Component, computed } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { GameService } from '../../game.service';
+import { GameFacadeService } from '../../core/game-facade.service';
 import { Player } from '../../models';
 
 @Component({
@@ -12,9 +12,9 @@ import { Player } from '../../models';
 })
 
 export class GuildComponent {
-    nextLevelExp = computed(() => this.game.getExperienceForLevel(this.game.player().level));
+    constructor(public game: GameFacadeService) {}
 
-    constructor(public game: GameService) {}
+    nextLevelExp = computed(() => this.game.getExperienceForLevel(this.game.player().level));
 
     addStat(stat: keyof Player['stats']) {
         const p = this.game.player();

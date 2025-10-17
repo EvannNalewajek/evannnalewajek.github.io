@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit, computed, inject, PLATFORM_ID, HostListener, signal } from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
-import { GameService } from '../../game.service';
+import { GameFacadeService } from '../../core/game-facade.service';
 import { GuildComponent } from '../guild/guild.component';
 import { ForestComponent } from '../forest/forest.component';
 import { Router } from '@angular/router';
@@ -18,7 +18,7 @@ export class GuildeGameComponent implements OnInit, OnDestroy {
 
     showSettings = signal(false);
 
-    constructor(public game: GameService, private router: Router) {}
+    constructor(public game: GameFacadeService, private router: Router) {}
 
     ngOnInit() {
     this.game.loadGame();

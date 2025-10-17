@@ -63,7 +63,7 @@
 
   <button class="upgrade-btn"
           [disabled]="game.player().gold < game.guildUpgradeCost()"
-          (click)="game.upgradeGuild()">
+          (click)="game.guildUpgrade()">
     Améliorer la Guilde
   </button>
 

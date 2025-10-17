@@ -1,6 +1,6 @@
 import { Component, computed, effect, signal, NgZone } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { GameService } from '../../game.service';
+import { GameFacadeService } from '../../core/game-facade.service';
 
 type ToastItem = {
   type: 'level' | 'quest';
@@ -27,7 +27,7 @@ export class ForestComponent {
   private lastLevelUpTick = 0;
   private lastQuestTick = 0;
 
-  constructor(public game: GameService, private zone: NgZone) {
+  constructor(public game: GameFacadeService, private zone: NgZone) {
 
     this.lastLevelUpTick = this.game.levelUpTick();
     this.lastQuestTick = this.game.questCompleteTick();
