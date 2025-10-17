@@ -33,20 +33,28 @@ jobs:
       - name: Build Angular
         run: npx ng build --configuration production --base-href /
 
-      - name: Resolve output path
-        id: outdir
+      - name: Locate build output
+        id: locate
         run: |
-          node -e "const a=require('./angular.json');const p=Object.keys(a.projects)[0];process.stdout.write(a.projects[p].architect.build.options.outputPath)"
-
-          echo "path=$(node -e \"const a=require('./angular.json');const p=Object.keys(a.projects)[0];process.stdout.write(a.projects[p].architect.build.options.outputPath)\")" >> $GITHUB_OUTPUT
+          set -e
+          # Cherche dist/*/browser (SSR) puis dist/browser, puis premier dossier de dist/ contenant index.html
+          CANDIDATE=$(ls -d dist/*/browser dist/browser 2>/dev/null | head -n 1 || true)
+          if [ -z "$CANDIDATE" ]; then
+            CANDIDATE=$(find dist -maxdepth 2 -type f -name index.html -printf '%h\n' | head -n 1 || true)
+          fi
+          if [ -z "$CANDIDATE" ]; then
+            echo "Aucun index.html trouvé dans dist/"; exit 1
+          fi
+          echo "dir=$CANDIDATE" >> $GITHUB_OUTPUT
+          echo "Build directory: $CANDIDATE"
 
       - name: Add 404.html
-        run: cp '${{ steps.outdir.outputs.path }}/index.html' '${{ steps.outdir.outputs.path }}/404.html'
+        run: cp '${{ steps.locate.outputs.dir }}/index.html' '${{ steps.locate.outputs.dir }}/404.html'
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '${{ steps.outdir.outputs.path }}'
+          path: '${{ steps.locate.outputs.dir }}'
 
   deploy:
     needs: build
