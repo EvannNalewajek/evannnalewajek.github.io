@@ -1,0 +1,55 @@
+<div class="dex-scene">
+    <div class="dex-card">
+        <div class="dex-header">
+            <div class="dex-button" aria-hidden="true"></div>
+            <div class="dex-lights" aria-hidden="true">
+                <span class="led led-red"></span>
+                <span class="led led-yellow"></span>
+                <span class="led led-green"></span>
+            </div>
+
+            <h1>Pokédex régional</h1>
+        </div>
+
+        <div class="dex-body">
+            <table class="pokedex-table" *ngIf="list()?.length; else loading">
+                <thead>
+                    <tr>
+                        <th class="col-num">Dex #</th>
+                        <th class="col-pokemon group-end" colspan="2">Pokémon</th>
+                        <th class="col-type-head" colspan="2">Type</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let p of list()">
+                        <td class="col-num">#{{ p.id | number:'2.0-0' }}</td>
+
+                        <td class="col-sprite">
+                            <a [routerLink]="['/pokedex', p.id]" class="sprite-link" title="Voir {{p.name}}">
+                                <img [src]="p.images.sprite" [alt]="p.name" loading="lazy" />
+                            </a>
+                        </td>
+                        <td class="col-name group-end">
+                            <a [routerLink]="['/pokedex', p.id]" class="name-link">{{ p.name }}</a>
+                        </td>
+
+                        <ng-container *ngIf="p.types.length === 1; else dualTypes">
+                            <td class="col-type group-end" colspan="2" [attr.data-type]="p.types[0]">
+                                {{ p.types[0] }}
+                            </td>
+                        </ng-container>
+
+                        <ng-template #dualTypes>
+                            <td class="col-type" [attr.data-type]="p.types[0]">{{ p.types[0] }}</td>
+                            <td class="col-type group-end" [attr.data-type]="p.types[1]">{{ p.types[1] }}</td>
+                        </ng-template>
+                    </tr>
+                </tbody>
+            </table>
+
+            <ng-template #loading>
+                <p>Chargement du Pokédex…</p>
+            </ng-template>
+        </div>
+    </div>
+</div>
