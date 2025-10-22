@@ -1,0 +1,72 @@
+/* Shared Pokédex shell (frame) */
+:root {
+  --dex-red:   #ef5350;
+  --dex-black: #1f1f1f;
+  --dex-white: #ffffff;
+
+  --grid-fine: #cfd3d8;
+  --grid-bold: #8e9aa7;
+  --muted:     #f6f7f9;
+}
+
+
+.dex-scene {
+  min-height: 100dvh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 3rem 1rem;
+  background:
+    radial-gradient(circle at 12px 12px, rgba(239,83,80,0.06) 8px, transparent 9px),
+    linear-gradient(transparent 23px, rgba(31,31,31,0.04) 24px, transparent 25px),
+    linear-gradient(90deg, transparent 23px, rgba(31,31,31,0.04) 24px, transparent 25px),
+    #fff4f7;
+  background-size: 48px 48px, 24px 24px, 24px 24px;
+}
+
+
+.dex-card {
+  position: relative;
+  width: min(1100px, 80vw);
+  border-radius: 16px;
+  background: #d80909;
+  box-shadow: 0 12px 30px rgba(0,0,0,.08);
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,.06);
+}
+
+
+.dex-header {
+  position: relative;
+  padding: 1rem 1.25rem 0.75rem;
+  background:
+    linear-gradient(to bottom,
+      var(--dex-red) 0 64%,
+      var(--dex-black) 64% 68%,
+      var(--dex-white) 68% 100%);
+}
+
+
+.dex-lights {
+  position: absolute;
+  left: 84px; top: 14px;
+  display: flex; gap: 8px;
+}
+
+
+.led-red    { background: #ff5a5a; }
+
+
+.led-yellow { background: #ffd34d; }
+
+
+.led-green  { background: #59d98a; }
+
+
+.dex-body {
+  padding: 1rem 1.25rem 1.25rem;
+  background: linear-gradient(#e24747, #9c0a0a);
+  border-top: 1px solid rgba(0,0,0,.05);
+  border-radius: 0 0 16px 16px;
+}
+
