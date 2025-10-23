@@ -9,7 +9,6 @@
   --muted:     #f6f7f9;
 }
 
-
 .dex-scene {
   min-height: 100dvh;
   display: flex;
@@ -24,7 +23,6 @@
   background-size: 48px 48px, 24px 24px, 24px 24px;
 }
 
-
 .dex-card {
   position: relative;
   width: min(1100px, 80vw);
@@ -35,9 +33,23 @@
   border: 1px solid rgba(0,0,0,.06);
 }
 
+.dex-card::after {
+  content: "";
+  position: absolute;
+  right: -80px; top: -80px;
+  width: 240px; height: 240px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 50% 50%, rgba(255,255,255,0.7) 0 28%, transparent 29%),
+    conic-gradient(from 0deg, rgba(0,0,0,0.08) 0 180deg, rgba(255,255,255,0.6) 180deg 360deg);
+  filter: blur(2px);
+  opacity: .3;
+  pointer-events: none;
+}
 
 .dex-header {
   position: relative;
+  min-height: 64px;
   padding: 1rem 1.25rem 0.75rem;
   background:
     linear-gradient(to bottom,
@@ -45,7 +57,30 @@
       var(--dex-black) 64% 68%,
       var(--dex-white) 68% 100%);
 }
+.dex-header h1 {
+  margin: 0;
+  padding-top: 1rem;
+  padding-left: 100px;
+  color: #111;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.7);
+  line-height: 1.1;
+  height: auto;
+  font-weight: 800;
+  font-size: clamp(1.6rem, 3.5vw, 3rem);
+}
 
+.dex-button {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 52px; height: 52px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 50% 50%, #eaf4ff 0 30%, #c8d6ea 31% 60%, #95a5bd 61% 100%);
+  border: 4px solid var(--dex-black);
+  box-shadow: inset 0 2px 6px rgba(0,0,0,.25), 0 2px 6px rgba(0,0,0,.25);
+}
 
 .dex-lights {
   position: absolute;
@@ -53,6 +88,10 @@
   display: flex; gap: 8px;
 }
 
+.led {
+  width: 10px; height: 10px; border-radius: 50%;
+  box-shadow: 0 0 0 2px rgba(0,0,0,.35), inset 0 1px 1px rgba(255,255,255,.5);
+}
 
 .led-red    { background: #ff5a5a; }
 
