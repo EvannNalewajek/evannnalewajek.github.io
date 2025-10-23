@@ -1,42 +1,142 @@
-  @use '../../styles/dex-shell' as *;
+@use '../../styles/dex-shell' as *;
 
-.detail .top {
+.detail .layout {
   display: grid;
-  grid-template-columns: 320px 1fr;
+  grid-template-columns: 360px 1fr;
   gap: 1rem;
   align-items: start;
+}
+
+.content {
+  min-width: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.infobox-frame {
+  --t1: #a8a77a;
+  --t2: var(--t1);
+
+  position: sticky;
+  top: .75rem;
+  padding: 10px;
+  border-radius: 20px;
+  background: var(--t2);
+  box-shadow: 0 14px 28px rgba(0,0,0,.08);
+
+  background-image:
+    radial-gradient(100% 100% at 50% 50%, color-mix(in oklab, var(--t2) 92%, white), var(--t2));
+  outline: 1px solid color-mix(in oklab, var(--t2) 40%, black);
+  outline-offset: -1px;
+
+  &[data-type1="Feu"]      { --t1:#ee8130; }
+  &[data-type1="Eau"]      { --t1:#6390f0; }
+  &[data-type1="Plante"]   { --t1:#7ac74c; }
+  &[data-type1="Acier"]    { --t1:#b7b7ce; }
+  &[data-type1="Glace"]    { --t1:#96d9d6; }
+  &[data-type1="Sol"]      { --t1:#e2bf65; }
+  &[data-type1="Ténèbres"] { --t1:#705746; }
+  &[data-type1="Psy"]      { --t1:#f95587; }
+  &[data-type1="Vol"]      { --t1:#a98ff3; }
+  &[data-type1="Roche"]    { --t1:#b6a136; }
+  &[data-type1="Spectre"]  { --t1:#735797; }
+  &[data-type1="Combat"]   { --t1:#c22e28; }
+  &[data-type1="Poison"]   { --t1:#a33ea1; }
+  &[data-type1="Insecte"]  { --t1:#a6b91a; }
+  &[data-type1="Fée"]      { --t1:#d685ad; }
+  &[data-type1="Dragon"]   { --t1:#6f35fc; }
+  &[data-type1="Électrik"] { --t1:#f7d02c; }
+  &[data-type1="Normal"]   { --t1:#a8a77a; }
+
+  &[data-type2="Feu"]      { --t2:#ee8130; }
+  &[data-type2="Eau"]      { --t2:#6390f0; }
+  &[data-type2="Plante"]   { --t2:#7ac74c; }
+  &[data-type2="Acier"]    { --t2:#b7b7ce; }
+  &[data-type2="Glace"]    { --t2:#96d9d6; }
+  &[data-type2="Sol"]      { --t2:#e2bf65; }
+  &[data-type2="Ténèbres"] { --t2:#705746; }
+  &[data-type2="Psy"]      { --t2:#f95587; }
+  &[data-type2="Vol"]      { --t2:#a98ff3; }
+  &[data-type2="Roche"]    { --t2:#b6a136; }
+  &[data-type2="Spectre"]  { --t2:#735797; }
+  &[data-type2="Combat"]   { --t2:#c22e28; }
+  &[data-type2="Poison"]   { --t2:#a33ea1; }
+  &[data-type2="Insecte"]  { --t2:#a6b91a; }
+  &[data-type2="Fée"]      { --t2:#d685ad; }
+  &[data-type2="Dragon"]   { --t2:#6f35fc; }
+  &[data-type2="Électrik"] { --t2:#f7d02c; }
+  &[data-type2="Normal"]   { --t2:#a8a77a; }
+
+  .panel.primary {
+    border-radius: 14px;
+    background: color-mix(in oklab, var(--t1) 88%, white);
+    border: 2px solid color-mix(in oklab, var(--t1) 55%, black);
+    padding: .75rem;
+    display: grid;
+    gap: .75rem;
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,.6),
+      0 2px 6px rgba(0,0,0,.06);
+  }
+
+  @supports (color: color-mix(in oklab, white, black)) {
+    --left-card-bg:     color-mix(in oklab, var(--t1) 14%, #ffffff);
+    --left-card-border: color-mix(in oklab, var(--t1) 45%, #000000);
+    --left-card-shadow: 0 6px 16px color-mix(in oklab, var(--t1) 18%, transparent);
+    --left-gloss-top:   color-mix(in oklab, #ffffff 65%, var(--t1));
+  }
+  .quickfacts, .types-box, .sprite-box, .artwork {
+    background: #fff;
+    border: 1px solid rgba(0,0,0,.08);
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,.06);
+  }
+  @supports (color: color-mix(in oklab, white, black)) {
+    .quickfacts, .types-box, .sprite-box {
+      background: linear-gradient(180deg, var(--left-gloss-top), var(--left-card-bg));
+      border: 1px solid var(--left-card-border);
+      box-shadow: var(--left-card-shadow);
+      padding: .6rem .75rem;
+    }
+    .dl-grid dt {
+      color: color-mix(in oklab, var(--t1) 55%, #1a1a1a);
+      font-weight: 900;
+    }
+    .dl-grid dd {
+      background: #fff;
+      border: 1px solid color-mix(in oklab, var(--t1) 20%, #e3e6ea);
+      border-radius: .35rem;
+      padding: .15rem .4rem;
+      width: fit-content;
+    }
+  }
 }
 
 .artwork {
   box-sizing: border-box;
   width: 100%;
-  max-width: 320px;
   border-radius: 14px;
   background: linear-gradient(180deg, #9ef8ff 0%, #6ddde4 80%);
   border: 2.5px solid #b5b7ba;
   box-shadow:
     inset 0 2px 4px rgba(0, 0, 0, 0.25),
     inset 0 -2px 6px rgba(255, 255, 255, 0.15),
-    0 3px 8px rgba(0, 0, 0, 0.15);
+    0 3px 8px rgba(0,0,0,0.15);
   position: relative;
   overflow: hidden;
-  animation: screenOn 0.6s ease-out;
+  padding: 8px;
+  margin: 0;
+  animation: screenOn .6s ease-out;
 
   &::before {
     content: "";
     position: absolute;
     inset: 0;
     border-radius: inherit;
-    background: linear-gradient(
-      120deg,
-      rgba(255, 255, 255, 0.4) 0%,
-      rgba(255, 255, 255, 0.05) 40%,
-      transparent 60%
-    );
+    background: linear-gradient(120deg, rgba(255,255,255,.4) 0%, rgba(255,255,255,.05) 40%, transparent 60%);
     pointer-events: none;
   }
-
-  padding: 8px;
+  img { display:block; width:100%; height:auto; }
 }
 
 @keyframes screenOn {
@@ -45,49 +145,165 @@
   100% { filter: brightness(1) blur(0); }
 }
 
-.summary {
-  min-width: 0;
+.types { display:flex; flex-wrap:wrap; gap:.5rem; }
+.type-chip { padding:.25rem .6rem; border-radius:.6rem; font-weight:800; color:#fff; display:inline-block; }
+.type-chip[data-type="Feu"]       { background:#ee8130; color:#7a3600; }
+.type-chip[data-type="Eau"]       { background:#6390f0; color:#1a357f; }
+.type-chip[data-type="Plante"]    { background:#7ac74c; color:#2b530f; }
+.type-chip[data-type="Acier"]     { background:#b7b7ce; color:#43435a; }
+.type-chip[data-type="Glace"]     { background:#96d9d6; color:#2a6260; }
+.type-chip[data-type="Sol"]       { background:#e2bf65; color:#664e00; }
+.type-chip[data-type="Ténèbres"]  { background:#705746; color:#281e16; }
+.type-chip[data-type="Psy"]       { background:#f95587; color:#7a1437; }
+.type-chip[data-type="Vol"]       { background:#a98ff3; color:#3b2a84; }
+.type-chip[data-type="Roche"]     { background:#b6a136; color:#463a00; }
+.type-chip[data-type="Spectre"]   { background:#735797; color:#2a1e3a; }
+.type-chip[data-type="Combat"]    { background:#c22e28; color:#4d0f0c; }
+.type-chip[data-type="Poison"]    { background:#a33ea1; color:#3d1540; }
+.type-chip[data-type="Insecte"]   { background:#a6b91a; color:#364000; }
+.type-chip[data-type="Fée"]       { background:#d685ad; color:#682c46; }
+.type-chip[data-type="Dragon"]    { background:#6f35fc; color:#2b0f8c; }
+.type-chip[data-type="Électrik"]  { background:#f7d02c; color:#6b5300; }
+.type-chip[data-type="Normal"]    { background:#a8a77a; color:#3b3a17; }
+
+.dl-grid { display:grid; gap:.35rem; }
+.dl-grid > div { display:grid; grid-template-columns: 8rem 1fr; gap:.5rem; align-items:baseline; }
+.dl-grid dt { font-weight:800; color:#1f1f1f; }
+.dl-grid dd { margin:0; }
+.sprite-box { text-align:center; }
+.sprite { width:64px; height:64px; image-rendering: pixelated; }
+
+.detail {
+  --t1: #a8a77a;
+}
+.detail[data-type1="Feu"]      { --t1:#ee8130; }
+.detail[data-type1="Eau"]      { --t1:#6390f0; }
+.detail[data-type1="Plante"]   { --t1:#7ac74c; }
+.detail[data-type1="Acier"]    { --t1:#b7b7ce; }
+.detail[data-type1="Glace"]    { --t1:#96d9d6; }
+.detail[data-type1="Sol"]      { --t1:#e2bf65; }
+.detail[data-type1="Ténèbres"] { --t1:#705746; }
+.detail[data-type1="Psy"]      { --t1:#f95587; }
+.detail[data-type1="Vol"]      { --t1:#a98ff3; }
+.detail[data-type1="Roche"]    { --t1:#b6a136; }
+.detail[data-type1="Spectre"]  { --t1:#735797; }
+.detail[data-type1="Combat"]   { --t1:#c22e28; }
+.detail[data-type1="Poison"]   { --t1:#a33ea1; }
+.detail[data-type1="Insecte"]  { --t1:#a6b91a; }
+.detail[data-type1="Fée"]      { --t1:#d685ad; }
+.detail[data-type1="Dragon"]   { --t1:#6f35fc; }
+.detail[data-type1="Électrik"] { --t1:#f7d02c; }
+.detail[data-type1="Normal"]   { --t1:#a8a77a; }
+
+@supports (color: color-mix(in oklab, white, black)) {
+  .detail {
+    --card-bg:        color-mix(in oklab, var(--t1) 14%, #ffffff);
+    --card-border:    color-mix(in oklab, var(--t1) 45%, #000000);
+    --card-shadow:    0 8px 24px color-mix(in oklab, var(--t1) 22%, transparent);
+    --card-gloss-top: color-mix(in oklab, #ffffff 65%, var(--t1));
+  }
+  .content-card {
+    background: linear-gradient(180deg, var(--card-gloss-top), var(--card-bg));
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    padding: .75rem 1rem;
+  }
+}
+@supports not (color: color-mix(in oklab, white, black)) {
+  .content-card {
+    background: rgba(255,255,255,.9);
+    border: 1px solid rgba(0,0,0,.08);
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,.06);
+    padding: .75rem 1rem;
+  }
 }
 
-.summary h2 { margin: 0 0 .5rem; }
-.types { display: flex; gap: .5rem; margin: .5rem 0 1rem; }
-.type-chip { padding: .25rem .6rem; border-radius: .6rem; font-weight: 800; color:#fff; display:inline-block; }
-.type-chip[data-type="Feu"]{background:#ee8130}
-.type-chip[data-type="Eau"]{background:#6390f0}
-.type-chip[data-type="Plante"]{background:#7ac74c}
-.type-chip[data-type="Acier"]{background:#b7b7ce;}
-.type-chip[data-type="Glace"]{background:#96d9d6;}
-.type-chip[data-type="Sol"]{background:#e2bf65;}
-.type-chip[data-type="Ténèbres"]{background:#705746}
-.type-chip[data-type="Psy"]{background:#f95587}
-.type-chip[data-type="Vol"]{background:#a98ff3}
-.type-chip[data-type="Roche"]{background:#b6a136;}
-.type-chip[data-type="Spectre"]{background:#735797}
-.type-chip[data-type="Combat"]{background:#c22e28}
-.type-chip[data-type="Poison"]{background:#a33ea1}
-.type-chip[data-type="Insecte"]{background:#a6b91a;}
-.type-chip[data-type="Fée"]{background:#d685ad}
-.type-chip[data-type="Dragon"]{background:#6f35fc}
-.type-chip[data-type="Électrik"]{background:#f7d02c;}
-.type-chip[data-type="Normal"]{background:#a8a77a;}
+.title.content-card { padding-bottom: .5rem; }
+.title h2 { margin: 0; font-weight:900; font-size: clamp(1.25rem, 1rem + 1vw, 2rem); }
+.title h2 small { opacity:.7; margin-right:.5rem; font-weight:900; }
 
-.abilities, .meta { display: grid; gap: .25rem; margin: .75rem 0; }
-.sprite-line { margin-top: .75rem }
-.sprite { width: 64px; height: 64px; image-rendering: pixelated; }
+.abilities ul { list-style:none; margin:0; padding:0; display:grid; gap:.25rem; }
+.abilities em { font-style: normal; font-weight: 800; }
 
-.stats { margin-top: 1rem; }
-.stats h3 { margin-bottom: .5rem; }
-.stats ul { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(3,1fr); gap: .5rem .75rem; }
-.stats li { display: flex; justify-content: space-between; padding: .4rem .6rem; border:1px solid #e3e6ea; border-radius: .5rem; background:#fff; }
-.stats li b { font-variant-numeric: tabular-nums; }
+.dex-toolbar       { margin: .25rem 0 1rem; }
+.dex-toolbar.bottom{ margin: 1rem 0 0; }
+.dex-toolbar .toolbar-inner{
+  display:grid; grid-template-columns:1fr auto 1fr; align-items:center; gap:.5rem;
+  background: linear-gradient(180deg, rgba(255,255,255,.85), rgba(255,255,255,.72));
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 999px; box-shadow: 0 8px 20px rgba(0,0,0,.08);
+  padding:.4rem .75rem;
+}
+.dex-toolbar .left{justify-self:start;} .dex-toolbar .center{justify-self:center;font-weight:800;} .dex-toolbar .right{justify-self:end;}
+.dex-toolbar a { text-decoration: none; font-weight: 800; }
 
-.nav { display:flex; justify-content:space-between; align-items:center; margin-top:1rem; gap:.5rem; }
-.nav a { text-decoration:none; font-weight:800; }
-.notfound { text-align:center; padding: 2rem 0; }
+.stats.content-card { padding-top: .75rem; }
+
+.stats-list {
+  display: grid;
+  gap: .7rem;
+  margin: 0; padding: 0; list-style: none;
+}
+.stats-list li {
+  display: grid;
+  grid-template-columns: 8.5rem 3.5rem 1fr;
+  align-items: center;
+  gap: .75rem;
+}
+.stats-list .label { font-weight: 800; white-space: nowrap; }
+.stats-list .value{
+  text-align: right; min-width: 3.2rem; font-variant-numeric: tabular-nums;
+  background: #fff; border: 1px solid #ccc; border-radius: .35rem; padding: .25rem .4rem;
+  box-shadow: 0 1px 2px rgba(0,0,0,.1);
+}
+
+.bar{
+  position: relative; height: 14px; border-radius: 999px; overflow: hidden;
+  border: 1.5px solid rgba(0,0,0,.5);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.15);
+}
+
+.stats-list li.hp  .bar { background:#d9f4df; }   .bar__fill.hp  { background:#34a853; }
+.stats-list li.atk .bar { background:#ffd6d6; }   .bar__fill.atk { background:#c22e28; }
+.stats-list li.def .bar { background:#d8e6ff; }   .bar__fill.def { background:#3b82f6; }
+.stats-list li.spa .bar { background:#ffe0f2; }   .bar__fill.spa { background:#f95587; }
+.stats-list li.spd .bar { background:#e6dcff; }   .bar__fill.spd { background:#735797; }
+.stats-list li.spe .bar { background:#ffe9c7; }   .bar__fill.spe { background:#f59e0b; }
+
+.bar__fill{
+  position:absolute; inset:0 auto 0 0; width:0%;
+  border-right:1px solid rgba(0,0,0,.15);
+  transition: width .4s ease-out;
+}
+
+.nav-chip{
+  display:inline-flex; align-items:center; gap:.45rem;
+  padding:.25rem .55rem; border-radius: 999px;
+  background: #fff; border:1px solid rgba(0,0,0,.12);
+  box-shadow: 0 1px 0 rgba(255,255,255,.6), inset 0 -1px 0 rgba(0,0,0,.06);
+  text-decoration:none; color: inherit; font-weight: 800;
+}
+
+.nav-chip .mini-sprite{
+  width: 28px; height: 28px; image-rendering: pixelated; display:block;
+}
+
+.nav-chip .num{ opacity:.7; font-weight:900; }
+.nav-chip .name{ max-width: 11ch; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+
+@media (max-width: 900px) {
+  .detail .layout { grid-template-columns: 320px 1fr; }
+  .stats-list li  { grid-template-columns: 7.5rem 3.2rem 1fr; }
+}
 
 @media (max-width: 720px) {
-  .detail .top {
-    grid-template-columns: 1fr;
-  }
-  .artwork { margin: 0 auto; }
+  .detail .layout { grid-template-columns: 1fr; }
+  .artwork { max-width: 380px; margin: 0 auto; }
+  .dl-grid > div { grid-template-columns: 7rem 1fr; }
+  .stats-list li { grid-template-columns: 7rem 3rem 1fr; }
+  .dex-toolbar .toolbar-inner { border-radius: 12px; }
+  .nav-chip .name{ display:none; }
 }
+

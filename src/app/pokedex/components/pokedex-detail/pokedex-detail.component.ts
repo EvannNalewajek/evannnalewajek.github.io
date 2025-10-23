@@ -1,4 +1,4 @@
-import { Component, OnInit, inject, computed } from '@angular/core';
+import { Component, OnInit, inject, computed, Signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute, RouterLink, Router } from '@angular/router';
 import { PokedexService } from '../../pokedex.service';
@@ -18,20 +18,26 @@ export class PokedexDetailComponent implements OnInit {
   private router = inject(Router);
   private pokedex = inject(PokedexService);
 
-  // id réactif depuis l'URL (réagit aux navigations prev/next)
   private id = toSignal(
     this.route.paramMap.pipe(map(pm => Number(pm.get('id')))),
     { initialValue: NaN }
   );
 
-  // Pokémon courant
   pokemon = computed<Pokemon | null>(() => this.pokedex.getById(this.id()));
 
-  // images
+  prevMon: Signal<Pokemon | null> = computed(() => {
+    const id = this.prevId();
+    return id >= 1 ? this.pokedex.getById(id) : null;
+  });
+
+  nextMon: Signal<Pokemon | null> = computed(() => {
+    const id = this.nextId();
+    return id <= this.maxId() ? this.pokedex.getById(id) : null;
+  });
+
   imgSprite = () => this.pokedex.normalizeImg(this.pokemon()!.images.sprite);
   imgArtwork = () => this.pokedex.normalizeImg(this.pokemon()!.images.artwork);
 
-  // navigation
   maxId = () => this.pokedex.maxId();
   prevId = () => Math.max(1, (this.id() || 1) - 1);
   nextId = () => (this.id() || 1) + 1;
