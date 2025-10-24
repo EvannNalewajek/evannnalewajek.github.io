@@ -7,11 +7,13 @@ import { Enigme2Component } from './pages/enigme/enigme2/enigme2';
 import { GuildeGameComponent } from './idle-game/components/game-main/game-main.component';
 import { PokedexListComponent } from './pokedex/components/pokedex-list/pokedex-list.component';
 import { PokedexDetailComponent } from './pokedex/components/pokedex-detail/pokedex-detail.component';
+import { TypePageComponent } from './pokedex/components/pokedex-type/pokedex-type.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent, title: 'Accueil' },
     { path: 'pokedex', component: PokedexListComponent, title: 'Pokédex' },
     { path: 'pokedex/:id', component: PokedexDetailComponent, title: 'Pokédex — Détail' },
+    { path: 'types/:slug', component: TypePageComponent, title: 'Pokédex - Type' },
     { path: 'enigmemain',
         component: EnigmeComponent,
         title: 'Énigme Main',

@@ -83,13 +83,19 @@
                             </div>
 
                             <div class="types-box">
-                            <h3>Type</h3>
-                            <div class="types">
-                                @for (t of pokemon()!.types; track t) {
-                                <span class="type-chip" [attr.data-type]="t">{{ t }}</span>
-                                }
+                                <h3>Type</h3>
+                                <div class="types">
+                                    @for (t of pokemon()!.types; track t) {
+                                    <a class="type-chip"
+                                        [attr.data-type]="t"
+                                        [routerLink]="['/types', (t | typeSlug)]"
+                                        title="Voir le type {{ t }}">
+                                        {{ t }}
+                                    </a>
+                                    }
+                                </div>
                             </div>
-                            </div>
+
 
                             <div class="sprite-box">
                             <img class="sprite" [src]="imgSprite()" [alt]="pokemon()!.name + ' sprite'" loading="lazy" />

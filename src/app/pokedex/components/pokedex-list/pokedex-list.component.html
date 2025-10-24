@@ -11,65 +11,72 @@
     </div>
 
     <div class="dex-body">
-      <table class="pokedex-table" *ngIf="list()?.length; else loading">
-        <thead>
-          <tr>
-            <th class="col-num">Dex #</th>
-            <th class="col-pokemon group-end" colspan="2">Pokémon</th>
-            <th class="col-type-head" colspan="2">Type</th>
-          </tr>
-        </thead>
 
-        <tbody>
-          <tr *ngFor="let p of list()">
-            <td class="col-num" data-label="Dex #">#{{ p.id | number:'2.0-0' }}</td>
+      @if (list(); as rows) {
+        <table class="pokedex-table">
+          <thead>
+            <tr>
+              <th class="col-num">Dex #</th>
+              <th class="col-pokemon group-end" colspan="2">Pokémon</th>
+              <th class="col-type-head" colspan="2">Type</th>
+            </tr>
+          </thead>
 
-            <td class="col-sprite" data-label="Sprite">
-              <a [routerLink]="['/pokedex', p.id]" class="sprite-link" title="Voir {{p.name}}">
-                <img [src]="p.images.sprite" [alt]="p.name" loading="lazy" />
-              </a>
-            </td>
+          <tbody>
+            @for (p of rows; track p.id) {
+              <tr>
+                <td class="col-num" data-label="Dex #">#{{ p.id | number:'2.0-0' }}</td>
 
-            <td class="col-name group-end" data-label="Nom">
-              <a [routerLink]="['/pokedex', p.id]" class="name-link">{{ p.name }}</a>
-            </td>
-
-            <ng-container *ngIf="p.types.length === 1; else dualTypes">
-                <td class="col-type group-end"
-                data-label="Type"
-                [attr.data-type]="p.types[0]"
-                colspan="2">
-                    <span class="type-badge" [attr.data-type]="p.types[0]">
-                        {{ p.types[0] }}
-                    </span>
-                </td>
-            </ng-container>
-
-            <ng-template #dualTypes>
-                <td class="col-type"
-                    data-label="Type 1"
-                    [attr.data-type]="p.types[0]">
-                    <span class="type-badge" [attr.data-type]="p.types[0]">
-                        {{ p.types[0] }}
-                    </span>
+                <td class="col-sprite" data-label="Sprite">
+                  <a [routerLink]="['/pokedex', p.id]" class="sprite-link" title="Voir {{p.name}}">
+                    <img [src]="p.images.sprite" [alt]="p.name" loading="lazy" />
+                  </a>
                 </td>
 
-                <td class="col-type group-end"
-                    data-label="Type 2"
-                    [attr.data-type]="p.types[1]">
-                    <span class="type-badge" [attr.data-type]="p.types[1]">
-                        {{ p.types[1] }}
-                    </span>
+                <td class="col-name group-end" data-label="Nom">
+                  <a [routerLink]="['/pokedex', p.id]" class="name-link">{{ p.name }}</a>
                 </td>
-            </ng-template>
 
-          </tr>
-        </tbody>
-      </table>
+                @if (p.types.length === 1) {
+                  <td class="col-type group-end"
+                      data-label="Type"
+                      [attr.data-type]="p.types[0]"
+                      colspan="2">
+                    <a class="type-badge"
+                       [attr.data-type]="p.types[0]"
+                       [routerLink]="['/types', (p.types[0] | typeSlug)]">
+                      {{ p.types[0] }}
+                    </a>
+                  </td>
+                } @else {
+                  <td class="col-type"
+                      data-label="Type 1"
+                      [attr.data-type]="p.types[0]">
+                    <a class="type-badge"
+                       [attr.data-type]="p.types[0]"
+                       [routerLink]="['/types', (p.types[0] | typeSlug)]">
+                      {{ p.types[0] }}
+                    </a>
+                  </td>
 
-      <ng-template #loading>
+                  <td class="col-type group-end"
+                      data-label="Type 2"
+                      [attr.data-type]="p.types[1]">
+                    <a class="type-badge"
+                       [attr.data-type]="p.types[1]"
+                       [routerLink]="['/types', (p.types[1] | typeSlug)]">
+                      {{ p.types[1] }}
+                    </a>
+                  </td>
+                }
+              </tr>
+            }
+          </tbody>
+        </table>
+      } @else {
         <p>Chargement du Pokédex…</p>
-      </ng-template>
+      }
+
     </div>
   </div>
 </div>

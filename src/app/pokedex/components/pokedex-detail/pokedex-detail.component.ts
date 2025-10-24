@@ -2,6 +2,7 @@ import { Component, OnInit, inject, computed, Signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute, RouterLink, Router } from '@angular/router';
 import { PokedexService } from '../../pokedex.service';
+import { TypeSlugPipe } from '../../pipes/type-slug.pipe';
 import { Pokemon } from '../../pokemon.model';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { map } from 'rxjs/operators';
@@ -9,7 +10,7 @@ import { map } from 'rxjs/operators';
 @Component({
   selector: 'app-pokedex-detail',
   standalone: true,
-  imports: [CommonModule, RouterLink],
+  imports: [CommonModule, RouterLink, TypeSlugPipe],
   templateUrl: "./pokedex-detail.component.html",
   styleUrls: ["./pokedex-detail.component.scss"]
 })

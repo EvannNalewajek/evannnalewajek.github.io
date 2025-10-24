@@ -1,0 +1,149 @@
+<div class="dex-scene">
+  <div class="dex-card">
+
+    @if (current(); as cur) {
+      <div class="dex-header">
+        <div class="dex-button" aria-hidden="true"></div>
+        <div class="dex-lights" aria-hidden="true">
+          <span class="led led-red"></span>
+          <span class="led led-yellow"></span>
+          <span class="led led-green"></span>
+        </div>
+        <h1 [style.color]="cur.color">{{ cur.name }}</h1>
+      </div>
+
+      <div class="dex-body">
+        <div class="types-grid">
+          @for (t of allTypes(); track t.slug) {
+            <a class="type-chip"
+               [routerLink]="['/types', t.slug]"
+               [class.active]="t.slug === cur.slug"
+               [style.--type-color]="t.color">
+              {{ t.name }}
+            </a>
+          }
+        </div>
+
+        <section class="eff">
+          <h2>Table des affinités</h2>
+
+          <div class="eff-row">
+            <h3>En défense (cible = {{ cur.name }})</h3>
+
+            <div class="bucket">
+              <div class="bucket-title">Résiste ×0.5</div>
+              <div class="chips">
+                @for (x of defense()?.half; track x) {
+                  <span class="chip" [ngStyle]="styleFor(x)">{{ x }}</span>
+                }
+              </div>
+            </div>
+
+            <div class="bucket">
+              <div class="bucket-title">Faible ×2</div>
+              <div class="chips">
+                @for (x of defense()?.dbl; track x) {
+                  <span class="chip" [ngStyle]="styleFor(x)">{{ x }}</span>
+                }
+              </div>
+            </div>
+
+            @if (defense()?.zero?.length) {
+              <div class="bucket">
+                <div class="bucket-title">Immunisé ×0</div>
+                <div class="chips">
+                  @for (x of defense()?.zero; track x) {
+                    <span class="chip" [ngStyle]="styleFor(x)">{{ x }}</span>
+                  }
+                </div>
+              </div>
+            }
+          </div>
+
+          <div class="eff-row">
+            <h3>En attaque ({{ cur.name }} → cible)</h3>
+
+            <div class="bucket">
+              <div class="bucket-title">Efficace ×2</div>
+              <div class="chips">
+                @for (x of attack()?.dbl; track x) {
+                  <span class="chip" [ngStyle]="styleFor(x)">{{ x }}</span>
+                }
+              </div>
+            </div>
+
+            <div class="bucket">
+              <div class="bucket-title">Peu efficace ×0.5</div>
+              <div class="chips">
+                @for (x of attack()?.half; track x) {
+                  <span class="chip" [ngStyle]="styleFor(x)">{{ x }}</span>
+                }
+              </div>
+            </div>
+
+            @if (attack()?.zero?.length) {
+              <div class="bucket">
+                <div class="bucket-title">Sans effet ×0</div>
+                <div class="chips">
+                  @for (x of attack()?.zero; track x) {
+                    <span class="chip" [ngStyle]="styleFor(x)">{{ x }}</span>
+                  }
+                </div>
+              </div>
+            }
+          </div>
+        </section>
+
+        <section class="caracs">
+          <h2>Caractéristiques</h2>
+
+          @if (cur.characteristics.length) {
+            <ul>
+              @for (c of cur.characteristics; track $index) {
+                <li>{{ c }}</li>
+              }
+            </ul>
+          } @else {
+            <p>Aucune caractéristique renseignée pour l'instant.</p>
+          }
+        </section>
+
+        <section class="of-type">
+          <h2>Pokémon de type {{ cur.name }}</h2>
+
+          @if (pokemonsOfType(); as list) {
+            @if (list.length) {
+              <table class="pokedex-table">
+                <thead>
+                  <tr>
+                    <th style="width:5rem">#</th>
+                    <th>Nom</th>
+                    <th style="width:18rem">Type</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  @for (p of list; track p.id) {
+                    <tr>
+                      <td>#{{ p.id.toString().padStart(3,'0') }}</td>
+                      <td><a [routerLink]="['/pokedex', p.id]">{{ p.name }}</a></td>
+                      <td>
+                        @for (t of typesOf(p); track t) {
+                          <span class="chip" [ngStyle]="styleFor(t)">{{ t }}</span>
+                        }
+                      </td>
+                    </tr>
+                  }
+                </tbody>
+              </table>
+            } @else {
+              <p>Aucun Pokémon de ce type pour l'instant.</p>
+            }
+          }
+        </section>
+      </div>
+    } @else {
+      <div class="dex-body"><p>Chargement…</p></div>
+    }
+
+  </div>
+</div>

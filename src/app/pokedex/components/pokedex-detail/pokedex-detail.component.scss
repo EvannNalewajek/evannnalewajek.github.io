@@ -146,7 +146,31 @@
 }
 
 .types { display:flex; flex-wrap:wrap; gap:.5rem; }
-.type-chip { padding:.25rem .6rem; border-radius:.6rem; font-weight:800; color:#fff; display:inline-block; }
+
+.type-chip {
+  display: inline-block;
+  padding: .35rem .7rem;
+  margin: 0 .25rem .25rem 0;
+  border-radius: 999px;
+  font-weight: 700;
+  text-transform: capitalize;
+  cursor: pointer;
+  text-decoration: none !important;
+  color: inherit;
+  background-color: var(--type-bg, #ccc);
+  border: 2px solid rgba(0, 0, 0, .15);
+  transition: transform .08s ease, box-shadow .08s ease;
+  user-select: none;
+}
+
+.type-chip:hover,
+.type-chip:focus {
+  transform: scale(1.05);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.4);
+  text-decoration: none !important;
+  outline: none;
+}
+
 .type-chip[data-type="Feu"]       { background:#ee8130; color:#7a3600; }
 .type-chip[data-type="Eau"]       { background:#6390f0; color:#1a357f; }
 .type-chip[data-type="Plante"]    { background:#7ac74c; color:#2b530f; }

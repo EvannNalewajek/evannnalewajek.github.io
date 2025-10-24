@@ -2,12 +2,14 @@ import { Component, OnInit, computed, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { PokedexService } from '../../pokedex.service';
+import { PokemonType } from '../../pokemon.model';
 import { Pokemon } from '../../pokemon.model';
+import { TypeSlugPipe } from '../../pipes/type-slug.pipe';
 
 @Component({
   selector: 'app-pokedex-list',
   standalone: true,
-  imports: [CommonModule, RouterLink],
+  imports: [CommonModule, RouterLink, TypeSlugPipe],
   templateUrl: "./pokedex-list.component.html",
   styleUrl : "./pokedex-list.component.scss",
 })
@@ -19,4 +21,8 @@ export class PokedexListComponent implements OnInit {
   async ngOnInit() {
     await this.pokedex.ensureLoaded();
   }
+
+  typesOf(p: Pokemon): PokemonType[] {
+  return [...p.types];
+}
 }
