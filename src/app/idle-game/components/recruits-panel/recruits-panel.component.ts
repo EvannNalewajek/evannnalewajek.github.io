@@ -21,7 +21,6 @@ import { GameFacadeService } from '../../core/game-facade.service';
 
       <div class="dex-body">
         <div class="toolbar">
-          <button (click)="debugPlus60()">⏩ +60s (debug)</button>
           <button
             (click)="recruitOne()"
             [disabled]="!canRecruit()"
