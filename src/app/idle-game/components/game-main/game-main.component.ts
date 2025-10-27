@@ -3,12 +3,13 @@ import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { GameFacadeService } from '../../core/game-facade.service';
 import { GuildComponent } from '../guild/guild.component';
 import { ForestComponent } from '../forest/forest.component';
+import { RecruitListComponent } from '../recruits-panel/recruits-panel.component';
 import { Router } from '@angular/router';
 
 @Component({
     selector: 'app-guilde-game',
     standalone: true,
-    imports: [CommonModule, GuildComponent, ForestComponent],
+    imports: [CommonModule, GuildComponent, ForestComponent, RecruitListComponent],
     templateUrl: './game-main.component.html',
     styleUrls: ['./game-main.component.scss'],
 })
@@ -33,10 +34,24 @@ export class GuildeGameComponent implements OnInit, OnDestroy {
     }
 
     isGuild = computed(() => this.game.location() === 'guild');
+    isRecruit = computed(() => this.game.location() === 'recruit');
     isForest = computed(() => this.game.location() === 'forest');
 
-    go(tab: 'guild'|'forest') {
-    tab === 'guild' ? this.game.leaveForest() : this.game.enterForest();
+    go(tab: 'guild'|'recruit'|'forest') {
+        const current = this.game.location();
+        if (current === tab) return;
+
+        switch (current) {
+            case 'guild': this.game.leaveGuild(); break;
+            case 'forest': this.game.leaveForest(); break;
+            case 'recruit': this.game.leaveRecruit(); break;
+        }
+
+        switch (tab) {
+            case 'guild': this.game.enterGuild(); break;
+            case 'forest': this.game.enterForest(); break;
+            case 'recruit': this.game.enterRecruit(); break;
+        }
     }
 
     @HostListener('document:keydown.escape')
@@ -72,6 +87,7 @@ export class GuildeGameComponent implements OnInit, OnDestroy {
         this.game.location.set('guild');
         this.game.currentEnemy.set(null);
         this.game.guildLevel.set(1);
+        this.game.recruits.set([]);
 
         this.toggleSettings();
         alert('Progression réinitialisée ✅');

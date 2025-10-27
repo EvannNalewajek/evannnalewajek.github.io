@@ -16,7 +16,6 @@ export class EngineService {
     private running = false;
 
     private autosaveHandle: any = null;
-    private boundOnVisibility = this.onVisibilityChange.bind(this);
 
     constructor(
         private combat: CombatService,
@@ -32,25 +31,33 @@ export class EngineService {
 
         // Boucle principale
         const loop = (ts: number) => {
-        if (!this.running) return;
+            if (!this.running) return;
 
-        if (!this.lastTs) this.lastTs = ts;
-        let delta = (ts - this.lastTs) / 1000;
-        this.lastTs = ts;
+            if (!this.lastTs) this.lastTs = ts;
+            let delta = (ts - this.lastTs) / 1000;
+            this.lastTs = ts;
 
-        if (delta > DELTA_CAP_SECONDS) delta = DELTA_CAP_SECONDS;
+            if (delta > DELTA_CAP_SECONDS) delta = DELTA_CAP_SECONDS;
 
-        this.combat.tick(delta);
+            let debugTimeOffset = 0;
 
-        this.rafId = requestAnimationFrame(loop);
+            function currentGameTime(): number {
+                return Math.floor(Date.now() / 1000) + debugTimeOffset;
+            }
+            function debugAdvanceOneMinute() {
+                debugTimeOffset += 60;
+            }
+
+            this.combat.tick(delta);
+
+            this.rafId = requestAnimationFrame(loop);
         };
 
         this.rafId = requestAnimationFrame(loop);
-        document.addEventListener('visibilitychange', this.boundOnVisibility, false);
 
         // Autosave optionnel
         if (AUTOSAVE_MS > 0 && !this.autosaveHandle) {
-        this.autosaveHandle = setInterval(() => this.persist.saveFrom(this.store), AUTOSAVE_MS);
+            this.autosaveHandle = setInterval(() => this.persist.saveFrom(this.store), AUTOSAVE_MS);
         }
     }
 
@@ -65,41 +72,9 @@ export class EngineService {
         }
         this.lastTs = 0;
 
-        document.removeEventListener('visibilitychange', this.boundOnVisibility, false);
-
         if (this.autosaveHandle) {
         clearInterval(this.autosaveHandle);
         this.autosaveHandle = null;
-        }
-    }
-
-    // -----------------------
-    // Internals
-    // -----------------------
-
-    private onVisibilityChange(): void {
-        if (document.hidden) {
-            if (this.rafId !== null) {
-                cancelAnimationFrame(this.rafId);
-                this.rafId = null;
-            }
-            this.lastTs = 0;
-            } else {
-            if (this.running && this.rafId === null) {
-                this.rafId = requestAnimationFrame((ts) => {
-                this.lastTs = 0;
-                const loop = (t: number) => {
-                    if (!this.running) return;
-                    if (!this.lastTs) this.lastTs = t;
-                    let delta = (t - this.lastTs) / 1000;
-                    this.lastTs = t;
-                    if (delta > DELTA_CAP_SECONDS) delta = DELTA_CAP_SECONDS;
-                    this.combat.tick(delta);
-                    this.rafId = requestAnimationFrame(loop);
-                };
-                loop(ts);
-                });
-            }
         }
     }
 }

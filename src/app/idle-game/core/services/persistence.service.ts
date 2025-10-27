@@ -1,9 +1,7 @@
 import { Injectable, inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { GameStore } from '../state/game.store';
-import { EnemyInstance, Player, QuestInstance } from '../../models';
-import { QuestService } from './quest.service';
-import { EnemyService } from './enemy.service';
+import { EnemyInstance, Player, QuestInstance, Recruit } from '../../models';
 
 const STORAGE_KEY = 'idle-game-save';
 const SAVE_VERSION = 2;
@@ -18,6 +16,7 @@ type Save = {
     guildLevel: number;
     questOffers: QuestInstance[];
     acceptedQuests: QuestInstance[];
+    recruits: Recruit[], 
 };
 
 type AnySave = Partial<Save> & Record<string, any>;
@@ -43,6 +42,7 @@ export class PersistenceService {
                 guildLevel: store.guildLevel(),
                 questOffers: store.questOffers(),
                 acceptedQuests: store.acceptedQuests(),
+                recruits: store.recruits(), 
             };
             localStorage.setItem(STORAGE_KEY, JSON.stringify(blob));
         } catch (e) {
@@ -103,6 +103,7 @@ export class PersistenceService {
 
             store.questOffers.set(Array.isArray(migrated.questOffers) ? migrated.questOffers : []);
             store.acceptedQuests.set(Array.isArray(migrated.acceptedQuests) ? migrated.acceptedQuests : []);
+            store.recruits.set(Array.isArray((migrated as any).recruits) ? (migrated as any).recruits : []);
         } catch (e) {
             console.warn('[Persistence] Failed to load game:', e);
         }
@@ -140,6 +141,7 @@ export class PersistenceService {
                 guildLevel: typeof src.guildLevel === 'number' ? src.guildLevel : 1,
                 questOffers: Array.isArray(src.questOffers) ? src.questOffers as QuestInstance[] : [],
                 acceptedQuests: Array.isArray(src.acceptedQuests) ? src.acceptedQuests as QuestInstance[] : [],
+                recruits: src.recruits as Recruit[],
             };
         }
 
@@ -154,6 +156,7 @@ export class PersistenceService {
             guildLevel: typeof src.guildLevel === 'number' ? src.guildLevel : 1,
             questOffers: Array.isArray(src.questOffers) ? src.questOffers as QuestInstance[] : [],
             acceptedQuests: Array.isArray(src.acceptedQuests) ? src.acceptedQuests as QuestInstance[] : [],
+            recruits: src.recruits as Recruit[],
         };
     }
 }

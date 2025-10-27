@@ -1,5 +1,5 @@
 import { Injectable, signal, computed } from '@angular/core';
-import { LocationKey, EnemyInstance, Player, QuestInstance } from '../../models';
+import { LocationKey, EnemyInstance, Player, QuestInstance, Recruit } from '../../models';
 
 /**
  * GameStore – Contains every signals and computed
@@ -38,6 +38,9 @@ export class GameStore {
         unspentStatPoints: 0,
     });
 
+    // List all all recruited guild members
+    readonly recruits = signal<Recruit[]>([]);
+
     // Current guild level
     readonly guildLevel = signal<number>(1);
 
@@ -73,8 +76,12 @@ export class GameStore {
     // Unlock the quest board when guild is at level 2
     readonly hasQuestBoard = computed(() => this.guildLevel() >= 2);
 
-    // Unlock the recruit slot when guild is at level 5
-    readonly recruitSlots = computed(() => (this.guildLevel() >= 5 ? 1 : 0));
+    // Unlock the recruit slot when guild is at level 3
+    readonly recruitSlots = computed(() => {
+        const lvl = this.guildLevel();
+        if (lvl < 3) return 0;
+        return 1 + Math.floor((lvl - 3) / 3);
+    });
 
     /**
      * Max number of accepted quests possible :

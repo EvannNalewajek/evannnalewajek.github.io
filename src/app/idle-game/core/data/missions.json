@@ -1,0 +1,6 @@
+[
+  { "id": "forest-scout", "title": "Éclaireur de la Forêt", "difficulty": 1, "baseDuration": 300, "goldReward": 6 },
+  { "id": "boar-drive",  "title": "Repousser les Sangliers", "difficulty": 2, "baseDuration": 420, "goldReward": 10 },
+  { "id": "night-watch", "title": "Veille Nocturne", "difficulty": 3, "baseDuration": 600, "goldReward": 16 },
+  { "id": "deep-woods",  "title": "Exploration du Bois Profond", "difficulty": 4, "baseDuration": 900, "goldReward": 28 }
+]

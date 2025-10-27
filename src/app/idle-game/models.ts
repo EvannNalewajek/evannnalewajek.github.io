@@ -1,4 +1,8 @@
-export type LocationKey = 'guild'| 'forest';
+export type LocationKey = 'guild' | 'recruit' | 'forest';
+
+export type RecruitState = 'idle' | 'on-mission' | 'training' | 'resting';
+
+export type TrainingType = 'strength' | 'resilience' | 'vitality' | 'aura' | 'mental';
 
 export interface Stats {
     strength: number; // Affects damage dealt
@@ -31,6 +35,20 @@ export interface EnemyInstance extends EnemyTemplate {
     currentHealth: number; // Current health of the enemy instance
 }
 
+export interface Recruit {
+  id: string;
+  name: string;
+  stats: Stats;
+  hp: number;
+  det: number;
+  detMax: number;
+  status: RecruitState;
+
+  mission?: ActiveMission;
+  training?: ActiveTraining;
+  rest?: ActiveRest;
+}
+
 export interface Guild {
     level: number;
 }
@@ -51,9 +69,36 @@ export interface QuestInstance extends QuestTemplate {
     completed: boolean;
 }
 
-export interface Recruit {
-    id: string;
-    name: string;
-    level: number;
-    stats: Stats;
+export interface MissionTemplate {
+  id: string;
+  title: string;
+  difficulty: number;
+  baseDuration: number;
+  goldReward: number;
+}
+
+export interface ActiveMission {
+  templateId: string;
+  title: string;
+  startedAt: number;
+  eta: number;
+  progress: number;
+  successChance: number;
+  preRolled: number;
+  difficulty: number;
+  goldReward: number
+}
+
+export interface ActiveTraining {
+  type: TrainingType;
+  startedAt: number;
+  eta: number;
+  greatPerformance: boolean;
+  injury: boolean;
+}
+
+export interface ActiveRest {
+  startedAt: number;
+  eta: number;
+  missingAtStart: number;
 }

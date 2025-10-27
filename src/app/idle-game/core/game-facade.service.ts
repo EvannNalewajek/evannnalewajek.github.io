@@ -28,6 +28,7 @@ export class GameFacadeService {
     get location()           { return this.store.location; }
     get player()             { return this.store.player; }
     get guildLevel()         { return this.store.guildLevel; }
+    get recruits()           { return this.store.recruits; }
     get currentEnemy()       { return this.store.currentEnemy; }
     get enemyIndex()         { return this.store.enemyIndex; }
 
@@ -80,6 +81,19 @@ export class GameFacadeService {
     }
 
     // ========= Navigation / Actions =========
+
+    enterGuild(): void {
+        if (this.location() === 'guild') return;
+        this.location.set('guild');
+        this.persist.saveFrom(this.store);
+    }
+
+    leaveGuild(): void {
+        if (this.location() === 'guild') return;
+        this.location.set('guild');
+        this.persist.saveFrom(this.store);
+    }
+
     enterForest(): void {
         if (this.location() === 'forest') return;
         this.location.set('forest');
@@ -93,6 +107,18 @@ export class GameFacadeService {
         if (this.location() === 'guild') return;
         this.location.set('guild');
         this.enemies.clearCurrent();
+        this.persist.saveFrom(this.store);
+    }
+
+    enterRecruit(): void {
+        if (this.location() === 'recruit') return;
+        this.location.set('recruit');
+        this.persist.saveFrom(this.store);
+    }
+
+    leaveRecruit(): void {
+        if (this.location() === 'recruit') return;
+        this.location.set('recruit');
         this.persist.saveFrom(this.store);
     }
 
