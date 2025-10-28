@@ -30,5 +30,53 @@
       "artwork": "pokedex/img/002_artwork.png"
     },
     "baseStats": { "hp": 50, "atk": 60, "def": 55, "spa": 65, "spd": 60, "spe": 50 }
+  },
+  {
+    "id": 7,
+    "name": "Solotl",
+    "types": ["Eau"],
+    "abilities": ["Torrent"],
+    "hiddenAbility": "Régé-Force",
+    "height_m": 0.3,
+    "weight_kg": 4.3,
+    "genderRatio": { "male": 87.5, "female": 12.5 },
+    "captureRate": 45,
+    "images": {
+      "sprite": "pokedex/img/007_sprite.png",
+      "artwork": "pokedex/img/007_artwork.png"
+    },
+    "baseStats": { "hp": 50, "atk": 42, "def": 55, "spa": 63, "spd": 55, "spe": 45 }
+  },
+  {
+    "id": 8,
+    "name": "Siltotl",
+    "types": ["Eau", "Sol"],
+    "abilities": ["Torrent"],
+    "hiddenAbility": "Régé-Force",
+    "height_m": 0.9,
+    "weight_kg": 19.1,
+    "genderRatio": { "male": 87.5, "female": 12.5 },
+    "captureRate": 45,
+    "images": {
+      "sprite": "pokedex/img/007_sprite.png",
+      "artwork": "pokedex/img/007_artwork.png"
+    },
+    "baseStats": { "hp": 70, "atk": 55, "def": 67, "spa": 85, "spd": 68, "spe": 65 }
+  },
+  {
+    "id": 9,
+    "name": "Aridotl",
+    "types": ["Eau", "Sol"],
+    "abilities": ["Torrent"],
+    "hiddenAbility": "Régé-Force",
+    "height_m": 1.5,
+    "weight_kg": 54.8,
+    "genderRatio": { "male": 87.5, "female": 12.5 },
+    "captureRate": 45,
+    "images": {
+      "sprite": "pokedex/img/007_sprite.png",
+      "artwork": "pokedex/img/007_artwork.png"
+    },
+    "baseStats": { "hp": 83, "atk": 65, "def": 85, "spa": 115, "spd": 80, "spe": 102 }
   }
 ]
