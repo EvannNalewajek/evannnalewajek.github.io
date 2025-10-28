@@ -163,35 +163,39 @@
   },
   {
     "id": 10,
-    "name": "Poke Route 1 de merde 1",
+    "name": "Scavalin",
     "types": ["Normal"],
-    "abilities": [""],
-    "hiddenAbility": "",
-    "height_m": 1.5,
-    "weight_kg": 54.8,
+    "catégorie": "Récupérateur",
+    "abilities": ["Ramassage", "Pickpocket"],
+    "hiddenAbility": "Armurouillée",
+    "height_m": 0.4,
+    "weight_kg": 7.5,
     "genderRatio": { "male": 87.5, "female": 12.5 },
     "captureRate": 45,
     "images": {
       "sprite": "pokedex/img/001_sprite.png",
       "artwork": "pokedex/img/001_artwork.png"
     },
-    "baseStats": { "hp": 83, "atk": 65, "def": 85, "spa": 115, "spd": 80, "spe": 102 }
+    "baseStats": { "hp": 45, "atk": 55, "def": 50, "spa": 30, "spd": 40, "spe": 70 },
+    "description": "Il collectionne les morceaux de métal qu'il trouve dans les ruines. Il s'en sert pour se protéger, mais aussi pour impressionner ses congénères."
   },
   {
     "id": 11,
-    "name": "Poke Route 1 de merde 2",
-    "types": ["Normal"],
-    "abilities": [""],
-    "hiddenAbility": "",
-    "height_m": 1.5,
-    "weight_kg": 54.8,
-    "genderRatio": { "male": 87.5, "female": 12.5 },
+    "name": "Feraccoon",
+    "types": ["Normal", "Acier"],
+    "catégorie": "Récupérateur",
+    "abilities": ["Ramassage", "Pickpocket"],
+    "hiddenAbility": "Armurouillée",
+    "height_m": 0.8,
+    "weight_kg": 25.0,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 45,
     "images": {
       "sprite": "pokedex/img/001_sprite.png",
       "artwork": "pokedex/img/001_artwork.png"
     },
-    "baseStats": { "hp": 83, "atk": 65, "def": 85, "spa": 115, "spd": 80, "spe": 102 }
+    "baseStats": { "hp": 70, "atk": 90, "def": 100, "spa": 45, "spd": 70, "spe": 85 },
+    "description": "Il vit dans les décharges et entrepôts abandonnés. Son intelligence lui a permis de manipuler les débris métalliques qu'il trouve pour s'en faire des outils et armures utiles, en imitant les humains."
   },
   {
     "id": 12,
@@ -201,7 +205,7 @@
     "hiddenAbility": "",
     "height_m": 1.5,
     "weight_kg": 54.8,
-    "genderRatio": { "male": 87.5, "female": 12.5 },
+    "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 45,
     "images": {
       "sprite": "pokedex/img/001_sprite.png",
