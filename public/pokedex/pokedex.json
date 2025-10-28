@@ -1,40 +1,117 @@
 [
   {
     "id": 1,
-    "name": "Flaméonix",
-    "types": ["Feu", "Acier"],
-    "abilities": ["Armumagma", "Corps Ardent"],
-    "hiddenAbility": "Torche Souterraine",
-    "height_m": 1.7,
-    "weight_kg": 62.4,
+    "name": "Manimous",
+    "types": ["Plante"],
+    "catégorie": "Pangolin feuillu",
+    "abilities": ["Engrais"],
+    "hiddenAbility": "Coque Armure",
+    "height_m": 0.4,
+    "weight_kg": 9.8,
     "genderRatio": { "male": 50, "female": 50 }, 
     "captureRate": 45,
     "images": {
       "sprite": "pokedex/img/001_sprite.png",
       "artwork": "pokedex/img/001_artwork.png"
     },
-    "baseStats": { "hp": 80, "atk": 95, "def": 90, "spa": 70, "spd": 75, "spe": 85 }
+    "baseStats": { "hp": 60, "atk": 53, "def": 64, "spa": 40, "spd": 51, "spe": 42 },
+    "description" : "Il se recroqueville souvent au moindre bruit pour se protéger. Ses écailles sont souples et couvertes de chlorophylle, capable de capter la lumière pour le nourrir."
   },
   {
     "id": 2,
-    "name": "Aqualithe",
-    "types": ["Eau"],
-    "abilities": ["Torrent"],
-    "hiddenAbility": "Glissade",
+    "name": "Florolin",
+    "types": ["Plante"],
+    "catégorie": "Pangolin feuillu",
+    "abilities": ["Engrais"],
+    "hiddenAbility": "Coque Armure",
     "height_m": 0.9,
-    "weight_kg": 12.1,
+    "weight_kg": 74.1,
+    "genderRatio": { "male": 87.5, "female": 12.5 },
+    "captureRate": 45,
+    "images": {
+      "sprite": "pokedex/img/001_sprite.png",
+      "artwork": "pokedex/img/001_artwork.png"
+    },
+    "baseStats": { "hp": 84, "atk": 77, "def": 86, "spa": 52, "spd": 61, "spe": 50 },
+    "description": "Ses écailles se sont durcies en feuilles denses et coupantes. Les botanistes admirent sa capacité à purifier les sols autour de lui, malgré sa tendance à préférer fuir les régions polluées."
+  },
+  {
+    "id": 3,
+    "name": "Ferrangolin",
+    "types": ["Plante", "Acier"],
+    "catégorie": "Bastion",
+    "abilities": ["Engrais"],
+    "hiddenAbility": "Coque Armure",
+    "height_m": 1.7,
+    "weight_kg": 155.0,
+    "genderRatio": { "male": 87.5, "female": 12.5 },
+    "captureRate": 45,
+    "images": {
+      "sprite": "pokedex/img/001_sprite.png",
+      "artwork": "pokedex/img/001_artwork.png"
+    },
+    "baseStats": { "hp": 109, "atk": 107, "def": 111, "spa": 62, "spd": 86, "spe": 55 },
+    "description": "On raconte que son métal pousse comme une plante et qu'il se régénère lentement. Il frappe le sol de sa queue pour défendre les forêts qu'il protège."
+  },
+  {
+    "id": 4,
+    "name": "Fourson",
+    "types": ["Feu", "Glace"],
+    "catégorie": "Ourson",
+    "abilities": ["Brasier"],
+    "hiddenAbility": "Téméraire",
+    "height_m": 0.5,
+    "weight_kg": 7.4,
+    "genderRatio": { "male": 50, "female": 50 }, 
+    "captureRate": 45,
+    "images": {
+      "sprite": "pokedex/img/002_sprite.png",
+      "artwork": "pokedex/img/002_artwork.png"
+    },
+    "baseStats": { "hp": 65, "atk": 58, "def": 48, "spa": 40, "spd": 49, "spe": 50 },
+    "description": "Il ne se sent en confiance que lorsqu'il est blotti contre les personnes qu'il aime. Sa fourrure dégage une chaleur douce, ce qui en fait un excellent compagnon de câlin."
+  },
+  {
+    "id": 5,
+    "name": "Banquignis",
+    "types": ["Feu", "Glace"],
+    "catégorie": "Croc de feu",
+    "abilities": ["Brasier"],
+    "hiddenAbility": "Téméraire",
+    "height_m": 1.1,
+    "weight_kg": 55.2,
     "genderRatio": { "male": 87.5, "female": 12.5 },
     "captureRate": 45,
     "images": {
       "sprite": "pokedex/img/002_sprite.png",
       "artwork": "pokedex/img/002_artwork.png"
     },
-    "baseStats": { "hp": 50, "atk": 60, "def": 55, "spa": 65, "spd": 60, "spe": 50 }
+    "baseStats": { "hp": 88, "atk": 88, "def": 60, "spa": 50, "spd": 59, "spe": 65 },
+    "description": "On pense que ses caractéristiques étranges sont dû à une adaptation brutale face à son environnement. Il mange énormément pour compenser l'énergie qu'il brûle en permanence pour conserver sa chaleur."
+  },
+  {
+    "id": 6,
+    "name": "Pyroarctos",
+    "types": ["Feu", "Glace"],
+    "catégorie": "Croc de feu",
+    "abilities": ["Brasier"],
+    "hiddenAbility": "Téméraire",
+    "height_m": 1.9,
+    "weight_kg": 148.3,
+    "genderRatio": { "male": 87.5, "female": 12.5 },
+    "captureRate": 45,
+    "images": {
+      "sprite": "pokedex/img/002_sprite.png",
+      "artwork": "pokedex/img/002_artwork.png"
+    },
+    "baseStats": { "hp": 108, "atk": 117, "def": 70, "spa": 55, "spd": 70, "spe": 110 },
+    "description": "La température de son corps peut passer brutalement d'un froid glaciale à un feu brûlant selon son humeur. Dans les régions polaires, son rugissement est confondu avec celui des glaciers qui se brisent."
   },
   {
     "id": 7,
     "name": "Solotl",
     "types": ["Eau"],
+    "catégorie": "Larve d'eau",
     "abilities": ["Torrent"],
     "hiddenAbility": "Régé-Force",
     "height_m": 0.3,
@@ -45,12 +122,14 @@
       "sprite": "pokedex/img/007_sprite.png",
       "artwork": "pokedex/img/007_artwork.png"
     },
-    "baseStats": { "hp": 50, "atk": 42, "def": 55, "spa": 63, "spd": 55, "spe": 45 }
+    "baseStats": { "hp": 50, "atk": 42, "def": 55, "spa": 63, "spd": 55, "spe": 45 },
+    "description": "Des étranges vagues d'eau flotte en permanence autour de sa queue. Il suffit de l'emmener près d'une rivière ou d'un lac pour le rendre heureux : il adore jouer dans l'eau et explorer les fonds marins."
   },
   {
     "id": 8,
     "name": "Siltotl",
     "types": ["Eau", "Sol"],
+    "catégorie": "Salamandre",
     "abilities": ["Torrent"],
     "hiddenAbility": "Régé-Force",
     "height_m": 0.9,
@@ -61,12 +140,14 @@
       "sprite": "pokedex/img/007_sprite.png",
       "artwork": "pokedex/img/007_artwork.png"
     },
-    "baseStats": { "hp": 70, "atk": 55, "def": 67, "spa": 85, "spd": 68, "spe": 65 }
+    "baseStats": { "hp": 70, "atk": 55, "def": 67, "spa": 85, "spd": 68, "spe": 65 },
+    "description": "Pour fuir ses prédateurs, il se cache sous la terre ou la boue. Il est même capable de changer légèrement sa couleur afin de se camoufler."
   },
   {
     "id": 9,
     "name": "Aridotl",
     "types": ["Eau", "Sol"],
+    "catégorie": "Salamandre",
     "abilities": ["Torrent"],
     "hiddenAbility": "Régé-Force",
     "height_m": 1.5,
@@ -76,6 +157,135 @@
     "images": {
       "sprite": "pokedex/img/007_sprite.png",
       "artwork": "pokedex/img/007_artwork.png"
+    },
+    "baseStats": { "hp": 83, "atk": 65, "def": 85, "spa": 115, "spd": 80, "spe": 102 },
+    "description": "Sa présence dans la nature est signe que l'habitat est sain et pure. Il est capable de voyager pendant des mois dans le but de trouver l'environnement parfait."
+  },
+  {
+    "id": 10,
+    "name": "Poke Route 1 de merde 1",
+    "types": ["Normal"],
+    "abilities": [""],
+    "hiddenAbility": "",
+    "height_m": 1.5,
+    "weight_kg": 54.8,
+    "genderRatio": { "male": 87.5, "female": 12.5 },
+    "captureRate": 45,
+    "images": {
+      "sprite": "pokedex/img/001_sprite.png",
+      "artwork": "pokedex/img/001_artwork.png"
+    },
+    "baseStats": { "hp": 83, "atk": 65, "def": 85, "spa": 115, "spd": 80, "spe": 102 }
+  },
+  {
+    "id": 11,
+    "name": "Poke Route 1 de merde 2",
+    "types": ["Normal"],
+    "abilities": [""],
+    "hiddenAbility": "",
+    "height_m": 1.5,
+    "weight_kg": 54.8,
+    "genderRatio": { "male": 87.5, "female": 12.5 },
+    "captureRate": 45,
+    "images": {
+      "sprite": "pokedex/img/001_sprite.png",
+      "artwork": "pokedex/img/001_artwork.png"
+    },
+    "baseStats": { "hp": 83, "atk": 65, "def": 85, "spa": 115, "spd": 80, "spe": 102 }
+  },
+  {
+    "id": 12,
+    "name": "Insecte de merde 1",
+    "types": ["Insecte"],
+    "abilities": [""],
+    "hiddenAbility": "",
+    "height_m": 1.5,
+    "weight_kg": 54.8,
+    "genderRatio": { "male": 87.5, "female": 12.5 },
+    "captureRate": 45,
+    "images": {
+      "sprite": "pokedex/img/001_sprite.png",
+      "artwork": "pokedex/img/001_artwork.png"
+    },
+    "baseStats": { "hp": 83, "atk": 65, "def": 85, "spa": 115, "spd": 80, "spe": 102 }
+  },
+  {
+    "id": 13,
+    "name": "Insecte de merde 2",
+    "types": ["Insecte"],
+    "abilities": [""],
+    "hiddenAbility": "",
+    "height_m": 1.5,
+    "weight_kg": 54.8,
+    "genderRatio": { "male": 87.5, "female": 12.5 },
+    "captureRate": 45,
+    "images": {
+      "sprite": "pokedex/img/001_sprite.png",
+      "artwork": "pokedex/img/001_artwork.png"
+    },
+    "baseStats": { "hp": 83, "atk": 65, "def": 85, "spa": 115, "spd": 80, "spe": 102 }
+  },
+  {
+    "id": 14,
+    "name": "Insecte de merde 3",
+    "types": ["Insecte"],
+    "abilities": [""],
+    "hiddenAbility": "",
+    "height_m": 1.5,
+    "weight_kg": 54.8,
+    "genderRatio": { "male": 87.5, "female": 12.5 },
+    "captureRate": 45,
+    "images": {
+      "sprite": "pokedex/img/001_sprite.png",
+      "artwork": "pokedex/img/001_artwork.png"
+    },
+    "baseStats": { "hp": 83, "atk": 65, "def": 85, "spa": 115, "spd": 80, "spe": 102 }
+  },
+  {
+    "id": 15,
+    "name": "Oiseau de merde 1",
+    "types": ["Normal", "Vol"],
+    "abilities": [""],
+    "hiddenAbility": "",
+    "height_m": 1.5,
+    "weight_kg": 54.8,
+    "genderRatio": { "male": 87.5, "female": 12.5 },
+    "captureRate": 45,
+    "images": {
+      "sprite": "pokedex/img/001_sprite.png",
+      "artwork": "pokedex/img/001_artwork.png"
+    },
+    "baseStats": { "hp": 83, "atk": 65, "def": 85, "spa": 115, "spd": 80, "spe": 102 }
+  },
+  {
+    "id": 16,
+    "name": "Oiseau de merde 2",
+    "types": ["Normal", "Vol"],
+    "abilities": [""],
+    "hiddenAbility": "",
+    "height_m": 1.5,
+    "weight_kg": 54.8,
+    "genderRatio": { "male": 87.5, "female": 12.5 },
+    "captureRate": 45,
+    "images": {
+      "sprite": "pokedex/img/001_sprite.png",
+      "artwork": "pokedex/img/001_artwork.png"
+    },
+    "baseStats": { "hp": 83, "atk": 65, "def": 85, "spa": 115, "spd": 80, "spe": 102 }
+  },
+  {
+    "id": 17,
+    "name": "Oiseau de merde 3",
+    "types": ["Normal", "Vol"],
+    "abilities": [""],
+    "hiddenAbility": "",
+    "height_m": 1.5,
+    "weight_kg": 54.8,
+    "genderRatio": { "male": 87.5, "female": 12.5 },
+    "captureRate": 45,
+    "images": {
+      "sprite": "pokedex/img/001_sprite.png",
+      "artwork": "pokedex/img/001_artwork.png"
     },
     "baseStats": { "hp": 83, "atk": 65, "def": 85, "spa": 115, "spd": 80, "spe": 102 }
   }
