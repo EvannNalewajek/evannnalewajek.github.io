@@ -166,7 +166,7 @@
     "name": "Scavalin",
     "types": ["Normal"],
     "category": "Récupérateur",
-    "abilities": ["Ramassage", "Pickpocket"],
+    "abilities": ["Ramassage", "Fouille"],
     "hiddenAbility": "Adaptabilité",
     "height_m": 0.4,
     "weight_kg": 7.5,
@@ -184,7 +184,7 @@
     "name": "Feraccoon",
     "types": ["Normal", "Acier"],
     "category": "Récupérateur",
-    "abilities": ["Ramassage", "Pickpocket"],
+    "abilities": ["Ramassage", "Fouille"],
     "hiddenAbility": "Adaptabilité",
     "height_m": 0.8,
     "weight_kg": 25.0,
@@ -204,15 +204,16 @@
     "category": "Larve",
     "abilities": ["Essaim"],
     "hiddenAbility": "Boom Final",
-    "height_m": 0.3,
-    "weight_kg": 2.2,
+    "height_m": 0.15,
+    "weight_kg": 1.2,
     "genderRatio": { "male": 12.5, "female": 87.5 },
     "captureRate": 255,
     "images": {
       "sprite": "pokedex/img/001_sprite.png",
       "artwork": "pokedex/img/001_artwork.png"
     },
-    "baseStats": { "hp": 40, "atk": 35, "def": 30, "spa": 35, "spd": 30, "spe": 30 }
+    "baseStats": { "hp": 40, "atk": 35, "def": 30, "spa": 35, "spd": 30, "spe": 30 },
+    "description": "Ces Pokémon vivent collés les uns aux autres dans des galeries étroites. En fonction de leur alimentation, ces larves peuvent aussi bien devenir une simple ouvrière qu'une grand reine."
   },
   {
     "id": 13,
@@ -221,15 +222,16 @@
     "category": "Fourmi ouvrier",
     "abilities": ["Essaim"],
     "hiddenAbility": "Boom Final",
-    "height_m": 0.6,
-    "weight_kg": 14.8,
+    "height_m": 0.3,
+    "weight_kg": 7.8,
     "genderRatio": { "male": 12.5, "female": 87.5 },
     "captureRate": 255,
     "images": {
       "sprite": "pokedex/img/001_sprite.png",
       "artwork": "pokedex/img/001_artwork.png"
     },
-    "baseStats": { "hp": 55, "atk": 65, "def": 55, "spa": 50, "spd": 50, "spe": 65 }
+    "baseStats": { "hp": 55, "atk": 65, "def": 55, "spa": 50, "spd": 50, "spe": 65 },
+    "description": "Les femelles sont responsables de récupérer de la nourriture et creuser les galeries, tandis que les mâles possèdent des ailes pour se préparer à leur vol nuptial."
   },
   {
     "id": 14,
@@ -238,15 +240,16 @@
     "category": "Fourmi soldat",
     "abilities": ["Essaim"],
     "hiddenAbility": "Boom Final",
-    "height_m": 1.1,
-    "weight_kg": 54.5,
+    "height_m": 0.6,
+    "weight_kg": 24.5,
     "genderRatio": { "male": 0, "female": 100 },
-    "captureRate": 255,
+    "captureRate": 45,
     "images": {
       "sprite": "pokedex/img/001_sprite.png",
       "artwork": "pokedex/img/001_artwork.png"
     },
-    "baseStats": { "hp": 62, "atk": 116, "def": 80, "spa": 52, "spd": 75, "spe": 85 }
+    "baseStats": { "hp": 62, "atk": 116, "def": 80, "spa": 52, "spd": 75, "spe": 85 },
+    "description": "Ces Pokémon défendent le nid au péril de leur vie. Avec leur tête dure comme la pierre, elles sont capables de bloquer les tunnels du nid."
   },
   {
     "id": 15,
@@ -255,62 +258,69 @@
     "category": "Reine de colonie",
     "abilities": ["Essaim"],
     "hiddenAbility": "Nid de phéromones",
-    "height_m": 1.3,
-    "weight_kg": 35.1,
+    "height_m": 0.9,
+    "weight_kg": 14.1,
     "genderRatio": { "male": 0, "female": 100 },
+    "captureRate": 45,
+    "images": {
+      "sprite": "pokedex/img/001_sprite.png",
+      "artwork": "pokedex/img/001_artwork.png"
+    },
+    "baseStats": { "hp": 80, "atk": 55, "def": 100, "spa": 105, "spd": 100, "spe": 45 },
+    "description": "Elle émet des phéromones responsables de coordonner les Pokémon de sa colonie. En cas d'attaque, elle privilégiera toujours l'apaisement avant la riposte."
+  },
+  {
+    "id": 16,
+    "name": "Picajasse",
+    "types": ["Normal", "Vol"],
+    "category": "Opportuniste",
+    "abilities": ["Pickpocket"],
+    "hiddenAbility": "Farceur",
+    "height_m": 0.3,
+    "weight_kg": 2.1,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 255,
     "images": {
       "sprite": "pokedex/img/001_sprite.png",
       "artwork": "pokedex/img/001_artwork.png"
     },
-    "baseStats": { "hp": 80, "atk": 55, "def": 100, "spa": 105, "spd": 100, "spe": 45 }
-  },
-  {
-    "id": 16,
-    "name": "Oiseau de merde 1",
-    "types": ["Normal", "Vol"],
-    "abilities": [""],
-    "hiddenAbility": "",
-    "height_m": 1.5,
-    "weight_kg": 54.8,
-    "genderRatio": { "male": 87.5, "female": 12.5 },
-    "captureRate": 45,
-    "images": {
-      "sprite": "pokedex/img/001_sprite.png",
-      "artwork": "pokedex/img/001_artwork.png"
-    },
-    "baseStats": { "hp": 83, "atk": 65, "def": 85, "spa": 115, "spd": 80, "spe": 102 }
+    "baseStats": { "hp": 83, "atk": 65, "def": 85, "spa": 115, "spd": 80, "spe": 102 },
+    "description": "Il adore se poser sur les toits pour observer les passants. Si une personne tient de la nourriture dans la main, il viendra vers elle dans l'espoir qu'elle lui en donne un morceau."
   },
   {
     "id": 17,
-    "name": "Oiseau de merde 2",
-    "types": ["Normal", "Vol"],
-    "abilities": [""],
-    "hiddenAbility": "",
-    "height_m": 1.5,
-    "weight_kg": 54.8,
-    "genderRatio": { "male": 87.5, "female": 12.5 },
-    "captureRate": 45,
+    "name": "Corbique",
+    "types": ["Ténèbres", "Vol"],
+    "category": "Luxe",
+    "abilities": ["Pickpocket"],
+    "hiddenAbility": "Farceur",
+    "height_m": 0.6,
+    "weight_kg": 16.2,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 120,
     "images": {
       "sprite": "pokedex/img/001_sprite.png",
       "artwork": "pokedex/img/001_artwork.png"
     },
-    "baseStats": { "hp": 83, "atk": 65, "def": 85, "spa": 115, "spd": 80, "spe": 102 }
+    "baseStats": { "hp": 83, "atk": 65, "def": 85, "spa": 115, "spd": 80, "spe": 102 },
+    "description": "Il est attiré par tout ce qui brille. Son plaisir est de porter des bijoux qui portent le même éclat que son plumage. Les amateurs de mode s'inspirent souvent de ce Pokémon."
   },
   {
     "id": 18,
-    "name": "Oiseau de merde 3",
-    "types": ["Normal", "Vol"],
-    "abilities": [""],
-    "hiddenAbility": "",
-    "height_m": 1.5,
-    "weight_kg": 54.8,
-    "genderRatio": { "male": 87.5, "female": 12.5 },
+    "name": "Noarsène",
+    "types": ["Ténèbres", "Vol"],
+    "category": "Voleur",
+    "abilities": ["Chanceux"],
+    "hiddenAbility": "Farceur",
+    "height_m": 1.0,
+    "weight_kg": 26.3,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 45,
     "images": {
       "sprite": "pokedex/img/001_sprite.png",
       "artwork": "pokedex/img/001_artwork.png"
     },
-    "baseStats": { "hp": 83, "atk": 65, "def": 85, "spa": 115, "spd": 80, "spe": 102 }
+    "baseStats": { "hp": 83, "atk": 65, "def": 85, "spa": 115, "spd": 80, "spe": 102 },
+    "description": "Ce Pokémon a perfectionné son vol afin qu'il soit le plus silencieux possible. Il sort la nuit pour traquer ses proies et voler tout ce qui semble avoir de la valeur."
   }
 ]
