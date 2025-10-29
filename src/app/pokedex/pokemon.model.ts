@@ -19,6 +19,7 @@ export interface Pokemon {
   id: number;                 // pokedex number, starting with 1
   name: string;
   types: [PokemonType] | [PokemonType, PokemonType];
+  category: string;
   abilities: string[];
   hiddenAbility?: string;
   height_m: number;
@@ -27,4 +28,5 @@ export interface Pokemon {
   captureRate: number;
   images: PokemonImages;
   baseStats: BaseStats;
+  description: string;
 }

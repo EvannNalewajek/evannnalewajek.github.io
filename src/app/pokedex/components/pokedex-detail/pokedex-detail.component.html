@@ -69,6 +69,7 @@
                             <div class="quickfacts">
                             <dl class="dl-grid">
                                 <div><dt>N°</dt><dd>#{{ pokemon()!.id | number:'2.0-0' }}</dd></div>
+                                <div><dt>Catégorie</dt><dd>Pokémon {{ pokemon()!.category }}</dd></div>
                                 <div><dt>Taille</dt><dd>{{ pokemon()!.height_m }} m</dd></div>
                                 <div><dt>Poids</dt><dd>{{ pokemon()!.weight_kg }} kg</dd></div>
                                 <div>
@@ -118,7 +119,7 @@
                             <ul>
                                 <li>{{ pokemon()!.abilities.join(', ') }}</li>
                                 @if (pokemon()!.hiddenAbility) {
-                                    <li><em>Talent caché :</em> {{ pokemon()!.hiddenAbility }}</li>
+                                    <li>{{ pokemon()!.hiddenAbility }} <em>(Talent caché)</em></li>
                                 }
                             </ul>
                         </section>
@@ -157,6 +158,12 @@
                                     <span class="bar"><span class="bar__fill spe" [style.width.%]="(pokemon()!.baseStats.spe/255*100)"></span></span>
                                 </li>
                             </ul>
+                        </section>
+
+                        <section class="description content-card">
+                            <h3>Description</h3>
+                            <span class="description">{{ pokemon()!.description }}</span>
+                            
                         </section>
                     </main>
                 </div>
