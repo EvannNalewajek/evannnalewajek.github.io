@@ -1,0 +1,22 @@
+Nid de phéromones : Talent caché signature de Myrtiara
+Invoque le champ Myrmique.
+
+Effet : Champ Myrmique
+- Les Pokémon au sol perdent des points de vie, à l'exception des types Insecte. Les Pokémon de type Vol ou avec Lévitation ne sont donc pas affectés.
+- Les attaques de type Insecte voient leur puissance augmenter de 30%.
+- Les Pokémon au sol portant une baie voient leur objet se faire détruire.
+- La puissance de la capacité Appel Phéromonal est augmentée de 50%, et peut maintenant convertir la moitié des dégâts infligés en PV pour le lanceur.
+- Force Nature devient Bourdon.
+- Force Cachée prend l'animation de Survinsecte, et peut baisser la Défense Spéciale de la cible.
+- Un pokémon utilisant la capacité Camouflage prendra le type Insecte.
+
+Capacité : Appel Phéromonal
+Type : Insecte
+Catégorie : Spéciale
+PP : 10 (max. 16)
+Puissance : 60
+Précision : 100%
+Cible : Tous les adversaires adjacents au lanceur.
+Particularités : Pas de contact avec le Pokémon adverse / Taux de critiques normal / Priorité normale
+Effet : Appel Phéromonal inflige des dégâts. Si un champ Myrmique est actif et si le lanceur est au sol, la puissance de la capacité augmente de 50% et convertit les dégâts infligés en PV pour le lanceur. Dans le cas d'un Combat Duo, la capacité inflige des dégâts aux deux Pokémon adverses.
+Description : Le lanceur relâche des phéromones pour attirer les insectes aux alentours et frapper les ennemies. La puissance de cette attaque augmente et draine la vie si le lanceur est sur un champ myrmique.
