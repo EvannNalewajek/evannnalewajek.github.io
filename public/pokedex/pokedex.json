@@ -271,7 +271,7 @@
   },
   {
     "id": 16,
-    "name": "Picajasse",
+    "name": "Pisqwack",
     "types": ["Normal", "Vol"],
     "category": "Opportuniste",
     "abilities": ["Pickpocket"],
@@ -284,14 +284,14 @@
       "sprite": "pokedex/img/001_sprite.png",
       "artwork": "pokedex/img/001_artwork.png"
     },
-    "baseStats": { "hp": 83, "atk": 65, "def": 85, "spa": 115, "spd": 80, "spe": 102 },
+    "baseStats": { "hp": 40, "atk": 55, "def": 35, "spa": 41, "spd": 30, "spe": 63 },
     "description": "Il adore se poser sur les toits pour observer les passants. Si une personne tient de la nourriture dans la main, il viendra vers elle dans l'espoir qu'elle lui en donne un morceau."
   },
   {
     "id": 17,
-    "name": "Corbique",
+    "name": "Corbonyx",
     "types": ["Ténèbres", "Vol"],
-    "category": "Luxe",
+    "category": "Fashionista",
     "abilities": ["Pickpocket"],
     "hiddenAbility": "Farceur",
     "height_m": 0.6,
@@ -302,14 +302,14 @@
       "sprite": "pokedex/img/001_sprite.png",
       "artwork": "pokedex/img/001_artwork.png"
     },
-    "baseStats": { "hp": 83, "atk": 65, "def": 85, "spa": 115, "spd": 80, "spe": 102 },
+    "baseStats": { "hp": 52, "atk": 77, "def": 42, "spa": 68, "spd": 42, "spe": 80 },
     "description": "Il est attiré par tout ce qui brille. Son plaisir est de porter des bijoux qui portent le même éclat que son plumage. Les amateurs de mode s'inspirent souvent de ce Pokémon."
   },
   {
     "id": 18,
     "name": "Noarsène",
     "types": ["Ténèbres", "Vol"],
-    "category": "Voleur",
+    "category": "Maître Voleur",
     "abilities": ["Chanceux"],
     "hiddenAbility": "Farceur",
     "height_m": 1.0,
@@ -320,7 +320,7 @@
       "sprite": "pokedex/img/001_sprite.png",
       "artwork": "pokedex/img/001_artwork.png"
     },
-    "baseStats": { "hp": 83, "atk": 65, "def": 85, "spa": 115, "spd": 80, "spe": 102 },
+    "baseStats": { "hp": 60, "atk": 115, "def": 50, "spa": 105, "spd": 50, "spe": 113 },
     "description": "Ce Pokémon a perfectionné son vol afin qu'il soit le plus silencieux possible. Il sort la nuit pour traquer ses proies et voler tout ce qui semble avoir de la valeur."
   }
 ]
