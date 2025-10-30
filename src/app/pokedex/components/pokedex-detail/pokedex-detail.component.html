@@ -157,6 +157,10 @@
                                     <span class="value">{{ pokemon()!.baseStats.spe }}</span>
                                     <span class="bar"><span class="bar__fill spe" [style.width.%]="(pokemon()!.baseStats.spe/255*100)"></span></span>
                                 </li>
+                                <li class="total">
+                                    <span class="label">Total</span>
+                                    <span class="value">{{ totalBaseStats() }}</span>
+                                </li>
                             </ul>
                         </section>
 

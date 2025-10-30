@@ -44,21 +44,21 @@ export class PokedexDetailComponent implements OnInit {
   nextId = () => (this.id() || 1) + 1;
 
   isGenderless(): boolean {
-  const g = this.pokemon()?.genderRatio;
-  return g === 'genderless';
-}
+    const g = this.pokemon()?.genderRatio;
+    return g === 'genderless';
+  }
 
-malePercent(): number | null {
-  const g = this.pokemon()?.genderRatio;
-  if (!g || typeof g === 'string') return null;
-  return g.male;
-}
+  malePercent(): number | null {
+    const g = this.pokemon()?.genderRatio;
+    if (!g || typeof g === 'string') return null;
+    return g.male;
+  }
 
-femalePercent(): number | null {
-  const g = this.pokemon()?.genderRatio;
-  if (!g || typeof g === 'string') return null;
-  return g.female;
-}
+  femalePercent(): number | null {
+    const g = this.pokemon()?.genderRatio;
+    if (!g || typeof g === 'string') return null;
+    return g.female;
+  }
 
   async ngOnInit() {
     await this.pokedex.ensureLoaded();
@@ -71,4 +71,21 @@ femalePercent(): number | null {
     document.title = `#${this.pokemon()!.id.toString().padStart(2,'0')} — ${this.pokemon()!.name} | Pokédex`;
     window.scrollTo({ top: 0, behavior: 'instant' as ScrollBehavior });
   }
+
+  totalBaseStats(): number {
+    const p = this.pokemon?.();
+    if (!p || !p.baseStats) return 0;
+
+    const {
+      hp = 0,
+      atk = 0,
+      def = 0,
+      spa = 0,
+      spd = 0,
+      spe = 0,
+    } = p.baseStats;
+
+    return hp + atk + def + spa + spd + spe;
+  }
+
 }
