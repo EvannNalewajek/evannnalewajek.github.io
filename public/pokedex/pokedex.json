@@ -137,8 +137,8 @@
     "genderRatio": { "male": 87.5, "female": 12.5 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/007_sprite.png",
-      "artwork": "pokedex/img/007_artwork.png"
+      "sprite": "pokedex/img/008_sprite.png",
+      "artwork": "pokedex/img/008_artwork.png"
     },
     "baseStats": { "hp": 70, "atk": 55, "def": 67, "spa": 85, "spd": 68, "spe": 65 },
     "description": "Pour fuir ses prédateurs, il se cache sous la terre ou la boue. Il est même capable de changer légèrement sa couleur afin de se camoufler."
@@ -155,8 +155,8 @@
     "genderRatio": { "male": 87.5, "female": 12.5 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/007_sprite.png",
-      "artwork": "pokedex/img/007_artwork.png"
+      "sprite": "pokedex/img/008_sprite.png",
+      "artwork": "pokedex/img/008_artwork.png"
     },
     "baseStats": { "hp": 83, "atk": 65, "def": 85, "spa": 115, "spd": 80, "spe": 102 },
     "description": "Sa présence dans la nature est signe que l'habitat est sain et pure. Il est capable de voyager pendant des mois dans le but de trouver l'environnement parfait."
