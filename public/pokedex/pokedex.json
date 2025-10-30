@@ -322,5 +322,41 @@
     },
     "baseStats": { "hp": 60, "atk": 115, "def": 50, "spa": 105, "spd": 50, "spe": 113 },
     "description": "Ce Pokémon a perfectionné son vol afin qu'il soit le plus silencieux possible. Il sort la nuit pour traquer ses proies et voler tout ce qui semble avoir de la valeur."
+  },
+  {
+    "id": 19,
+    "name": "Totadachi",
+    "types": ["Électrik"],
+    "category": "Gerbélec",
+    "abilities": ["Statik", "Motorisé"],
+    "hiddenAbility": "Turbo",
+    "height_m": 0.3,
+    "weight_kg": 2.0,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 180,
+    "images": {
+      "sprite": "pokedex/img/001_sprite.png",
+      "artwork": "pokedex/img/001_artwork.png"
+    },
+    "baseStats": { "hp": 36, "atk": 64, "def": 35, "spa": 52, "spd": 43, "spe": 90 },
+    "description": "Il court en cercles quand il accumule trop d'énergie statique. L'électricité stockée dans ses pattes lui permet de bondir plus haut qu'un humain de taille moyen."
+  },
+  {
+    "id": 20,
+    "name": "Pionabachi",
+    "types": ["Électrik", "Combat"],
+    "category": "Gerbélec",
+    "abilities": ["Statik", "Motorisé"],
+    "hiddenAbility": "Turbo",
+    "height_m": 0.6,
+    "weight_kg": 7.4,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 95,
+    "images": {
+      "sprite": "pokedex/img/001_sprite.png",
+      "artwork": "pokedex/img/001_artwork.png"
+    },
+    "baseStats": { "hp": 65, "atk": 105, "def": 47, "spa": 60, "spd": 90, "spe": 123 },
+    "description": "Il canalise son énergie dans ses pattes pour frapper plus vite que l'éclair, laissant une marque de brûlure à l'endroit d'où il a sauté. Chaque duel est pour lui comme une danse."
   }
 ]
