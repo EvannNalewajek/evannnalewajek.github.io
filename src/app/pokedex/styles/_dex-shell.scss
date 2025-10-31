@@ -142,3 +142,88 @@
 }
 
 
+@media (max-width: 600px) {
+  .dex-scene {
+    padding: 1.5rem .75rem;
+  }
+
+  .dex-card {
+    width: 100%;
+    border-radius: 16px;
+    padding: .1rem;
+    box-shadow:
+      0 8px 16px rgba(0,0,0,0.25);
+  }
+
+  .dex-card::after {
+    opacity: .15;
+    filter: blur(3px);
+    right: -100px;
+    top: -100px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .dex-header {
+    min-height: auto;
+    padding: .75rem .75rem .5rem;
+    background:
+      linear-gradient(to bottom,
+        var(--dex-red) 0 60%,
+        var(--dex-black) 60% 66%,
+        var(--dex-white) 66% 100%);
+  }
+
+  .dex-header h1 {
+    padding-top: .5rem;
+    padding-left: 64px;
+    font-size: clamp(1.2rem, 4vw, 1.5rem);
+    line-height: 1.2;
+  }
+
+  .dex-button {
+    left: 12px;
+    width: 42px;
+    height: 42px;
+    border-width: 3px;
+  }
+
+  .dex-lights {
+    left: 60px;
+    top: 10px;
+    gap: 6px;
+  }
+
+  .led {
+    width: 8px;
+    height: 8px;
+    box-shadow: 0 0 0 2px rgba(0,0,0,.35), inset 0 1px 1px rgba(255,255,255,.5);
+  }
+
+  .dex-body {
+    padding: 0.1rem;
+    border-radius: 0 0 12px 12px;
+    background: #9c0a0a;
+    box-shadow:
+      inset 0 2px 3px rgba(255,255,255,.2),
+      inset 0 -3px 6px rgba(0,0,0,.6);
+  }
+
+  .dex-screen {
+    border-radius: 10px;
+    padding: 1rem;
+
+    background: radial-gradient(
+      circle at 30% 25%,
+      #ffffff 0%,
+      #eef2f8 60%,
+      #e3e8ef 100%
+    );
+
+    border: 1px solid rgba(0,0,0,.15);
+
+    box-shadow:
+      0 4px 12px rgba(0,0,0,0.35),
+      inset 0 1px 2px rgba(255,255,255,0.4);
+  }
+}
