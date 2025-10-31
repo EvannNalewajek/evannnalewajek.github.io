@@ -28,9 +28,12 @@
   width: min(1100px, 80vw);
   border-radius: 16px;
   background: #d80909;
-  box-shadow: 0 12px 30px rgba(0,0,0,.08);
+  border: 1px solid rgba(0,0,0,.4);
+  box-shadow:
+    0 20px 40px rgba(0,0,0,.4),
+    inset 0 2px 4px rgba(255,255,255,.4),
+    inset 0 -3px 6px rgba(0,0,0,.4);
   overflow: hidden;
-  border: 1px solid rgba(0,0,0,.06);
 }
 
 .dex-card::after {
@@ -103,9 +106,38 @@
 
 
 .dex-body {
-  padding: 1rem 1.25rem 1.25rem;
-  background: linear-gradient(#e24747, #9c0a0a);
-  border-top: 1px solid rgba(0,0,0,.05);
+  background: radial-gradient(circle at 20% 0%,
+              rgba(255,255,255,0.18) 0%,
+              rgba(255,255,255,0) 60%),
+              linear-gradient(#e24747, #9c0a0a);
+  border-top: 1px solid rgba(0,0,0,.5);
+
+  padding: 2rem;
   border-radius: 0 0 16px 16px;
+
+  box-shadow:
+    inset 0 2px 4px rgba(255,255,255,.2),
+    inset 0 -4px 8px rgba(0,0,0,.6);
+  position: relative;
 }
+
+.dex-screen {
+  background: radial-gradient(
+    circle at 30% 25%,
+    #f6fbff 0%,
+    #dbe5f4 60%,
+    #c8d3e0 100%
+  );
+  border-radius: 16px;
+  padding: 2rem;
+  border: 1px solid rgba(0,0,0,.25);
+
+  box-shadow:
+    0 0 0 4px #b51119,
+    0 0 0 8px #e92b2b,
+    0 20px 40px rgba(0,0,0,.4),
+    inset 0 2px 6px rgba(255,255,255,0.3),
+    inset 0 -3px 6px rgba(0,0,0,0.15);
+}
+
 

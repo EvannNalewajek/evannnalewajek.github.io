@@ -1,218 +1,225 @@
 <div class="dex-scene">
-    <div class="dex-card">
-        <div class="dex-header">
-            <div class="dex-button" aria-hidden="true"></div>
-            <div class="dex-lights" aria-hidden="true">
-                <span class="led led-red"></span>
-                <span class="led led-yellow"></span>
-                <span class="led led-green"></span>
+  <div class="dex-card">
+    <div class="dex-header">
+      <div class="dex-button" aria-hidden="true"></div>
+      <div class="dex-lights" aria-hidden="true">
+        <span class="led led-red"></span>
+        <span class="led led-yellow"></span>
+        <span class="led led-green"></span>
+      </div>
+      <h1>{{ pokemon()?.name || 'Pokémon' }}</h1>
+    </div>
+
+    @if (pokemon()) {
+
+      <div class="dex-body">
+
+        <div
+          class="dex-screen detail"
+          [attr.data-type1]="pokemon()!.types[0]">
+
+          <nav class="dex-toolbar top">
+            <div class="toolbar-inner">
+              <span class="left">
+              @if (prevMon()) {
+                <a [routerLink]="['/pokedex', prevMon()!.id]" class="nav-chip">
+                  <img class="mini-sprite" [src]="prevMon()!.images.sprite" [alt]="prevMon()!.name" loading="lazy" />
+                  <span class="num">#{{ prevMon()!.id | number:'2.0-0' }}</span>
+                  <span class="name">{{ prevMon()!.name }}</span>
+                </a>
+              } @else if (prevId() >= 1) {
+                <a [routerLink]="['/pokedex', prevId()]" class="nav-chip">
+                  <span class="num">← #{{ prevId() | number:'2.0-0' }}</span>
+                </a>
+              }
+              </span>
+
+              <span class="center">
+                <a [routerLink]="['/pokedex']">Retour à la liste</a>
+              </span>
+
+              <span class="right">
+              @if (nextMon()) {
+                <a [routerLink]="['/pokedex', nextMon()!.id]" class="nav-chip">
+                  <span class="name">{{ nextMon()!.name }}</span>
+                  <span class="num">#{{ nextMon()!.id | number:'2.0-0' }}</span>
+                  <img class="mini-sprite" [src]="nextMon()!.images.sprite" [alt]="nextMon()!.name" loading="lazy" />
+                </a>
+              } @else if (nextId() <= maxId()) {
+                <a [routerLink]="['/pokedex', nextId()]" class="nav-chip">
+                  <span class="num">#{{ nextId() | number:'2.0-0' }} →</span>
+                </a>
+              }
+              </span>
             </div>
-            <h1>{{ pokemon()?.name || 'Pokémon' }}</h1>
-        </div>
+          </nav>
 
-        @if (pokemon()) {
-            <div class="dex-body detail" [attr.data-type1]="pokemon()!.types[0]">
-                <nav class="dex-toolbar top">
-                    <div class="toolbar-inner">
-                        <span class="left">
-                        @if (prevMon()) {
-                            <a [routerLink]="['/pokedex', prevMon()!.id]" class="nav-chip">
-                            <img class="mini-sprite" [src]="prevMon()!.images.sprite" [alt]="prevMon()!.name" loading="lazy" />
-                            <span class="num">#{{ prevMon()!.id | number:'2.0-0' }}</span>
-                            <span class="name">{{ prevMon()!.name }}</span>
-                            </a>
-                        } @else if (prevId() >= 1) {
-                            <a [routerLink]="['/pokedex', prevId()]" class="nav-chip">
-                            <span class="num">← #{{ prevId() | number:'2.0-0' }}</span>
-                            </a>
-                        }
-                        </span>
+          <div class="layout">
+            <aside
+              class="infobox infobox-frame"
+              [attr.data-type1]="pokemon()!.types[0]"
+              [attr.data-type2]="pokemon()!.types[1] || pokemon()!.types[0]"
+              [class.dual]="pokemon()!.types.length === 2"
+            >
+              <div class="panel primary">
+                <figure class="artwork">
+                  <img
+                    [src]="imgArtwork()"
+                    [alt]="pokemon()!.name"
+                    loading="eager" />
+                </figure>
 
-                        <span class="center">
-                        <a [routerLink]="['/pokedex']">Retour à la liste</a>
-                        </span>
-
-                        <span class="right">
-                        @if (nextMon()) {
-                            <a [routerLink]="['/pokedex', nextMon()!.id]" class="nav-chip">
-                            <span class="name">{{ nextMon()!.name }}</span>
-                            <span class="num">#{{ nextMon()!.id | number:'2.0-0' }}</span>
-                            <img class="mini-sprite" [src]="nextMon()!.images.sprite" [alt]="nextMon()!.name" loading="lazy" />
-                            </a>
-                        } @else if (nextId() <= maxId()) {
-                            <a [routerLink]="['/pokedex', nextId()]" class="nav-chip">
-                            <span class="num">#{{ nextId() | number:'2.0-0' }} →</span>
-                            </a>
-                        }
-                        </span>
+                <div class="quickfacts">
+                  <dl class="dl-grid">
+                    <div><dt>N°</dt><dd>#{{ pokemon()!.id | number:'2.0-0' }}</dd></div>
+                    <div><dt>Catégorie</dt><dd>Pokémon {{ pokemon()!.category }}</dd></div>
+                    <div><dt>Taille</dt><dd>{{ pokemon()!.height_m }} m</dd></div>
+                    <div><dt>Poids</dt><dd>{{ pokemon()!.weight_kg }} kg</dd></div>
+                    <div>
+                      <dt>Genre</dt>
+                      <dd>
+                        @if (!isGenderless()) { ♂ {{ malePercent() }}% · ♀ {{ femalePercent() }}% }
+                        @else { Asexué }
+                      </dd>
                     </div>
-                </nav>
-
-
-                <div class="layout">
-                    <!-- Left Part -->
-                    <aside
-                        class="infobox infobox-frame"
-                        [attr.data-type1]="pokemon()!.types[0]"
-                        [attr.data-type2]="pokemon()!.types[1] || pokemon()!.types[0]"
-                        [class.dual]="pokemon()!.types.length === 2"
-                    >
-                        <!-- Panneau principal (couleur du 1er type) -->
-                        <div class="panel primary">
-                            <figure class="artwork">
-                            <img
-                                [src]="imgArtwork()"
-                                [alt]="pokemon()!.name"
-                                loading="eager" />
-                            </figure>
-
-                            <div class="quickfacts">
-                            <dl class="dl-grid">
-                                <div><dt>N°</dt><dd>#{{ pokemon()!.id | number:'2.0-0' }}</dd></div>
-                                <div><dt>Catégorie</dt><dd>Pokémon {{ pokemon()!.category }}</dd></div>
-                                <div><dt>Taille</dt><dd>{{ pokemon()!.height_m }} m</dd></div>
-                                <div><dt>Poids</dt><dd>{{ pokemon()!.weight_kg }} kg</dd></div>
-                                <div>
-                                <dt>Genre</dt>
-                                <dd>
-                                    @if (!isGenderless()) { ♂ {{ malePercent() }}% · ♀ {{ femalePercent() }}% }
-                                    @else { Asexué }
-                                </dd>
-                                </div>
-                                <div><dt>Capture</dt><dd>{{ pokemon()!.captureRate }}</dd></div>
-                            </dl>
-                            </div>
-
-                            <div class="types-box">
-                                <h3>Type</h3>
-                                <div class="types">
-                                    @for (t of pokemon()!.types; track t) {
-                                    <a class="type-chip"
-                                        [attr.data-type]="t"
-                                        [routerLink]="['/types', (t | typeSlug)]"
-                                        title="Voir le type {{ t }}">
-                                        {{ t }}
-                                    </a>
-                                    }
-                                </div>
-                            </div>
-
-
-                            <div class="sprite-box">
-                            <img class="sprite" [src]="imgSprite()" [alt]="pokemon()!.name + ' sprite'" loading="lazy" />
-                            </div>
-                        </div>
-                        </aside>
-
-
-                    <!-- Right Part -->
-                    <main class="content">
-                        <header class="title content-card">
-                            <h2>
-                                <small>#{{ pokemon()!.id | number:'2.0-0' }}</small>
-                                {{ pokemon()!.name }}
-                            </h2>
-                        </header>
-
-                        <section class="abilities content-card">
-                            <h3>Talents</h3>
-                            <ul>
-                                <li>{{ pokemon()!.abilities.join(', ') }}</li>
-                                @if (pokemon()!.hiddenAbility) {
-                                    <li>{{ pokemon()!.hiddenAbility }} <em>(Talent caché)</em></li>
-                                }
-                            </ul>
-                        </section>
-
-                        <section class="stats content-card">
-                            <h3>Statistiques de base</h3>
-                            <ul class="stats-list">
-                                <li class="hp">
-                                    <span class="label">PV</span>
-                                    <span class="value">{{ pokemon()!.baseStats.hp }}</span>
-                                    <span class="bar"><span class="bar__fill hp" [style.width.%]="(pokemon()!.baseStats.hp/255*100)"></span></span>
-                                </li>
-                                <li class="atk">
-                                    <span class="label">Attaque</span>
-                                    <span class="value">{{ pokemon()!.baseStats.atk }}</span>
-                                    <span class="bar"><span class="bar__fill atk" [style.width.%]="(pokemon()!.baseStats.atk/255*100)"></span></span>
-                                </li>
-                                <li class="def">
-                                    <span class="label">Défense</span>
-                                    <span class="value">{{ pokemon()!.baseStats.def }}</span>
-                                    <span class="bar"><span class="bar__fill def" [style.width.%]="(pokemon()!.baseStats.def/255*100)"></span></span>
-                                </li>
-                                <li class="spa">
-                                    <span class="label">Atq. Spé</span>
-                                    <span class="value">{{ pokemon()!.baseStats.spa }}</span>
-                                    <span class="bar"><span class="bar__fill spa" [style.width.%]="(pokemon()!.baseStats.spa/255*100)"></span></span>
-                                </li>
-                                <li class="spd">
-                                    <span class="label">Déf. Spé</span>
-                                    <span class="value">{{ pokemon()!.baseStats.spd }}</span>
-                                    <span class="bar"><span class="bar__fill spd" [style.width.%]="(pokemon()!.baseStats.spd/255*100)"></span></span>
-                                </li>
-                                <li class="spe">
-                                    <span class="label">Vitesse</span>
-                                    <span class="value">{{ pokemon()!.baseStats.spe }}</span>
-                                    <span class="bar"><span class="bar__fill spe" [style.width.%]="(pokemon()!.baseStats.spe/255*100)"></span></span>
-                                </li>
-                                <li class="total">
-                                    <span class="label">Total</span>
-                                    <span class="value">{{ totalBaseStats() }}</span>
-                                </li>
-                            </ul>
-                        </section>
-
-                        <section class="description content-card">
-                            <h3>Description</h3>
-                            <span class="description">{{ pokemon()!.description }}</span>
-                            
-                        </section>
-                    </main>
+                    <div><dt>Capture</dt><dd>{{ pokemon()!.captureRate }}</dd></div>
+                  </dl>
                 </div>
 
-                <nav class="dex-toolbar bottom">
-                    <div class="toolbar-inner">
-                        <span class="left">
-                        @if (prevMon()) {
-                            <a [routerLink]="['/pokedex', prevMon()!.id]" class="nav-chip">
-                            <img class="mini-sprite" [src]="prevMon()!.images.sprite" [alt]="prevMon()!.name" loading="lazy" />
-                            <span class="num">#{{ prevMon()!.id | number:'2.0-0' }}</span>
-                            <span class="name">{{ prevMon()!.name }}</span>
-                            </a>
-                        } @else if (prevId() >= 1) {
-                            <a [routerLink]="['/pokedex', prevId()]" class="nav-chip">
-                            <span class="num">← #{{ prevId() | number:'2.0-0' }}</span>
-                            </a>
-                        }
-                        </span>
+                <div class="types-box">
+                  <h3>Type</h3>
+                  <div class="types">
+                    @for (t of pokemon()!.types; track t) {
+                      <a class="type-chip"
+                        [attr.data-type]="t"
+                        [routerLink]="['/pokedex/types', (t | typeSlug)]"
+                        title="Voir le type {{ t }}">
+                        {{ t }}
+                      </a>
+                    }
+                  </div>
+                </div>
 
-                        <span class="center">
-                        <a [routerLink]="['/pokedex']">Retour à la liste</a>
-                        </span>
+                <div class="sprite-box">
+                  <img class="sprite" [src]="imgSprite()" [alt]="pokemon()!.name + ' sprite'" loading="lazy" />
+                </div>
+              </div>
+            </aside>
 
-                        <span class="right">
-                        @if (nextMon()) {
-                            <a [routerLink]="['/pokedex', nextMon()!.id]" class="nav-chip">
-                            <span class="name">{{ nextMon()!.name }}</span>
-                            <span class="num">#{{ nextMon()!.id | number:'2.0-0' }}</span>
-                            <img class="mini-sprite" [src]="nextMon()!.images.sprite" [alt]="nextMon()!.name" loading="lazy" />
-                            </a>
-                        } @else if (nextId() <= maxId()) {
-                            <a [routerLink]="['/pokedex', nextId()]" class="nav-chip">
-                            <span class="num">#{{ nextId() | number:'2.0-0' }} →</span>
-                            </a>
-                        }
-                        </span>
-                    </div>
-                </nav>
+            <main class="content">
+              <header class="title content-card">
+                <h2>
+                  <small>#{{ pokemon()!.id | number:'2.0-0' }}</small>
+                  {{ pokemon()!.name }}
+                </h2>
+              </header>
+
+              <section class="abilities content-card">
+                <h3>Talents</h3>
+                <ul>
+                  <li>{{ pokemon()!.abilities.join(', ') }}</li>
+                  @if (pokemon()!.hiddenAbility) {
+                    <li>{{ pokemon()!.hiddenAbility }} <em>(Talent caché)</em></li>
+                  }
+                </ul>
+              </section>
+
+              <section class="stats content-card">
+                <h3>Statistiques de base</h3>
+                <ul class="stats-list">
+                  <li class="hp">
+                    <span class="label">PV</span>
+                    <span class="value">{{ pokemon()!.baseStats.hp }}</span>
+                    <span class="bar"><span class="bar__fill hp" [style.width.%]="(pokemon()!.baseStats.hp/255*100)"></span></span>
+                  </li>
+                  <li class="atk">
+                    <span class="label">Attaque</span>
+                    <span class="value">{{ pokemon()!.baseStats.atk }}</span>
+                    <span class="bar"><span class="bar__fill atk" [style.width.%]="(pokemon()!.baseStats.atk/255*100)"></span></span>
+                  </li>
+                  <li class="def">
+                    <span class="label">Défense</span>
+                    <span class="value">{{ pokemon()!.baseStats.def }}</span>
+                    <span class="bar"><span class="bar__fill def" [style.width.%]="(pokemon()!.baseStats.def/255*100)"></span></span>
+                  </li>
+                  <li class="spa">
+                    <span class="label">Atq. Spé</span>
+                    <span class="value">{{ pokemon()!.baseStats.spa }}</span>
+                    <span class="bar"><span class="bar__fill spa" [style.width.%]="(pokemon()!.baseStats.spa/255*100)"></span></span>
+                  </li>
+                  <li class="spd">
+                    <span class="label">Déf. Spé</span>
+                    <span class="value">{{ pokemon()!.baseStats.spd }}</span>
+                    <span class="bar"><span class="bar__fill spd" [style.width.%]="(pokemon()!.baseStats.spd/255*100)"></span></span>
+                  </li>
+                  <li class="spe">
+                    <span class="label">Vitesse</span>
+                    <span class="value">{{ pokemon()!.baseStats.spe }}</span>
+                    <span class="bar"><span class="bar__fill spe" [style.width.%]="(pokemon()!.baseStats.spe/255*100)"></span></span>
+                  </li>
+                  <li class="total">
+                    <span class="label">Total</span>
+                    <span class="value">{{ totalBaseStats() }}</span>
+                  </li>
+                </ul>
+              </section>
+
+              <section class="description content-card">
+                <h3>Description</h3>
+                <span class="description">{{ pokemon()!.description }}</span>
+              </section>
+            </main>
+          </div>
+
+          <nav class="dex-toolbar bottom">
+            <div class="toolbar-inner">
+              <span class="left">
+              @if (prevMon()) {
+                <a [routerLink]="['/pokedex', prevMon()!.id]" class="nav-chip">
+                  <img class="mini-sprite" [src]="prevMon()!.images.sprite" [alt]="prevMon()!.name" loading="lazy" />
+                  <span class="num">#{{ prevMon()!.id | number:'2.0-0' }}</span>
+                  <span class="name">{{ prevMon()!.name }}</span>
+                </a>
+              } @else if (prevId() >= 1) {
+                <a [routerLink]="['/pokedex', prevId()]" class="nav-chip">
+                  <span class="num">← #{{ prevId() | number:'2.0-0' }}</span>
+                </a>
+              }
+              </span>
+
+              <span class="center">
+                <a [routerLink]="['/pokedex']">Retour à la liste</a>
+              </span>
+
+              <span class="right">
+              @if (nextMon()) {
+                <a [routerLink]="['/pokedex', nextMon()!.id]" class="nav-chip">
+                  <span class="name">{{ nextMon()!.name }}</span>
+                  <span class="num">#{{ nextMon()!.id | number:'2.0-0' }}</span>
+                  <img class="mini-sprite" [src]="nextMon()!.images.sprite" [alt]="nextMon()!.name" loading="lazy" />
+                </a>
+              } @else if (nextId() <= maxId()) {
+                <a [routerLink]="['/pokedex', nextId()]" class="nav-chip">
+                  <span class="num">#{{ nextId() | number:'2.0-0' }} →</span>
+                </a>
+              }
+              </span>
             </div>
-        } @else {
-            <div class="notfound">
-                <p>Pokémon introuvable.</p>
-                <a [routerLink]="['/pokedex']">Retour au Pokédex</a>
-            </div>
-        } 
-    </div>
+          </nav>
+
+        </div>
+
+      </div>
+
+    } @else {
+      <div class="dex-body">
+        <div class="dex-screen notfound-screen">
+          <div class="notfound">
+            <p>Pokémon introuvable.</p>
+            <a [routerLink]="['/pokedex']">Retour au Pokédex</a>
+          </div>
+        </div>
+      </div>
+    }
+  </div>
 </div>
