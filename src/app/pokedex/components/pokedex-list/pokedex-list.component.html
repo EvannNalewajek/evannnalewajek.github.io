@@ -29,7 +29,7 @@
                   <td class="col-num" data-label="Dex #">#{{ p.id | number:'2.0-0' }}</td>
 
                   <td class="col-sprite" data-label="Sprite">
-                    <a [routerLink]="['/pokedex/fields']" class="sprite-link" title="Voir {{p.name}}">
+                    <a [routerLink]="['/pokedex', p.id]" class="sprite-link" title="Voir {{p.name}}">
                       <img [src]="p.images.sprite" [alt]="p.name" loading="lazy" />
                     </a>
                   </td>

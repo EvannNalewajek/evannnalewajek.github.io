@@ -13,28 +13,65 @@
       </div>
 
       <div class="dex-body">
-
         <div class="dex-screen type-page" [style.--type-color]="cur.color">
 
-          <div class="types-grid">
-            @for (t of allTypes(); track t.slug) {
-              <a class="type-chip"
-                 [routerLink]="['/types', t.slug]"
-                 [class.active]="t.slug === cur.slug"
-                 [style.--type-color]="t.color">
-                {{ t.name }}
-              </a>
-            }
-          </div>
+          <!-- Bandeau résumé du type courant -->
+          <section class="type-hero">
+            <div class="hero-inner">
+              <div class="hero-header">
+                <div class="hero-type-badge"
+                     [style.--hero-color]="cur.color">
+                  {{ cur.name }}
+                </div>
+                <div class="hero-label">Type</div>
+              </div>
 
-          <section class="eff">
-            <h2>Table des affinités</h2>
+              <div class="hero-meta">
+                <div class="meta-block">
+                  <div class="meta-title">Forces offensives</div>
+                  <div class="meta-chips">
+                    @for (x of attack()?.dbl; track x) {
+                      <span class="chip tiny" [ngStyle]="styleFor(x)">{{ x }}</span>
+                    }
+                  </div>
+                </div>
+
+                <div class="meta-block">
+                  <div class="meta-title">Forces défensives</div>
+                  <div class="meta-chips">
+                    @for (x of defense()?.half; track x) {
+                      <span class="chip tiny" [ngStyle]="styleFor(x)">{{ x }}</span>
+                    }
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Liste des types (sélecteur latéral) -->
+          <nav class="types-panel">
+            <h2>Types</h2>
+            <div class="types-grid">
+              @for (t of allTypes(); track t.slug) {
+                <a class="type-chip"
+                   [routerLink]="['/pokedex/types', t.slug]"
+                   [class.active]="t.slug === cur.slug"
+                   [style.--type-color]="t.color">
+                  {{ t.name }}
+                </a>
+              }
+            </div>
+          </nav>
+
+          <!-- Table des affinités -->
+          <section class="eff card-surface">
+            <h2 class="section-title">Table des affinités</h2>
 
             <div class="eff-row">
               <h3>En défense (cible = {{ cur.name }})</h3>
 
               <div class="bucket">
-                <div class="bucket-title">Résiste ×0.5</div>
+                <div class="bucket-title good">Résiste x0.5</div>
                 <div class="chips">
                   @for (x of defense()?.half; track x) {
                     <span class="chip" [ngStyle]="styleFor(x)">{{ x }}</span>
@@ -43,7 +80,7 @@
               </div>
 
               <div class="bucket">
-                <div class="bucket-title">Faible ×2</div>
+                <div class="bucket-title bad">Faible x2</div>
                 <div class="chips">
                   @for (x of defense()?.dbl; track x) {
                     <span class="chip" [ngStyle]="styleFor(x)">{{ x }}</span>
@@ -53,7 +90,7 @@
 
               @if (defense()?.zero?.length) {
                 <div class="bucket">
-                  <div class="bucket-title">Immunisé ×0</div>
+                  <div class="bucket-title immune">Immunisé x0</div>
                   <div class="chips">
                     @for (x of defense()?.zero; track x) {
                       <span class="chip" [ngStyle]="styleFor(x)">{{ x }}</span>
@@ -67,7 +104,7 @@
               <h3>En attaque ({{ cur.name }} → cible)</h3>
 
               <div class="bucket">
-                <div class="bucket-title">Efficace ×2</div>
+                <div class="bucket-title good">Efficace x2</div>
                 <div class="chips">
                   @for (x of attack()?.dbl; track x) {
                     <span class="chip" [ngStyle]="styleFor(x)">{{ x }}</span>
@@ -76,7 +113,7 @@
               </div>
 
               <div class="bucket">
-                <div class="bucket-title">Peu efficace ×0.5</div>
+                <div class="bucket-title warn">Peu efficace x0.5</div>
                 <div class="chips">
                   @for (x of attack()?.half; track x) {
                     <span class="chip" [ngStyle]="styleFor(x)">{{ x }}</span>
@@ -86,7 +123,7 @@
 
               @if (attack()?.zero?.length) {
                 <div class="bucket">
-                  <div class="bucket-title">Sans effet ×0</div>
+                  <div class="bucket-title immune">Sans effet x0</div>
                   <div class="chips">
                     @for (x of attack()?.zero; track x) {
                       <span class="chip" [ngStyle]="styleFor(x)">{{ x }}</span>
@@ -97,11 +134,12 @@
             </div>
           </section>
 
-          <section class="caracs">
-            <h2>Caractéristiques</h2>
+          <!-- Caractéristiques du type -->
+          <section class="caracs card-surface">
+            <h2 class="section-title">Caractéristiques</h2>
 
             @if (cur.characteristics.length) {
-              <ul>
+              <ul class="carac-list">
                 @for (c of cur.characteristics; track $index) {
                   <li>{{ c }}</li>
                 }
@@ -111,15 +149,17 @@
             }
           </section>
 
-          <section class="of-type">
-            <h2>Pokémon de type {{ cur.name }}</h2>
+          <!-- Pokémon de ce type -->
+          <section class="of-type card-surface">
+            <h2 class="section-title">Pokémon de type {{ cur.name }}</h2>
 
             @if (pokemonsOfType(); as list) {
               @if (list.length) {
-                <table class="pokedex-table">
+                <table class="pokedex-table pokedex-table--compact">
                   <thead>
                     <tr>
                       <th style="width:5rem">#</th>
+                      <th></th>
                       <th>Nom</th>
                       <th style="width:18rem">Type</th>
                     </tr>
@@ -128,10 +168,22 @@
                     @for (p of list; track p.id) {
                       <tr>
                         <td>#{{ p.id.toString().padStart(3,'0') }}</td>
+                        <td>
+                          <a [routerLink]="['/pokedex', p.id]" class="sprite-link" title="Voir {{p.name}}">
+                            <img [src]="p.images.sprite" [alt]="p.name" loading="lazy" />
+                          </a>
+                        </td>
                         <td><a [routerLink]="['/pokedex', p.id]">{{ p.name }}</a></td>
                         <td>
                           @for (t of typesOf(p); track t) {
-                            <span class="chip" [ngStyle]="styleFor(t)">{{ t }}</span>
+                            <a
+                              class="chip chip--small chip-link"
+                              [routerLink]="['/pokedex/types', t.toLowerCase()]"
+                              [ngStyle]="styleFor(t)"
+                              title="Voir le type {{ t }}"
+                            >
+                              {{ t }}
+                            </a>
                           }
                         </td>
                       </tr>
@@ -145,9 +197,7 @@
           </section>
 
         </div>
-
       </div>
-
     } @else {
       <div class="dex-body">
         <div class="dex-screen"><p>Chargement…</p></div>
