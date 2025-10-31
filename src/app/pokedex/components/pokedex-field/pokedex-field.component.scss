@@ -2,6 +2,8 @@
 
 .field-page {
   --t1: #6ddde4;
+display: grid;
+  gap: 1rem;
 
   @supports (color: color-mix(in oklab, white, black)) {
     --card-bg:        color-mix(in oklab, var(--t1) 14%, #ffffff);
@@ -10,41 +12,6 @@
     --card-gloss-top: color-mix(in oklab, #ffffff 65%, var(--t1));
   }
 }
-
-.field-page {
-  display: grid;
-  gap: 1rem;
-  background: linear-gradient(180deg, #f8fbff 0%, #eef4fa 100%);
-}
-.dex-body.field-page {
-  padding: 1.5rem;
-  padding-top: 2rem;
-  gap: 1.5rem;
-}
-
-/* Effet écran Pokédex */
-.dex-card {
-  background: #c3141d; /* rouge Pokédex */
-  border-radius: 22px;
-  padding: 1rem;
-  box-shadow:
-    inset 0 3px 6px rgba(255, 255, 255, 0.25),
-    inset 0 -3px 8px rgba(0, 0, 0, 0.25),
-    0 8px 20px rgba(0, 0, 0, 0.25);
-}
-
-/* "Écran" principal à l’intérieur du Pokédex */
-.dex-body.field-page {
-  background: #ffffff;
-  border-radius: 16px;
-  padding: 2rem;
-  margin: 1.5rem;
-  box-shadow:
-    inset 0 2px 6px rgba(0, 0, 0, 0.15),
-    0 0 0 4px #b51119, /* contour rouge foncé visible */
-    0 0 0 8px #e92b2b; /* halo rouge clair façon coque */
-}
-
 
 .field-block {
   display: grid;
