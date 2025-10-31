@@ -1,0 +1,163 @@
+@use '../../styles/dex-shell' as *;
+
+.field-page {
+  --t1: #6ddde4;
+
+  @supports (color: color-mix(in oklab, white, black)) {
+    --card-bg:        color-mix(in oklab, var(--t1) 14%, #ffffff);
+    --card-border:    color-mix(in oklab, var(--t1) 45%, #000000);
+    --card-shadow:    0 8px 24px color-mix(in oklab, var(--t1) 22%, transparent);
+    --card-gloss-top: color-mix(in oklab, #ffffff 65%, var(--t1));
+  }
+}
+
+.field-page {
+  display: grid;
+  gap: 1rem;
+  background: linear-gradient(180deg, #f8fbff 0%, #eef4fa 100%);
+}
+.dex-body.field-page {
+  padding: 1.5rem;
+  padding-top: 2rem;
+  gap: 1.5rem;
+}
+
+/* Effet écran Pokédex */
+.dex-card {
+  background: #c3141d; /* rouge Pokédex */
+  border-radius: 22px;
+  padding: 1rem;
+  box-shadow:
+    inset 0 3px 6px rgba(255, 255, 255, 0.25),
+    inset 0 -3px 8px rgba(0, 0, 0, 0.25),
+    0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* "Écran" principal à l’intérieur du Pokédex */
+.dex-body.field-page {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 1.5rem;
+  box-shadow:
+    inset 0 2px 6px rgba(0, 0, 0, 0.15),
+    0 0 0 4px #b51119, /* contour rouge foncé visible */
+    0 0 0 8px #e92b2b; /* halo rouge clair façon coque */
+}
+
+
+.field-block {
+  display: grid;
+  gap: .5rem;
+}
+
+.field-block h2 {
+  margin: 0;
+  font-weight: 900;
+  font-size: clamp(1.1rem, 1rem + 0.4vw, 1.4rem);
+}
+
+.field-block h3 {
+  margin: .5rem 0 0;
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.effect-list {
+  margin: 0;
+  padding-left: 6rem;
+  list-style-type: disc;
+  list-style-position: inside;
+  line-height: 1.4;
+  font-size: .95rem;
+  font-weight: 500;
+}
+.effect-list li {
+  margin-bottom: .4rem;
+}
+
+@supports (color: color-mix(in oklab, white, black)) {
+  .content-card {
+    background: linear-gradient(180deg, var(--card-gloss-top), var(--card-bg));
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    padding: .75rem 1rem;
+  }
+}
+@supports not (color: color-mix(in oklab, white, black)) {
+  .content-card {
+    background: rgba(255,255,255,.9);
+    border: 1px solid rgba(0,0,0,.08);
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,.06);
+    padding: .75rem 1rem;
+  }
+}
+
+.overview-card {
+  --c1: #6ddde4;
+  background: linear-gradient(180deg, color-mix(in oklab, var(--c1) 80%, white) 0%, var(--c1) 85%);
+  color: #08363a;
+  border: 2px solid color-mix(in oklab, var(--c1) 60%, black);
+}
+
+.electrik-card {
+  --c1: #f7d02c;
+  background: linear-gradient(180deg, color-mix(in oklab, var(--c1) 75%, white) 0%, var(--c1) 85%);
+  color: #473a00;
+  border: 2px solid color-mix(in oklab, var(--c1) 60%, black);
+}
+
+.brumeux-card {
+  --c1: #d685ad;
+  background: linear-gradient(180deg, color-mix(in oklab, var(--c1) 70%, white) 0%, var(--c1) 90%);
+  color: #4b1029;
+  border: 2px solid color-mix(in oklab, var(--c1) 60%, black);
+}
+
+.herbu-card {
+  --c1: #7ac74c;
+  background: linear-gradient(180deg, color-mix(in oklab, var(--c1) 70%, white) 0%, var(--c1) 90%);
+  color: #1e3a0d;
+  border: 2px solid color-mix(in oklab, var(--c1) 60%, black);
+}
+
+.psy-card {
+  --c1: #a98ff3;
+  background: linear-gradient(180deg, color-mix(in oklab, var(--c1) 70%, white) 0%, var(--c1) 90%);
+  color: #1c064d;
+  border: 2px solid color-mix(in oklab, var(--c1) 60%, black);
+}
+
+.myrmique-card {
+  --c1: #a6b91a;
+  background: linear-gradient(180deg, color-mix(in oklab, var(--c1) 75%, white) 0%, var(--c1) 90%);
+  color: #2f3405;
+  border: 2px solid color-mix(in oklab, var(--c1) 60%, black);
+}
+
+.nauseabond-card {
+  --c1: #a33ea1;
+  background: linear-gradient(180deg, color-mix(in oklab, var(--c1) 75%, white) 0%, var(--c1) 88%);
+  color: #310330;
+  border: 2px solid color-mix(in oklab, var(--c1) 60%, black);
+}
+
+.field-block {
+  border-radius: 14px;
+  box-shadow:
+    0 4px 14px rgba(0, 0, 0, 0.15),
+    inset 0 2px 4px rgba(255, 255, 255, 0.25);
+}
+
+.field-block h2,
+.field-block h3 {
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.4);
+}
+
+.field-block ul {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: .5rem .9rem;
+}
