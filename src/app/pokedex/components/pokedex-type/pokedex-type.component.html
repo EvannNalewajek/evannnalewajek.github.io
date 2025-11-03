@@ -155,41 +155,43 @@
 
             @if (pokemonsOfType(); as list) {
               @if (list.length) {
-                <table class="pokedex-table pokedex-table--compact">
-                  <thead>
-                    <tr>
-                      <th style="width:5rem">#</th>
-                      <th></th>
-                      <th>Nom</th>
-                      <th style="width:18rem">Type</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    @for (p of list; track p.id) {
+                <div class="table-scroll" role="region" aria-label="Table Pokédex défilable" tabindex="0">
+                  <table class="pokedex-table pokedex-table--compact">
+                    <thead>
                       <tr>
-                        <td>#{{ p.id.toString().padStart(3,'0') }}</td>
-                        <td>
-                          <a [routerLink]="['/pokedex', p.id]" class="sprite-link" title="Voir {{p.name}}">
-                            <img [src]="p.images.sprite" [alt]="p.name" loading="lazy" />
-                          </a>
-                        </td>
-                        <td><a [routerLink]="['/pokedex', p.id]">{{ p.name }}</a></td>
-                        <td>
-                          @for (t of typesOf(p); track t) {
-                            <a
-                              class="chip chip--small chip-link"
-                              [routerLink]="['/pokedex/types', t.toLowerCase()]"
-                              [ngStyle]="styleFor(t)"
-                              title="Voir le type {{ t }}"
-                            >
-                              {{ t }}
-                            </a>
-                          }
-                        </td>
+                        <th style="width:5rem">#</th>
+                        <th></th>
+                        <th>Nom</th>
+                        <th style="width:18rem">Type</th>
                       </tr>
-                    }
-                  </tbody>
-                </table>
+                    </thead>
+                    <tbody>
+                      @for (p of list; track p.id) {
+                        <tr>
+                          <td>#{{ p.id.toString().padStart(3,'0') }}</td>
+                          <td>
+                            <a [routerLink]="['/pokedex', p.id]" class="sprite-link" title="Voir {{p.name}}">
+                              <img [src]="p.images.sprite" [alt]="p.name" loading="lazy" />
+                            </a>
+                          </td>
+                          <td><a [routerLink]="['/pokedex', p.id]">{{ p.name }}</a></td>
+                          <td>
+                            @for (t of typesOf(p); track t) {
+                              <a
+                                class="chip chip--small chip-link"
+                                [routerLink]="['/pokedex/types', t.toLowerCase()]"
+                                [ngStyle]="styleFor(t)"
+                                title="Voir le type {{ t }}"
+                              >
+                                {{ t }}
+                              </a>
+                            }
+                          </td>
+                        </tr>
+                      }
+                    </tbody>
+                  </table>
+                </div>
               } @else {
                 <p>Aucun Pokémon de ce type pour l'instant.</p>
               }
