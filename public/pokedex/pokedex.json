@@ -412,5 +412,23 @@
     },
     "baseStats": { "hp": 95, "atk": 65, "def": 85, "spa": 110, "spd": 95, "spe": 80 },
     "description": "Où qu'il passe, l'eau se teinte d'un violet scintillant. Son corps sécrète en permanence une huile toxique : il transforme les courants en poisons et les utilise pour chasser."
+  },
+  {
+    "id": 24,
+    "name": "Dracali",
+    "types": ["Dragon"],
+    "category": "Rugissant",
+    "abilities": ["Brise Moule"],
+    "hiddenAbility": "Peau Dure",
+    "height_m": 1.0,
+    "weight_kg": 28.0,
+    "genderRatio": { "male": 87.5, "female": 12.5 },
+    "captureRate": 45,
+    "images": {
+      "sprite": "pokedex/img/024_sprite.png",
+      "artwork": "pokedex/img/024_artwork.png"
+    },
+    "baseStats": { "hp": 65, "atk": 130, "def": 95, "spa": 65, "spd": 60, "spe": 110 },
+    "description": "Son corps est couvert d'écailles cristallines d'une grande beauté. Jadis braconné pour ces gemmes rares, son espèce a presque disparu. On pensait l'espèce éteinte jusqu'à ce que quelques individus soient observés dans des vallées reculées."
   }
 ]
