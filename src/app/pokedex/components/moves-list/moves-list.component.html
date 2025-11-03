@@ -1,0 +1,109 @@
+<div class="dex-scene">
+  <div class="dex-card">
+    <div class="dex-header">
+      <div class="dex-button" aria-hidden="true"></div>
+      <div class="dex-lights" aria-hidden="true">
+        <span class="led led-red"></span>
+        <span class="led led-yellow"></span>
+        <span class="led led-green"></span>
+      </div>
+      <h1>Capacités</h1>
+    </div>
+
+    <div class="dex-body">
+      <div class="dex-screen">
+
+        <div class="moves-toolbar">
+          <input
+            type="search"
+            placeholder="Rechercher une capacité…"
+            (input)="query($any($event.target).value)" />
+
+          <select (change)="selectType($any($event.target).value)">
+            <option value="">Tous les types</option>
+            @for (t of types(); track t) {
+              <option [value]="t">{{ t }}</option>
+            }
+          </select>
+
+          <select (change)="selectCategory($any($event.target).value)">
+            <option value="">Toutes catégories</option>
+            @for (c of categories; track c.key) {
+              <option [value]="c.key">{{ c.label }}</option>
+            }
+          </select>
+
+          <select (change)="selectSort($any($event.target).value)">
+            @for (s of sortKeys; track s.key) {
+              <option [value]="s.key">{{ s.label }}</option>
+            }
+          </select>
+        </div>
+
+        @if (list(); as rows) {
+          <table class="pokedex-table moves-table">
+            <!-- sizing piloté par colgroup -->
+            <colgroup>
+              <col class="c-num">
+              <col class="c-move">
+              <col class="c-type">
+              <col class="c-cat">
+              <col class="c-stat c-pow">
+              <col class="c-stat c-acc">
+              <col class="c-stat c-pp">
+              <col class="c-stat c-prio">
+            </colgroup>
+
+            <thead>
+              <tr>
+                <th class="col-num">#</th>
+                <th class="col-move">Capacité</th>
+                <th class="col-type-head">Type</th>
+                <th>Catégorie</th>
+                <th>Puiss.</th>
+                <th>Préc.</th>
+                <th>PP</th>
+                <th>Prio</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              @for (m of rows; track m.id; let i = $index) {
+                <tr>
+                  <td class="col-num" data-label="#">#{{ i + 1 }}</td>
+
+                  <td class="col-name" data-label="Capacité">
+                    <span class="move-name">{{ m.name }}</span>
+                  </td>
+
+                  <td class="col-type" data-label="Type" [attr.data-type]="m.type">
+                    <a
+                      class="type-badge"
+                      [attr.data-type]="m.type"
+                      [routerLink]="['/pokedex/types', ($any(m.type) | typeSlug)]">
+                      {{ m.type }}
+                    </a>
+                  </td>
+
+                  <td data-label="Catégorie">
+                    <span class="cat-badge" [attr.data-cat]="(m.category || 'Statut')">
+                      {{ (m.category || 'Statut') }}
+                    </span>
+                  </td>
+
+                  <td data-label="Puiss.">{{ m.power ?? '—' }}</td>
+                  <td data-label="Préc.">{{ m.accuracy != null ? (m.accuracy + '%') : '—' }}</td>
+                  <td data-label="PP">{{ m.pp ?? '—' }}</td>
+                  <td data-label="Prio">{{ m.priority ?? 0 }}</td>
+                </tr>
+              }
+            </tbody>
+          </table>
+        } @else {
+          <p>Chargement des capacités…</p>
+        }
+
+      </div>
+    </div>
+  </div>
+</div>

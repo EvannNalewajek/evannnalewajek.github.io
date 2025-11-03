@@ -1,0 +1,218 @@
+[
+  {
+    "id": "eclair",
+    "name": "Éclair",
+    "type": "Électrik",
+    "category": "Spécial",
+    "power": 40,
+    "accuracy": 100,
+    "pp": 30,
+    "priority": 0,
+    "description": "Une faible décharge électrique frappe l'ennemi. Peut le paralyser."
+  },
+  {
+    "id": "vive-attaque",
+    "name": "Vive-Attaque",
+    "type": "Normal",
+    "category": "Physique",
+    "power": 40,
+    "accuracy": 100,
+    "pp": 30,
+    "priority": 1
+  },
+  {
+    "id": "flammeche",
+    "name": "Flammèche",
+    "type": "Feu",
+    "category": "Spécial",
+    "power": 40,
+    "accuracy": 100,
+    "pp": 25,
+    "priority": 0,
+    "description": "Projette de petites flammes sur l'ennemi. Peut le brûler."
+  },
+  {
+    "id": "tranch-herbe",
+    "name": "Tranch'Herbe",
+    "type": "Plante",
+    "category": "Physique",
+    "power": 55,
+    "accuracy": 95,
+    "pp": 25,
+    "priority": 0
+  },
+  {
+    "id": "pistolet-a-eau",
+    "name": "Pistolet à O",
+    "type": "Eau",
+    "category": "Spécial",
+    "power": 40,
+    "accuracy": 100,
+    "pp": 25,
+    "priority": 0
+  },
+  {
+    "id": "draco-rage",
+    "name": "Draco-Rage",
+    "type": "Dragon",
+    "category": "Spécial",
+    "power": null,
+    "accuracy": 100,
+    "pp": 10,
+    "priority": 0,
+    "description": "Inflige toujours 40 PV de dégâts."
+  },
+  {
+    "id": "teleport",
+    "name": "Téléport",
+    "type": "Psy",
+    "category": "Statut",
+    "power": null,
+    "accuracy": null,
+    "pp": 20,
+    "priority": -6,
+    "description": "Le lanceur s'enfuit ou change de place avec un allié."
+  },
+  {
+    "id": "tonnerre",
+    "name": "Tonnerre",
+    "type": "Électrik",
+    "category": "Spécial",
+    "power": 90,
+    "accuracy": 100,
+    "pp": 15,
+    "priority": 0,
+    "description": "Un éclair puissant frappe l'ennemi. Peut le paralyser."
+  },
+  {
+    "id": "lance-flammes",
+    "name": "Lance-Flammes",
+    "type": "Feu",
+    "category": "Spécial",
+    "power": 90,
+    "accuracy": 100,
+    "pp": 15,
+    "priority": 0,
+    "description": "Souffle de puissantes flammes. Peut brûler l'ennemi."
+  },
+  {
+    "id": "hydrocanon",
+    "name": "Hydrocanon",
+    "type": "Eau",
+    "category": "Spécial",
+    "power": 110,
+    "accuracy": 80,
+    "pp": 5,
+    "priority": 0
+  },
+  {
+    "id": "cru-aiguisage",
+    "name": "Affûtage",
+    "type": "Normal",
+    "category": "Statut",
+    "power": null,
+    "accuracy": null,
+    "pp": 30,
+    "priority": 0,
+    "description": "Augmente la précision du lanceur."
+  },
+  {
+    "id": "seisme",
+    "name": "Séisme",
+    "type": "Sol",
+    "category": "Physique",
+    "power": 100,
+    "accuracy": 100,
+    "pp": 10,
+    "priority": 0,
+    "description": "Fait trembler le sol pour infliger des dégâts à tous les Pokémon au sol."
+  },
+  {
+    "id": "mach-punch",
+    "name": "Mach Punch",
+    "type": "Combat",
+    "category": "Physique",
+    "power": 40,
+    "accuracy": 100,
+    "pp": 30,
+    "priority": 1,
+    "description": "Coup rapide porté avant l'ennemi."
+  },
+  {
+    "id": "blizzard",
+    "name": "Blizzard",
+    "type": "Glace",
+    "category": "Spécial",
+    "power": 110,
+    "accuracy": 70,
+    "pp": 5,
+    "priority": 0,
+    "description": "Tempête de neige violente qui peut geler l'ennemi."
+  },
+  {
+    "id": "tranche-nuit",
+    "name": "Tranche-Nuit",
+    "type": "Ténèbres",
+    "category": "Physique",
+    "power": 70,
+    "accuracy": 100,
+    "pp": 15,
+    "priority": 0,
+    "description": "Frappe avec une lame obscure. Taux de critiques élevé."
+  },
+  {
+    "id": "bomb-beurk",
+    "name": "Bombe Beurk",
+    "type": "Poison",
+    "category": "Spécial",
+    "power": 90,
+    "accuracy": 100,
+    "pp": 10,
+    "priority": 0,
+    "description": "Projette de la boue toxique. Peut empoisonner la cible."
+  },
+  {
+    "id": "vampigraine",
+    "name": "Vampigraine",
+    "type": "Plante",
+    "category": "Statut",
+    "power": null,
+    "accuracy": 90,
+    "pp": 10,
+    "priority": 0,
+    "description": "Plante une graine dans la cible pour lui voler des PV à chaque tour."
+  },
+  {
+    "id": "vent-argenté",
+    "name": "Vent Argenté",
+    "type": "Insecte",
+    "category": "Spécial",
+    "power": 60,
+    "accuracy": 100,
+    "pp": 5,
+    "priority": 0,
+    "description": "Peut augmenter toutes les stats du lanceur."
+  },
+  {
+    "id": "rugissement",
+    "name": "Rugissement",
+    "type": "Normal",
+    "category": "Statut",
+    "power": null,
+    "accuracy": 100,
+    "pp": 40,
+    "priority": 0,
+    "description": "Réduit l'Attaque de la cible en criant."
+  },
+  {
+    "id": "coud-krane",
+    "name": "Coud'Krâne",
+    "type": "Normal",
+    "category": "Physique",
+    "power": 130,
+    "accuracy": 100,
+    "pp": 10,
+    "priority": 0,
+    "description": "Charge puissante, mais blesse légèrement le lanceur."
+  }
+]
