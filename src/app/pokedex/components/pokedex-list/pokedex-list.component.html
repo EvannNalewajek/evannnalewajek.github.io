@@ -13,6 +13,12 @@
     <div class="dex-body">
       <div class="dex-screen pokedex-list-page">
 
+        <div class="list-actions">
+          <a class="nav-chip" routerLink="/pokedex/moves" title="Voir toutes les capacités">
+            📘 Capacités
+          </a>
+        </div>
+
         @if (list(); as rows) {
           <table class="pokedex-table">
             <thead>

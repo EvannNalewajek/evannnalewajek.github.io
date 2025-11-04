@@ -1,36 +1,138 @@
 import { Injectable, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs';
-import { Move } from './move.model';
+import { Move, TargetPreset, TargetCell } from './move.model';
+
+/* ---------- Helpers ---------- */
+
+const VALID_CELLS: TargetCell[] = ['FOE_L','FOE_C','FOE_R','SELF','ALLY_L','ALLY_R'];
+
+function slugify(input: string): string {
+  return input
+    .toString()
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/\p{Diacritic}/gu, '')
+    .replace(/\s+/g, '-')
+    .replace(/[^a-z0-9-]/g, '')
+    .replace(/--+/g, '-')
+    .replace(/^-|-$/g, '');
+}
+
+function asNumber(v: any): number | null {
+  if (v === null || v === undefined || v === '') return null;
+  const n = +v;
+  return Number.isFinite(n) ? n : null;
+}
+
+function normalizeCritRate(val: any): Move['critRate'] {
+  if (val === null || val === undefined) return null;
+
+  if (typeof val === 'number') {
+    if (val >= 2) return 'very-high';
+    if (val >= 1) return 'high';
+    return 'normal';
+  }
+  if (typeof val === 'string') {
+    const s = slugify(val).replace(/-/g, '');
+    if (s.includes('veryhigh') || s.includes('++')) return 'very-high';
+    if (s.includes('high') || s.includes('+') || s.includes('eleve')) return 'high';
+    if (s.includes('normal')) return 'normal';
+    return null;
+  }
+  return null;
+}
+
+function normalizeTarget(m: any): { preset?: TargetPreset; pattern?: TargetCell[] } {
+  const presetRaw  = m.targetPreset ?? m.preset ?? m.target?.preset ?? m.target;
+  const patternRaw = m.targetPattern ?? m.pattern ?? m.target?.pattern;
+
+  if (Array.isArray(patternRaw)) {
+    const pattern = (patternRaw as any[])
+      .map(x => String(x).toUpperCase())
+      .filter(x => VALID_CELLS.includes(x as TargetCell)) as TargetCell[];
+    if (pattern.length) return { pattern };
+  }
+
+  if (
+    presetRaw === 'adjacent-one'     ||
+    presetRaw === 'adjacent-foes-all'||
+    presetRaw === 'adjacent-all'     ||
+    presetRaw === 'all-one'          ||
+    presetRaw === 'self'
+  ) {
+    return { preset: presetRaw as TargetPreset };
+  }
+
+  const txt = typeof presetRaw === 'string' ? slugify(presetRaw) : '';
+
+  if (txt === 'adjacentone')        return { preset: 'adjacent-one' };
+  if (txt === 'adjacentfoesall' ||
+      txt === 'adjacentfoes')       return { preset: 'adjacent-foes-all' };
+  if (txt === 'adjacentall')        return { preset: 'adjacent-all' };
+  if (txt === 'allone')             return { preset: 'all-one' };
+
+  return {};
+}
 
 @Injectable({ providedIn: 'root' })
 export class MovesService {
   private http = inject(HttpClient);
-
   private url = '/pokedex/moves.json';
 
   getAll() {
     return this.http.get<any>(this.url).pipe(
       map((raw) => {
         const list: any[] = Array.isArray(raw) ? raw : Object.values(raw || {});
-        return list.map((m, i) => {
-          const move: Move = {
-            id: m.id ?? i + 1,
-            name: m.name ?? m.nom ?? m.move ?? `Capacité ${i + 1}`,
-            type: m.type ?? m.typ ?? 'Normal',
-            category: (m.category ?? m.cat ?? 'Statut') as Move['category'],
-            power: m.power ?? m.puissance ?? null,
-            accuracy: m.accuracy ?? m.precision ?? null,
-            pp: m.pp ?? m.PP ?? null,
-            priority: m.priority ?? m.prio ?? 0,
-            shortDesc: m.shortDesc ?? m.short_description ?? m.short ?? null,
-            desc: m.desc ?? m.description ?? null,
-            target: m.target,
-            makesContact: m.makesContact ?? m.contact ?? false,
-          };
-          return move;
-        });
+        return list
+          .map((m, i): Move => {
+            const id: number =
+              typeof m.id === 'number' ? m.id : (parseInt(String(m.id), 10) || i + 1);
+
+            const slug: string = slugify(
+              m.slug ?? m.url ?? m.name ?? m.nom ?? m.id ?? `move-${id}`
+            );
+
+            const { preset, pattern } = normalizeTarget(m);
+
+            return {
+              id,
+              slug,
+              name: m.name ?? m.nom ?? m.move ?? `Capacité ${id}`,
+              type: m.type ?? m.typ ?? 'Normal',
+              category: (m.category ?? m.cat ?? 'Statut') as Move['category'],
+              power: asNumber(m.power ?? m.puissance),
+              accuracy: asNumber(m.accuracy ?? m.precision),
+              pp: asNumber(m.pp ?? m.PP),
+              priority: asNumber(m.priority ?? m.prio) ?? 0,
+
+              shortDesc: m.shortDesc ?? m.short_description ?? m.short ?? null,
+              desc: m.desc ?? m.description ?? null,
+              effect: m.effect ?? m.effet ?? null,
+
+              makesContact: Boolean(m.makesContact ?? m.contact ?? false),
+              critRate: normalizeCritRate(m.critRate ?? m.crit ?? m.tauxCrit),
+
+              targetPreset: preset,
+              targetPattern: pattern
+            };
+          })
+          .sort((a, b) => a.id - b.id);
       })
+    );
+  }
+
+  /** Pratique pour le détail : récupère par slug (URL) */
+  getByUrl$(slug: string) {
+    return this.getAll().pipe(
+      map(list => list.find(m => m.slug === slug) ?? null)
+    );
+  }
+
+  /** Idem par ID numérique */
+  getById$(id: number) {
+    return this.getAll().pipe(
+      map(list => list.find(m => m.id === id) ?? null)
     );
   }
 }

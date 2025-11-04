@@ -70,6 +70,7 @@ export class MovesListComponent {
 
   sortKeys = [
     { key: 'name', label: 'Nom' },
+    { key: 'id', label: 'ID' },
     { key: 'type', label: 'Type' },
     { key: 'category', label: 'Catégorie' },
     { key: 'power', label: 'Puissance' },
@@ -82,7 +83,7 @@ export class MovesListComponent {
 function normalizeCat(cat: Move['category']): string {
   switch (cat) {
     case 'Physical': return 'Physique';
-    case 'Special':  return 'Spéciale';
+    case 'Special':  return 'Spécial';
     case 'Status':   return 'Statut';
     default:         return cat as string;
   }
@@ -90,6 +91,7 @@ function normalizeCat(cat: Move['category']): string {
 function valueFor(m: Move, key: string) {
   switch (key) {
     case 'name': return m.name?.toLowerCase() ?? '';
+    case 'id': return m.id ?? -1;
     case 'type': return m.type?.toLowerCase() ?? '';
     case 'category': return normalizeCat(m.category);
     case 'power': return m.power ?? -1;

@@ -280,3 +280,8 @@
 
   .move-name { white-space: normal; overflow-wrap: anywhere; }
 }
+.list-actions{
+  display:flex;
+  justify-content:flex-end;
+  margin: .5rem 0 .75rem;
+}

@@ -70,20 +70,21 @@
             <tbody>
               @for (m of rows; track m.id; let i = $index) {
                 <tr>
-                  <td class="col-num" data-label="#">#{{ i + 1 }}</td>
+                    <td class="col-num" data-label="#">#{{ m.id | number:'2.0-0' }}</td>
 
-                  <td class="col-name" data-label="Capacité">
-                    <span class="move-name">{{ m.name }}</span>
-                  </td>
+                    <td class="col-name group-end" data-label="Capacité">
+                        <a class="name-link" [routerLink]="['/pokedex/moves', m.slug]">
+                            {{ m.name }}
+                        </a>
+                    </td>
 
-                  <td class="col-type" data-label="Type" [attr.data-type]="m.type">
-                    <a
-                      class="type-badge"
-                      [attr.data-type]="m.type"
-                      [routerLink]="['/pokedex/types', ($any(m.type) | typeSlug)]">
-                      {{ m.type }}
-                    </a>
-                  </td>
+                    <td class="col-type" data-label="Type" [attr.data-type]="m.type">
+                        <a class="type-badge"
+                            [attr.data-type]="m.type"
+                            [routerLink]="['/pokedex/types', ($any(m.type) | typeSlug)]">
+                            {{ m.type }}
+                        </a>
+                    </td>
 
                   <td data-label="Catégorie">
                     <span class="cat-badge" [attr.data-cat]="(m.category || 'Statut')">

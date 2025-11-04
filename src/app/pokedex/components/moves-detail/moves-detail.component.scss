@@ -1,0 +1,255 @@
+@use '../../styles/dex-shell' as *;
+
+.move-detail {
+  --t1: #a8a77a;
+  display: grid;
+  gap: 1rem;
+}
+
+.move-detail[data-type1="Feu"]      { --t1:#ee8130; }
+.move-detail[data-type1="Eau"]      { --t1:#6390f0; }
+.move-detail[data-type1="Plante"]   { --t1:#7ac74c; }
+.move-detail[data-type1="Acier"]    { --t1:#b7b7ce; }
+.move-detail[data-type1="Glace"]    { --t1:#96d9d6; }
+.move-detail[data-type1="Sol"]      { --t1:#e2bf65; }
+.move-detail[data-type1="Ténèbres"] { --t1:#705746; }
+.move-detail[data-type1="Psy"]      { --t1:#f95587; }
+.move-detail[data-type1="Vol"]      { --t1:#a98ff3; }
+.move-detail[data-type1="Roche"]    { --t1:#b6a136; }
+.move-detail[data-type1="Spectre"]  { --t1:#735797; }
+.move-detail[data-type1="Combat"]   { --t1:#c22e28; }
+.move-detail[data-type1="Poison"]   { --t1:#a33ea1; }
+.move-detail[data-type1="Insecte"]  { --t1:#a6b91a; }
+.move-detail[data-type1="Fée"]      { --t1:#d685ad; }
+.move-detail[data-type1="Dragon"]   { --t1:#6f35fc; }
+.move-detail[data-type1="Électrik"] { --t1:#f7d02c; }
+.move-detail[data-type1="Normal"]   { --t1:#a8a77a; }
+
+@supports (color: color-mix(in oklab, white, black)) {
+  .move-detail {
+    --card-bg:        color-mix(in oklab, var(--t1) 14%, #ffffff);
+    --card-border:    color-mix(in oklab, var(--t1) 45%, #000000);
+    --card-shadow:    0 8px 24px color-mix(in oklab, var(--t1) 22%, transparent);
+    --card-gloss-top: color-mix(in oklab, #ffffff 65%, var(--t1));
+  }
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .layout { grid-template-columns: 1fr; }
+}
+
+.content {
+  min-width: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.content-card {
+  background: linear-gradient(180deg, var(--card-gloss-top, #fff), var(--card-bg, #fff));
+  border: 1px solid var(--card-border, rgba(0,0,0,.08));
+  border-radius: 12px;
+  box-shadow: var(--card-shadow, 0 8px 24px rgba(0,0,0,.06));
+  padding: .75rem 1rem;
+}
+
+.title.content-card { padding-bottom: .5rem; }
+.title h2 { margin: 0; font-weight:900; font-size: clamp(1.2rem, 1rem + 1vw, 1.8rem); }
+.title h2 small { opacity:.7; margin-right:.5rem; font-weight:900; }
+
+.infobox-frame {
+  --t2: var(--t1);
+  position: sticky;
+  top: .75rem;
+  padding: 10px;
+  border-radius: 20px;
+  background: var(--t2);
+  box-shadow: 0 14px 28px rgba(0,0,0,.08);
+  background-image:
+    radial-gradient(100% 100% at 50% 50%, color-mix(in oklab, var(--t2) 92%, white), var(--t2));
+  outline: 1px solid color-mix(in oklab, var(--t2) 40%, black);
+  outline-offset: -1px;
+
+  .panel.primary {
+    border-radius: 14px;
+    background: color-mix(in oklab, var(--t1) 88%, white);
+    border: 2px solid color-mix(in oklab, var(--t1) 55%, black);
+    padding: .75rem;
+    display: grid;
+    gap: .75rem;
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,.6),
+      0 2px 6px rgba(0,0,0,.06);
+  }
+
+  .quickfacts, .types-box {
+    background: linear-gradient(180deg, color-mix(in oklab, #fff 65%, var(--t1)), color-mix(in oklab, var(--t1) 14%, #fff));
+    border: 1px solid color-mix(in oklab, var(--t1) 45%, #000);
+    border-radius: 12px;
+    box-shadow: 0 6px 16px color-mix(in oklab, var(--t1) 18%, transparent);
+    padding: .6rem .75rem;
+  }
+
+  .dl-grid { display:grid; gap:.35rem; }
+  .dl-grid > div { display:grid; grid-template-columns: 8rem 1fr; gap:.5rem; align-items:baseline; }
+  .dl-grid dt { font-weight:800; color: color-mix(in oklab, var(--t1) 55%, #1a1a1a); }
+  .dl-grid dd {
+    margin:0;
+    background:#fff;
+    border:1px solid color-mix(in oklab, var(--t1) 20%, #e3e6ea);
+    border-radius:.35rem;
+    padding:.15rem .4rem;
+    width: fit-content;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.types { display:flex; flex-wrap:wrap; gap:.5rem; }
+.type-chip {
+  display:inline-block;
+  padding:.35rem .7rem;
+  border-radius:999px;
+  font-weight:700;
+  text-decoration:none;
+  color:inherit;
+  background:#fff;
+  border:2px solid rgba(0,0,0,.15);
+  transition: transform .08s ease, box-shadow .08s ease;
+  user-select:none;
+}
+.type-chip:hover { transform: scale(1.05); }
+
+.type-chip[data-type="Feu"]       { background:#ee8130; color:#7a3600; }
+.type-chip[data-type="Eau"]       { background:#6390f0; color:#1a357f; }
+.type-chip[data-type="Plante"]    { background:#7ac74c; color:#2b530f; }
+.type-chip[data-type="Acier"]     { background:#b7b7ce; color:#43435a; }
+.type-chip[data-type="Glace"]     { background:#96d9d6; color:#2a6260; }
+.type-chip[data-type="Sol"]       { background:#e2bf65; color:#664e00; }
+.type-chip[data-type="Ténèbres"]  { background:#705746; color:#281e16; }
+.type-chip[data-type="Psy"]       { background:#f95587; color:#7a1437; }
+.type-chip[data-type="Vol"]       { background:#a98ff3; color:#3b2a84; }
+.type-chip[data-type="Roche"]     { background:#b6a136; color:#463a00; }
+.type-chip[data-type="Spectre"]   { background:#735797; color:#2a1e3a; }
+.type-chip[data-type="Combat"]    { background:#c22e28; color:#4d0f0c; }
+.type-chip[data-type="Poison"]    { background:#a33ea1; color:#3d1540; }
+.type-chip[data-type="Insecte"]   { background:#a6b91a; color:#364000; }
+.type-chip[data-type="Fée"]       { background:#d685ad; color:#682c46; }
+.type-chip[data-type="Dragon"]    { background:#6f35fc; color:#2b0f8c; }
+.type-chip[data-type="Électrik"]  { background:#f7d02c; color:#6b5300; }
+.type-chip[data-type="Normal"]    { background:#a8a77a; color:#3b3a17; }
+
+.cat-badge{
+  display:inline-flex; align-items:center; justify-content:center;
+  min-width:5.5rem;
+  padding:.25rem .7rem; border-radius:.65rem; font-weight:800;
+  border:2px solid rgba(0,0,0,.15);
+  background:#f1f3f5;
+  text-align:center;
+}
+.cat-badge[data-cat="Physique"] { background:#ffd6cf; }
+.cat-badge[data-cat="Spécial"]  { background:#e4e1ff; }
+.cat-badge[data-cat="Statut"]   { background:#f1f3f5; }
+
+.dex-toolbar       { margin: .25rem 0 1rem; }
+.dex-toolbar.bottom{ margin: 1rem 0 0; }
+.dex-toolbar .toolbar-inner{
+  display:grid; grid-template-columns:1fr auto 1fr; align-items:center; gap:.5rem;
+  background: linear-gradient(180deg, rgba(255,255,255,.85), rgba(255,255,255,.72));
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 999px; box-shadow: 0 8px 20px rgba(0,0,0,.08);
+  padding:.4rem .75rem;
+}
+.dex-toolbar .left{justify-self:start;} .dex-toolbar .center{justify-self:center;font-weight:800;} .dex-toolbar .right{justify-self:end;}
+.dex-toolbar a { text-decoration: none; font-weight: 800; }
+
+.nav-chip{
+  display:inline-flex; align-items:center; gap:.45rem;
+  padding:.25rem .55rem; border-radius: 999px;
+  background: #fff; border:1px solid rgba(0,0,0,.12);
+  box-shadow: 0 1px 0 rgba(255,255,255,.6), inset 0 -1px 0 rgba(0,0,0,.06);
+  text-decoration:none; color: inherit; font-weight: 800;
+}
+
+.crit-badge {
+  display: inline-block;
+  padding: .2rem .5rem;
+  border-radius: .5rem;
+  font-weight: 800;
+  border: 2px solid rgba(0,0,0,.15);
+  background: #eef2f7;
+}
+.crit-badge[data-level="normal"]   { background:#eef2f7; }
+.crit-badge[data-level="high"]     { background:#ffe8c9; border-color:#e6b354; }
+.crit-badge[data-level="very-high"]{ background:#ffd6d6; border-color:#d25a5a; }
+
+.flag-badge {
+  display:inline-block;
+  padding:.2rem .5rem;
+  border-radius:.5rem;
+  font-weight:800;
+  border:2px solid rgba(0,0,0,.15);
+  background:#f1f3f5;
+  opacity:.8;
+}
+.flag-badge.on {
+  background:#dff3e1;
+  border-color:#4caf50;
+  color:#114d1b;
+  opacity:1;
+}
+
+@media (max-width: 720px) {
+  .infobox-frame { position: static; border-radius: 14px; padding: .5rem .5rem 1rem; }
+  .infobox-frame .panel.primary { padding:.5rem; gap:.5rem; }
+  .dl-grid > div { grid-template-columns: 7rem 1fr; }
+  .dex-toolbar .toolbar-inner { border-radius: 12px; }
+}
+@media (max-width: 600px) {
+  .dex-toolbar .toolbar-inner {
+    grid-template-columns: auto 1fr auto;
+    gap: .4rem;
+    padding: .4rem .5rem;
+    border-radius: 10px;
+    font-size: .8rem;
+    line-height: 1.2;
+    text-align: center;
+  }
+  .content-card { border-radius: 10px; padding: .6rem .75rem; }
+  .title h2 { font-size: 1rem; line-height: 1.2; }
+  .title h2 small { font-size: .8rem; margin-right: .4rem; }
+  .dl-grid dt, .dl-grid dd { font-size:.85rem; line-height:1.2; }
+  .type-chip { padding:.3rem .5rem; font-size:.8rem; }
+  .cat-badge { min-width:auto; font-size:.85rem; }
+}
+
+.infobox-frame .panel.primary {
+  display: grid;
+  gap: .75rem;
+  grid-auto-rows: min-content;
+}
+
+.target-card.content-card {
+  padding: .6rem .75rem;
+}
+
+.target-card .diagram {
+  width: 100%;
+  max-width: 100%;
+}
+
+.quickfacts,
+.types-box,
+.target-card {
+  margin: 0;
+}
+
+@media (max-width: 720px) {
+  .target-card.content-card { border-radius: 10px; }
+  .target-card .diagram { max-width: 100%; }
+}

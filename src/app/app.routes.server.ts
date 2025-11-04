@@ -5,6 +5,7 @@ export const serverRoutes: ServerRoute[] = [
   { path: 'pokedex', renderMode: RenderMode.Prerender },
   { path: 'pokedex/fields', renderMode: RenderMode.Client },
   { path: 'pokedex/moves', renderMode: RenderMode.Client },
+  { path: 'pokedex/moves/:slug', renderMode: RenderMode.Client },
   { path: 'pokedex/:id', renderMode: RenderMode.Client },
   { path: 'pokedex/types/:slug', renderMode: RenderMode.Client },
 

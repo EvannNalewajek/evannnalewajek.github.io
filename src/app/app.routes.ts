@@ -10,12 +10,14 @@ import { PokedexDetailComponent } from './pokedex/components/pokedex-detail/poke
 import { TypePageComponent } from './pokedex/components/pokedex-type/pokedex-type.component';
 import { PokedexFieldComponent } from './pokedex/components/pokedex-field/pokedex-field.component';
 import { MovesListComponent } from './pokedex/components/moves-list/moves-list.component';
+import { MovesDetailComponent } from './pokedex/components/moves-detail/moves-detail.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent, title: 'Accueil' },
     { path: 'pokedex', component: PokedexListComponent, title: 'Pokédex' },
     { path: 'pokedex/fields', component: PokedexFieldComponent, title: 'Pokédex - Champ' },
     { path: 'pokedex/moves', component: MovesListComponent, title: 'Pokédex - Capacités' },
+    { path: 'pokedex/moves/:slug', component: MovesDetailComponent, title : 'Pokédex - Capacités Détail' },
     { path: 'pokedex/:id', component: PokedexDetailComponent, title: 'Pokédex - Détail' },
     { path: 'pokedex/types/:slug', component: TypePageComponent, title: 'Pokédex - Type' },
     { path: 'enigmemain',

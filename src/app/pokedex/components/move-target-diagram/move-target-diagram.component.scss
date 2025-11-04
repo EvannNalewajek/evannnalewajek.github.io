@@ -1,0 +1,40 @@
+.target-diagram {
+  display: grid;
+  gap: .5rem;
+  justify-content: center;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(86px, 1fr));
+  gap: .5rem;
+}
+
+.cell {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: .7rem .5rem;
+  border-radius: .75rem;
+  border: 2px solid #8a90a6;
+  background: #ffffff;
+  font-weight: 900;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.7);
+  user-select: none;
+}
+
+.foe  { background: #fff5f5; }
+.self { background: #eef2ff; }
+.ally { background: #f7faff; }
+
+.cell.hit {
+  border-color: #d32f2f;
+  box-shadow: 0 0 0 2px rgba(211,47,47,.4);
+  background: #ffe3e3;
+}
+
+.target-caption {
+  text-align: center;
+  margin: .45rem 0 0;
+  font-weight: 700;
+}
