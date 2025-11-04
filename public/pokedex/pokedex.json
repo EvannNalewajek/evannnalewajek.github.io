@@ -65,8 +65,8 @@
     "genderRatio": { "male": 50, "female": 50 }, 
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/001_sprite.png",
-      "artwork": "pokedex/img/001_artwork.png"
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 65, "atk": 58, "def": 48, "spa": 40, "spd": 49, "spe": 50 },
     "description": "Il ne se sent en confiance que lorsqu'il est blotti contre les personnes qu'il aime. Sa fourrure dégage une chaleur douce, ce qui en fait un excellent compagnon de câlin."
@@ -83,8 +83,8 @@
     "genderRatio": { "male": 87.5, "female": 12.5 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/002_sprite.png",
-      "artwork": "pokedex/img/002_artwork.png"
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 88, "atk": 88, "def": 60, "spa": 50, "spd": 59, "spe": 65 },
     "description": "On pense que ses caractéristiques étranges sont dû à une adaptation brutale face à son environnement. Il mange énormément pour compenser l'énergie qu'il brûle en permanence pour conserver sa chaleur."
@@ -101,8 +101,8 @@
     "genderRatio": { "male": 87.5, "female": 12.5 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/003_sprite.png",
-      "artwork": "pokedex/img/003_artwork.png"
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 108, "atk": 117, "def": 70, "spa": 55, "spd": 70, "spe": 110 },
     "description": "La température de son corps peut passer brutalement d'un froid glaciale à un feu brûlant selon son humeur. Dans les régions polaires, son rugissement est confondu avec celui des glaciers qui se brisent."
@@ -173,8 +173,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 255,
     "images": {
-      "sprite": "pokedex/img/001_sprite.png",
-      "artwork": "pokedex/img/001_artwork.png"
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 45, "atk": 55, "def": 50, "spa": 30, "spd": 40, "spe": 70 },
     "description": "Il collectionne les morceaux de métal qu'il trouve dans les ruines. Il s'en sert pour se protéger, mais aussi pour impressionner ses congénères."
@@ -191,8 +191,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 255,
     "images": {
-      "sprite": "pokedex/img/002_sprite.png",
-      "artwork": "pokedex/img/002_artwork.png"
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 70, "atk": 90, "def": 100, "spa": 45, "spd": 70, "spe": 85 },
     "description": "Il vit dans les décharges et entrepôts abandonnés. Son intelligence lui a permis de manipuler les débris métalliques qu'il trouve pour s'en faire des outils et armures utiles, en imitant les humains."
@@ -209,8 +209,8 @@
     "genderRatio": { "male": 12.5, "female": 87.5 },
     "captureRate": 255,
     "images": {
-      "sprite": "pokedex/img/001_sprite.png",
-      "artwork": "pokedex/img/001_artwork.png"
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 40, "atk": 35, "def": 30, "spa": 35, "spd": 30, "spe": 30 },
     "description": "Ces Pokémon vivent collés les uns aux autres dans des galeries étroites. En fonction de leur alimentation, ces larves peuvent aussi bien devenir une simple ouvrière qu'une grand reine."
@@ -227,8 +227,8 @@
     "genderRatio": { "male": 12.5, "female": 87.5 },
     "captureRate": 255,
     "images": {
-      "sprite": "pokedex/img/002_sprite.png",
-      "artwork": "pokedex/img/002_artwork.png"
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 55, "atk": 65, "def": 55, "spa": 50, "spd": 50, "spe": 65 },
     "description": "Les femelles sont responsables de récupérer de la nourriture et creuser les galeries, tandis que les mâles possèdent des ailes pour se préparer à leur vol nuptial."
@@ -245,8 +245,8 @@
     "genderRatio": { "male": 0, "female": 100 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/003_sprite.png",
-      "artwork": "pokedex/img/003_artwork.png"
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 62, "atk": 116, "def": 80, "spa": 52, "spd": 75, "spe": 85 },
     "description": "Ces Pokémon défendent le nid au péril de leur vie. Avec leur tête dure comme la pierre, elles sont capables de bloquer les tunnels du nid."
@@ -263,8 +263,8 @@
     "genderRatio": { "male": 0, "female": 100 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/003_sprite.png",
-      "artwork": "pokedex/img/003_artwork.png"
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 80, "atk": 55, "def": 100, "spa": 105, "spd": 100, "spe": 45 },
     "description": "Elle émet des phéromones responsables de coordonner les Pokémon de sa colonie. En cas d'attaque, elle privilégiera toujours l'apaisement avant la riposte."
@@ -281,8 +281,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 255,
     "images": {
-      "sprite": "pokedex/img/001_sprite.png",
-      "artwork": "pokedex/img/001_artwork.png"
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 40, "atk": 55, "def": 35, "spa": 41, "spd": 30, "spe": 63 },
     "description": "Il adore se poser sur les toits pour observer les passants. Si une personne tient de la nourriture dans la main, il viendra vers elle dans l'espoir qu'elle lui en donne un morceau."
@@ -299,8 +299,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 120,
     "images": {
-      "sprite": "pokedex/img/002_sprite.png",
-      "artwork": "pokedex/img/002_artwork.png"
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 52, "atk": 77, "def": 42, "spa": 68, "spd": 42, "spe": 80 },
     "description": "Il est attiré par tout ce qui brille. Son plaisir est de porter des bijoux qui portent le même éclat que son plumage. Les amateurs de mode s'inspirent souvent de ce Pokémon."
@@ -317,8 +317,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/003_sprite.png",
-      "artwork": "pokedex/img/003_artwork.png"
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 60, "atk": 115, "def": 50, "spa": 105, "spd": 50, "spe": 113 },
     "description": "Ce Pokémon a perfectionné son vol afin qu'il soit le plus silencieux possible. Il sort la nuit pour traquer ses proies et voler tout ce qui semble avoir de la valeur."
@@ -335,8 +335,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 180,
     "images": {
-      "sprite": "pokedex/img/001_sprite.png",
-      "artwork": "pokedex/img/001_artwork.png"
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 36, "atk": 64, "def": 35, "spa": 52, "spd": 43, "spe": 90 },
     "description": "Il court en cercles quand il accumule trop d'énergie statique. L'électricité stockée dans ses pattes lui permet de bondir plus haut qu'un humain de taille moyen."
@@ -353,8 +353,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 95,
     "images": {
-      "sprite": "pokedex/img/002_sprite.png",
-      "artwork": "pokedex/img/002_artwork.png"
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 65, "atk": 105, "def": 47, "spa": 60, "spd": 90, "spe": 123 },
     "description": "Il canalise son énergie dans ses pattes pour frapper plus vite que l'éclair, laissant une marque de brûlure à l'endroit d'où il a sauté. Chaque duel est pour lui comme une danse."
@@ -371,8 +371,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 240,
     "images": {
-      "sprite": "pokedex/img/001_sprite.png",
-      "artwork": "pokedex/img/001_artwork.png"
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 45, "atk": 40, "def": 45, "spa": 55, "spd": 40, "spe": 50 },
     "description": "Il joue dans les flaques d'eau boueuses. Son pelage sécrète une fine couche huileuse qui l'empêche de trop se salir et le protège des prédateurs."
@@ -389,8 +389,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 190,
     "images": {
-      "sprite": "pokedex/img/002_sprite.png",
-      "artwork": "pokedex/img/002_artwork.png"
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 70, "atk": 55, "def": 65, "spa": 80, "spd": 70, "spe": 65 },
     "description": "Il nage dans les marées polluées sans jamais tomber malade. La substance visqueuse qui recouvre son corps est toxique mais fascinante à regarder."
@@ -407,8 +407,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 75,
     "images": {
-      "sprite": "pokedex/img/003_sprite.png",
-      "artwork": "pokedex/img/003_artwork.png"
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 95, "atk": 65, "def": 85, "spa": 110, "spd": 95, "spe": 80 },
     "description": "Où qu'il passe, l'eau se teinte d'un violet scintillant. Son corps sécrète en permanence une huile toxique : il transforme les courants en poisons et les utilise pour chasser."
