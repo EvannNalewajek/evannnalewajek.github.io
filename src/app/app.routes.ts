@@ -5,6 +5,7 @@ import { EnigmeLayoutComponent } from './layout/enigme-layout';
 import { Enigme1Component } from './pages/enigme/enigme1/enigme1';
 import { Enigme2Component } from './pages/enigme/enigme2/enigme2';
 import { GuildeGameComponent } from './idle-game/components/game-main/game-main.component';
+import { PokedexMainComponent } from './pokedex/components/pokedex-main/pokedex-main.component';
 import { PokedexListComponent } from './pokedex/components/pokedex-list/pokedex-list.component';
 import { PokedexDetailComponent } from './pokedex/components/pokedex-detail/pokedex-detail.component';
 import { TypePageComponent } from './pokedex/components/pokedex-type/pokedex-type.component';
@@ -14,11 +15,12 @@ import { MovesDetailComponent } from './pokedex/components/moves-detail/moves-de
 
 export const routes: Routes = [
     { path: '', component: HomeComponent, title: 'Accueil' },
-    { path: 'pokedex', component: PokedexListComponent, title: 'Pokédex' },
+    { path: 'pokedex', component: PokedexMainComponent, title: 'Pokédex' },
+    { path: 'pokedex/pokemons', component: PokedexListComponent, title: 'Pokédex - Liste' },
+    { path: 'pokedex/pokemons/:id', component: PokedexDetailComponent, title: 'Pokédex - Détail' },
     { path: 'pokedex/fields', component: PokedexFieldComponent, title: 'Pokédex - Champ' },
     { path: 'pokedex/moves', component: MovesListComponent, title: 'Pokédex - Capacités' },
     { path: 'pokedex/moves/:slug', component: MovesDetailComponent, title : 'Pokédex - Capacités Détail' },
-    { path: 'pokedex/:id', component: PokedexDetailComponent, title: 'Pokédex - Détail' },
     { path: 'pokedex/types/:slug', component: TypePageComponent, title: 'Pokédex - Type' },
     { path: 'enigmemain',
         component: EnigmeComponent,
