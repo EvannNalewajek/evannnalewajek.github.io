@@ -44,13 +44,13 @@
                   <td class="col-num" data-label="Dex #">#{{ p.id | number:'2.0-0' }}</td>
 
                   <td class="col-sprite" data-label="Sprite">
-                    <a [routerLink]="['/pokedex', p.id]" class="sprite-link" title="Voir {{p.name}}">
+                    <a [routerLink]="['/pokedex/pokemons', p.id]" class="sprite-link" title="Voir {{p.name}}">
                       <img [src]="p.images.sprite" [alt]="p.name" loading="lazy" />
                     </a>
                   </td>
 
                   <td class="col-name group-end" data-label="Nom">
-                    <a [routerLink]="['/pokedex', p.id]" class="name-link">{{ p.name }}</a>
+                    <a [routerLink]="['/pokedex/pokemons', p.id]" class="name-link">{{ p.name }}</a>
                   </td>
 
                   @if (p.types.length === 1) {

@@ -1,5 +1,27 @@
 [
   {
+    "id": 4,
+    "slug": "armurbaston",
+    "name": "Armurbaston",
+    "battleEffectCondition": "Lors d'une capacité adverse",
+    "battleEffectShort": "Les coups critique sont impossibles pour le Pokémon ennemi.",
+    "battleEffectLong": "Un Pokémon doté de ce talent ne peut pas subir de coups critiques. Dans le cas où la capacité ennemie est censée toujours infliger un coup critique, cet effet disparaît et la capacité inflige des dégâts normaux.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Armurbaston n'a aucun effet hors combat.",
+    "description": "Le Pokémon est protégé des coups critiques par une solide carapace."
+  },
+  {
+    "id": 53,
+    "slug": "ramassage",
+    "name": "Ramassage",
+    "battleEffectCondition": "Après l'utilisation d'un objet / Après un combat",
+    "battleEffectShort": "Après un combat, le Pokémon a une chance de ramasser un objet.",
+    "battleEffectLong": "Si le joueur possède un Pokémon doté du talent Ramassage dans son équipe, et qu'il gagne un combat, alors le Pokémon a 10% de chances de tenir un nouvel objet aléatoire à la fin de ce combat. Le talent s'active même si le Pokémon est K.O. ou s'il n'a pas participé au combat. Le Pokémon ne doit pas déjà tenir un objet pour que le talent s'active. Si lors d'un combat, un autre Pokémon que celui qui possède Ramassage utilise un objet tenu à usage unique et que le détenteur de Ramassage ne tient rien, ce dernier récupère l'objet fraîchement utilisé. S'il n'a pas été consommé avant l'issue du combat, le Dresseur peut le récupérer seulement s'il était opposé à un ou des Pokémon sauvage(s). Contre un PNJ, l'objet ainsi obtenu disparaît.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Ramassage n'a aucun effet hors combat.",
+    "description": "Permet parfois au Pokémon de ramasser les objets que d'autres Pokémon ont utilisés. Il lui arrive aussi d'en trouver hors des combats."
+  },
+  {
     "id": 65,
     "slug": "engrais",
     "name": "Engrais",
@@ -31,5 +53,71 @@
     "fieldEffectCondition": "Aucun effet",
     "fieldEffectLong": "Torrent n'a aucun effet hors combat.",
     "description": "Augmente la puissance des capacités de type Eau du Pokémon qui il a perdu une certaine quantité de PV."
+  },
+  {
+    "id": 68,
+    "slug": "essaim",
+    "name": "Essaim",
+    "battleEffectCondition": "Selon les PV restants",
+    "battleEffectShort": "Augmente la puissance des capacités de type Insecte lorsque le Pokémon a moins d'1/3 de ses PV.",
+    "battleEffectLong": "Un Pokémon doté de ce talent voit la puissance de ses capacités de type Insecte augmentée de 50% lorsque ses PV sont inférieurs ou égaux à 1/3 de ses PV maximums.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Essaim n'a aucun effet hors combat.",
+    "description": "Augmente la puissance des capacités de type Insecte du Pokémon qui il a perdu une certaine quantité de PV."
+  },
+  {
+    "id": 91,
+    "slug": "adaptabilite",
+    "name": "Adaptabilité",
+    "battleEffectCondition": "Lors de son attaque",
+    "battleEffectShort": "Augmente la puissance des capacités STAB.",
+    "battleEffectLong": "Un Pokémon doté du talent voit la puissance de ses capacités stabbées (du même type que le Pokémon) multipliée par 2 au lieu de 1,5 en temps normal.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Adaptabilité n'a aucun effet hors combat.",
+    "description": "Quand le Pokémon utilise une capacité du même type que lui, le bonus de puissance qu'elle reçoit est encore plus important que normalement."
+  },
+  {
+    "id": 119,
+    "slug": "fouille",
+    "name": "Fouille",
+    "battleEffectCondition": "Lorsque le Pokémon est envoyé",
+    "battleEffectShort": "Détecte l'objet tenu par le Pokémon adverse.",
+    "battleEffectLong": "Quand un Pokémon doté de ce talent arrive sur le terrain, il détecte l'objet tenu par le Pokémon adverse. En Combat Duo ou Trio, le Pokémon fouillé est choisi aléatoirement parmi les adversaires.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Fouille n'a aucun effet hors combat.",
+    "description": "Permet de connaître l'objet tenu par l'ennemi quand le combat commence."
+  },
+  {
+    "id": 120,
+    "slug": "temeraire",
+    "name": "Téméraire",
+    "battleEffectCondition": "Lors de son attaque",
+    "battleEffectShort": "Augmente la puissance des capacités à contrecoup, sauf Lutte.",
+    "battleEffectLong": "Un pokémon doté de Téméraire voit la puissance des capacités avec contrecoup augmentée de 20%. En contrepartie, le contrecoup est mathématiquement plus important.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Téméraire n'a aucun effet hors combat.",
+    "description": "Augmente la puissance des capacités occasionnant un contrecoup."
+  },
+  {
+    "id": 144,
+    "slug": "rege-force",
+    "name": "Régé-Force",
+    "battleEffectCondition": "Lorsque le Pokémon est retiré",
+    "battleEffectShort": "Le Pokémon soigne 1/3 de ses PV s'il switch.",
+    "battleEffectLong": "Lorsque le Pokémon est retiré du combat, en changeant de Pokémon ou par l'intermédiaire d'attaques comme Relais, 1/3 de ses PV maximum sont automatiquement récupérés.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Régé-Force n'a aucun effet hors combat.",
+    "description": "Restaure un peu de PV si le Pokémon est retiré du combat."
+  },
+  {
+    "id": 158,
+    "slug": "farceur",
+    "name": "Farceur",
+    "battleEffectCondition": "Lors de son attaque",
+    "battleEffectShort": "La priorité des capacités de statut augmente d'un niveau.",
+    "battleEffectLong": "Si un Pokémon doté de ce talent se sert d'une capacité non offensive, ces dernières sont effectuées avec une priorité d'attaque augmentée d'un niveau. Cette capacité échoue sous Champ Psychique si la cible est un Pokémon au sol. Le type Ténèbres est immunisé aux capacités rendues prioritaires grâce à ce talent.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Farceur n'a aucun effet hors combat.",
+    "description": "Rend les capacités de statut prioritaires."
   }
 ]

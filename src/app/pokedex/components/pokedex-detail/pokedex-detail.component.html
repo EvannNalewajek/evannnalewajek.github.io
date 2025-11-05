@@ -22,31 +22,31 @@
             <div class="toolbar-inner">
               <span class="left">
               @if (prevMon()) {
-                <a [routerLink]="['/pokedex', prevMon()!.id]" class="nav-chip">
+                <a [routerLink]="['/pokedex/pokemons', prevMon()!.id]" class="nav-chip">
                   <img class="mini-sprite" [src]="prevMon()!.images.sprite" [alt]="prevMon()!.name" loading="lazy" />
                   <span class="num">#{{ prevMon()!.id | number:'2.0-0' }}</span>
                   <span class="name">{{ prevMon()!.name }}</span>
                 </a>
               } @else if (prevId() >= 1) {
-                <a [routerLink]="['/pokedex', prevId()]" class="nav-chip">
+                <a [routerLink]="['/pokedex/pokemons', prevId()]" class="nav-chip">
                   <span class="num">← #{{ prevId() | number:'2.0-0' }}</span>
                 </a>
               }
               </span>
 
               <span class="center">
-                <a [routerLink]="['/pokedex']">Retour à la liste</a>
+                <a [routerLink]="['/pokedex/pokemons']">Retour à la liste</a>
               </span>
 
               <span class="right">
               @if (nextMon()) {
-                <a [routerLink]="['/pokedex', nextMon()!.id]" class="nav-chip">
+                <a [routerLink]="['/pokedex/pokemons', nextMon()!.id]" class="nav-chip">
                   <span class="name">{{ nextMon()!.name }}</span>
                   <span class="num">#{{ nextMon()!.id | number:'2.0-0' }}</span>
                   <img class="mini-sprite" [src]="nextMon()!.images.sprite" [alt]="nextMon()!.name" loading="lazy" />
                 </a>
               } @else if (nextId() <= maxId()) {
-                <a [routerLink]="['/pokedex', nextId()]" class="nav-chip">
+                <a [routerLink]="['/pokedex/pokemons', nextId()]" class="nav-chip">
                   <span class="num">#{{ nextId() | number:'2.0-0' }} →</span>
                 </a>
               }
@@ -175,31 +175,31 @@
             <div class="toolbar-inner">
               <span class="left">
               @if (prevMon()) {
-                <a [routerLink]="['/pokedex', prevMon()!.id]" class="nav-chip">
+                <a [routerLink]="['/pokedex/pokemons', prevMon()!.id]" class="nav-chip">
                   <img class="mini-sprite" [src]="prevMon()!.images.sprite" [alt]="prevMon()!.name" loading="lazy" />
                   <span class="num">#{{ prevMon()!.id | number:'2.0-0' }}</span>
                   <span class="name">{{ prevMon()!.name }}</span>
                 </a>
               } @else if (prevId() >= 1) {
-                <a [routerLink]="['/pokedex', prevId()]" class="nav-chip">
+                <a [routerLink]="['/pokedex/pokemons', prevId()]" class="nav-chip">
                   <span class="num">← #{{ prevId() | number:'2.0-0' }}</span>
                 </a>
               }
               </span>
 
               <span class="center">
-                <a [routerLink]="['/pokedex']">Retour à la liste</a>
+                <a [routerLink]="['/pokedex/pokemons']">Retour à la liste</a>
               </span>
 
               <span class="right">
               @if (nextMon()) {
-                <a [routerLink]="['/pokedex', nextMon()!.id]" class="nav-chip">
+                <a [routerLink]="['/pokedex/pokemons', nextMon()!.id]" class="nav-chip">
                   <span class="name">{{ nextMon()!.name }}</span>
                   <span class="num">#{{ nextMon()!.id | number:'2.0-0' }}</span>
                   <img class="mini-sprite" [src]="nextMon()!.images.sprite" [alt]="nextMon()!.name" loading="lazy" />
                 </a>
               } @else if (nextId() <= maxId()) {
-                <a [routerLink]="['/pokedex', nextId()]" class="nav-chip">
+                <a [routerLink]="['/pokedex/pokemons', nextId()]" class="nav-chip">
                   <span class="num">#{{ nextId() | number:'2.0-0' }} →</span>
                 </a>
               }
