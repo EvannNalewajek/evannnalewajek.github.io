@@ -12,6 +12,9 @@ import { TypePageComponent } from './pokedex/components/pokedex-type/pokedex-typ
 import { PokedexFieldComponent } from './pokedex/components/pokedex-field/pokedex-field.component';
 import { MovesListComponent } from './pokedex/components/moves-list/moves-list.component';
 import { MovesDetailComponent } from './pokedex/components/moves-detail/moves-detail.component';
+import { AbilitiesListComponent } from './pokedex/components/abilities-list/abilities-list.component';
+import { AbilitiesDetailComponent } from './pokedex/components/abilities-detail/abilities-detail.component';
+import { DocumentationComponent } from './pokedex/components/documentation/documentation.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent, title: 'Accueil' },
@@ -22,6 +25,9 @@ export const routes: Routes = [
     { path: 'pokedex/moves', component: MovesListComponent, title: 'Pokédex - Capacités' },
     { path: 'pokedex/moves/:slug', component: MovesDetailComponent, title : 'Pokédex - Capacités Détail' },
     { path: 'pokedex/types/:slug', component: TypePageComponent, title: 'Pokédex - Type' },
+    { path: 'pokedex/abilities', component: AbilitiesListComponent, title: 'Pokédex - Talents' },
+    { path: 'pokedex/abilities/:slug', component: AbilitiesDetailComponent, title: 'Pokédex - Talents Détail' },
+    { path: 'pokedex/docs', component: DocumentationComponent, title: 'Pokédex - Documentation' },
     { path: 'enigmemain',
         component: EnigmeComponent,
         title: 'Énigme Main',
