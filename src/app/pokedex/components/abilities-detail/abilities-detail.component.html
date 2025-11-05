@@ -1,19 +1,112 @@
 <div class="dex-scene">
-    <div class="dex-card">
-        <div class="dex-header">
-            <div class="dex-button" aria-hidden="true"></div>
-            <div class="dex-lights" aria-hidden="true">
-                <span class="led led-red"></span>
-                <span class="led led-yellow"></span>
-                <span class="led led-green"></span>
-            </div>
-            <h1>Talents</h1>
-        </div>
-
-        <div class="dex-body">
-            <div class="dex-screen field-page">
-
-            </div>
-        </div>
+  <div class="dex-card">
+    <div class="dex-header">
+      <div class="dex-button" aria-hidden="true"></div>
+      <div class="dex-lights" aria-hidden="true">
+        <span class="led led-red"></span>
+        <span class="led led-yellow"></span>
+        <span class="led led-green"></span>
+      </div>
+      <h1>{{ ability()?.name || 'Talent' }}</h1>
     </div>
+
+    @if (ability(); as a) {
+      <div class="dex-body">
+        <div class="dex-screen ability-detail">
+
+          <nav class="dex-toolbar top">
+            <div class="toolbar-inner">
+              <span class="left">
+                <a routerLink="/pokedex/abilities" class="nav-chip">← Retour à la liste</a>
+              </span>
+              <span class="center">
+                <strong>#{{ a.id | number:'2.0-0' }}</strong>
+                 {{ a.name }}
+              </span>
+              <span class="right">
+                @if (prev(); as p) {
+                  <a [routerLink]="['/pokedex/abilities', p.slug]" class="nav-chip">Préc.</a>
+                }
+                @if (next(); as n) {
+                  <a [routerLink]="['/pokedex/abilities', n.slug]" class="nav-chip">Suiv.</a>
+                }
+              </span>
+            </div>
+          </nav>
+
+          <div class="layout">
+            <aside class="infobox-frame">
+              <div class="panel primary">
+                
+                <h2>Généralités</h2>
+                <div class="quickfacts">
+                  <dl class="dl-grid">
+                    <div><dt>Numéro</dt><dd>#{{ a.id | number:'2.0-0' }}</dd></div>
+                    <div><dt>Nom</dt><dd class="pill">{{ a.name }}</dd></div>
+                  </dl>
+                </div>
+                <h2>Effets</h2>
+                <div class="tips">
+                  <h3>En combat</h3>
+                  <p class="lead" *ngIf="a.battleEffectCondition as s">{{ s }}</p>
+                  <h3>Terrain</h3>
+                  <p class="lead" *ngIf="a.fieldEffectCondition as s">{{ s }}</p>
+                </div>
+
+              </div>
+            </aside>
+
+            <main class="content">
+              <header class="title content-card">
+                <h2>
+                  <small>#{{ a.id | number:'2.0-0' }}</small>
+                  {{ a.name }}
+                </h2>
+              </header>
+
+              <section class="content-card">
+                <h3>Effet du talent</h3>
+                <p *ngIf="a.battleEffectLong as l">{{ l }}</p>
+              </section>
+
+              <section class="content-card">
+                <h3>Effet sur le terrain</h3>
+                <p *ngIf="a.fieldEffectLong as l">{{ l }}</p>
+              </section>
+
+              <section class="content-card">
+                <h3>Description</h3>
+                <p>{{ a.description || '—' }}</p>
+              </section>
+            </main>
+          </div>
+
+          <nav class="dex-toolbar bottom">
+            <div class="toolbar-inner">
+              <span class="left">
+                @if (prev(); as p) {
+                  <a [routerLink]="['/pokedex/abilities', p.slug]" class="nav-chip">← Préc.</a>
+                }
+              </span>
+              <span class="center">
+                <a routerLink="/pokedex/abilities">Retour à la liste</a>
+              </span>
+              <span class="right">
+                @if (next(); as n) {
+                  <a [routerLink]="['/pokedex/abilities', n.slug]" class="nav-chip">Suiv. →</a>
+                }
+              </span>
+            </div>
+          </nav>
+
+        </div>
+      </div>
+    } @else {
+      <div class="dex-body">
+        <div class="dex-screen">
+          <p>Chargement…</p>
+        </div>
+      </div>
+    }
+  </div>
 </div>

@@ -62,3 +62,133 @@
     font-size: .95rem;
   }
 }
+
+.abilities-toolbar {
+  display: grid;
+  grid-template-columns: 1fr minmax(160px, 220px);
+  gap: .6rem 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+
+  input[type="search"], select {
+    appearance: none;
+    width: 100%;
+    padding: .55rem .7rem;
+    border-radius: .6rem;
+    border: 1px solid rgba(0,0,0,.12);
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,.05), inset 0 1px 0 rgba(255,255,255,.6);
+    font: inherit;
+  }
+}
+
+@media (max-width: 560px) {
+  .abilities-toolbar { grid-template-columns: 1fr; }
+}
+
+.pokedex-table.abilities-table {
+  width: 100%;
+  border: 2px solid rgb(55, 197, 240);
+  box-shadow: 0 0 0 4px rgb(52, 73, 170);
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  table-layout: fixed;
+
+  thead th {
+    background: #59bbd9;
+    font-weight: 800;
+    padding: .7rem .9rem;
+    border-bottom: 2px solid #000;
+    border-left: 2px solid #000;
+    font-size: clamp(0.95rem, 0.85rem + 0.35vw, 1.2rem);
+    white-space: nowrap;
+  }
+  thead th:first-child { border-left: 0; }
+
+  tbody td {
+    background: #d2f4ff;
+    font-size: clamp(0.9rem, 0.85rem + 0.25vw, 1.1rem);
+    padding: .6rem .9rem;
+    border: 2px solid #000;
+    border-right: 1.5px solid var(--grid-fine);
+    vertical-align: middle;
+  }
+  tbody tr:hover td { background-color: #c0efff; }
+
+  .c-num   { width: 5.2rem; }
+  .c-name  { width: 15%; }
+  .c-btl   { width: auto; }
+
+  .col-num {
+    text-align: center;
+    font-weight: 800;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  }
+
+  .ability-name {
+    display: block;
+    font-weight: 900;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+  }
+
+  .effect-chip {
+    display: inline-block;
+    max-width: 100%;
+    padding: .2rem .5rem;
+    border-radius: .5rem;
+    font-weight: 800;
+    border: 2px solid rgba(0,0,0,.15);
+    background: #f8fbff;
+  }
+
+  @media (max-width: 640px) {
+    thead { display: none; }
+    &, tbody, tr, td { display: block; width: 100%; }
+
+    border: 0;
+    box-shadow: none;
+    background: transparent;
+
+    tbody { display: grid; gap: .9rem; }
+
+    tbody tr {
+      border: 2px solid rgb(55,197,240);
+      box-shadow: 0 0 0 4px rgb(47,170,207), inset 0 1px 0 rgba(255,255,255,.55);
+      border-radius: 12px;
+      overflow: hidden;
+      background: linear-gradient(180deg, #d2f4ff 0%, #e7fbff 100%);
+    }
+
+    tbody td {
+      display: grid;
+      grid-template-columns: max-content 1fr;
+      align-items: center;
+      gap: .5rem;
+      border: 0;
+      border-bottom: 1px solid rgba(0,0,0,.06);
+      background: transparent;
+      padding: .6rem .75rem;
+      font-size: 1rem;
+    }
+    tbody td:last-child { border-bottom: 0; }
+
+    tbody td::before {
+      content: attr(data-label);
+      font-weight: 800;
+      color: #1f1f1f;
+      background: #fff;
+      border: 1px solid #cfd3d8;
+      border-radius: .5rem;
+      padding: .25rem .5rem;
+      box-shadow: 0 1px 0 rgba(255,255,255,.8), inset 0 -1px 0 rgba(0,0,0,.05);
+      width: max-content;
+    }
+
+    .ability-name { white-space: normal; }
+  }
+}

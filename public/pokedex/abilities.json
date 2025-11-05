@@ -1,0 +1,35 @@
+[
+  {
+    "id": 65,
+    "slug": "engrais",
+    "name": "Engrais",
+    "battleEffectCondition": "Selon les PV restants",
+    "battleEffectShort": "Augmente la puissance des capacités de type Plante lorsque le Pokémon a moins d'1/3 de ses PV.",
+    "battleEffectLong": "Un Pokémon doté de ce talent voit la puissance de ses capacités de type Plante augmentée de 50% lorsque ses PV sont inférieurs ou égaux à 1/3 de ses PV maximums.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Engrais n'a aucun effet hors combat.",
+    "description": "Augmente la puissance des capacités de type Plante du Pokémon qui il a perdu une certaine quantité de PV."
+  },
+  {
+    "id": 66,
+    "slug": "brasier",
+    "name": "Brasier",
+    "battleEffectCondition": "Selon les PV restants",
+    "battleEffectShort": "Augmente la puissance des capacités de type Feu lorsque le Pokémon a moins d'1/3 de ses PV.",
+    "battleEffectLong": "Un Pokémon doté de ce talent voit la puissance de ses capacités de type Feu augmentée de 50% lorsque ses PV sont inférieurs ou égaux à 1/3 de ses PV maximums.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Brasier n'a aucun effet hors combat.",
+    "description": "Augmente la puissance des capacités de type Feu du Pokémon qui il a perdu une certaine quantité de PV."
+  },
+  {
+    "id": 67,
+    "slug": "torrent",
+    "name": "Torrent",
+    "battleEffectCondition": "Selon les PV restants",
+    "battleEffectShort": "Augmente la puissance des capacités de type Eau lorsque le Pokémon a moins d'1/3 de ses PV.",
+    "battleEffectLong": "Un Pokémon doté de ce talent voit la puissance de ses capacités de type Eau augmentée de 50% lorsque ses PV sont inférieurs ou égaux à 1/3 de ses PV maximums.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Torrent n'a aucun effet hors combat.",
+    "description": "Augmente la puissance des capacités de type Eau du Pokémon qui il a perdu une certaine quantité de PV."
+  }
+]

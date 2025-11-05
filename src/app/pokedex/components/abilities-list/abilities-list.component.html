@@ -26,6 +26,59 @@
                         📘 <span>Docs</span>
                     </a>
                 </nav>
+
+                <div class="abilities-toolbar">
+                    <input type="search"
+                            placeholder="Rechercher un talent…"
+                            (input)="query(($any($event.target).value))" />
+
+                    <select (change)="selectSort(($any($event.target).value))">
+                        <option value="id">Trier par #</option>
+                        <option value="name">Trier par nom</option>
+                    </select>
+                </div>
+
+                @if (!loading() && list().length === 0) {
+                    <p>Aucun talent ne correspond à la recherche.</p>
+                }
+
+                @if (!loading() && list().length > 0) {
+                    <table class="pokedex-table abilities-table">
+                        <colgroup>
+                        <col class="c-num">
+                        <col class="c-name">
+                        <col class="c-btl">
+                        </colgroup>
+
+                        <thead>
+                            <tr>
+                                <th class="col-num">#</th>
+                                <th class="col-ability">Talent</th>
+                                <th>Effet en combat</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            @for (a of list(); track a.id) {
+                                <tr>
+                                    <td class="col-num" data-label="#">#{{ a.id | number:'2.0-0' }}</td>
+
+                                    <td class="col-name group-end" data-label="Talent">
+                                        <a class="ability-name" [routerLink]="['/pokedex/abilities', a.slug]">
+                                            {{ a.name }}
+                                        </a>
+                                    </td>
+
+                                    <td data-label="Combat">
+                                        <span class="effect-chip">{{ a.battleEffectShort || '—' }}</span>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                } @else if (loading()) {
+                    <p>Chargement des talents…</p>
+                }
             </div>
         </div>
     </div>
