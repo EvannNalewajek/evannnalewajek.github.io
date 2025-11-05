@@ -13,11 +13,20 @@
     <div class="dex-body">
       <div class="dex-screen pokedex-list-page">
 
-        <div class="list-actions">
-          <a class="nav-chip" routerLink="/pokedex/moves" title="Voir toutes les capacités">
-            📘 Capacités
+        <nav class="quick-nav">
+          <a class="nav-chip nav-blue"   routerLink="/pokedex"            title="Retour">
+            🔙 <span>Retour</span>
           </a>
-        </div>
+          <a class="nav-chip nav-red"    routerLink="/pokedex/moves"      title="Liste des Capacités">
+            ⚡ <span>Capacités</span>
+          </a>
+          <a class="nav-chip nav-yellow" routerLink="/pokedex/abilities"  title="Liste des Talents">
+            ✨ <span>Talents</span>
+          </a>
+          <a class="nav-chip nav-green"  routerLink="/pokedex/docs"       title="Documentations">
+            📘 <span>Docs</span>
+          </a>
+        </nav>
 
         @if (list(); as rows) {
           <table class="pokedex-table">
