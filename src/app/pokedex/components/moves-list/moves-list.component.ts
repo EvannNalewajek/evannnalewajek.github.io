@@ -20,7 +20,7 @@ export class MovesListComponent {
   private _query = signal<string>('');
   private _type = signal<string>('');
   private _category = signal<string>('');
-  private _sort = signal<'name'|'type'|'category'|'power'|'accuracy'|'pp'|'priority'>('name');
+  private _sort = signal<'id'|'name'|'type'|'category'|'power'|'accuracy'|'pp'|'priority'>('id');
 
   constructor() {
     this.svc.getAll().subscribe(m => this._moves.set(m));
@@ -69,8 +69,8 @@ export class MovesListComponent {
   ];
 
   sortKeys = [
-    { key: 'name', label: 'Nom' },
     { key: 'id', label: 'ID' },
+    { key: 'name', label: 'Nom' },
     { key: 'type', label: 'Type' },
     { key: 'category', label: 'Catégorie' },
     { key: 'power', label: 'Puissance' },
@@ -90,8 +90,8 @@ function normalizeCat(cat: Move['category']): string {
 }
 function valueFor(m: Move, key: string) {
   switch (key) {
-    case 'name': return m.name?.toLowerCase() ?? '';
     case 'id': return m.id ?? -1;
+    case 'name': return m.name?.toLowerCase() ?? '';
     case 'type': return m.type?.toLowerCase() ?? '';
     case 'category': return normalizeCat(m.category);
     case 'power': return m.power ?? -1;

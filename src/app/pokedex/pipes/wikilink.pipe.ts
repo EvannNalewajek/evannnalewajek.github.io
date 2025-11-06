@@ -1,7 +1,5 @@
-// wikilink.pipe.ts
 import { Pipe, PipeTransform, inject } from '@angular/core';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
-import { Router } from '@angular/router';
 
 type Kind = 'move' | 'ability' | 'type' | 'pokemon';
 

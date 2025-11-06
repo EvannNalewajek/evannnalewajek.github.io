@@ -3,8 +3,6 @@ import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs';
 import { Move, TargetPreset, TargetCell } from './move.model';
 
-/* ---------- Helpers ---------- */
-
 const VALID_CELLS: TargetCell[] = ['FOE_L','FOE_C','FOE_R','SELF','ALLY_L','ALLY_R'];
 
 function slugify(input: string): string {
@@ -122,14 +120,12 @@ export class MovesService {
     );
   }
 
-  /** Pratique pour le détail : récupère par slug (URL) */
   getByUrl$(slug: string) {
     return this.getAll().pipe(
       map(list => list.find(m => m.slug === slug) ?? null)
     );
   }
 
-  /** Idem par ID numérique */
   getById$(id: number) {
     return this.getAll().pipe(
       map(list => list.find(m => m.id === id) ?? null)

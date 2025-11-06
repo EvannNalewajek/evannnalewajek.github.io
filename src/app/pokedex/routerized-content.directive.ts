@@ -1,4 +1,3 @@
-// routerized-content.directive.ts
 import { Directive, HostListener, Input, inject } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -17,7 +16,7 @@ export class RouterizedContentDirective {
     if (!a) return;
 
     const href = a.getAttribute('href') || '';
-    if (!href.startsWith('/')) return; // externe → laisse faire le navigateur
+    if (!href.startsWith('/')) return;
 
     ev.preventDefault();
     this.router.navigateByUrl(href);

@@ -1,0 +1,47 @@
+@use '../../styles/dex-shell' as *;
+
+.doc-page {
+  display: grid;
+  gap: 1rem;
+}
+
+.doc-page .content-card {
+  padding: 1rem 1.2rem;
+  line-height: 1.55;
+  font-size: clamp(0.95rem, 0.85rem + 0.3vw, 1.15rem);
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: .6rem;
+    font-weight: 900;
+    font-size: clamp(1.3rem, 1rem + 0.8vw, 1.9rem);
+  }
+
+  p {
+    margin: .4rem 0 .8rem;
+  }
+
+  ul {
+    margin: .5rem 0 .8rem;
+    padding-left: 1.5rem;
+
+    li {
+      margin: .25rem 0;
+      font-weight: 500;
+    }
+  }
+}
+
+.content-card {
+  background: linear-gradient(180deg, var(--card-gloss-top, #fff), var(--card-bg, #fff));
+  border: 1px solid var(--card-border, rgba(0,0,0,.08));
+  border-radius: 12px;
+  box-shadow: var(--card-shadow, 0 8px 24px rgba(0,0,0,.06));
+  padding: .75rem 1rem;
+}
+
+.name-link, .sprite-link {
+  text-decoration: none;
+  font-weight: 800;
+}
+.name-link:hover, .sprite-link:hover { text-decoration: underline; }
