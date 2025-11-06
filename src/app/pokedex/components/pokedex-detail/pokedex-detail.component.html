@@ -117,9 +117,9 @@
               <section class="abilities content-card">
                 <h3>Talents</h3>
                 <ul>
-                  <li>{{ pokemon()!.abilities.join(', ') }}</li>
+                  <li><span [innerHTML]="pokemon()!.abilities.join(', ') | wikilink:{ kind:'ability' }"></span></li>
                   @if (pokemon()!.hiddenAbility) {
-                    <li>{{ pokemon()!.hiddenAbility }} <em>(Talent caché)</em></li>
+                    <li><span [innerHTML]="pokemon()!.hiddenAbility | wikilink:{ kind:'ability' }"></span><em> (Talent caché)</em></li>
                   }
                 </ul>
               </section>

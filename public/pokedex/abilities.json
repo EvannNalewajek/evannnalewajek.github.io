@@ -1,5 +1,16 @@
 [
   {
+    "id": 3,
+    "slug": "turbo",
+    "name": "Turbo",
+    "battleEffectCondition": "Entre chaque tour",
+    "battleEffectShort": "La statistique de Vitesse du Pokémon du Pokémon augmente d'un niveau à chaque tour.",
+    "battleEffectLong": "Un Pokémon doté de Turbo voit sa statistique de Vitesse augmenter d'un niveau à la fin de chaque tour complet passé sur le terrain. Si le Pokémon est posé sur le terrain lors d'un switch non provoqué par un K.O., l'effet de Turbo ne s'active pas le tour où il a été posé.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Turbo n'a aucun effet hors combat.",
+    "description": "La Vitesse du Pokémon augmente à chaque tour."
+  },
+  {
     "id": 4,
     "slug": "armurbaston",
     "name": "Armurbaston",
@@ -9,6 +20,50 @@
     "fieldEffectCondition": "Aucun effet",
     "fieldEffectLong": "Armurbaston n'a aucun effet hors combat.",
     "description": "Le Pokémon est protégé des coups critiques par une solide carapace."
+  },
+  {
+    "id": 6,
+    "slug": "moiteur",
+    "name": "Moiteur",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Le Pokémon adverse n'a pas la possibilité d'utiliser une capacité auto-destructrice.",
+    "battleEffectLong": "Tant qu'un Pokémon doté de Moiteur est sur le terrain, toutes les capacités d'auto-destruction lancées échouent. Le talent [[ability:boom-final|Boom Final]] ne se déclenche pas non plus. Cependant, Moiteur ne bloque ni [[move:souvenir|Souvenir]], ni [[move:voeu-soin|Vœu Soin]].",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Moiteur n'a aucun effet hors combat.",
+    "description": "Le Pokémon augmente l'humidité de l'air, ce qui empêche tous les Pokémon d'utiliser des capacités explosives telles que Destruction."
+  },
+  {
+    "id": 9,
+    "slug": "statik",
+    "name": "Statik",
+    "battleEffectCondition": "Lors d'une capacité adverse",
+    "battleEffectShort": "Les capacités directes reçues ont 30% de chances de donner le statut paralysie à leur lanceur.",
+    "battleEffectLong": "Lorsqu'un Pokémon doté de ce talent subit une capacité directe, il a 30% de chances de paralyser son attaquant. Statik affecte également les Pokémons de [[type:sol|type Sol]].",
+    "fieldEffectCondition": "Avec effet",
+    "fieldEffectLong": "Si un Pokémon avec ce talent est placé en tête d'équipe, le dresseur a 50% de chances de plus de trouver un Pokémon de [[type:electrik|type Électrik]].",
+    "description": "Le Pokémon charge son corps en électricité statique, et tout contact avec lui peut paralyser."
+  },
+  {
+    "id": 24,
+    "slug": "peau-dure",
+    "name": "Peau Dure",
+    "battleEffectCondition": "Lors d'une capacité adverse",
+    "battleEffectShort": "Les capacités directes reçues font perdre 1/8 des PV maximum du lanceur.",
+    "battleEffectLong": "Lorsque le Pokémon doté de Peau Dure subit une attaque directe, son adversaire perd ensuite 1/8 de ses PV max.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Peau Dure n'a aucun effet hors combat.",
+    "description": "Blesse l'attaquant lorsque le Pokémon subit une attaque directe."
+  },
+  {
+    "id": 33,
+    "slug": "glissade",
+    "name": "Glissade",
+    "battleEffectCondition": "Selon le climat",
+    "battleEffectShort": "Sous le climat pluie, la Vitesse du Pokémon est doublée.",
+    "battleEffectLong": "Si le climat est pluvieux, le Pokémon doté de Glissade voit sa statistique de Vitesse multipliée par deux.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Glissade n'a aucun effet hors combat.",
+    "description": "Augmente la Vitesse du Pokémon s'il pleut."
   },
   {
     "id": 53,
@@ -22,12 +77,34 @@
     "description": "Permet parfois au Pokémon de ramasser les objets que d'autres Pokémon ont utilisés. Il lui arrive aussi d'en trouver hors des combats."
   },
   {
+    "id": 60,
+    "slug": "glu",
+    "name": "Glu",
+    "battleEffectCondition": "Lors d'une capacité adverse",
+    "battleEffectShort": "L'objet tenu ne peut pas être perdu.",
+    "battleEffectLong": "Les Pokémon avec ce talent ne peuvent pas perdre leur objet tenu, peu importe la capacité utilisée ([[move:implore|Implore]], [[move:larcin|Larcin]], [[move:tourmagik|Tourmagik]], [[move:passe-passe|Passe-Passe]], [[move:piqure|Piqûre]], [[move:picore|Picore]] ou [[move:sabotage|Sabotage]]).",
+    "fieldEffectCondition": "Avec effet",
+    "fieldEffectLong": "Lorsqu'un Pokémon doté de ce talent est placé en tête d'équipe, il est plus facile de pêcher des Pokémon.",
+    "description": "Les objets sont collés au corps gluant du Pokémon, ce qui empêche ses adversaires de les dérober."
+  },
+  {
+    "id": 64,
+    "slug": "suintement",
+    "name": "Suintement",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Inflige des dégâts au lieu de redonner des PV lorsque le Pokémon adverse utilise une capacité drainant des PV.",
+    "battleEffectLong": "Quand un Pokémon doté de ce talent subit une capacité ou un effet drainant des PV, le Pokémon supposé être soigné ne récupère pas de PV, au contraire, il perd une quantité de PV égale à celle qu'il aurait dû récupérer. La capacité inflige cependant tout de même des dégâts s'il s'agit d'une capacité offensive.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Suintement n'a aucun effet hors combat.",
+    "description": "Le Pokémon suinte un liquide toxique nauséabond qui blesse tous ceux qui tentent de voler ses PV."
+  },
+  {
     "id": 65,
     "slug": "engrais",
     "name": "Engrais",
     "battleEffectCondition": "Selon les PV restants",
-    "battleEffectShort": "Augmente la puissance des capacités de type Plante lorsque le Pokémon a moins d'1/3 de ses PV.",
-    "battleEffectLong": "Un Pokémon doté de ce talent voit la puissance de ses capacités de type Plante augmentée de 50% lorsque ses PV sont inférieurs ou égaux à 1/3 de ses PV maximums.",
+    "battleEffectShort": "Augmente la puissance des capacités de type [[type:Plante]] lorsque le Pokémon a moins d'1/3 de ses PV.",
+    "battleEffectLong": "Un Pokémon doté de ce talent voit la puissance de ses capacités de type [[type:Plante]] augmentée de 50% lorsque ses PV sont inférieurs ou égaux à 1/3 de ses PV maximums.",
     "fieldEffectCondition": "Aucun effet",
     "fieldEffectLong": "Engrais n'a aucun effet hors combat.",
     "description": "Augmente la puissance des capacités de type Plante du Pokémon qui il a perdu une certaine quantité de PV."
@@ -37,8 +114,8 @@
     "slug": "brasier",
     "name": "Brasier",
     "battleEffectCondition": "Selon les PV restants",
-    "battleEffectShort": "Augmente la puissance des capacités de type Feu lorsque le Pokémon a moins d'1/3 de ses PV.",
-    "battleEffectLong": "Un Pokémon doté de ce talent voit la puissance de ses capacités de type Feu augmentée de 50% lorsque ses PV sont inférieurs ou égaux à 1/3 de ses PV maximums.",
+    "battleEffectShort": "Augmente la puissance des capacités de type [[type:Feu]] lorsque le Pokémon a moins d'1/3 de ses PV.",
+    "battleEffectLong": "Un Pokémon doté de ce talent voit la puissance de ses capacités de type [[type:Feu]] augmentée de 50% lorsque ses PV sont inférieurs ou égaux à 1/3 de ses PV maximums.",
     "fieldEffectCondition": "Aucun effet",
     "fieldEffectLong": "Brasier n'a aucun effet hors combat.",
     "description": "Augmente la puissance des capacités de type Feu du Pokémon qui il a perdu une certaine quantité de PV."
@@ -48,8 +125,8 @@
     "slug": "torrent",
     "name": "Torrent",
     "battleEffectCondition": "Selon les PV restants",
-    "battleEffectShort": "Augmente la puissance des capacités de type Eau lorsque le Pokémon a moins d'1/3 de ses PV.",
-    "battleEffectLong": "Un Pokémon doté de ce talent voit la puissance de ses capacités de type Eau augmentée de 50% lorsque ses PV sont inférieurs ou égaux à 1/3 de ses PV maximums.",
+    "battleEffectShort": "Augmente la puissance des capacités de type [[type:Eau]] lorsque le Pokémon a moins d'1/3 de ses PV.",
+    "battleEffectLong": "Un Pokémon doté de ce talent voit la puissance de ses capacités de type [[type:Eau]] augmentée de 50% lorsque ses PV sont inférieurs ou égaux à 1/3 de ses PV maximums.",
     "fieldEffectCondition": "Aucun effet",
     "fieldEffectLong": "Torrent n'a aucun effet hors combat.",
     "description": "Augmente la puissance des capacités de type Eau du Pokémon qui il a perdu une certaine quantité de PV."
@@ -59,11 +136,22 @@
     "slug": "essaim",
     "name": "Essaim",
     "battleEffectCondition": "Selon les PV restants",
-    "battleEffectShort": "Augmente la puissance des capacités de type Insecte lorsque le Pokémon a moins d'1/3 de ses PV.",
-    "battleEffectLong": "Un Pokémon doté de ce talent voit la puissance de ses capacités de type Insecte augmentée de 50% lorsque ses PV sont inférieurs ou égaux à 1/3 de ses PV maximums.",
+    "battleEffectShort": "Augmente la puissance des capacités de type [[type:Insecte]] lorsque le Pokémon a moins d'1/3 de ses PV.",
+    "battleEffectLong": "Un Pokémon doté de ce talent voit la puissance de ses capacités de type [[type:Insecte]] augmentée de 50% lorsque ses PV sont inférieurs ou égaux à 1/3 de ses PV maximums.",
     "fieldEffectCondition": "Aucun effet",
     "fieldEffectLong": "Essaim n'a aucun effet hors combat.",
     "description": "Augmente la puissance des capacités de type Insecte du Pokémon qui il a perdu une certaine quantité de PV."
+  },
+  {
+    "id": 78,
+    "slug": "motorise",
+    "name": "Motorisé",
+    "battleEffectCondition": "Entre chaque tour",
+    "battleEffectShort": "Immunité contre les capacités de [[type:electrik|type Électrik]] : elles augmentent d'un niveau la Vitesse du Pokémon.",
+    "battleEffectLong": "Un pokémon doté de Motorisé est totalement insensible aux capacités de [[type:electrik|type Électrik]], aussi bien en terme de dégâts infligés que d'effets. En parallèle, chaque fois qu'il est touché par une capacité de ce type, il bénéficie d'une augmentation d'un niveau en Vitesse.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Motorisé n'a aucun effet hors combat.",
+    "description": "Si le Pokémon est touché par une capacité Électrik, il ne subit aucun dég^t et sa Vitesse augmente."
   },
   {
     "id": 91,
@@ -75,6 +163,39 @@
     "fieldEffectCondition": "Aucun effet",
     "fieldEffectLong": "Adaptabilité n'a aucun effet hors combat.",
     "description": "Quand le Pokémon utilise une capacité du même type que lui, le bonus de puissance qu'elle reçoit est encore plus important que normalement."
+  },
+  {
+    "id": 104,
+    "slug": "brise-moule",
+    "name": "Brise Moule",
+    "battleEffectCondition": "Lors de son attaque",
+    "battleEffectShort": "Ignore les talents adverses ayant un effet sur les capacités du Pokémon.",
+    "battleEffectLong": "Un Pokémon doté de ce talent ignore les effets d'affaiblissement ou d'annulation (de dégâts ou d'effets) que le talent de son adversaire peut déclencher.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Brise Moule n'a aucun effet hors combat.",
+    "description": "Le Pokémon ignore les talents adverses qui auraient un effet sur ses capacités."
+  },
+  {
+    "id": 105,
+    "slug": "chanceux",
+    "name": "Chanceux",
+    "battleEffectCondition": "Lors de son attaque",
+    "battleEffectShort": "Les coups critiques du Pokémon ont une chance doublée.",
+    "battleEffectLong": "Un Pokémon doté de ce talent voit son taux de coups critiques augmenté de 1 niveau. En pratique, le niveau en coup critique de la capacité est multiplié par deux (avant application de tout autre modificateur).",
+    "fieldEffectCondition": "Avec effet",
+    "fieldEffectLong": "Avec un Pokémon doté du talent Chanceux en première place dans son équipe, le joueur a de plus fortes chances de rencontrer des Pokémons sauvages avec un objet tenu.",
+    "description": "Le Pokémon est tellement chanceux qu'il inflige plus fréquemment des coups critiques."
+  },
+  {
+    "id": 106,
+    "slug": "boom-final",
+    "name": "Boom Final",
+    "battleEffectCondition": "Lors d'une capacité adverse",
+    "battleEffectShort": "Les capacités directes reçues mettant K.O. le Pokémon font perdre 25% des PV maximum du lanceur.",
+    "battleEffectLong": "Quand un Pokémon doté de ce talent subit une capacité directe qui le met K.O., le Pokémon qui l'a mis K.O. perd alors 1/4 de ses PV maximums. Si un Pokémon possédant le talent [[ability:moiteur|Moiteur]] se trouve sur le terrain, Boom Final n'inflige pas de dégâts.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Boom Final n'a aucun effet hors combat.",
+    "description": "Si le Pokémon est mis K.O. par une attaque directe, il inflige des dégâts à l'attaquant avant de s'évanouir."
   },
   {
     "id": 119,
@@ -99,6 +220,17 @@
     "description": "Augmente la puissance des capacités occasionnant un contrecoup."
   },
   {
+    "id": 124,
+    "slug": "pickpocket",
+    "name": "Pickpocket",
+    "battleEffectCondition": "Lors d'une capacité adverse",
+    "battleEffectShort": "Les capacités directes reçues font voler au Pokémon l'objet tenu du lanceur.",
+    "battleEffectLong": "Lorsqu'un Pokémon doté du talent Pickpocket se fait toucher par une capacité directe, il vole l'objet tenu de son adversaire. Ce talent ne fonctionne pas si son possesseur tient déjà un objet, si son adversaire ne tient pas d'objet, ou encore si l'un des deux Pokémon est protégé par un Clone. Le talent [[ability:glu|Glu]] immunise au vol d'objet.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Pickpocket n'a aucun effet hors combat.",
+    "description": "Vole l'objet que tient l'attaquant quand le Pokémon subit une attaque directe."
+  },
+  {
     "id": 144,
     "slug": "rege-force",
     "name": "Régé-Force",
@@ -119,5 +251,16 @@
     "fieldEffectCondition": "Aucun effet",
     "fieldEffectLong": "Farceur n'a aucun effet hors combat.",
     "description": "Rend les capacités de statut prioritaires."
+  },
+  {
+    "id": 183,
+    "slug": "poisseux",
+    "name": "Poisseux",
+    "battleEffectCondition": "Lors d'une capacité adverse",
+    "battleEffectShort": "Les capacités directes reçues font diminuer la Vitesse du lanceur.",
+    "battleEffectLong": "Quand un Pokémon doté de ce talent subit une capacité directe, il réduit de 1 cran la Vitesse de l'attaquant. Si l'adversaire utilise une capacité à plusieurs coups, comme [[move:double-pied|Double Pied]], la Vitesse baisse d'un niveau à chaque coup reçu.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Poisseux n'a aucun effet hors combat.",
+    "description": "Baisse la Vitesse de l'attaquant lorsque le Pokémon subit une attaque directe."
   }
 ]

@@ -136,3 +136,11 @@
   .title h2 small { font-size: .8rem; margin-right: .4rem; }
   .dl-grid dt, .dl-grid dd { font-size:.85rem; line-height:1.2; }
 }
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

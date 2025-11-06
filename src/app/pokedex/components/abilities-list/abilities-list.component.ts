@@ -3,13 +3,14 @@ import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { AbilitiesService } from '../../ability.service';
 import { Ability } from '../../ability.model';
+import { WikilinkPipe } from '../../pipes/wikilink.pipe';
 
 type SortKey = 'id' | 'name';
 
 @Component({
     selector: 'app-abilities-list',
     standalone: true,
-    imports: [CommonModule, RouterLink],
+    imports: [CommonModule, RouterLink, WikilinkPipe],
     templateUrl: './abilities-list.component.html',
     styleUrls: ['./abilities-list.component.scss']
 })

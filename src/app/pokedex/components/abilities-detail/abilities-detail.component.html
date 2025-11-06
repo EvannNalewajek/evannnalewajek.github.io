@@ -66,12 +66,12 @@
 
               <section class="content-card">
                 <h3>Effet du talent</h3>
-                <p *ngIf="a.battleEffectLong as l">{{ l }}</p>
+                <p class="autolink" [innerHTML]="a.battleEffectLong | wikilink:{ kind:'ability', slug:a.slug}"></p>
               </section>
 
               <section class="content-card">
                 <h3>Effet sur le terrain</h3>
-                <p *ngIf="a.fieldEffectLong as l">{{ l }}</p>
+                <p class="autolink" [innerHTML]="a.fieldEffectLong | wikilink:{ kind:'ability', slug:a.slug}"></p>
               </section>
 
               <section class="content-card">

@@ -16,7 +16,8 @@ export interface PokemonImages {
 }
 
 export interface Pokemon {
-  id: number;                 // pokedex number, starting with 1
+  id: number;
+  slug: string;
   name: string;
   types: [PokemonType] | [PokemonType, PokemonType];
   category: string;

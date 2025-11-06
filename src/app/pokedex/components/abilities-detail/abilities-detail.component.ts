@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { AbilitiesService } from '../../ability.service';
 import { Ability } from '../../ability.model';
+import { WikilinkPipe } from '../../pipes/wikilink.pipe';
 
 @Component({
   selector: 'app-ability-detail',
   standalone: true,
-  imports: [CommonModule, RouterLink],
+  imports: [CommonModule, RouterLink, WikilinkPipe],
   templateUrl: './abilities-detail.component.html',
   styleUrls: ['./abilities-detail.component.scss'],
 })

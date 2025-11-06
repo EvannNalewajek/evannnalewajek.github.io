@@ -70,7 +70,7 @@
                                     </td>
 
                                     <td data-label="Combat">
-                                        <span class="effect-chip">{{ a.battleEffectShort || '—' }}</span>
+                                        <p class="effect-chip" [innerHTML]="a.battleEffectShort | wikilink:{ kind:'ability', slug:a.slug}"></p>
                                     </td>
                                 </tr>
                             }

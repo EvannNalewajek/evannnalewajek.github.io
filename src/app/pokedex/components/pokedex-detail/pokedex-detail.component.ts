@@ -6,11 +6,12 @@ import { TypeSlugPipe } from '../../pipes/type-slug.pipe';
 import { Pokemon } from '../../pokemon.model';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { map } from 'rxjs/operators';
+import { WikilinkPipe } from '../../pipes/wikilink.pipe';
 
 @Component({
   selector: 'app-pokedex-detail',
   standalone: true,
-  imports: [CommonModule, RouterLink, TypeSlugPipe],
+  imports: [CommonModule, RouterLink, TypeSlugPipe, WikilinkPipe],
   templateUrl: "./pokedex-detail.component.html",
   styleUrls: ["./pokedex-detail.component.scss"]
 })
