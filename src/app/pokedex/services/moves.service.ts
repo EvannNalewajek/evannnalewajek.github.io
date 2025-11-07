@@ -1,7 +1,7 @@
 import { Injectable, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs';
-import { Move, TargetPreset, TargetCell } from './move.model';
+import { Move, TargetPreset, TargetCell } from '../models/move.model';
 
 const VALID_CELLS: TargetCell[] = ['FOE_L','FOE_C','FOE_R','SELF','ALLY_L','ALLY_R'];
 

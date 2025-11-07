@@ -4,9 +4,9 @@ import { CommonModule } from '@angular/common';
 import { ActivatedRoute, RouterLink, Router } from '@angular/router';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { map } from 'rxjs/operators';
-import { TypesService } from '../../type.service';
-import { PokedexService } from '../../pokedex.service';
-import { Pokemon, PokemonType } from '../../pokemon.model';
+import { TypesService } from '../../services/type.service';
+import { PokedexService } from '../../services/pokedex.service';
+import { Pokemon, PokemonType } from '../../models/pokemon.model';
 
 @Component({
     selector: 'app-type-page',

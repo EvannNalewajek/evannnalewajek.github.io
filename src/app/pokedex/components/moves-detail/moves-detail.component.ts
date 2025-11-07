@@ -1,9 +1,9 @@
 import { Component, computed, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute, RouterLink } from '@angular/router';
-import { MovesService } from '../../moves.service';
+import { MovesService } from '../../services/moves.service';
 import { TypeSlugPipe } from '../../pipes/type-slug.pipe';
-import { Move } from '../../move.model';
+import { Move } from '../../models/move.model';
 import { MoveTargetDiagramComponent } from '../move-target-diagram/move-target-diagram.component';
 
 @Component({

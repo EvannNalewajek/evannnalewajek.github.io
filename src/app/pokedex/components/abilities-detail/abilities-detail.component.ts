@@ -1,8 +1,8 @@
 import { Component, computed, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute, RouterLink } from '@angular/router';
-import { AbilitiesService } from '../../ability.service';
-import { Ability } from '../../ability.model';
+import { AbilitiesService } from '../../services/ability.service';
+import { Ability } from '../../models/ability.model';
 import { WikilinkPipe } from '../../pipes/wikilink.pipe';
 
 @Component({

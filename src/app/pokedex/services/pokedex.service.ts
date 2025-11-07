@@ -1,7 +1,7 @@
 import { inject, Injectable, signal } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { firstValueFrom } from 'rxjs';
-import { Pokemon } from './pokemon.model';
+import { Pokemon } from '../models/pokemon.model';
 
 export type MoveCategory = 'Physique' | 'Spécial' | 'Statut' | string;
 export interface Move {

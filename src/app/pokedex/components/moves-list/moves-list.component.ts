@@ -1,8 +1,8 @@
 import { Component, computed, effect, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
-import { MovesService } from '../../moves.service';
-import { Move } from '../../move.model';
+import { MovesService } from '../../services/moves.service';
+import { Move } from '../../models/move.model';
 
 import { TypeSlugPipe } from '../../pipes/type-slug.pipe';
 

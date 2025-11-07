@@ -1,9 +1,9 @@
 import { Component, OnInit, computed, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
-import { PokedexService } from '../../pokedex.service';
-import { PokemonType } from '../../pokemon.model';
-import { Pokemon } from '../../pokemon.model';
+import { PokedexService } from '../../services/pokedex.service';
+import { PokemonType } from '../../models/pokemon.model';
+import { Pokemon } from '../../models/pokemon.model';
 import { TypeSlugPipe } from '../../pipes/type-slug.pipe';
 
 @Component({

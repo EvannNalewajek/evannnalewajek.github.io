@@ -1,8 +1,8 @@
 import { inject, Injectable, signal, computed } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Pokemon, PokemonType } from './pokemon.model';
-import { TypeInfo } from './types.model';
-import { TYPE_MULTIPLIER } from './type-chart';
+import { PokemonType } from '../models/pokemon.model';
+import { TypeInfo } from '../models/types.model';
+import { TYPE_MULTIPLIER } from '../type-chart';
 
 @Injectable({ providedIn: 'root' })
 export class TypesService {

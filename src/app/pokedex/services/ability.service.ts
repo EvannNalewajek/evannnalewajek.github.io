@@ -1,7 +1,7 @@
 import { Injectable, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs';
-import { Ability } from './ability.model';
+import { Ability } from '../models/ability.model';
 
 function slugify(input: string): string {
     return input

@@ -1,4 +1,4 @@
-import { PokemonType } from './pokemon.model';
+import { PokemonType } from './models/pokemon.model';
 
 const T: PokemonType[] = [
   'Normal','Feu','Eau','Plante','Électrik','Glace','Combat','Poison','Sol',

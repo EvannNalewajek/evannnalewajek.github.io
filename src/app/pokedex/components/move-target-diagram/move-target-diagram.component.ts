@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TargetPreset, TargetCell as Cell } from '../../move.model';
+import { TargetPreset, TargetCell as Cell } from '../../models/move.model';
 
 const PRESETS: Record<TargetPreset, Cell[]> = {
   'adjacent-one': ['FOE_L','FOE_C','ALLY_L'],
