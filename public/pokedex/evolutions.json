@@ -1,0 +1,59 @@
+{
+  "families": [
+    {
+      "species": [1, 2, 3],
+      "links": [
+        { "from": 1, "to": 2, "trigger": { "kind": "level", "level": 18 } },
+        { "from": 2, "to": 3, "trigger": { "kind": "level", "level": 36 } }
+      ]
+    },
+    {
+      "species": [4, 5, 6],
+      "links": [
+        { "from": 4, "to": 5, "trigger": { "kind": "level", "level": 17 } },
+        { "from": 5, "to": 6, "trigger": { "kind": "level", "level": 33 } }
+      ]
+    },
+    {
+      "species": [7, 8, 9],
+      "links": [
+        { "from": 7, "to": 8, "trigger": { "kind": "level", "level": 17 } },
+        { "from": 8, "to": 9, "trigger": { "kind": "level", "level": 34 } }
+      ]
+    },
+    {
+      "species": [10, 11],
+      "links": [
+        { "from": 10, "to": 11, "trigger": { "kind": "level", "level": 22 } }
+      ]
+    },
+    {
+      "species": [12, 13, 14, 15],
+      "links": [
+        { "from": 12, "to": 13, "trigger": { "kind": "level", "level": 8 } },
+        { "from": 13, "to": 14, "trigger": { "kind": "level", "level": 28 } },
+        { "from": 13, "to": 15, "trigger": { "kind": "item", "item": "Roche Royale" } }
+      ]
+    },
+    {
+      "species": [16, 17, 18],
+      "links": [
+        { "from": 16, "to": 17, "trigger": { "kind": "level", "level": 16 } },
+        { "from": 17, "to": 18, "trigger": { "kind": "level", "level": 36 } }
+      ]
+    },
+    {
+      "species": [19, 20],
+      "links": [
+        { "from": 19, "to": 20, "trigger": { "kind": "level", "level": 26 } }
+      ]
+    },
+    {
+      "species": [21, 22, 23],
+      "links": [
+        { "from": 21, "to": 22, "trigger": { "kind": "level", "level": 20 } },
+        { "from": 22, "to": 23, "trigger": { "kind": "level", "level": 38 } }
+      ]
+    }
+  ]
+}
