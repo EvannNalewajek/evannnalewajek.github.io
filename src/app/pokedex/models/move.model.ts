@@ -21,5 +21,24 @@ export interface Move {
 
   targetPreset?: TargetPreset;
   targetPattern?: TargetCell[];
-
 }
+
+export interface TMInfo {
+  tm: string;
+  move: string;
+}
+
+export interface PokemonLearnset {
+  id: number;
+  slug: string;
+  levelUp: { level: number; move: string }[];
+  tm: string[];
+  egg: string[];
+}
+
+export type MoveIndex = Record<string, {
+  id: number;
+  method: 'level' | 'tm' | 'egg';
+  level?: number;
+  tm?: string;
+}[]>;

@@ -1,0 +1,17 @@
+{
+  "id": 1,
+  "slug": "manimous",
+  "levelUp": [
+    { "level": 1,  "move": "griffe" },
+    { "level": 1,  "move": "rugissement" },
+    { "level": 9,  "move": "guillotine" }
+  ],
+  "tm": [
+    "CT01",
+    "CT02"
+  ],
+  "egg": [
+    "poing-feu",
+    "jackpot"
+  ]
+}

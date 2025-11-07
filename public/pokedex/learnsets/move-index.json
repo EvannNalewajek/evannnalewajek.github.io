@@ -1,0 +1,11 @@
+{
+  "ecras-face": [
+    { "id": 1,  "method": "level", "level": 6  },
+    { "id": 4,  "method": "tm",    "tm": "CT01" },
+    { "id": 7, "method": "egg" }
+  ],
+  "griffe": [
+    { "id": 10,   "method": "level", "level": 9  },
+    { "id": 15,  "method": "level", "level": 10 }
+  ]
+}

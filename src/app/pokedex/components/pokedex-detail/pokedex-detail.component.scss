@@ -7,11 +7,20 @@
   align-items: start;
 }
 
+.layout > .content { min-width: 0; }
+
 .content {
   min-width: 0;
   display: grid;
   gap: 1rem;
 }
+
+.content .content-card.narrow {
+  max-width: 880px;
+  margin-inline: auto;
+}
+
+.content-card { overflow: hidden; }
 
 .infobox-frame {
   --t1: #a8a77a;
@@ -543,6 +552,26 @@
     font-size: 1rem;
     margin: 0 0 .5rem;
     opacity: .85;
+    text-align: center;
+  }
+
+  .evo-rows {
+    display: grid;
+    gap: 1rem;
+    justify-items: center;
+  }
+
+  .evo-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--evo-col-min), 1fr));
+    gap: 1rem;
+    justify-items: center;
+  }
+
+  .evo-cell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .evo-mon {
@@ -559,6 +588,7 @@
       display: block;
       image-rendering: -webkit-optimize-contrast;
       filter: drop-shadow(0 2px 6px rgba(0,0,0,.12));
+      max-width: 100%;
     }
 
     figcaption {
@@ -583,6 +613,7 @@
       width: min(var(--evo-img-max), var(--evo-img-rel));
       height: auto;
       display: block;
+      max-width: 100%;
     }
 
     figcaption {
@@ -647,25 +678,36 @@
     margin: .45rem 0 0;
   }
 
-  .evo-rows {
-    display: grid;
-    gap: 1rem;
-  }
-  .evo-row {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(var(--evo-col-min), 1fr));
-    gap: 1rem;
-    justify-items: center;
-  }
-  .evo-cell {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
   @media (max-width: 520px) {
     --evo-img-rel: 92%;
     --evo-col-min: 140px;
     .evo-arrow .evo-trigger { font-size: .85rem; }
+  }
+}
+
+.learnsets {
+  .learnset-block {
+    margin-top: 1rem;
+  }
+
+  .table-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .learnset-table {
+    width: max-content;
+    min-width: 100%;
+    border-collapse: collapse;
+
+    th, td {
+      padding: .5rem .6rem;
+      text-align: left;
+      white-space: nowrap;
+    }
+    th { font-weight: 600; opacity: .9; }
+    td.num { text-align: right; }
+    td.mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+    tbody tr:nth-child(odd) { background: rgba(0,0,0,.03); }
   }
 }

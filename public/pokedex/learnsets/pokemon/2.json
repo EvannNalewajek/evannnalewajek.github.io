@@ -1,0 +1,17 @@
+{
+  "id": 2,
+  "slug": "florolin",
+  "levelUp": [
+    { "level": 1,  "move": "ecras-face" },
+    { "level": 1,  "move": "mimi-queue" },
+    { "level": 9,  "move": "guillotine" }
+  ],
+  "tm": [
+    "CT01",
+    "CT02"
+  ],
+  "egg": [
+    "poing-feu",
+    "jackpot"
+  ]
+}

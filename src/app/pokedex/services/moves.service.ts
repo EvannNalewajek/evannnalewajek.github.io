@@ -1,7 +1,8 @@
+// moves.service.ts
 import { Injectable, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { map } from 'rxjs';
-import { Move, TargetPreset, TargetCell } from '../models/move.model';
+import { map, shareReplay } from 'rxjs';
+import type { Move, TargetPreset, TargetCell, TMInfo } from '../models/move.model';
 
 const VALID_CELLS: TargetCell[] = ['FOE_L','FOE_C','FOE_R','SELF','ALLY_L','ALLY_R'];
 
@@ -76,59 +77,95 @@ function normalizeTarget(m: any): { preset?: TargetPreset; pattern?: TargetCell[
 @Injectable({ providedIn: 'root' })
 export class MovesService {
   private http = inject(HttpClient);
-  private url = '/pokedex/moves.json';
+  private movesUrl = '/pokedex/moves.json';
+  private tmsUrl   = '/pokedex/tms.json';
+
+  private _moves$ = this.http.get<any>(this.movesUrl).pipe(
+    map((raw) => {
+      const list: any[] = Array.isArray(raw) ? raw : Object.values(raw || {});
+      return list
+        .map((m, i): Move => {
+          const id: number =
+            typeof m.id === 'number' ? m.id : (parseInt(String(m.id), 10) || i + 1);
+
+          const slug: string = slugify(
+            m.slug ?? m.url ?? m.name ?? m.nom ?? m.id ?? `move-${id}`
+          );
+
+          const { preset, pattern } = normalizeTarget(m);
+
+          return {
+            id,
+            slug,
+            name: m.name ?? m.nom ?? m.move ?? `Capacité ${id}`,
+            type: m.type ?? m.typ ?? 'Normal',
+            category: (m.category ?? m.cat ?? 'Statut') as Move['category'],
+            power: asNumber(m.power ?? m.puissance),
+            accuracy: asNumber(m.accuracy ?? m.precision),
+            pp: asNumber(m.pp ?? m.PP),
+            priority: asNumber(m.priority ?? m.prio) ?? 0,
+
+            shortDesc: m.shortDesc ?? m.short_description ?? m.short ?? null,
+            desc: m.desc ?? m.description ?? null,
+            effect: m.effect ?? m.effet ?? null,
+
+            makesContact: Boolean(m.makesContact ?? m.contact ?? false),
+            critRate: normalizeCritRate(m.critRate ?? m.crit ?? m.tauxCrit),
+
+            targetPreset: preset,
+            targetPattern: pattern
+          };
+        })
+        .sort((a, b) => a.id - b.id);
+    }),
+    shareReplay(1)
+  );
+
+  private _tms$ = this.http.get<TMInfo[]>(this.tmsUrl).pipe(
+    map(arr => (Array.isArray(arr) ? arr : [])),
+    shareReplay(1)
+  );
 
   getAll() {
-    return this.http.get<any>(this.url).pipe(
-      map((raw) => {
-        const list: any[] = Array.isArray(raw) ? raw : Object.values(raw || {});
-        return list
-          .map((m, i): Move => {
-            const id: number =
-              typeof m.id === 'number' ? m.id : (parseInt(String(m.id), 10) || i + 1);
-
-            const slug: string = slugify(
-              m.slug ?? m.url ?? m.name ?? m.nom ?? m.id ?? `move-${id}`
-            );
-
-            const { preset, pattern } = normalizeTarget(m);
-
-            return {
-              id,
-              slug,
-              name: m.name ?? m.nom ?? m.move ?? `Capacité ${id}`,
-              type: m.type ?? m.typ ?? 'Normal',
-              category: (m.category ?? m.cat ?? 'Statut') as Move['category'],
-              power: asNumber(m.power ?? m.puissance),
-              accuracy: asNumber(m.accuracy ?? m.precision),
-              pp: asNumber(m.pp ?? m.PP),
-              priority: asNumber(m.priority ?? m.prio) ?? 0,
-
-              shortDesc: m.shortDesc ?? m.short_description ?? m.short ?? null,
-              desc: m.desc ?? m.description ?? null,
-              effect: m.effect ?? m.effet ?? null,
-
-              makesContact: Boolean(m.makesContact ?? m.contact ?? false),
-              critRate: normalizeCritRate(m.critRate ?? m.crit ?? m.tauxCrit),
-
-              targetPreset: preset,
-              targetPattern: pattern
-            };
-          })
-          .sort((a, b) => a.id - b.id);
-      })
-    );
+    return this._moves$;
   }
-
   getByUrl$(slug: string) {
-    return this.getAll().pipe(
-      map(list => list.find(m => m.slug === slug) ?? null)
+    return this._moves$.pipe(map(list => list.find(m => m.slug === slug) ?? null));
+  }
+  getById$(id: number) {
+    return this._moves$.pipe(map(list => list.find(m => m.id === id) ?? null));
+  }
+
+  getTMs$() {
+    return this._tms$;
+  }
+
+  getTMtoMoveMap$() {
+    return this._tms$.pipe(
+      map(list => {
+        const mp = new Map<string, string>();
+        for (const t of list) {
+          if (t.tm && t.move) mp.set(String(t.tm), String(t.move));
+        }
+        return mp;
+      }),
+      shareReplay(1)
     );
   }
 
-  getById$(id: number) {
-    return this.getAll().pipe(
-      map(list => list.find(m => m.id === id) ?? null)
+  getMoveToTMsMap$() {
+    return this._tms$.pipe(
+      map(list => {
+        const mp = new Map<string, string[]>();
+        for (const t of list) {
+          const m = String(t.move);
+          const arr = mp.get(m) ?? [];
+          arr.push(String(t.tm));
+          mp.set(m, arr);
+        }
+        return mp;
+      }),
+      shareReplay(1)
     );
   }
 }

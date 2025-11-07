@@ -1,4 +1,4 @@
-import { Component, OnInit, inject, computed, Signal } from '@angular/core';
+import { Component, OnInit, inject, effect, computed, Signal, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute, RouterLink, Router } from '@angular/router';
 import { PokedexService } from '../../services/pokedex.service';
@@ -8,6 +8,8 @@ import { WikilinkPipe } from '../../pipes/wikilink.pipe';
 import { Pokemon } from '../../models/pokemon.model';
 import { EvolutionService } from '../../services/evolution.service';
 import { EvolutionFamily, EvolutionLink } from '../../models/evolution.model';
+import { MovesService } from '../../services/moves.service';
+import { LearnsetsService, ResolvedLearnset } from '../../services/learnsets.service';
 
 import { toSignal } from '@angular/core/rxjs-interop';
 import { map } from 'rxjs/operators';
@@ -32,11 +34,27 @@ export class PokedexDetailComponent implements OnInit {
   private router = inject(Router);
   private pokedex = inject(PokedexService);
   private evo = inject(EvolutionService);
+  private learnsets = inject(LearnsetsService);
 
   private id = toSignal(
     this.route.paramMap.pipe(map(pm => Number(pm.get('id')))),
     { initialValue: NaN }
   );
+  
+  readonly resolvedLearnset = signal<ResolvedLearnset | null>(null);
+
+  constructor() {
+    effect(() => {
+      const p = this.pokemon?.();
+      if (!p) {
+        this.resolvedLearnset.set(null);
+        return;
+      }
+      this.learnsets
+        .getResolvedLearnsetForPokemon$(p.id)
+        .subscribe(ls => this.resolvedLearnset.set(ls));
+    });
+  }
 
   pokemon = computed<Pokemon | null>(() => this.pokedex.getById(this.id()));
 
@@ -269,5 +287,13 @@ export class PokedexDetailComponent implements OnInit {
       default:
         return '';
     }
+  }
+
+  moveLink(slug: string) {
+    return ['/pokedex/moves', slug];
+  }
+  hasAnyLearnset() {
+    const L = this.resolvedLearnset();
+    return !!L && (L.levelUp.length + L.tm.length + L.egg.length) > 0;
   }
 }
