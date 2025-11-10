@@ -15,135 +15,253 @@
                 <div
                 class="dex-screen move-detail"
                 [attr.data-type1]="m.type">
+                    <div class="track">
+                        <nav class="dex-toolbar top">
+                            <div class="toolbar-inner">
+                                <span class="left">
+                                    <a routerLink="/pokedex/moves" class="nav-chip">← Retour à la liste</a>
+                                </span>
+                                <span class="center">
+                                    <strong>#{{ m.id | number:'2.0-0' }}</strong>
+                                    {{ m.name }}
+                                </span>
+                                <span class="right">
+                                    @if (prev(); as p) {
+                                        <a [routerLink]="['/pokedex/moves', p.slug]" class="nav-chip">Préc.</a>
+                                    }
+                                    @if (next(); as n) {
+                                        <a [routerLink]="['/pokedex/moves', n.slug]" class="nav-chip">Suiv.</a>
+                                    }
+                                </span>
+                            </div>
+                        </nav>
 
-                    <nav class="dex-toolbar top">
-                        <div class="toolbar-inner">
-                            <span class="left">
-                                <a routerLink="/pokedex/moves" class="nav-chip">← Retour à la liste</a>
-                            </span>
-                            <span class="center">
-                                <strong>#{{ m.id | number:'2.0-0' }}</strong>
-                                {{ m.name }}
-                            </span>
-                            <span class="right">
-                                @if (prev(); as p) {
-                                    <a [routerLink]="['/pokedex/moves', p.slug]" class="nav-chip">Préc.</a>
-                                }
-                                @if (next(); as n) {
-                                    <a [routerLink]="['/pokedex/moves', n.slug]" class="nav-chip">Suiv.</a>
-                                }
-                            </span>
-                        </div>
-                    </nav>
+                        <div class="layout">
+                            <aside class="infobox-frame"
+                                [attr.data-type1]="m.type"
+                                [attr.data-type2]="m.type">
+                                <div class="panel primary">
 
-                    <div class="layout">
-                        <aside class="infobox-frame"
-                            [attr.data-type1]="m.type"
-                            [attr.data-type2]="m.type">
-                            <div class="panel primary">
+                                    <div class="types-box">
+                                        <h3>Type</h3>
+                                        <div class="types">
+                                            <a class="type-chip"
+                                            [attr.data-type]="m.type"
+                                            [routerLink]="['/pokedex/types', ($any(m.type) | typeSlug)]"
+                                            title="Voir le type {{ m.type }}">
+                                            {{ m.type }}
+                                            </a>
+                                        </div>
+                                    </div>
 
-                                <div class="types-box">
-                                    <h3>Type</h3>
-                                    <div class="types">
-                                        <a class="type-chip"
-                                        [attr.data-type]="m.type"
-                                        [routerLink]="['/pokedex/types', ($any(m.type) | typeSlug)]"
-                                        title="Voir le type {{ m.type }}">
-                                        {{ m.type }}
-                                        </a>
+                                    <div class="quickfacts">
+                                        <dl class="dl-grid">
+                                            <div>
+                                            <dt>N°</dt>
+                                            <dd>#{{ m.id | number:'2.0-0' }}</dd>
+                                            </div>
+
+                                            <div>
+                                            <dt>Catégorie</dt>
+                                            <dd>
+                                                <span class="cat-badge" [attr.data-cat]="m.category || 'Statut'">
+                                                {{ m.category || 'Statut' }}
+                                                </span>
+                                            </dd>
+                                            </div>
+
+                                            <div><dt>Puissance</dt><dd>{{ m.power ?? '—' }}</dd></div>
+                                            <div><dt>Précision</dt><dd>{{ m.accuracy != null ? (m.accuracy + '%') : '—' }}</dd></div>
+                                            <div><dt>PP</dt><dd>{{ m.pp ?? '—' }}</dd></div>
+                                            <div><dt>Priorité</dt><dd>{{ m.priority ?? 0 }}</dd></div>
+
+                                            <div>
+                                                <dt>Contact</dt>
+                                                <dd>
+                                                    <span class="pill" [class.ok]="m.makesContact">
+                                                        {{ m.makesContact ? 'Oui' : 'Non' }}
+                                                    </span>
+                                                </dd>
+                                            </div>
+
+                                            <div>
+                                                <dt>Critiques</dt>
+                                                <dd>
+                                                    <span class="crit-badge" [attr.data-level]="m.critRate || 'normal'">
+                                                        {{ critLabel(m.critRate) }}
+                                                    </span>
+                                                </dd>
+                                            </div>
+                                        </dl>
+                                    </div>
+
+                                    <section class="target-card content-card" *ngIf="m.targetPreset || m.targetPattern">
+                                        <h3>Cible</h3>
+                                        <app-move-target-diagram
+                                            class="diagram"
+                                            [preset]="m.targetPreset"
+                                            [pattern]="m.targetPattern">
+                                        </app-move-target-diagram>
+                                    </section>
+
+                                </div>
+                            </aside>
+
+                            <main class="content">
+                                <header class="title content-card">
+                                    <h2>
+                                        <small>#{{ m.id | number:'2.0-0' }}</small>
+                                        {{ m.name }}
+                                    </h2>
+                                </header>
+
+                                <section class="content-card">
+                                    <h3>Effet</h3>
+                                    <p class="move-effect">{{ m.effect || '—' }}</p>
+                                </section>
+
+                                <section class="content-card">
+                                    <h3>Description</h3>
+                                    <p class="move-desc">{{ m.shortDesc || m.desc || '—' }}</p>
+                                </section>
+
+                                <section class="content-card narrow learners" *ngIf="hasAnyLearners()">
+                                <h3>Appris par</h3>
+
+                                <!-- Par niveau -->
+                                <div class="learners-block" *ngIf="learnersLevel().length">
+                                    <h4>Par niveau</h4>
+                                    <div class="table-scroll">
+                                        <table class="learners-table">
+                                            <colgroup>
+                                                <col style="width:56px">
+                                                <col style="width:64px">
+                                                <col>
+                                                <col style="width:90px">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                <th class="num">#</th>
+                                                <th class="center">Sprite</th>
+                                                <th>Pokémon</th>
+                                                <th class="num">Niveau</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                @for (r of learnersLevel(); track r.id; let i = $index) {
+                                                <tr>
+                                                    <td class="num">{{ i + 1 }}</td>
+                                                    <td class="sprite-cell center">
+                                                    <a [routerLink]="pokemonLink(r.id)" title="Voir #{{ r.id }}">
+                                                        <img class="mini-sprite" [src]="r.sprite" [alt]="r.name" loading="lazy">
+                                                    </a>
+                                                    </td>
+                                                    <td>
+                                                    <a [routerLink]="pokemonLink(r.id)">{{ r.name }}</a>
+                                                    </td>
+                                                    <td class="num">{{ r.level }}</td>
+                                                </tr>
+                                                }
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
 
-                                <div class="quickfacts">
-                                    <dl class="dl-grid">
-                                        <div>
-                                        <dt>N°</dt>
-                                        <dd>#{{ m.id | number:'2.0-0' }}</dd>
-                                        </div>
 
-                                        <div>
-                                        <dt>Catégorie</dt>
-                                        <dd>
-                                            <span class="cat-badge" [attr.data-cat]="m.category || 'Statut'">
-                                            {{ m.category || 'Statut' }}
-                                            </span>
-                                        </dd>
-                                        </div>
-
-                                        <div><dt>Puissance</dt><dd>{{ m.power ?? '—' }}</dd></div>
-                                        <div><dt>Précision</dt><dd>{{ m.accuracy != null ? (m.accuracy + '%') : '—' }}</dd></div>
-                                        <div><dt>PP</dt><dd>{{ m.pp ?? '—' }}</dd></div>
-                                        <div><dt>Priorité</dt><dd>{{ m.priority ?? 0 }}</dd></div>
-
-                                        <div>
-                                            <dt>Contact</dt>
-                                            <dd>
-                                                <span class="pill" [class.ok]="m.makesContact">
-                                                    {{ m.makesContact ? 'Oui' : 'Non' }}
-                                                </span>
-                                            </dd>
-                                        </div>
-
-                                        <div>
-                                            <dt>Critiques</dt>
-                                            <dd>
-                                                <span class="crit-badge" [attr.data-level]="m.critRate || 'normal'">
-                                                    {{ critLabel(m.critRate) }}
-                                                </span>
-                                            </dd>
-                                        </div>
-                                    </dl>
+                                <!-- Par CT -->
+                                <div class="learners-block" *ngIf="learnersTM().length">
+                                    <h4>Par CT</h4>
+                                    <div class="table-scroll">
+                                        <table class="learners-table">
+                                            <colgroup>
+                                                <col style="width:56px">
+                                                <col style="width:64px">
+                                                <col>
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                <th class="num">#</th>
+                                                <th class="center">Sprite</th>
+                                                <th>Pokémon</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                @for (r of learnersTM(); track r.id; let i = $index) {
+                                                <tr>
+                                                    <td class="num">{{ i + 1 }}</td>
+                                                    <td class="sprite-cell center">
+                                                    <a [routerLink]="pokemonLink(r.id)" title="Voir #{{ r.id }}">
+                                                        <img class="mini-sprite" [src]="r.sprite" [alt]="r.name" loading="lazy">
+                                                    </a>
+                                                    </td>
+                                                    <td>
+                                                    <a [routerLink]="pokemonLink(r.id)">{{ r.name }}</a>
+                                                    </td>
+                                                </tr>
+                                                }
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
 
-                                <section class="target-card content-card" *ngIf="m.targetPreset || m.targetPattern">
-                                    <h3>Cible</h3>
-                                    <app-move-target-diagram
-                                        class="diagram"
-                                        [preset]="m.targetPreset"
-                                        [pattern]="m.targetPattern">
-                                    </app-move-target-diagram>
-                                </section>
 
-                            </div>
-                        </aside>
-
-                        <main class="content">
-                            <header class="title content-card">
-                                <h2>
-                                    <small>#{{ m.id | number:'2.0-0' }}</small>
-                                    {{ m.name }}
-                                </h2>
-                            </header>
-
-                            <section class="content-card">
-                                <h3>Effet</h3>
-                                <p class="move-effect">{{ m.effect || '—' }}</p>
+                                <!-- Par reproduction -->
+                                <div class="learners-block" *ngIf="learnersEgg().length">
+                                    <h4>Par reproduction</h4>
+                                    <div class="table-scroll">
+                                        <table class="learners-table">
+                                            <colgroup>
+                                                <col style="width:56px">
+                                                <col style="width:64px">
+                                                <col>
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                <th class="num">#</th>
+                                                <th class="center">Sprite</th>
+                                                <th>Pokémon</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                @for (r of learnersEgg(); track r.id; let i = $index) {
+                                                <tr>
+                                                    <td class="num">{{ i + 1 }}</td>
+                                                    <td class="sprite-cell center">
+                                                    <a [routerLink]="pokemonLink(r.id)" title="Voir #{{ r.id }}">
+                                                        <img class="mini-sprite" [src]="r.sprite" [alt]="r.name" loading="lazy">
+                                                    </a>
+                                                    </td>
+                                                    <td>
+                                                    <a [routerLink]="pokemonLink(r.id)">{{ r.name }}</a>
+                                                    </td>
+                                                </tr>
+                                                }
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
                             </section>
-
-                            <section class="content-card">
-                                <h3>Description</h3>
-                                <p class="move-desc">{{ m.shortDesc || m.desc || '—' }}</p>
-                            </section>
-                        </main>
-                    </div>
-
-                    <nav class="dex-toolbar bottom">
-                        <div class="toolbar-inner">
-                            <span class="left">
-                                @if (prev(); as p) {
-                                    <a [routerLink]="['/pokedex/moves', p.slug]" class="nav-chip">← Préc.</a>
-                                }
-                            </span>
-                            <span class="center">
-                                <a routerLink="/pokedex/moves">Retour à la liste</a>
-                            </span>
-                            <span class="right">
-                                @if (next(); as n) {
-                                    <a [routerLink]="['/pokedex/moves', n.slug]" class="nav-chip">Suiv. →</a>
-                                }
-                            </span>
+                            </main>
                         </div>
-                    </nav>
+
+                        <nav class="dex-toolbar bottom">
+                            <div class="toolbar-inner">
+                                <span class="left">
+                                    @if (prev(); as p) {
+                                        <a [routerLink]="['/pokedex/moves', p.slug]" class="nav-chip">← Préc.</a>
+                                    }
+                                </span>
+                                <span class="center">
+                                    <a routerLink="/pokedex/moves">Retour à la liste</a>
+                                </span>
+                                <span class="right">
+                                    @if (next(); as n) {
+                                        <a [routerLink]="['/pokedex/moves', n.slug]" class="nav-chip">Suiv. →</a>
+                                    }
+                                </span>
+                            </div>
+                        </nav>
+                    </div>
                 </div>
             </div>
         } @else {
