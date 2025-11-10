@@ -12,6 +12,8 @@ import { TypeSlugPipe } from '../../pipes/type-slug.pipe';
 import { Move } from '../../models/move.model';
 import { MoveTargetDiagramComponent } from '../move-target-diagram/move-target-diagram.component';
 
+import { WikilinkPipe } from '../../pipes/wikilink.pipe';
+
 interface LearnerRow {
   id: number;
   name: string;
@@ -22,7 +24,7 @@ interface LearnerRow {
 @Component({
   selector: 'app-moves-detail',
   standalone: true,
-  imports: [CommonModule, RouterLink, TypeSlugPipe, MoveTargetDiagramComponent],
+  imports: [CommonModule, RouterLink, TypeSlugPipe, MoveTargetDiagramComponent, WikilinkPipe],
   templateUrl: './moves-detail.component.html',
   styleUrls: ['./moves-detail.component.scss'],
 })

@@ -117,7 +117,7 @@
 
                                 <section class="content-card">
                                     <h3>Effet</h3>
-                                    <p class="move-effect">{{ m.effect || '—' }}</p>
+                                    <p class="move-effect" [innerHTML]="m.effect | wikilink:{ kind:'move', slug:m.slug}"></p>
                                 </section>
 
                                 <section class="content-card">
