@@ -454,5 +454,81 @@
     },
     "baseStats": { "hp": 65, "atk": 130, "def": 95, "spa": 65, "spd": 60, "spe": 110 },
     "description": "Son corps est couvert d'écailles cristallines d'une grande beauté. Jadis braconné pour ces gemmes rares, son espèce a presque disparu. On pensait l'espèce éteinte jusqu'à ce que quelques individus soient observés dans des vallées reculées."
+  },
+  {
+    "id": 25,
+    "slug": "albydro",
+    "name": "Albydro",
+    "types": ["Roche", "Eau"],
+    "category": "Spinosaure",
+    "abilities": ["[[ability:glissade|Glissade]]", "[[ability:fermete|Fermeté]]"],
+    "hiddenAbility": "[[ability:prognathe|Prognathe]]",
+    "height_m": 0.9,
+    "weight_kg": 42.5,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 45,
+    "images": {
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
+    },
+    "baseStats": { "hp": 65, "atk":80, "def": 64, "spa": 50, "spd": 60, "spe": 40 },
+    "description": "Il vivait dans des zones humides et marécageuses, il y a environ 100 millions d'années. Il chasse de petits poissons à l'aide de son museau effilé, parfaitement adapté à l'eau trouble."
+  },
+  {
+    "id": 26,
+    "slug": "Spinadra",
+    "name": "Spinadra",
+    "types": ["Roche", "Eau"],
+    "category": "Spinosaure",
+    "abilities": ["[[ability:glissade|Glissade]]", "[[ability:fermete|Fermeté]]"],
+    "hiddenAbility": "[[ability:prognathe|Prognathe]]",
+    "height_m": 2.1,
+    "weight_kg": 238,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 45,
+    "images": {
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
+    },
+    "baseStats": { "hp": 90, "atk": 110, "def": 100, "spa": 70, "spd": 80, "spe": 55 },
+    "description": "Son dos est orné d'une immense voile qu'il utilisait pour réguler sa température et intimider ses proies. On raconte que ses rugissements pouvaient faire vibrer la surface des marécages."
+  },
+  {
+    "id": 27,
+    "slug": "vibranite",
+    "name": "Vibranite",
+    "types": ["Roche", "Normal"],
+    "category": "Parasaurolophus",
+    "abilities": ["[[ability:anti-bruit|Anti-Bruit]]", "[[ability:herbivore|Herbivore]]"],
+    "hiddenAbility": "[[ability:inconscient|Inconscient]]",
+    "height_m": 0.8,
+    "weight_kg": 36.7,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 45,
+    "images": {
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
+    },
+    "baseStats": { "hp": 62, "atk": 50, "def": 55, "spa": 85, "spd": 60, "spe": 47 },
+    "description": "Ce joyeux Pokémon adore utiliser tous les objets qui l'entour pour faire du bruit avec. Sa mélodie préférée est celle de la pluie, mais il déteste le son de l'orage."
+  },
+  {
+    "id": 28,
+    "slug": "Symphodon",
+    "name": "Symphodon",
+    "types": ["Roche", "Normal"],
+    "category": "Parasaurolophus",
+    "abilities": ["[[ability:anti-bruit|Anti-Bruit]]", "[[ability:herbivore|Herbivore]]"],
+    "hiddenAbility": "[[ability:inconscient|Inconscient]]",
+    "height_m": 2.3,
+    "weight_kg": 256.4,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 45,
+    "images": {
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
+    },
+    "baseStats": { "hp": 88, "atk": 70, "def": 75, "spa": 115, "spd": 90, "spe": 67 },
+    "description": "Sa crête allongée agit comme une chambre de résonance. Les sons graves qu'il émet pouvaient parcourir des kilomètres à travers le sol. Jadis, ses chants unissaient les troupeaux et apaisaient les prédateurs."
   }
 ]
