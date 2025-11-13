@@ -1,4 +1,4 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -8,12 +8,4 @@ import { CommonModule } from '@angular/common';
   templateUrl: './docs-statistics.component.html',
   styleUrls: ['./docs-statistics.component.scss'],
 })
-export class DocsStatisticsComponent implements AfterViewInit{
-    ngAfterViewInit(): void {
-        (window as any).MathJax?.typesetPromise();
-    }
-
-    refreshMath() {
-        (window as any).MathJax?.typesetPromise();
-    }
-}
+export class DocsStatisticsComponent {}
