@@ -16,6 +16,7 @@ import { AbilitiesListComponent } from './pokedex/components/abilities-list/abil
 import { AbilitiesDetailComponent } from './pokedex/components/abilities-detail/abilities-detail.component';
 import { DocumentationComponent } from './pokedex/components/documentation/documentation.component';
 import { DocsIntroductionComponent } from './pokedex/components/docs-introduction/docs-introduction.component';
+import { DocsStatisticsComponent } from './pokedex/components/docs-statistics/docs-statistics.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent, title: 'Accueil' },
@@ -30,6 +31,7 @@ export const routes: Routes = [
     { path: 'pokedex/abilities/:slug', component: AbilitiesDetailComponent, title: 'Pokédex - Talents Détail' },
     { path: 'pokedex/docs', component: DocumentationComponent, title: 'Pokédex - Documentation' },
     { path: 'pokedex/docs/introduction', component: DocsIntroductionComponent, title: 'Pokédex - Introduction' },
+    { path: 'pokedex/docs/statistics', component: DocsStatisticsComponent, title: 'Pokédex - Statistiques' },
     { path: 'enigmemain',
         component: EnigmeComponent,
         title: 'Énigme Main',

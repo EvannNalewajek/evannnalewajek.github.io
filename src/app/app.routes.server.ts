@@ -13,6 +13,7 @@ export const serverRoutes: ServerRoute[] = [
   { path: 'pokedex/abilities/:slug', renderMode: RenderMode.Client },
   { path: 'pokedex/docs', renderMode: RenderMode.Client },
   { path: 'pokedex/docs/introduction', renderMode: RenderMode.Client },
+  { path: 'pokedex/docs/statistics', renderMode: RenderMode.Client },
 
   {
     path: '**',
