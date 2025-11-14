@@ -530,5 +530,186 @@
     },
     "baseStats": { "hp": 88, "atk": 70, "def": 75, "spa": 115, "spd": 90, "spe": 67 },
     "description": "Sa crête allongée agit comme une chambre de résonance. Les sons graves qu'il émet pouvaient parcourir des kilomètres à travers le sol. Jadis, ses chants unissaient les troupeaux et apaisaient les prédateurs."
+  },
+
+  {
+    "id": 101,
+    "slug": "",
+    "name": "DAMAREL",
+    "types": ["Spectre", "Eau"],
+    "category": "",
+    "abilities": ["", ""],
+    "hiddenAbility": "",
+    "height_m": 0,
+    "weight_kg": 0,
+    "captureRate": 6,
+    "images": {
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
+    },
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "description": ""
+  },
+  {
+    "id": 102,
+    "slug": "",
+    "name": "SHARAZEL",
+    "types": ["Spectre", "Sol"],
+    "category": "",
+    "abilities": ["", ""],
+    "hiddenAbility": "",
+    "height_m": 0,
+    "weight_kg": 0,
+    "captureRate": 6,
+    "images": {
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
+    },
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "description": ""
+  },
+  {
+    "id": 103,
+    "slug": "",
+    "name": "KINNAREL",
+    "types": ["Spectre", "Insecte"],
+    "category": "",
+    "abilities": ["", ""],
+    "hiddenAbility": "",
+    "height_m": 0,
+    "weight_kg": 0,
+    "captureRate": 6,
+    "images": {
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
+    },
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "description": ""
+  },
+  {
+    "id": 104,
+    "slug": "",
+    "name": "AROVEL",
+    "types": ["Spectre", "Vol"],
+    "category": "",
+    "abilities": ["", ""],
+    "hiddenAbility": "",
+    "height_m": 0,
+    "weight_kg": 0,
+    "captureRate": 6,
+    "images": {
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
+    },
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "description": ""
+  },
+  {
+    "id": 105,
+    "slug": "",
+    "name": "DEVOREL",
+    "types": ["Spectre", "Poison"],
+    "category": "",
+    "abilities": ["", ""],
+    "hiddenAbility": "",
+    "height_m": 0,
+    "weight_kg": 0,
+    "captureRate": 6,
+    "images": {
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
+    },
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "description": ""
+  },
+  {
+    "id": 106,
+    "slug": "",
+    "name": "HAMAREL",
+    "types": ["Spectre", "Feu"],
+    "category": "",
+    "abilities": ["", ""],
+    "hiddenAbility": "",
+    "height_m": 0,
+    "weight_kg": 0,
+    "captureRate": 6,
+    "images": {
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
+    },
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "description": ""
+  },
+  {
+    "id": 107,
+    "slug": "",
+    "name": "BARADIEL",
+    "types": ["Spectre", "Glace"],
+    "category": "",
+    "abilities": ["", ""],
+    "hiddenAbility": "",
+    "height_m": 0,
+    "weight_kg": 0,
+    "captureRate": 6,
+    "images": {
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
+    },
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "description": ""
+  },
+  {
+    "id": 108,
+    "slug": "",
+    "name": "ARBOREL",
+    "types": ["Spectre", "Plante"],
+    "category": "",
+    "abilities": ["", ""],
+    "hiddenAbility": "",
+    "height_m": 0,
+    "weight_kg": 0,
+    "captureRate": 6,
+    "images": {
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
+    },
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "description": ""
+  },
+  {
+    "id": 109,
+    "slug": "",
+    "name": "HOSHEKEL",
+    "types": ["Spectre", "Ténèbres"],
+    "category": "",
+    "abilities": ["", ""],
+    "hiddenAbility": "",
+    "height_m": 0,
+    "weight_kg": 0,
+    "captureRate": 6,
+    "images": {
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
+    },
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "description": ""
+  },
+  {
+    "id": 110,
+    "slug": "",
+    "name": "SHEKHATEL",
+    "types": ["Spectre", "Normal"],
+    "category": "",
+    "abilities": ["", ""],
+    "hiddenAbility": "",
+    "height_m": 0,
+    "weight_kg": 0,
+    "captureRate": 6,
+    "images": {
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
+    },
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "description": ""
   }
 ]
