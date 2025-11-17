@@ -37,8 +37,8 @@
     "slug": "statik",
     "name": "Statik",
     "battleEffectCondition": "Lors d'une capacité adverse",
-    "battleEffectShort": "Les capacités directes reçues ont 30% de chances de donner le statut paralysie à leur lanceur.",
-    "battleEffectLong": "Lorsqu'un Pokémon doté de ce talent subit une capacité directe, il a 30% de chances de paralyser son attaquant. Statik affecte également les Pokémons de [[type:sol|type Sol]].",
+    "battleEffectShort": "Les capacités directes reçues ont 30% de chances de donner le [[docs:status|statut paralysie]] à leur lanceur.",
+    "battleEffectLong": "Lorsqu'un Pokémon doté de ce talent subit une capacité directe, il a 30% de chances de [[docs:status|paralyser]] son attaquant. Statik affecte également les Pokémons de [[type:sol|type Sol]].",
     "fieldEffectCondition": "Avec effet",
     "fieldEffectLong": "Si un Pokémon avec ce talent est placé en tête d'équipe, le dresseur a 50% de chances de plus de trouver un Pokémon de [[type:electrik|type Électrik]].",
     "description": "Le Pokémon charge son corps en électricité statique, et tout contact avec lui peut paralyser."
@@ -236,7 +236,7 @@
     "name": "Régé-Force",
     "battleEffectCondition": "Lorsque le Pokémon est retiré",
     "battleEffectShort": "Le Pokémon soigne 1/3 de ses [[docs:statistics|PV]] s'il switch.",
-    "battleEffectLong": "Lorsque le Pokémon est retiré du combat, en changeant de Pokémon ou par l'intermédiaire d'attaques comme Relais, 1/3 de ses [[docs:statistics|PV]] maximum sont automatiquement récupérés.",
+    "battleEffectLong": "Lorsque le Pokémon est retiré du combat, en changeant de Pokémon ou par l'intermédiaire d'attaques comme [[move:relais|Relais]], 1/3 de ses [[docs:statistics|PV]] maximum sont automatiquement récupérés.",
     "fieldEffectCondition": "Aucun effet",
     "fieldEffectLong": "Régé-Force n'a aucun effet hors combat.",
     "description": "Restaure un peu de PV si le Pokémon est retiré du combat."
@@ -247,7 +247,7 @@
     "name": "Farceur",
     "battleEffectCondition": "Lors de son attaque",
     "battleEffectShort": "La priorité des capacités de statut augmente d'un niveau.",
-    "battleEffectLong": "Si un Pokémon doté de ce talent se sert d'une capacité non offensive, ces dernières sont effectuées avec une priorité d'attaque augmentée d'un niveau. Cette capacité échoue sous Champ Psychique si la cible est un Pokémon au sol. Le type Ténèbres est immunisé aux capacités rendues prioritaires grâce à ce talent.",
+    "battleEffectLong": "Si un Pokémon doté de ce talent se sert d'une capacité non offensive, ces dernières sont effectuées avec une priorité d'attaque augmentée d'un niveau. Cette capacité échoue sous [[docs:fields|Champ Psychique]] si la cible est un Pokémon au sol. Le type [[type:Ténèbres]] est immunisé aux capacités rendues prioritaires grâce à ce talent.",
     "fieldEffectCondition": "Aucun effet",
     "fieldEffectLong": "Farceur n'a aucun effet hors combat.",
     "description": "Rend les capacités de statut prioritaires."
@@ -262,5 +262,115 @@
     "fieldEffectCondition": "Aucun effet",
     "fieldEffectLong": "Poisseux n'a aucun effet hors combat.",
     "description": "Baisse la Vitesse de l'attaquant lorsque le Pokémon subit une attaque directe."
+  },
+  {
+    "id": 301,
+    "slug": "maree-pourpre",
+    "name": "Marée Pourpre",
+    "battleEffectCondition": "Lors de son attaque",
+    "battleEffectShort": "Les capacités de type [[type:Eau]] ont 10% de chance d'[[docs:status|apeurer]] la cible. Soigne le lanceur en cas de succès.",
+    "battleEffectLong": "Toutes les attaques de type [[type:Eau]] ont 10% de chance d'[[docs:status|apeurer]] la cible. Si la cible est [[docs:status|apeurée]] par l'une des attaques du lanceur, ce dernier récupère 50% des dégâts infligés en [[docs:statistics|PV]].",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Marée Pourpre n'a aucun effet hors combat.",
+    "description": "Les capacités de type Eau ont une chance d'apeurer. Soigne le Pokémon en cas de succès."
+  },
+  {
+    "id": 302,
+    "slug": "marecage-brun",
+    "name": "Marécage Brun",
+    "battleEffectCondition": "Lorsque le Pokémon est envoyé",
+    "battleEffectShort": "Empêche les soins et les capacités de switch tant que le Pokémon est sur le terrain.",
+    "battleEffectLong": "Tant que le Pokémon est sur le terrain, Les Pokémon au sol ne peuvent pas être soignés (cela inclue les capacités comme [[move:voeu|Vœu]], [[move:soin|Soin]] ou encore [[move:giga-sangsue|Giga-Sangsue]]), à l'exception des Pokémon de type [[type:Spectre]] et [[type:Sol]]. De plus, les capacités de repositionnement échoue (Par exemple : [[move:demi-tour|Demi-Tour]], [[move:teleport|Teléport]] ou [[move:relais|Relais]]).",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Marécage Brun n'a aucun effet hors combat.",
+    "description": "Les Pokémon au sol ne peuvent pas être soigner, ni quitter le terrain via une capacité dans que le Pokémon est sur le terrain."
+  },
+  {
+    "id": 303,
+    "slug": "nuee-ambree",
+    "name": "Nuée Ambrée",
+    "battleEffectCondition": "Lors de son attaque",
+    "battleEffectShort": "Les capacités de type [[type:Insecte]] ont 20% d'infliger [[move:harcelement|Harcèlement]] à la cible.",
+    "battleEffectLong": "Toutes les attaques de type [[type:Insecte]] ont 20% de chance d'infliger [[move:harcelement|Harcèlement]] à la cible. Tant que le Pokémon adverse est sous l'effet de [[move:harcelement|Harcèlement]], il ne peut pas se retirer ou fuir. À la fin de chaque tour, il prendra des dégâts correspondant à 1/8 de ses [[docs:statistics|PV max]], et ce pendant 4 à 5 tours. Elle peut prendre fin plus tôt si son lanceur est retiré du combat.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Nuée Ambrée n'a aucun effet hors combat.",
+    "description": "Les capacités de type Insecte ont une chance d'harceler la cible, lui infligeant des dégâts continus et l'empêche de quitter le terrain."
+  },
+  {
+    "id": 304,
+    "slug": "danse-coloree",
+    "name": "Danse Colorée",
+    "battleEffectCondition": "Lors de son attaque",
+    "battleEffectShort": "Les capacités de danse deviennent prioritaires et ont 10% de chance de donner le statut [[docs:status|attraction]] à la cible.",
+    "battleEffectLong": "Toutes les capacités de danse deviennent prioritaires. Lorsque le Pokémon effectue une capacité de danse, cela a 10% de chance de rendre [[docs:status|amoureux]] les Pokémon adverse, sauf s'ils sont asexués.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Danse Colorée n'a aucun effet hors combat.",
+    "description": "Les capacités de danse deviennent prioritaires et ont une chance d'apeurer l'ennemi."
+  },
+  {
+    "id": 305,
+    "slug": "peste-mauve",
+    "name": "Peste Mauve",
+    "battleEffectCondition": "Entre chaque tour",
+    "battleEffectShort": "Le Pokémon subit le statut [[docs:status|gravement empoisonné]] à la fin de son premier tour. Avec ce statut, il régénère 1/8 de ses [[docs:statistics|PV]] maximum au lieu d'en perdre.",
+    "battleEffectLong": "Dès la fin de son premier tour de jeu, le Pokémon qui possède ce talent subit un [[docs:status|empoisonnement grave]]. De plus, si le Pokémon est [[docs:status|empoisonné]], il récupère 1/8 de ses [[docs:statistics|PV]] maximums (au lieu d'en perdre) entre chaque tour, tout en étant immunisé au poison.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Peste Mauve n'a aucun effet hors combat.",
+    "description": "Empoisonne gravement le lanceur à la fin de son premier tour. Lorsqu'il est empoisonné, le Pokémon est guérie d'une partie de ses PV au lieu d'en perdre."
+  },
+  {
+    "id": 306,
+    "slug": "cendre-ocre",
+    "name": "Cendre Ocre",
+    "battleEffectCondition": "Lors de son attaque",
+    "battleEffectShort": "Augmente la statistique offensive lors d'une attaque de type [[type:Feu]] sur une cible qui y résiste.",
+    "battleEffectLong": "Si le Pokémon doté de cette capacité utilise une capacité de type [[type:Feu]] sur une cible qui résiste au type, alors la statistique offensive du Pokémon augmente d'un cran, selon la catégorie de la capacité (Si le Pokémon utilise une capacité Physique, alors son [[docs:statistics|Attaque]] augmente d'un cran. À l'inverse, si le Pokémon utilise une capacité Spéciale, alors son [[docs:statistics|Attaque Spéciale]] augmente d'un cran).",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Cendre Ocre n'a aucun effet hors combat.",
+    "description": "Lorsqu'une capacité de type Feu touche un Pokémon qui résiste à ce type, augmente la statistique offensive correspondant à la catégorie de la capacité."
+  },
+  {
+    "id": 307,
+    "slug": "neige-grise",
+    "name": "Neige Grise",
+    "battleEffectCondition": "Entre chaque tour",
+    "battleEffectShort": "La statistique de [[docs:statistics|Vitesse]] des Pokémon adverses baisse d'un niveau à chaque tour.",
+    "battleEffectLong": "Tant que le Pokémon est sur le terrain, la [[docs:statistics|Vitesse]] des Pokémon adverses sera réduite de 1 cran à chaque fin de tour.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Neige Grise n'a aucun effet hors combat.",
+    "description": "Réduit la vitesse des Pokémon adverses à chaque fin de tour."
+  },
+  {
+    "id": 308,
+    "slug": "moissonneur-vert",
+    "name": "Moissonneur Vert",
+    "battleEffectCondition": "Lors de son attaque",
+    "battleEffectShort": "Les capacités de type [[type:Plante]] ne lui inflige que la moitié des dégâts. De plus, ses attaques sont super efficaces contre le type [[type:Plante]].",
+    "battleEffectLong": "Réduit de moitié les dégâts subit par des attaques [[type:Plante]]. De plus, ses attaques seront toujours super efficace contre le type [[type:Plante]], peut importe le type de l'attaque. Cependant, si le Pokémon adverse possède un deuxième type qui résiste au type de l'attaque, alors il subit des dégâts neutre. En revanche, si sont deuxième type est faible au type de l'attaque, alors l'attaque est quadruplement efficace.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Moissonneur Vert n'a aucun effet hors combat.",
+    "description": "Résiste aux capacités de type Plante, et toutes les attaques deviennent super efficace contre des Pokémon de type Plante."
+  },
+  {
+    "id": 309,
+    "slug": "eclipse-noire",
+    "name": "Éclipse Noire",
+    "battleEffectCondition": "Lorsque le Pokémon est envoyé",
+    "battleEffectShort": "Empêche les capacités de lumière et les effets de l'ensoleillement tant que le Pokémon est sur le terrain.",
+    "battleEffectLong": "Tant que le Pokémon est sur le terrain, annule toutes les capacités à base de Lumière ([[move:rayon-lune|Rayon Lune]], [[move:aurore|Aurore]], [[move:synthese|Synthèse]], [[move:flash|Flash]], ...). De plus, les effets du climat Ensoleillement sont annulés, bien que le climat soit toujours présent (Les attaques de type [[type:Feu]] et [[type:Eau]] font des dégâts normaux, les attaques en deux tours telles que [[move:lance-soleil|Lance-Soleil]] ne prendront plus qu'un tour, et les talents comme [[ability:chlorophylle|Chlorophylle]] ou [[ability:peau-seche|Peau Sèche]] ne feront plus effet).",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Éclipse Noire n'a aucun effet hors combat.",
+    "description": "Absorbe la lumière des capacités ainsi que les rayons du soleil."
+  },
+  {
+    "id": 310,
+    "slug": "deuil-blanc",
+    "name": "Deuil Blanc",
+    "battleEffectCondition": "Lors d'une capacité adverse",
+    "battleEffectShort": "Lorsque le Pokémon tombe K.O., inflige l'effet de [[move:malediction|Malédiction]] sur le Pokémon attaquant.",
+    "battleEffectLong": "Si ce Pokémon est mis K.O. par l'attaque d'un Pokémon adverse, ce dernier subit une [[move:malediction|Malédiction]]. Si le Pokémon tombe K.O. à cause d'un hazard, tel que la grêle, le [[docs:fields|champ Myrmique]] ou encore les [[move:piege-de-roc|Pièges de Roc]], les Pokémon adverse ne subiront pas de [[move:malediction|Malédiction]].",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Deuil Blanc n'a aucun effet hors combat.",
+    "description": "Si le Pokémon est mis K.O. par une attaque, il inflige une malédiction à l'attaquant avant de s'évanouir."
   }
 ]

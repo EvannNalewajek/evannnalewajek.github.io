@@ -531,185 +531,174 @@
     "baseStats": { "hp": 88, "atk": 70, "def": 75, "spa": 115, "spd": 90, "spe": 67 },
     "description": "Sa crête allongée agit comme une chambre de résonance. Les sons graves qu'il émet pouvaient parcourir des kilomètres à travers le sol. Jadis, ses chants unissaient les troupeaux et apaisaient les prédateurs."
   },
-
   {
     "id": 101,
-    "slug": "",
-    "name": "DAMAREL",
+    "slug": "damarel",
+    "name": "Damarel",
     "types": ["Spectre", "Eau"],
-    "category": "",
-    "abilities": ["", ""],
-    "hiddenAbility": "",
-    "height_m": 0,
-    "weight_kg": 0,
+    "category": "Plaie",
+    "abilities": ["[[ability:maree-pourpre|Marée Pourpre]]"],
+    "height_m": 4.2,
+    "weight_kg": 910,
     "captureRate": 6,
     "images": {
       "sprite": "pokedex/img/000_sprite.png",
       "artwork": "pokedex/img/000_artwork.png"
     },
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "description": ""
+    "baseStats": { "hp": 120, "atk": 70, "def": 110, "spa": 105, "spd": 110, "spe": 55 },
+    "description": "Il est la conséquence des rivières polluées par les industries. Lorsque les eaux deviennent trop toxiques, il se venge et détruit les responsables via ses raz-de-marées surpuissants."
   },
   {
     "id": 102,
-    "slug": "",
-    "name": "SHARAZEL",
+    "slug": "sharazel",
+    "name": "Sharazel",
     "types": ["Spectre", "Sol"],
-    "category": "",
-    "abilities": ["", ""],
-    "hiddenAbility": "",
-    "height_m": 0,
-    "weight_kg": 0,
+    "category": "Plaie",
+    "abilities": ["[[ability:marecage-brun|Marécage Brun]]"],
+    "height_m": 1.1,
+    "weight_kg": 18.4,
     "captureRate": 6,
     "images": {
       "sprite": "pokedex/img/000_sprite.png",
       "artwork": "pokedex/img/000_artwork.png"
     },
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "description": ""
+    "baseStats": { "hp": 80, "atk": 65, "def": 75, "spa": 115, "spd": 105, "spe": 130 },
+    "description": "Il est la conséquence de la faune forcée de migrer à cause de la destruction de leurs habitats. Il sert de guide aux Pokémon cherchant un nouveau refuge, quitte à détruire ce qu'ont bâti les hommes."
   },
   {
     "id": 103,
-    "slug": "",
-    "name": "KINNAREL",
+    "slug": "kinnarel",
+    "name": "Kinnarel",
     "types": ["Spectre", "Insecte"],
-    "category": "",
-    "abilities": ["", ""],
-    "hiddenAbility": "",
-    "height_m": 0,
-    "weight_kg": 0,
+    "category": "Plaie",
+    "abilities": ["[[ability:nuee-ambree|Nuée Ambrée]]"],
+    "height_m": 1.4,
+    "weight_kg": 9.7,
     "captureRate": 6,
     "images": {
       "sprite": "pokedex/img/000_sprite.png",
       "artwork": "pokedex/img/000_artwork.png"
     },
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "description": ""
+    "baseStats": { "hp": 75, "atk": 120, "def": 80, "spa": 80, "spd": 70, "spe": 145 },
+    "description": "Il est la conséquence de la prolifération de certains nuisibles, à cause du changement d'habitat. Lorsqu'un Pokémon se retrouve dans un nouvel environnement qu'il ne connait pas, il l'aide à s'adapter."
   },
   {
     "id": 104,
-    "slug": "",
-    "name": "AROVEL",
+    "slug": "arovel",
+    "name": "Arovel",
     "types": ["Spectre", "Vol"],
-    "category": "",
-    "abilities": ["", ""],
-    "hiddenAbility": "",
-    "height_m": 0,
-    "weight_kg": 0,
+    "category": "Plaie",
+    "abilities": ["[[ability:danse-coloree|Danse Colorée]]"],
+    "height_m": 1.6,
+    "weight_kg": 38.9,
     "captureRate": 6,
     "images": {
       "sprite": "pokedex/img/000_sprite.png",
       "artwork": "pokedex/img/000_artwork.png"
     },
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "description": ""
+    "baseStats": { "hp": 70, "atk": 105, "def": 70, "spa": 125, "spd": 70, "spe": 130 },
+    "description": "Il est la conséquence de l'insalubrité dûe aux déchets humains provoqués par leur mode de consommation. Si les terres deviennent trop polluées, il intervient pour repousser les hommes et détruire les déchets."
   },
   {
     "id": 105,
-    "slug": "",
-    "name": "DEVOREL",
+    "slug": "devorel",
+    "name": "Devorel",
     "types": ["Spectre", "Poison"],
-    "category": "",
-    "abilities": ["", ""],
-    "hiddenAbility": "",
-    "height_m": 0,
-    "weight_kg": 0,
+    "category": "Plaie",
+    "abilities": ["[[ability:peste-mauve|Peste Mauve]]"],
+    "height_m": 1.8,
+    "weight_kg": 82.3,
     "captureRate": 6,
     "images": {
       "sprite": "pokedex/img/000_sprite.png",
       "artwork": "pokedex/img/000_artwork.png"
     },
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "description": ""
+    "baseStats": { "hp": 100, "atk": 95, "def": 120, "spa": 70, "spd": 120, "spe": 65 },
+    "description": "Il est la conséquence de l'élevage intensif et abusif. Il libère les Pokémon exploités et punis et humains responsables de leurs maux."
   },
   {
     "id": 106,
-    "slug": "",
-    "name": "HAMAREL",
+    "slug": "shekinel",
+    "name": "Shekinel",
     "types": ["Spectre", "Feu"],
-    "category": "",
-    "abilities": ["", ""],
-    "hiddenAbility": "",
-    "height_m": 0,
-    "weight_kg": 0,
+    "category": "Plaie",
+    "abilities": ["[[ability:cendre-ocre|Cendre Ocre]]"],
+    "height_m": 2.0,
+    "weight_kg": 100,
     "captureRate": 6,
     "images": {
       "sprite": "pokedex/img/000_sprite.png",
       "artwork": "pokedex/img/000_artwork.png"
     },
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "description": ""
+    "baseStats": { "hp": 90, "atk": 70, "def": 100, "spa": 125, "spd": 95, "spe": 90 },
+    "description": "Il est la conséquence de la pollution toxique sur les populations. Il s'attaque aux industries polluantes et les détruit suffisamment pour s'assurer qu'ils ne refonctionnent plus jamais."
   },
   {
     "id": 107,
-    "slug": "",
-    "name": "BARADIEL",
+    "slug": "baradiel",
+    "name": "Baradiel",
     "types": ["Spectre", "Glace"],
-    "category": "",
-    "abilities": ["", ""],
-    "hiddenAbility": "",
-    "height_m": 0,
-    "weight_kg": 0,
+    "category": "Plaie",
+    "abilities": ["[[ability:neige-grise|Neige Grise]]"],
+    "height_m": 3.1,
+    "weight_kg": 6.5,
     "captureRate": 6,
     "images": {
       "sprite": "pokedex/img/000_sprite.png",
       "artwork": "pokedex/img/000_artwork.png"
     },
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "description": ""
+    "baseStats": { "hp": 130, "atk": 130, "def": 105, "spa": 60, "spd": 85, "spe": 60 },
+    "description": "Il est la conséquence du dérèglement climatique provoqué par l'effet de serre. Il redirige les vagues de chaleur et de froid pour tenter de reéquilibrer les environnements."
   },
   {
     "id": 108,
-    "slug": "",
-    "name": "ARBOREL",
+    "slug": "arborel",
+    "name": "Arborel",
     "types": ["Spectre", "Plante"],
-    "category": "",
-    "abilities": ["", ""],
-    "hiddenAbility": "",
-    "height_m": 0,
-    "weight_kg": 0,
+    "category": "Plaie",
+    "abilities": ["[[ability:moissonneur-vert|Moissonneur Vert]]"],
+    "height_m": 1.5,
+    "weight_kg": 54.2,
     "captureRate": 6,
     "images": {
       "sprite": "pokedex/img/000_sprite.png",
       "artwork": "pokedex/img/000_artwork.png"
     },
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "description": ""
+    "baseStats": { "hp": 90, "atk": 105, "def": 80, "spa": 105, "spd": 80, "spe": 110 },
+    "description": "Il est la conséquence de la monoculture intensive. Lorsque les terres perdent leur fertilité à cause de l'agriculture, il apparaît pour dévorer les récoltes."
   },
   {
     "id": 109,
-    "slug": "",
-    "name": "HOSHEKEL",
+    "slug": "Hoshekel",
+    "name": "Hoshekel",
     "types": ["Spectre", "Ténèbres"],
-    "category": "",
-    "abilities": ["", ""],
-    "hiddenAbility": "",
-    "height_m": 0,
-    "weight_kg": 0,
+    "category": "Plaie",
+    "abilities": ["[[ability:eclipse-noire|Éclipse Noire]]"],
+    "height_m": 2.4,
+    "weight_kg": 79.4,
     "captureRate": 6,
     "images": {
       "sprite": "pokedex/img/000_sprite.png",
       "artwork": "pokedex/img/000_artwork.png"
     },
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "description": ""
+    "baseStats": { "hp": 80, "atk": 90, "def": 80, "spa": 135, "spd": 110, "spe": 75 },
+    "description": "Il est la conséquence de l'urbanisation grandissante, qui remplace la nature et efface les étoiles du ciel. Si la lumière artificielle dérègle trop la faune locale, il l'absorbe, plongeant la ville dans le noir."
   },
   {
     "id": 110,
-    "slug": "",
-    "name": "SHEKHATEL",
+    "slug": "shekhatel",
+    "name": "Shekhatel",
     "types": ["Spectre", "Normal"],
-    "category": "",
-    "abilities": ["", ""],
-    "hiddenAbility": "",
-    "height_m": 0,
-    "weight_kg": 0,
+    "category": "Plaie",
+    "abilities": ["[[ability:deuil-blanc|Deuil Blanc]]"],
+    "height_m": 2.6,
+    "weight_kg": 142.7,
     "captureRate": 6,
     "images": {
       "sprite": "pokedex/img/000_sprite.png",
       "artwork": "pokedex/img/000_artwork.png"
     },
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "description": ""
+    "baseStats": { "hp": 115, "atk": 75, "def": 125, "spa": 110, "spd": 75, "spe": 70 },
+    "description": "Il est la conséquence de l'extinction de nombreux espèces dû aux humains. Lorsque les derniers représentant d'une espèce s'éteignent, il apparaît pour les pleurer."
   }
 ]
