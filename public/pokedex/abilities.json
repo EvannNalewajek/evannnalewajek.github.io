@@ -283,7 +283,7 @@
     "battleEffectLong": "Tant que le Pokémon est sur le terrain, Les Pokémon au sol ne peuvent pas être soignés (cela inclue les capacités comme [[move:voeu|Vœu]], [[move:soin|Soin]] ou encore [[move:giga-sangsue|Giga-Sangsue]]), à l'exception des Pokémon de type [[type:Spectre]] et [[type:Sol]]. De plus, les capacités de repositionnement échoue (Par exemple : [[move:demi-tour|Demi-Tour]], [[move:teleport|Teléport]] ou [[move:relais|Relais]]).",
     "fieldEffectCondition": "Aucun effet",
     "fieldEffectLong": "Marécage Brun n'a aucun effet hors combat.",
-    "description": "Les Pokémon au sol ne peuvent pas être soigner, ni quitter le terrain via une capacité dans que le Pokémon est sur le terrain."
+    "description": "Les Pokémon au sol ne peuvent pas être soigner, ni quitter le terrain via une capacité tant que le Pokémon est sur le terrain."
   },
   {
     "id": 303,
@@ -298,13 +298,13 @@
   },
   {
     "id": 304,
-    "slug": "danse-coloree",
-    "name": "Danse Colorée",
+    "slug": "danse-opaline",
+    "name": "Danse Opaline",
     "battleEffectCondition": "Lors de son attaque",
     "battleEffectShort": "Les capacités de danse deviennent prioritaires et ont 10% de chance de donner le statut [[docs:status|attraction]] à la cible.",
     "battleEffectLong": "Toutes les capacités de danse deviennent prioritaires. Lorsque le Pokémon effectue une capacité de danse, cela a 10% de chance de rendre [[docs:status|amoureux]] les Pokémon adverse, sauf s'ils sont asexués.",
     "fieldEffectCondition": "Aucun effet",
-    "fieldEffectLong": "Danse Colorée n'a aucun effet hors combat.",
+    "fieldEffectLong": "Danse Opaline n'a aucun effet hors combat.",
     "description": "Les capacités de danse deviennent prioritaires et ont une chance d'apeurer l'ennemi."
   },
   {
@@ -313,7 +313,7 @@
     "name": "Peste Mauve",
     "battleEffectCondition": "Entre chaque tour",
     "battleEffectShort": "Le Pokémon subit le statut [[docs:status|gravement empoisonné]] à la fin de son premier tour. Avec ce statut, il régénère 1/8 de ses [[docs:statistics|PV]] maximum au lieu d'en perdre.",
-    "battleEffectLong": "Dès la fin de son premier tour de jeu, le Pokémon qui possède ce talent subit un [[docs:status|empoisonnement grave]]. De plus, si le Pokémon est [[docs:status|empoisonné]], il récupère 1/8 de ses [[docs:statistics|PV]] maximums (au lieu d'en perdre) entre chaque tour, tout en étant immunisé au poison.",
+    "battleEffectLong": "Dès la fin de son premier tour de jeu, le Pokémon qui possède ce talent subit un [[docs:status|empoisonnement grave]]. De plus, si le Pokémon est [[docs:status|empoisonné]], il récupère 1/8 de ses [[docs:statistics|PV]] maximums (au lieu d'en perdre) entre chaque tour, tout en étant immunisé au poison. Si le Pokémon est guéri de son statut de Poison, le statut ne se réapplique plus.",
     "fieldEffectCondition": "Aucun effet",
     "fieldEffectLong": "Peste Mauve n'a aucun effet hors combat.",
     "description": "Empoisonne gravement le lanceur à la fin de son premier tour. Lorsqu'il est empoisonné, le Pokémon est guérie d'une partie de ses PV au lieu d'en perdre."

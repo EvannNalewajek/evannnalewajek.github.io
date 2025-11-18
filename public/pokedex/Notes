@@ -156,7 +156,7 @@ Marécage Brun : Tant que le Pokémon est sur le terrain, Les Pokémon au sol ne
 
 Nuée Ambrée : Toutes les attaques de type Insecte ont 20% de chance d'infliger Harcèlement à la cible. Tant que le Pokémon adverse est sous l'effet de Harcèlement, il ne peut pas se retirer ou fuir. À la fin de chaque tour, il prendra des dégâts correspondant à 1/8 de ses PV max, et ce pendant 4 à 5 tours. Elle peut prendre fin plus tôt si son lanceur est retiré du combat.
 
-Danse Colorée : Toutes les capacités de danse deviennent prioritaires. Lorsque le Pokémon effectue une capacité de danse, cela a 10% de chance de rendre amoureux les Pokémon adverse, sauf s'ils sont asexués.
+Danse Opaline : Toutes les capacités de danse deviennent prioritaires. Lorsque le Pokémon effectue une capacité de danse, cela a 10% de chance de rendre amoureux les Pokémon adverse, sauf s'ils sont asexués.
 
 Peste Mauve : Dès la fin de son premier tour de jeu, le Pokémon qui possède ce talent subit un empoisonnement grave. De plus, si le Pokémon est empoisonné, il récupère 1/8 de ses PV maximums (au lieu d'en perdre) entre chaque tour, tout en étant immunisé au poison.
 
@@ -169,3 +169,7 @@ Moissonneur Vert : Réduit de moitié les dégâts subit par des attaques Plante
 Éclipse Noire : Tant que le Pokémon est sur le terrain, annule toutes les capacités à base de Lumière (Rayon Lune, Aurore, Synthèse, Flash, ...). De plus, les effets du climat Ensoleillement sont annulés, bien que le climat soit toujours présent (Les attaques de type Feu et Eau font des dégâts normaux, les attaques en deux tours telles que Lance-Soleil ne prendront plus qu'un tour, et les talents comme Chlorophylle ou Peau Sèche ne feront plus effet).
 
 Deuil Blanc : Si ce Pokémon est mis K.O. par l'attaque d'un Pokémon adverse, ce dernier subit une Malédiction. Si le Pokémon tombe K.O. à cause d'un hazard, tel que la grêle, le champ Myrmique ou encore les Pièges de Roc, les Pokémon adverse ne subiront pas de Malédiction.
+
+Capacités :
+
+Siphon Vital : Puissance 75 | PP 10 | Précision 100% | adversaires adjacents |
