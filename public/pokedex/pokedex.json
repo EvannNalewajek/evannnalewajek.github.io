@@ -700,5 +700,40 @@
     },
     "baseStats": { "hp": 115, "atk": 75, "def": 125, "spa": 110, "spd": 75, "spe": 70 },
     "description": "Il est la conséquence de l'extinction de nombreux espèces dû aux humains. Lorsque les derniers représentant d'une espèce s'éteignent, il apparaît pour les pleurer."
-  }
+  },
+  {
+  "id": 111,
+  "slug": "harmagon",
+  "name": "Harmagon",
+  "types": ["Dragon", "Fée"],
+  "category": "Gardien",
+  "abilities": ["[[ability:equilibre-absolu|Équilibre Absolu]]"],
+  "height_m": 3.2,
+  "weight_kg": 280.0,
+  "captureRate": 3,
+  "images": {
+    "sprite": "pokedex/img/000_sprite.png",
+    "artwork": "pokedex/img/000_artwork.png"
+  },
+  "baseStats": { "hp": 100, "atk": 95, "def": 108, "spa": 125, "spd": 152, "spe": 90 },
+  "description": "Gardien du Pacte Originel, il veille à ce qu'aucune espèce ne prenne un ascendant définitif sur une autre. On raconte que sa simple présence suffit à ramener les forces du monde à l'équilibre."
+},
+{
+  "id": 112,
+  "slug": "novagon",
+  "name": "Novagon",
+  "types": ["Dragon", "Acier"],
+  "category": "Gardien",
+  "abilities": ["[[ability:renforcement-adaptatif|Renforcement Adaptatif]]"],
+  "height_m": 3.4,
+  "weight_kg": 410.0,
+  "captureRate": 3,
+  "images": {
+    "sprite": "pokedex/img/000_sprite.png",
+    "artwork": "pokedex/img/000_artwork.png"
+  },
+  "baseStats": { "hp": 90, "atk": 145, "def": 100, "spa": 90, "spd": 100, "spe": 145 },
+  "description": "Il incarne le potentiel de toutes les espèces et les pousse à dépasser leurs limites. Là où il passe, les Pokémon découvrent des forces insoupçonnées, pour le meilleur comme pour le pire."
+}
+
 ]

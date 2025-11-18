@@ -372,5 +372,27 @@
     "fieldEffectCondition": "Aucun effet",
     "fieldEffectLong": "Deuil Blanc n'a aucun effet hors combat.",
     "description": "Si le Pokémon est mis K.O. par une attaque, il inflige une malédiction à l'attaquant avant de s'évanouir."
+  },
+  {
+    "id": 311,
+    "slug": "equilibre-absolu",
+    "name": "Équilibre Absolu",
+    "battleEffectCondition": "Entre chaque tour",
+    "battleEffectShort": "Annule les hausses de stats ennemies et les baisses de stats alliées à la fin de chaque tour.",
+    "battleEffectLong": "Si un Pokémon adverse augmente l'une de ses statistiques durant le tour, Équilibre Absolu s'active et annule tous ses boosts à la fin du tour. Si le lanceur ou ses alliés subissent une diminution de statistiques, celle-ci est annulée à la fin du tour.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Équilibre Absolu n'a aucun effet hors combat.",
+    "description": "Si un Pokémon adverse boost ses stats ou diminue les stats du Pokémon ou d'un Pokémon allié, annule le changement à la fin du tour."
+  },
+  {
+    "id": 312,
+    "slug": "renforcement-adaptatif",
+    "name": "Renforcement Adaptatif",
+    "battleEffectCondition": "Entre chaque tour",
+    "battleEffectShort": "Ajoute un boost à la statistique la plus faible lorsqu'un allié augmente ses stats.",
+    "battleEffectLong": "Si le lanceur ou un Pokémon allié augmente l'une de ses statistiques durant le tour, Renforcement Adaptatif s'active à la fin du tour et augmente d'un cran sa statistique actuellement la plus faible (en tenant compte des boosts déjà actifs). Cet effet peut se produire à chaque tour où un boost est appliqué.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Renforcement Adaptatif n'a aucun effet hors combat.",
+    "description": "Si un Pokémon allié boost ses stats, ajoute un boost supplémentaire à sa statistique la plus faible."
   }
 ]
