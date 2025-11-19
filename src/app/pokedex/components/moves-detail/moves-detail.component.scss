@@ -4,6 +4,12 @@
   --t1: #a8a77a;
   display: grid;
   gap: 1rem;
+
+  .move-extra-table {
+    th, td {
+      text-align: center;
+    }
+  }
 }
 
 .move-detail[data-type1="Feu"]      { --t1:#ee8130; }
@@ -330,5 +336,45 @@
 
   .dex-screen > .track {
     min-width: 400px;
+  }
+}
+
+.move-extra {
+  margin-top: .75rem;
+
+  .move-extra-title {
+    margin: 0 0 .4rem;
+    font-weight: 700;
+  }
+
+  .move-extra-table-frame {
+    border-radius: .75rem;
+    background: color-mix(in oklab, var(--t1) 10%, #fff);
+    outline: 1px solid color-mix(in oklab, var(--t1) 40%, #000);
+    outline-offset: -1px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+  }
+
+  .move-extra-table {
+    th, td {
+      text-align: center;
+      border-bottom: 1px solid rgba(0,0,0,.06);
+    }
+
+    thead th {
+      background: color-mix(in oklab, var(--t1) 18%, #fff);
+      font-weight: 700;
+    }
+
+    tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    caption {
+      padding: .35rem .7rem .15rem;
+      font-size: .85rem;
+      opacity: .8;
+      text-align: left;
+    }
   }
 }

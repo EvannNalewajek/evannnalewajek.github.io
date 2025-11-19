@@ -21,6 +21,21 @@ export interface Move {
 
   targetPreset?: TargetPreset;
   targetPattern?: TargetCell[];
+
+  tables?: MoveTable[];
+}
+
+export interface MoveTableColumn {
+  key: string;
+  label: string;
+}
+
+export interface MoveTable {
+  id: string;
+  title?: string;
+  caption?: string;
+  columns: MoveTableColumn[];
+  rows: Array<Record<string, string | number>>;
 }
 
 export interface TMInfo {

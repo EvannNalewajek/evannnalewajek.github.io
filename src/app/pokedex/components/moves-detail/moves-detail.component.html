@@ -117,8 +117,37 @@
 
                                 <section class="content-card">
                                     <h3>Effet</h3>
-                                    <p class="move-effect" [innerHTML]="m.effect | wikilink:{ kind:'move', slug:m.slug}"></p>
+                                    <p class="move-effect"
+                                        [innerHTML]="m.effect | wikilink:{ kind:'move', slug:m.slug}">
+                                    </p>
+
+                                    <div class="move-extra learners" *ngIf="m.tables?.length">
+                                        <ng-container *ngFor="let t of m.tables">
+                                            <h4 *ngIf="t.title" class="move-extra-title">{{ t.title }}</h4>
+
+                                            <div class="table-scroll move-extra-table-frame">
+                                                <table class="learners-table move-extra-table">
+                                                    <caption *ngIf="t.caption">{{ t.caption }}</caption>
+                                                    <thead>
+                                                        <tr>
+                                                            <th *ngFor="let col of t.columns">
+                                                            {{ col.label }}
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr *ngFor="let row of t.rows">
+                                                            <td *ngFor="let col of t.columns">
+                                                            {{ row[col.key] }}
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </ng-container>
+                                    </div>
                                 </section>
+
 
                                 <section class="content-card">
                                     <h3>Description</h3>

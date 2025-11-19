@@ -118,7 +118,9 @@ export class MovesService {
             critRate: normalizeCritRate(m.critRate ?? m.crit ?? m.tauxCrit),
 
             targetPreset: preset,
-            targetPattern: pattern
+            targetPattern: pattern,
+
+            tables: Array.isArray(m.tables) ? (m.tables as Move['tables']) : undefined
           };
         })
         .sort((a, b) => a.id - b.id);
