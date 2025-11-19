@@ -519,7 +519,7 @@
     "types": ["Psy", "Poison"],
     "category": "Médecin",
     "abilities": ["[[ability:coeur-soin|Cœur Soin]]", "[[ability:toxitouche|Toxitouche]]"],
-    "hiddenAbility": "[[ability:lentiteintée|Lentiteintée]]",
+    "hiddenAbility": "[[ability:lentiteintee|Lentiteintée]]",
     "height_m": 1.5,
     "weight_kg": 45.2,
     "genderRatio": { "male": 50, "female": 50 },

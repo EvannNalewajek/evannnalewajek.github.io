@@ -22,6 +22,17 @@
     "description": "Le Pokémon est protégé des coups critiques par une solide carapace."
   },
   {
+    "id": 5,
+    "slug": "fermete",
+    "name": "Fermeté",
+    "battleEffectCondition": "Lors d'une capacité adverse",
+    "battleEffectShort": "Immunité contre les capacité OHKO : le Pokémon résistera et gardera 1 PV s'il avait tous ses PV avant l'attaque.",
+    "battleEffectLong": "Un Pokémon doté de ce talent ne peut pas être touché par des capacités OHKO. Si le Pokémon a ses PV à leur maximum et qu'il subit une attaque supposée le mettre K.O., il résiste en conservant un PV. Si le Pokémon arrive à re-obtenir l'intégralité de ses [[docs:statistics|PV]] durant le combat, le talent peut être de nouveau activé.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Fermeté n'a aucun effet hors combat.",
+    "description": "Le Pokémon encaisse toujours au moins une attaque s'il a tous ses PV. Il est également immunisé contre les capacités pouvant mettre K.O. en un coup."
+  },
+  {
     "id": 6,
     "slug": "moiteur",
     "name": "Moiteur",
@@ -143,6 +154,17 @@
     "description": "Augmente la puissance des capacités de type Insecte du Pokémon qui il a perdu une certaine quantité de PV."
   },
   {
+    "id": 69,
+    "slug": "tete-de-roc",
+    "name": "Tête de Roc",
+    "battleEffectCondition": "Lors de son attaque",
+    "battleEffectShort": "Immunité contre le contrecoup.",
+    "battleEffectLong": "Un Pokémon doté de Tête de Roc ne subit pas de contrecoup sur les attaques pouvant en infliger. Cependant, le Pokémon subit bien les dégâts que peuvent provoquer certains objets lorsqu'il attaque, comme l'Orbe Vie, certaines attaques si elles échouent, comme [[move:pied-voltige|Pied Voltige]], ou encore [[move:lutte|Lutte]].",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Tête de Roc n'a aucun effet hors combat.",
+    "description": "Le Pokémon peut utiliser des capacités occasionnant un contrecoup sans perdre de PV."
+  },
+  {
     "id": 78,
     "slug": "motorise",
     "name": "Motorisé",
@@ -152,6 +174,17 @@
     "fieldEffectCondition": "Aucun effet",
     "fieldEffectLong": "Motorisé n'a aucun effet hors combat.",
     "description": "Si le Pokémon est touché par une capacité Électrik, il ne subit aucun dég^t et sa Vitesse augmente."
+  },
+  {
+    "id": 89,
+    "slug": "poing-de-fer",
+    "name": "Poing de Fer",
+    "battleEffectCondition": "Lors de son attaque",
+    "battleEffectShort": "Augmente la puissance des capacités coups de poing.",
+    "battleEffectLong": "Si un Pokémon doté de ce talent utilise une capacité de poing, alors la puissance de cette attaque augmente de 20%.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Poing de Fer n'a aucun effet hors combat.",
+    "description": "Augmente la puissance des capacités coups de poing."
   },
   {
     "id": 91,
@@ -198,6 +231,17 @@
     "description": "Si le Pokémon est mis K.O. par une attaque directe, il inflige des dégâts à l'attaquant avant de s'évanouir."
   },
   {
+    "id": 110,
+    "slug": "lentiteintee",
+    "name": "Lentiteintée",
+    "battleEffectCondition": "Lors de son attaque",
+    "battleEffectShort": "Augmente la puissance des capacités peu efficaces sur le Pokémon adverse.",
+    "battleEffectLong": "Face à un Pokémon sur lequel une attaque du Pokémon doté de Lentiteintée n'est pas efficace, cette attaque voit sa puissance doublée. La capacité en question inflige donc autant de dégâts qui si le Pokémon adverse n'avait pas eu de résistance à son encontre. En cas de double résistance, la capacité inflige la moitié de ses dégâts au lieu d'un quart, comme une simple résistance.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Lentiteintée n'a aucun effet hors combat.",
+    "description": "Permet à une capacité qui n'est pas très efficace d'infliger des dégâts comme si elle était efficace normalement."
+  },
+  {
     "id": 119,
     "slug": "fouille",
     "name": "Fouille",
@@ -229,6 +273,28 @@
     "fieldEffectCondition": "Aucun effet",
     "fieldEffectLong": "Pickpocket n'a aucun effet hors combat.",
     "description": "Vole l'objet que tient l'attaquant quand le Pokémon subit une attaque directe."
+  },
+  {
+    "id": 131,
+    "slug": "coeur-soin",
+    "name": "Cœur Soin",
+    "battleEffectCondition": "Entre chaque tour",
+    "battleEffectShort": "Le Pokémon soigne les altérations de [[docs:status|statut]] d'un allié adjacent. (30% de chance)",
+    "battleEffectLong": "Un Pokémon doté de ce talent a 30% de chances de soigner une altération de [[docs:status|statut]] d'un allié voisin en Combat Duo ou Trio, à la fin de chaque tour. Ce talent est sans effet en Combat Solo.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Cœur Soin n'a aucun effet hors combat.",
+    "description": "Soigne parfois une altération de statut d'un allié proche."
+  },
+  {
+    "id": 143,
+    "slug": "toxitouche",
+    "name": "Toxitouche",
+    "battleEffectCondition": "Lors de son attaque",
+    "battleEffectShort": "Les capacités directes envoyées ont 30% de chances de donner le [[docs:status|statut poison]] à leur cible.",
+    "battleEffectLong": "Quand un Pokémon doté de ce talent utilise une attaque directe, sa cible a 30% de chances d'être [[docs:status|empoisonnée]].",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Toxitouche n'a aucun effet hors combat.",
+    "description": "Peut empoisonner l'ennemi par simple contact."
   },
   {
     "id": 144,
