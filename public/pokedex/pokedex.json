@@ -69,8 +69,8 @@
     "genderRatio": { "male": 87.5, "female": 12.5 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/004_sprite.png",
+      "artwork": "pokedex/img/004_artwork.png"
     },
     "baseStats": { "hp": 65, "atk": 58, "def": 48, "spa": 40, "spd": 49, "spe": 50 },
     "description": "Il ne se sent en confiance que lorsqu'il est blotti contre les personnes qu'il aime. Sa fourrure dégage une chaleur douce, ce qui en fait un excellent compagnon de câlin."
@@ -88,8 +88,8 @@
     "genderRatio": { "male": 87.5, "female": 12.5 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/005_sprite.png",
+      "artwork": "pokedex/img/005_artwork.png"
     },
     "baseStats": { "hp": 88, "atk": 88, "def": 60, "spa": 50, "spd": 59, "spe": 65 },
     "description": "On pense que ses caractéristiques étranges sont dû à une adaptation brutale face à son environnement. Il mange énormément pour compenser l'énergie qu'il brûle en permanence pour conserver sa chaleur."
@@ -107,8 +107,8 @@
     "genderRatio": { "male": 87.5, "female": 12.5 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/006_sprite.png",
+      "artwork": "pokedex/img/006_artwork.png"
     },
     "baseStats": { "hp": 108, "atk": 117, "def": 70, "spa": 55, "spd": 70, "spe": 110 },
     "description": "La température de son corps peut passer brutalement d'un froid glaciale à un feu brûlant selon son humeur. Dans les régions polaires, son rugissement est confondu avec celui des glaciers qui se brisent."
