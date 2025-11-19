@@ -514,6 +514,25 @@
   },
   {
     "id": 28,
+    "slug": "vesperine",
+    "name": "Vespérine",
+    "types": ["Psy", "Poison"],
+    "category": "Médecin",
+    "abilities": ["[[ability:coeur-soin|Cœur Soin]]", "[[ability:toxitouche|Toxitouche]]"],
+    "hiddenAbility": "[[ability:lentiteintée|Lentiteintée]]",
+    "height_m": 1.5,
+    "weight_kg": 45.2,
+    "genderRatio": { "male": 50, "female": 50 },
+    "captureRate": 60,
+    "images": {
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
+    },
+    "baseStats": { "hp": 66, "atk": 87, "def": 75, "spa": 88, "spd": 75, "spe": 75 },
+    "description": "Il parcourt la région pour soigner les Pokémon malades. Les récits anciens affirment qu'il aurait jadis protégé humains et Pokémon d'une épidémie qui menaçait de tout anéantir."
+  },
+  {
+    "id": 29,
     "slug": "albydro",
     "name": "Albydro",
     "types": ["Roche", "Eau"],
@@ -532,7 +551,7 @@
     "description": "Il vivait dans des zones humides et marécageuses, il y a environ 100 millions d'années. Il chasse de petits poissons à l'aide de son museau effilé, parfaitement adapté à l'eau trouble."
   },
   {
-    "id": 29,
+    "id": 30,
     "slug": "Spinadra",
     "name": "Spinadra",
     "types": ["Roche", "Eau"],
@@ -551,7 +570,7 @@
     "description": "Son dos est orné d'une immense voile qu'il utilisait pour réguler sa température et intimider ses proies. On raconte que ses rugissements pouvaient faire vibrer la surface des marécages."
   },
   {
-    "id": 30,
+    "id": 31,
     "slug": "vibranite",
     "name": "Vibranite",
     "types": ["Roche", "Normal"],
@@ -570,7 +589,7 @@
     "description": "Ce joyeux Pokémon adore utiliser tous les objets qui l'entour pour faire du bruit avec. Sa mélodie préférée est celle de la pluie, mais il déteste le son de l'orage."
   },
   {
-    "id": 31,
+    "id": 32,
     "slug": "Symphodon",
     "name": "Symphodon",
     "types": ["Roche", "Normal"],
