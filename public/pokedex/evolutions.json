@@ -51,8 +51,15 @@
     {
       "species": [21, 22, 23],
       "links": [
-        { "from": 21, "to": 22, "trigger": { "kind": "level", "level": 20 } },
-        { "from": 22, "to": 23, "trigger": { "kind": "level", "level": 38 } }
+        { "from": 21, "to": 22, "trigger": { "kind": "level", "level": 25 } },
+        { "from": 22, "to": 23, "trigger": { "kind": "level", "level": 42 } }
+      ]
+    },
+    {
+      "species": [24, 25, 26],
+      "links": [
+        { "from": 24, "to": 25, "trigger": { "kind": "level", "level": 20 } },
+        { "from": 25, "to": 26, "trigger": { "kind": "level", "level": 38 } }
       ]
     }
   ]
