@@ -16,7 +16,22 @@ import { TypeSlugPipe } from '../../pipes/type-slug.pipe';
 export class PokedexListComponent implements OnInit {
   private pokedex = inject(PokedexService);
 
-  list = computed<Pokemon[] | null>(() => this.pokedex.all());
+  list = computed<Pokemon[] | null>(() => {
+    const all = this.pokedex.all();
+    if (!all) return null;
+
+    const seen = new Set<number>();
+    const unique: Pokemon[] = [];
+
+    for (const p of all) {
+      if (seen.has(p.id)) continue;
+      seen.add(p.id);
+      unique.push(p);
+    }
+
+    return unique;
+  });
+
 
   async ngOnInit() {
     await this.pokedex.ensureLoaded();

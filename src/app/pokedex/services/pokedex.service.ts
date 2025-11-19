@@ -33,8 +33,14 @@ export class PokedexService {
   }
 
   getById(id: number) {
+    const forms = this.getFormsById(id);
+    return forms.length ? forms[0] : null;
+  }
+
+  getFormsById(id: number): Pokemon[] {
     const all = this._all();
-    return all ? all.find(p => p.id === id) ?? null : null;
+    if (!all) return [];
+    return all.filter(p => p.id === id);
   }
 
   maxId() {

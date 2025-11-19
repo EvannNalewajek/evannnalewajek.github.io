@@ -54,6 +54,24 @@
             </div>
           </nav>
 
+          <header class="title content-card">
+                <h2>
+                  <small>#{{ pokemon()!.id | number:'2.0-0' }}</small>
+                  {{ pokemon()!.name }}
+                </h2>
+
+                <div class="form-switch" *ngIf="forms().length > 1">
+                  <button
+                    type="button"
+                    class="form-pill"
+                    *ngFor="let f of forms(); let i = index"
+                    [class.active]="i === formIndex()"
+                    (click)="setFormIndex(i)">
+                    Forme {{ f.formName }}
+                  </button>
+                </div>
+          </header>
+
           <div class="layout">
             <aside
               class="infobox infobox-frame"
@@ -107,13 +125,6 @@
             </aside>
 
             <main class="content">
-              <header class="title content-card">
-                <h2>
-                  <small>#{{ pokemon()!.id | number:'2.0-0' }}</small>
-                  {{ pokemon()!.name }}
-                </h2>
-              </header>
-
               <section class="abilities content-card">
                 <h3>Talents</h3>
                 <ul>

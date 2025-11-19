@@ -19,6 +19,7 @@ export interface Pokemon {
   id: number;
   slug: string;
   name: string;
+  formName: string;
   types: [PokemonType] | [PokemonType, PokemonType];
   category: string;
   abilities: string[];

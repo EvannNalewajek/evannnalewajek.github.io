@@ -43,6 +43,12 @@ export class PokedexDetailComponent implements OnInit {
   
   readonly resolvedLearnset = signal<ResolvedLearnset | null>(null);
 
+  readonly forms = computed<Pokemon[]>(() =>
+    this.pokedex.getFormsById(this.id()) ?? []
+  );
+
+  readonly formIndex = signal(0);
+
   constructor() {
     effect(() => {
       const p = this.pokemon?.();
@@ -56,7 +62,25 @@ export class PokedexDetailComponent implements OnInit {
     });
   }
 
-  pokemon = computed<Pokemon | null>(() => this.pokedex.getById(this.id()));
+  pokemon = computed<Pokemon | null>(() => {
+    const list = this.forms();
+    if (!list.length) return null;
+
+    const idx = this.formIndex();
+    const clamped = Math.min(Math.max(idx, 0), list.length - 1);
+    return list[clamped];
+  });
+
+  setFormIndex(i: number) {
+    const list = this.forms();
+    if (!list.length) return;
+
+    const clamped = Math.min(Math.max(i, 0), list.length - 1);
+    this.formIndex.set(clamped);
+
+    const p = list[clamped];
+    document.title = `#${p.id.toString().padStart(2,'0')} — ${p.name} | Pokédex`;
+  }
 
   prevMon: Signal<Pokemon | null> = computed(() => {
     const id = this.prevId();
