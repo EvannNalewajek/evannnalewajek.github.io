@@ -629,6 +629,25 @@
     "description": "Sa crête allongée agit comme une chambre de résonance. Les sons graves qu'il émet pouvaient parcourir des kilomètres à travers le sol. Jadis, ses chants unissaient les troupeaux et apaisaient les prédateurs."
   },
   {
+    "id": 33,
+    "slug": "sulapagos",
+    "name": "Sulapagos",
+    "types": ["Eau", "Vol"],
+    "category": "Pêcheur",
+    "abilities": ["[[ability:benet|Benêt]]", "[[ability:regard-vif|Regard Vif]]"],
+    "hiddenAbility": "[[ability:multi-coups|Multi-Coups]]",
+    "height_m": 0.8,
+    "weight_kg": 16,
+    "genderRatio": { "male": 50, "female": 50 },
+    "captureRate": 45,
+    "images": {
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
+    },
+    "baseStats": { "hp": 70, "atk": 90, "def": 60, "spa": 75, "spd": 80, "spe": 100 },
+    "description": ""
+  },
+  {
     "id": 101,
     "slug": "damarel",
     "name": "Damarel",

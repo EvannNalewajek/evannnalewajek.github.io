@@ -1280,6 +1280,38 @@
     "targetPreset": "adjacent-one"
   },
   {
+    "id": 899,
+    "slug": "vague-scelerate",
+    "name": "Vague Scélérate",
+    "type": "Eau",
+    "category": "Physique",
+    "pp": 10,
+    "power": 20,
+    "accuracy": 90,
+    "priority": 0,
+    "effet": "Vague Scélérate inflige des dégâts et peut toucher la cible jusqu'à trois fois par utilisation. La puissance de base de l'attaque augmente de 20 à chaque coup successif : ainsi, les premier, deuxième et troisième coups ont respectivement une puissance de base de 20, 40 et 60. Si l'un des coups échoue, l'attaque s'arrête.",
+    "description": "Une série d'une à trois vagues dont la puissance augmente à chaque coup porté.",
+    "makesContact": false,
+    "critRate": 0,
+    "targetPreset": "adjacent-one"
+  },
+  {
+    "id": 900,
+    "slug": "rafa-aile",
+    "name": "Rafa-Aile",
+    "type": "Vol",
+    "category": "Physique",
+    "pp": 20,
+    "power": 25,
+    "accuracy": 95,
+    "priority": 0,
+    "effet": "Rafa-Aile inflige des dommages de deux à cinq fois de suite. Riposte et Patience ne laisseront la capacité ne faire qu'un coup.",
+    "description": "Le lanceur se jette sur la cible en battant des ailes de façon désordonnée et lui inflige une série de deux à cinq coups successifs.",
+    "makesContact": true,
+    "critRate": 0,
+    "targetPreset": "adjacent-one"
+  },
+  {
     "id": 901,
     "slug": "siphon-vital",
     "name": "Siphon Vital",

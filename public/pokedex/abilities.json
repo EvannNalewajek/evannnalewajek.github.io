@@ -1,5 +1,27 @@
 [
   {
+    "id": 1,
+    "slug": "puanteur",
+    "name": "Puanteur",
+    "battleEffectCondition": "Entre chaque tour",
+    "battleEffectShort": "Les capacités physiques du Pokémon ont 10% de chances d'[[docs:status|apeurer]] la cible.",
+    "battleEffectLong": "Si ce Pokémon attaque un adversaire avec une capacité faisant des dégâts, alors il a 10% de chances de l'[[docs:status|apeurer]]. Cette probabilité ne peut pas être améliorée avec la Roche Royale ou le Croc Rasoir.",
+    "fieldEffectCondition": "Avec effet",
+    "fieldEffectLong": "Avec un Pokémon doté de ce talent dans l'équipe du joueur, ce dernier rencontre deux fois moins de Pokémon sauvages.",
+    "description": "Le Pokémon émet une odeur si nauséabonde qu'il peut effrayer sa cible en l'attaquant."
+  },
+  {
+    "id": 2,
+    "slug": "crachin",
+    "name": "Crachin",
+    "battleEffectCondition": "Lorsque le Pokémon est envoyé",
+    "battleEffectShort": "Active le climat pluie lorsque le Pokémon est envoyé au combat.",
+    "battleEffectLong": "Lorsqu'un Pokémon doté de ce talent est envoyé au combat, il modifie immédiatement le climat, provoquant ainsi la pluie. La pluie dure 5 tours. Si le Pokémon tient une Roche Humide, l'effet dure 8 tours.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Crachin n'a aucun effet hors combat.",
+    "description": "Le Pokémon invoque la pluie quand il entre au combat."
+  },
+  {
     "id": 3,
     "slug": "turbo",
     "name": "Turbo",
@@ -55,6 +77,17 @@
     "description": "Le Pokémon charge son corps en électricité statique, et tout contact avec lui peut paralyser."
   },
   {
+    "id": 12,
+    "slug": "benet",
+    "name": "Benêt",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Immunité contre l'[[move:attraction|attraction]], contre la [[move:provoc|provocation]] et contre l'[[ability:intimidation|intimidation]].",
+    "battleEffectLong": "Un Pokémon doté de ce talent ne peut pas être [[docs:status|attiré]]. Il ne peut pas être [[move:provoc|provoqué]] non plus et il n'est plus affecté par le talent [[ability:intimidation|Intimidation]] du Pokémon ennemi.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Benêt n'a aucun effet hors combat.",
+    "description": "Le Pokémon est un grand benêt, ce qui l'immunise contre l'attraction, la provocation ou l'intimidation."
+  },
+  {
     "id": 24,
     "slug": "peau-dure",
     "name": "Peau Dure",
@@ -75,6 +108,17 @@
     "fieldEffectCondition": "Aucun effet",
     "fieldEffectLong": "Glissade n'a aucun effet hors combat.",
     "description": "Augmente la Vitesse du Pokémon s'il pleut."
+  },
+  {
+    "id": 51,
+    "slug": "regard-vif",
+    "name": "Regard Vif",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Immunité contre la diminution de la [[docs:statistics|Précision]] du Pokémon.",
+    "battleEffectLong": "Un Pokémon doté de ce talent ne peut pas perdre de [[docs:statistics|Précision]]. L'augmentation de l'[[docs:statistics|Esquive]] adverse est également ignorée.",
+    "fieldEffectCondition": "Avec effet",
+    "fieldEffectLong": "Si un Pokémon avec ce talent est placé en tête d'équipe, le joueur a 50% de chances de moins de rencontrer des Pokémon de faible niveau. Est considéré comme Pokémon de faible niveau tout Pokémon ayant au moins 5 niveaux de moins que le Pokémon avec Regard Vif en tête d'équipe.",
+    "description": "Les yeux perçants du Pokémon empêchent sa Précision de baisser."
   },
   {
     "id": 53,
@@ -196,6 +240,17 @@
     "fieldEffectCondition": "Aucun effet",
     "fieldEffectLong": "Adaptabilité n'a aucun effet hors combat.",
     "description": "Quand le Pokémon utilise une capacité du même type que lui, le bonus de puissance qu'elle reçoit est encore plus important que normalement."
+  },
+  {
+    "id": 92,
+    "slug": "multi-coups",
+    "name": "Multi-Coups",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Les capacités du Pokémon frappent toujours le nombre de coups maximum.",
+    "battleEffectLong": "Un Pokémon doté de ce talent effectue toujours le maximum de coups pour les capacités à coups multiples.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Multi-Coups n'a aucun effet hors combat.",
+    "description": "Les capacités pouvant frapper plusieurs fois frappent toujours le nombre maximal de coups."
   },
   {
     "id": 104,
