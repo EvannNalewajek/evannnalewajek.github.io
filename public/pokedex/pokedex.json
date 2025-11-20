@@ -183,8 +183,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 255,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/010_sprite.png",
+      "artwork": "pokedex/img/010_artwork.png"
     },
     "baseStats": { "hp": 45, "atk": 55, "def": 50, "spa": 30, "spd": 40, "spe": 70 },
     "description": "Il collectionne les morceaux de métal qu'il trouve dans les ruines. Il s'en sert pour se protéger, mais aussi pour impressionner ses congénères."
