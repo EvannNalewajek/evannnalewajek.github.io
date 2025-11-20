@@ -429,6 +429,28 @@
     "description": "Le Pokémon résiste mieux aux capacités de statut."
   },
   {
+    "id": 153,
+    "slug": "impudence",
+    "name": "Impudence",
+    "battleEffectCondition": "Lors d'un K.O. adverse",
+    "battleEffectShort": "La statistique d'[[docs:statistics|Attaque]] du Pokémon augmente d'un niveau s'il met un Pokémon K.O.",
+    "battleEffectLong": "Quand une capacité d'un Pokémon doté de ce talent met K.O. un Pokémon avec une attaque, son [[docs:statistics|Attaque]] augmente d'un niveau.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Impudence n'a aucun effet hors combat.",
+    "description": "Quand le Pokémon met un ennemi K.O., sa confiance en lui ne connaît plus de limite et son Attaque augmente."
+  },
+  {
+    "id": 157,
+    "slug": "herbivore",
+    "name": "Herbivore",
+    "battleEffectCondition": "Après une capacité adverse",
+    "battleEffectShort": "Immunité contre les capacités de type [[type:Plante]] : elles augmentent d'un niveau l'[[docs:statistics|Attaque]] du Pokémon.",
+    "battleEffectLong": "Quand un Pokémon doté de ce talent est touché par une capacité de type [[type:Plante]], il est immunisé aux effets de cette capacité et son [[docs:statistics|Attaque]] est alors augmenté d'un niveau.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Herbivore n'a aucun effet hors combat.",
+    "description": "Annule les attaques de type Plante subies par le Pokémon et augmente son Attaque."
+  },
+  {
     "id": 158,
     "slug": "farceur",
     "name": "Farceur",

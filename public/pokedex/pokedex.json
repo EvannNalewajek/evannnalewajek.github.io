@@ -497,6 +497,44 @@
   },
   {
     "id": 26,
+    "slug": "nouganine",
+    "name": "Nouganine",
+    "types": ["Normal"],
+    "category": "Dent de Lait",
+    "abilities": ["[[ability:herbivore|Herbivore]]", "[[ability:fuite|Fuite]]"],
+    "hiddenAbility": "[[ability:impudence|Impudence]]",
+    "height_m": 0.6,
+    "weight_kg": 17.4,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 190,
+    "images": {
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
+    },
+    "baseStats": { "hp": 70, "atk": 70, "def": 45, "spa": 35, "spd": 40, "spe": 80 },
+    "description": "Il découvre son environnement en mordillant ce qui lui passe sous le museau. Il a un faible pour les sucreries."
+  },
+  {
+    "id": 27,
+    "slug": "cervident",
+    "name": "Cervident",
+    "types": ["Normal"],
+    "category": "Canine",
+    "abilities": ["[[ability:herbivore|Herbivore]]", "[[ability:fuite|Fuite]]"],
+    "hiddenAbility": "[[ability:impudence|Impudence]]",
+    "height_m": 1.6,
+    "weight_kg": 74.1,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 100,
+    "images": {
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
+    },
+    "baseStats": { "hp": 92, "atk": 98, "def": 73, "spa": 57, "spd": 60, "spe": 100 },
+    "description": "Seul les mâles possèdent des crocs. Ils s'en servent plutôt pour dissuader que pour se battre avec."
+  },
+  {
+    "id": 28,
     "slug": "gloutron",
     "name": "Gloutron",
     "types": ["Poison", "Eau"],
@@ -515,7 +553,7 @@
     "description": "Il joue dans les flaques d'eau boueuses. Son pelage sécrète une fine couche huileuse qui l'empêche de trop se salir et le protège des prédateurs."
   },
   {
-    "id": 27,
+    "id": 29,
     "slug": "nemustine",
     "name": "Nemustine",
     "types": ["Poison", "Eau"],
@@ -534,7 +572,7 @@
     "description": "Il nage dans les marées polluées sans jamais tomber malade. La substance visqueuse qui recouvre son corps est toxique mais fascinante à regarder."
   },
   {
-    "id": 28,
+    "id": 30,
     "slug": "venolutra",
     "name": "Venolutra",
     "types": ["Poison", "Eau"],
@@ -553,7 +591,7 @@
     "description": "Où qu'il passe, l'eau se teinte d'un violet scintillant. Son corps sécrète en permanence une huile toxique : il transforme les courants en poisons et les utilise pour chasser."
   },
   {
-    "id": 29,
+    "id": 31,
     "slug": "dracali",
     "name": "Dracali",
     "types": ["Dragon"],
@@ -572,7 +610,7 @@
     "description": "Son corps est couvert d'écailles cristallines d'une grande beauté. Jadis braconné pour ces gemmes rares, son espèce a presque disparu. On pensait l'espèce éteinte jusqu'à ce que quelques individus soient observés dans des vallées reculées."
   },
   {
-    "id": 30,
+    "id": 32,
     "slug": "vesperine",
     "name": "Vespérine",
     "types": ["Psy", "Poison"],
@@ -591,7 +629,7 @@
     "description": "Il parcourt la région pour soigner les Pokémon malades. Les récits anciens affirment qu'il aurait jadis protégé humains et Pokémon d'une épidémie qui menaçait de tout anéantir."
   },
   {
-    "id": 31,
+    "id": 33,
     "slug": "albydro",
     "name": "Albydro",
     "types": ["Roche", "Eau"],
@@ -610,7 +648,7 @@
     "description": "Il vivait dans des zones humides et marécageuses, il y a environ 100 millions d'années. Il chasse de petits poissons à l'aide de son museau effilé, parfaitement adapté à l'eau trouble."
   },
   {
-    "id": 32,
+    "id": 34,
     "slug": "Spinadra",
     "name": "Spinadra",
     "types": ["Roche", "Eau"],
@@ -629,7 +667,7 @@
     "description": "Son dos est orné d'une immense voile qu'il utilisait pour réguler sa température et intimider ses proies. On raconte que ses rugissements pouvaient faire vibrer la surface des marécages."
   },
   {
-    "id": 33,
+    "id": 35,
     "slug": "vibranite",
     "name": "Vibranite",
     "types": ["Roche", "Normal"],
@@ -648,7 +686,7 @@
     "description": "Ce joyeux Pokémon adore utiliser tous les objets qui l'entour pour faire du bruit avec. Sa mélodie préférée est celle de la pluie, mais il déteste le son de l'orage."
   },
   {
-    "id": 34,
+    "id": 36,
     "slug": "Symphodon",
     "name": "Symphodon",
     "types": ["Roche", "Normal"],
@@ -667,7 +705,7 @@
     "description": "Sa crête allongée agit comme une chambre de résonance. Les sons graves qu'il émet pouvaient parcourir des kilomètres à travers le sol. Jadis, ses chants unissaient les troupeaux et apaisaient les prédateurs."
   },
   {
-    "id": 35,
+    "id": 37,
     "slug": "sulapagos",
     "name": "Sulapagos",
     "types": ["Eau", "Vol"],
@@ -686,7 +724,7 @@
     "description": ""
   },
   {
-    "id": 36,
+    "id": 38,
     "slug": "becoquin",
     "name": "Becoquin",
     "types": ["Vol"],
@@ -705,7 +743,7 @@
     "description": "Il communique peu et reste la plupart du temps très silencieux. Les seules sons qu'il est capable de faire sont des petits hoquets, ou des claquements de bec."
   },
   {
-    "id": 37,
+    "id": 39,
     "slug": "becosto",
     "name": "Becosto",
     "types": ["Vol", "Combat"],
