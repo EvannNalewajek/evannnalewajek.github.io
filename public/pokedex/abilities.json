@@ -110,6 +110,17 @@
     "description": "Augmente la Vitesse du Pokémon s'il pleut."
   },
   {
+    "id": 38,
+    "slug": "point-poison",
+    "name": "Point Poison",
+    "battleEffectCondition": "Lors d'une capacité adverse",
+    "battleEffectShort": "Les capacités directes reçues ont 30% de chances de donner le statut [[docs:status|poison]] à leur lanceur.",
+    "battleEffectLong": "Quand un Pokémon doté de ce talent subit une capacité directe, il a 30% de chances d'[[docs:status|empoisonner]] son attaquant.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Point Poison n'a aucun effet hors combat.",
+    "description": "Peut empoisonner l'attaquant lorsque le Pokémon subit une attaque directe."
+  },
+  {
     "id": 46,
     "slug": "pression",
     "name": "Pression",
@@ -319,6 +330,17 @@
     "description": "Permet à une capacité qui n'est pas très efficace d'infliger des dégâts comme si elle était efficace normalement."
   },
   {
+    "id": 114,
+    "slug": "lavabo",
+    "name": "Lavabo",
+    "battleEffectCondition": "Lors d'une capacité adverse",
+    "battleEffectShort": "Immunité contre les capacité de type [[type:Eau]] : elles augmentent d'un niveau l'[[docs:statistics|Attaque Spéciale]] du Pokémon. Les capacité de type [[type:Eau]] utilisées par un Pokémon adjacent touchent obligatoirement ce Pokémon.",
+    "battleEffectLong": "Lavabo se déclenche lorsque le Pokémon porteur du talent est touché par une capacité de type [[type:Eau]]. Son [[docs:statistics|Attaque Spéciale]] est alors augmentée d'un niveau et le coup reçu ne cause aucun dégât. En Combat Duo, les capacités de type Eau sont redirigées vers le Pokémon doté du talent Lavabo s'il s'agit de capacité à cible unique. La capacité redirigée n'échoue jamais.",
+    "fieldEffectCondition": "Avec effet",
+    "fieldEffectLong": "Avec un Pokémon doté de ce talent en première place dans l'équipe, le joueur a plus de chances de rencontrer des Pokémon sauvages de type Eau.",
+    "description": "Le Pokémon détourne sur lui les capacités de type Eau et les neutralise, tout en montant son Attaque Spéciale."
+  },
+  {
     "id": 119,
     "slug": "fouille",
     "name": "Fouille",
@@ -394,6 +416,17 @@
     "fieldEffectCondition": "Aucun effet",
     "fieldEffectLong": "Régé-Force n'a aucun effet hors combat.",
     "description": "Restaure un peu de PV si le Pokémon est retiré du combat."
+  },
+  {
+    "id": 147,
+    "slug": "peau-miracle",
+    "name": "Peau Miracle",
+    "battleEffectCondition": "Lors d'une capacité adverse",
+    "battleEffectShort": "Les capacités de statut du Pokémon adverse ont une chance sur deux d'échouer.",
+    "battleEffectLong": "Un Pokémon possédant Peau Miracle a une chance sur deux de faire échouer les capacités de [[docs:status|statut]] dirigées sur lui. Ce talent n'empêche pas les effets secondaires des capacités offensives, comme la [[docs:status|paralysie]] pouvant être provoquée par [[move:tonnerre|Tonnerre]].",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Peau Miracle n'a aucun effet hors combat.",
+    "description": "Le Pokémon résiste mieux aux capacités de statut."
   },
   {
     "id": 158,

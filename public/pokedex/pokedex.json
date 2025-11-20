@@ -364,6 +364,44 @@
   },
   {
     "id": 19,
+    "slug": "nudilume",
+    "name": "Nudilume",
+    "types": ["Eau", "Poison"],
+    "category": "Limace",
+    "abilities": ["[[ability:point-poison|Point Poison]]", "[[ability:Lavabo|Lavabo]]"],
+    "hiddenAbility": "[[ability:peau-miracle|Peau Miracle]]",
+    "height_m": 0.1,
+    "weight_kg": 2.0,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 190,
+    "images": {
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
+    },
+    "baseStats": { "hp": 59, "atk": 43, "def": 56, "spa": 47, "spd": 66, "spe": 63 },
+    "description": "Il glisse lentement au fond de l'eau en laissant une traînée luisante et colorée, jolie mais néanmoins toxique."
+  },
+  {
+    "id": 20,
+    "slug": "glauculus",
+    "name": "Glauculus",
+    "types": ["Eau", "Poison"],
+    "category": "Dragon Bleu",
+    "abilities": ["[[ability:point-poison|Point Poison]]", "[[ability:lavabo|Lavabo]]"],
+    "hiddenAbility": "[[ability:peau-miracle|Peau Miracle]]",
+    "height_m": 0.6,
+    "weight_kg": 8.7,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 75,
+    "images": {
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
+    },
+    "baseStats": { "hp": 69, "atk": 63, "def": 78, "spa": 67, "spd": 103, "spe": 95 },
+    "description": "Sa peau est couverte de toxines. Il se déplace en gonflant une bulle au niveau de son ventre et flotte à la surface."
+  },
+  {
+    "id": 21,
     "slug": "totadachi",
     "name": "Totadachi",
     "types": ["Électrik"],
@@ -382,7 +420,7 @@
     "description": "Il court en cercles quand il accumule trop d'énergie statique. L'électricité stockée dans ses pattes lui permet de bondir plus haut qu'un humain de taille moyen."
   },
   {
-    "id": 20,
+    "id": 22,
     "slug": "pionabachi",
     "name": "Pionabachi",
     "types": ["Électrik", "Combat"],
@@ -401,7 +439,7 @@
     "description": "Il canalise son énergie dans ses pattes pour frapper plus vite que l'éclair, laissant une marque de brûlure à l'endroit d'où il a sauté. Chaque duel est pour lui comme une danse."
   },
   {
-    "id": 21,
+    "id": 23,
     "slug": "golebin",
     "name": "Golebin",
     "types": ["Roche"],
@@ -420,7 +458,7 @@
     "description": "Il frappe les pierres pour endurcir ses poings. Malgré son air grincheux, il cherche surtout à s'entraîner."
   },
   {
-    "id": 22,
+    "id": 24,
     "slug": "golepoing",
     "name": "Golepoing",
     "types": ["Roche", "Combat"],
@@ -439,7 +477,7 @@
     "description": "Son corps se polit à force d'entraînement. Il peut briser un rocher d'un seul coup de poing."
   },
   {
-    "id": 23,
+    "id": 25,
     "slug": "golerock",
     "name": "Golerock",
     "types": ["Roche", "Combat"],
@@ -458,7 +496,7 @@
     "description": "Ses poings peuvent faire trembler le sol et fracturer n'importe quelle armure."
   },
   {
-    "id": 24,
+    "id": 26,
     "slug": "gloutron",
     "name": "Gloutron",
     "types": ["Poison", "Eau"],
@@ -477,7 +515,7 @@
     "description": "Il joue dans les flaques d'eau boueuses. Son pelage sécrète une fine couche huileuse qui l'empêche de trop se salir et le protège des prédateurs."
   },
   {
-    "id": 25,
+    "id": 27,
     "slug": "nemustine",
     "name": "Nemustine",
     "types": ["Poison", "Eau"],
@@ -496,7 +534,7 @@
     "description": "Il nage dans les marées polluées sans jamais tomber malade. La substance visqueuse qui recouvre son corps est toxique mais fascinante à regarder."
   },
   {
-    "id": 26,
+    "id": 28,
     "slug": "venolutra",
     "name": "Venolutra",
     "types": ["Poison", "Eau"],
@@ -515,7 +553,7 @@
     "description": "Où qu'il passe, l'eau se teinte d'un violet scintillant. Son corps sécrète en permanence une huile toxique : il transforme les courants en poisons et les utilise pour chasser."
   },
   {
-    "id": 27,
+    "id": 29,
     "slug": "dracali",
     "name": "Dracali",
     "types": ["Dragon"],
@@ -534,7 +572,7 @@
     "description": "Son corps est couvert d'écailles cristallines d'une grande beauté. Jadis braconné pour ces gemmes rares, son espèce a presque disparu. On pensait l'espèce éteinte jusqu'à ce que quelques individus soient observés dans des vallées reculées."
   },
   {
-    "id": 28,
+    "id": 30,
     "slug": "vesperine",
     "name": "Vespérine",
     "types": ["Psy", "Poison"],
@@ -553,7 +591,7 @@
     "description": "Il parcourt la région pour soigner les Pokémon malades. Les récits anciens affirment qu'il aurait jadis protégé humains et Pokémon d'une épidémie qui menaçait de tout anéantir."
   },
   {
-    "id": 29,
+    "id": 31,
     "slug": "albydro",
     "name": "Albydro",
     "types": ["Roche", "Eau"],
@@ -572,7 +610,7 @@
     "description": "Il vivait dans des zones humides et marécageuses, il y a environ 100 millions d'années. Il chasse de petits poissons à l'aide de son museau effilé, parfaitement adapté à l'eau trouble."
   },
   {
-    "id": 30,
+    "id": 32,
     "slug": "Spinadra",
     "name": "Spinadra",
     "types": ["Roche", "Eau"],
@@ -591,7 +629,7 @@
     "description": "Son dos est orné d'une immense voile qu'il utilisait pour réguler sa température et intimider ses proies. On raconte que ses rugissements pouvaient faire vibrer la surface des marécages."
   },
   {
-    "id": 31,
+    "id": 33,
     "slug": "vibranite",
     "name": "Vibranite",
     "types": ["Roche", "Normal"],
@@ -610,7 +648,7 @@
     "description": "Ce joyeux Pokémon adore utiliser tous les objets qui l'entour pour faire du bruit avec. Sa mélodie préférée est celle de la pluie, mais il déteste le son de l'orage."
   },
   {
-    "id": 32,
+    "id": 34,
     "slug": "Symphodon",
     "name": "Symphodon",
     "types": ["Roche", "Normal"],
@@ -629,7 +667,7 @@
     "description": "Sa crête allongée agit comme une chambre de résonance. Les sons graves qu'il émet pouvaient parcourir des kilomètres à travers le sol. Jadis, ses chants unissaient les troupeaux et apaisaient les prédateurs."
   },
   {
-    "id": 33,
+    "id": 35,
     "slug": "sulapagos",
     "name": "Sulapagos",
     "types": ["Eau", "Vol"],
@@ -648,7 +686,7 @@
     "description": ""
   },
   {
-    "id": 34,
+    "id": 36,
     "slug": "becoquin",
     "name": "Becoquin",
     "types": ["Vol"],
@@ -667,7 +705,7 @@
     "description": "Il communique peu et reste la plupart du temps très silencieux. Les seules sons qu'il est capable de faire sont des petits hoquets, ou des claquements de bec."
   },
   {
-    "id": 35,
+    "id": 37,
     "slug": "becosto",
     "name": "Becosto",
     "types": ["Vol", "Combat"],
