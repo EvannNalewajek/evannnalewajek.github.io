@@ -648,6 +648,44 @@
     "description": ""
   },
   {
+    "id": 34,
+    "slug": "becoquin",
+    "name": "Becoquin",
+    "types": ["Vol"],
+    "category": "Bec-en-sabot",
+    "abilities": ["[[ability:tension|Tension]]", "[[ability:pression|Pression]]"],
+    "hiddenAbility": "[[ability:annule-garde|Annule Garde]]",
+    "height_m": 0.6,
+    "weight_kg": 15,
+    "genderRatio": { "male": 50, "female": 50 },
+    "captureRate": 100,
+    "images": {
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
+    },
+    "baseStats": { "hp": 70, "atk": 85, "def": 80, "spa": 55, "spd": 75, "spe": 35 },
+    "description": "Il communique peu et reste la plupart du temps très silencieux. Les seules sons qu'il est capable de faire sont des petits hoquets, ou des claquements de bec."
+  },
+  {
+    "id": 35,
+    "slug": "becosto",
+    "name": "Becosto",
+    "types": ["Vol", "Combat"],
+    "category": "Bec-en-sabot",
+    "abilities": ["[[ability:tension|Tension]]", "[[ability:pression|Pression]]"],
+    "hiddenAbility": "[[ability:annule-garde|Annule Garde]]",
+    "height_m": 1.8,
+    "weight_kg": 33.8,
+    "genderRatio": { "male": 50, "female": 50 },
+    "captureRate": 45,
+    "images": {
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
+    },
+    "baseStats": { "hp": 90, "atk": 115, "def": 100, "spa": 75, "spd": 95, "spe": 45 },
+    "description": "Il a tendance à préférer bouger peu, et observer les autres Pokémon aux alentours, ce qui les mets souvent mal à l'aise à cause de ses grand yeux immobiles."
+  },
+  {
     "id": 101,
     "slug": "damarel",
     "name": "Damarel",

@@ -216,3 +216,24 @@ Talents :
 Conservateur : Équilibre Absolu : Si un Pokémon ennemi se boost durant un tour, son talent s'active et annule les changements de stats à la fin du tour. Si lui ou ses alliés subissent un debuff, il est annulé à la fin du tour.
 
 Évolution : Renforcement Adaptatif : Si un Pokémon allié se boost durant un tour, son talent s'active et vient lui ajouter un boost supplémentaire sur sa stat la plus faible (en prenant en compte les boosts actif).
+
+Compteur de pokémon par type :
+
+Normal   - 7
+Feu      - 4
+Eau      - 10
+Plante   - 4
+Électrik - 2
+Glace    - 4
+Combat   - 3
+Poison   - 5
+Sol      - 5
+Vol      - 5
+Psy      - 1
+Insecte  - 5
+Roche    - 7
+Spectre  - 10
+Dragon   - 3
+Ténèbres - 3
+Acier    - 4
+Fée      - 2

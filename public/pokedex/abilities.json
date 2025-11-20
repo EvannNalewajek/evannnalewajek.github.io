@@ -110,6 +110,17 @@
     "description": "Augmente la Vitesse du Pokémon s'il pleut."
   },
   {
+    "id": 46,
+    "slug": "pression",
+    "name": "Pression",
+    "battleEffectCondition": "Après une capacité adverse",
+    "battleEffectShort": "Le Pokémon adverse consomme deux fois plus de PP lorsqu'il utilise une capacité offensive.",
+    "battleEffectLong": "Un Pokémon attaquant un détenteur de Pression avec une capacité dépense un PP supplémentaire. Cette dépense est effectuée que la capacité soit réussie ou non, effcace ou inefficace. Ce même, l'utilisation d'une capacité non-offensive, telle que [[move:feu-follet|Feu Follet]], face à un détenteur de Pression provoque la perte de deux PP, car la capacité cible l'adversaire. [[ability:brise-moule]] ne peut pas annuler l'effet de Pression. Pour les Combats Duo, l'effet de Pression s'applique aussi au Pokémon allié. Par ailleurs, si deux Pokémon sont dotés de Pression, alors les effets se cumuleront uniquement si les deux Pokémons sont touchés par une capacité de zone. Ainsi, l'utilisation d'une capacité telle que [[move:surf|Surf]] coûte 3 PP si elle cible deux utilisateurs de Pression.",
+    "fieldEffectCondition": "Avec effet",
+    "fieldEffectLong": "Avec un Pokémon doté de ce talent en première place dans l'équipe, le joueur rencontre deux fois plus de Pokémon sauvages à niveaux élevés.",
+    "description": "Met la pression à l'adversaire pour le forcer à dépenser plus de PP."
+  },
+  {
     "id": 51,
     "slug": "regard-vif",
     "name": "Regard Vif",
@@ -253,6 +264,17 @@
     "description": "Les capacités pouvant frapper plusieurs fois frappent toujours le nombre maximal de coups."
   },
   {
+    "id": 99,
+    "slug": "annule-garde",
+    "name": "Annule Garde",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Les capacités du Pokémon et de l'adversaire ne peuvent pas échouer.",
+    "battleEffectLong": "Quand un Pokémon avec ce talent est sur le terrain, toutes les capacités utilisées par ou ciblant ce Pokémon réussissent à coup sûr. Toutes les modifications d'[[docs:statistics|Esquive]] ou de [[docs:statistics|Précision]] n'ont aucun effet. Lorsqu'un Pokémon prépare une capacité en deux tours qui le rend normalement intouchable le premier, comme [[move:vol|Vol]], il peut se faire toucher normalement par les capacités dont il est la cible. Les immunités conférées grâce à un [[type:vol|type]] ou un talent continuent de fonctionner.",
+    "fieldEffectCondition": "Avec effet",
+    "fieldEffectLong": "Si un Pokémon avec Annule Garde est placé en tête de son équipe, le joueur a plus de chances de rencontrer des Pokémon sauvages.",
+    "description": "Les capacités du Pokémon touchent leur cible à coup sûr, mais les capacités de l'ennemi le touchent aussi à coup sûr."
+  },
+  {
     "id": 104,
     "slug": "brise-moule",
     "name": "Brise Moule",
@@ -328,6 +350,17 @@
     "fieldEffectCondition": "Aucun effet",
     "fieldEffectLong": "Pickpocket n'a aucun effet hors combat.",
     "description": "Vole l'objet que tient l'attaquant quand le Pokémon subit une attaque directe."
+  },
+  {
+    "id": 127,
+    "slug": "tension",
+    "name": "Tension",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "La Baie tenue par le Pokémon adverse ne peut pas être consommée tant que le Pokémon est sur le terrain.",
+    "battleEffectLong": "Tant qu'un Pokémon doté de ce talent est sur le terrain, ses adversaires ne peuvent pas consommer les Baies qu'ils tiennent. La seule exception si le Pokémon « force » la consommation de la Baie via une capacité comme [[move:piqure|Piqûre]] ou [[move:garde-a-joues|Garde-à-Joues]].",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Tension n'a aucun effet hors combat.",
+    "description": "Fait stresser l'adversaire, ce qui l'empêche de manger des Baies."
   },
   {
     "id": 131,
