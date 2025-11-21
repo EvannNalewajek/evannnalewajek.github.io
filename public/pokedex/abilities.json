@@ -88,6 +88,17 @@
     "description": "Le Pokémon est un grand benêt, ce qui l'immunise contre l'attraction, la provocation ou l'intimidation."
   },
   {
+    "id": 14,
+    "slug": "oeil-compose",
+    "name": "Œil Composé",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "La statistique de [[docs:statistics|Précision]] du Pokémon augmente de 30%.",
+    "battleEffectLong": "La [[docs:statistics|Précision]] du détenteur de ce talent est augmentée de 30% de sa valeur d'origine. Par exemple, la capacité [[move:fatal-foudre|Fatal-Foudre]] obtient une précision de 91% au lieu des 70% habituels.",
+    "fieldEffectCondition": "Avec effet",
+    "fieldEffectLong": "Si un Pokémon avec Œil Composé est placé en tête d'équipe (même K.O.), alors le joueur a plus de chances de rencontrer un Pokémon avec un objet tenu.",
+    "description": "Les yeux à facettes du Pokémon augmentent la Précision de ses capacités."
+  },
+  {
     "id": 24,
     "slug": "peau-dure",
     "name": "Peau Dure",
@@ -97,6 +108,17 @@
     "fieldEffectCondition": "Aucun effet",
     "fieldEffectLong": "Peau Dure n'a aucun effet hors combat.",
     "description": "Blesse l'attaquant lorsque le Pokémon subit une attaque directe."
+  },
+  {
+    "id": 32,
+    "slug": "serenite",
+    "name": "Sérénité",
+    "battleEffectCondition": "Lors de son attaque",
+    "battleEffectShort": "Les effets secondaires des capacités du Pokémon ont leurs chances doublées.",
+    "battleEffectLong": "Si un Pokémon doté de ce talent utilise une capacité avec un effet additionnel, ce dernier a deux fois plus de chance de se produire et cela compte aussi pour les effets des objets tenus (la Roche Royale qui [[docs:status|apeure]]). Sérénité ne fonctionne pas avec les capacités de statut (Comme [[move:berceuse|Berceuse]] ou [[move:feu-follet|Feu Follet]]).",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Sérénité n'a aucun effet hors combat.",
+    "description": "Augmente les chances d'infliger des effets additionnels."
   },
   {
     "id": 33,

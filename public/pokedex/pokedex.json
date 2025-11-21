@@ -879,6 +879,44 @@
     "description": "Il parade en ouvrant son fanon chatoyant. Plus les couleurs sont vives, plus il est respecté par les autres membres de son espèce."
   },
   {
+    "id": 44,
+    "slug": "sironille",
+    "name": "Sironille",
+    "types": ["Insecte", "Fée"],
+    "category": "Érable",
+    "abilities": ["[[ability:oeil-compose|Œil Composé]]"],
+    "hiddenAbility": "[[ability:serenite|Sérénité]]",
+    "height_m": 0.6,
+    "weight_kg": 15.5,
+    "genderRatio": { "male": 50, "female": 50 },
+    "captureRate": 190,
+    "images": {
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
+    },
+    "baseStats": { "hp": 52, "atk": 35, "def": 45, "spa": 60, "spd": 55, "spe": 48 },
+    "description": "Il passe ses journées à grignoter les feuilles des arbres, surtout celles des érables. Son corps duveteux et coloré attire les enfants, mais son pollen féerique peut les endormir sans qu'ils s'en rendent compte."
+  },
+  {
+    "id": 45,
+    "slug": "rubilune",
+    "name": "Rubilune",
+    "types": ["Insecte", "Fée"],
+    "category": "Érable",
+    "abilities": ["[[ability:oeil-compose|Œil Composé]]"],
+    "hiddenAbility": "[[ability:serenite|Sérénité]]",
+    "height_m": 1.5,
+    "weight_kg": 44,
+    "genderRatio": { "male": 50, "female": 50 },
+    "captureRate": 75,
+    "images": {
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
+    },
+    "baseStats": { "hp": 98, "atk": 55, "def": 70, "spa": 115, "spd": 105, "spe": 67 },
+    "description": "Ses ailes rappellent les feuilles d'érable teintées de rose et de jaune. On dit que la poudre qu'elles dégagent adoucit les cœurs et apaise les disputes, tant qu'on ne le dérange pas en plein festin de nectar."
+  },
+  {
     "id": 101,
     "slug": "damarel",
     "name": "Damarel",
