@@ -917,6 +917,44 @@
     "description": "Ses ailes rappellent les feuilles d'érable teintées de rose et de jaune. On dit que la poudre qu'elles dégagent adoucit les cœurs et apaise les disputes, tant qu'on ne le dérange pas en plein festin de nectar."
   },
   {
+    "id": 41,
+    "slug": "bovalpin",
+    "name": "Bovalpin",
+    "types": ["Normal"],
+    "category": "Veau",
+    "abilities": ["[[ability:isograisse|Isograisse]]", "[[ability:herbivore|Herbivore]]"],
+    "hiddenAbility": "[[ability:baigne-sable|Baigne Sable]]",
+    "height_m": 0.8,
+    "weight_kg": 120.5,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 140,
+    "images": {
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
+    },
+    "baseStats": { "hp": 78, "atk": 70, "def": 85, "spa": 25, "spd": 40, "spe": 22 },
+    "description": "Il vit dans des pâturages venteux en montagne. Sa longue fourrure le protège du froid, mais il trébuche souvent quand il essaie de courir."
+  },
+  {
+    "id": 42,
+    "slug": "ecorlande",
+    "name": "Écorlande",
+    "types": ["Normal", "Sol"],
+    "category": "Bovin",
+    "abilities": ["[[ability:isograisse|Isograisse]]", "[[ability:herbivore|Herbivore]]"],
+    "hiddenAbility": "[[ability:baigne-sable|Baigne Sable]]",
+    "height_m": 1.6,
+    "weight_kg": 430.0,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 60,
+    "images": {
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
+    },
+    "baseStats": { "hp": 125, "atk": 120, "def": 115, "spa": 45, "spd": 60, "spe": 35 },
+    "description": "Il affronte sans broncher le vent, la neige et la boue. Quand il charge en inclinant ses grandes cornes, il est presque impossible de l’arrêter."
+  },
+  {
     "id": 101,
     "slug": "damarel",
     "name": "Damarel",
