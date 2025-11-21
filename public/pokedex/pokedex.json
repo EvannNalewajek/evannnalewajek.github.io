@@ -762,6 +762,25 @@
     "description": "Il a tendance à préférer bouger peu, et observer les autres Pokémon aux alentours, ce qui les mets souvent mal à l'aise à cause de ses grand yeux immobiles."
   },
   {
+    "id": 40,
+    "slug": "sitanor",
+    "name": "Sitanor",
+    "types": ["Dragon", "Feu"],
+    "category": "Parade",
+    "abilities": ["[[ability:attention|Attention]]", "[[ability:rivalite|Rivalité]]"],
+    "hiddenAbility": "[[ability:force-soleil|Force Soleil]]",
+    "height_m": 1.2,
+    "weight_kg": 32.4,
+    "genderRatio": { "male": 50, "female": 50 },
+    "captureRate": 90,
+    "images": {
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
+    },
+    "baseStats": { "hp": 68, "atk": 72, "def": 60, "spa": 115, "spd": 75, "spe": 110 },
+    "description": "Il parade en ouvrant son fanon chatoyant. Plus les couleurs sont vives, plus il est respecté par les autres membres de son espèce."
+  },
+  {
     "id": 101,
     "slug": "damarel",
     "name": "Damarel",

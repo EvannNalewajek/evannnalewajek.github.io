@@ -121,6 +121,17 @@
     "description": "Peut empoisonner l'attaquant lorsque le Pokémon subit une attaque directe."
   },
   {
+    "id": 39,
+    "slug": "attention",
+    "name": "Attention",
+    "battleEffectCondition": "Lors d'une capacité adverse",
+    "battleEffectShort": "Immunité contre la [[docs:status|peur]] et contre l'[[ability:intimidation|intimidation]].",
+    "battleEffectLong": "Un Pokémon doté de ce talent ne peut pas être affecté par la [[docs:status|peur]] et l'[[ability:intimidation|intimidation]].",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Attention n'a aucun effet hors combat.",
+    "description": "Le Pokémon a un mental à toute épreuve qui empêche les attaques ennemies de lui faire peur. Il est aussi immunisé contre le talent Intimidation."
+  },
+  {
     "id": 46,
     "slug": "pression",
     "name": "Pression",
@@ -130,6 +141,17 @@
     "fieldEffectCondition": "Avec effet",
     "fieldEffectLong": "Avec un Pokémon doté de ce talent en première place dans l'équipe, le joueur rencontre deux fois plus de Pokémon sauvages à niveaux élevés.",
     "description": "Met la pression à l'adversaire pour le forcer à dépenser plus de PP."
+  },
+  {
+    "id": 50,
+    "slug": "fuite",
+    "name": "Fuite",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "La fuite du Pokémon contre un Pokémon sauvage est garantie.",
+    "battleEffectLong": "Un Pokémon doté de ce talent réussit toujours à s'enfuir lors d'un combat face à un Pokémon sauvage, mis à part s'il est bloqué par une capacité empêchant la fuite comme [[move:regard-noir|Regard Noir]] ou [[move:toile|Toile]]. Ce talent contourne également les effets des talents bloquants comme [[ability:piege-sable|Piège Sable]], [[ability:marque-ombre|Marque Ombre]] ou encore [[ability:magnepiege|Magnépiège]].",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Fuite n'a aucun effet hors combat.",
+    "description": "Permet de fuir n'importe quel Pokémon sauvage."
   },
   {
     "id": 51,
@@ -242,6 +264,17 @@
     "description": "Si le Pokémon est touché par une capacité Électrik, il ne subit aucun dég^t et sa Vitesse augmente."
   },
   {
+    "id": 79,
+    "slug": "rivalite",
+    "name": "Rivalité",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Augmente la puissance des capacités si le Pokémon adverse est du même sexe, mais la diminue s'il est du sexe opposé.",
+    "battleEffectLong": "Un Pokémon doté de ce talent voit la puissance de ses capacités varier selon son sexe et celui de son adversaire. Ainsi, s'ils sont tous les deux de même sexe, la puissance de ses attaques est augmentée de 25%. S'il sont tous les deux du sexe différent, la puissance de ses attaques est diminuée de 25%. Il suffit que l'un des deux Pokémon soit asexué pour que le talent n'ait pas d'effet, aussi bien positif que négatif.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Rivalité n'a aucun effet hors combat.",
+    "description": "Le Pokémon déteste la concurrence et inflige plus de dégâts si sa cible est du même sexe. Par contre, il en inflige moins si sa cible est du sexe opposé."
+  },
+  {
     "id": 89,
     "slug": "poing-de-fer",
     "name": "Poing de Fer",
@@ -273,6 +306,17 @@
     "fieldEffectCondition": "Aucun effet",
     "fieldEffectLong": "Multi-Coups n'a aucun effet hors combat.",
     "description": "Les capacités pouvant frapper plusieurs fois frappent toujours le nombre maximal de coups."
+  },
+  {
+    "id": 94,
+    "slug": "force-soleil",
+    "name": "Force Soleil",
+    "battleEffectCondition": "Selon le climat",
+    "battleEffectShort": "Sous le climat soleil, l'[[docs:statistics|Attaque Spéciale]] du Pokémon augmente de 50% mais il perd 1/8 de ses PV maximum à chaque fin de tour.",
+    "battleEffectLong": "Un Pokémon doté de ce talent voit sa statistique d'[[docs:statistics|Attaque Spéciale]] augmenter de 50% lorsque le climat est ensoleillé. En parallèle, il perd 1/8 de ses PV maximums à la fin de chaque tour.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Force Soleil n'a aucun effet hors combat.",
+    "description": "Quand le soleil brille, l'Attaque Spéciale du Pokémon augmente mais il perd des PV à chaque tour."
   },
   {
     "id": 99,
