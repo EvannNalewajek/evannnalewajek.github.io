@@ -917,7 +917,7 @@
     "description": "Ses ailes rappellent les feuilles d'érable teintées de rose et de jaune. On dit que la poudre qu'elles dégagent adoucit les cœurs et apaise les disputes, tant qu'on ne le dérange pas en plein festin de nectar."
   },
   {
-    "id": 41,
+    "id": 46,
     "slug": "bovalpin",
     "name": "Bovalpin",
     "types": ["Normal"],
@@ -936,7 +936,7 @@
     "description": "Il vit dans des pâturages venteux en montagne. Sa longue fourrure le protège du froid, mais il trébuche souvent quand il essaie de courir."
   },
   {
-    "id": 42,
+    "id": 47,
     "slug": "ecorlande",
     "name": "Écorlande",
     "types": ["Normal", "Sol"],
