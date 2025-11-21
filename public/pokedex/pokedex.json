@@ -592,6 +592,104 @@
   },
   {
     "id": 31,
+    "slug": "bronz",
+    "name": "Bronzillon",
+    "types": ["Vol", "Normal"],
+    "category": "Becoloré",
+    "abilities": ["[[ability:coeur-de-coq|Cœur de Coq]]"],
+    "hiddenAbility": "[[ability:delestage|Délestage]]",
+    "height_m": 0.3,
+    "weight_kg": 3.3,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 190,
+    "images": {
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
+    },
+    "baseStats": { "hp": 45, "atk": 55, "def": 40, "spa": 55, "spd": 40, "spe": 75 },
+    "description": "Il reste aux côtés de ses parents, qui le nourrissent et lui apprennent à voler, même s'il est très maladroit, que ce soit pour marcher ou pour voler."
+  },
+  {
+    "id": 32,
+    "slug": "plumargent",
+    "name": "Plumargent",
+    "types": ["Vol", "Normal"],
+    "category": "Becoloré",
+    "abilities": ["[[ability:coeur-de-coq|Cœur de Coq]]"],
+    "hiddenAbility": "[[ability:delestage|Délestage]]",
+    "height_m": 0.5,
+    "weight_kg": 15.6,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 120,
+    "images": {
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
+    },
+    "baseStats": { "hp": 60, "atk": 60, "def": 55, "spa": 60, "spd": 55, "spe": 100 },
+    "description": "Son plumage présente des reflets sous le soleil. On dit que sa présence est synonyme de richesse et propérité."
+  },
+  {
+    "id": 33,
+    "slug": "orfaisan",
+    "name": "Orfaisan",
+    "formName": "Flamboyante",
+    "types": ["Vol", "Feu"],
+    "category": "Plumage",
+    "abilities": ["[[ability:torche|Torche]]"],
+    "hiddenAbility": "[[ability:delestage|Délestage]]",
+    "height_m": 1.2,
+    "weight_kg": 28.9,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 45,
+    "images": {
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
+    },
+    "baseStats": { "hp": 85, "atk": 65, "def": 75, "spa": 125, "spd": 75, "spe": 85 },
+    "description": "Selon l'élément qu'il a absorbé, ses plumes changent de couleur et de forme. Sa collerette lui sert de réservoir d'énergie élémentaire."
+  },
+  {
+    "id": 33,
+    "slug": "orfaisan",
+    "name": "Orfaisan",
+    "formName": "Étincelante",
+    "types": ["Vol", "Électrik"],
+    "category": "Plumage",
+    "abilities": ["[[ability:paratonnerre|Paratonnerre]]"],
+    "hiddenAbility": "[[ability:delestage|Délestage]]",
+    "height_m": 1.2,
+    "weight_kg": 28.9,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 45,
+    "images": {
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
+    },
+    "baseStats": { "hp": 75, "atk": 70, "def": 65, "spa": 95, "spd": 80, "spe": 125 },
+    "description": "Selon l'élément qu'il a absorbé, ses plumes changent de couleur et de forme. Sa collerette lui sert de réservoir d'énergie élémentaire."
+  },
+  {
+    "id": 33,
+    "slug": "orfaisan",
+    "name": "Orfaisan",
+    "formName": "Ondulante",
+    "types": ["Vol", "Eau"],
+    "category": "Plumage",
+    "abilities": ["[[ability:lavabo|Lavabo]]"],
+    "hiddenAbility": "[[ability:delestage|Délestage]]",
+    "height_m": 1.2,
+    "weight_kg": 28.9,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 45,
+    "images": {
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
+    },
+    "baseStats": { "hp": 95, "atk": 70, "def": 75, "spa": 70, "spd": 125, "spe": 75 },
+    "description": "Selon l'élément qu'il a absorbé, ses plumes changent de couleur et de forme. Sa collerette lui sert de réservoir d'énergie élémentaire."
+  },
+  {
+    "id": 34,
     "slug": "dracali",
     "name": "Dracali",
     "types": ["Dragon"],
@@ -610,7 +708,7 @@
     "description": "Son corps est couvert d'écailles cristallines d'une grande beauté. Jadis braconné pour ces gemmes rares, son espèce a presque disparu. On pensait l'espèce éteinte jusqu'à ce que quelques individus soient observés dans des vallées reculées."
   },
   {
-    "id": 32,
+    "id": 35,
     "slug": "vesperine",
     "name": "Vespérine",
     "types": ["Psy", "Poison"],
@@ -629,7 +727,7 @@
     "description": "Il parcourt la région pour soigner les Pokémon malades. Les récits anciens affirment qu'il aurait jadis protégé humains et Pokémon d'une épidémie qui menaçait de tout anéantir."
   },
   {
-    "id": 33,
+    "id": 36,
     "slug": "albydro",
     "name": "Albydro",
     "types": ["Roche", "Eau"],
@@ -648,7 +746,7 @@
     "description": "Il vivait dans des zones humides et marécageuses, il y a environ 100 millions d'années. Il chasse de petits poissons à l'aide de son museau effilé, parfaitement adapté à l'eau trouble."
   },
   {
-    "id": 34,
+    "id": 37,
     "slug": "Spinadra",
     "name": "Spinadra",
     "types": ["Roche", "Eau"],
@@ -667,7 +765,7 @@
     "description": "Son dos est orné d'une immense voile qu'il utilisait pour réguler sa température et intimider ses proies. On raconte que ses rugissements pouvaient faire vibrer la surface des marécages."
   },
   {
-    "id": 35,
+    "id": 38,
     "slug": "vibranite",
     "name": "Vibranite",
     "types": ["Roche", "Normal"],
@@ -686,7 +784,7 @@
     "description": "Ce joyeux Pokémon adore utiliser tous les objets qui l'entour pour faire du bruit avec. Sa mélodie préférée est celle de la pluie, mais il déteste le son de l'orage."
   },
   {
-    "id": 36,
+    "id": 39,
     "slug": "Symphodon",
     "name": "Symphodon",
     "types": ["Roche", "Normal"],
@@ -705,7 +803,7 @@
     "description": "Sa crête allongée agit comme une chambre de résonance. Les sons graves qu'il émet pouvaient parcourir des kilomètres à travers le sol. Jadis, ses chants unissaient les troupeaux et apaisaient les prédateurs."
   },
   {
-    "id": 37,
+    "id": 40,
     "slug": "sulapagos",
     "name": "Sulapagos",
     "types": ["Eau", "Vol"],
@@ -724,7 +822,7 @@
     "description": ""
   },
   {
-    "id": 38,
+    "id": 41,
     "slug": "becoquin",
     "name": "Becoquin",
     "types": ["Vol"],
@@ -743,7 +841,7 @@
     "description": "Il communique peu et reste la plupart du temps très silencieux. Les seules sons qu'il est capable de faire sont des petits hoquets, ou des claquements de bec."
   },
   {
-    "id": 39,
+    "id": 42,
     "slug": "becosto",
     "name": "Becosto",
     "types": ["Vol", "Combat"],
@@ -762,7 +860,7 @@
     "description": "Il a tendance à préférer bouger peu, et observer les autres Pokémon aux alentours, ce qui les mets souvent mal à l'aise à cause de ses grand yeux immobiles."
   },
   {
-    "id": 40,
+    "id": 43,
     "slug": "sitanor",
     "name": "Sitanor",
     "types": ["Dragon", "Feu"],

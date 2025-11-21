@@ -275,6 +275,17 @@
     "description": "Le Pokémon déteste la concurrence et inflige plus de dégâts si sa cible est du même sexe. Par contre, il en inflige moins si sa cible est du sexe opposé."
   },
   {
+    "id": 84,
+    "slug": "delestage",
+    "name": "Délestage",
+    "battleEffectCondition": "Après l'utilisation d'un objet",
+    "battleEffectShort": "La statistique de [[docs:statistics|Vitesse]] du Pokémon est doublée s'il n'a plus d'objet tenu.",
+    "battleEffectLong": "Quand un Pokémon doté de ce talent perd son objet tenu pour quelque raison que ce soit (s'il est volé, lancé, lâché, ou utilisé), sa [[docs:statistics|Vitesse]] est alors doublée. Ce talent ne s'active qu'à cette condition, et est donc inefficace si le Pokémon ne porte pas d'objet. Le gain de Vitesse disparaît si le Pokémon récupère à nouveau un objet, ou s'il quitte le terrain.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Délestage n'a aucun effet hors combat.",
+    "description": "Augmente la Vitesse du Pokémon s'il perd ou utilise l'objet qu'il tenait au début du combat."
+  },
+  {
     "id": 89,
     "slug": "poing-de-fer",
     "name": "Poing de Fer",
@@ -460,6 +471,28 @@
     "fieldEffectCondition": "Aucun effet",
     "fieldEffectLong": "Régé-Force n'a aucun effet hors combat.",
     "description": "Restaure un peu de PV si le Pokémon est retiré du combat."
+  },
+  {
+    "id": 145,
+    "slug": "coeur-de-coq",
+    "name": "Cœur de Coq",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Immunité contre la diminution de la [[docs:statistics|Défense]] du Pokémon.",
+    "battleEffectLong": "Un Pokémon doté de ce talent ne peut pas voir sa statistique de [[docs:statistics|Défense]] réduite par ses adversaires. Il subit donc toujours les baisses de Défense qu'il s'inflige lui-même.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Cœur de Coq n'a aucun effet hors combat.",
+    "description": "Protège des effets qui baissent la Défense."
+  },
+  {
+    "id": 146,
+    "slug": "baigne-sable",
+    "name": "Baigne Sable",
+    "battleEffectCondition": "Selon le climat",
+    "battleEffectShort": "Sous le climat tempête de sable, la [[docs:statistics|Vitesse]] du Pokémon est doublée. Immunité contre les dégâts de la tempête de sable.",
+    "battleEffectLong": "Sous une tempête de sable, un Pokémon doté de ce talent a sa [[docs:statistics|Vitesse]] doublée. En outre, les Pokémon se retrouvent protégés des dégâts infligés par la tempête de sable, et ce même si le Pokémon doté de ce talent n'est pas de type [[type:Sol]], [[type:Roche]], ou [[type:Acier]], ou si son type est changé car les capacités [[move:detrempage|Détrempage]], [[move:halloween|Halloween]] ou [[move:malefice-sylvain|Maléfice Sylvain]] ont été utilisées.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Baigne Sable n'a aucun effet hors combat.",
+    "description": "Augmente la Vitesse lors des tempêtes de sable."
   },
   {
     "id": 147,
