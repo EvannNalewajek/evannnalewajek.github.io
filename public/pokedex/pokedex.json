@@ -952,7 +952,45 @@
       "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 125, "atk": 120, "def": 115, "spa": 45, "spd": 60, "spe": 35 },
-    "description": "Il affronte sans broncher le vent, la neige et la boue. Quand il charge en inclinant ses grandes cornes, il est presque impossible de l’arrêter."
+    "description": "Il affronte sans broncher le vent, la neige et la boue. Quand il charge en inclinant ses grandes cornes, il est presque impossible de l'arrêter."
+  },
+  {
+    "id": 48,
+    "slug": "pichidillo",
+    "name": "Pichidillo",
+    "types": ["Sol", "Fée"],
+    "category": "Tatou",
+    "abilities": ["[[ability:fermete|Fermeté]]"],
+    "hiddenAbility": "[[ability:voile-sable|Voile Sable]]",
+    "height_m": 0.4,
+    "weight_kg": 4.8,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 120,
+    "images": {
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
+    },
+    "baseStats": { "hp": 62, "atk": 50, "def": 65, "spa": 45, "spd": 75, "spe": 48 },
+    "description": "Malgré sa petite taille, sa carapace est l'une des plus résistantes. Lorsqu'il se sent menacé, il se roule en boule et utilise ses pouvoirs féeriques pour repousser les ennemis."
+  },
+  {
+    "id": 49,
+    "slug": "charmadillo",
+    "name": "Charmadillo",
+    "types": ["Sol", "Fée"],
+    "category": "Tatou",
+    "abilities": ["[[ability:fermete|Fermeté]]"],
+    "hiddenAbility": "[[ability:voile-sable|Voile Sable]]",
+    "height_m": 0.8,
+    "weight_kg": 32.5,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 60,
+    "images": {
+      "sprite": "pokedex/img/000_sprite.png",
+      "artwork": "pokedex/img/000_artwork.png"
+    },
+    "baseStats": { "hp": 95, "atk": 70, "def": 115, "spa": 88, "spd": 75, "spe": 55 },
+    "description": "Lors de tempêtes, il creuse des tunnels souterrains à l'aide de ses griffes et émet des lueurs féeriques pour guider les autres Pokémon vers un abri sûr."
   },
   {
     "id": 101,
