@@ -66,6 +66,17 @@
     "description": "Le Pokémon augmente l'humidité de l'air, ce qui empêche tous les Pokémon d'utiliser des capacités explosives telles que Destruction."
   },
   {
+    "id": 8,
+    "slug": "voile-sable",
+    "name": "Voile Sable",
+    "battleEffectCondition": "Selon le climat",
+    "battleEffectShort": "Sous ke climat tempête de sable, la [[docs:statistics|Esquive]] du Pokémon augmente de 20%, et il est immunisé contre les dégâts de la tempête de sable.",
+    "battleEffectLong": "En cas de tempête de sable, Voile Sable augmente l'[[docs:statistics|Esquive]] du Pokémon de 20%, et le rend immunisé contre les dégâts de la tempête de sable.",
+    "fieldEffectCondition": "Avec effet",
+    "fieldEffectLong": "Sur le terrain, lorsqu'un Pokémon avec Voile Sable est placé en tête d'équipe, et que le joueur se trouve dans un lieu avec une tempête de sable, les chances de rencontrer un Pokémon sauvage sont divisées par deux.",
+    "description": "Augmente l'Esquive du Pokémon lors des tempêtes de sable."
+  },
+  {
     "id": 9,
     "slug": "statik",
     "name": "Statik",
