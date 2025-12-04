@@ -179,6 +179,19 @@
                 <h3>Description</h3>
                 <span class="description">{{ pokemon()!.description }}</span>
               </section>
+
+              <section
+                class="etymology content-card"
+                *ngIf="pokemon()?.etymology as ety"
+              >
+                <h3>Étymologie</h3>
+
+                <ul class="etymology-list">
+                  <li *ngFor="let e of etymologyEntries()">
+                    <strong>{{ e[0] }}</strong> : {{ e[1] }}
+                  </li>
+                </ul>
+              </section>
             </main>
           </div>
 

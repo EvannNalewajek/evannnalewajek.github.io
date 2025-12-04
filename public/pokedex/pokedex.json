@@ -16,7 +16,11 @@
       "artwork": "pokedex/img/001_artwork.png"
     },
     "baseStats": { "hp": 60, "atk": 53, "def": 64, "spa": 40, "spd": 51, "spe": 42 },
-    "description": "Il se recroqueville souvent au moindre bruit pour se protéger. Ses écailles sont souples et couvertes de chlorophylle, capable de capter la lumière pour le nourrir."
+    "description": "Il se recroqueville souvent au moindre bruit pour se protéger. Ses écailles sont souples et couvertes de chlorophylle, capable de capter la lumière pour le nourrir.",
+    "etymology": {
+      "manis": "genre scientifique des pangolins",
+      "mousse": "plante verte qui pousse en milieu humide"
+    }
   },
   {
     "id": 2,
@@ -35,7 +39,11 @@
       "artwork": "pokedex/img/002_artwork.png"
     },
     "baseStats": { "hp": 84, "atk": 77, "def": 86, "spa": 52, "spd": 61, "spe": 50 },
-    "description": "Ses écailles se sont durcies en feuilles denses et coupantes. Les botanistes admirent sa capacité à purifier les sols autour de lui, malgré sa tendance à préférer fuir les régions polluées."
+    "description": "Ses écailles se sont durcies en feuilles denses et coupantes. Les botanistes admirent sa capacité à purifier les sols autour de lui, malgré sa tendance à préférer fuir les régions polluées.",
+    "etymology": {
+      "flore": "végétation, plantes",
+      "pangolin": "mammifère écailleux"
+    }
   },
   {
     "id": 3,
@@ -54,7 +62,11 @@
       "artwork": "pokedex/img/003_artwork.png"
     },
     "baseStats": { "hp": 109, "atk": 107, "def": 111, "spa": 62, "spd": 86, "spe": 55 },
-    "description": "On raconte que son métal pousse comme une plante et qu'il se régénère lentement. Il frappe le sol de sa queue pour défendre les forêts qu'il protège."
+    "description": "On raconte que son métal pousse comme une plante et qu'il se régénère lentement. Il frappe le sol de sa queue pour défendre les forêts qu'il protège.",
+    "etymology": {
+      "fer": "métal",
+      "pangolin": "mammifère écailleux"
+    }
   },
   {
     "id": 4,
@@ -73,7 +85,11 @@
       "artwork": "pokedex/img/004_artwork.png"
     },
     "baseStats": { "hp": 65, "atk": 58, "def": 48, "spa": 40, "spd": 49, "spe": 50 },
-    "description": "Il ne se sent en confiance que lorsqu'il est blotti contre les personnes qu'il aime. Sa fourrure dégage une chaleur douce, ce qui en fait un excellent compagnon de câlin."
+    "description": "Il ne se sent en confiance que lorsqu'il est blotti contre les personnes qu'il aime. Sa fourrure dégage une chaleur douce, ce qui en fait un excellent compagnon de câlin.",
+    "etymology": {
+      "fournaise": "endroit très chaud",
+      "ourson": "jeune ours"
+    }
   },
   {
     "id": 5,
@@ -92,7 +108,11 @@
       "artwork": "pokedex/img/005_artwork.png"
     },
     "baseStats": { "hp": 88, "atk": 88, "def": 60, "spa": 50, "spd": 59, "spe": 65 },
-    "description": "On pense que ses caractéristiques étranges sont dû à une adaptation brutale face à son environnement. Il mange énormément pour compenser l'énergie qu'il brûle en permanence pour conserver sa chaleur."
+    "description": "On pense que ses caractéristiques étranges sont dû à une adaptation brutale face à son environnement. Il mange énormément pour compenser l'énergie qu'il brûle en permanence pour conserver sa chaleur.",
+    "etymology": {
+      "banquise": "plage de glace flottante",
+      "ignis": "feu en latin"
+    }
   },
   {
     "id": 6,
@@ -111,7 +131,11 @@
       "artwork": "pokedex/img/006_artwork.png"
     },
     "baseStats": { "hp": 108, "atk": 117, "def": 70, "spa": 55, "spd": 70, "spe": 110 },
-    "description": "La température de son corps peut passer brutalement d'un froid glaciale à un feu brûlant selon son humeur. Dans les régions polaires, son rugissement est confondu avec celui des glaciers qui se brisent."
+    "description": "La température de son corps peut passer brutalement d'un froid glaciale à un feu brûlant selon son humeur. Dans les régions polaires, son rugissement est confondu avec celui des glaciers qui se brisent.",
+    "etymology": {
+      "pyro": "feu en grec",
+      "arctos": "ours en grec"
+    }
   },
   {
     "id": 7,
@@ -130,7 +154,11 @@
       "artwork": "pokedex/img/007_artwork.png"
     },
     "baseStats": { "hp": 50, "atk": 42, "def": 55, "spa": 63, "spd": 55, "spe": 45 },
-    "description": "Des étranges vagues d'eau flotte en permanence autour de sa queue. Il suffit de l'emmener près d'une rivière ou d'un lac pour le rendre heureux : il adore jouer dans l'eau et explorer les fonds marins."
+    "description": "Des étranges vagues d'eau flotte en permanence autour de sa queue. Il suffit de l'emmener près d'une rivière ou d'un lac pour le rendre heureux : il adore jouer dans l'eau et explorer les fonds marins.",
+    "etymology": {
+      "sol": "sol en référence au milieu terrestre",
+      "axolotl": "amphibien aquatique mexicain"
+    }
   },
   {
     "id": 8,
@@ -149,7 +177,11 @@
       "artwork": "pokedex/img/008_artwork.png"
     },
     "baseStats": { "hp": 70, "atk": 55, "def": 67, "spa": 85, "spd": 68, "spe": 65 },
-    "description": "Pour fuir ses prédateurs, il se cache sous la terre ou la boue. Il est même capable de changer légèrement sa couleur afin de se camoufler."
+    "description": "Pour fuir ses prédateurs, il se cache sous la terre ou la boue. Il est même capable de changer légèrement sa couleur afin de se camoufler.",
+    "etymology": {
+      "silt": "limon, boue",
+      "axolotl": "amphibien aquatique mexicain"
+    }
   },
   {
     "id": 9,
@@ -168,7 +200,11 @@
       "artwork": "pokedex/img/009_artwork.png"
     },
     "baseStats": { "hp": 83, "atk": 65, "def": 85, "spa": 115, "spd": 80, "spe": 102 },
-    "description": "Sa présence dans la nature est signe que l'habitat est sain et pure. Il est capable de voyager pendant des mois dans le but de trouver l'environnement parfait."
+    "description": "Sa présence dans la nature est signe que l'habitat est sain et pure. Il est capable de voyager pendant des mois dans le but de trouver l'environnement parfait.",
+    "etymology": {
+      "aride": "sec, désertique",
+      "axolotl": "amphibien aquatique mexicain"
+    }
   },
   {
     "id": 10,
@@ -187,7 +223,11 @@
       "artwork": "pokedex/img/010_artwork.png"
     },
     "baseStats": { "hp": 45, "atk": 55, "def": 50, "spa": 30, "spd": 40, "spe": 70 },
-    "description": "Il collectionne les morceaux de métal qu'il trouve dans les ruines. Il s'en sert pour se protéger, mais aussi pour impressionner ses congénères."
+    "description": "Il collectionne les morceaux de métal qu'il trouve dans les ruines. Il s'en sert pour se protéger, mais aussi pour impressionner ses congénères.",
+    "etymology": {
+      "scavenger": "charognard en anglais, animal qui fouille pour trouver de la nourriture",
+      "malin": "personne rusée et débrouillarde"
+    }
   },
   {
     "id": 11,
@@ -207,7 +247,11 @@
       "artwork": "pokedex/img/011_def_artwork.png"
     },
     "baseStats": { "hp": 70, "atk": 90, "def": 110, "spa": 45, "spd": 80, "spe": 65 },
-    "description": "Il vit dans les décharges et entrepôts abandonnés. Son intelligence lui a permis de manipuler les débris métalliques qu'il trouve pour s'en faire des outils et armures utiles, en imitant les humains."
+    "description": "Il vit dans les décharges et entrepôts abandonnés. Son intelligence lui a permis de manipuler les débris métalliques qu'il trouve pour s'en faire des outils et armures utiles, en imitant les humains.",
+    "etymology": {
+      "fer": "métal",
+      "raccoon": "raton laveur en anglais"
+    }
   },
   {
     "id": 11,
@@ -227,7 +271,11 @@
       "artwork": "pokedex/img/011_atk_artwork.png"
     },
     "baseStats": { "hp": 70, "atk": 105, "def": 70, "spa": 45, "spd": 70, "spe": 100 },
-    "description": "Il vit dans les décharges et entrepôts abandonnés. Son intelligence lui a permis de manipuler les débris métalliques qu'il trouve pour s'en faire des outils et armures utiles, en imitant les humains."
+    "description": "Il vit dans les décharges et entrepôts abandonnés. Son intelligence lui a permis de manipuler les débris métalliques qu'il trouve pour s'en faire des outils et armures utiles, en imitant les humains.",
+    "etymology": {
+      "fer": "métal",
+      "raccoon": "raton laveur en anglais"
+    }
   },
   {
     "id": 12,
@@ -246,7 +294,11 @@
       "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 40, "atk": 35, "def": 30, "spa": 35, "spd": 30, "spe": 30 },
-    "description": "Ces Pokémon vivent collés les uns aux autres dans des galeries étroites. En fonction de leur alimentation, ces larves peuvent aussi bien devenir une simple ouvrière qu'une grand reine."
+    "description": "Ces Pokémon vivent collés les uns aux autres dans des galeries étroites. En fonction de leur alimentation, ces larves peuvent aussi bien devenir une simple ouvrière qu'une grand reine.",
+    "etymology": {
+      "linepithema": "genre de fourmis",
+      "fourmille": "action de fourmiller"
+    }
   },
   {
     "id": 13,
@@ -265,7 +317,11 @@
       "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 55, "atk": 65, "def": 55, "spa": 50, "spd": 50, "spe": 65 },
-    "description": "Les femelles sont responsables de récupérer de la nourriture et creuser les galeries, tandis que les mâles possèdent des ailes pour se préparer à leur vol nuptial."
+    "description": "Les femelles sont responsables de récupérer de la nourriture et creuser les galeries, tandis que les mâles possèdent des ailes pour se préparer à leur vol nuptial.",
+    "etymology": {
+      "myrmica": "genre de fourmis",
+      "familia": "famille en latin"
+    }
   },
   {
     "id": 14,
@@ -284,7 +340,11 @@
       "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 62, "atk": 116, "def": 80, "spa": 52, "spd": 75, "spe": 85 },
-    "description": "Ces Pokémon défendent le nid au péril de leur vie. Avec leur tête dure comme la pierre, elles sont capables de bloquer les tunnels du nid."
+    "description": "Ces Pokémon défendent le nid au péril de leur vie. Avec leur tête dure comme la pierre, elles sont capables de bloquer les tunnels du nid.",
+    "etymology": {
+      "fourmi": "insecte",
+      "myrmidon": "guerrier dans la mythologie grecque"
+    }
   },
   {
     "id": 15,
@@ -303,7 +363,11 @@
       "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 80, "atk": 55, "def": 100, "spa": 105, "spd": 100, "spe": 45 },
-    "description": "Elle émet des phéromones responsables de coordonner les Pokémon de sa colonie. En cas d'attaque, elle privilégiera toujours l'apaisement avant la riposte."
+    "description": "Elle émet des phéromones responsables de coordonner les Pokémon de sa colonie. En cas d'attaque, elle privilégiera toujours l'apaisement avant la riposte.",
+    "etymology": {
+      "myrmica": "genre de fourmis",
+      "tiara": "diadème porté par les reines"
+    }
   },
   {
     "id": 16,
@@ -322,7 +386,11 @@
       "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 40, "atk": 55, "def": 35, "spa": 41, "spd": 30, "spe": 63 },
-    "description": "Il adore se poser sur les toits pour observer les passants. Si une personne tient de la nourriture dans la main, il viendra vers elle dans l'espoir qu'elle lui en donne un morceau."
+    "description": "Il adore se poser sur les toits pour observer les passants. Si une personne tient de la nourriture dans la main, il viendra vers elle dans l'espoir qu'elle lui en donne un morceau.",
+    "etymology": {
+      "pie": "oiseau connu pour voler des objets brillants",
+      "sqwack": "onomatopée du cri des oiseaux"
+    }
   },
   {
     "id": 17,
@@ -341,7 +409,11 @@
       "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 52, "atk": 77, "def": 42, "spa": 68, "spd": 42, "spe": 80 },
-    "description": "Il est attiré par tout ce qui brille. Son plaisir est de porter des bijoux qui portent le même éclat que son plumage. Les amateurs de mode s'inspirent souvent de ce Pokémon."
+    "description": "Il est attiré par tout ce qui brille. Son plaisir est de porter des bijoux qui portent le même éclat que son plumage. Les amateurs de mode s'inspirent souvent de ce Pokémon.",
+    "etymology": {
+      "corbeau": "oiseau noir connu pour sa ruse",
+      "onyx": "pierre précieuse noire"
+    }
   },
   {
     "id": 18,
@@ -360,7 +432,11 @@
       "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 60, "atk": 115, "def": 50, "spa": 105, "spd": 50, "spe": 113 },
-    "description": "Ce Pokémon a perfectionné son vol afin qu'il soit le plus silencieux possible. Il sort la nuit pour traquer ses proies et voler tout ce qui semble avoir de la valeur."
+    "description": "Ce Pokémon a perfectionné son vol afin qu'il soit le plus silencieux possible. Il sort la nuit pour traquer ses proies et voler tout ce qui semble avoir de la valeur.",
+    "etymology": {
+      "noir": "couleur noire",
+      "Arsène": "personnage célèbre pour ses talents de voleur"
+    }
   },
   {
     "id": 19,
@@ -379,7 +455,11 @@
       "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 59, "atk": 43, "def": 56, "spa": 47, "spd": 66, "spe": 63 },
-    "description": "Il glisse lentement au fond de l'eau en laissant une traînée luisante et colorée, jolie mais néanmoins toxique."
+    "description": "Il glisse lentement au fond de l'eau en laissant une traînée luisante et colorée, jolie mais néanmoins toxique.",
+    "etymology": {
+      "nudibranchia": "ordre de mollusques marins appelés nudibranches",
+      "lume": "lumière en référence à sa bioluminescence"
+    }
   },
   {
     "id": 20,
@@ -398,7 +478,11 @@
       "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 69, "atk": 63, "def": 78, "spa": 67, "spd": 103, "spe": 95 },
-    "description": "Sa peau est couverte de toxines. Il se déplace en gonflant une bulle au niveau de son ventre et flotte à la surface."
+    "description": "Sa peau est couverte de toxines. Il se déplace en gonflant une bulle au niveau de son ventre et flotte à la surface.",
+    "etymology": {
+      "glaucus": "genre de nudibranches marins, le dragon bleu",
+      "dracunculus": "petit dragon en latin"
+    }
   },
   {
     "id": 21,
@@ -417,7 +501,13 @@
       "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 36, "atk": 64, "def": 35, "spa": 52, "spd": 43, "spe": 90 },
-    "description": "Il court en cercles quand il accumule trop d'énergie statique. L'électricité stockée dans ses pattes lui permet de bondir plus haut qu'un humain de taille moyen."
+    "description": "Il court en cercles quand il accumule trop d'énergie statique. L'électricité stockée dans ses pattes lui permet de bondir plus haut qu'un humain de taille moyen.",
+    "etymology": {
+      "totata": "onomatopée représentant des petits pas rapides",
+      "dadada": "onomatopée représentant une course rapide",
+      "bachi-bachi": "onomatopée représentant le crépitement de l'électricité",
+      "tomodachi": "ami en japonais"
+    }
   },
   {
     "id": 22,
@@ -436,7 +526,11 @@
       "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 65, "atk": 105, "def": 47, "spa": 60, "spd": 90, "spe": 123 },
-    "description": "Il canalise son énergie dans ses pattes pour frapper plus vite que l'éclair, laissant une marque de brûlure à l'endroit d'où il a sauté. Chaque duel est pour lui comme une danse."
+    "description": "Il canalise son énergie dans ses pattes pour frapper plus vite que l'éclair, laissant une marque de brûlure à l'endroit d'où il a sauté. Chaque duel est pour lui comme une danse.",
+    "etymology": {
+      "pyon-pyon": "onomatopée représentant des bonds légers",
+      "bachi-bachi": "onomatopée représentant le crépitement de l'électricité"
+    }
   },
   {
     "id": 23,
@@ -455,7 +549,11 @@
       "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 72, "atk": 75, "def": 63, "spa": 25, "spd": 40, "spe": 30 },
-    "description": "Il frappe les pierres pour endurcir ses poings. Malgré son air grincheux, il cherche surtout à s'entraîner."
+    "description": "Il frappe les pierres pour endurcir ses poings. Malgré son air grincheux, il cherche surtout à s'entraîner.",
+    "etymology": {
+      "golem": "créature de pierre animée dans la mythologie juive",
+      "bambin": "jeune enfant"
+    }
   },
   {
     "id": 24,
@@ -474,7 +572,11 @@
       "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 90, "atk": 105, "def": 85, "spa": 35, "spd": 52, "spe": 38 },
-    "description": "Son corps se polit à force d'entraînement. Il peut briser un rocher d'un seul coup de poing."
+    "description": "Son corps se polit à force d'entraînement. Il peut briser un rocher d'un seul coup de poing.",
+    "etymology": {
+      "golem": "créature de pierre animée dans la mythologie juive",
+      "poing": "main fermée utilisée pour frapper"
+    }
   },
   {
     "id": 25,
@@ -493,7 +595,11 @@
       "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 113, "atk": 136, "def": 102, "spa": 45, "spd": 74, "spe": 35 },
-    "description": "Ses poings peuvent faire trembler le sol et fracturer n'importe quelle armure."
+    "description": "Ses poings peuvent faire trembler le sol et fracturer n'importe quelle armure.",
+    "etymology": {
+      "golem": "créature de pierre animée dans la mythologie juive",
+      "rock": "roche en anglais"
+    }
   },
   {
     "id": 26,
@@ -512,7 +618,11 @@
       "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 70, "atk": 70, "def": 45, "spa": 35, "spd": 40, "spe": 80 },
-    "description": "Il découvre son environnement en mordillant ce qui lui passe sous le museau. Il a un faible pour les sucreries."
+    "description": "Il découvre son environnement en mordillant ce qui lui passe sous le museau. Il a un faible pour les sucreries.",
+    "etymology": {
+      "nougat": "confiserie sucrée",
+      "canine": "dentaire en référence aux dents de chien"
+    }
   },
   {
     "id": 27,
@@ -531,7 +641,11 @@
       "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 92, "atk": 98, "def": 73, "spa": 57, "spd": 60, "spe": 100 },
-    "description": "Seul les mâles possèdent des crocs. Ils s'en servent plutôt pour dissuader que pour se battre avec."
+    "description": "Seul les mâles possèdent des crocs. Ils s'en servent plutôt pour dissuader que pour se battre avec.",
+    "etymology": {
+      "cervidé": "famille de mammifères herbivores comprenant les cerfs et les daims",
+      "dent": "dentaire en référence aux dents de chien"
+    }
   },
   {
     "id": 28,
@@ -550,7 +664,11 @@
       "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 45, "atk": 40, "def": 45, "spa": 55, "spd": 40, "spe": 50 },
-    "description": "Il joue dans les flaques d'eau boueuses. Son pelage sécrète une fine couche huileuse qui l'empêche de trop se salir et le protège des prédateurs."
+    "description": "Il joue dans les flaques d'eau boueuses. Son pelage sécrète une fine couche huileuse qui l'empêche de trop se salir et le protège des prédateurs.",
+    "etymology": {
+      "glouton": "personne qui mange avec avidité",
+      "loutre": "mammifère semi-aquatique"
+    }
   },
   {
     "id": 29,
@@ -569,7 +687,12 @@
       "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 70, "atk": 55, "def": 65, "spa": 80, "spd": 70, "spe": 65 },
-    "description": "Il nage dans les marées polluées sans jamais tomber malade. La substance visqueuse qui recouvre son corps est toxique mais fascinante à regarder."
+    "description": "Il nage dans les marées polluées sans jamais tomber malade. La substance visqueuse qui recouvre son corps est toxique mais fascinante à regarder.",
+    "etymology": {
+      "nemas": "dormir en japonais",
+      "mustélidé": "famille de mammifères comprenant les loutres, belettes et visons",
+      "brine": "eau salée"
+    }
   },
   {
     "id": 30,
@@ -588,7 +711,11 @@
       "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 95, "atk": 65, "def": 85, "spa": 110, "spd": 95, "spe": 80 },
-    "description": "Où qu'il passe, l'eau se teinte d'un violet scintillant. Son corps sécrète en permanence une huile toxique : il transforme les courants en poisons et les utilise pour chasser."
+    "description": "Où qu'il passe, l'eau se teinte d'un violet scintillant. Son corps sécrète en permanence une huile toxique : il transforme les courants en poisons et les utilise pour chasser.",
+    "etymology": {
+      "venom": "venin en anglais",
+      "lutra": "nom scientifique de la loutre"
+    }
   },
   {
     "id": 31,
@@ -607,7 +734,11 @@
       "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 45, "atk": 55, "def": 40, "spa": 55, "spd": 40, "spe": 75 },
-    "description": "Il reste aux côtés de ses parents, qui le nourrissent et lui apprennent à voler, même s'il est très maladroit, que ce soit pour marcher ou pour voler."
+    "description": "Il reste aux côtés de ses parents, qui le nourrissent et lui apprennent à voler, même s'il est très maladroit, que ce soit pour marcher ou pour voler.",
+    "etymology": {
+      "bronze": "alliage métallique",
+      "oisillon": "jeune oiseau"
+    }
   },
   {
     "id": 32,
@@ -626,7 +757,11 @@
       "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 60, "atk": 60, "def": 55, "spa": 60, "spd": 55, "spe": 100 },
-    "description": "Son plumage présente des reflets sous le soleil. On dit que sa présence est synonyme de richesse et propérité."
+    "description": "Son plumage présente des reflets sous le soleil. On dit que sa présence est synonyme de richesse et propérité.",
+    "etymology": {
+      "plume": "partie du plumage d'un oiseau",
+      "argent": "métal précieux"
+    }
   },
   {
     "id": 33,
@@ -646,7 +781,11 @@
       "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 85, "atk": 65, "def": 75, "spa": 125, "spd": 75, "spe": 85 },
-    "description": "Selon l'élément qu'il a absorbé, ses plumes changent de couleur et de forme. Sa collerette lui sert de réservoir d'énergie élémentaire."
+    "description": "Selon l'élément qu'il a absorbé, ses plumes changent de couleur et de forme. Sa collerette lui sert de réservoir d'énergie élémentaire.",
+    "etymology": {
+      "or": "métal précieux",
+      "faisan": "oiseau gallinacé au plumage coloré"
+    }
   },
   {
     "id": 33,
@@ -666,7 +805,11 @@
       "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 75, "atk": 70, "def": 65, "spa": 95, "spd": 80, "spe": 125 },
-    "description": "Selon l'élément qu'il a absorbé, ses plumes changent de couleur et de forme. Sa collerette lui sert de réservoir d'énergie élémentaire."
+    "description": "Selon l'élément qu'il a absorbé, ses plumes changent de couleur et de forme. Sa collerette lui sert de réservoir d'énergie élémentaire.",
+    "etymology": {
+      "or": "métal précieux",
+      "faisan": "oiseau gallinacé au plumage coloré"
+    }
   },
   {
     "id": 33,
@@ -686,7 +829,11 @@
       "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 95, "atk": 70, "def": 75, "spa": 70, "spd": 125, "spe": 75 },
-    "description": "Selon l'élément qu'il a absorbé, ses plumes changent de couleur et de forme. Sa collerette lui sert de réservoir d'énergie élémentaire."
+    "description": "Selon l'élément qu'il a absorbé, ses plumes changent de couleur et de forme. Sa collerette lui sert de réservoir d'énergie élémentaire.",
+    "etymology": {
+      "or": "métal précieux",
+      "faisan": "oiseau gallinacé au plumage coloré"
+    }
   },
   {
     "id": 34,
@@ -705,7 +852,11 @@
       "artwork": "pokedex/img/024_artwork.png"
     },
     "baseStats": { "hp": 65, "atk": 130, "def": 95, "spa": 65, "spd": 60, "spe": 110 },
-    "description": "Son corps est couvert d'écailles cristallines d'une grande beauté. Jadis braconné pour ces gemmes rares, son espèce a presque disparu. On pensait l'espèce éteinte jusqu'à ce que quelques individus soient observés dans des vallées reculées."
+    "description": "Son corps est couvert d'écailles cristallines d'une grande beauté. Jadis braconné pour ces gemmes rares, son espèce a presque disparu. On pensait l'espèce éteinte jusqu'à ce que quelques individus soient observés dans des vallées reculées.",
+    "etymology": {
+      "draco": "dragon en latin",
+      "lithe": "pierre en grec ancien"
+    }
   },
   {
     "id": 35,
@@ -724,7 +875,11 @@
       "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 66, "atk": 87, "def": 75, "spa": 88, "spd": 75, "spe": 75 },
-    "description": "Il parcourt la région pour soigner les Pokémon malades. Les récits anciens affirment qu'il aurait jadis protégé humains et Pokémon d'une épidémie qui menaçait de tout anéantir."
+    "description": "Il parcourt la région pour soigner les Pokémon malades. Les récits anciens affirment qu'il aurait jadis protégé humains et Pokémon d'une épidémie qui menaçait de tout anéantir.",
+    "etymology": {
+      "vesper": "soir en latin, en référence à son activité nocturne",
+      "médecine": "science de la guérison"
+    }
   },
   {
     "id": 36,
@@ -743,7 +898,11 @@
       "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 65, "atk":80, "def": 64, "spa": 50, "spd": 60, "spe": 40 },
-    "description": "Il vivait dans des zones humides et marécageuses, il y a environ 100 millions d'années. Il chasse de petits poissons à l'aide de son museau effilé, parfaitement adapté à l'eau trouble."
+    "description": "Il vivait dans des zones humides et marécageuses, il y a environ 100 millions d'années. Il chasse de petits poissons à l'aide de son museau effilé, parfaitement adapté à l'eau trouble.",
+    "etymology": {
+      "Albien": "période géologique du Crétacé",
+      "hydro": "eau en grec ancien"
+    }
   },
   {
     "id": 37,
@@ -762,7 +921,11 @@
       "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 90, "atk": 110, "def": 100, "spa": 70, "spd": 80, "spe": 55 },
-    "description": "Son dos est orné d'une immense voile qu'il utilisait pour réguler sa température et intimider ses proies. On raconte que ses rugissements pouvaient faire vibrer la surface des marécages."
+    "description": "Son dos est orné d'une immense voile qu'il utilisait pour réguler sa température et intimider ses proies. On raconte que ses rugissements pouvaient faire vibrer la surface des marécages.",
+    "etymology": {
+      "spinosaurus": "genre de dinosaure carnivore du Crétacé",
+      "hydra": "créature mythologique à plusieurs têtes"
+    }
   },
   {
     "id": 38,
@@ -781,7 +944,11 @@
       "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 62, "atk": 50, "def": 55, "spa": 85, "spd": 60, "spe": 47 },
-    "description": "Ce joyeux Pokémon adore utiliser tous les objets qui l'entour pour faire du bruit avec. Sa mélodie préférée est celle de la pluie, mais il déteste le son de l'orage."
+    "description": "Ce joyeux Pokémon adore utiliser tous les objets qui l'entour pour faire du bruit avec. Sa mélodie préférée est celle de la pluie, mais il déteste le son de l'orage.",
+    "etymology": {
+      "vibration": "mouvement oscillatoire",
+      "granite": "roche magmatique"
+    }
   },
   {
     "id": 39,
@@ -800,7 +967,11 @@
       "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 88, "atk": 70, "def": 75, "spa": 115, "spd": 90, "spe": 67 },
-    "description": "Sa crête allongée agit comme une chambre de résonance. Les sons graves qu'il émet pouvaient parcourir des kilomètres à travers le sol. Jadis, ses chants unissaient les troupeaux et apaisaient les prédateurs."
+    "description": "Sa crête allongée agit comme une chambre de résonance. Les sons graves qu'il émet pouvaient parcourir des kilomètres à travers le sol. Jadis, ses chants unissaient les troupeaux et apaisaient les prédateurs.",
+    "etymology": {
+      "symphonie": "composition musicale harmonieuse",
+      "odon": "dent en grec ancien"
+    }
   },
   {
     "id": 40,
@@ -819,7 +990,11 @@
       "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 70, "atk": 90, "def": 60, "spa": 75, "spd": 80, "spe": 100 },
-    "description": ""
+    "description": "La couleur de ses pieds vient de son alimentation riche en poissons et crustacés. Il utilise ses ailes pour plonger dans l'eau à la recherche de nourriture.",
+    "etymology": {
+      "sula": "genre d'oiseaux marins dont le fou à pieds bleus fait partie",
+      "Galápagos": "archipel célèbre pour sa faune unique"
+    }
   },
   {
     "id": 41,
@@ -838,7 +1013,11 @@
       "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 70, "atk": 85, "def": 80, "spa": 55, "spd": 75, "spe": 35 },
-    "description": "Il communique peu et reste la plupart du temps très silencieux. Les seules sons qu'il est capable de faire sont des petits hoquets, ou des claquements de bec."
+    "description": "Il communique peu et reste la plupart du temps très silencieux. Les seules sons qu'il est capable de faire sont des petits hoquets, ou des claquements de bec.",
+    "etymology": {
+      "bec": "partie dure et cornée située à l'avant du visage des oiseaux",
+      "coquin": "personne espiègle et malicieuse"
+    }
   },
   {
     "id": 42,
@@ -857,7 +1036,11 @@
       "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 90, "atk": 115, "def": 100, "spa": 75, "spd": 95, "spe": 45 },
-    "description": "Il a tendance à préférer bouger peu, et observer les autres Pokémon aux alentours, ce qui les mets souvent mal à l'aise à cause de ses grand yeux immobiles."
+    "description": "Il a tendance à préférer bouger peu, et observer les autres Pokémon aux alentours, ce qui les mets souvent mal à l'aise à cause de ses grand yeux immobiles.",
+    "etymology": {
+      "bec": "partie dure et cornée située à l'avant du visage des oiseaux",
+      "costaud": "robuste et vigoureux"
+    }
   },
   {
     "id": 43,
@@ -876,7 +1059,11 @@
       "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 68, "atk": 72, "def": 60, "spa": 115, "spd": 75, "spe": 110 },
-    "description": "Il parade en ouvrant son fanon chatoyant. Plus les couleurs sont vives, plus il est respecté par les autres membres de son espèce."
+    "description": "Il parade en ouvrant son fanon chatoyant. Plus les couleurs sont vives, plus il est respecté par les autres membres de son espèce.",
+    "etymology": {
+      "sitana ponticeriana": "nom scientifique du dragon barbu",
+      "honor": "honneur en anglais"
+    }
   },
   {
     "id": 44,
@@ -895,7 +1082,11 @@
       "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 52, "atk": 35, "def": 45, "spa": 60, "spd": 55, "spe": 48 },
-    "description": "Il passe ses journées à grignoter les feuilles des arbres, surtout celles des érables. Son corps duveteux et coloré attire les enfants, mais son pollen féerique peut les endormir sans qu'ils s'en rendent compte."
+    "description": "Il passe ses journées à grignoter les feuilles des arbres, surtout celles des érables. Son corps duveteux et coloré attire les enfants, mais son pollen féerique peut les endormir sans qu'ils s'en rendent compte.",
+    "etymology": {
+      "sirop": "liquide sucré extrait de certaines plantes, comme l'érable",
+      "chenille": "larve d'insecte"
+    }
   },
   {
     "id": 45,
@@ -914,7 +1105,11 @@
       "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 98, "atk": 55, "def": 70, "spa": 115, "spd": 105, "spe": 67 },
-    "description": "Ses ailes rappellent les feuilles d'érable teintées de rose et de jaune. On dit que la poudre qu'elles dégagent adoucit les cœurs et apaise les disputes, tant qu'on ne le dérange pas en plein festin de nectar."
+    "description": "Ses ailes rappellent les feuilles d'érable teintées de rose et de jaune. On dit que la poudre qu'elles dégagent adoucit les cœurs et apaise les disputes, tant qu'on ne le dérange pas en plein festin de nectar.",
+    "etymology": {
+      "dryocampa rubicunda": "nom scientifique de l'anisote de l'érable",
+      "lune": "satellite naturel de la Terre"
+    }
   },
   {
     "id": 46,
@@ -933,7 +1128,11 @@
       "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 78, "atk": 70, "def": 85, "spa": 25, "spd": 40, "spe": 22 },
-    "description": "Il vit dans des pâturages venteux en montagne. Sa longue fourrure le protège du froid, mais il trébuche souvent quand il essaie de courir."
+    "description": "Il vit dans des pâturages venteux en montagne. Sa longue fourrure le protège du froid, mais il trébuche souvent quand il essaie de courir.",
+    "etymology": {
+      "bovidé": "famille de mammifères comprenant les vaches, moutons et chèvres",
+      "alpin": "relatif aux Alpes"
+    }
   },
   {
     "id": 47,
@@ -952,7 +1151,12 @@
       "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 125, "atk": 120, "def": 115, "spa": 45, "spd": 60, "spe": 35 },
-    "description": "Il affronte sans broncher le vent, la neige et la boue. Quand il charge en inclinant ses grandes cornes, il est presque impossible de l'arrêter."
+    "description": "Il affronte sans broncher le vent, la neige et la boue. Quand il charge en inclinant ses grandes cornes, il est presque impossible de l'arrêter.",
+    "etymology": {
+      "échorcher": "blesser en arrachant la peau",
+      "corne": "appendice osseux sur la tête de certains animaux",
+      "lande": "étendue de terrain sauvage"
+    }
   },
   {
     "id": 48,
@@ -971,7 +1175,11 @@
       "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 62, "atk": 50, "def": 65, "spa": 45, "spd": 75, "spe": 48 },
-    "description": "Malgré sa petite taille, sa carapace est l'une des plus résistantes. Lorsqu'il se sent menacé, il se roule en boule et utilise ses pouvoirs féeriques pour repousser les ennemis."
+    "description": "Malgré sa petite taille, sa carapace est l'une des plus résistantes. Lorsqu'il se sent menacé, il se roule en boule et utilise ses pouvoirs féeriques pour repousser les ennemis.",
+    "etymology": {
+      "pichi": "petit en guarani, langue indigène d'Amérique du Sud",
+      "armadillo": "tatou en anglais"
+    }
   },
   {
     "id": 49,
@@ -990,7 +1198,11 @@
       "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 95, "atk": 70, "def": 115, "spa": 88, "spd": 75, "spe": 55 },
-    "description": "Lors de tempêtes, il creuse des tunnels souterrains à l'aide de ses griffes et émet des lueurs féeriques pour guider les autres Pokémon vers un abri sûr."
+    "description": "Lors de tempêtes, il creuse des tunnels souterrains à l'aide de ses griffes et émet des lueurs féeriques pour guider les autres Pokémon vers un abri sûr.",
+    "etymology": {
+      "charma": "charme en référence à ses pouvoirs féeriques",
+      "armadillo": "tatou en anglais"
+    }
   },
   {
     "id": 101,
@@ -1007,7 +1219,11 @@
       "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 120, "atk": 70, "def": 110, "spa": 105, "spd": 110, "spe": 55 },
-    "description": "Il est la conséquence des rivières polluées par les industries. Lorsque les eaux deviennent trop toxiques, il se venge et détruit les responsables via ses raz-de-marées surpuissants."
+    "description": "Il est la conséquence des rivières polluées par les industries. Lorsque les eaux deviennent trop toxiques, il se venge et détruit les responsables via ses raz-de-marées surpuissants.",
+    "etymology": {
+      "dam": "sang en hébreu",
+      "-el": "suffixe hébreu signifiant 'de Dieu'"
+    }
   },
   {
     "id": 102,
@@ -1024,7 +1240,11 @@
       "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 90, "atk": 65, "def": 75, "spa": 115, "spd": 105, "spe": 120 },
-    "description": "Il est la conséquence de la faune forcée de migrer à cause de la destruction de leurs habitats. Il sert de guide aux Pokémon cherchant un nouveau refuge, quitte à détruire ce qu'ont bâti les hommes."
+    "description": "Il est la conséquence de la faune forcée de migrer à cause de la destruction de leurs habitats. Il sert de guide aux Pokémon cherchant un nouveau refuge, quitte à détruire ce qu'ont bâti les hommes.",
+    "etymology": {
+      "Sharats": "grouiller/pulluler en hébreu",
+      "-el": "suffixe hébreu signifiant 'de Dieu'"
+    }
   },
   {
     "id": 103,
@@ -1041,7 +1261,11 @@
       "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 75, "atk": 120, "def": 80, "spa": 80, "spd": 70, "spe": 145 },
-    "description": "Il est la conséquence de la prolifération de certains nuisibles, à cause du changement d'habitat. Lorsqu'un Pokémon se retrouve dans un nouvel environnement qu'il ne connait pas, il l'aide à s'adapter."
+    "description": "Il est la conséquence de la prolifération de certains nuisibles, à cause du changement d'habitat. Lorsqu'un Pokémon se retrouve dans un nouvel environnement qu'il ne connait pas, il l'aide à s'adapter.",
+    "etymology": {
+      "kinnim": "moustique en hébreu",
+      "-el": "suffixe hébreu signifiant 'de Dieu'"
+    }
   },
   {
     "id": 104,
@@ -1058,7 +1282,11 @@
       "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 70, "atk": 115, "def": 70, "spa": 115, "spd": 70, "spe": 130 },
-    "description": "Il est la conséquence de l'insalubrité dûe aux déchets humains provoqués par leur mode de consommation. Si les terres deviennent trop polluées, il intervient pour repousser les hommes et détruire les déchets."
+    "description": "Il est la conséquence de l'insalubrité dûe aux déchets humains provoqués par leur mode de consommation. Si les terres deviennent trop polluées, il intervient pour repousser les hommes et détruire les déchets.",
+    "etymology": {
+      "arov": "nuée d'insectes en hébreu",
+      "-el": "suffixe hébreu signifiant 'de Dieu'"
+    }
   },
   {
     "id": 105,
@@ -1075,7 +1303,11 @@
       "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 100, "atk": 95, "def": 120, "spa": 70, "spd": 120, "spe": 65 },
-    "description": "Il est la conséquence de l'élevage intensif et abusif. Il libère les Pokémon exploités et punis et humains responsables de leurs maux."
+    "description": "Il est la conséquence de l'élevage intensif et abusif. Il libère les Pokémon exploités et punis et humains responsables de leurs maux.",
+    "etymology": {
+      "dever": "peste/épidémie en hébreu",
+      "-el": "suffixe hébreu signifiant 'de Dieu'"
+    }
   },
   {
     "id": 106,
@@ -1092,7 +1324,11 @@
       "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 90, "atk": 70, "def": 100, "spa": 125, "spd": 95, "spe": 90 },
-    "description": "Il est la conséquence de la pollution toxique sur les populations. Il s'attaque aux industries polluantes et les détruit suffisamment pour s'assurer qu'ils ne refonctionnent plus jamais."
+    "description": "Il est la conséquence de la pollution toxique sur les populations. Il s'attaque aux industries polluantes et les détruit suffisamment pour s'assurer qu'ils ne refonctionnent plus jamais.",
+    "etymology": {
+      "shekhin": "ulcère en hébreu",
+      "-el": "suffixe hébreu signifiant 'de Dieu'"
+    }
   },
   {
     "id": 107,
@@ -1109,7 +1345,11 @@
       "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 130, "atk": 130, "def": 105, "spa": 60, "spd": 85, "spe": 60 },
-    "description": "Il est la conséquence du dérèglement climatique provoqué par l'effet de serre. Il redirige les vagues de chaleur et de froid pour tenter de reéquilibrer les environnements."
+    "description": "Il est la conséquence du dérèglement climatique provoqué par l'effet de serre. Il redirige les vagues de chaleur et de froid pour tenter de reéquilibrer les environnements.",
+    "etymology": {
+      "barad": "grêle en hébreu",
+      "-el": "suffixe hébreu signifiant 'de Dieu'"
+    }
   },
   {
     "id": 108,
@@ -1126,7 +1366,11 @@
       "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 94, "atk": 125, "def": 85, "spa": 73, "spd": 81, "spe": 112 },
-    "description": "Il est la conséquence de la monoculture intensive. Lorsque les terres perdent leur fertilité à cause de l'agriculture, il apparaît pour dévorer les récoltes."
+    "description": "Il est la conséquence de la monoculture intensive. Lorsque les terres perdent leur fertilité à cause de l'agriculture, il apparaît pour dévorer les récoltes.",
+    "etymology": {
+      "arbeh": "sauterelle en hébreu",
+      "-el": "suffixe hébreu signifiant 'de Dieu'"
+    }
   },
   {
     "id": 109,
@@ -1143,7 +1387,11 @@
       "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 80, "atk": 90, "def": 80, "spa": 135, "spd": 110, "spe": 75 },
-    "description": "Il est la conséquence de l'urbanisation grandissante, qui remplace la nature et efface les étoiles du ciel. Si la lumière artificielle dérègle trop la faune locale, il l'absorbe, plongeant la ville dans le noir."
+    "description": "Il est la conséquence de l'urbanisation grandissante, qui remplace la nature et efface les étoiles du ciel. Si la lumière artificielle dérègle trop la faune locale, il l'absorbe, plongeant la ville dans le noir.",
+    "etymology": {
+      "hoshekh": "obscurité/ténèbres en hébreu",
+      "-el": "suffixe hébreu signifiant 'de Dieu'"
+    }
   },
   {
     "id": 110,
@@ -1160,7 +1408,11 @@
       "artwork": "pokedex/img/000_artwork.png"
     },
     "baseStats": { "hp": 115, "atk": 75, "def": 125, "spa": 110, "spd": 75, "spe": 70 },
-    "description": "Il est la conséquence de l'extinction de nombreux espèces dû aux humains. Lorsque les derniers représentant d'une espèce s'éteignent, il apparaît pour les pleurer."
+    "description": "Il est la conséquence de l'extinction de nombreux espèces dû aux humains. Lorsque les derniers représentant d'une espèce s'éteignent, il apparaît pour les pleurer.",
+    "etymology": {
+      "Shakhat": "détruire en hébreu",
+      "-el": "suffixe hébreu signifiant 'de Dieu'"
+    }
   },
   {
   "id": 111,
@@ -1177,7 +1429,12 @@
     "artwork": "pokedex/img/000_artwork.png"
   },
   "baseStats": { "hp": 100, "atk": 95, "def": 108, "spa": 125, "spd": 152, "spe": 90 },
-  "description": "Gardien du Pacte Originel, il veille à ce qu'aucune espèce ne prenne un ascendant définitif sur une autre. On raconte que sa simple présence suffit à ramener les forces du monde à l'équilibre."
+  "description": "Gardien du Pacte Originel, il veille à ce qu'aucune espèce ne prenne un ascendant définitif sur une autre. On raconte que sa simple présence suffit à ramener les forces du monde à l'équilibre.",
+  "etymology": {
+    "monarque": "souverain régnant sur un royaume",
+    "archange": "être céleste supérieur dans la hiérarchie angélique",
+    "arcane": "relatif à des connaissances secrètes ou mystérieuses"
+  }
 },
 {
   "id": 112,
@@ -1194,7 +1451,11 @@
     "artwork": "pokedex/img/000_artwork.png"
   },
   "baseStats": { "hp": 90, "atk": 145, "def": 100, "spa": 90, "spd": 100, "spe": 145 },
-  "description": "Il incarne le potentiel de toutes les espèces et les pousse à dépasser leurs limites. Là où il passe, les Pokémon découvrent des forces insoupçonnées, pour le meilleur comme pour le pire."
+  "description": "Il incarne le potentiel de toutes les espèces et les pousse à dépasser leurs limites. Là où il passe, les Pokémon découvrent des forces insoupçonnées, pour le meilleur comme pour le pire.",
+  "etymology": {
+    "séraphin": "ange de haut rang dans la hiérarchie céleste",
+    "impérial": "relatif à un empire ou à un souverain"
+  }
 }
 
 ]

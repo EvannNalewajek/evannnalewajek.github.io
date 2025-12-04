@@ -129,6 +129,13 @@ export class PokedexDetailComponent implements OnInit {
     return this.evo.orderedChain(fam);
   });
 
+  etymologyEntries = computed(() => {
+    const p = this.pokemon();
+    if (!p?.etymology) return [];
+    return Object.entries(p.etymology);
+  });
+
+
   evoStages = computed<Pokemon[]>(() => {
     const ord = this.ordered();
     if (!ord) return [];

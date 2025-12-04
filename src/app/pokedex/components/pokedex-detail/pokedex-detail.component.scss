@@ -744,3 +744,17 @@
 .title {
   margin-bottom: 1rem;
 }
+
+.etymology-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li + li {
+    margin-top: .25rem;
+  }
+
+  strong {
+    font-weight: 600;
+  }
+}

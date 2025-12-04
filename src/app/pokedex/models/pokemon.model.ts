@@ -31,4 +31,5 @@ export interface Pokemon {
   images: PokemonImages;
   baseStats: BaseStats;
   description: string;
+  etymology?: { [key: string]: string };
 }
