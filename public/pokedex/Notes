@@ -219,21 +219,40 @@ Conservateur : Équilibre Absolu : Si un Pokémon ennemi se boost durant un tour
 
 Compteur de pokémon par type :
 
-Normal   - 7
-Feu      - 4
-Eau      - 10
+Normal   - 13
+Feu      - 6
+Eau      - 13
 Plante   - 4
-Électrik - 2
+Électrik - 3
 Glace    - 4
-Combat   - 3
-Poison   - 5
-Sol      - 5
-Vol      - 5
+Combat   - 4
+Poison   - 7
+Sol      - 8
+Vol      - 12
 Psy      - 1
-Insecte  - 5
+Insecte  - 7
 Roche    - 7
 Spectre  - 10
-Dragon   - 3
+Dragon   - 4
 Ténèbres - 3
 Acier    - 4
-Fée      - 2
+Fée      - 6
+
+Eau      - 13
+Normal   - 13
+Vol      - 12
+Spectre  - 10
+Sol      - 8
+Insecte  - 7
+Poison   - 7
+Roche    - 7
+Feu      - 6
+Fée      - 6
+Plante   - 4
+Glace    - 4
+Combat   - 4
+Dragon   - 4
+Acier    - 4
+Électrik - 3
+Ténèbres - 3
+Psy      - 1

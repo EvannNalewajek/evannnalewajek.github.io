@@ -1164,8 +1164,8 @@
   },
   {
   "id": 111,
-  "slug": "harmagon",
-  "name": "Harmagon",
+  "slug": "monarcane",
+  "name": "Monarcane",
   "types": ["Dragon", "Fée"],
   "category": "Gardien",
   "abilities": ["[[ability:equilibre-absolu|Équilibre Absolu]]"],
@@ -1181,8 +1181,8 @@
 },
 {
   "id": 112,
-  "slug": "novagon",
-  "name": "Novagon",
+  "slug": "seraperial",
+  "name": "Sérapérial",
   "types": ["Dragon", "Acier"],
   "category": "Gardien",
   "abilities": ["[[ability:renforcement-adaptatif|Renforcement Adaptatif]]"],

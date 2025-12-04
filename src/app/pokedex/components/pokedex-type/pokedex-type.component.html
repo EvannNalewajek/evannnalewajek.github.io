@@ -15,6 +15,21 @@
       <div class="dex-body">
         <div class="dex-screen type-page" [style.--type-color]="cur.color">
 
+          <nav class="quick-nav">
+            <a class="nav-chip nav-green"   routerLink="/pokedex/docs"            title="Retour">
+              🔙 <span>Retour</span>
+            </a>
+            <a class="nav-chip nav-blue"    routerLink="/pokedex/pokemons"      title="Liste des Pokémons">
+              🧬 <span>Pokémons</span>
+            </a>
+            <a class="nav-chip nav-red" routerLink="/pokedex/moves"  title="Liste des Capacités">
+              ⚡ <span>Capacités</span>
+            </a>
+            <a class="nav-chip nav-yellow"  routerLink="/pokedex/abilities"       title="Liste des Talents">
+              ✨ <span>Talents</span>
+            </a>
+          </nav>
+
           <!-- Bandeau résumé du type courant -->
           <section class="type-hero">
             <div class="hero-inner">
