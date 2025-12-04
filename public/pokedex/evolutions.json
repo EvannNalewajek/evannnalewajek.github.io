@@ -45,21 +45,76 @@
     {
       "species": [19, 20],
       "links": [
-        { "from": 19, "to": 20, "trigger": { "kind": "level", "level": 26 } }
+        { "from": 19, "to": 20, "trigger": { "kind": "level", "level": 24 } }
       ]
     },
     {
-      "species": [21, 22, 23],
+      "species": [21, 22],
       "links": [
-        { "from": 21, "to": 22, "trigger": { "kind": "level", "level": 25 } },
-        { "from": 22, "to": 23, "trigger": { "kind": "level", "level": 42 } }
+        { "from": 21, "to": 22, "trigger": { "kind": "level", "level": 26 } }
       ]
     },
     {
-      "species": [24, 25, 26],
+      "species": [23, 24, 25],
       "links": [
-        { "from": 24, "to": 25, "trigger": { "kind": "level", "level": 20 } },
-        { "from": 25, "to": 26, "trigger": { "kind": "level", "level": 38 } }
+        { "from": 23, "to": 24, "trigger": { "kind": "level", "level": 25 } },
+        { "from": 24, "to": 25, "trigger": { "kind": "level", "level": 42 } }
+      ]
+    },
+    {
+      "species": [26, 27],
+      "links": [
+        { "from": 26, "to": 27, "trigger": { "kind": "level", "level": 33 } }
+      ]
+    },
+    {
+      "species": [28, 29, 30],
+      "links": [
+        { "from": 28, "to": 29, "trigger": { "kind": "level", "level": 20 } },
+        { "from": 29, "to": 30, "trigger": { "kind": "level", "level": 38 } }
+      ]
+    },
+    {
+      "species": [31, 32, 33],
+      "links": [
+        { "from": 31, "to": 32, "trigger": { "kind": "level", "level": 22 } },
+        { "from": 32, "to": 33, "trigger": { "kind": "item", "item": "Pierre Feu, Pierre Eau, Pierre Électrik" } }
+      ]
+    },
+    {
+      "species": [36, 37],
+      "links": [
+        { "from": 36, "to": 37, "trigger": { "kind": "level", "level": 40 } }
+      ]
+    },
+    {
+      "species": [38, 39],
+      "links": [
+        { "from": 38, "to": 39, "trigger": { "kind": "level", "level": 40 } }
+      ]
+    },
+    {
+      "species": [41, 42],
+      "links": [
+        { "from": 41, "to": 42, "trigger": { "kind": "level", "level": 30 } }
+      ]
+    },
+    {
+      "species": [44, 45],
+      "links": [
+        { "from": 44, "to": 45, "trigger": { "kind": "friendship" } }
+      ]
+    },
+    {
+      "species": [46, 47],
+      "links": [
+        { "from": 46, "to": 47, "trigger": { "kind": "level", "level": 34 } }
+      ]
+    },
+    {
+      "species": [48, 49],
+      "links": [
+        { "from": 48, "to": 49, "trigger": { "kind": "level", "level": 21 } }
       ]
     }
   ]
