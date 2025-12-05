@@ -10,6 +10,7 @@ const PRESETS: Record<TargetPreset, Cell[]> = {
   'all-allies': ['SELF', 'ALLY_L', 'ALLY_R'],
   'all-ennemies': ['FOE_L','FOE_C', 'FOE_R'],
   'variable': ['SELF'],
+  'all': ['FOE_L','FOE_C','FOE_R','ALLY_L','ALLY_R','SELF'],
   'self': ['SELF']
 };
 
@@ -54,6 +55,7 @@ export class MoveTargetDiagramComponent {
     if (this.preset === 'all-allies') return "Tous les alliés";
     if (this.preset === 'all-ennemies') return "Tous les adversaires";
     if (this.preset === 'variable') return "Variable";
+    if (this.preset === 'all') return "Tous les Pokémon en combat";
     if (this.preset === 'self') return "Le Pokémon lançant la capacité";
     return '';
   }

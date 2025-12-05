@@ -137,8 +137,8 @@
                                                     </thead>
                                                     <tbody>
                                                         <tr *ngFor="let row of t.rows">
-                                                            <td *ngFor="let col of t.columns">
-                                                            {{ row[col.key] }}
+                                                            <td *ngFor="let col of t.columns"
+                                                                [innerHTML]="row[col.key] | wikilink:{ kind:'move', slug:m.slug }">
                                                             </td>
                                                         </tr>
                                                     </tbody>

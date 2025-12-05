@@ -17,9 +17,14 @@ interface Ctx {
 export class WikilinkPipe implements PipeTransform {
   private sanitizer = inject(DomSanitizer);
 
-  transform(input: string | null | undefined, ctx?: Ctx): SafeHtml {
-    if (!input) return this.sanitizer.bypassSecurityTrustHtml('');
-    const html = input.replace(/\[\[\s*([a-z]+)\s*:\s*([^\]|]+?)(?:\|([^\]]+))?\s*\]\]/gi,
+  transform(input: string | number | null | undefined, ctx?: Ctx): SafeHtml {
+    if (input === null || input === undefined) {
+      return this.sanitizer.bypassSecurityTrustHtml('');
+    }
+    const text = String(input);
+
+    const html = text.replace(
+      /\[\[\s*([a-z]+)\s*:\s*([^\]|]+?)(?:\|([^\]]+))?\s*\]\]/gi,
       (_m, rawKind: string, rawKey: string, rawLabel?: string) => {
         const kind = normalizeKind(rawKind);
         if (!kind) return escapeHtml(_m);
@@ -33,10 +38,10 @@ export class WikilinkPipe implements PipeTransform {
 
         const href = routeFor(kind, key);
         return `<a class="autolink" data-kind="${kind}" href="${href}">${escapeHtml(label)}</a>`;
-      });
+      }
+    );
 
-    return this.sanitizer
-      .bypassSecurityTrustHtml(html);
+    return this.sanitizer.bypassSecurityTrustHtml(html);
   }
 }
 

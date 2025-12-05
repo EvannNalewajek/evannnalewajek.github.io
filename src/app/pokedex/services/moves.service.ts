@@ -61,6 +61,7 @@ function normalizeTarget(m: any): { preset?: TargetPreset; pattern?: TargetCell[
     presetRaw === 'all-allies'       ||
     presetRaw === 'all-ennemies'     ||
     presetRaw === 'variable'         ||
+    presetRaw === 'all'              ||
     presetRaw === 'self'
   ) {
     return { preset: presetRaw as TargetPreset };
