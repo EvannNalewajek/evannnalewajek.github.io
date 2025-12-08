@@ -34,7 +34,10 @@
   padding: .75rem 1rem;
 }
 
-.title.content-card { padding-bottom: .5rem; }
+.title.content-card {
+  padding-bottom: .5rem;
+  margin-bottom: 1rem;
+}
 .title h2 { margin: 0; font-weight:900; font-size: clamp(1.2rem, 1rem + 1vw, 1.8rem); }
 .title h2 small { opacity:.7; margin-right:.5rem; font-weight:900; }
 

@@ -1,7 +1,7 @@
 import { Pipe, PipeTransform, inject } from '@angular/core';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
-type Kind = 'move' | 'ability' | 'type' | 'pokemon' | 'docs';
+type Kind = 'move' | 'ability' | 'type' | 'pokemon' | 'item' | 'docs';
 
 interface Ctx {
   kind?: Kind;
@@ -47,7 +47,7 @@ export class WikilinkPipe implements PipeTransform {
 
 function normalizeKind(k: string): Kind | null {
   const s = k.toLowerCase();
-  if (s === 'move' || s === 'ability' || s === 'type' || s === 'pokemon' || s === 'docs') return s;
+  if (s === 'move' || s === 'ability' || s === 'type' || s === 'pokemon' || s === 'item' || s === 'docs') return s;
   return null;
 }
 function routeFor(kind: Kind, key: string): string {
@@ -56,7 +56,8 @@ function routeFor(kind: Kind, key: string): string {
     case 'ability':  return `/pokedex/abilities/${key}`;
     case 'type':     return `/pokedex/types/${slugify(key)}`;
     case 'pokemon':  return `/pokedex/pokemons/${key}`;
-    case 'docs':    return `/pokedex/docs/${key}`;
+    case 'item':     return `/pokedex/items/${key}`;
+    case 'docs':     return `/pokedex/docs/${key}`;
   }
 }
 function slugify(input: string): string {

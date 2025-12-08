@@ -1,0 +1,117 @@
+<div class="dex-scene">
+    <div class="dex-card">
+        <div class="dex-header">
+        <div class="dex-button" aria-hidden="true"></div>
+        <div class="dex-lights" aria-hidden="true">
+            <span class="led led-red"></span>
+            <span class="led led-yellow"></span>
+            <span class="led led-green"></span>
+        </div>
+        <h1>{{ item()?.name || 'Objet' }}</h1>
+        </div>
+
+        @if (item(); as i) {
+            <div class="dex-body">
+                <div class="dex-screen item-detail">
+                    <nav class="dex-toolbar bottom">
+                        <div class="toolbar-inner">
+                            <span class="left">
+                                @if (prev(); as p) {
+                                    <a [routerLink]="['/pokedex/docs/items', p.slug]" class="nav-chip">← Préc.</a>
+                                }
+                            </span>
+                            <span class="center">
+                                <a routerLink="/pokedex/docs/items">Retour à la liste</a>
+                            </span>
+                            <span class="right">
+                                @if (next(); as n) {
+                                    <a [routerLink]="['/pokedex/docs/items', n.slug]" class="nav-chip">Suiv. →</a>
+                                }
+                            </span>
+                        </div>
+                    </nav>
+                    
+                    <header class="title content-card">
+                        <h2>
+                            <small>#{{ i.id | number:'2.0-0' }}</small>
+                            {{ i.name }}
+                        </h2>
+                    </header>
+                    
+                    <div class="layout">
+                        <aside class="infobox infobox-frame">
+                            <div class="panel primary">
+                                <figure class="artwork">
+                                    <img
+                                        [src]="imgArtwork()"
+                                        [alt]="item()!.name"
+                                        loading="eager" />
+                                </figure>
+
+                                <div class="quickfacts">
+                                    <dl class="dl-grid">
+                                        <div><dt>N°</dt><dd>#{{ item()!.id | number:'2.0-0' }}</dd></div>
+                                    </dl>
+                                </div>
+                                <div class="quickfacts">
+                                    <h2>Utilisation</h2>
+                                    <dl class="dl-grid">
+                                        <div><dt>Rangement</dt><dd>{{ item()!.category }}</dd></div>
+                                        <div><dt>Fonctionnement</dt><dd>{{ item()!.usage }}</dd></div>
+                                    </dl>
+                                </div>
+                                <div class="quickfacts">
+                                    <h2>Commerce</h2>
+                                    <dl class="dl-grid">
+                                        <div><dt>Achat</dt><dd>{{ item()!.buy }}</dd></div>
+                                        <div><dt>Revente</dt><dd>{{ item()!.sell }}</dd></div>
+                                    </dl>
+                                </div>
+
+                                <div class="sprite-box">
+                                    <img class="sprite" [src]="imgSprite()" [alt]="item()!.name + ' sprite'" loading="lazy" />
+                                </div>
+                            </div>
+                        </aside>
+
+                        <main class="content">
+                            <section class="content-card">
+                                <h3>Utilisation et Effet</h3>
+                                <p class="autolink" [innerHTML]="i.effet | wikilink:{ kind:'item', slug:i.slug}"></p>
+                            </section>
+
+                            <section class="content-card">
+                                <h3>Description</h3>
+                                <p>{{ i.description || '—' }}</p>
+                            </section>
+                        </main>
+                    </div>
+
+                    <nav class="dex-toolbar bottom">
+                        <div class="toolbar-inner">
+                            <span class="left">
+                                @if (prev(); as p) {
+                                    <a [routerLink]="['/pokedex/docs/items', p.slug]" class="nav-chip">← Préc.</a>
+                                }
+                            </span>
+                            <span class="center">
+                                <a routerLink="/pokedex/docs/items">Retour à la liste</a>
+                            </span>
+                            <span class="right">
+                                @if (next(); as n) {
+                                    <a [routerLink]="['/pokedex/docs/items', n.slug]" class="nav-chip">Suiv. →</a>
+                                }
+                            </span>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            } @else {
+            <div class="dex-body">
+                <div class="dex-screen">
+                    <p>Chargement…</p>
+                </div>
+            </div>
+        }
+    </div>
+</div>

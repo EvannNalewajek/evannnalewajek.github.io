@@ -14,6 +14,8 @@ import { MovesListComponent } from './pokedex/components/moves-list/moves-list.c
 import { MovesDetailComponent } from './pokedex/components/moves-detail/moves-detail.component';
 import { AbilitiesListComponent } from './pokedex/components/abilities-list/abilities-list.component';
 import { AbilitiesDetailComponent } from './pokedex/components/abilities-detail/abilities-detail.component';
+import { ItemsListComponent } from './pokedex/components/items-list/items-list.component';
+import { ItemsDetailComponent } from './pokedex/components/items-detail/items-detail.component';
 import { DocumentationComponent } from './pokedex/components/documentation/documentation.component';
 import { DocsIntroductionComponent } from './pokedex/components/docs-introduction/docs-introduction.component';
 import { DocsStatisticsComponent } from './pokedex/components/docs-statistics/docs-statistics.component';
@@ -34,6 +36,8 @@ export const routes: Routes = [
     { path: 'pokedex/docs/statistics', component: DocsStatisticsComponent, title: 'Pokédex - Statistiques' },
     { path: 'pokedex/docs/fields', component: PokedexFieldComponent, title: 'Pokédex - Champ' },
     { path: 'pokedex/docs/status', component: DocsStatusComponent, title: 'Pokédex - Statut' },
+    { path: 'pokedex/docs/items', component: ItemsListComponent, title: 'Pokédex - Objets' },
+    { path: 'pokedex/docs/items/:slug', component: ItemsDetailComponent, title: 'Pokédex - Objets Détail' },
     { path: 'enigmemain',
         component: EnigmeComponent,
         title: 'Énigme Main',

@@ -1,0 +1,85 @@
+<div class="dex-scene">
+    <div class="dex-card">
+        <div class="dex-header">
+            <div class="dex-button" aria-hidden="true"></div>
+            <div class="dex-lights" aria-hidden="true">
+                <span class="led led-red"></span>
+                <span class="led led-yellow"></span>
+                <span class="led led-green"></span>
+            </div>
+            <h1>Objets</h1>
+        </div>
+
+        <div class="dex-body">
+            <div class="dex-screen field-page">
+                <nav class="quick-nav">
+                    <a class="nav-chip nav-green"   routerLink="/pokedex/docs"            title="Retour">
+                        🔙 <span>Retour</span>
+                    </a>
+                    <a class="nav-chip nav-blue"    routerLink="/pokedex/pokemons"      title="Liste des Pokémons">
+                        🧬 <span>Pokémons</span>
+                    </a>
+                    <a class="nav-chip nav-red" routerLink="/pokedex/moves"  title="Liste des Capacités">
+                        ⚡ <span>Capacités</span>
+                    </a>
+                    <a class="nav-chip nav-yellow"  routerLink="/pokedex/abilities"       title="Liste des Talents">
+                        ✨ <span>Talents</span>
+                    </a>
+                </nav>
+
+                <div class="items-toolbar">
+                    <input type="search"
+                            placeholder="Rechercher un objet…"
+                            (input)="query(($any($event.target).value))" />
+
+                    <select (change)="selectSort(($any($event.target).value))">
+                        <option value="id">Trier par #</option>
+                        <option value="name">Trier par nom</option>
+                    </select>
+                </div>
+
+                @if (!loading() && list().length === 0) {
+                    <p>Aucun objet ne correspond à la recherche.</p>
+                }
+
+                @if (!loading() && list().length > 0) {
+                    <table class="pokedex-table items-table">
+                        <colgroup>
+                        <col class="c-num">
+                        <col class="c-name">
+                        <col class="c-desc">
+                        </colgroup>
+
+                        <thead>
+                            <tr>
+                                <th class="col-num">#</th>
+                                <th class="col-item">Objet</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            @for (i of list(); track i.id) {
+                                <tr>
+                                    <td class="col-num" data-label="#">#{{ i.id | number:'2.0-0' }}</td>
+
+                                    <td class="col-name group-end" data-label="Objet">
+                                        <a class="item-name" [routerLink]="['/pokedex/docs/items', i.slug]">
+                                            {{ i.name }}
+                                        </a>
+                                    </td>
+
+                                    <td data-label="Description">
+                                        <p class="effect-chip" [innerHTML]="i.description | wikilink:{ kind:'item', slug:i.slug}"></p>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                } @else if (loading()) {
+                    <p>Chargement des objets…</p>
+                }
+            </div>
+        </div>
+    </div>
+</div>

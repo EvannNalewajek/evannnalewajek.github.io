@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "slug": "master-ball",
+    "name": "Master Ball",
+    "description": "Assurément la Ball la plus performante. Elle permet de capturer à coup sûr un Pokémon sauvage.",
+    "category": "Balls",
+    "usage": "Sur un Pokémon (adversaire)",
+    "effet": "La Master Ball est considérée comme la meilleure Ball : en effet, dû à son Bonus Ball de 255, elle peut capturer n'importe quel Pokémon Sauvage à coup sûr.",
+    "images": {
+      "sprite": "pokedex/img/items/master-ball_sprite.png",
+      "artwork": "pokedex/img/items/master-ball_artwork.png"
+    }
+  },
+  {
+    "id": 17,
+    "slug": "potion",
+    "name": "Potion",
+    "description": "Un spray qui soigne les blessures. Restaure 20 PV d'un Pokémon.",
+    "category": "Soins",
+    "usage": "Sur un Pokémon",
+    "effet": "Cet objet permet de rendre jusqu'à 20 PV.",
+    "images": {
+      "sprite": "pokedex/img/items/potion_sprite.png",
+      "artwork": "pokedex/img/items/potion_artwork.png"
+    },
+    "buy": 200,
+    "sell": 50
+  }
+]

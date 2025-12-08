@@ -12,8 +12,8 @@
     "genderRatio": { "male": 87.5, "female": 12.5 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/001_sprite.png",
-      "artwork": "pokedex/img/001_artwork.png"
+      "sprite": "pokedex/img/pokemon/001_sprite.png",
+      "artwork": "pokedex/img/pokemon/001_artwork.png"
     },
     "baseStats": { "hp": 60, "atk": 53, "def": 64, "spa": 40, "spd": 51, "spe": 42 },
     "description": "Il se recroqueville souvent au moindre bruit pour se protéger. Ses écailles sont souples et couvertes de chlorophylle, capable de capter la lumière pour le nourrir.",
@@ -35,8 +35,8 @@
     "genderRatio": { "male": 87.5, "female": 12.5 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/002_sprite.png",
-      "artwork": "pokedex/img/002_artwork.png"
+      "sprite": "pokedex/img/pokemon/002_sprite.png",
+      "artwork": "pokedex/img/pokemon/002_artwork.png"
     },
     "baseStats": { "hp": 84, "atk": 77, "def": 86, "spa": 52, "spd": 61, "spe": 50 },
     "description": "Ses écailles se sont durcies en feuilles denses et coupantes. Les botanistes admirent sa capacité à purifier les sols autour de lui, malgré sa tendance à préférer fuir les régions polluées.",
@@ -58,8 +58,8 @@
     "genderRatio": { "male": 87.5, "female": 12.5 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/003_sprite.png",
-      "artwork": "pokedex/img/003_artwork.png"
+      "sprite": "pokedex/img/pokemon/003_sprite.png",
+      "artwork": "pokedex/img/pokemon/003_artwork.png"
     },
     "baseStats": { "hp": 109, "atk": 107, "def": 111, "spa": 62, "spd": 86, "spe": 55 },
     "description": "On raconte que son métal pousse comme une plante et qu'il se régénère lentement. Il frappe le sol de sa queue pour défendre les forêts qu'il protège.",
@@ -81,8 +81,8 @@
     "genderRatio": { "male": 87.5, "female": 12.5 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/004_sprite.png",
-      "artwork": "pokedex/img/004_artwork.png"
+      "sprite": "pokedex/img/pokemon/004_sprite.png",
+      "artwork": "pokedex/img/pokemon/004_artwork.png"
     },
     "baseStats": { "hp": 65, "atk": 58, "def": 48, "spa": 40, "spd": 49, "spe": 50 },
     "description": "Il ne se sent en confiance que lorsqu'il est blotti contre les personnes qu'il aime. Sa fourrure dégage une chaleur douce, ce qui en fait un excellent compagnon de câlin.",
@@ -104,8 +104,8 @@
     "genderRatio": { "male": 87.5, "female": 12.5 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/005_sprite.png",
-      "artwork": "pokedex/img/005_artwork.png"
+      "sprite": "pokedex/img/pokemon/005_sprite.png",
+      "artwork": "pokedex/img/pokemon/005_artwork.png"
     },
     "baseStats": { "hp": 88, "atk": 88, "def": 60, "spa": 50, "spd": 59, "spe": 65 },
     "description": "On pense que ses caractéristiques étranges sont dû à une adaptation brutale face à son environnement. Il mange énormément pour compenser l'énergie qu'il brûle en permanence pour conserver sa chaleur.",
@@ -127,8 +127,8 @@
     "genderRatio": { "male": 87.5, "female": 12.5 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/006_sprite.png",
-      "artwork": "pokedex/img/006_artwork.png"
+      "sprite": "pokedex/img/pokemon/006_sprite.png",
+      "artwork": "pokedex/img/pokemon/006_artwork.png"
     },
     "baseStats": { "hp": 108, "atk": 117, "def": 70, "spa": 55, "spd": 70, "spe": 110 },
     "description": "La température de son corps peut passer brutalement d'un froid glaciale à un feu brûlant selon son humeur. Dans les régions polaires, son rugissement est confondu avec celui des glaciers qui se brisent.",
@@ -150,8 +150,8 @@
     "genderRatio": { "male": 87.5, "female": 12.5 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/007_sprite.png",
-      "artwork": "pokedex/img/007_artwork.png"
+      "sprite": "pokedex/img/pokemon/007_sprite.png",
+      "artwork": "pokedex/img/pokemon/007_artwork.png"
     },
     "baseStats": { "hp": 50, "atk": 42, "def": 55, "spa": 63, "spd": 55, "spe": 45 },
     "description": "Des étranges vagues d'eau flotte en permanence autour de sa queue. Il suffit de l'emmener près d'une rivière ou d'un lac pour le rendre heureux : il adore jouer dans l'eau et explorer les fonds marins.",
@@ -173,8 +173,8 @@
     "genderRatio": { "male": 87.5, "female": 12.5 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/008_sprite.png",
-      "artwork": "pokedex/img/008_artwork.png"
+      "sprite": "pokedex/img/pokemon/008_sprite.png",
+      "artwork": "pokedex/img/pokemon/008_artwork.png"
     },
     "baseStats": { "hp": 70, "atk": 55, "def": 67, "spa": 85, "spd": 68, "spe": 65 },
     "description": "Pour fuir ses prédateurs, il se cache sous la terre ou la boue. Il est même capable de changer légèrement sa couleur afin de se camoufler.",
@@ -196,8 +196,8 @@
     "genderRatio": { "male": 87.5, "female": 12.5 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/009_sprite.png",
-      "artwork": "pokedex/img/009_artwork.png"
+      "sprite": "pokedex/img/pokemon/009_sprite.png",
+      "artwork": "pokedex/img/pokemon/009_artwork.png"
     },
     "baseStats": { "hp": 83, "atk": 65, "def": 85, "spa": 115, "spd": 80, "spe": 102 },
     "description": "Sa présence dans la nature est signe que l'habitat est sain et pure. Il est capable de voyager pendant des mois dans le but de trouver l'environnement parfait.",
@@ -219,8 +219,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 255,
     "images": {
-      "sprite": "pokedex/img/010_sprite.png",
-      "artwork": "pokedex/img/010_artwork.png"
+      "sprite": "pokedex/img/pokemon/010_sprite.png",
+      "artwork": "pokedex/img/pokemon/010_artwork.png"
     },
     "baseStats": { "hp": 45, "atk": 55, "def": 50, "spa": 30, "spd": 40, "spe": 70 },
     "description": "Il collectionne les morceaux de métal qu'il trouve dans les ruines. Il s'en sert pour se protéger, mais aussi pour impressionner ses congénères.",
@@ -243,8 +243,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 255,
     "images": {
-      "sprite": "pokedex/img/011_def_sprite.png",
-      "artwork": "pokedex/img/011_def_artwork.png"
+      "sprite": "pokedex/img/pokemon/011_def_sprite.png",
+      "artwork": "pokedex/img/pokemon/011_def_artwork.png"
     },
     "baseStats": { "hp": 70, "atk": 90, "def": 110, "spa": 45, "spd": 80, "spe": 65 },
     "description": "Il vit dans les décharges et entrepôts abandonnés. Son intelligence lui a permis de manipuler les débris métalliques qu'il trouve pour s'en faire des outils et armures utiles, en imitant les humains.",
@@ -267,8 +267,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 255,
     "images": {
-      "sprite": "pokedex/img/011_atk_sprite.png",
-      "artwork": "pokedex/img/011_atk_artwork.png"
+      "sprite": "pokedex/img/pokemon/011_atk_sprite.png",
+      "artwork": "pokedex/img/pokemon/011_atk_artwork.png"
     },
     "baseStats": { "hp": 70, "atk": 105, "def": 70, "spa": 45, "spd": 70, "spe": 100 },
     "description": "Il vit dans les décharges et entrepôts abandonnés. Son intelligence lui a permis de manipuler les débris métalliques qu'il trouve pour s'en faire des outils et armures utiles, en imitant les humains.",
@@ -290,8 +290,8 @@
     "genderRatio": { "male": 12.5, "female": 87.5 },
     "captureRate": 255,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 40, "atk": 35, "def": 30, "spa": 35, "spd": 30, "spe": 30 },
     "description": "Ces Pokémon vivent collés les uns aux autres dans des galeries étroites. En fonction de leur alimentation, ces larves peuvent aussi bien devenir une simple ouvrière qu'une grand reine.",
@@ -313,8 +313,8 @@
     "genderRatio": { "male": 12.5, "female": 87.5 },
     "captureRate": 255,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 55, "atk": 65, "def": 55, "spa": 50, "spd": 50, "spe": 65 },
     "description": "Les femelles sont responsables de récupérer de la nourriture et creuser les galeries, tandis que les mâles possèdent des ailes pour se préparer à leur vol nuptial.",
@@ -336,8 +336,8 @@
     "genderRatio": { "male": 0, "female": 100 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 62, "atk": 116, "def": 80, "spa": 52, "spd": 75, "spe": 85 },
     "description": "Ces Pokémon défendent le nid au péril de leur vie. Avec leur tête dure comme la pierre, elles sont capables de bloquer les tunnels du nid.",
@@ -359,8 +359,8 @@
     "genderRatio": { "male": 0, "female": 100 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 80, "atk": 55, "def": 100, "spa": 105, "spd": 100, "spe": 45 },
     "description": "Elle émet des phéromones responsables de coordonner les Pokémon de sa colonie. En cas d'attaque, elle privilégiera toujours l'apaisement avant la riposte.",
@@ -382,8 +382,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 255,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 40, "atk": 55, "def": 35, "spa": 41, "spd": 30, "spe": 63 },
     "description": "Il adore se poser sur les toits pour observer les passants. Si une personne tient de la nourriture dans la main, il viendra vers elle dans l'espoir qu'elle lui en donne un morceau.",
@@ -405,8 +405,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 120,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 52, "atk": 77, "def": 42, "spa": 68, "spd": 42, "spe": 80 },
     "description": "Il est attiré par tout ce qui brille. Son plaisir est de porter des bijoux qui portent le même éclat que son plumage. Les amateurs de mode s'inspirent souvent de ce Pokémon.",
@@ -428,8 +428,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 60, "atk": 115, "def": 50, "spa": 105, "spd": 50, "spe": 113 },
     "description": "Ce Pokémon a perfectionné son vol afin qu'il soit le plus silencieux possible. Il sort la nuit pour traquer ses proies et voler tout ce qui semble avoir de la valeur.",
@@ -451,8 +451,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 190,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 59, "atk": 43, "def": 56, "spa": 47, "spd": 66, "spe": 63 },
     "description": "Il glisse lentement au fond de l'eau en laissant une traînée luisante et colorée, jolie mais néanmoins toxique.",
@@ -474,8 +474,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 75,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 69, "atk": 63, "def": 78, "spa": 67, "spd": 103, "spe": 95 },
     "description": "Sa peau est couverte de toxines. Il se déplace en gonflant une bulle au niveau de son ventre et flotte à la surface.",
@@ -497,8 +497,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 180,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 36, "atk": 64, "def": 35, "spa": 52, "spd": 43, "spe": 90 },
     "description": "Il court en cercles quand il accumule trop d'énergie statique. L'électricité stockée dans ses pattes lui permet de bondir plus haut qu'un humain de taille moyen.",
@@ -522,8 +522,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 95,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 65, "atk": 105, "def": 47, "spa": 60, "spd": 90, "spe": 123 },
     "description": "Il canalise son énergie dans ses pattes pour frapper plus vite que l'éclair, laissant une marque de brûlure à l'endroit d'où il a sauté. Chaque duel est pour lui comme une danse.",
@@ -545,8 +545,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 190,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 72, "atk": 75, "def": 63, "spa": 25, "spd": 40, "spe": 30 },
     "description": "Il frappe les pierres pour endurcir ses poings. Malgré son air grincheux, il cherche surtout à s'entraîner.",
@@ -568,8 +568,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 95,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 90, "atk": 105, "def": 85, "spa": 35, "spd": 52, "spe": 38 },
     "description": "Son corps se polit à force d'entraînement. Il peut briser un rocher d'un seul coup de poing.",
@@ -591,8 +591,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 113, "atk": 136, "def": 102, "spa": 45, "spd": 74, "spe": 35 },
     "description": "Ses poings peuvent faire trembler le sol et fracturer n'importe quelle armure.",
@@ -614,8 +614,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 190,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 70, "atk": 70, "def": 45, "spa": 35, "spd": 40, "spe": 80 },
     "description": "Il découvre son environnement en mordillant ce qui lui passe sous le museau. Il a un faible pour les sucreries.",
@@ -637,8 +637,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 100,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 92, "atk": 98, "def": 73, "spa": 57, "spd": 60, "spe": 100 },
     "description": "Seul les mâles possèdent des crocs. Ils s'en servent plutôt pour dissuader que pour se battre avec.",
@@ -660,8 +660,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 240,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 45, "atk": 40, "def": 45, "spa": 55, "spd": 40, "spe": 50 },
     "description": "Il joue dans les flaques d'eau boueuses. Son pelage sécrète une fine couche huileuse qui l'empêche de trop se salir et le protège des prédateurs.",
@@ -683,8 +683,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 190,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 70, "atk": 55, "def": 65, "spa": 80, "spd": 70, "spe": 65 },
     "description": "Il nage dans les marées polluées sans jamais tomber malade. La substance visqueuse qui recouvre son corps est toxique mais fascinante à regarder.",
@@ -707,8 +707,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 75,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 95, "atk": 65, "def": 85, "spa": 110, "spd": 95, "spe": 80 },
     "description": "Où qu'il passe, l'eau se teinte d'un violet scintillant. Son corps sécrète en permanence une huile toxique : il transforme les courants en poisons et les utilise pour chasser.",
@@ -730,8 +730,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 190,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 45, "atk": 55, "def": 40, "spa": 55, "spd": 40, "spe": 75 },
     "description": "Il reste aux côtés de ses parents, qui le nourrissent et lui apprennent à voler, même s'il est très maladroit, que ce soit pour marcher ou pour voler.",
@@ -753,8 +753,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 120,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 60, "atk": 60, "def": 55, "spa": 60, "spd": 55, "spe": 100 },
     "description": "Son plumage présente des reflets sous le soleil. On dit que sa présence est synonyme de richesse et propérité.",
@@ -777,8 +777,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 85, "atk": 65, "def": 75, "spa": 125, "spd": 75, "spe": 85 },
     "description": "Selon l'élément qu'il a absorbé, ses plumes changent de couleur et de forme. Sa collerette lui sert de réservoir d'énergie élémentaire.",
@@ -801,8 +801,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 75, "atk": 70, "def": 65, "spa": 95, "spd": 80, "spe": 125 },
     "description": "Selon l'élément qu'il a absorbé, ses plumes changent de couleur et de forme. Sa collerette lui sert de réservoir d'énergie élémentaire.",
@@ -825,8 +825,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 95, "atk": 70, "def": 75, "spa": 70, "spd": 125, "spe": 75 },
     "description": "Selon l'élément qu'il a absorbé, ses plumes changent de couleur et de forme. Sa collerette lui sert de réservoir d'énergie élémentaire.",
@@ -848,8 +848,8 @@
     "genderRatio": { "male": 87.5, "female": 12.5 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/024_sprite.png",
-      "artwork": "pokedex/img/024_artwork.png"
+      "sprite": "pokedex/img/pokemon/024_sprite.png",
+      "artwork": "pokedex/img/pokemon/024_artwork.png"
     },
     "baseStats": { "hp": 65, "atk": 130, "def": 95, "spa": 65, "spd": 60, "spe": 110 },
     "description": "Son corps est couvert d'écailles cristallines d'une grande beauté. Jadis braconné pour ces gemmes rares, son espèce a presque disparu. On pensait l'espèce éteinte jusqu'à ce que quelques individus soient observés dans des vallées reculées.",
@@ -871,8 +871,8 @@
     "genderRatio": { "male": 50, "female": 50 },
     "captureRate": 60,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 66, "atk": 87, "def": 75, "spa": 88, "spd": 75, "spe": 75 },
     "description": "Il parcourt la région pour soigner les Pokémon malades. Les récits anciens affirment qu'il aurait jadis protégé humains et Pokémon d'une épidémie qui menaçait de tout anéantir.",
@@ -894,8 +894,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 65, "atk":80, "def": 64, "spa": 50, "spd": 60, "spe": 40 },
     "description": "Il vivait dans des zones humides et marécageuses, il y a environ 100 millions d'années. Il chasse de petits poissons à l'aide de son museau effilé, parfaitement adapté à l'eau trouble.",
@@ -917,8 +917,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 90, "atk": 110, "def": 100, "spa": 70, "spd": 80, "spe": 55 },
     "description": "Son dos est orné d'une immense voile qu'il utilisait pour réguler sa température et intimider ses proies. On raconte que ses rugissements pouvaient faire vibrer la surface des marécages.",
@@ -940,8 +940,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 62, "atk": 50, "def": 55, "spa": 85, "spd": 60, "spe": 47 },
     "description": "Ce joyeux Pokémon adore utiliser tous les objets qui l'entour pour faire du bruit avec. Sa mélodie préférée est celle de la pluie, mais il déteste le son de l'orage.",
@@ -963,8 +963,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 88, "atk": 70, "def": 75, "spa": 115, "spd": 90, "spe": 67 },
     "description": "Sa crête allongée agit comme une chambre de résonance. Les sons graves qu'il émet pouvaient parcourir des kilomètres à travers le sol. Jadis, ses chants unissaient les troupeaux et apaisaient les prédateurs.",
@@ -986,8 +986,8 @@
     "genderRatio": { "male": 50, "female": 50 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 70, "atk": 90, "def": 60, "spa": 75, "spd": 80, "spe": 100 },
     "description": "La couleur de ses pieds vient de son alimentation riche en poissons et crustacés. Il utilise ses ailes pour plonger dans l'eau à la recherche de nourriture.",
@@ -1009,8 +1009,8 @@
     "genderRatio": { "male": 50, "female": 50 },
     "captureRate": 100,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 70, "atk": 85, "def": 80, "spa": 55, "spd": 75, "spe": 35 },
     "description": "Il communique peu et reste la plupart du temps très silencieux. Les seules sons qu'il est capable de faire sont des petits hoquets, ou des claquements de bec.",
@@ -1032,8 +1032,8 @@
     "genderRatio": { "male": 50, "female": 50 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 90, "atk": 115, "def": 100, "spa": 75, "spd": 95, "spe": 45 },
     "description": "Il a tendance à préférer bouger peu, et observer les autres Pokémon aux alentours, ce qui les mets souvent mal à l'aise à cause de ses grand yeux immobiles.",
@@ -1055,8 +1055,8 @@
     "genderRatio": { "male": 50, "female": 50 },
     "captureRate": 90,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 68, "atk": 72, "def": 60, "spa": 115, "spd": 75, "spe": 110 },
     "description": "Il parade en ouvrant son fanon chatoyant. Plus les couleurs sont vives, plus il est respecté par les autres membres de son espèce.",
@@ -1078,8 +1078,8 @@
     "genderRatio": { "male": 50, "female": 50 },
     "captureRate": 190,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 52, "atk": 35, "def": 45, "spa": 60, "spd": 55, "spe": 48 },
     "description": "Il passe ses journées à grignoter les feuilles des arbres, surtout celles des érables. Son corps duveteux et coloré attire les enfants, mais son pollen féerique peut les endormir sans qu'ils s'en rendent compte.",
@@ -1101,8 +1101,8 @@
     "genderRatio": { "male": 50, "female": 50 },
     "captureRate": 75,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 98, "atk": 55, "def": 70, "spa": 115, "spd": 105, "spe": 67 },
     "description": "Ses ailes rappellent les feuilles d'érable teintées de rose et de jaune. On dit que la poudre qu'elles dégagent adoucit les cœurs et apaise les disputes, tant qu'on ne le dérange pas en plein festin de nectar.",
@@ -1124,8 +1124,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 140,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 78, "atk": 70, "def": 85, "spa": 25, "spd": 40, "spe": 22 },
     "description": "Il vit dans des pâturages venteux en montagne. Sa longue fourrure le protège du froid, mais il trébuche souvent quand il essaie de courir.",
@@ -1147,8 +1147,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 60,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 125, "atk": 120, "def": 115, "spa": 45, "spd": 60, "spe": 35 },
     "description": "Il affronte sans broncher le vent, la neige et la boue. Quand il charge en inclinant ses grandes cornes, il est presque impossible de l'arrêter.",
@@ -1171,8 +1171,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 120,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 62, "atk": 50, "def": 65, "spa": 45, "spd": 75, "spe": 48 },
     "description": "Malgré sa petite taille, sa carapace est l'une des plus résistantes. Lorsqu'il se sent menacé, il se roule en boule et utilise ses pouvoirs féeriques pour repousser les ennemis.",
@@ -1194,8 +1194,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 60,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 95, "atk": 70, "def": 115, "spa": 88, "spd": 75, "spe": 55 },
     "description": "Lors de tempêtes, il creuse des tunnels souterrains à l'aide de ses griffes et émet des lueurs féeriques pour guider les autres Pokémon vers un abri sûr.",
@@ -1215,8 +1215,8 @@
     "weight_kg": 910,
     "captureRate": 6,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 120, "atk": 70, "def": 110, "spa": 105, "spd": 110, "spe": 55 },
     "description": "Il est la conséquence des rivières polluées par les industries. Lorsque les eaux deviennent trop toxiques, il se venge et détruit les responsables via ses raz-de-marées surpuissants.",
@@ -1236,8 +1236,8 @@
     "weight_kg": 18.4,
     "captureRate": 6,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 90, "atk": 65, "def": 75, "spa": 115, "spd": 105, "spe": 120 },
     "description": "Il est la conséquence de la faune forcée de migrer à cause de la destruction de leurs habitats. Il sert de guide aux Pokémon cherchant un nouveau refuge, quitte à détruire ce qu'ont bâti les hommes.",
@@ -1257,8 +1257,8 @@
     "weight_kg": 9.7,
     "captureRate": 6,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 75, "atk": 120, "def": 80, "spa": 80, "spd": 70, "spe": 145 },
     "description": "Il est la conséquence de la prolifération de certains nuisibles, à cause du changement d'habitat. Lorsqu'un Pokémon se retrouve dans un nouvel environnement qu'il ne connait pas, il l'aide à s'adapter.",
@@ -1278,8 +1278,8 @@
     "weight_kg": 38.9,
     "captureRate": 6,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 70, "atk": 115, "def": 70, "spa": 115, "spd": 70, "spe": 130 },
     "description": "Il est la conséquence de l'insalubrité dûe aux déchets humains provoqués par leur mode de consommation. Si les terres deviennent trop polluées, il intervient pour repousser les hommes et détruire les déchets.",
@@ -1299,8 +1299,8 @@
     "weight_kg": 82.3,
     "captureRate": 6,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 100, "atk": 95, "def": 120, "spa": 70, "spd": 120, "spe": 65 },
     "description": "Il est la conséquence de l'élevage intensif et abusif. Il libère les Pokémon exploités et punis et humains responsables de leurs maux.",
@@ -1320,8 +1320,8 @@
     "weight_kg": 100,
     "captureRate": 6,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 90, "atk": 70, "def": 100, "spa": 125, "spd": 95, "spe": 90 },
     "description": "Il est la conséquence de la pollution toxique sur les populations. Il s'attaque aux industries polluantes et les détruit suffisamment pour s'assurer qu'ils ne refonctionnent plus jamais.",
@@ -1341,8 +1341,8 @@
     "weight_kg": 6.5,
     "captureRate": 6,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 130, "atk": 130, "def": 105, "spa": 60, "spd": 85, "spe": 60 },
     "description": "Il est la conséquence du dérèglement climatique provoqué par l'effet de serre. Il redirige les vagues de chaleur et de froid pour tenter de reéquilibrer les environnements.",
@@ -1362,8 +1362,8 @@
     "weight_kg": 54.2,
     "captureRate": 6,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 94, "atk": 125, "def": 85, "spa": 73, "spd": 81, "spe": 112 },
     "description": "Il est la conséquence de la monoculture intensive. Lorsque les terres perdent leur fertilité à cause de l'agriculture, il apparaît pour dévorer les récoltes.",
@@ -1383,8 +1383,8 @@
     "weight_kg": 79.4,
     "captureRate": 6,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 80, "atk": 90, "def": 80, "spa": 135, "spd": 110, "spe": 75 },
     "description": "Il est la conséquence de l'urbanisation grandissante, qui remplace la nature et efface les étoiles du ciel. Si la lumière artificielle dérègle trop la faune locale, il l'absorbe, plongeant la ville dans le noir.",
@@ -1404,8 +1404,8 @@
     "weight_kg": 142.7,
     "captureRate": 6,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 115, "atk": 75, "def": 125, "spa": 110, "spd": 75, "spe": 70 },
     "description": "Il est la conséquence de l'extinction de nombreux espèces dû aux humains. Lorsque les derniers représentant d'une espèce s'éteignent, il apparaît pour les pleurer.",
@@ -1425,8 +1425,8 @@
     "weight_kg": 280.0,
     "captureRate": 3,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 100, "atk": 95, "def": 108, "spa": 125, "spd": 152, "spe": 90 },
     "description": "Gardien du Pacte Originel, il veille à ce qu'aucune espèce ne prenne un ascendant définitif sur une autre. On raconte que sa simple présence suffit à ramener les forces du monde à l'équilibre.",
@@ -1447,8 +1447,8 @@
     "weight_kg": 410.0,
     "captureRate": 3,
     "images": {
-      "sprite": "pokedex/img/000_sprite.png",
-      "artwork": "pokedex/img/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
     "baseStats": { "hp": 90, "atk": 145, "def": 100, "spa": 90, "spd": 100, "spe": 145 },
     "description": "Il incarne le potentiel de toutes les espèces et les pousse à dépasser leurs limites. Là où il passe, les Pokémon découvrent des forces insoupçonnées, pour le meilleur comme pour le pire.",

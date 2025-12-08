@@ -33,6 +33,13 @@
               </span>
             </div>
           </nav>
+          
+          <header class="title content-card">
+            <h2>
+              <small>#{{ a.id | number:'2.0-0' }}</small>
+              {{ a.name }}
+            </h2>
+          </header>
 
           <div class="layout">
             <aside class="infobox-frame">
@@ -57,13 +64,6 @@
             </aside>
 
             <main class="content">
-              <header class="title content-card">
-                <h2>
-                  <small>#{{ a.id | number:'2.0-0' }}</small>
-                  {{ a.name }}
-                </h2>
-              </header>
-
               <section class="content-card">
                 <h3>Effet du talent</h3>
                 <p class="autolink" [innerHTML]="a.battleEffectLong | wikilink:{ kind:'ability', slug:a.slug}"></p>
