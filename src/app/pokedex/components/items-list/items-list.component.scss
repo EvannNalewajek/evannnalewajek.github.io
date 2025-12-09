@@ -129,7 +129,7 @@
   tbody tr:hover td { background-color: #c0efff; }
 
   .c-num   { width: 4rem; }
-  .c-name  { width: 20%; }
+  .c-name  { width: 25%; }
   .c-desc   { width: auto; }
 
   .col-num {
@@ -146,6 +146,14 @@
     text-overflow: ellipsis;
     text-align: left;
   }
+
+.col-name img,
+.col-name a {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
 
   .effect-chip {
     display: inline-block;
@@ -202,4 +210,9 @@
 
     .item-name { white-space: normal; }
   }
+}
+
+img {
+  width: 32px;
+  height: 32px;
 }

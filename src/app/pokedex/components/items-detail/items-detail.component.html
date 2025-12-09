@@ -63,8 +63,8 @@
                                 <div class="quickfacts">
                                     <h2>Commerce</h2>
                                     <dl class="dl-grid">
-                                        <div><dt>Achat</dt><dd>{{ item()!.buy }}</dd></div>
-                                        <div><dt>Revente</dt><dd>{{ item()!.sell }}</dd></div>
+                                        <div><dt>Achat</dt><dd>{{ item()!.buy }} ₽</dd></div>
+                                        <div><dt>Revente</dt><dd>{{ item()!.sell }} ₽</dd></div>
                                     </dl>
                                 </div>
 
@@ -82,7 +82,7 @@
 
                             <section class="content-card">
                                 <h3>Description</h3>
-                                <p>{{ i.description || '—' }}</p>
+                                <p class="autolink" [innerHTML]="i.description | wikilink:{ kind:'item', slug:i.slug}"></p>
                             </section>
                         </main>
                     </div>

@@ -26,5 +26,170 @@
     },
     "buy": 200,
     "sell": 50
+  },
+  {
+    "id": 220,
+    "slug": "bandeau-choix",
+    "name": "Bandeau Choix",
+    "description": "Objet à tenir. Ce bandeau augmente l'[[docs:statistics|Attaque]] mais ne permet d'utiliser qu'une seule capacité par combat.",
+    "category": "Objets",
+    "usage": "Sur un Pokémon (tenu)",
+    "effet": "Si cet objet est tenu par un Pokémon, sa statistique d'[[docs:statistics|Attaque]] est augmentée de 50%. En contrepartie, il n'est plus possible que d'utiliser une seule capacité jusqu'à ce que le Pokémon soit échangé. Si la capacité sur laquelle le Pokémon est bloqué n'a plus de PP, il utilisera automatiquement l'attaque [[move:lutte|Lutte]] même si les autres capacités en ont encore.",
+    "images": {
+      "sprite": "pokedex/img/items/bandeau-choix_sprite.png",
+      "artwork": "pokedex/img/items/bandeau-choix_artwork.png"
+    },
+    "buy": 100000,
+    "sell": 25000
+  },
+  {
+    "id": 230,
+    "slug": "bandeau",
+    "name": "Bandeau",
+    "description": "Objet à tenir. Empêche parfois d'être mis K.O., ne laissant qu'un seul [[docs:statistics|PV]].",
+    "category": "Objets",
+    "usage": "Sur un Pokémon (tenu)",
+    "effet": "Si cet objet est tenu par un Pokémon, il peut permettre de conserver 1 [[docs:statistics|PV]] lors d'une attaque qui devrait mettre le Pokémon K.O. Cependant, cet objet ne possède que 10% de chance de s'activer, mais il n'est pas à usage unique.",
+    "images": {
+      "sprite": "pokedex/img/items/bandeau_sprite.png",
+      "artwork": "pokedex/img/items/bandeau_artwork.png"
+    },
+    "buy": 10000,
+    "sell": 2500
+  },
+  {
+    "id": 269,
+    "slug": "lumargile",
+    "name": "Lumargile",
+    "description": "Objet à tenir. Augmente la durée des capacités barrières telles que [[move:mur-lumiere|Mur Lumière]] et [[move:protection|Protection]].",
+    "category": "Objets",
+    "usage": "Sur un Pokémon (tenu)",
+    "effet": "Si cet objet est tenu par le Pokémon du joueur et que les capacités [[move:mur-lumiere|Mur Lumière]], [[move:protection|Protection]] ou [[move:voile-aurore|Voile Aurore]] sont utilisées, leur effets sont maintenus pendant une durée de 8 tours, au lieu de 5 normalement.",
+    "images": {
+      "sprite": "pokedex/img/items/lumargile_sprite.png",
+      "artwork": "pokedex/img/items/lumargile_artwork.png"
+    },
+    "buy": 20000,
+    "sell": 5000
+  },
+  {
+    "id": 270,
+    "slug": "orbe-vie",
+    "name": "Orbe Vie",
+    "description": "Objet à tenir. Augmente la puissance des capacités, mais dépense des [[docs:statistics|PV]] à chaque coup.",
+    "category": "Objets",
+    "usage": "Sur un Pokémon (tenu)",
+    "effet": "Si cet objet est tenu par un Pokémon, ses capacités ont une puissance augmentée de 30%. Cependant, le Pokémon perd 10% de ses [[docs:statistics|PV]] maximum à chaque fois qu'il touche l'adversaire avec une capacité infligeant des dégâts directs. Le contrecoup ne s'applique pas si la capacité échoue, si l'adversaire est protégé par [[move:clonage|Clonage]] ou si le lanceur possède le talent [[ability:sans-limite|Sans Limite]].",
+    "images": {
+      "sprite": "pokedex/img/items/orbe-vie_sprite.png",
+      "artwork": "pokedex/img/items/orbe-vie_artwork.png"
+    },
+    "buy": 50000,
+    "sell": 12500
+  },
+  {
+    "id": 271,
+    "slug": "herbe-pouvoir",
+    "name": "Herbe Pouvoir",
+    "description": "Objet à tenir et à usage unique. Permet d'utiliser immédiatement une capacité qui devrait se charger au premier tour.",
+    "category": "Objets",
+    "usage": "Sur un Pokémon (tenu)",
+    "effet": "Si cet objet est tenu par le Pokémon du joueur, les capacités nécessitant un tour de charge peuvent être utilisées sans ce tour de charge. Cependant, il ne fonctionne qu'une fois et est consommé pour l'occasion.",
+    "images": {
+      "sprite": "pokedex/img/items/herbe-pouvoir_sprite.png",
+      "artwork": "pokedex/img/items/herbe-pouvoir_artwork.png"
+    },
+    "buy": 30000,
+    "sell": 7500
+  },
+  {
+    "id": 275,
+    "slug": "ceinture-force",
+    "name": "Ceinture Force",
+    "description": "Objet à tenir. S'il a encore tous ses [[docs:statistics|PV]], le porteur pourra éviter d'être mis K.O. en un coup. Il ne conservera alors qu'un seul PV.",
+    "category": "Objets",
+    "usage": "Sur un Pokémon (tenu)",
+    "effet": "La Ceinture Force est un objet à tenir par un Pokémon. Elle lui permet, s'il doit subir une capacité qui va le mettre K.O. alors qu'il a tous ses PV, de résister en conservant 1 [[docs:statistics|PV]] à la place. La Ceinture Force est consommée après effet.",
+    "images": {
+      "sprite": "pokedex/img/items/ceinture-force_sprite.png",
+      "artwork": "pokedex/img/items/ceinture-force_artwork.png"
+    },
+    "buy": 50000,
+    "sell": 12500
+  },
+  {
+    "id": 286,
+    "slug": "accro-griffe",
+    "name": "Accro Griffe",
+    "description": "Objet à tenir. Augmente la durée des attaques à tours multiples telles que [[move:ligotage|Ligotage]] et [[move:etreinte|Étreinte]].",
+    "category": "Objets",
+    "usage": "Sur un Pokémon (tenu)",
+    "effet": "Si cet objet est tenu par un Pokémon, les capacités piégeantes qu'il utilise (comme [[move:etreinte|Étreinte]], [[move:ligotage|Ligotage]], [[move:danse-flamme|Danse Flamme]] ou [[move:tourbi-sable|Tourbi-Sable]]) durent toujours 7 tours (au lieu de 2 à 5 tours).",
+    "images": {
+      "sprite": "pokedex/img/items/accro-griffe_sprite.png",
+      "artwork": "pokedex/img/items/accro-griffe_artwork.png"
+    },
+    "buy": 10000,
+    "sell": 2500
+  },
+  {
+    "id": 296,
+    "slug": "grosse-racine",
+    "name": "Grosse Racine",
+    "description": "Objet à tenir. Augmente la puissance des capacités volant des [[docs:statistics|PV]].",
+    "category": "Objets",
+    "usage": "Sur un Pokémon (tenu)",
+    "effet": "Si cet objet est tenu par le Pokémon, les capacités drainant des [[docs:statistics|PV]] de l'adversaire restaurent 30% de PV en plus au Pokémon qui l'utilise. L'attaque n'est pas plus puissante et inflige toujours les mêmes dégâts : seule la restauration est plus efficace.",
+    "images": {
+      "sprite": "pokedex/img/items/grosse-racine_sprite.png",
+      "artwork": "pokedex/img/items/grosse-racine_artwork.png"
+    },
+    "buy": 10000,
+    "sell": 2500
+  },
+  {
+    "id": 544,
+    "slug": "bande-etreinte",
+    "name": "Bande Étreinte",
+    "description": "Objet à tenir. Augmente la puissance des attaques immobilisantes telles que [[move:ligotage|Ligotage]] ou [[move:etreinte|Étreinte]].",
+    "category": "Objets",
+    "usage": "Sur un Pokémon (tenu)",
+    "effet": "Si un adversaire est piégé par des capacités comme [[move:etreinte|Étreinte]], [[move:ligotage|Ligotage]], [[move:danse-flamme|Danse Flamme]] ou [[move:tourbi-sable|Tourbi-Sable]] par un Pokémon tenant cet objet, il perdra 1/6 de ses PV à chaque fin de tour, au lieu de 1/8 normalement.",
+    "images": {
+      "sprite": "pokedex/img/items/bande-etreinte_sprite.png",
+      "artwork": "pokedex/img/items/bande-etreinte_artwork.png"
+    },
+    "buy": 20000,
+    "sell": 5000
+  },
+  {
+    "id": 650,
+    "slug": "lunettes-filtre",
+    "name": "Lunettes Filtre",
+    "description": "Objet à tenir. Protège le Pokémon contre les dégâts dus à la météo et la plupart des capacités utilisant de la poudre.",
+    "category": "Objets",
+    "usage": "Sur un Pokémon (tenu)",
+    "effet": "Si cet objet est tenu par un Pokémon, ce dernier sera immunisé aux dégâts de la météo ainsi qu'aux capacités et talents de poudre.",
+    "images": {
+      "sprite": "pokedex/img/items/lunettes-filtre_sprite.png",
+      "artwork": "pokedex/img/items/lunettes-filtre_artwork.png"
+    },
+    "buy": 20000,
+    "sell": 5000
+  },
+  {
+    "id": 700,
+    "slug": "parapluie-solide",
+    "name": "Parapluie Solide",
+    "description": "Objet à tenir. Il protège le porteur des effets de la pluie et des rayons du soleil.",
+    "category": "Objets",
+    "usage": "Sur un Pokémon (tenu)",
+    "effet": "Cet objet, tenu par un Pokémon, protège le porteur des effets de la météo (sauf ceux de la grêle et de la tempête de sable). Par exemple, s'il utilise [[move:ballmeteo|Ball'Météo]], la capacité garde son type [[type:Normal]]. Cela affecte également les talents.",
+    "images": {
+      "sprite": "pokedex/img/items/parapluie-solide_sprite.png",
+      "artwork": "pokedex/img/items/parapluie-solide_artwork.png"
+    },
+    "buy": 15000,
+    "sell": 3750
   }
 ]

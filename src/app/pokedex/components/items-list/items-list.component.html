@@ -64,6 +64,7 @@
                                     <td class="col-num" data-label="#">#{{ i.id | number:'2.0-0' }}</td>
 
                                     <td class="col-name group-end" data-label="Objet">
+                                        <img class="sprite" [routerLink]="['/pokedex/docs/items', i.slug]" [src]="i.images.sprite" [alt]="i.name + ' sprite'" loading="lazy" />
                                         <a class="item-name" [routerLink]="['/pokedex/docs/items', i.slug]">
                                             {{ i.name }}
                                         </a>

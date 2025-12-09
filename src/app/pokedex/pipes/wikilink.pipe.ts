@@ -56,7 +56,7 @@ function routeFor(kind: Kind, key: string): string {
     case 'ability':  return `/pokedex/abilities/${key}`;
     case 'type':     return `/pokedex/types/${slugify(key)}`;
     case 'pokemon':  return `/pokedex/pokemons/${key}`;
-    case 'item':     return `/pokedex/items/${key}`;
+    case 'item':     return `/pokedex/docs/items/${key}`;
     case 'docs':     return `/pokedex/docs/${key}`;
   }
 }

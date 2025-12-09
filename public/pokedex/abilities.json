@@ -280,7 +280,7 @@
     "name": "Tête de Roc",
     "battleEffectCondition": "Lors de son attaque",
     "battleEffectShort": "Immunité contre le contrecoup.",
-    "battleEffectLong": "Un Pokémon doté de Tête de Roc ne subit pas de contrecoup sur les attaques pouvant en infliger. Cependant, le Pokémon subit bien les dégâts que peuvent provoquer certains objets lorsqu'il attaque, comme l'Orbe Vie, certaines attaques si elles échouent, comme [[move:pied-voltige|Pied Voltige]], ou encore [[move:lutte|Lutte]].",
+    "battleEffectLong": "Un Pokémon doté de Tête de Roc ne subit pas de contrecoup sur les attaques pouvant en infliger. Cependant, le Pokémon subit bien les dégâts que peuvent provoquer certains objets lorsqu'il attaque, comme l'[[item:orbe-vie|Orbe Vie]], certaines attaques si elles échouent, comme [[move:pied-voltige|Pied Voltige]], ou encore [[move:lutte|Lutte]].",
     "fieldEffectCondition": "Aucun effet",
     "fieldEffectLong": "Tête de Roc n'a aucun effet hors combat.",
     "description": "Le Pokémon peut utiliser des capacités occasionnant un contrecoup sans perdre de PV."

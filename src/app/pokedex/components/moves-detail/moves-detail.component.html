@@ -19,22 +19,27 @@
                         <nav class="dex-toolbar top">
                             <div class="toolbar-inner">
                                 <span class="left">
-                                    <a routerLink="/pokedex/moves" class="nav-chip">← Retour à la liste</a>
+                                    @if (prev(); as p) {
+                                        <a [routerLink]="['/pokedex/moves', p.slug]" class="nav-chip">← Préc.</a>
+                                    }
                                 </span>
                                 <span class="center">
-                                    <strong>#{{ m.id | number:'2.0-0' }}</strong>
-                                    {{ m.name }}
+                                    <a routerLink="/pokedex/moves">Retour à la liste</a>
                                 </span>
                                 <span class="right">
-                                    @if (prev(); as p) {
-                                        <a [routerLink]="['/pokedex/moves', p.slug]" class="nav-chip">Préc.</a>
-                                    }
                                     @if (next(); as n) {
-                                        <a [routerLink]="['/pokedex/moves', n.slug]" class="nav-chip">Suiv.</a>
+                                        <a [routerLink]="['/pokedex/moves', n.slug]" class="nav-chip">Suiv. →</a>
                                     }
                                 </span>
                             </div>
                         </nav>
+
+                        <header class="title content-card">
+                            <h2>
+                                <small>#{{ m.id | number:'2.0-0' }}</small>
+                                {{ m.name }}
+                            </h2>
+                        </header>
 
                         <div class="layout">
                             <aside class="infobox-frame"
@@ -108,13 +113,6 @@
                             </aside>
 
                             <main class="content">
-                                <header class="title content-card">
-                                    <h2>
-                                        <small>#{{ m.id | number:'2.0-0' }}</small>
-                                        {{ m.name }}
-                                    </h2>
-                                </header>
-
                                 <section class="content-card">
                                     <h3>Effet</h3>
                                     <p class="move-effect"
