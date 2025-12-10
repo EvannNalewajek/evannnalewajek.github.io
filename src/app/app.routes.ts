@@ -21,6 +21,7 @@ import { DocsIntroductionComponent } from './pokedex/components/docs-introductio
 import { DocsStatisticsComponent } from './pokedex/components/docs-statistics/docs-statistics.component';
 import { DocsStatusComponent } from './pokedex/components/docs-status/docs-status.component';
 import { DocsWeatherComponent } from './pokedex/components/docs-weather/docs-weather.component';
+import { DocsKOComponent } from './pokedex/components/docs-ko/docs-ko.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent, title: 'Accueil' },
@@ -40,6 +41,7 @@ export const routes: Routes = [
     { path: 'pokedex/docs/status', component: DocsStatusComponent, title: 'Pokédex - Statut' },
     { path: 'pokedex/docs/items', component: ItemsListComponent, title: 'Pokédex - Objets' },
     { path: 'pokedex/docs/items/:slug', component: ItemsDetailComponent, title: 'Pokédex - Objets Détail' },
+    { path: 'pokedex/docs/ko', component: DocsKOComponent, title: 'Pokédex - K.O.' },
     { path: 'enigmemain',
         component: EnigmeComponent,
         title: 'Énigme Main',

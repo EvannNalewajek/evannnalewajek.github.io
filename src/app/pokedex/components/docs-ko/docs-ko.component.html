@@ -1,0 +1,138 @@
+<div class="dex-scene">
+    <div class="dex-card">
+        <div class="dex-header">
+            <div class="dex-button" aria-hidden="true"></div>
+            <div class="dex-lights" aria-hidden="true">
+                <span class="led led-red"></span>
+                <span class="led led-yellow"></span>
+                <span class="led led-green"></span>
+            </div>
+            <h1>K.O.</h1>
+        </div>
+
+        <div class="dex-body">
+            <div class="dex-screen doc-page">
+                <nav class="quick-nav">
+                    <a class="nav-chip nav-green"   routerLink="/pokedex/docs"            title="Retour">
+                        🔙 <span>Retour</span>
+                    </a>
+                    <a class="nav-chip nav-blue"    routerLink="/pokedex/pokemons"      title="Liste des Pokémons">
+                        🧬 <span>Pokémons</span>
+                    </a>
+                    <a class="nav-chip nav-red" routerLink="/pokedex/moves"  title="Liste des Capacités">
+                        ⚡ <span>Capacités</span>
+                    </a>
+                    <a class="nav-chip nav-yellow"  routerLink="/pokedex/abilities"       title="Liste des Talents">
+                        ✨ <span>Talents</span>
+                    </a>
+                </nav>
+                <section class="content-card">
+                    <p>
+                        Le terme <strong>K.O.</strong> (abréviation de <em>knock out</em>, verbe anglais signifiant "assommer")
+                        désigne le <a class="name-link" href="/pokedex/docs/status">statut</a> d'un Pokémon dans l'incapacité de combattre.
+                    </p>
+
+                    <p>Pour gagner un combat Pokémon, il faut mettre K.O. tous les Pokémon de l'équipe adverse.</p>
+                </section>
+
+                <section class="content-card">
+                    <p>
+                        Un Pokémon devient K.O. lorsque ses <a class="name-link" href="/pokedex/docs/statistics">PV</a> tombent à zéro
+                        sur réception de dégâts directs ou indirects, induits par une <a class="name-link" href="/pokedex/moves">capacité</a>
+                        ennemie ou non. Il quitte alors le terrain en poussant un cri plus grave et plus long que son cri habituel.
+                    </p>
+
+                    <p>
+                        Un Pokémon battu par K.O. perd 1 point de bonheur, voire plus en fonction de la fréquence des K.O. et de la durée de son inaptitude.
+                        Tant qu'il reste dans cet état, il ne peut ni être envoyé au combat ni gagner de points d'expérience, mais peut toujours utiliser
+                        les capacités à usage sur le terrain (<a class="name-link" href="/pokedex/moves/coupe">Coupe</a>,
+                        <a class="name-link" href="/pokedex/moves/doux-parfum">Doux Parfum</a>, etc.). Dans le menu de l'équipe, les Pokémon
+                        à 0 PV s'animent lentement et affichent la mention "K.O." dans une barre rouge à l'emplacement réservé au statut.
+                    </p>
+
+                    <p>
+                        Un combat Pokémon se termine lorsque tous les Pokémon d'un même camp sont K.O. Si l'équipe perdante est celle du joueur,
+                        il en résulte un hors-jeu, synonyme de pénalité et de retour au dernier point de contrôle enregistré (en général un
+                        Centre Pokémon). Sur l'écran de combat, les Pokémon inaptes sont symbolisés par des Poké Balls barrées ou obscurcies.
+                        En combat ordinaire, mettre K.O. le Pokémon adverse rapporte des points d'expérience aux Pokémon du joueur.
+                    </p>
+
+                    <h3>Cas particuliers</h3>
+
+                    <ul>
+                        <li>
+                            Un Pokémon touché par <a class="name-link" href="/pokedex/moves/empalkorne">Empal'Korne</a>,
+                            <a class="name-link" href="/pokedex/moves/guillotine">Guillotine</a>,
+                            <a class="name-link" href="/pokedex/moves/abime">Abîme</a> ou
+                            <a class="name-link" href="/pokedex/moves/glaciation">Glaciation</a> subit littéralement
+                            un K.O. en un coup. <a class="name-link" href="/pokedex/moves/lien-du-destin">Lien de Destin</a>
+                            provoque un double K.O. si la cible lance une attaque fatale à l'utilisateur, tandis qu'un Pokémon
+                            sous le coup de <a class="name-link" href="/pokedex/moves/requiem">Requiem</a> tombera K.O.
+                            s'il n'est pas retiré à temps.
+                        </li>
+
+                        <li>
+                            Les capacités <a class="name-link" href="/pokedex/moves/destruction">Destruction</a>,
+                            <a class="name-link" href="/pokedex/moves/explosion">Explosion</a>,
+                            <a class="name-link" href="/pokedex/moves/explo-brume">Explo-Brume</a>,
+                            <a class="name-link" href="/pokedex/moves/souvenir">Souvenir</a>,
+                            <a class="name-link" href="/pokedex/moves/voeu-soin">Vœu Soin</a> et
+                            <a class="name-link" href="/pokedex/moves/tout-ou-rien">Tout ou Rien</a> mettent l'utilisateur
+                            K.O. d'office. Les trois premières sont inopérantes en présence d'un détenteur du talent
+                            <a class="name-link" href="/pokedex/abilities/moiteur">Moiteur</a>.
+                        </li>
+
+                        <li>
+                            Un Pokémon qui sort K.O. d'un combat en ayant rempli les critères d'évolution se voit
+                            privé de métamorphose si le joueur finit hors-jeu dans le même temps.
+                        </li>
+                    </ul>
+
+                    <h3>
+                        Traitement
+                    </h3>
+
+                    <p>
+                        Lorsqu'un Pokémon est K.O., la solution la plus courante est de le faire soigner dans un Centre Pokémon.
+                        Il existe des méthodes alternatives telles que faire dormir le protagoniste, ou encore des PNJ remplissant
+                        la même fonction que l'infirmière Pokémon.
+                    </p>
+                    
+                    <p>
+                        Les objets de soin tels que les <a class="name-link" href="/pokedex/items/potion">Potions</a> et les
+                        correcteurs de statut ne fonctionnent pas sur un Pokémon K.O. à l'exception des quatres suivants :
+                    </p>
+
+                    <ul>
+                        <li>Le <a class="name-link" href="/pokedex/items/rappel">Rappel</a>, qui rend à un Pokémon la moitié de ses PV ;</li>
+                        <li>Le <a class="name-link" href="/pokedex/items/rappel-max">Rappel Max</a>, qui rend à un Pokémon la totalité de ses PV ;</li>
+                        <li>L'<a class="name-link" href="/pokedex/items/herbe-rappel">Herbe Rappel</a>, qui rend à un Pokémon la totalité de ses PV au prix de 15 à 20 points de bonheur ;</li>
+                    </ul>
+
+                    <p>
+                        Il arrive également qu'un Pokémon regagne un PV lorsqu'il monte de niveau au moyen d'un
+                        <a class="name-link" href="/pokedex/items/super-bonbon">Super Bonbon</a>.
+                    </p>
+
+                    <h3>Prévention</h3>
+                    <p>
+                        De nombreux K.O. peuvent être évités grâce à des mesures préventives, comme retirer du terrain un Pokémon
+                        auquel il reste peu de PV. Il arrive également qu'un Pokémon résiste à une attaque censée le mettre K.O.
+                        en gardant 1 PV dans les cas suivants :
+                    </p>
+
+                    <ul>
+                        <li>Un Pokémon qui vient d'utiliser <a class="name-link" href="/pokedex/moves/tenacite">Ténacité</a> ;</li>
+                        <li>Un Pokémon au maximum de ses PV tenant une <a class="name-link" href="/pokedex/items/ceinture-force">Ceinture Force</a> ;</li>
+                        <li>
+                            Un Pokémon au maximum de ses PV doté du talent <a class="name-link" href="/pokedex/abilities/fermete">Fermeté</a>
+                            qui protège aussi des OHKO (sauf si l'attaquant possède <a class="name-link" href="/pokedex/abilities/brise-moule">Brise Moule</a>) ;
+                        </li>
+                        <li>Un Pokémon tenant un <a class="name-link" href="/pokedex/items/bandeau">Bandeau</a> (dans 10% des cas);</li>
+                        <li>Un Pokémon ayant au moins 3 cœurs d'affection (dans 10 à 25% des cas).</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
