@@ -20,6 +20,7 @@ import { DocumentationComponent } from './pokedex/components/documentation/docum
 import { DocsIntroductionComponent } from './pokedex/components/docs-introduction/docs-introduction.component';
 import { DocsStatisticsComponent } from './pokedex/components/docs-statistics/docs-statistics.component';
 import { DocsStatusComponent } from './pokedex/components/docs-status/docs-status.component';
+import { DocsWeatherComponent } from './pokedex/components/docs-weather/docs-weather.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent, title: 'Accueil' },
@@ -35,6 +36,7 @@ export const routes: Routes = [
     { path: 'pokedex/docs/introduction', component: DocsIntroductionComponent, title: 'Pokédex - Introduction' },
     { path: 'pokedex/docs/statistics', component: DocsStatisticsComponent, title: 'Pokédex - Statistiques' },
     { path: 'pokedex/docs/fields', component: PokedexFieldComponent, title: 'Pokédex - Champ' },
+    { path: 'pokedex/docs/weather', component: DocsWeatherComponent, title: 'Pokédex - Météo' },
     { path: 'pokedex/docs/status', component: DocsStatusComponent, title: 'Pokédex - Statut' },
     { path: 'pokedex/docs/items', component: ItemsListComponent, title: 'Pokédex - Objets' },
     { path: 'pokedex/docs/items/:slug', component: ItemsDetailComponent, title: 'Pokédex - Objets Détail' },

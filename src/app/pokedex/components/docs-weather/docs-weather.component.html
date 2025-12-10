@@ -1,0 +1,363 @@
+<div class="dex-scene">
+  <div class="dex-card">
+    <div class="dex-header">
+      <div class="dex-button" aria-hidden="true"></div>
+      <div class="dex-lights" aria-hidden="true">
+        <span class="led led-red"></span>
+        <span class="led led-yellow"></span>
+        <span class="led led-green"></span>
+      </div>
+      <h1>Champ</h1>
+    </div>
+
+    <div class="dex-body">
+      <div class="dex-screen field-page" data-theme="terrain">
+        <nav class="quick-nav">
+          <a class="nav-chip nav-green"   routerLink="/pokedex/docs"            title="Retour">
+              🔙 <span>Retour</span>
+          </a>
+          <a class="nav-chip nav-blue"    routerLink="/pokedex/pokemons"      title="Liste des Pokémons">
+              🧬 <span>Pokémons</span>
+          </a>
+          <a class="nav-chip nav-red" routerLink="/pokedex/moves"  title="Liste des Capacités">
+              ⚡ <span>Capacités</span>
+          </a>
+          <a class="nav-chip nav-yellow"  routerLink="/pokedex/abilities"       title="Liste des Talents">
+              ✨ <span>Talents</span>
+          </a>
+        </nav>
+        <section class="content-card field-block overview-card">
+          <h2>Principe</h2>
+          <p>
+            La météo, bien que pouvant être visible hors combat dans certains cas, ne se ressent que dans
+            ces derniers en entraînant des malus et bonus, qui se ressentent en général en fonction des
+            <a class="name-link" [routerLink]="['/pokedex/types/normal']">types</a>. Par exemple, sous la
+            grêle, <a class="name-link" [routerLink]="['/pokedex/moves/blizzard']">Blizzard</a> atteint une
+            précision maximale, tandis que sous le soleil, <a class="name-link" [routerLink]="['/pokedex/moves/lance-soleil']">Lance-Soleil</a>
+            est lancée immédiatement, sans tour de chargement. Cela rend ces capacités nettement plus utilisables.
+          </p>
+
+          <p>
+            Une seule météo à la fois peut être active, excepté en cas de bug. Activer une météo remplace de
+            fait la météo active, et la météo précédemment active ne réapparait pas une fois l'actuelle dissipée.
+            Si plusieurs Pokémon dans un combat possèdent un talent influant la météo, c'est celui du Pokémon
+            le plus lent qui est activé.
+          </p>
+        </section>
+
+        <section class="content-card">
+            <h2>Principales météos</h2>
+        </section>
+
+        <section class="content-card field-block sun-card">
+          <h2>Soleil</h2>
+          <p>
+            Bien qu'il soit le moins connu hors-combat, le soleil est un incontournable, puisqu'il a de très
+            nombreux effets et est l'une des capacités ayant été le plus exploitées.
+          </p>
+
+          <p>
+            Il est activé grâce à la capacité <a class="name-link" [routerLink]="['/pokedex/moves/zenith']">Zénith</a>
+            ou le talent <a class="name-link" [routerLink]="['/pokedex/ability/secheresse']">Sécheresse</a>. L'objet
+            améliorant sa durée est la <a class="name-link" [routerLink]="['/pokedex/items/roche-chaude']">Roche Chaude</a>
+            (8 tours au lieu de 5).
+          </p>
+
+          <h3>Effets :</h3>
+          <ul class="effect-list">
+            <li>
+                Les capacités de type <a class="name-link" [routerLink]="['/pokedex/types/feu']">Feu</a> voient leur
+                puissance augmenter de 50%.
+            </li>
+
+            <li>Le type <a class="name-link" [routerLink]="['/pokedex/types/eau']">Eau</a>, lui, perd 50% d'efficacité.</li>
+
+            <li>
+                <a class="name-link" [routerLink]="['/pokedex/moves/lance-soleil']">Lance-Soleil</a> et
+                <a class="name-link" [routerLink]="['/pokedex/moves/lame-solaire']">Lame Solaire</a> n'ont
+                pas besoin de tour de chargement pour être utilisées.
+            </li>
+
+            <li>
+                <a class="name-link" [routerLink]="['/pokedex/moves/fatal-foudre']">Fatal-Foudre</a> et
+                <a class="name-link" [routerLink]="['/pokedex/moves/vent-violent']">Vent Violent</a> passent
+                à 50% de précision.
+            </li>
+
+            <li>
+                <a class="name-link" [routerLink]="['/pokedex/moves/aurore']">Aurore</a>,
+                <a class="name-link" [routerLink]="['/pokedex/moves/rayon-lune']">Rayon Lune</a> et
+                <a class="name-link" [routerLink]="['/pokedex/moves/synthese']">Synthèse</a> ne redonnent plus
+                la moitié mais 2/3 des <a class="name-link" [routerLink]="['/pokedex/docs/statistics']">PV</a> max.
+            </li>
+
+            <li>
+                <a class="name-link" [routerLink]="['/pokedex/abilities/recolte']">Récolte</a> fonctionne
+                obligatoirement à la fin de chaque tour.
+            </li>
+
+            <li>
+                <a class="name-link" [routerLink]="['/pokedex/moves/ballmeteo']">Ball'Météo</a> obtient le type
+                <a class="name-link" [routerLink]="['/pokedex/types/feu']">Feu</a> et passe à 100 de puissance.
+            </li>
+            
+            <li>
+                <a class="name-link" [routerLink]="['/pokedex/abilities/chlorophylle']">Chlorophylle</a>,
+                <a class="name-link" [routerLink]="['/pokedex/abilities/peau-seche']">Peau Sèche</a>,
+                <a class="name-link" [routerLink]="['/pokedex/abilities/feuille-garde']">Feuille Garde</a>,
+                <a class="name-link" [routerLink]="['/pokedex/abilities/force-soleil']">Force Soleil</a> et
+                <a class="name-link" [routerLink]="['/pokedex/abilities/recolte']">Récolte</a> s'activent.
+            </li>
+
+            <li>
+                <a class="name-link" [routerLink]="['/pokedex/moves/croissance']">Croissance</a> fait gagner
+                deux niveaux au lieu d'un seul à chaque statistique.
+            </li>
+          </ul>
+        </section>
+
+        <section class="content-card field-block rain-card">
+          <h2>Pluie</h2>
+          <p>
+            La pluie est l'opposée radicale du soleil, annulant à peu près ce que ce dernier peut créer.
+          </p>
+
+          <p>
+            Elle est activée grâce à la capacité <a class="name-link" [routerLink]="['/pokedex/moves/danse-pluie']">Danse Pluie</a>
+            ou le talent <a class="name-link" [routerLink]="['/pokedex/abilities/crachin']">Crachin</a>. L'objet améliorant sa durée
+            est la <a class="name-link" [routerLink]="['/pokedex/items/roche-humide']">Roche Humide</a> (8 tours au lieu de 5).
+          </p>
+
+          <h3>Effets :</h3>
+          <ul class="effect-list">
+            <li>
+                Les capacités de type <a class="name-link" [routerLink]="['/pokedex/types/eau']">Eau</a> voient leur
+                puissance augmenter de 50%.
+            </li>
+
+            <li>Le type <a class="name-link" [routerLink]="['/pokedex/types/eau']">Feu</a>, lui, perd 50% d'efficacité.</li>
+
+            <li><a class="name-link" [routerLink]="['/pokedex/moves/lance-soleil']">Lance-Soleil</a> passe à 60 de puissance.</li>
+
+            <li>
+                <a class="name-link" [routerLink]="['/pokedex/moves/fatal-foudre']">Fatal-Foudre</a> et
+                <a class="name-link" [routerLink]="['/pokedex/moves/vent-violent']">Vent Violent</a> ne ratent jamais.
+            </li>
+
+            <li>
+                <a class="name-link" [routerLink]="['/pokedex/moves/aurore']">Aurore</a>,
+                <a class="name-link" [routerLink]="['/pokedex/moves/rayon-lune']">Rayon Lune</a> et
+                <a class="name-link" [routerLink]="['/pokedex/moves/synthese']">Synthèse</a> ne redonnent plus
+                la moitié mais 1/4 des <a class="name-link" [routerLink]="['/pokedex/docs/statistics']">PV</a> max.
+            </li>
+
+            <li>
+                <a class="name-link" [routerLink]="['/pokedex/moves/ballmeteo']">Ball'Météo</a> obtient le type
+                <a class="name-link" [routerLink]="['/pokedex/types/eau']">Eau</a> et passe à 100 de puissance.
+            </li>
+            
+            <li>
+                <a class="name-link" [routerLink]="['/pokedex/abilities/glissade']">Glissade</a>,
+                <a class="name-link" [routerLink]="['/pokedex/abilities/peau-seche']">Peau Sèche</a>,
+                <a class="name-link" [routerLink]="['/pokedex/abilities/hydratation']">Hydratation</a> et
+                <a class="name-link" [routerLink]="['/pokedex/abilities/cuvette']">Cuvette</a> s'activent.
+            </li>
+          </ul>
+        </section>
+
+        <section class="content-card field-block sandstorm-card">
+          <h2>Tempête de sable</h2>
+          <p>
+            La tempête de sable est extrêment efficace dans son genre ; elle est l'un des deux climats offensifs existants,
+            et celui déclenchant le plus de capacités spéciales.
+          </p>
+
+          <p>
+            Elle est activée grâce à la capacité <a class="name-link" [routerLink]="['/pokedex/moves/tempete-de-sable']">Tempête de Sable</a>
+            ou le talent <a class="name-link" [routerLink]="['/pokedex/abilities/sable-volant']">Sable Volant</a>. L'objet améliorant sa durée
+            est la <a class="name-link" [routerLink]="['/pokedex/items/roche-lisse']">Roche Lisse</a> (8 tours au lieu de 5).
+          </p>
+
+          <h3>Effets :</h3>
+          <ul class="effect-list">
+            <li>
+                Les Pokémon n'étant pas de type <a class="name-link" [routerLink]="['/pokedex/types/roche']">Roche</a>,
+                <a class="name-link" [routerLink]="['/pokedex/types/sol']">Sol</a> ou
+                <a class="name-link" [routerLink]="['/pokedex/types/acier']">Acier</a> perdent 1/16 de leur PV
+                à chaque tour de jeu. Ceux ayant <a class="name-link" [routerLink]="['/pokedex/abilities/garde-magik']">Garde Magik</a>,
+                <a class="name-link" [routerLink]="['/pokedex/abilities/voile-sable']">Voile Sable</a>,
+                <a class="name-link" [routerLink]="['/pokedex/abilities/baigne-sable']">Baigne Sable</a>,
+                <a class="name-link" [routerLink]="['/pokedex/abilities/force-sable']">Force Sable</a> ou
+                <a class="name-link" [routerLink]="['/pokedex/abilities/envelocape']">Envelocape</a> ou les
+                Pokémon tenant les <a class="name-link" [routerLink]="['/pokedex/items/lunettes-filtre']">Lunettes Filtre</a>
+                ne sont pas affectés non plus.
+            </li>
+
+            <li>
+                La <a class="name-link" [routerLink]="['/pokedex/docs/statistics']">Défense Spéciale</a> des Pokémon
+                de type <a class="name-link" [routerLink]="['/pokedex/types/roche']">Roche</a> est augmentée de 50%
+                sous la tempête de sable.
+            </li>
+
+            <li><a class="name-link" [routerLink]="['/pokedex/moves/lance-soleil']">Lance-Soleil</a> passe à 60 de puissance.</li>
+
+            <li>
+                <a class="name-link" [routerLink]="['/pokedex/moves/aurore']">Aurore</a>,
+                <a class="name-link" [routerLink]="['/pokedex/moves/rayon-lune']">Rayon Lune</a> et
+                <a class="name-link" [routerLink]="['/pokedex/moves/synthese']">Synthèse</a> ne redonnent plus
+                la moitié mais 1/4 des <a class="name-link" [routerLink]="['/pokedex/docs/statistics']">PV</a> max.
+            </li>
+
+            <li>
+                <a class="name-link" [routerLink]="['/pokedex/moves/amasssable']">Amass'Sable</a> restaure désormais
+                2/3 des <a class="name-link" [routerLink]="['/pokedex/docs/statistics']">PV</a> max au lieu de la moitié.
+            </li>
+
+            <li>
+                Les talents <a class="name-link" [routerLink]="['/pokedex/abilities/baigne-sable']">Baigne Sable</a>,
+                <a class="name-link" [routerLink]="['/pokedex/abilities/force-sable']">Force Sable</a> et
+                <a class="name-link" [routerLink]="['/pokedex/abilities/voile-sable']">Voile Sable</a> s'activent.
+            </li>
+
+            <li>
+                <a class="name-link" [routerLink]="['/pokedex/moves/ballmeteo']">Ball'Météo</a> obtient le type
+                <a class="name-link" [routerLink]="['/pokedex/types/roche']">Roche</a> et passe à 100 de puissance.
+            </li>
+          </ul>
+        </section>
+
+        <section class="content-card field-block hail-card">
+          <h2>Grêle</h2>
+          <p>
+            La grêle peut être considérée comme l'un des moins dangereux : elle a moins d'effets que les autres.
+          </p>
+
+          <p>
+            Elle est activée grâce à la capacité <a class="name-link" [routerLink]="['/pokedex/moves/grele']">Grêle</a>
+            ou le talent <a class="name-link" [routerLink]="['/pokedex/ability/alerte-neige']">Alerte Neige</a>. L'objet
+            améliorant sa durée est la <a class="name-link" [routerLink]="['/pokedex/items/roche-glace']">Roche Glace</a>
+            (8 tours au lieu de 5).
+          </p>
+
+          <h3>Effets :</h3>
+          <ul class="effect-list">
+            <li>
+                Les Pokémon n'étant pas de type <a class="name-link" [routerLink]="['/pokedex/types/glace']">Glace</a>,
+                perdent 1/16 de leur PV à chaque tour de jeu. Ceux ayant
+                <a class="name-link" [routerLink]="['/pokedex/abilities/garde-magik']">Garde Magik</a>,
+                <a class="name-link" [routerLink]="['/pokedex/abilities/corps-gel']">Corps Gel</a>,
+                <a class="name-link" [routerLink]="['/pokedex/abilities/rideau-neige']">Rideau Neige</a>,
+                <a class="name-link" [routerLink]="['/pokedex/abilities/chasse-neige']">Chasse Neige</a> ou
+                <a class="name-link" [routerLink]="['/pokedex/abilities/envelocape']">Envelocape</a> ou les
+                Pokémon tenant les <a class="name-link" [routerLink]="['/pokedex/items/lunettes-filtre']">Lunettes Filtre</a>
+                ne sont pas affectés non plus.
+            </li>
+
+            <li><a class="name-link" [routerLink]="['/pokedex/moves/blizzard']">Blizzard</a> ne rate jamais.</li>
+
+            <li><a class="name-link" [routerLink]="['/pokedex/moves/lance-soleil']">Lance-Soleil</a> passe à 60 de puissance.</li>
+
+            <li>
+                <a class="name-link" [routerLink]="['/pokedex/moves/aurore']">Aurore</a>,
+                <a class="name-link" [routerLink]="['/pokedex/moves/rayon-lune']">Rayon Lune</a> et
+                <a class="name-link" [routerLink]="['/pokedex/moves/synthese']">Synthèse</a> ne redonnent plus
+                la moitié mais 1/4 des <a class="name-link" [routerLink]="['/pokedex/docs/statistics']">PV</a> max.
+            </li>
+
+            <li>
+                <a class="name-link" [routerLink]="['/pokedex/moves/ballmeteo']">Ball'Météo</a> obtient le type
+                <a class="name-link" [routerLink]="['/pokedex/types/glace']">Glace</a> et passe à 100 de puissance.
+            </li>
+
+            <li><a class="name-link" [routerLink]="['/pokedex/moves/voile-aurore']">Voile Aurore</a> peut être utilisée.</li>
+            
+            <li>
+                <a class="name-link" [routerLink]="['/pokedex/abilities/chasse-neige']">Chasse-Neige</a>,
+                <a class="name-link" [routerLink]="['/pokedex/abilities/corps-gel']">Corps Gel</a> et
+                <a class="name-link" [routerLink]="['/pokedex/abilities/rideau-neige']">Rideau Neige</a> s'activent.
+            </li>
+          </ul>
+        </section>
+
+        <section class="content-card">
+            <h2>Météos Particulières</h2>
+        </section>
+
+        <section class="content-card field-block fog-card">
+          <h2>Brouillard</h2>
+          <p>
+            Le brouillard est un climat à part : il n'a pas de capacité le provoquant. Au contraire, celle qui lui est attitrée,
+            <a class="name-link" [routerLink]="['/pokedex/moves/anti-brume']">Anti-Brume</a>, sert à le faire disparaître, tant
+            sur le terrain qu'en combat.
+          </p>
+
+          <h3>Effets :</h3>
+          <ul class="effect-list">
+            <li>
+                La <a class="name-link" [routerLink]="['/pokedex/docs/statistics']">Précision</a> des Pokémon est diminuée d'un niveau,
+                y compris pour les Pokémon ayant le talent <a class="name-link" [routerLink]="['/pokedex/abilities/annule-garde']">Annule Garde</a>
+            </li>
+
+            <li>
+                <a class="name-link" [routerLink]="['/pokedex/moves/aurore']">Aurore</a>,
+                <a class="name-link" [routerLink]="['/pokedex/moves/rayon-lune']">Rayon Lune</a> et
+                <a class="name-link" [routerLink]="['/pokedex/moves/synthese']">Synthèse</a> ne redonnent plus
+                la moitié mais 1/4 des <a class="name-link" [routerLink]="['/pokedex/docs/statistics']">PV</a> max.
+            </li>
+
+            <li>
+                <a class="name-link" [routerLink]="['/pokedex/moves/ballmeteo']">Ball'Météo</a> passe à 100 de puissance,
+                mais garde son type.
+            </li>
+          </ul>
+        </section>
+
+        <section class="content-card field-block snow-card">
+          <h2>Tempête de neige</h2>
+          <p>
+            La tempête de neige a été introduite pour proposer une alternative à la grêle.
+          </p>
+
+          <p>
+            Elle est activée grâce à la capacité <a class="name-link" [routerLink]="['/pokedex/moves/chute-de-neige']">Chute de Neige</a>
+            ou le talent <a class="name-link" [routerLink]="['/pokedex/ability/alerte-neige']">Alerte Neige</a>. L'objet
+            améliorant sa durée est la <a class="name-link" [routerLink]="['/pokedex/items/roche-glace']">Roche Glace</a>
+            (8 tours au lieu de 5).
+          </p>
+
+          <h3>Effets :</h3>
+          <ul class="effect-list">
+            <li>
+                La <a class="name-link" [routerLink]="['/pokedex/docs/statistics']">Défense</a> des Pokémon de
+                type <a class="name-link" [routerLink]="['/pokedex/types/glace']">Glace</a> est augmentée de 50%.
+            </li>
+
+            <li><a class="name-link" [routerLink]="['/pokedex/moves/blizzard']">Blizzard</a> ne rate jamais.</li>
+
+            <li><a class="name-link" [routerLink]="['/pokedex/moves/lance-soleil']">Lance-Soleil</a> passe à 60 de puissance.</li>
+
+            <li>
+                <a class="name-link" [routerLink]="['/pokedex/moves/aurore']">Aurore</a>,
+                <a class="name-link" [routerLink]="['/pokedex/moves/rayon-lune']">Rayon Lune</a> et
+                <a class="name-link" [routerLink]="['/pokedex/moves/synthese']">Synthèse</a> ne redonnent plus
+                la moitié mais 1/4 des <a class="name-link" [routerLink]="['/pokedex/docs/statistics']">PV</a> max.
+            </li>
+
+            <li>
+                <a class="name-link" [routerLink]="['/pokedex/moves/ballmeteo']">Ball'Météo</a> obtient le type
+                <a class="name-link" [routerLink]="['/pokedex/types/glace']">Glace</a> et passe à 100 de puissance.
+            </li>
+
+            <li><a class="name-link" [routerLink]="['/pokedex/moves/voile-aurore']">Voile Aurore</a> peut être utilisée.</li>
+            
+            <li>
+                <a class="name-link" [routerLink]="['/pokedex/abilities/chasse-neige']">Chasse-Neige</a>,
+                <a class="name-link" [routerLink]="['/pokedex/abilities/corps-gel']">Corps Gel</a> et
+                <a class="name-link" [routerLink]="['/pokedex/abilities/rideau-neige']">Rideau Neige</a> s'activent.
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>

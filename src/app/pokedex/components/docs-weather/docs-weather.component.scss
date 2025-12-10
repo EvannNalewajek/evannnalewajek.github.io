@@ -63,51 +63,45 @@ display: grid;
 }
 
 .overview-card {
-  --c1: #f1f1f1;
+  --c1: #ffffff;
   background: linear-gradient(180deg, color-mix(in oklab, var(--c1) 80%, white) 0%, var(--c1) 85%);
   color: #08363a;
   border: 2px solid color-mix(in oklab, var(--c1) 60%, black);
 }
 
-.electrik-card {
-  --c1: #f7d02c;
+.sun-card {
+  --c1: #ffb36c;
   background: linear-gradient(180deg, color-mix(in oklab, var(--c1) 75%, white) 0%, var(--c1) 85%);
-  color: #473a00;
   border: 2px solid color-mix(in oklab, var(--c1) 60%, black);
 }
 
-.brumeux-card {
-  --c1: #d685ad;
+.rain-card {
+  --c1: #67afd8;
   background: linear-gradient(180deg, color-mix(in oklab, var(--c1) 70%, white) 0%, var(--c1) 90%);
-  color: #4b1029;
   border: 2px solid color-mix(in oklab, var(--c1) 60%, black);
 }
 
-.herbu-card {
-  --c1: #7ac74c;
+.sandstorm-card {
+  --c1: #c2a080;
   background: linear-gradient(180deg, color-mix(in oklab, var(--c1) 70%, white) 0%, var(--c1) 90%);
-  color: #1e3a0d;
   border: 2px solid color-mix(in oklab, var(--c1) 60%, black);
 }
 
-.psy-card {
-  --c1: #a98ff3;
+.hail-card {
+  --c1: #8ff3e6;
   background: linear-gradient(180deg, color-mix(in oklab, var(--c1) 70%, white) 0%, var(--c1) 90%);
-  color: #1c064d;
   border: 2px solid color-mix(in oklab, var(--c1) 60%, black);
 }
 
-.myrmique-card {
-  --c1: #a6b91a;
+.fog-card {
+  --c1: #b8b8b8;
   background: linear-gradient(180deg, color-mix(in oklab, var(--c1) 75%, white) 0%, var(--c1) 90%);
-  color: #2f3405;
   border: 2px solid color-mix(in oklab, var(--c1) 60%, black);
 }
 
-.nauseabond-card {
-  --c1: #a33ea1;
+.snow-card {
+  --c1: #defafa;
   background: linear-gradient(180deg, color-mix(in oklab, var(--c1) 75%, white) 0%, var(--c1) 88%);
-  color: #310330;
   border: 2px solid color-mix(in oklab, var(--c1) 60%, black);
 }
 
