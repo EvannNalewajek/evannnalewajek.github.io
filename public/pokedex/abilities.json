@@ -15,8 +15,8 @@
     "slug": "crachin",
     "name": "Crachin",
     "battleEffectCondition": "Lorsque le Pokémon est envoyé",
-    "battleEffectShort": "Active le climat pluie lorsque le Pokémon est envoyé au combat.",
-    "battleEffectLong": "Lorsqu'un Pokémon doté de ce talent est envoyé au combat, il modifie immédiatement le climat, provoquant ainsi la pluie. La pluie dure 5 tours. Si le Pokémon tient une Roche Humide, l'effet dure 8 tours.",
+    "battleEffectShort": "Active le climat [[docs:weather|pluie]] lorsque le Pokémon est envoyé au combat.",
+    "battleEffectLong": "Lorsqu'un Pokémon doté de ce talent est envoyé au combat, il modifie immédiatement le climat, provoquant ainsi la [[docs:weather|pluie]]. La pluie dure 5 tours. Si le Pokémon tient une Roche Humide, l'effet dure 8 tours.",
     "fieldEffectCondition": "Aucun effet",
     "fieldEffectLong": "Crachin n'a aucun effet hors combat.",
     "description": "Le Pokémon invoque la pluie quand il entre au combat."
@@ -70,8 +70,8 @@
     "slug": "voile-sable",
     "name": "Voile Sable",
     "battleEffectCondition": "Selon le climat",
-    "battleEffectShort": "Sous ke climat tempête de sable, la [[docs:statistics|Esquive]] du Pokémon augmente de 20%, et il est immunisé contre les dégâts de la tempête de sable.",
-    "battleEffectLong": "En cas de tempête de sable, Voile Sable augmente l'[[docs:statistics|Esquive]] du Pokémon de 20%, et le rend immunisé contre les dégâts de la tempête de sable.",
+    "battleEffectShort": "Sous le climat [[docs:weather|tempête de sable]], la [[docs:statistics|Esquive]] du Pokémon augmente de 20%, et il est immunisé contre les dégâts de la tempête de sable.",
+    "battleEffectLong": "En cas de [[docs:weather|tempête de sable]], Voile Sable augmente l'[[docs:statistics|Esquive]] du Pokémon de 20%, et le rend immunisé contre les dégâts de la tempête de sable.",
     "fieldEffectCondition": "Avec effet",
     "fieldEffectLong": "Sur le terrain, lorsqu'un Pokémon avec Voile Sable est placé en tête d'équipe, et que le joueur se trouve dans un lieu avec une tempête de sable, les chances de rencontrer un Pokémon sauvage sont divisées par deux.",
     "description": "Augmente l'Esquive du Pokémon lors des tempêtes de sable."
@@ -136,8 +136,8 @@
     "slug": "glissade",
     "name": "Glissade",
     "battleEffectCondition": "Selon le climat",
-    "battleEffectShort": "Sous le climat pluie, la [[docs:statistics|Vitesse]] du Pokémon est doublée.",
-    "battleEffectLong": "Si le climat est pluvieux, le Pokémon doté de Glissade voit sa statistique de [[docs:statistics|Vitesse]] multipliée par deux.",
+    "battleEffectShort": "Sous le climat [[docs:weather|pluie]], la [[docs:statistics|Vitesse]] du Pokémon est doublée.",
+    "battleEffectLong": "Si le climat est [[docs:weather|pluvieux]], le Pokémon doté de Glissade voit sa statistique de [[docs:statistics|Vitesse]] multipliée par deux.",
     "fieldEffectCondition": "Aucun effet",
     "fieldEffectLong": "Glissade n'a aucun effet hors combat.",
     "description": "Augmente la Vitesse du Pokémon s'il pleut."
@@ -356,8 +356,8 @@
     "slug": "force-soleil",
     "name": "Force Soleil",
     "battleEffectCondition": "Selon le climat",
-    "battleEffectShort": "Sous le climat soleil, l'[[docs:statistics|Attaque Spéciale]] du Pokémon augmente de 50% mais il perd 1/8 de ses PV maximum à chaque fin de tour.",
-    "battleEffectLong": "Un Pokémon doté de ce talent voit sa statistique d'[[docs:statistics|Attaque Spéciale]] augmenter de 50% lorsque le climat est ensoleillé. En parallèle, il perd 1/8 de ses PV maximums à la fin de chaque tour.",
+    "battleEffectShort": "Sous le climat [[docs:weather|soleil]], l'[[docs:statistics|Attaque Spéciale]] du Pokémon augmente de 50% mais il perd 1/8 de ses PV maximum à chaque fin de tour.",
+    "battleEffectLong": "Un Pokémon doté de ce talent voit sa statistique d'[[docs:statistics|Attaque Spéciale]] augmenter de 50% lorsque le climat est [[docs:weather|ensoleillé]]. En parallèle, il perd 1/8 de ses PV maximums à la fin de chaque tour.",
     "fieldEffectCondition": "Aucun effet",
     "fieldEffectLong": "Force Soleil n'a aucun effet hors combat.",
     "description": "Quand le soleil brille, l'Attaque Spéciale du Pokémon augmente mais il perd des PV à chaque tour."
@@ -583,6 +583,83 @@
     "description": "Baisse la Vitesse de l'attaquant lorsque le Pokémon subit une attaque directe."
   },
   {
+    "id": 212,
+    "slug": "corrosion",
+    "name": "Corrosion",
+    "battleEffectCondition": "Lors de son attaque",
+    "battleEffectShort": "Ignore l'immunité à l'[[docs:status|empoisonnement]] des types [[type:Acier]] et [[type:Poison]].",
+    "battleEffectLong": "Un Pokémon doté de ce talent peut [[docs:status|empoisonner]] les Pokémon de type [[type:Acier]] et [[type:Poison]], alors qu'ils sont normalement immunisés à l'empoisonnement. L'[[item:orbe-toxique|Orbe Toxique]] peut également empoisonner un Pokémon avec ce talent.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Corrosion n'a aucun effet hors combat.",
+    "description": "Permet d'empoisonner les Pokémon de type Acier et Poison."
+  },
+  {
+    "id": 226,
+    "slug": "crea-elec",
+    "name": "Créa-Élec",
+    "battleEffectCondition": "Lorsque le Pokémon est envoyé",
+    "battleEffectShort": "Active un [[docs:fields|Champ Électrifié]] lorsque le Pokémon est envoyé au combat.",
+    "battleEffectLong": "En arrivant sur le terrain, un Pokémon doté de ce talent active un [[docs:fields|Champ Électrifié]] pour 5 tours (8 s'il tient un [[item:champduit|Champ'Duit]]).",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Créa-Élec n'a aucun effet hors combat.",
+    "description": "Le Pokémon crée un Champ Électrifié au moment où il entre au combat."
+  },
+  {
+    "id": 227,
+    "slug": "crea-psy",
+    "name": "Créa-Psy",
+    "battleEffectCondition": "Lorsque le Pokémon est envoyé",
+    "battleEffectShort": "Active un [[docs:fields|Champ Psychique]] lorsque le Pokémon est envoyé au combat.",
+    "battleEffectLong": "En arrivant sur le terrain, un Pokémon doté de ce talent active un [[docs:fields|Champ Psychique]] pour 5 tours (8 s'il tient un [[item:champduit|Champ'Duit]]).",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Créa-Psy n'a aucun effet hors combat.",
+    "description": "Le Pokémon crée un Champ Psychique au moment où il entre au combat."
+  },
+  {
+    "id": 228,
+    "slug": "crea-brume",
+    "name": "Créa-Brume",
+    "battleEffectCondition": "Lorsque le Pokémon est envoyé",
+    "battleEffectShort": "Active un [[docs:fields|Champ Brumeux]] lorsque le Pokémon est envoyé au combat.",
+    "battleEffectLong": "En arrivant sur le terrain, un Pokémon doté de ce talent active un [[docs:fields|Champ Brumeux]] pour 5 tours (8 s'il tient un [[item:champduit|Champ'Duit]]).",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Créa-Brume n'a aucun effet hors combat.",
+    "description": "Le Pokémon crée un Champ Brumeux au moment où il entre au combat."
+  },
+  {
+    "id": 229,
+    "slug": "crea-herbe",
+    "name": "Créa-Herbe",
+    "battleEffectCondition": "Lorsque le Pokémon est envoyé",
+    "battleEffectShort": "Active un [[docs:fields|Champ Herbu]] lorsque le Pokémon est envoyé au combat.",
+    "battleEffectLong": "En arrivant sur le terrain, un Pokémon doté de ce talent active un [[docs:fields|Champ Herbu]] pour 5 tours (8 s'il tient un [[item:champduit|Champ'Duit]]).",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Créa-Herbe n'a aucun effet hors combat.",
+    "description": "Le Pokémon crée un Champ Herbu au moment où il entre au combat."
+  },
+  {
+    "id": 299,
+    "slug": "crea-nectar",
+    "name": "Créa-Nectar",
+    "battleEffectCondition": "Lorsque le Pokémon est envoyé",
+    "battleEffectShort": "Active un [[docs:fields|Champ Myrmique]] lorsque le Pokémon est envoyé au combat.",
+    "battleEffectLong": "En arrivant sur le terrain, un Pokémon doté de ce talent active un [[docs:fields|Champ Myrmique]] pour 5 tours (8 s'il tient un [[item:champduit|Champ'Duit]]).",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Créa-Insecte n'a aucun effet hors combat.",
+    "description": "Le Pokémon crée un Champ Myrmique au moment où il entre au combat."
+  },
+  {
+    "id": 300,
+    "slug": "crea-miasme",
+    "name": "Créa-Miasme",
+    "battleEffectCondition": "Lorsque le Pokémon est envoyé",
+    "battleEffectShort": "Active un [[docs:fields|Champ Nauséabond]] lorsque le Pokémon est envoyé au combat.",
+    "battleEffectLong": "En arrivant sur le terrain, un Pokémon doté de ce talent active un [[docs:fields|Champ Nauséabond]] pour 5 tours (8 s'il tient un [[item:champduit|Champ'Duit]]).",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Créa-Poison n'a aucun effet hors combat.",
+    "description": "Le Pokémon crée un Champ Nauséabond au moment où il entre au combat."
+  },
+  {
     "id": 301,
     "slug": "maree-pourpre",
     "name": "Marée Pourpre",
@@ -675,8 +752,8 @@
     "slug": "eclipse-noire",
     "name": "Éclipse Noire",
     "battleEffectCondition": "Lorsque le Pokémon est envoyé",
-    "battleEffectShort": "Empêche les capacités de lumière et les effets de l'ensoleillement tant que le Pokémon est sur le terrain.",
-    "battleEffectLong": "Tant que le Pokémon est sur le terrain, annule toutes les capacités à base de Lumière ([[move:rayon-lune|Rayon Lune]], [[move:aurore|Aurore]], [[move:synthese|Synthèse]], [[move:flash|Flash]], ...). De plus, les effets du climat Ensoleillement sont annulés, bien que le climat soit toujours présent (Les attaques de type [[type:Feu]] et [[type:Eau]] font des dégâts normaux, les attaques en deux tours telles que [[move:lance-soleil|Lance-Soleil]] ne prendront plus qu'un tour, et les talents comme [[ability:chlorophylle|Chlorophylle]] ou [[ability:peau-seche|Peau Sèche]] ne feront plus effet).",
+    "battleEffectShort": "Empêche les capacités de lumière et les effets de l'[[docs:weather|ensoleillement]] tant que le Pokémon est sur le terrain.",
+    "battleEffectLong": "Tant que le Pokémon est sur le terrain, annule toutes les capacités à base de Lumière ([[move:rayon-lune|Rayon Lune]], [[move:aurore|Aurore]], [[move:synthese|Synthèse]], [[move:flash|Flash]], ...). De plus, les effets du climat [[docs:weather|ensoleillement]] sont annulés, bien que le climat soit toujours présent (Les attaques de type [[type:Feu]] et [[type:Eau]] font des dégâts normaux, les attaques en deux tours telles que [[move:lance-soleil|Lance-Soleil]] ne prendront plus qu'un tour, et les talents comme [[ability:chlorophylle|Chlorophylle]] ou [[ability:peau-seche|Peau Sèche]] ne feront plus effet).",
     "fieldEffectCondition": "Aucun effet",
     "fieldEffectLong": "Éclipse Noire n'a aucun effet hors combat.",
     "description": "Absorbe la lumière des capacités ainsi que les rayons du soleil."
@@ -687,7 +764,7 @@
     "name": "Deuil Blanc",
     "battleEffectCondition": "Lors d'une capacité adverse",
     "battleEffectShort": "Lorsque le Pokémon tombe K.O., inflige l'effet de [[move:malediction|Malédiction]] sur le Pokémon attaquant.",
-    "battleEffectLong": "Si ce Pokémon est mis K.O. par l'attaque d'un Pokémon adverse, ce dernier subit une [[move:malediction|Malédiction]]. Si le Pokémon tombe K.O. à cause d'un hazard, tel que la grêle, le [[docs:fields|champ Myrmique]] ou encore les [[move:piege-de-roc|Pièges de Roc]], les Pokémon adverse ne subiront pas de [[move:malediction|Malédiction]].",
+    "battleEffectLong": "Si ce Pokémon est mis K.O. par l'attaque d'un Pokémon adverse, ce dernier subit une [[move:malediction|Malédiction]]. Si le Pokémon tombe K.O. à cause d'un hazard, tel que la [[docs:weather|grêle]], le [[docs:fields|champ Myrmique]] ou encore les [[move:piege-de-roc|Pièges de Roc]], les Pokémon adverse ne subiront pas de [[move:malediction|Malédiction]].",
     "fieldEffectCondition": "Aucun effet",
     "fieldEffectLong": "Deuil Blanc n'a aucun effet hors combat.",
     "description": "Si le Pokémon est mis K.O. par une attaque, il inflige une malédiction à l'attaquant avant de s'évanouir."

@@ -2068,6 +2068,38 @@
     "targetPreset": "adjacent-one"
   },
   {
+    "id": 133,
+    "slug": "triple-pied",
+    "name": "Triple Pied",
+    "type": "Combat",
+    "category": "Physique",
+    "power": 10,
+    "accuracy": 90,
+    "pp": 10,
+    "priority": 0,
+    "effet": "Triple Pied inflige des dégâts et peut toucher la cible jusqu'à trois fois par utilisation. La puissance de base de l'attaque augmente à chaque coup successif : ainsi, les premier, deuxième et troisième coups ont respectivement une puissance de base de 10, 20 et 30. Si l'un des coups échoue, l'attaque s'arrête.",
+    "description": "Une série d'un à trois coups de pied distincts dont la puissance augmente à chaque fois que la capacité touche sa cible.",
+    "makesContact": true,
+    "critRate": 0,
+    "targetPreset": "adjacent-one"
+  },
+  {
+    "id": 134,
+    "slug": "larcin",
+    "name": "Larcin",
+    "type": "Ténèbres",
+    "category": "Physique",
+    "power": 60,
+    "accuracy": 100,
+    "pp": 25,
+    "priority": 0,
+    "effet": "Larcin inflige des dégâts à la cible et permet au lanceur de lui voler son objet tenu si lui-même ne tient rien. Larcin ne peut pas voler si ce dernier possède le talent [[ability:glue|Glue]]. Si un Pokémon sauvage utilise Larcin sur un Pokémon du joueur, l'objet de celui-ci n'est pas volé. Si un adversaire vole l'objet d'un Pokémon du joueur, cet objet est restitué à la fin du combat.",
+    "description": "Le lanceur attaque la cible et vole son objet. Le lanceur ne peut rien voler s'il tient déjà un objet.",
+    "makesContact": true,
+    "critRate": 0,
+    "targetPreset": "adjacent-one"
+  },
+  {
     "id": 174,
     "slug": "malediction",
     "name": "Malédiction",

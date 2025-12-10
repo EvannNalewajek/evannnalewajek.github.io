@@ -17,18 +17,16 @@
           <nav class="dex-toolbar top">
             <div class="toolbar-inner">
               <span class="left">
-                <a routerLink="/pokedex/abilities" class="nav-chip">← Retour à la liste</a>
+                @if (prev(); as p) {
+                  <a [routerLink]="['/pokedex/abilities', p.slug]" class="nav-chip">← Préc.</a>
+                }
               </span>
               <span class="center">
-                <strong>#{{ a.id | number:'2.0-0' }}</strong>
-                 {{ a.name }}
+                <a routerLink="/pokedex/abilities">Retour à la liste</a>
               </span>
               <span class="right">
-                @if (prev(); as p) {
-                  <a [routerLink]="['/pokedex/abilities', p.slug]" class="nav-chip">Préc.</a>
-                }
                 @if (next(); as n) {
-                  <a [routerLink]="['/pokedex/abilities', n.slug]" class="nav-chip">Suiv.</a>
+                  <a [routerLink]="['/pokedex/abilities', n.slug]" class="nav-chip">Suiv. →</a>
                 }
               </span>
             </div>

@@ -204,7 +204,7 @@
 .dl-grid dt { font-weight:800; color:#1f1f1f; }
 .dl-grid dd { margin:0; }
 .sprite-box { text-align:center; }
-.sprite { width:64px; height:64px; image-rendering: pixelated; }
+.sprite { width:64px; height:64px; }
 
 .detail {
   --t1: #a8a77a;
@@ -320,7 +320,7 @@
 }
 
 .nav-chip .mini-sprite{
-  width: 28px; height: 28px; image-rendering: pixelated; display:block;
+  width: 28px; height: 28px; display:block;
 }
 
 .nav-chip .num{ opacity:.7; font-weight:900; }

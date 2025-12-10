@@ -82,39 +82,39 @@
       ]
     },
     {
-      "species": [36, 37],
+      "species": [45, 46],
       "links": [
-        { "from": 36, "to": 37, "trigger": { "kind": "level", "level": 40 } }
+        { "from": 45, "to": 46, "trigger": { "kind": "level", "level": 40 } }
       ]
     },
     {
-      "species": [38, 39],
+      "species": [47, 48],
       "links": [
-        { "from": 38, "to": 39, "trigger": { "kind": "level", "level": 40 } }
+        { "from": 47, "to": 48, "trigger": { "kind": "level", "level": 40 } }
       ]
     },
     {
-      "species": [41, 42],
+      "species": [50, 51],
       "links": [
-        { "from": 41, "to": 42, "trigger": { "kind": "level", "level": 30 } }
+        { "from": 50, "to": 51, "trigger": { "kind": "level", "level": 30 } }
       ]
     },
     {
-      "species": [44, 45],
+      "species": [53, 54],
       "links": [
-        { "from": 44, "to": 45, "trigger": { "kind": "friendship" } }
+        { "from": 53, "to": 54, "trigger": { "kind": "friendship" } }
       ]
     },
     {
-      "species": [46, 47],
+      "species": [55, 56],
       "links": [
-        { "from": 46, "to": 47, "trigger": { "kind": "level", "level": 34 } }
+        { "from": 55, "to": 56, "trigger": { "kind": "level", "level": 34 } }
       ]
     },
     {
-      "species": [48, 49],
+      "species": [57, 58],
       "links": [
-        { "from": 48, "to": 49, "trigger": { "kind": "level", "level": 21 } }
+        { "from": 57, "to": 58, "trigger": { "kind": "level", "level": 21 } }
       ]
     }
   ]

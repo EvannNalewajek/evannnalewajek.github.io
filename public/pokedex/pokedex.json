@@ -12,8 +12,8 @@
     "genderRatio": { "male": 87.5, "female": 12.5 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/pokemon/001_sprite.png",
-      "artwork": "pokedex/img/pokemon/001_artwork.png"
+      "sprite": "pokedex/img/pokemon/manimous_sprite.png",
+      "artwork": "pokedex/img/pokemon/manimous_artwork.png"
     },
     "baseStats": { "hp": 60, "atk": 53, "def": 64, "spa": 40, "spd": 51, "spe": 42 },
     "description": "Il se recroqueville souvent au moindre bruit pour se protéger. Ses écailles sont souples et couvertes de chlorophylle, capable de capter la lumière pour le nourrir.",
@@ -35,8 +35,8 @@
     "genderRatio": { "male": 87.5, "female": 12.5 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/pokemon/002_sprite.png",
-      "artwork": "pokedex/img/pokemon/002_artwork.png"
+      "sprite": "pokedex/img/pokemon/florolin_sprite.png",
+      "artwork": "pokedex/img/pokemon/florolin_artwork.png"
     },
     "baseStats": { "hp": 84, "atk": 77, "def": 86, "spa": 52, "spd": 61, "spe": 50 },
     "description": "Ses écailles se sont durcies en feuilles denses et coupantes. Les botanistes admirent sa capacité à purifier les sols autour de lui, malgré sa tendance à préférer fuir les régions polluées.",
@@ -58,8 +58,8 @@
     "genderRatio": { "male": 87.5, "female": 12.5 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/pokemon/003_sprite.png",
-      "artwork": "pokedex/img/pokemon/003_artwork.png"
+      "sprite": "pokedex/img/pokemon/ferrangolin_sprite.png",
+      "artwork": "pokedex/img/pokemon/ferrangolin_artwork.png"
     },
     "baseStats": { "hp": 109, "atk": 107, "def": 111, "spa": 62, "spd": 86, "spe": 55 },
     "description": "On raconte que son métal pousse comme une plante et qu'il se régénère lentement. Il frappe le sol de sa queue pour défendre les forêts qu'il protège.",
@@ -81,8 +81,8 @@
     "genderRatio": { "male": 87.5, "female": 12.5 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/pokemon/004_sprite.png",
-      "artwork": "pokedex/img/pokemon/004_artwork.png"
+      "sprite": "pokedex/img/pokemon/fourson_sprite.png",
+      "artwork": "pokedex/img/pokemon/fourson_artwork.png"
     },
     "baseStats": { "hp": 65, "atk": 58, "def": 48, "spa": 40, "spd": 49, "spe": 50 },
     "description": "Il ne se sent en confiance que lorsqu'il est blotti contre les personnes qu'il aime. Sa fourrure dégage une chaleur douce, ce qui en fait un excellent compagnon de câlin.",
@@ -104,8 +104,8 @@
     "genderRatio": { "male": 87.5, "female": 12.5 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/pokemon/005_sprite.png",
-      "artwork": "pokedex/img/pokemon/005_artwork.png"
+      "sprite": "pokedex/img/pokemon/banquignis_sprite.png",
+      "artwork": "pokedex/img/pokemon/banquignis_artwork.png"
     },
     "baseStats": { "hp": 88, "atk": 88, "def": 60, "spa": 50, "spd": 59, "spe": 65 },
     "description": "On pense que ses caractéristiques étranges sont dû à une adaptation brutale face à son environnement. Il mange énormément pour compenser l'énergie qu'il brûle en permanence pour conserver sa chaleur.",
@@ -127,8 +127,8 @@
     "genderRatio": { "male": 87.5, "female": 12.5 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/pokemon/006_sprite.png",
-      "artwork": "pokedex/img/pokemon/006_artwork.png"
+      "sprite": "pokedex/img/pokemon/pyroarctos_sprite.png",
+      "artwork": "pokedex/img/pokemon/pyroarctos_artwork.png"
     },
     "baseStats": { "hp": 108, "atk": 117, "def": 70, "spa": 55, "spd": 70, "spe": 110 },
     "description": "La température de son corps peut passer brutalement d'un froid glaciale à un feu brûlant selon son humeur. Dans les régions polaires, son rugissement est confondu avec celui des glaciers qui se brisent.",
@@ -150,8 +150,8 @@
     "genderRatio": { "male": 87.5, "female": 12.5 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/pokemon/007_sprite.png",
-      "artwork": "pokedex/img/pokemon/007_artwork.png"
+      "sprite": "pokedex/img/pokemon/solotl_sprite.png",
+      "artwork": "pokedex/img/pokemon/solotl_artwork.png"
     },
     "baseStats": { "hp": 50, "atk": 42, "def": 55, "spa": 63, "spd": 55, "spe": 45 },
     "description": "Des étranges vagues d'eau flotte en permanence autour de sa queue. Il suffit de l'emmener près d'une rivière ou d'un lac pour le rendre heureux : il adore jouer dans l'eau et explorer les fonds marins.",
@@ -173,8 +173,8 @@
     "genderRatio": { "male": 87.5, "female": 12.5 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/pokemon/008_sprite.png",
-      "artwork": "pokedex/img/pokemon/008_artwork.png"
+      "sprite": "pokedex/img/pokemon/siltotl_sprite.png",
+      "artwork": "pokedex/img/pokemon/siltotl_artwork.png"
     },
     "baseStats": { "hp": 70, "atk": 55, "def": 67, "spa": 85, "spd": 68, "spe": 65 },
     "description": "Pour fuir ses prédateurs, il se cache sous la terre ou la boue. Il est même capable de changer légèrement sa couleur afin de se camoufler.",
@@ -196,8 +196,8 @@
     "genderRatio": { "male": 87.5, "female": 12.5 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/pokemon/009_sprite.png",
-      "artwork": "pokedex/img/pokemon/009_artwork.png"
+      "sprite": "pokedex/img/pokemon/aridotl_sprite.png",
+      "artwork": "pokedex/img/pokemon/aridotl_artwork.png"
     },
     "baseStats": { "hp": 83, "atk": 65, "def": 85, "spa": 115, "spd": 80, "spe": 102 },
     "description": "Sa présence dans la nature est signe que l'habitat est sain et pure. Il est capable de voyager pendant des mois dans le but de trouver l'environnement parfait.",
@@ -219,8 +219,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 255,
     "images": {
-      "sprite": "pokedex/img/pokemon/010_sprite.png",
-      "artwork": "pokedex/img/pokemon/010_artwork.png"
+      "sprite": "pokedex/img/pokemon/scavalin_sprite.png",
+      "artwork": "pokedex/img/pokemon/scavalin_artwork.png"
     },
     "baseStats": { "hp": 45, "atk": 55, "def": 50, "spa": 30, "spd": 40, "spe": 70 },
     "description": "Il collectionne les morceaux de métal qu'il trouve dans les ruines. Il s'en sert pour se protéger, mais aussi pour impressionner ses congénères.",
@@ -243,8 +243,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 255,
     "images": {
-      "sprite": "pokedex/img/pokemon/011_def_sprite.png",
-      "artwork": "pokedex/img/pokemon/011_def_artwork.png"
+      "sprite": "pokedex/img/pokemon/feraccoon_def_sprite.png",
+      "artwork": "pokedex/img/pokemon/feraccoon_def_artwork.png"
     },
     "baseStats": { "hp": 70, "atk": 90, "def": 110, "spa": 45, "spd": 80, "spe": 65 },
     "description": "Il vit dans les décharges et entrepôts abandonnés. Son intelligence lui a permis de manipuler les débris métalliques qu'il trouve pour s'en faire des outils et armures utiles, en imitant les humains.",
@@ -267,8 +267,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 255,
     "images": {
-      "sprite": "pokedex/img/pokemon/011_atk_sprite.png",
-      "artwork": "pokedex/img/pokemon/011_atk_artwork.png"
+      "sprite": "pokedex/img/pokemon/feraccoon_atk_sprite.png",
+      "artwork": "pokedex/img/pokemon/feraccoon_atk_artwork.png"
     },
     "baseStats": { "hp": 70, "atk": 105, "def": 70, "spa": 45, "spd": 70, "spe": 100 },
     "description": "Il vit dans les décharges et entrepôts abandonnés. Son intelligence lui a permis de manipuler les débris métalliques qu'il trouve pour s'en faire des outils et armures utiles, en imitant les humains.",
@@ -353,7 +353,7 @@
     "types": ["Insecte", "Fée"],
     "category": "Reine de colonie",
     "abilities": ["[[ability:essaim|Essaim]]"],
-    "hiddenAbility": "[[ability:crea-insecte|Créa-Insecte]]",
+    "hiddenAbility": "[[ability:crea-nectar|Créa-Nectar]]",
     "height_m": 0.9,
     "weight_kg": 14.1,
     "genderRatio": { "male": 0, "female": 100 },
@@ -701,7 +701,7 @@
     "types": ["Poison", "Eau"],
     "category": "Loutre visqueuse",
     "abilities": ["[[ability:glissade|Glissade]]", "[[ability:poisseux|Poisseux]]"],
-    "hiddenAbility": "[[ability:crea-poison|Créa-Poison]]",
+    "hiddenAbility": "[[ability:crea-miasme|Créa-Miasme]]",
     "height_m": 1.6,
     "weight_kg": 38.5,
     "genderRatio": { "male": 50.0, "female": 50.0 },
@@ -719,7 +719,7 @@
   },
   {
     "id": 31,
-    "slug": "bronz",
+    "slug": "bronzillon",
     "name": "Bronzillon",
     "types": ["Vol", "Normal"],
     "category": "Becoloré",
@@ -837,6 +837,213 @@
   },
   {
     "id": 34,
+    "slug": "evoli",
+    "name": "Evoli",
+    "types": ["Normal"],
+    "category": "Évolutif",
+    "abilities": ["[[ability:fuite|Fuite]]", "[[ability:adaptabilite|Adaptabilité]]"],
+    "hiddenAbility": "[[ability:anticipation|Anticipation]]",
+    "height_m": 0.3,
+    "weight_kg": 6.5,
+    "genderRatio": { "male": 87.5, "female": 12.5 },
+    "captureRate": 45,
+    "images": {
+      "sprite": "pokedex/img/pokemon/evoli_sprite.png",
+      "artwork": "pokedex/img/pokemon/evoli_artwork.png"
+    },
+    "baseStats": { "hp": 55, "atk": 55, "def": 50, "spa": 45, "spd": 65, "spe": 55 },
+    "description": "Un Pokémon rare qui change d'apparence et d'aptitudes au moment d'évoluer en fonction du milieu hostile auquel il veut s'adapter.",
+    "etymology": {
+      "évolution": "caractérise sa capacité à pouvoir évoluer en plusieurs formes.",
+      "lithe": "pierre en grec ancien"
+    }
+  },
+  {
+    "id": 35,
+    "slug": "aquali",
+    "name": "Aquali",
+    "types": ["Eau"],
+    "category": "Bulleur",
+    "abilities": ["[[ability:absorbe-eau|Absorbe-Eau]]"],
+    "hiddenAbility": "[[ability:hydratation|Hydratation]]",
+    "height_m": 1.0,
+    "weight_kg": 29.0,
+    "genderRatio": { "male": 87.5, "female": 12.5 },
+    "captureRate": 45,
+    "images": {
+      "sprite": "pokedex/img/pokemon/aquali_sprite.png",
+      "artwork": "pokedex/img/pokemon/aquali_artwork.png"
+    },
+    "baseStats": { "hp": 130, "atk": 65, "def": 60, "spa": 110, "spd": 95, "spe": 65 },
+    "description": "Il vit au bord de l'eau. Sa queue semblable à celle d'un poisson lui donne l'apparence d'une sirène.",
+    "etymology": {
+      "aqua": "eau en latin",
+      "lithe": "pierre en grec ancien"
+    }
+  },
+  {
+    "id": 36,
+    "slug": "voltali",
+    "name": "voltali",
+    "types": ["Électrik"],
+    "category": "Rugissant",
+    "abilities": ["[[ability:brise-moule|Brise Moule]]"],
+    "hiddenAbility": "[[ability:peau-dure|Peau Dure]]",
+    "height_m": 1.0,
+    "weight_kg": 28.0,
+    "genderRatio": { "male": 87.5, "female": 12.5 },
+    "captureRate": 45,
+    "images": {
+      "sprite": "pokedex/img/pokemon/voltali_sprite.png",
+      "artwork": "pokedex/img/pokemon/voltali_artwork.png"
+    },
+    "baseStats": { "hp": 65, "atk": 130, "def": 95, "spa": 65, "spd": 60, "spe": 110 },
+    "description": "Son corps est couvert d'écailles cristallines d'une grande beauté. Jadis braconné pour ces gemmes rares, son espèce a presque disparu. On pensait l'espèce éteinte jusqu'à ce que quelques individus soient observés dans des vallées reculées.",
+    "etymology": {
+      "draco": "dragon en latin",
+      "lithe": "pierre en grec ancien"
+    }
+  },
+  {
+    "id": 37,
+    "slug": "pyroli",
+    "name": "Pyroli",
+    "types": ["Feu"],
+    "category": "Rugissant",
+    "abilities": ["[[ability:brise-moule|Brise Moule]]"],
+    "hiddenAbility": "[[ability:peau-dure|Peau Dure]]",
+    "height_m": 1.0,
+    "weight_kg": 28.0,
+    "genderRatio": { "male": 87.5, "female": 12.5 },
+    "captureRate": 45,
+    "images": {
+      "sprite": "pokedex/img/pokemon/pyroli_sprite.png",
+      "artwork": "pokedex/img/pokemon/pyroli_artwork.png"
+    },
+    "baseStats": { "hp": 65, "atk": 130, "def": 95, "spa": 65, "spd": 60, "spe": 110 },
+    "description": "Son corps est couvert d'écailles cristallines d'une grande beauté. Jadis braconné pour ces gemmes rares, son espèce a presque disparu. On pensait l'espèce éteinte jusqu'à ce que quelques individus soient observés dans des vallées reculées.",
+    "etymology": {
+      "draco": "dragon en latin",
+      "lithe": "pierre en grec ancien"
+    }
+  },
+  {
+    "id": 38,
+    "slug": "mentali",
+    "name": "Mentali",
+    "types": ["Psy"],
+    "category": "Rugissant",
+    "abilities": ["[[ability:brise-moule|Brise Moule]]"],
+    "hiddenAbility": "[[ability:peau-dure|Peau Dure]]",
+    "height_m": 1.0,
+    "weight_kg": 28.0,
+    "genderRatio": { "male": 87.5, "female": 12.5 },
+    "captureRate": 45,
+    "images": {
+      "sprite": "pokedex/img/pokemon/mentali_sprite.png",
+      "artwork": "pokedex/img/pokemon/mentali_artwork.png"
+    },
+    "baseStats": { "hp": 65, "atk": 130, "def": 95, "spa": 65, "spd": 60, "spe": 110 },
+    "description": "Son corps est couvert d'écailles cristallines d'une grande beauté. Jadis braconné pour ces gemmes rares, son espèce a presque disparu. On pensait l'espèce éteinte jusqu'à ce que quelques individus soient observés dans des vallées reculées.",
+    "etymology": {
+      "draco": "dragon en latin",
+      "lithe": "pierre en grec ancien"
+    }
+  },
+  {
+    "id": 39,
+    "slug": "noctali",
+    "name": "Noctali",
+    "types": ["Ténèbres"],
+    "category": "Rugissant",
+    "abilities": ["[[ability:brise-moule|Brise Moule]]"],
+    "hiddenAbility": "[[ability:peau-dure|Peau Dure]]",
+    "height_m": 1.0,
+    "weight_kg": 28.0,
+    "genderRatio": { "male": 87.5, "female": 12.5 },
+    "captureRate": 45,
+    "images": {
+      "sprite": "pokedex/img/pokemon/noctali_sprite.png",
+      "artwork": "pokedex/img/pokemon/noctali_artwork.png"
+    },
+    "baseStats": { "hp": 65, "atk": 130, "def": 95, "spa": 65, "spd": 60, "spe": 110 },
+    "description": "Son corps est couvert d'écailles cristallines d'une grande beauté. Jadis braconné pour ces gemmes rares, son espèce a presque disparu. On pensait l'espèce éteinte jusqu'à ce que quelques individus soient observés dans des vallées reculées.",
+    "etymology": {
+      "draco": "dragon en latin",
+      "lithe": "pierre en grec ancien"
+    }
+  },
+  {
+    "id": 40,
+    "slug": "phyllali",
+    "name": "Phyllali",
+    "types": ["Plante"],
+    "category": "Rugissant",
+    "abilities": ["[[ability:brise-moule|Brise Moule]]"],
+    "hiddenAbility": "[[ability:peau-dure|Peau Dure]]",
+    "height_m": 1.0,
+    "weight_kg": 28.0,
+    "genderRatio": { "male": 87.5, "female": 12.5 },
+    "captureRate": 45,
+    "images": {
+      "sprite": "pokedex/img/pokemon/phyllali_sprite.png",
+      "artwork": "pokedex/img/pokemon/phyllali_artwork.png"
+    },
+    "baseStats": { "hp": 65, "atk": 130, "def": 95, "spa": 65, "spd": 60, "spe": 110 },
+    "description": "Son corps est couvert d'écailles cristallines d'une grande beauté. Jadis braconné pour ces gemmes rares, son espèce a presque disparu. On pensait l'espèce éteinte jusqu'à ce que quelques individus soient observés dans des vallées reculées.",
+    "etymology": {
+      "draco": "dragon en latin",
+      "lithe": "pierre en grec ancien"
+    }
+  },
+  {
+    "id": 41,
+    "slug": "givrali",
+    "name": "Givrali",
+    "types": ["Glace"],
+    "category": "Rugissant",
+    "abilities": ["[[ability:brise-moule|Brise Moule]]"],
+    "hiddenAbility": "[[ability:peau-dure|Peau Dure]]",
+    "height_m": 1.0,
+    "weight_kg": 28.0,
+    "genderRatio": { "male": 87.5, "female": 12.5 },
+    "captureRate": 45,
+    "images": {
+      "sprite": "pokedex/img/pokemon/givrali_sprite.png",
+      "artwork": "pokedex/img/pokemon/givrali_artwork.png"
+    },
+    "baseStats": { "hp": 65, "atk": 130, "def": 95, "spa": 65, "spd": 60, "spe": 110 },
+    "description": "Son corps est couvert d'écailles cristallines d'une grande beauté. Jadis braconné pour ces gemmes rares, son espèce a presque disparu. On pensait l'espèce éteinte jusqu'à ce que quelques individus soient observés dans des vallées reculées.",
+    "etymology": {
+      "draco": "dragon en latin",
+      "lithe": "pierre en grec ancien"
+    }
+  },
+  {
+    "id": 42,
+    "slug": "nymphali",
+    "name": "Nymphali",
+    "types": ["Fée"],
+    "category": "Rugissant",
+    "abilities": ["[[ability:brise-moule|Brise Moule]]"],
+    "hiddenAbility": "[[ability:peau-dure|Peau Dure]]",
+    "height_m": 1.0,
+    "weight_kg": 28.0,
+    "genderRatio": { "male": 87.5, "female": 12.5 },
+    "captureRate": 45,
+    "images": {
+      "sprite": "pokedex/img/pokemon/nymphali_sprite.png",
+      "artwork": "pokedex/img/pokemon/nymphali_artwork.png"
+    },
+    "baseStats": { "hp": 65, "atk": 130, "def": 95, "spa": 65, "spd": 60, "spe": 110 },
+    "description": "Son corps est couvert d'écailles cristallines d'une grande beauté. Jadis braconné pour ces gemmes rares, son espèce a presque disparu. On pensait l'espèce éteinte jusqu'à ce que quelques individus soient observés dans des vallées reculées.",
+    "etymology": {
+      "draco": "dragon en latin",
+      "lithe": "pierre en grec ancien"
+    }
+  },
+  {
+    "id": 43,
     "slug": "dracali",
     "name": "Dracali",
     "types": ["Dragon"],
@@ -848,8 +1055,8 @@
     "genderRatio": { "male": 87.5, "female": 12.5 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/pokemon/024_sprite.png",
-      "artwork": "pokedex/img/pokemon/024_artwork.png"
+      "sprite": "pokedex/img/pokemon/dracali_sprite.png",
+      "artwork": "pokedex/img/pokemon/dracali_artwork.png"
     },
     "baseStats": { "hp": 65, "atk": 130, "def": 95, "spa": 65, "spd": 60, "spe": 110 },
     "description": "Son corps est couvert d'écailles cristallines d'une grande beauté. Jadis braconné pour ces gemmes rares, son espèce a presque disparu. On pensait l'espèce éteinte jusqu'à ce que quelques individus soient observés dans des vallées reculées.",
@@ -859,7 +1066,7 @@
     }
   },
   {
-    "id": 35,
+    "id": 44,
     "slug": "vesperine",
     "name": "Vespérine",
     "types": ["Psy", "Poison"],
@@ -882,7 +1089,7 @@
     }
   },
   {
-    "id": 36,
+    "id": 45,
     "slug": "albydro",
     "name": "Albydro",
     "types": ["Roche", "Eau"],
@@ -905,7 +1112,7 @@
     }
   },
   {
-    "id": 37,
+    "id": 46,
     "slug": "Spinadra",
     "name": "Spinadra",
     "types": ["Roche", "Eau"],
@@ -928,7 +1135,7 @@
     }
   },
   {
-    "id": 38,
+    "id": 47,
     "slug": "vibranite",
     "name": "Vibranite",
     "types": ["Roche", "Normal"],
@@ -951,7 +1158,7 @@
     }
   },
   {
-    "id": 39,
+    "id": 48,
     "slug": "Symphodon",
     "name": "Symphodon",
     "types": ["Roche", "Normal"],
@@ -974,7 +1181,7 @@
     }
   },
   {
-    "id": 40,
+    "id": 49,
     "slug": "sulapagos",
     "name": "Sulapagos",
     "types": ["Eau", "Vol"],
@@ -997,7 +1204,7 @@
     }
   },
   {
-    "id": 41,
+    "id": 50,
     "slug": "becoquin",
     "name": "Becoquin",
     "types": ["Vol"],
@@ -1020,7 +1227,7 @@
     }
   },
   {
-    "id": 42,
+    "id": 51,
     "slug": "becosto",
     "name": "Becosto",
     "types": ["Vol", "Combat"],
@@ -1043,7 +1250,7 @@
     }
   },
   {
-    "id": 43,
+    "id": 52,
     "slug": "sitanor",
     "name": "Sitanor",
     "types": ["Dragon", "Feu"],
@@ -1066,7 +1273,7 @@
     }
   },
   {
-    "id": 44,
+    "id": 53,
     "slug": "sironille",
     "name": "Sironille",
     "types": ["Insecte", "Fée"],
@@ -1089,7 +1296,7 @@
     }
   },
   {
-    "id": 45,
+    "id": 54,
     "slug": "rubilune",
     "name": "Rubilune",
     "types": ["Insecte", "Fée"],
@@ -1112,7 +1319,7 @@
     }
   },
   {
-    "id": 46,
+    "id": 55,
     "slug": "bovalpin",
     "name": "Bovalpin",
     "types": ["Normal"],
@@ -1135,7 +1342,7 @@
     }
   },
   {
-    "id": 47,
+    "id": 56,
     "slug": "ecorlande",
     "name": "Écorlande",
     "types": ["Normal", "Sol"],
@@ -1159,7 +1366,7 @@
     }
   },
   {
-    "id": 48,
+    "id": 57,
     "slug": "pichidillo",
     "name": "Pichidillo",
     "types": ["Sol", "Fée"],
@@ -1182,7 +1389,7 @@
     }
   },
   {
-    "id": 49,
+    "id": 58,
     "slug": "charmadillo",
     "name": "Charmadillo",
     "types": ["Sol", "Fée"],
