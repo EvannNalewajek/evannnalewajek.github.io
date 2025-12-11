@@ -884,23 +884,23 @@
   {
     "id": 36,
     "slug": "voltali",
-    "name": "voltali",
+    "name": "Voltali",
     "types": ["Électrik"],
-    "category": "Rugissant",
-    "abilities": ["[[ability:brise-moule|Brise Moule]]"],
-    "hiddenAbility": "[[ability:peau-dure|Peau Dure]]",
-    "height_m": 1.0,
-    "weight_kg": 28.0,
+    "category": "Orage",
+    "abilities": ["[[ability:absorbe-volt|Absorbe-Volt]]"],
+    "hiddenAbility": "[[ability:pied-veloce|Pied Véloce]]",
+    "height_m": 0.8,
+    "weight_kg": 24.5,
     "genderRatio": { "male": 87.5, "female": 12.5 },
     "captureRate": 45,
     "images": {
       "sprite": "pokedex/img/pokemon/voltali_sprite.png",
       "artwork": "pokedex/img/pokemon/voltali_artwork.png"
     },
-    "baseStats": { "hp": 65, "atk": 130, "def": 95, "spa": 65, "spd": 60, "spe": 110 },
-    "description": "Son corps est couvert d'écailles cristallines d'une grande beauté. Jadis braconné pour ces gemmes rares, son espèce a presque disparu. On pensait l'espèce éteinte jusqu'à ce que quelques individus soient observés dans des vallées reculées.",
+    "baseStats": { "hp": 65, "atk": 65, "def": 60, "spa": 110, "spd": 95, "spe": 130 },
+    "description": "Quand il est agité, sa fourrure chargée d'électricité se hérisse. Il lance alors des touffes de poils acérés comme des piquants.",
     "etymology": {
-      "draco": "dragon en latin",
+      "volt": "unité de mesure de la tension électrique",
       "lithe": "pierre en grec ancien"
     }
   },
@@ -909,21 +909,21 @@
     "slug": "pyroli",
     "name": "Pyroli",
     "types": ["Feu"],
-    "category": "Rugissant",
-    "abilities": ["[[ability:brise-moule|Brise Moule]]"],
-    "hiddenAbility": "[[ability:peau-dure|Peau Dure]]",
-    "height_m": 1.0,
-    "weight_kg": 28.0,
+    "category": "Flamme",
+    "abilities": ["[[ability:torche|Torche]]"],
+    "hiddenAbility": "[[ability:cran|Cran]]",
+    "height_m": 0.9,
+    "weight_kg": 25.0,
     "genderRatio": { "male": 87.5, "female": 12.5 },
     "captureRate": 45,
     "images": {
       "sprite": "pokedex/img/pokemon/pyroli_sprite.png",
       "artwork": "pokedex/img/pokemon/pyroli_artwork.png"
     },
-    "baseStats": { "hp": 65, "atk": 130, "def": 95, "spa": 65, "spd": 60, "spe": 110 },
-    "description": "Son corps est couvert d'écailles cristallines d'une grande beauté. Jadis braconné pour ces gemmes rares, son espèce a presque disparu. On pensait l'espèce éteinte jusqu'à ce que quelques individus soient observés dans des vallées reculées.",
+    "baseStats": { "hp": 65, "atk": 130, "def": 60, "spa": 95, "spd": 110, "spe": 65 },
+    "description": "Il ébouriffe sa collerette pour baisser sa température corporelle, qui peut avoisiner les 900°C.",
     "etymology": {
-      "draco": "dragon en latin",
+      "pyro": "feu en grec ancien",
       "lithe": "pierre en grec ancien"
     }
   },
@@ -932,21 +932,21 @@
     "slug": "mentali",
     "name": "Mentali",
     "types": ["Psy"],
-    "category": "Rugissant",
-    "abilities": ["[[ability:brise-moule|Brise Moule]]"],
-    "hiddenAbility": "[[ability:peau-dure|Peau Dure]]",
-    "height_m": 1.0,
-    "weight_kg": 28.0,
+    "category": "Soleil",
+    "abilities": ["[[ability:synchro|Synchro]]"],
+    "hiddenAbility": "[[ability:miroir-magik|Miroir Magik]]",
+    "height_m": 0.9,
+    "weight_kg": 26.5,
     "genderRatio": { "male": 87.5, "female": 12.5 },
     "captureRate": 45,
     "images": {
       "sprite": "pokedex/img/pokemon/mentali_sprite.png",
       "artwork": "pokedex/img/pokemon/mentali_artwork.png"
     },
-    "baseStats": { "hp": 65, "atk": 130, "def": 95, "spa": 65, "spd": 60, "spe": 110 },
-    "description": "Son corps est couvert d'écailles cristallines d'une grande beauté. Jadis braconné pour ces gemmes rares, son espèce a presque disparu. On pensait l'espèce éteinte jusqu'à ce que quelques individus soient observés dans des vallées reculées.",
+    "baseStats": { "hp": 65, "atk": 65, "def": 60, "spa": 130, "spd": 95, "spe": 110 },
+    "description": "Sa fourrure délicate détecte les vibrations de l'air. Il peut ainsi prédire la météo ou lire les pensées de ses ennemis.",
     "etymology": {
-      "draco": "dragon en latin",
+      "mental": "rapport avec l'esprit",
       "lithe": "pierre en grec ancien"
     }
   },
@@ -955,21 +955,21 @@
     "slug": "noctali",
     "name": "Noctali",
     "types": ["Ténèbres"],
-    "category": "Rugissant",
-    "abilities": ["[[ability:brise-moule|Brise Moule]]"],
-    "hiddenAbility": "[[ability:peau-dure|Peau Dure]]",
+    "category": "Lune",
+    "abilities": ["[[ability:synchro|Synchro]]"],
+    "hiddenAbility": "[[ability:attention|Attention]]",
     "height_m": 1.0,
-    "weight_kg": 28.0,
+    "weight_kg": 27.0,
     "genderRatio": { "male": 87.5, "female": 12.5 },
     "captureRate": 45,
     "images": {
       "sprite": "pokedex/img/pokemon/noctali_sprite.png",
       "artwork": "pokedex/img/pokemon/noctali_artwork.png"
     },
-    "baseStats": { "hp": 65, "atk": 130, "def": 95, "spa": 65, "spd": 60, "spe": 110 },
-    "description": "Son corps est couvert d'écailles cristallines d'une grande beauté. Jadis braconné pour ces gemmes rares, son espèce a presque disparu. On pensait l'espèce éteinte jusqu'à ce que quelques individus soient observés dans des vallées reculées.",
+    "baseStats": { "hp": 95, "atk": 65, "def": 110, "spa": 60, "spd": 130, "spe": 65 },
+    "description": "Quand il s'expose aux ondes lunaires, ses anneaux brillent légèrement et il acquiert un mystérieux pouvoir.",
     "etymology": {
-      "draco": "dragon en latin",
+      "nocturne": "qui est propre à la nuit",
       "lithe": "pierre en grec ancien"
     }
   },
@@ -978,21 +978,21 @@
     "slug": "phyllali",
     "name": "Phyllali",
     "types": ["Plante"],
-    "category": "Rugissant",
-    "abilities": ["[[ability:brise-moule|Brise Moule]]"],
-    "hiddenAbility": "[[ability:peau-dure|Peau Dure]]",
+    "category": "Verdoyant",
+    "abilities": ["[[ability:feuille-garde|Feuille Garde]]"],
+    "hiddenAbility": "[[ability:chlorophylle|Chlorophylle]]",
     "height_m": 1.0,
-    "weight_kg": 28.0,
+    "weight_kg": 25.5,
     "genderRatio": { "male": 87.5, "female": 12.5 },
     "captureRate": 45,
     "images": {
       "sprite": "pokedex/img/pokemon/phyllali_sprite.png",
       "artwork": "pokedex/img/pokemon/phyllali_artwork.png"
     },
-    "baseStats": { "hp": 65, "atk": 130, "def": 95, "spa": 65, "spd": 60, "spe": 110 },
-    "description": "Son corps est couvert d'écailles cristallines d'une grande beauté. Jadis braconné pour ces gemmes rares, son espèce a presque disparu. On pensait l'espèce éteinte jusqu'à ce que quelques individus soient observés dans des vallées reculées.",
+    "baseStats": { "hp": 65, "atk": 110, "def": 130, "spa": 60, "spd": 65, "spe": 95 },
+    "description": "Un Phyllali qui dort par beau temps produit un air frais et pur par photosynthèse.",
     "etymology": {
-      "draco": "dragon en latin",
+      "phyllon": "feuille en grec ancien",
       "lithe": "pierre en grec ancien"
     }
   },
@@ -1001,21 +1001,21 @@
     "slug": "givrali",
     "name": "Givrali",
     "types": ["Glace"],
-    "category": "Rugissant",
-    "abilities": ["[[ability:brise-moule|Brise Moule]]"],
-    "hiddenAbility": "[[ability:peau-dure|Peau Dure]]",
-    "height_m": 1.0,
-    "weight_kg": 28.0,
+    "category": "Poudreuse",
+    "abilities": ["[[ability:rideau-neige|Rideau Neige]]"],
+    "hiddenAbility": "[[ability:corps-gel|Corps Gel]]",
+    "height_m": 0.8,
+    "weight_kg": 25.9,
     "genderRatio": { "male": 87.5, "female": 12.5 },
     "captureRate": 45,
     "images": {
       "sprite": "pokedex/img/pokemon/givrali_sprite.png",
       "artwork": "pokedex/img/pokemon/givrali_artwork.png"
     },
-    "baseStats": { "hp": 65, "atk": 130, "def": 95, "spa": 65, "spd": 60, "spe": 110 },
-    "description": "Son corps est couvert d'écailles cristallines d'une grande beauté. Jadis braconné pour ces gemmes rares, son espèce a presque disparu. On pensait l'espèce éteinte jusqu'à ce que quelques individus soient observés dans des vallées reculées.",
+    "baseStats": { "hp": 65, "atk": 60, "def": 110, "spa": 130, "spd": 95, "spe": 65 },
+    "description": "Il abaisse la température de son corps pour transformer ses poils en aiguilles de glace qu'il projette sur l'ennemi.",
     "etymology": {
-      "draco": "dragon en latin",
+      "givre": "dépôt de glace",
       "lithe": "pierre en grec ancien"
     }
   },
@@ -1024,21 +1024,21 @@
     "slug": "nymphali",
     "name": "Nymphali",
     "types": ["Fée"],
-    "category": "Rugissant",
-    "abilities": ["[[ability:brise-moule|Brise Moule]]"],
-    "hiddenAbility": "[[ability:peau-dure|Peau Dure]]",
+    "category": "Attachant",
+    "abilities": ["[[ability:joli-sourire|Joli Sourire]]"],
+    "hiddenAbility": "[[ability:peau-féérique|Peau Féérique]]",
     "height_m": 1.0,
-    "weight_kg": 28.0,
+    "weight_kg": 23.5,
     "genderRatio": { "male": 87.5, "female": 12.5 },
     "captureRate": 45,
     "images": {
       "sprite": "pokedex/img/pokemon/nymphali_sprite.png",
       "artwork": "pokedex/img/pokemon/nymphali_artwork.png"
     },
-    "baseStats": { "hp": 65, "atk": 130, "def": 95, "spa": 65, "spd": 60, "spe": 110 },
-    "description": "Son corps est couvert d'écailles cristallines d'une grande beauté. Jadis braconné pour ces gemmes rares, son espèce a presque disparu. On pensait l'espèce éteinte jusqu'à ce que quelques individus soient observés dans des vallées reculées.",
+    "baseStats": { "hp": 95, "atk": 65, "def": 65, "spa": 110, "spd": 130, "spe": 60 },
+    "description": "Ses antennes en forme de ruban émettent des ondes apaisantes en direction de ses adversaires et neutralisent toute hostilité.",
     "etymology": {
-      "draco": "dragon en latin",
+      "nymphe": "divinité de la mythologie grecque",
       "lithe": "pierre en grec ancien"
     }
   },
