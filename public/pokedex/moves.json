@@ -2046,11 +2046,27 @@
     "category": "Statut",
     "pp": 10,
     "priority": 0,
-    "effet": "",
+    "effet": "En sacrifiant 25% de ses [[docs:statistics|PV]] maximum, le lanceur crée un clone, copie conforme du point de vue du [[type:normal|type]] et des [[docs:statistics|statistiques]]. Les PV du clone sont ceux perdus par le lanceur pour l'utiliser. Une fois le clone créé, celui-ci prendra les dégâts causés par l'adversaire à la place du lanceur, jusqu'à sa destruction. Le clone prendra aussi les capacités de [[docs:status|statut]] et de diminution de statistiques. Si les PV du lanceur sont inférieurs ou égaux à 25% de ses PV maximum, Clonage échoue. Le clone peut être transmis par [[move:relais|Relais]], mais il conserve les PV qu'ils lui restent. Les capacités comme [[move:toxik|Toxik]] ou [[move:onde-folie|Onde Folie]] n'affectent pas le clone, mais le statut du Pokémon qui a lancé Clonage est affecté par [[ability:synchro|Synchro]]. Créer un clone libère immédiatement le lanceur de capacités pièges comme [[move:ligotage|Ligotage]], [[move:danse-flamme|Danse Flamme]] ou encore [[move:siphon|Siphon]]. Le clone ne bloque pas les capacités sonores. En plus de ces capacités, voici la liste des capacités dont Clonage ne peut pas bloquer :",
     "description": "Le lanceur crée un clone en sacrifiant quelques PV. Ce clone sert de leurre.",
     "makesContact": true,
     "critRate": 0,
-    "targetPreset": "adjacent-one"
+    "targetPreset": "adjacent-one",
+    "tables": [
+      {
+        "id": "clone-capacity-exclusion",
+        "columns": [
+          { "key": "column1"},
+          { "key": "column2"},
+          { "key": "column3"},
+          { "key": "column4"}
+        ],
+        "rows": [
+          { "column1": "[[move:requiem|Requiem]]", "column2": "[[move:provoc|Provoc]]", "column3": "[[move:entrave|Entrave]]", "column4": "[[move:encore|encore]]" },
+          { "column1": "[[move:tourmente|Tourmente]]", "column2": "[[move:depit|Dépit]]", "column3": "[[move:buee-noire|Buée Noire]]", "column4": "[[move:boost|Boost]]" },
+          { "column1": "[[move:echange|Échange]]", "column2": "[[move:imitation|Imitation]]", "column3": "[[move:cyclone|Cyclone]]", "column4": "[[move:hurlement|Hurlement]]" }
+        ]
+      }
+    ]
   },
   {
     "id": 132,
@@ -2100,7 +2116,39 @@
     "targetPreset": "adjacent-one"
   },
   {
-    "id": 174,
+    "id": 135,
+    "slug": "roue-de-feu",
+    "name": "Roue de Feu",
+    "type": "Feu",
+    "category": "Physique",
+    "power": 60,
+    "accuracy": 100,
+    "pp": 25,
+    "priority": 0,
+    "effet": "Roue de Feu a 10% de chances de [[docs:status|brûler]] le Pokémon adverse. Si le lanceur est [[docs:status|gelé]], l'attaque le dégèle automatiquement.",
+    "description": "Le lanceur s'entoure de feu et charge la cible, ce qui peut aussi la brûler.",
+    "makesContact": true,
+    "critRate": 0,
+    "targetPreset": "adjacent-one"
+  },
+  {
+    "id": 136,
+    "slug": "ronflement",
+    "name": "Ronflement",
+    "type": "Normal",
+    "category": "Spécial",
+    "power": 50,
+    "accuracy": 100,
+    "pp": 15,
+    "priority": 0,
+    "effet": "Ronflement inflige des dégâts à la cible et possède 30% de chances de l'[[docs:status|apeurer]]. Ronflement est, avec [[move:blabla-dodo|Blabla Dodo]], la seule capacité à ne pouvoir être utilisée qu'[[docs:status|endormi]].",
+    "description": "Une attaque qui ne fonctionne que si le lanceur est endormi. Le boucan peut aussi apeurer la cible.",
+    "makesContact": false,
+    "critRate": 0,
+    "targetPreset": "adjacent-one"
+  },
+  {
+    "id": 137,
     "slug": "malediction",
     "name": "Malédiction",
     "type": "Spectre",
@@ -2112,6 +2160,299 @@
     "makesContact": false,
     "critRate": 0,
     "targetPreset": "variable"
+  },
+  {
+    "id": 138,
+    "slug": "gigotage",
+    "name": "Gigotage",
+    "type": "Normal",
+    "category": "Physique",
+    "accuracy": 100,
+    "pp": 15,
+    "priority": 0,
+    "effet": "Gigotage inflige des dégâts en fonction des PV restants du lanceur : moins il en a, plus la capacité est puissante. Les dégâts sont calculés de la façon suivante : soit P = 48 x (PV restants / PV Max), arrondi à l'entier inférieur. Les dégâts spnt répartis ainsi selon P :",
+    "description": "Le lanceur attaque en gigotant dans tous les sens. Plus ses PV sont bas, plus l'attaque est puissante.",
+    "makesContact": true,
+    "critRate": 0,
+    "targetPreset": "adjacent-one",
+    "tables": [
+      {
+        "id": "gigotage-power",
+        "columns": [
+          { "key": "remainingHealth", "label": "PV restants du lanceur" },
+          { "key": "p",               "label": "P"                      },
+          { "key": "power",           "label": "Puissance"              }
+        ],
+        "rows": [
+          { "remainingHealth": "68% - 100%", "p": "P > 32",      "power": 20  },
+          { "remainingHealth": "35% - 67%",  "p": "17 ≤ P ≤ 32", "power": 40  },
+          { "remainingHealth": "20% - 34%",  "p": "10 ≤ P ≤ 16", "power": 80  },
+          { "remainingHealth": "10% - 19%",  "p": "5  ≤ P ≤ 9",  "power": 100 },
+          { "remainingHealth": "4% - 9%",    "p": "2  ≤ P ≤ 4",  "power": 150 },
+          { "remainingHealth": "1 PV - 3%",  "p": "0  ≤ P ≤ 1",  "power": 200 }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 139,
+    "slug": "spore-coton",
+    "name": "Spore Coton",
+    "type": "Plante",
+    "category": "Statut",
+    "accuracy": 100,
+    "pp": 40,
+    "priority": 0,
+    "effet": "Spore Coton diminue la [[docs:statistics|vitesse]] de la cible de deux niveaux.",
+    "description": "Le lanceur libère des spores cotonneuses qui collent à la cible et baissent beaucoup sa Vitesse.",
+    "makesContact": false,
+    "critRate": 0,
+    "targetPreset": "adjacent-foes-all"
+  },
+  {
+    "id": 140,
+    "slug": "contre",
+    "name": "Contre",
+    "type": "Combat",
+    "category": "Physique",
+    "accuracy": 100,
+    "pp": 15,
+    "priority": 0,
+    "effet": "Contre inflige des dégâts en fonction des PV restants du lanceur : moins il en a, plus la capacité est puissante. Les dégâts sont calculés de la façon suivante : soit P = 48 x (PV restants / PV Max), arrondi à l'entier inférieur. Les dégâts spnt répartis ainsi selon P :",
+    "description": "Le lanceur ne retient plus ses coups. Plus ses PV sont bas, plus l'attaque est puissante.",
+    "makesContact": true,
+    "critRate": 0,
+    "targetPreset": "adjacent-one",
+    "tables": [
+      {
+        "id": "gigotage-power",
+        "columns": [
+          { "key": "remainingHealth", "label": "PV restants du lanceur" },
+          { "key": "p",               "label": "P"                      },
+          { "key": "power",           "label": "Puissance"              }
+        ],
+        "rows": [
+          { "remainingHealth": "68% - 100%", "p": "P > 32",      "power": 20  },
+          { "remainingHealth": "35% - 67%",  "p": "17 ≤ P ≤ 32", "power": 40  },
+          { "remainingHealth": "20% - 34%",  "p": "10 ≤ P ≤ 16", "power": 80  },
+          { "remainingHealth": "10% - 19%",  "p": "5  ≤ P ≤ 9",  "power": 100 },
+          { "remainingHealth": "4% - 9%",    "p": "2  ≤ P ≤ 4",  "power": 150 },
+          { "remainingHealth": "1 PV - 3%",  "p": "0  ≤ P ≤ 1",  "power": 200 }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 141,
+    "slug": "dépit",
+    "name": "Dépit",
+    "type": "Spectre",
+    "category": "Statut",
+    "accuracy": 100,
+    "pp": 10,
+    "priority": 0,
+    "effet": "Débit enlève 4 PP à la dernière capacité utilisée par la cible. Dépit échoue si la cible n'a pas encore utilisé de capacité depuis sa dernière arrivée sur le terrain.",
+    "description": "Le lanceur exprime son ressentiment en retirant 4 PP à la dernière capacité utilisée par la cible.",
+    "makesContact": false,
+    "critRate": 0,
+    "targetPreset": "adjacent-one"
+  },
+  {
+    "id": 142,
+    "slug": "poudreuse",
+    "name": "Poudreuse",
+    "type": "Glace",
+    "category": "Spécial",
+    "power": 40,
+    "accuracy": 100,
+    "pp": 25,
+    "priority": 0,
+    "effet": "Poudreuse inflige des dégâts et a 10% de chances de [[docs:status|geler]] sa cible. Elle touche les deux cibles dans un combat Duo.",
+    "description": "Le lanceur projette de la neige poudreuse qui peut aussi geler la cible.",
+    "makesContact": false,
+    "critRate": 0,
+    "targetPreset": "adjacent-foes-all"
+  },
+  {
+    "id": 143,
+    "slug": "abri",
+    "name": "Abri",
+    "type": "Normal",
+    "category": "Statut",
+    "pp": 10,
+    "priority": 4,
+    "effet": "Abri protège de tout effet, direct ou indirect, qu'une capacité adverse pourrait causer. Ceci n'inclut pas les dégâts causés par un éventuel changement de [[docs:weather|climat]] ou de [[docs:status|statut]]. Elle n'empêche pas non plus la pose des pièges d'entrée. Si le Pokémon qui utilise Abri attaque en dernier, la capacité échoue nécessairement. Les chances de réussite sont divisées par trois à chaque utilisation consécutive réussie, avec un minimum de 1/729 (on atteint cette probabilité à partir de la 7ème utilisation d'Abri consécutive sans échec), jusqu'à ce que la capacité échoue.",
+    "description": "Le lanceur se protège de toutes les attaques. Peut échouer si utilisée plusieurs fois de suite.",
+    "makesContact": false,
+    "critRate": 0,
+    "targetPreset": "self"
+  },
+  {
+    "id": 144,
+    "slug": "mach-punch",
+    "name": "Mach Punch",
+    "type": "Combat",
+    "category": "Physique",
+    "power": 40,
+    "accuracy": 100,
+    "pp": 30,
+    "priority": 1,
+    "effet": "Mach Punch inflige des dégâts et possède une priorité de +1.",
+    "description": "Coup de poing fulgurant. Frappe en priorité.",
+    "makesContact": true,
+    "critRate": 0,
+    "targetPreset": "adjacent-one"
+  },
+  {
+    "id": 145,
+    "slug": "grimace",
+    "name": "Grimace",
+    "type": "Normal",
+    "category": "Statut",
+    "accuracy": 100,
+    "pp": 10,
+    "priority": 0,
+    "effet": "Grimace baisse la [[docs:statistics|vitesse]] de la cible de deux niveaux.",
+    "description": "Le lanceur fait une grimace qui effraie l'ennemi et réduit beaucoup sa vitesse.",
+    "makesContact": false,
+    "critRate": 0,
+    "targetPreset": "adjacent-one"
+  },
+  {
+    "id": 146,
+    "slug": "doux-baiser",
+    "name": "Doux Baiser",
+    "type": "Fée",
+    "category": "Statut",
+    "accuracy": 75,
+    "pp": 10,
+    "priority": 0,
+    "effet": "Doux baiser plonge la cible dans la [[docs:status|confusion]].",
+    "description": "Le lanceur envoie un bisou si mignon et désarmant qu'il plonge l'ennemi dans la confusion.",
+    "makesContact": false,
+    "critRate": 0,
+    "targetPreset": "adjacent-one"
+  },
+  {
+    "id": 147,
+    "slug": "cognobidon",
+    "name": "Cognobidon",
+    "type": "Normal",
+    "category": "Statut",
+    "pp": 10,
+    "priority": 0,
+    "effet": "L'utilisateur de Cognobidon sacrifie la moitié de ses [[docs:statistics|PV]] max pour monter son [[docs:statistics|Attaque]] au maximum et ce même si son attaque a été baissée précédemment. Cognobidon échoue si les PV du lanceur sont inférieurs ou égaux à la moitié de ses PV max.",
+    "description": "Améliore l'Attaque au maximum en sacrifiant la moitié des PV max.",
+    "makesContact": false,
+    "critRate": 0,
+    "targetPreset": "self"
+  },
+  {
+    "id": 148,
+    "slug": "bombe-beurk",
+    "name": "Bombe Beurk",
+    "type": "Poison",
+    "category": "Spécial",
+    "power": 90,
+    "accuracy": 100,
+    "pp": 10,
+    "priority": 0,
+    "effet": "Bombe Beurk inflige des dégâts et a 30% de chances d'[[docs:status|empoisonner]] la cible.",
+    "description": "Des détritus toxiques sont projetés sur la cible, ce qui peut aussi l'empoisonner.",
+    "makesContact": false,
+    "critRate": 0,
+    "targetPreset": "adjacent-one"
+  },
+  {
+    "id": 149,
+    "slug": "coudboue",
+    "name": "Coud'Boue",
+    "type": "Sol",
+    "category": "Spécial",
+    "power": 20,
+    "accuracy": 100,
+    "pp": 10,
+    "priority": 0,
+    "effet": "Coud'Boue inflige des dommages et baisse la [[docs:statistics|précision]] de la cible d'un niveau.",
+    "description": "Le lanceur envoie de la boue au visage de la cible pour infliger des dégâts et baisser sa Précision.",
+    "makesContact": false,
+    "critRate": 0,
+    "targetPreset": "adjacent-one"
+  },
+  {
+    "id": 150,
+    "slug": "octazooka",
+    "name": "Octazooka",
+    "type": "Eau",
+    "category": "Spécial",
+    "power": 65,
+    "accuracy": 85,
+    "pp": 10,
+    "priority": 0,
+    "effet": "Octazooka inflige des dégâts et possède 50% de chances de réduire d'un niveau la [[docs:statistics|précision]] de l'adversaire.",
+    "description": "Le lanceur attaque en projetant de l'encre au visage de la cible, ce qui peut aussi baisser sa Précision.",
+    "makesContact": false,
+    "critRate": 0,
+    "targetPreset": "adjacent-one"
+  },
+  {
+    "id": 151,
+    "slug": "picots",
+    "name": "Picots",
+    "type": "Sol",
+    "category": "Statut",
+    "pp": 20,
+    "priority": 0,
+    "effet": "Picots place une rangée de pièges du côté de l'équipe de l'adversaire, qui inflige des dégâts à ses Pokémon quand ils arrivent sur le terrain. Il est possible de cumuler jusqu'à trois rangées de Picots d'un même côté du terrain, la capacité échouant si elle est lancée quand ce montant est atteint. Picots n'affecte pas les Pokémon de type [[type:Vol]], possédant le talent [[ability:levitation|Lévitation]] ou tenant un [[item:ballon|Ballon]], à moins qu'ils tiennent une [[item:balle-fer|Balle Fer]], ou qu'il soit sous l'effet de la [[move:gravite|gravité]]. Avoir le talent [[ability:garde-magik|Garde Magik]] ou tenir des [[item:grosses-bottes|Grosses Bottes]] immunise aux dégâts des Picots. Les Picots peuvent être retirés via [[move:tour-rapide|Tour Rapide]] et [[move:anti-brume|Anti-Brume]].",
+    "description": "Le lanceur disperse des picots sur le sol pour blesser tout l'ennemi qui entre au combat.",
+    "makesContact": false,
+    "critRate": 0,
+    "targetPreset": "all-ennemies",
+    "tables": [
+      {
+        "id": "picots-power",
+        "columns": [
+          { "key": "layerNumber", "label": "Nombre de rangées" },
+          { "key": "damage",      "label": "Dégâts"            }
+        ],
+        "rows": [
+          { "layerNumber": "1", "damage": "1/8 des PV max" },
+          { "layerNumber": "2", "damage": "1/6 des PV max" },
+          { "layerNumber": "3", "damage": "1/4 des PV max" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 152,
+    "slug": "elecanon",
+    "name": "Élecanon",
+    "type": "Électrik",
+    "category": "Spécial",
+    "power": 120,
+    "accuracy": 50,
+    "pp": 5,
+    "priority": 0,
+    "effet": "Élecanon inflige des dégâts à l'adversaire et le [[docs:status|paralyse]] à coup sûr si la capacité le touche.",
+    "description": "Un boulet de canon électrifié qui inflige des dégâts à la cible et la paralyse.",
+    "makesContact": false,
+    "critRate": 0,
+    "targetPreset": "adjacent-one"
+  },
+  {
+    "id": 153,
+    "slug": "lien-du-destin",
+    "name": "Lien du Destin",
+    "type": "Spectre",
+    "category": "Statut",
+    "accuracy": 100,
+    "pp": 5,
+    "priority": 0,
+    "effet": "Si le lanceur de Lien du Destin tombe K.O. des suites d'une capacité sans qu'il ait utilisé une autre capacité entre-temps, le Pokémon l'ayant mis K.O. tombe K.O. également. Lien du destin n'entraîne pas le K.O. du Pokémon adverse si le lanceur est tombé K.O. à cause de dégâts résiduels ([[docs:status|brûlure]], [[docs:status|empoisonnement]], [[docs:weather|tempête de sable]], [[docs:weather|grêle]], [[move:vampigraine|Vampigraine]]) ou de [[move:prescience|Prescience]].",
+    "description": "Si un assaillant porte un coup fatal au lanceur après qu'il a activé cette capacité, ils sont tous les deux mis K.O. La capacité échoue si elle est immédiatement réutilisée.",
+    "makesContact": false,
+    "critRate": 0,
+    "targetPreset": "self"
   },
   {
     "id": 446,
