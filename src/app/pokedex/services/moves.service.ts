@@ -58,6 +58,7 @@ function normalizeTarget(m: any): { preset?: TargetPreset; pattern?: TargetCell[
     presetRaw === 'adjacent-foes-all'||
     presetRaw === 'adjacent-all'     ||
     presetRaw === 'all-one'          ||
+    presetRaw === 'ally-one'         ||
     presetRaw === 'all-allies'       ||
     presetRaw === 'all-ennemies'     ||
     presetRaw === 'variable'         ||
@@ -74,8 +75,9 @@ function normalizeTarget(m: any): { preset?: TargetPreset; pattern?: TargetCell[
       txt === 'adjacentfoes')       return { preset: 'adjacent-foes-all' };
   if (txt === 'adjacentall')        return { preset: 'adjacent-all' };
   if (txt === 'allone')             return { preset: 'all-one' };
-  if (txt === 'allennemies')           return { preset: 'all-ennemies' };
-  if (txt === 'allallies')             return { preset: 'all-allies' };
+  if (txt === 'allyone')            return { preset: 'ally-one' };
+  if (txt === 'allennemies')        return { preset: 'all-ennemies' };
+  if (txt === 'allallies')          return { preset: 'all-allies' };
 
   return {};
 }

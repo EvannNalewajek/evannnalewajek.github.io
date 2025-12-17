@@ -7,6 +7,7 @@ const PRESETS: Record<TargetPreset, Cell[]> = {
   'adjacent-foes-all': ['FOE_L','FOE_C'],
   'adjacent-all': ['FOE_L','FOE_C','ALLY_L'],
   'all-one': ['FOE_L','FOE_C','FOE_R','ALLY_L','ALLY_R'],
+  'ally-one': ['ALLY_L'],
   'all-allies': ['SELF', 'ALLY_L', 'ALLY_R'],
   'all-ennemies': ['FOE_L','FOE_C', 'FOE_R'],
   'variable': ['SELF'],
@@ -52,6 +53,7 @@ export class MoveTargetDiagramComponent {
     if (this.preset === 'adjacent-foes-all') return 'Tous les adversaires adjacents au lanceur';
     if (this.preset === 'adjacent-all') return 'Tous les Pokémon adjacents au lanceur';
     if (this.preset === 'all-one') return "N'importe quel Pokémon à l'exception du lanceur";
+    if (this.preset === 'ally-one') return "Un Pokémon allié adjacent au lanceur";
     if (this.preset === 'all-allies') return "Tous les alliés";
     if (this.preset === 'all-ennemies') return "Tous les adversaires";
     if (this.preset === 'variable') return "Variable";
