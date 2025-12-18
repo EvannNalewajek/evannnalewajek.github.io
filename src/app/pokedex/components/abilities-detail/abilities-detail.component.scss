@@ -140,10 +140,11 @@
   .dl-grid dt, .dl-grid dd { font-size:.85rem; line-height:1.2; }
 }
 
-a {
+:host ::ng-deep .autolink a {
   text-decoration: none;
+  font-weight: 500;
 }
 
-a:hover {
+:host ::ng-deep .autolink a:hover {
   text-decoration: underline;
 }
