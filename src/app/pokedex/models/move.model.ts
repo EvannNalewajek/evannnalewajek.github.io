@@ -46,7 +46,7 @@ export interface TMInfo {
 export interface PokemonLearnset {
   id: number;
   slug: string;
-  levelUp: { level: number; move: string }[];
+  levelUp: { level: number | string; move: string }[];
   tm: string[];
   egg: string[];
 }

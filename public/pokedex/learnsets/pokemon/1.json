@@ -2,16 +2,36 @@
   "id": 1,
   "slug": "manimous",
   "levelUp": [
-    { "level": 1,  "move": "griffe" },
-    { "level": 1,  "move": "rugissement" },
-    { "level": 9,  "move": "guillotine" }
+    { "level": "départ",  "move": "charge" },
+    { "level": 5,  "move": "rugissement" },
+    { "level": 6,  "move": "feuillage" },
+    { "level": 10,  "move": "repli" },
+    { "level": 13,  "move": "tranch-herbe" },
+    { "level": 15,  "move": "morsure" },
+    { "level": 19,  "move": "vampigraine" },
+    { "level": 23,  "move": "mega-sangsue" },
+    { "level": 27,  "move": "synthese" },
+    { "level":30,  "move": "lame-feuille" },
+    { "level": 33,  "move": "machouille" },
+    { "level": 37,  "move": "giga-sangsue" },
+    { "level": 41,  "move": "damocles" },
+    { "level": 45,  "move": "tempete-verte" }
   ],
   "tm": [
     "CT01",
     "CT02"
   ],
   "egg": [
-    "poing-feu",
-    "jackpot"
+    "amnesie",
+    "plaquage",
+    "damocles",
+    "telluriforce",
+    "champ herbu",
+    "croissance",
+    "piétisol",
+    "tacle lourd",
+    "canon-graine",
+    "soucigraine",
+    "garde-large"
   ]
 }

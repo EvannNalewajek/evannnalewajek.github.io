@@ -262,7 +262,7 @@
                         </tr>
                       </thead>
                       <tbody>
-                        @for (e of L.levelUp; track e.moveSlug + ':' + e.level) {
+                        @for (e of L.levelUp; track e.moveSlug + ':' + e.levelSort) {
                           <tr>
                             <td class="num">{{ e.level }}</td>
                             <td>
@@ -283,6 +283,7 @@
                           </tr>
                         }
                       </tbody>
+
                     </table>
                   </div>
                 </div>

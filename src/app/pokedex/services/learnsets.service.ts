@@ -6,7 +6,8 @@ import type { Move, TMInfo, PokemonLearnset, MoveIndex } from '../models/move.mo
 import { MovesService } from './moves.service';
 
 export interface ResolvedLevelUp {
-  level: number;
+  level: number | 'Départ';
+  levelSort: number;
   moveSlug: string;
   moveName: string;
   moveType: string;
@@ -90,20 +91,31 @@ export class LearnsetsService {
         const bySlug = new Map<string, Move>(moves.map(m => [m.slug, m]));
 
         const levelUp: ResolvedLevelUp[] = (ls.levelUp ?? [])
-          .map(e => {
-            const mv = bySlug.get(e.move);
-            return {
-              level: Number(e.level),
-              moveSlug: e.move,
-              moveName: mv?.name ?? e.move,
-              moveType: mv?.type ?? 'Normal',
-              moveCategory: (mv?.category ?? 'Statut') as Move['category'],
-              power: mv?.power ?? null,
-              accuracy: mv?.accuracy ?? null,
-              pp: mv?.pp ?? null
-            };
-          })
-          .sort((a, b) => a.level - b.level);
+        .map(e => {
+          const mv = bySlug.get(e.move);
+
+          const raw = (e as any).level;
+
+          const isStart =
+            typeof raw === 'string' && raw.trim().toLowerCase() === 'départ';
+
+          const level: number | 'Départ' = isStart ? 'Départ' : Number(raw);
+
+          const levelSort = isStart ? 0 : (Number.isFinite(Number(raw)) ? Number(raw) : 9999);
+
+          return {
+            level,
+            levelSort,
+            moveSlug: e.move,
+            moveName: mv?.name ?? e.move,
+            moveType: mv?.type ?? 'Normal',
+            moveCategory: (mv?.category ?? 'Statut') as Move['category'],
+            power: mv?.power ?? null,
+            accuracy: mv?.accuracy ?? null,
+            pp: mv?.pp ?? null
+          };
+        })
+        .sort((a, b) => a.levelSort - b.levelSort);
 
         const tm: ResolvedTM[] = (ls.tm ?? [])
           .map(code => {
