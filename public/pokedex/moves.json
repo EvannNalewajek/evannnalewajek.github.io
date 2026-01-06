@@ -4493,29 +4493,425 @@
     "category": "Statut",
     "pp": 5,
     "priority": 0,
-    "effet": "Gravité crée durant 5 tours un terrain où la pesanteur est telle que :",
+    "effet": "Gravité crée durant 5 tours un terrain où la pesanteur est telle que : le type [[type:Vol]] perd son immunité aux capacités de type [[type:Sol]], la puissance de [[move:force-g|Force G]] passe de 80 à 120, les effets de [[ability:levitation|Lévitation]], du [[item:ballon|Ballon]] et de [[move:vol-magnetik|Vol Magnétik]] sont désactivés, les pièges d'entrée ainsi que le talents [[ability:piege-sable|Piège Sable]] et les effets de [[docs:fields|Champ]] s'appliquent aux Pokémon aériens entrant en combat. De plus, les capacités [[move:vol|Vol]] et [[move:rebond|Rebond]] échouent si interrompues et sont inutilisables, tandis que [[move:pied-voltige|Pied Voltige]], [[move:trempette|Trempette]] et [[move:vol-magnetik|Vol Magnétik]] sont inutilisables. Enfin, tous les Pokémons voient leur [[docs:statistics|Esquive]] diminuer de deux niveaux.",
     "description": "Pendant cinq tour, les Pokémon Vol ou qui ont Lévitation deviennent sensibles aux capacités Sol, et les capacités volantes deviennent inutilisables.",
     "makesContact": false,
     "critRate": 0,
-    "targetPreset": "all",
+    "targetPreset": "all"
+  },
+  {
+    "id": 283,
+    "slug": "marto-poing",
+    "name": "Marto-Poing",
+    "type": "Combat",
+    "category": "Physique",
+    "power": 100,
+    "accuracy": 90,
+    "pp": 10,
+    "priority": 0,
+    "effet": "Marto-Poing inflige des dégâts à la cible, puis baisse d'un niveau la [[docs:statistics|Vitesse]] du lanceur.",
+    "description": "Le lanceur donne un puissant coup de poing à la cible, ce qui réduit la Vitesse du lanceur.",
+    "makesContact": true,
+    "critRate": 0,
+    "targetPreset": "adjacent-one"
+  },
+  {
+    "id": 284,
+    "slug": "gyroballe",
+    "name": "Gyroballe",
+    "type": "Acier",
+    "category": "Physique",
+    "accuracy": 100,
+    "pp": 5,
+    "priority": 0,
+    "effet": "Gyroballe inflige des dégâts dont la puissance de base augmente en fonction de la [[docs:statistics|Vitesse]] du lanceur par rapport à celle de la cible. Plus le lanceur est lent par rapport à la cible, plus Gyroballe lui inflige des dégâts. La puissance de Gyroballe est calculée comme suit : Puissance = 25 x (Vitesse de la cible / Vitesse du lanceur), arrondie à l'entier le plus proche, avec un maximum de 150. Si le lanceur et la cible ont la même Vitesse, la puissance de Gyroballe est de 25.",
+    "description": "Le lanceur effectue une rotation rapide et frappe la cible. Plus la Vitesse du lanceur est basse par rapport à celle de la cible, plus l'attaque est puissante.",
+    "makesContact": true,
+    "critRate": 0,
+    "targetPreset": "all-one"
+  },
+  {
+    "id": 285,
+    "slug": "voeu-soin",
+    "name": "Vœu Soin",
+    "type": "Psy",
+    "category": "Statut",
+    "pp": 10,
+    "priority": 0,
+    "effet": "L'utilisateur de Vœu Soin tombe K.O. mais les [[docs:statistics|PV]] de son successeur sont entièrement restaurés et ses problèmes de [[docs:status|statut]] sont soignés. Si le successeur a tous ses PV et aucun problème de statut, l'effet est conservé jusqu'à ce qu'un Pokémon pouvant être soigné arrive sur le terrain. Vœu Soin échoue si le lanceur est le dernier Pokémon de l'équipe encore en vie.",
+    "description": "Le lanceur tombe K.O. pour soigner les altérations de statut et les PV du Pokémon qui viendra le remplacer sur le terrain.",
+    "makesContact": false,
+    "critRate": 0,
+    "targetPreset": "self"
+  },
+  {
+    "id": 286,
+    "slug": "saumure",
+    "name": "Saumure",
+    "type": "Eau",
+    "category": "Spécial",
+    "power": 65,
+    "accuracy": 100,
+    "pp": 10,
+    "priority": 0,
+    "effet": "Saumure inflige des dégâts à la cible.La puissance de Saumure double si les [[docs:statistics|PV]] actuels de la cible sont inférieurs ou égaux à 50% de ses PV max.",
+    "description": "La puissance de cette capacité est doublée lorsque la cible a moins de la moitié de ses PV.",
+    "makesContact": false,
+    "critRate": 0,
+    "targetPreset": "adjacent-one"
+  },
+  {
+    "id": 287,
+    "slug": "ruse",
+    "name": "Ruse",
+    "type": "Normal",
+    "category": "Physique",
+    "power": 30,
+    "accuracy": 100,
+    "pp": 10,
+    "priority": 2,
+    "effet": "Cette capacité prioritaire foncione même si l'adversaire utilise [[move:abri|Abri]] ou une capacité similaire. Ruse permet aussi de passer outre les effets négatifs des capacités comme [[move:pico-defense|Pico-Défense]].",
+    "description": "Une attaque capable de toucher une cible qui utilise une capacité similaire à Détection ou Abri, et annule l'effet de cette capacité.",
+    "makesContact": false,
+    "critRate": 0,
+    "targetPreset": "adjacent-one"
+  },
+  {
+    "id": 288,
+    "slug": "picore",
+    "name": "Picore",
+    "type": "Vol",
+    "category": "Physique",
+    "power": 60,
+    "accuracy": 100,
+    "pp": 20,
+    "priority": 0,
+    "effet": "Picore inflige des dégâts et si la cible tient une Baie, le lanceur la mange et bénéficie de ses effets le cas échéant.",
+    "description": "Le lanceur picore la cible. Si cette dernière tient une Baie, le lanceur la mange et bénéficie de ses effets.",
+    "makesContact": true,
+    "critRate": 0,
+    "targetPreset": "all-one"
+  },
+  {
+    "id": 289,
+    "slug": "vent-arriere",
+    "name": "Vent Arrière",
+    "type": "Vol",
+    "category": "Statut",
+    "pp": 15,
+    "priority": 0,
+    "effet": "Vent Arrière double la [[docs:statistics|Vitesse]] du lanceur et de ses alliés pendant 4 tours.",
+    "description": "Génère une rafale de vent qui augmente la Vitesse des Pokémon de l'équipe pendant quatre tours.",
+    "makesContact": false,
+    "critRate": 0,
+    "targetPreset": "all-allies"
+  },
+  {
+    "id": 290,
+    "slug": "acupression",
+    "name": "Acupression",
+    "type": "Normal",
+    "category": "Statut",
+    "pp": 30,
+    "priority": 0,
+    "effet": "Acupression augmente une [[docs:statistics|statistique]] choisie au hasard de deux niveaux, en incluant la Précision et l'Esquive.",
+    "description": "Le lanceur utilise sa connaissance des points de pression pour beaucoup augmenter une de ses statistiques.",
+    "makesContact": false,
+    "critRate": 0,
+    "targetPreset": "self-or-ally"
+  },
+  {
+    "id": 291,
+    "slug": "fulmifer",
+    "name": "Fulmifer",
+    "type": "Acier",
+    "category": "Physique",
+    "accuracy": 100,
+    "pp": 10,
+    "priority": 0,
+    "effet": "Fulmifer inflige des dégâts égaux à 1,5 fois les dégâts infligés au lanceur par la dernière capacité de l'adversaire. Fulmifer ne tient pas compte des faiblesses et des résistances de la cible. Fulmifer échoue si le lanceur agit avant la cible. Dans un combat Multi, Fulmifer touche le dernier Pokémon adverse à avoir occasionné des dégâts au lanceur.",
+    "description": "Le lanceur contre-attaque avec un coup infligeant des dégâts supérieurs à ceux de la dernière capacité qui l'a blessé.",
+    "makesContact": false,
+    "critRate": 0,
+    "targetPreset": "self"
+  },
+  {
+    "id": 292,
+    "slug": "demi-tour",
+    "name": "Demi-Tour",
+    "type": "Insecte",
+    "category": "Physique",
+    "power": 70,
+    "accuracy": 100,
+    "pp": 20,
+    "priority": 0,
+    "effet": "Demi-Tour occasionne des dégâts et fait remplacer le lanceur par un autre Pokémon de son équipe. Le changement s'applique même si l'utilisateur est interdit de fuite par un capacité ou un talent ennemi ([[move:etreinte|Étreinte]], [[ability:marque-ombre|Marque Ombre]], [[move:regard-noir|Regard Noir]], etc.) ou parce qu'il a utilisé [[move:racines|Racines]] (dont l'effet est perdu après l'attaque). En revanche, il n'y pas pas de switch si le lanceur est le dernier Pokémon en vie, la capacité est bloqué (par [[move:abri|Abri]] par exemple), ou si les dégâts infligés mettent fin au combat. Si l'utilisateur attaque un porteur de [[item:carton-rouge|Carton Rouge]], l'effet de l'objet prend le dessus, et l'attaquant se retrouve échangé par un Pokémon aléatoire.",
+    "description": "Après son attaque, le lanceur revient à toute vitesse et change de place avec un Pokémon de l'équipe prêt à combattre.",
+    "makesContact": true,
+    "critRate": 0,
+    "targetPreset": "all-one"
+  },
+  {
+    "id": 293,
+    "slug": "close-combat",
+    "name": "Close Combat",
+    "type": "Combat",
+    "category": "Physique",
+    "power": 120,
+    "accuracy": 100,
+    "pp": 10,
+    "priority": 0,
+    "effet": "Close Combat inflige des dégâts à la cible, mais réduit l'[[docs:statistics|Défense]] et la [[docs:statistics|Défense Spéciale]] du lanceur d'un niveau chacun après l'attaque.",
+    "description": "Le lanceur ne pense plus à se protéger et frappe sa cible violemment au corps à corps. Cette capacité baisse la Défense et la Défense Spéciale du lanceur.",
+    "makesContact": true,
+    "critRate": 0,
+    "targetPreset": "adjacent-one"
+  },
+  {
+    "id": 294,
+    "slug": "represailles",
+    "name": "Représailles",
+    "type": "Ténèbres",
+    "category": "Physique",
+    "power": 50,
+    "accuracy": 100,
+    "pp": 10,
+    "priority": 0,
+    "effet": "Représailles inflige des dégâts à la cible. Si le lanceur agit après sa cible, la puissance de Représailles est doublée. La puissance de Représailles n'est pas modifiée si la cble est échangée.",
+    "description": "Le lanceur charge son énergie, puis attaque. La puissance de la capacité est doublée si le lanceur agit après la cible.",
+    "makesContact": true,
+    "critRate": 0,
+    "targetPreset": "adjacent-one"
+  },
+  {
+    "id": 295,
+    "slug": "assurance",
+    "name": "Assurance",
+    "type": "Ténèbres",
+    "category": "Physique",
+    "power": 60,
+    "accuracy": 100,
+    "pp": 10,
+    "priority": 0,
+    "effet": "Assurance inflige des dégâts à la cible. La puissance de cette capacité double si la cible a déjà reçu des dégâts durant le tour où la capacité a été lancée. Les dégâts peuvent venir d'une autre capacité ou être causés par un piège d'entrée, comme les [[move:picots|Picots]].",
+    "description": "La puissance de cette capacité est deux fois plus élevée si la cible a déjà été blessée durant ce tour.",
+    "makesContact": true,
+    "critRate": 0,
+    "targetPreset": "adjacent-one"
+  },
+  {
+    "id": 296,
+    "slug": "degommage",
+    "name": "Dégommage",
+    "type": "Ténèbres",
+    "category": "Physique",
+    "accuracy": 100,
+    "pp": 10,
+    "priority": 0,
+    "effet": "La puissance de Dégommage dépend de l'objet tenu par l'utilisateur, la capacité échoue si celuici ne tient rien ou s'il tient un objet ne se trouvant pas dans la liste dessous. L'objet disparaît après usage, à moins qu'il ne soit récupérer via [[move:recyclage|Recyclage]] ou le talent [[ability:recolte|Récolte]]. Si l'utilisateur lance une Baie sur sa cible, l'effet de cette Baie s'active sur la cible. Il est impossible de lancer des Joyaux, des Lettres ou des Poké Balls. Il est impossible d'utiliser Dégommage si le lanceur a le talent [[ability:maladresse|Maladresse]], s'il vient de subir [[move:sabotage|Sabotage]] et si l'adversaire possède le talent [[move:tension|Tension]] dans le cas où le lanceur tient une Baie. Si le lanceur tient une CT ou DT, la puissance de Dégommage correspond à la puissance de base de la capacité contenue dans l'objet tenu.",
+    "description": "Le lanceur envoie l'objet qu'il tient sur la cible. La puissance et les effets dépendent de l'objet.",
+    "makesContact": false,
+    "critRate": 0,
+    "targetPreset": "adjacent-one",
     "tables": [
       {
-        "id": "gravity-effect",
+        "id": "base-power",
         "columns": [
-          { "key": "effect" }
+          { "key": "item1", "label": "Puissance 10" },
+          { "key": "item2" },
+          { "key": "item3" }
         ],
         "rows": [
-          { "effect": "• le type [[type:Vol]] perd son immunité aux capacités de type [[type:Sol]]" },
-          { "effect": "• la puissance de [[move:force-g|Force G]] passe de 80 à 120" },
-          { "effect": "• les effets de [[ability:levitation|Lévitation]], du [[item:ballon|Ballon]] et de [[move:vol-magnetik|Vol Magnétik]] sont désactivés" },
-          { "effect": "• les pièges d'entrée ainsi que le talents [[ability:piege-sable|Piège Sable]] et les effets de [[docs:fields|Champ]] s'appliquent" },
-          { "effect": "aux Pokémon aériens entrant en combat." },
-          { "effect": "• les capacités [[move:vol|Vol]] et [[move:rebond|Rebond]] échouent si interrompues et sont inutilisables." },
-          { "effect": "• [[move:pied-voltige|Pied Voltige]], [[move:trempette|Trempette]] et [[move:vol-magnetik|Vol Magnétik]] sont inutilisables." },
-          { "effect": "• tous les Pokémons voient leur [[docs:statistics|Esquive]] diminuer de deux niveaux." }
+          { "item1": "[[item:herbe-blanche|Herbe Blanche]]", "item2": "[[item:herbe-mental|Herbe Mental]]", "item3": "[[item:herbe-pouvoir|Herbe Pouvoir]]" },
+          { "item1": "[[item:loupe|Loupe]]", "item2": "[[item:lentille-zoom|Lentille Zoom]]", "item3": "[[item:poudre-argentee|Poudre Argentée]]" },
+          { "item1": "[[item:poudre-vite|Poudre Vite]]", "item2": "[[item:poudre-claire|Poudre Claire]]", "item3": "[[item:poudre-metal|Poudre Métal]]" },
+          { "item1": "[[item:sable-doux|Sable Doux]]", "item2": "[[item:point-de-mire|Point de Mire]]", "item3": "[[item:carapace-mue|Carapace Mue]]" },
+          { "item1": "[[item:grelot-zen|Grelot Zen]]", "item2": "[[item:grosse-racine|Grosse Racine]]", "item3": "[[item:noeud-destin|Nœud Destin]]" },
+          { "item1": "[[item:ralentiqueue|Ralentiqueue]]", "item2": "[[item:restes|Restes]]", "item3": "[[item:roche-lisse|Roche Lisse]]" },
+          { "item1": "[[item:tissu-fauche|Tissu Fauche]]", "item2": "[[item:ceinture-force|Ceinture Force]]", "item3": "[[item:ceinture-pro|Ceinture Pro]]" },
+          { "item1": "[[item:lunettes-sages|Lunettes Sages]]", "item2": "[[item:lunettes-choix|Lunettes Choix]]", "item3": "[[item:mouchoir-choix|Mouchoir Choix]]" },
+          { "item1": "[[item:mouchoir-soie|Mouchoir Soie]]", "item2": "[[item:bandeau|Bandeau]]", "item3": "[[item:bandeau-muscle|Bandeau Muscle]]" },
+          { "item1": "[[item:bandeau-choix|Bandeau Choix]]", "item2": "Tous les encens", "item3": "Toutes les Baies" }
+        ]
+      },
+      {
+        "id": "base-power",
+        "columns": [
+          { "key": "item1", "label": "Puissance 30" },
+          { "key": "item2" },
+          { "key": "item3" }
+        ],
+        "rows": [
+          { "item1": "[[item:rappel|Rappel]]", "item2": "[[item:rappel-max|Rappel Max]]", "item3": "[[item:huile|Huile]]" },
+          { "item1": "[[item:huile-max|Huile Max]]", "item2": "[[item:elixir|Élixir]]", "item3": "[[item:elixir-max|Élixir Max]]" },
+          { "item1": "[[item:lava-cookie|Lava Cookie]]", "item2": "[[item:vieux-gâteau|Vieux Gâteau]]", "item3": "[[item:grelot-coque|Grelot Coque]]" },
+          { "item1": "[[item:boue-noire|Boue Noire]]", "item2": "[[item:miel|Miel]]", "item3": "[[item:rune-purifiante|Rune Purifiante]]" },
+          { "item1": "[[item:poke-poupee|Poké Poupée]]", "item2": "[[item:boule-fumee|Boule Fumée]]", "item3": "[[item:corde-sortie|Corde Sortie]]" },
+          { "item1": "[[item:multi-exp|Multi Exp]]", "item2": "[[item:oeuf-chance|Œuf Chance]]", "item3": "[[item:pierre-soleil|Pierre Soleil]]" },
+          { "item1": "[[item:pierre-lune|Pierre Lune]]", "item2": "[[item:pierre-plante|Pierre Plante]]", "item3": "[[item:pierre-eau|Pierre Eau]]" },
+          { "item1": "[[item:pierre-foudre|Pierre Foudre]]", "item2": "[[item:pierre-feu|Pierre Feu]]", "item3": "[[item:pierre-stase|Pierre Stase]]" },
+          { "item1": "[[item:peau-metal|Peau Métal]]", "item2": "[[item:ecaille-draco|Écaille Draco]]", "item3": "[[item:graine-miracle|Graine Miracle]]" },
+          { "item1": "[[item:lunettes-noires|Lunettes Noires]]", "item2": "[[item:ceinture-noire|Ceinture Noire]]", "item3": "[[item:aimant|Aimant]]" },
+          { "item1": "[[item:eau-mystique|Eau Mystique]]", "item2": "[[item:glace-eternelle|Glace Éternelle]]", "item3": "[[item:rune-sort|Rune Sort]]" },
+          { "item1": "[[item:cuillere-tordue|Cuillère Tordue]]", "item2": "[[item:charbon|Charbon]]", "item3": "[[item:lumargile|Lumargile]]" },
+          { "item1": "[[item:metronome|Métronome]]", "item2": "[[item:lentilscope|Lentilscope]]", "item3": "[[item:piece-rune|Pièce Rune]]" },
+          { "item1": "[[item:orbe-vie|Orbe Vie]]", "item2": "[[item:orbe-flamme|Orbe Flamme]]", "item3": "[[item:orbe-toxique|Orbe Toxique]]" },
+          { "item1": "[[item:balle-lumiere|Balle Lumière]]", "item2": "[[item:roche-royale|Roche Royale]]", "item3": "Toutes les boissons" },
+          { "item1": "Toutes les herbes médicinales", "item2": "Tous les médicaments", "item3": "Tous les objets de combats" },
+          { "item1": "Toutes les potions", "item2": "Tous les accélérateurs" }
+        ]
+      },
+      {
+        "id": "base-power",
+        "columns": [
+          { "key": "item1", "label": "Puissance 40" },
+          { "key": "item2" },
+          { "key": "item3" }
+        ],
+        "rows": [
+          { "item1": "[[item:roche-glace|Roche Glace]]" }
+        ]
+      },
+      {
+        "id": "base-power",
+        "columns": [
+          { "key": "item1", "label": "Puissance 50" },
+          { "key": "item2" },
+          { "key": "item3" }
+        ],
+        "rows": [
+          { "item1": "[[item:bec-pointu|Bec Pointu]]" }
+        ]
+      },
+      {
+        "id": "base-power",
+        "columns": [
+          { "key": "item1", "label": "Puissance 60" },
+          { "key": "item2" },
+          { "key": "item3" }
+        ],
+        "rows": [
+          { "item1": "[[item:roche-chaude|Roche Chaude]]", "item2": "[[item:roche-humide|Roche Humide]]", "item3": "[[item:bracelet-macho|Bracelet Macho]]" }
+        ]
+      },
+      {
+        "id": "base-power",
+        "columns": [
+          { "key": "item1", "label": "Puissance 70" },
+          { "key": "item2" },
+          { "key": "item3" }
+        ],
+        "rows": [
+          { "item1": "[[item:pic-venin|Pic Venin]]", "item2": "[[item:croc-dragon|Croc Dragon]]", "item3": "Tous les objets \"pouvoirs\"" }
+        ]
+      },
+      {
+        "id": "base-power",
+        "columns": [
+          { "key": "item1", "label": "Puissance 80" },
+          { "key": "item2" },
+          { "key": "item3" }
+        ],
+        "rows": [
+          { "item1": "[[item:pierre-eclat|Pierre Éclat]]", "item2": "[[item:pierre-nuit|Pierre Nuit]]", "item3": "[[item:pierre-aube|Pierre Aube]]" },
+          { "item1": "[[item:pierre-ovale|Pierre Ovale]]", "item2": "[[item:vive-griffe|Vive Griffe]]", "item3": "[[item:piquants|Piquants]]" }
+        ]
+      },
+      {
+        "id": "base-power",
+        "columns": [
+          { "key": "item1", "label": "Puissance 90" },
+          { "key": "item2" },
+          { "key": "item3" }
+        ],
+        "rows": [
+          { "item1": "[[item:accro-griffe|Accro Griffe]]", "item2": "Toutes les plaques" }
+        ]
+      },
+      {
+        "id": "base-power",
+        "columns": [
+          { "key": "item1", "label": "Puissance 100" },
+          { "key": "item2" },
+          { "key": "item3" }
+        ],
+        "rows": [
+          { "item1": "[[item:chariot-distordu|Chariot Distordu]]", "item2": "[[item:os-rare|Os Rare]]", "item3": "[[item:pierre-dure|Pierre Dure]]" },
+          { "item1": "Tous les fossiles" }
+        ]
+      },
+      {
+        "id": "base-power",
+        "columns": [
+          { "key": "item1", "label": "Puissance 130" },
+          { "key": "item2" },
+          { "key": "item3" }
+        ],
+        "rows": [
+          { "item1": "[[item:balle-fer|Balle Fer]]", "item2": "[[item:maxi-pepite|Maxi Pépite]]" }
+        ]
+      },
+      {
+        "id": "base-power",
+        "columns": [
+          { "key": "item", "label": "Objet" },
+          { "key": "power", "label": "Puissance" },
+          { "key": "effect", "label": "Effets" }
+        ],
+        "rows": [
+          { "item": "[[item:orbe-flamme|Orbe Flamme]]", "power": 30, "effect": "[[docs:status|Brûle]] la cible." },
+          { "item": "[[item:orbe-toxique|Orbe Toxique]]", "power": 30, "effect": "[[docs:status|Empoisonne]] la cible." },
+          { "item": "[[item:balle-lumiere|Balle Lumière]]", "power": 30, "effect": "[[docs:status|Paralyse]] la cible." },
+          { "item": "[[item:herbe-mental|Herbe Mental]]", "power": 10, "effect": "Guérit la cible de l'[[docs:status|attirance]]." },
+          { "item": "[[item:herbe-blanche|Herbe Blanche]]", "power": 10, "effect": "Restaure les [[docs:statistics|Statistiques]]." },
+          { "item": "[[item:pic-venin|Pic Venin]]", "power": 70, "effect": "[[docs:status|Empoisonne]] la cible." },
+          { "item": "[[item:roche-royale|Roche Royale]]", "power": 30, "effect": "[[docs:status|Apeure]] la cible." }
         ]
       }
     ]
+  },
+  {
+    "id": 297,
+    "slug": "astuce-force",
+    "name": "Astuce Force",
+    "type": "Psy",
+    "category": "Statut",
+    "pp": 10,
+    "priority": 0,
+    "effet": "Astuce Force échange l'[[docs:statistics|Attaque]] et la [[docs:statistics|Défense]] du lanceur, sans prendre en compte d'éventuelles modifications de ces deux statistiques. L'effet peut être transmis par [[move:relais|Relais]].",
+    "description": "Le lanceur utilise ses pouvoirs psychiques pour échanger sa Défense et son Attaque.",
+    "makesContact": false,
+    "critRate": 0,
+    "targetPreset": "self"
+  },
+  {
+    "id": 298,
+    "slug": "suc-digestif",
+    "name": "Suc Digestif",
+    "type": "Poison",
+    "category": "Statut",
+    "accuracy": 100,
+    "pp": 10,
+    "priority": 0,
+    "effet": "Suc Digestif supprime le [[ability: |talent]] de la cible et donc ses effets. Si le Pokémon est switché au cours du match, il retrouve son talent initial. Suc Digestif ne permet pas de supprimer les talents gymmicks.",
+    "description": "Le lanceur répand ses sucs digestifs sur la cible sur la cible. Le fluide neutralise le talent de celle-ci.",
+    "makesContact": false,
+    "critRate": 0,
+    "targetPreset": "adjacent-one"
+  },
+  {
+    "id": 299,
+    "slug": "photocopie",
+    "name": "Photocopie",
+    "type": "Normal",
+    "category": "Statut",
+    "pp": 20,
+    "priority": 0,
+    "effet": "Photocopie permet au lanceur de copier la dernière capacité lancée au cours du combat, que cela soit par l'adversaire, un partenaire ou le lanceur lui-même.",
+    "description": "le lanceur imite la dernière capacté employée. Échoue si aucune capacité n'a été utilisé.",
+    "makesContact": false,
+    "critRate": 0,
+    "targetPreset": "self"
   },
   {
     "id": 999,
