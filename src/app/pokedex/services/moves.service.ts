@@ -54,16 +54,17 @@ function normalizeTarget(m: any): { preset?: TargetPreset; pattern?: TargetCell[
   }
 
   if (
-    presetRaw === 'adjacent-one'     ||
-    presetRaw === 'adjacent-foes-all'||
-    presetRaw === 'adjacent-all'     ||
-    presetRaw === 'all-one'          ||
-    presetRaw === 'ally-one'         ||
-    presetRaw === 'all-allies'       ||
-    presetRaw === 'self-or-ally'     ||
-    presetRaw === 'all-ennemies'     ||
-    presetRaw === 'variable'         ||
-    presetRaw === 'all'              ||
+    presetRaw === 'adjacent-one'        ||
+    presetRaw === 'adjacent-foes-all'   ||
+    presetRaw === 'adjacent-all'        ||
+    presetRaw === 'all-one'             ||
+    presetRaw === 'ally-one'            ||
+    presetRaw === 'all-allies'          ||
+    presetRaw === 'all-allies-but-self' ||
+    presetRaw === 'self-or-ally'        ||
+    presetRaw === 'all-ennemies'        ||
+    presetRaw === 'variable'            ||
+    presetRaw === 'all'                 ||
     presetRaw === 'self'
   ) {
     return { preset: presetRaw as TargetPreset };
@@ -79,6 +80,7 @@ function normalizeTarget(m: any): { preset?: TargetPreset; pattern?: TargetCell[
   if (txt === 'allyone')            return { preset: 'ally-one' };
   if (txt === 'allennemies')        return { preset: 'all-ennemies' };
   if (txt === 'allallies')          return { preset: 'all-allies' };
+  if (txt === 'allalliesbutself')   return { preset: 'all-allies-but-self' };
   if (txt === 'selforally')         return { preset: 'self-or-ally' };
   return {};
 }

@@ -1,6 +1,6 @@
 export type MoveCategory = 'Physique' | 'Spécial' | 'Statut' | string;
 
-export type TargetPreset = 'adjacent-one' | 'adjacent-foes-all' | 'adjacent-all' | 'all-one' | 'ally-one' | 'all-allies' | 'self-or-ally' | 'all-ennemies' | 'variable' | 'all' | 'self';
+export type TargetPreset = 'adjacent-one' | 'adjacent-foes-all' | 'adjacent-all' | 'all-one' | 'ally-one' | 'all-allies' | 'all-allies-but-self' | 'self-or-ally' | 'all-ennemies' | 'variable' | 'all' | 'self';
 export type TargetCell = 'FOE_L'|'FOE_C'|'FOE_R'|'SELF'|'ALLY_L'|'ALLY_R';
 
 export interface Move {
