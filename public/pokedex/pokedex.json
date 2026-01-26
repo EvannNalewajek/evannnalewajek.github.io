@@ -290,8 +290,8 @@
     "genderRatio": { "male": 12.5, "female": 87.5 },
     "captureRate": 255,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/linepille_sprite.png",
+      "artwork": "pokedex/img/pokemon/linepille_artwork.png"
     },
     "baseStats": { "hp": 40, "atk": 35, "def": 30, "spa": 35, "spd": 30, "spe": 30 },
     "description": "Ces Pokémon vivent collés les uns aux autres dans des galeries étroites. En fonction de leur alimentation, ces larves peuvent aussi bien devenir une simple ouvrière qu'une grand reine.",
@@ -304,6 +304,7 @@
     "id": 13,
     "slug": "myrmilia",
     "name": "Myrmilia",
+    "formName": "female",
     "types": ["Insecte", "Sol"],
     "category": "Fourmi ouvrier",
     "abilities": ["[[ability:essaim|Essaim]]"],
@@ -313,8 +314,32 @@
     "genderRatio": { "male": 12.5, "female": 87.5 },
     "captureRate": 255,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/myrmilia_f_sprite.png",
+      "artwork": "pokedex/img/pokemon/myrmilia_f_artwork.png"
+    },
+    "baseStats": { "hp": 55, "atk": 65, "def": 55, "spa": 50, "spd": 50, "spe": 65 },
+    "description": "Les femelles sont responsables de récupérer de la nourriture et creuser les galeries, tandis que les mâles possèdent des ailes pour se préparer à leur vol nuptial.",
+    "etymology": {
+      "myrmica": "genre de fourmis",
+      "familia": "famille en latin"
+    }
+  },
+  {
+    "id": 13,
+    "slug": "myrmilia",
+    "name": "Myrmilia",
+    "formName": "male",
+    "types": ["Insecte", "Sol"],
+    "category": "Fourmi ouvrier",
+    "abilities": ["[[ability:essaim|Essaim]]"],
+    "hiddenAbility": "[[ability:boom-final|Boom Final]]",
+    "height_m": 0.3,
+    "weight_kg": 7.8,
+    "genderRatio": { "male": 12.5, "female": 87.5 },
+    "captureRate": 255,
+    "images": {
+      "sprite": "pokedex/img/pokemon/myrmilia_m_sprite.png",
+      "artwork": "pokedex/img/pokemon/myrmilia_m_artwork.png"
     },
     "baseStats": { "hp": 55, "atk": 65, "def": 55, "spa": 50, "spd": 50, "spe": 65 },
     "description": "Les femelles sont responsables de récupérer de la nourriture et creuser les galeries, tandis que les mâles possèdent des ailes pour se préparer à leur vol nuptial.",
