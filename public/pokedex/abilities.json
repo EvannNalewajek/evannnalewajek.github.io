@@ -66,6 +66,17 @@
     "description": "Le Pokémon augmente l'humidité de l'air, ce qui empêche tous les Pokémon d'utiliser des capacités explosives telles que Destruction."
   },
   {
+    "id": 7,
+    "slug": "echauffement",
+    "name": "Échauffement",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Immunité contre le statut [[docs:status|paralysie]].",
+    "battleEffectLong": "Un Pokémon doté du talent Échauffement ne peut pas être [[docs:status|paralysé]]. Si un Pokémon obtient ce talent grâce aux capacités [[move:imitation|Imitation]] dou encore le talent Calque, en étant déjà paralysé, son statut est soigné. Toutefois, s'il est amené à perdre à nouveau ce talent, il peut de nouveau être paralysé.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Échauffement n'a aucun effet hors combat.",
+    "description": "Le Pokémon s'est suffisamment échauffé, ce qui l'immunise contre la paralysie."
+  },
+  {
     "id": 8,
     "slug": "voile-sable",
     "name": "Voile Sable",
@@ -88,6 +99,28 @@
     "description": "Le Pokémon charge son corps en électricité statique, et tout contact avec lui peut paralyser."
   },
   {
+    "id": 10,
+    "slug": "absorbe-volt",
+    "name": "Absorbe-Volt",
+    "battleEffectCondition": "Lors d'une capacité adverse",
+    "battleEffectShort": "Immunité contre les capacités de type [[type:Électrik]] : elles soignent jusqu'à 25 % des [[docs:statistics|PV]] maximum du Pokémon.",
+    "battleEffectLong": "Un Pokémon doté de ce talent récupère 1/4 de ses [[docs:statistics|PV]] max s'il est touché par une capacité de type [[type:Électrik]] et il ne subit pas les effets de cette capacité.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Absorbe-Volt n'a aucun effet hors combat.",
+    "description": "Si le Pokémon est touché par une capacité Électrik, il ne subit aucun dégât et regagne des PV à la place."
+  },
+  {
+    "id": 11,
+    "slug": "absorbe-eau",
+    "name": "Absorbe-Eau",
+    "battleEffectCondition": "Lors d'une capacité adverse",
+    "battleEffectShort": "Immunité contre les capacités de type [[type:Eau]] : elles soignent jusqu'à 25 % des [[docs:statistics|PV]] maximum du Pokémon.",
+    "battleEffectLong": "Un Pokémon doté de ce talent récupère 1/4 de ses [[docs:statistics|PV]] max s'il est touché par une capacité de type [[type:Eau]] et il ne subit pas les effets de cette capacité.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Absorbe-Eau n'a aucun effet hors combat.",
+    "description": "Si le Pokémon est touché par une capacité Eau, il ne subit aucun dégât et regagne des PV à la place."
+  },
+  {
     "id": 12,
     "slug": "benet",
     "name": "Benêt",
@@ -97,6 +130,17 @@
     "fieldEffectCondition": "Aucun effet",
     "fieldEffectLong": "Benêt n'a aucun effet hors combat.",
     "description": "Le Pokémon est un grand benêt, ce qui l'immunise contre l'attraction, la provocation ou l'intimidation."
+  },
+  {
+    "id": 13,
+    "slug": "ciel-gris",
+    "name": "Ciel Gris",
+    "battleEffectCondition": "Selon le climat",
+    "battleEffectShort": "Annule les effets du [[docs:weather|climat]].",
+    "battleEffectLong": "Tant que le Pokémon doté de ce talent est en combat, les effets du [[docs:weather|climat]] sont annulés.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Ciel Gris n'a aucun effet hors combat.",
+    "description": "Annule tous les effets liés à la météo."
   },
   {
     "id": 14,
@@ -110,7 +154,95 @@
     "description": "Les yeux à facettes du Pokémon augmentent la Précision de ses capacités."
   },
   {
-    "id": 24,
+    "id": 15,
+    "slug": "insomnia",
+    "name": "Insomnia",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Immunité contre le statut [[docs:status|sommeil]].",
+    "battleEffectLong": "Un Pokémon doté de ce talent ne peut pas être mis [[docs:status|endormi]].",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Insomnia n'a aucun effet hors combat.",
+    "description": "Le Pokémon est incapable de dormir."
+  },
+  {
+    "id": 16,
+    "slug": "vaccin",
+    "name": "Vaccin",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Immunité contre le statut [[docs:status|poison]].",
+    "battleEffectLong": "Un Pokémon doté de Vaccin ne pourra pas être [[docs:status|empoisonné]], peu importe la manière dont le statut est infligé. Dans le cas rare où un Pokémon doté de ce talent se fait quand même empoisonner, il guérit immédiatement après.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Vaccin n'a aucun effet hors combat.",
+    "description": "Le Pokémon est naturellement immunisé contre toute forme de poison."
+  },
+  {
+    "id": 17,
+    "slug": "torche",
+    "name": "Torche",
+    "battleEffectCondition": "Lors d'une capacité adverse",
+    "battleEffectShort": "Immunité contre les capacités de type [[type:Feu]] : elles augmentent de 50 % la puissance des capacités de type [[type:Feu]] du Pokémon.",
+    "battleEffectLong": "Quand un Pokémon doté de ce talent est touché par une capacité de type [[type:Feu]] (offensive ou non, donc des capacités comme [[move:feu-follet|Feu Follet]] sont aussi concernées) ou que son statut est modifié en [[docs:status|brûlure]], il obtient un boost de dégâts de 50 % (non cumulable) pour ses propres capacités Feu. Il est également immunisé aux effets des capacités Feu qui le touchent.",
+    "fieldEffectCondition": "Avec effet",
+    "fieldEffectLong": "Avec un Pokémon doté du talent Torche en première place dans son équipe, le joueur a de plus fortes chances de rencontrer des Pokémon sauvages de type Feu.",
+    "description": "Lorsque le Pokémon est touché par une capacité de type Feu, il absorbe la chaleur pour renforcer ses propres capacités Feu."
+  },
+  {
+    "id": 18,
+    "slug": "ecran-poudre",
+    "name": "Écran Poudre",
+    "battleEffectCondition": "Lors d'une capacité adverse",
+    "battleEffectShort": "Les effets secondaires des capacités ennemies sont annulés.",
+    "battleEffectLong": "Un Pokémon doté de ce talent est immunisé aux effets secondaires des capacités ennemies. Ainsi, par exemple, [[move:laser-glace|Laser Glace]] ne peut pas [[docs:status|geler]]. Cependant, les capacités de statut (comme [[move:toxik|Toxik]], [[move:rugissement|Rugissement]], etc.) restent totalement fonctionnelles.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Écran Poudre n'a aucun effet hors combat.",
+    "description": "Le Pokémon dispose d'un écran naturel qui le protège des effets additionnels des attaques ennemies."
+  },
+  {
+    "id": 19,
+    "slug": "tempo-perso",
+    "name": "Tempo Perso",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Immunité contre la [[docs:status|confusion]] et contre l'[[ability:intimidation|intimidation]].",
+    "battleEffectLong": "Un Pokémon doté de ce talent ne peut pas être [[docs:status|confus]], y compris s'il utilise des capacités entraînant la confusion, comme [[move:mania|Mania]] ou [[move:colere|Colère]]. Il n'est plus non plus affecté par le talent [[ability:intimidation|Intimidation]] du Pokémon ennemi.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Tempo Perso n'a aucun effet hors combat.",
+    "description": "Le Pokémon vit sa vie à son propre rythme, ce qui l'immunise contre la confusion et l'intimidation."
+  },
+  {
+    "id": 20,
+    "slug": "ventouse",
+    "name": "Ventouse",
+    "battleEffectCondition": "Lors d'une capacité adverse",
+    "battleEffectShort": "Immunité contre le switch forcé.",
+    "battleEffectLong": "Un Pokémon doté du talent Ventouse ne peut pas être forcé par son adversaire à quitter le combat ou à être échangé, que ce soit en utilisant une capacité comme [[move:hurlement|Hurlement]], [[move:cyclone|Cyclone]] ou [[move:projection|Projection]], ou en subissant les effets du [[item:carton-rouge|Carton Rouge]]. Il peut toutefois toujours quitter de lui-même le combat en utilisant des capacités de fuite, comme [[move:relais|Relais]] ou [[move:teleport|Téléport]], ou en utilisant des objets comme la [[item:pokepoupee|Poképoupée]] ou le [[item:bouton-fuite|Bouton Fuite]].",
+    "fieldEffectCondition": "Avec effet",
+    "fieldEffectLong": "lorsqu'un Pokémon avec Ventouse est placé en tête d'équipe, il est plus facile de pêcher des Pokémon.",
+    "description": "Le Pokémon est solidement fixé au sol, ce qui le protège des capacités ou objets qui font changer de Pokémon."
+  },
+  {
+    "id": 21,
+    "slug": "intimidation",
+    "name": "Intimidation",
+    "battleEffectCondition": "Lorsque le Pokémon est envoyé",
+    "battleEffectShort": "La statistique d'[[docs:statistics|Attaque]] du Pokémon adverse baisse lorsque le Pokémon est envoyé au combat.",
+    "battleEffectLong": "Quand un Pokémon doté de ce talent arrive sur le terrain, il réduit d'un niveau l'[[docs:statistics|Attaque]] de son adversaire. En combat Duo, cela s'applique aux deux adversaires sur le terrain.",
+    "fieldEffectCondition": "Avec effet",
+    "fieldEffectLong": "Si un Pokémon avec Intimidation est placé en tête d'équipe, le joueur a 50 % de chances de moins de rencontrer des Pokémon de faibles niveaux. Est considéré comme Pokémon de faible niveau tout Pokémon ayant au moins 5 niveaux de moins que le Pokémon avec Intimidation en tête d'équipe.",
+    "description": "Le Pokémon rugit lorsqu'il arrive au combat, ce qui intimide l'ennemi et baisse son Attaque."
+  },
+  {
+    "id": 22,
+    "slug": "marque-ombre",
+    "name": "Marque Ombre",
+    "battleEffectCondition": "Entre chaque tour",
+    "battleEffectShort": "La fuite ou le switch d'un Pokémon adverse est impossible.",
+    "battleEffectLong": "Si un Pokémon rencontre un adversaire doté du talent Marque Ombre, alors il ne pourra plus s'enfuir, ni être échangé. Il peut toutefois forcer la fin du combat grâce à des capacités comme [[move:cyclone|Cyclone]] ou [[move:hurlement|Hurlement]]. Si le Pokémon piégé possède les talents [[ability:fuite|Fuite]], ou s'il utilise une capacité permettant le changement comme [[move:demi-tour|Demi-Tour]] ou [[move:dernier-mot|Dernier Mot]], alors la fuite ou l'échange peut toujours se réaliser. Les Pokémon de type [[type:Spectre]] ou possédant également le talent Marque Ombre ne peuvent pas être piégés.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Marque Ombre n'a aucun effet hors combat.",
+    "description": "Empêche le Pokémon ennemi de quitter le combat."
+  },
+  {
+    "id": 23,
     "slug": "peau-dure",
     "name": "Peau Dure",
     "battleEffectCondition": "Lors d'une capacité adverse",
@@ -121,7 +253,73 @@
     "description": "Blesse l'attaquant lorsque le Pokémon subit une attaque directe."
   },
   {
-    "id": 32,
+    "id": 24,
+    "slug": "levitation",
+    "name": "Lévitation",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Immunité contre les capacités de type [[type:Sol]]. Immunité contre les [[docs:fields|champs]]. Immunité contre [[move:picots|Picots]], [[move:pics-toxik|Pics Toxik]] et [[move:toile-gluante|Toile Gluante]].",
+    "battleEffectLong": "Un Pokémon doté de Lévitation ne peut pas être touché par des capacités de type [[type:Sol]], excepté [[move:jet-de-sable|Jet de Sable]]. Lévitation permet également d'échapper aux [[move:picots|Picots]], aux [[move:pics-toxik|Pics Toxik]] et à la [[move:toile-gluante|Toile Gluante]]. Son effet est annulé si le Pokémon tient une [[item:balle-fer|Balle Fer]], si le Pokémon adverse possède le talent [[ability:brise-moule|Brise Moule]], ou si le Pokémon subit l'effet des capacités comme [[move:gravite|Gravité]], [[move:suc-digestif|Suc Digestif]], [[move:ten-danse|Ten-Danse]], [[move:rayon-simple|Rayon Simple]], [[move:echange|Échange]] ou [[move:anti-air|Anti-Air]]. Un Pokémon possédant Lévitation utilisant [[move:atterrissage|Atterrissage]] ne perd pas son immunité au type [[type:Sol]].",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Lévitation n'a aucun effet hors combat.",
+    "description": "Le Pokémon flotte, ce qui l'immunise contre les capacités de type Sol."
+  },
+  {
+    "id": 25,
+    "slug": "pose-spore",
+    "name": "Pose Spore",
+    "battleEffectCondition": "Lors d'une capacité adverse",
+    "battleEffectShort": "Les capacités directes reçues ont 30 % de chances de donner le statut [[docs:status|poison]], [[docs:status|paralysie]] ou [[docs:status|sommeil]] à leur lanceur.",
+    "battleEffectLong": "Quand un Pokémon doté de ce talent subit une capacité directe, il a 30 % de chances d'infliger un [[docs:status|statut]] à son attaquant : 9 % de chances d'[[docs:status|empoisonnement]], 10 % de chances de [[docs:status|paralysie]], et 11 % de chances de [[docs:status|sommeil]]. Un Pokémon de type [[type:Plante]], portant l'objet [[item:lunettes-filtre|Lunettes Filtre]] ou porteur du talent [[ability:envelocape|Envelocape]] est immunisé aux effets de Pose Spore.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Pose Spore n'a aucun effet hors combat.",
+    "description": "Peut paralyser, empoisonner ou endormir l'attaquant lorsque le Pokémon subit une attaque directe."
+  },
+  {
+    "id": 26,
+    "slug": "synchro",
+    "name": "Synchro",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Le Pokémon adverse obtient la [[docs:status|brûlure]], l'[[docs:status|empoisonnement]] ou la [[docs:status|paralysie]] subie par le Pokémon.",
+    "battleEffectLong": "Quand un Pokémon doté du talent Synchro est [[docs:status|empoisonné]], [[docs:status|paralysé]] ou [[docs:status|brûlé]], alors il inflige la même altération de statut à l'attaquant. Ce talent ne fonctionne pas avec le [[docs:status|sommeil]], le [[docs:status|gel]] ou la [[docs:status|confusion]]. Ce statut doit obligatoirement être provoqué par une capacité ou l'activation d'un talent comme [[ability:statik|Statik]] ou encore [[ability:corps-ardent|Corps Ardent]]. La transmission de statut échoue si la cible est immunisée au statut devant être infligé. Si le Pokémon adverse qui switche face à celui qui a Synchro est déjà atteint d'une altération de statut, ce dernier ne changera pas, même s'il est différent de celui du Pokémon ayant Synchro.",
+    "fieldEffectCondition": "Avec effet",
+    "fieldEffectLong": "Si un Pokémon avec Synchro est placé en tête d'équipe, alors le joueur rencontrera un Pokémon sauvage avec la même nature que lui. Cet effet s'applique également sur les Œufs et les Fossiles.",
+    "description": "Quand le Pokémon est brûlé, paralysé ou empoisonné par un autre Pokémon, il partage ce statut avec celui-ci."
+  },
+  {
+    "id": 27,
+    "slug": "corps-sain",
+    "name": "Corps Sain",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Immunité contre la diminution de [[docs:statistics|statistiques]] du Pokémon imposée par un autre.",
+    "battleEffectLong": "Un Pokémon doté de ce talent est immunisé aux baisses de [[docs:statistics|statistiques]] imposées par son adversaire, que ce soit par des capacités ou un talent (par exemple, [[ability:intimidation|Intimidation]]. Il reste tout de même sensible aux diminutions qu'il peut s'imposer lui-même par des capacités comme [[move:malediction|Malédiction]] ou [[move:exuviation|Exuviation]].",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Corps Sain n'a aucun effet hors combat.",
+    "description": "Empêche les stats du Pokémon de baisser à cause du talent ou d'une capacité de l'adversaire."
+  },
+  {
+    "id": 28,
+    "slug": "medic-nature",
+    "name": "Médic Nature",
+    "battleEffectCondition": "Lorsque le Pokémon est envoyé",
+    "battleEffectShort": "Le Pokémon soigne ses altérations de [[docs:status|statut]] s'il switch ou en fin de combat.",
+    "battleEffectLong": "Un Pokémon doté de Médic Nature soigne son [[docs:status|statut]] en cas de switch ou en fin de combat.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Médic Nature n'a aucun effet hors combat.",
+    "description": "Le Pokémon soigne ses altérations de statut en quittant le combat."
+  },
+  {
+    "id": 29,
+    "slug": "paratonnerre",
+    "name": "Paratonnerre",
+    "battleEffectCondition": "Lors d'une capacité adverse",
+    "battleEffectShort": "Immunité contre les capacités de type [[type:Électrik]] : elles augmentent d'un niveau l'[[docs:statistics|Attaque Spéciale]] du Pokémon. Les capacités de type [[type:Électrik]] utilisées par un Pokémon adjacent touchent obligatoirement ce Pokémon.",
+    "battleEffectLong": "Si un Pokémon adverse utilise une capacité de type [[type:Électrik]] lors d'un Combat Duo, alors celle-ci se dirige forcément vers le Pokémon doté de Paratonnerre. Cependant, si l'attaque doit toucher les deux Pokémon, alors celle-ci touchera quand même les deux Pokémon. Paratonnerre immunise aux capacités Électrik, aussi bien en termes de dégâts infligés et d'effets, et, en complément, augmente d'un niveau l'[[docs:statistics|Attaque Spéciale]].",
+    "fieldEffectCondition": "Avec effet",
+    "fieldEffectLong": "Avec un Pokémon doté du talent Paratonnerre placé en tête d'équipe, le joueur a de plus fortes chances de rencontrer des Pokémon sauvages de type Électrik.",
+    "description": "Le Pokémon détourne sur lui les capacités de type Électrik et les neutralise, tout en montant son Attaque Spéciale."
+  },
+  {
+    "id": 30,
     "slug": "serenite",
     "name": "Sérénité",
     "battleEffectCondition": "Lors de son attaque",
@@ -132,7 +330,7 @@
     "description": "Augmente les chances d'infliger des effets additionnels."
   },
   {
-    "id": 33,
+    "id": 31,
     "slug": "glissade",
     "name": "Glissade",
     "battleEffectCondition": "Selon le climat",
@@ -143,7 +341,51 @@
     "description": "Augmente la Vitesse du Pokémon s'il pleut."
   },
   {
-    "id": 38,
+    "id": 32,
+    "slug": "chlorophylle",
+    "name": "Chlorophylle",
+    "battleEffectCondition": "Selon le climat",
+    "battleEffectShort": "Sous le climat [[docs:weather|soleil]], la [[docs:statistics|Vitesse]] du Pokémon est doublée.",
+    "battleEffectLong": "Si le climat est [[docs:weather|ensoleillé]], le Pokémon doté de Chlorophylle voit sa statistique de [[docs:statistics|Vitesse]] multipliée par deux.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Chlorophylle n'a aucun effet hors combat.",
+    "description": "Augmente la Vitesse du Pokémon s'il y a du soleil."
+  },
+  {
+    "id": 33,
+    "slug": "luminescence",
+    "name": "Luminescence",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Ignore les augmentations d'[[docs:statistics|Esquive]] de la cible. Immunité contre la diminution de la [[docs:statistics|Précision]] du Pokémon.",
+    "battleEffectLong": "Luminescence permet au Pokémon ayant le talent d'ignorer les augmentations d'[[docs:statistics|Esquive]] de sa cible, et de l'immuniser aux baisses de sa [[docs:statistics|Précision]].",
+    "fieldEffectCondition": "Avec effet",
+    "fieldEffectLong": "Un Pokémon avec Luminescence en tête d'équipe permettait de rencontrer deux fois plus de Pokémon sauvages.",
+    "description": "Le Pokémon illumine les alentours, ce qui empêche sa Précision de baisser."
+  },
+  {
+    "id": 34,
+    "slug": "calque",
+    "name": "Calque",
+    "battleEffectCondition": "Lorsque le Pokémon est envoyé",
+    "battleEffectShort": "Change le talent du Pokémon en celui d'un Pokémon adverse.",
+    "battleEffectLong": "Un Pokémon doté de ce talent copie celui de son adversaire en entrant dans le match. En Combat Duo ou Trio, un seul talent adverse est copié aléatoirement. Ne peut pas copier les talents gimmicks.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Calque n'a aucun effet hors combat.",
+    "description": "Lorsque le Pokémon entre au combat, il calque le talent d'un ennemi pour remplacer le sien."
+  },
+  {
+    "id": 35,
+    "slug": "coloforce",
+    "name": "Coloforce",
+    "battleEffectCondition": "Lorsque le Pokémon est envoyé",
+    "battleEffectShort": "La statistique d'[[docs:statistics|Attaque]] du Pokémon est doublée.",
+    "battleEffectLong": "Un Pokémon doté de ce talent a sa statistique d'[[docs:statistics|Attaque]] doublée.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Coloforce n'a aucun effet hors combat.",
+    "description": "Double l'Attaque du Pokémon."
+  },
+  {
+    "id": 36,
     "slug": "point-poison",
     "name": "Point Poison",
     "battleEffectCondition": "Lors d'une capacité adverse",
@@ -154,7 +396,7 @@
     "description": "Peut empoisonner l'attaquant lorsque le Pokémon subit une attaque directe."
   },
   {
-    "id": 39,
+    "id": 37,
     "slug": "attention",
     "name": "Attention",
     "battleEffectCondition": "Lors d'une capacité adverse",
@@ -165,7 +407,73 @@
     "description": "Le Pokémon a un mental à toute épreuve qui empêche les attaques ennemies de lui faire peur. Il est aussi immunisé contre le talent Intimidation."
   },
   {
-    "id": 46,
+    "id": 38,
+    "slug": "armumagma",
+    "name": "Armumagma",
+    "battleEffectCondition": "Lors d'une capacité adverse",
+    "battleEffectShort": "Immunité contre le statut [[docs:status|gel]].",
+    "battleEffectLong": "Un Pokémon doté de ce talent ne peut pas être [[docs:status|gelé]].",
+    "fieldEffectCondition": "Avec effet",
+    "fieldEffectLong": "Placé dans l'équipe avec au moins un Œuf, le Pokémon doté du talent Armumagma, même K.O., permet de diviser par deux le nombre de pas nécessaires à l'éclosion.",
+    "description": "Le magma qui recouvre le corps du Pokémon le protège contre le gel."
+  },
+  {
+    "id": 39,
+    "slug": "ignifu-voile",
+    "name": "Ignifu-Voile",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Immunité contre le statut [[docs:status|brûlure]].",
+    "battleEffectLong": "Un Pokémon doté de ce talent ne peut pas subir de [[docs:status|brûlure]]. Si un Pokémon obtient ce talent en cours de combat en étant déjà brûlé, son statut est alors soigné.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Ignifu-Voile n'a aucun effet hors combat.",
+    "description": "Le voile qui recouvre le Pokémon le protège des brûlures."
+  },
+  {
+    "id": 40,
+    "slug": "magnepiege",
+    "name": "Magnépiège",
+    "battleEffectCondition": "Entre chaque tour",
+    "battleEffectShort": "La fuite ou le switch d'un Pokémon adverse de type [[type:Acier]] est impossible.",
+    "battleEffectLong": "Si un Pokémon rencontre un adversaire doté du talent Magnépiège, alors il ne pourra plus s'enfuir, ni être échangé. Il peut toutefois forcer la fin du combat grâce à des capacités comme [[move:cyclone|Cyclone]] ou [[move:hurlement|Hurlement]]. Si le Pokémon piégé possède les talents [[ability:fuite|Fuite]], ou s'il utilise une capacité permettant le changement comme [[move:demi-tour|Demi-Tour]] ou [[move:dernier-mot|Dernier Mot]], alors la fuite ou l'échange peut toujours se réaliser. Les Pokémon de type [[type:Spectre]] ne peuvent pas être piégés.",
+    "fieldEffectCondition": "Avec effet",
+    "fieldEffectLong": "Si un Pokémon avec Magnépiège est placé en tête d'équipe, les chances de rencontrer un Pokémon de type Acier augmentent de 50 %.",
+    "description": "Attire les Pokémon Acier grâce à un champ magnétique, ce qui les empêche de quitter le terrain."
+  },
+  {
+    "id": 41,
+    "slug": "anti-bruit",
+    "name": "Anti-Bruit",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Immunité contre les capacités sonores.",
+    "battleEffectLong": "Un Pokémon doté de ce talent ne sera pas sensible aux capacités dites sonores. Cependant, les Pokémon avec Anti-Bruit ne sont plus à l'abri de leurs propres capacités sonores.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Anti-Bruit n'a aucun effet hors combat.",
+    "description": "Protège le Pokémon de toutes les capacités sonores."
+  },
+  {
+    "id": 42,
+    "slug": "cuvette",
+    "name": "Cuvette",
+    "battleEffectCondition": "Selon le climat",
+    "battleEffectShort": "Sous le climat [[docs:weather|pluie]], le Pokémon régénère 1/16 de ses [[docs:statistics|PV]] maximum à chaque fin de tour.",
+    "battleEffectLong": "Un Pokémon doté de ce talent récupère 1/16 de ses [[docs:statistics|PV]] maximums à la fin de chaque tour, si le climat est [[docs:weather|pluvieux]].",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Cuvette n'a aucun effet hors combat.",
+    "description": "Le Pokémon récupère progressivement des PV lorsqu'il pleut."
+  },
+  {
+    "id": 43,
+    "slug": "sable-volant",
+    "name": "Sable Volant",
+    "battleEffectCondition": "Lorsque le Pokémon est envoyé",
+    "battleEffectShort": "Active le climat [[docs:weather|tempête de sable]] lorsque le Pokémon est envoyé au combat.",
+    "battleEffectLong": "Lorsqu'un Pokémon doté du talent Sable Volant est envoyé au combat, il modifie immédiatement le climat, provoquant ainsi une [[docs:weather|tempête de sable]]. La tempête de sable dure 5 tours. Si le Pokémon tient une [[item:roche-lisse|Roche Lisse]], l'effet dure 8 tours.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Sable Volant n'a aucun effet hors combat.",
+    "description": "Le Pokémon invoque une tempête de sable quand il entre au combat."
+  },
+  {
+    "id": 44,
     "slug": "pression",
     "name": "Pression",
     "battleEffectCondition": "Après une capacité adverse",
@@ -176,7 +484,40 @@
     "description": "Met la pression à l'adversaire pour le forcer à dépenser plus de PP."
   },
   {
-    "id": 50,
+    "id": 45,
+    "slug": "isograisse",
+    "name": "Isograisse",
+    "battleEffectCondition": "Lors d'une capacité adverse",
+    "battleEffectShort": "Diminue les dégâts subits par les capacités de type [[type:Feu]] et de type [[type:Glace]].",
+    "battleEffectLong": "Si un Pokémon adverse utilise une capacité de type [[type:Feu]] ou [[type:Glace]] contre un Pokémon doté d'Isograisse, les dégâts infligés par ces capacités sont divisés par deux.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Isograisse n'a aucun effet hors combat.",
+    "description": "Le Pokémon est protégé par une épaisse couche de graisse qui diminue de moitié les dégâts qu'il subit des capacités de types Feu et Glace."
+  },
+  {
+    "id": 46,
+    "slug": "matinal",
+    "name": "Matinal",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Le Pokémon se réveille deux fois plus rapidement.",
+    "battleEffectLong": "Lorsqu'un Pokémon doté du talent Matinal [[docs:status|s'endort]], il se réveille deux fois plus rapidement que prévu. Ce talent s'applique également en utilisant la capacité [[move:repos|Repos]], qui n'endort alors le Pokémon qu'un seul tour au lieu de 2.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Matinal n'a aucun effet hors combat.",
+    "description": "Le Pokémon se réveille deux fois plus rapidement que les autres."
+  },
+  {
+    "id": 47,
+    "slug": "corps-ardent",
+    "name": "Corps Ardent",
+    "battleEffectCondition": "Lors d'une capacité adverse",
+    "battleEffectShort": "Les capacités directes reçues ont 30 % de chances de donner le statut [[docs:status|brûlure]] à leur lanceur.",
+    "battleEffectLong": "Quand un Pokémon doté de ce talent subit une capacité directe, il a 30 % de chances de [[docs:status|brûler]] son attaquant.",
+    "fieldEffectCondition": "Avec effet",
+    "fieldEffectLong": "Placé dans l'équipe avec au moins un Œuf, le Pokémon doté du talent Armumagma, même K.O., permet de diviser par deux le nombre de pas nécessaires à l'éclosion.",
+    "description": "Peut brûler l'attaquant lorsque le Pokémon subit une attaque directe."
+  },
+  {
+    "id": 48,
     "slug": "fuite",
     "name": "Fuite",
     "battleEffectCondition": "En permanence",
@@ -187,7 +528,7 @@
     "description": "Permet de fuir n'importe quel Pokémon sauvage."
   },
   {
-    "id": 51,
+    "id": 49,
     "slug": "regard-vif",
     "name": "Regard Vif",
     "battleEffectCondition": "En permanence",
@@ -198,7 +539,18 @@
     "description": "Les yeux perçants du Pokémon empêchent sa Précision de baisser."
   },
   {
-    "id": 53,
+    "id": 50,
+    "slug": "hyper-cutter",
+    "name": "Hyper Cutter",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Immunité contre la diminution de l'[[docs:statistics|Attaque]] du Pokémon.",
+    "battleEffectLong": "Un Pokémon doté de ce talent ne peut pas subir de diminution de sa statistique d'[[docs:statistics|Attaque]], que ce soit par des capacités ou des talents, comme [[ability:intimidation|Intimidation]].",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Hyper Cutter n'a aucun effet hors combat.",
+    "description": "Le Pokémon est armé de puissantes pinces qui font sa fierté et empêchent son Attaque d'être baissée par l'adversaire."
+  },
+  {
+    "id": 51,
     "slug": "ramassage",
     "name": "Ramassage",
     "battleEffectCondition": "Après l'utilisation d'un objet / Après un combat",
@@ -209,7 +561,51 @@
     "description": "Permet parfois au Pokémon de ramasser les objets que d'autres Pokémon ont utilisés. Il lui arrive aussi d'en trouver hors des combats."
   },
   {
-    "id": 60,
+    "id": 52,
+    "slug": "agitation",
+    "name": "Agitation",
+    "battleEffectCondition": "Lors de son attaque",
+    "battleEffectShort": "La statistique d'[[docs:statistics|Attaque]] du Pokémon augmente de 50 %. Les capacités physiques du Pokémon ont leur [[docs:statistics|Précision]] diminuée de 20 %.",
+    "battleEffectLong": "Un Pokémon doté de ce talent voit son [[docs:statistics|Attaque]] augmentée de 50 %, mais en contrepartie, sa [[docs:statistics|Précision]] diminue de 20 % pour les capacités physiques uniquement (elle reste inchangée pour les capacités spéciales, de statut et OHKO).",
+    "fieldEffectCondition": "Avec effet",
+    "fieldEffectLong": "Lorsqu'un Pokémon avec Agitation est placé en tête de l'équipe, les chances de rencontrer un Pokémon sauvage au niveau le plus élevé possible augmentent de 50 %.",
+    "description": "Améliore l'Attaque du Pokémon, mais diminue la Précision."
+  },
+  {
+    "id": 53,
+    "slug": "joli-sourire",
+    "name": "Joli Sourire",
+    "battleEffectCondition": "Lors d'une capacité adverse",
+    "battleEffectShort": "Les capacités directes reçues ont 30 % de chances de donner le statut [[docs:status|attraction]] à leur lanceur de sexe opposé.",
+    "battleEffectLong": "Quand un Pokémon doté de ce talent subit une capacité directe, il a 30 % de chances de [[docs:status|rendre amoureux]] son attaquant s'il est du sexe opposé. Si l'adversaire a le même sexe ou est asexué, ce talent est sans effet.",
+    "fieldEffectCondition": "Avec effet",
+    "fieldEffectLong": "Si un Pokémon avec ce talent est placé en tête d'équipe, le joueur a deux chances sur trois de rencontrer un Pokémon de sexe opposé (et ce, peu importe les ratios de genre), et une chance sur trois que le sexe soit déterminé par le ratio normal du Pokémon. Le talent est inefficace contre les Pokémon n'ayant aucun sexe ou unisexe.",
+    "description": "Peut séduire l'attaquant lorsque le Pokémon subit une attaque directe."
+  },
+  {
+    "id": 54,
+    "slug": "plus",
+    "name": "Plus",
+    "battleEffectCondition": "Lorsque le Pokémon est envoyé",
+    "battleEffectShort": "La statistique d'[[docs:statistics|Attaque Spéciale]] du Pokémon augmente de 50 % si un allié en Combat Duo a le talent [[ability:plus|Plus]] ou [[ability:moins|Moins]].",
+    "battleEffectLong": "Si un Pokémon est envoyé en Combat Duo accompagné par un Pokémon doté du talent [[ability:plus|Plus]] ou [[ability:moins|Moins]], il obtient un boost de 50 % de sa statistique d'[[docs:statistics|Attaque Spéciale]].",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Plus n'a aucun effet hors combat.",
+    "description": "L'Attaque Spéciale du Pokémon augmente si un Pokémon allié a le talent Moins ou Plus."
+  },
+  {
+    "id": 55,
+    "slug": "moins",
+    "name": "Moins",
+    "battleEffectCondition": "Lorsque le Pokémon est envoyé",
+    "battleEffectShort": "La statistique d'[[docs:statistics|Attaque Spéciale]] du Pokémon augmente de 50 % si un allié en Combat Duo a le talent [[ability:plus|Plus]] ou [[ability:moins|Moins]].",
+    "battleEffectLong": "Si un Pokémon est envoyé en Combat Duo accompagné par un Pokémon doté du talent [[ability:plus|Plus]] ou [[ability:moins|Moins]], il obtient un boost de 50 % de sa statistique d'[[docs:statistics|Attaque Spéciale]].",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Moins n'a aucun effet hors combat.",
+    "description": "L'Attaque Spéciale du Pokémon augmente si un Pokémon allié a le talent Moins ou Plus."
+  },
+  {
+    "id": 56,
     "slug": "glu",
     "name": "Glu",
     "battleEffectCondition": "Lors d'une capacité adverse",
@@ -220,7 +616,40 @@
     "description": "Les objets sont collés au corps gluant du Pokémon, ce qui empêche ses adversaires de les dérober."
   },
   {
-    "id": 64,
+    "id": 57,
+    "slug": "mue",
+    "name": "Mue",
+    "battleEffectCondition": "Entre chaque tour",
+    "battleEffectShort": "Le Pokémon soigne ses altérations de [[docs:status|statut]] à chaque tour. (1 chance sur 3)",
+    "battleEffectLong": "Entre chaque tour, le Pokémon avec ce talent a une chance sur trois de soigner une éventuelle [[docs:status|altération de statut]].",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Mue n'a aucun effet hors combat.",
+    "description": "Le Pokémon soigne parfois ses altérations de statut en muant."
+  },
+  {
+    "id": 58,
+    "slug": "cran",
+    "name": "Cran",
+    "battleEffectCondition": "Selon son statut",
+    "battleEffectShort": "Avec un [[docs:status|statut]] altéré, l'[[docs:statistics|Attaque]] du Pokémon augmente de 50 %. Immunité contre la diminution de l'[[docs:statistics|Attaque]] du Pokémon imposée par le statut [[docs:status|brûlure]].",
+    "battleEffectLong": "Un Pokémon doté de ce talent voit sa statistique d'[[docs:statistics|Attaque]] augmenter de 50 % s'il a une altération principale de son statut : [[docs:status|brûlure]], [[docs:status|empoisonnement]], [[docs:status|gel]], [[docs:status|paralysie]] ou [[docs:status|sommeil]]. La [[docs:status|confusion]] n'active pas ce talent. Cran annule la diminution d'[[docs:statistics|Attaque]] causée par une éventuelle [[docs:status|brûlure]].",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Cran n'a aucun effet hors combat.",
+    "description": "Augmente l'Attaque du Pokémon s'il est affecté par une altération de statut."
+  },
+  {
+    "id": 59,
+    "slug": "ecaille-speciale",
+    "name": "Écaille Spéciale",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Avec un [[docs:status|statut]] altéré, la [[docs:statistics|Défense]] du Pokémon augmente de 50 %.",
+    "battleEffectLong": "Si un Pokémon doté du talent Écaille Spéciale subit une altération principale de statut ([[docs:status|paralysie]], [[docs:status|empoisonnement]], [[docs:status|gel]], [[docs:status|sommeil]] ou [[docs:status|brûlure]]), alors sa statistique de [[docs:statistics|Défense]] augmente de 50 %.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Écaille Spéciale n'a aucun effet hors combat.",
+    "description": "Les écailles mystérieuses du Pokémon réagissent aux altérations de statut en augmentant sa Défense."
+  },
+  {
+    "id": 60,
     "slug": "suintement",
     "name": "Suintement",
     "battleEffectCondition": "En permanence",
@@ -231,7 +660,7 @@
     "description": "Le Pokémon suinte un liquide toxique nauséabond qui blesse tous ceux qui tentent de voler ses PV."
   },
   {
-    "id": 65,
+    "id": 61,
     "slug": "engrais",
     "name": "Engrais",
     "battleEffectCondition": "Selon les PV restants",
@@ -242,7 +671,7 @@
     "description": "Augmente la puissance des capacités de type Plante du Pokémon qui il a perdu une certaine quantité de PV."
   },
   {
-    "id": 66,
+    "id": 62,
     "slug": "brasier",
     "name": "Brasier",
     "battleEffectCondition": "Selon les PV restants",
@@ -253,7 +682,7 @@
     "description": "Augmente la puissance des capacités de type Feu du Pokémon qui il a perdu une certaine quantité de PV."
   },
   {
-    "id": 67,
+    "id": 63,
     "slug": "torrent",
     "name": "Torrent",
     "battleEffectCondition": "Selon les PV restants",
@@ -264,7 +693,7 @@
     "description": "Augmente la puissance des capacités de type Eau du Pokémon qui il a perdu une certaine quantité de PV."
   },
   {
-    "id": 68,
+    "id": 64,
     "slug": "essaim",
     "name": "Essaim",
     "battleEffectCondition": "Selon les PV restants",
@@ -275,7 +704,7 @@
     "description": "Augmente la puissance des capacités de type Insecte du Pokémon qui il a perdu une certaine quantité de PV."
   },
   {
-    "id": 69,
+    "id": 65,
     "slug": "tete-de-roc",
     "name": "Tête de Roc",
     "battleEffectCondition": "Lors de son attaque",
@@ -284,6 +713,61 @@
     "fieldEffectCondition": "Aucun effet",
     "fieldEffectLong": "Tête de Roc n'a aucun effet hors combat.",
     "description": "Le Pokémon peut utiliser des capacités occasionnant un contrecoup sans perdre de PV."
+  },
+  {
+    "id": 66,
+    "slug": "secheresse",
+    "name": "Sécheresse",
+    "battleEffectCondition": "Lorsque le Pokémon est envoyé",
+    "battleEffectShort": "Active le climat [[docs:weather|soleil]] lorsque le Pokémon est envoyé au combat.",
+    "battleEffectLong": "Lorsqu'un Pokémon doté du talent Sécheresse est envoyé au combat, il modifie immédiatement le climat, provoquant ainsi un [[docs:weather|ensoleillement]]. La tempête de sable dure 5 tours. Si le Pokémon tient une [[item:roche-chaude|Roche Chaude]], l'effet dure 8 tours.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Sécheresse n'a aucun effet hors combat.",
+    "description": "Le Pokémon invoque le soleil quand il entre au combat."
+  },
+  {
+    "id": 67,
+    "slug": "esprit-vital",
+    "name": "Esprit Vital",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Immunité contre le statut [[docs:status|sommeil]].",
+    "battleEffectLong": "Un Pokémon doté de ce talent ne peut jamais être endormi, peu importe le moyen utilisé.",
+    "fieldEffectCondition": "Avec effet",
+    "fieldEffectLong": "Avec un Pokémon doté de ce talent à la tête de son équipe, le joueur rencontre deux fois plus de Pokémon sauvages au niveau le plus élevé possible.",
+    "description": "Empêche le Pokémon de s'endormir."
+  },
+  {
+    "id": 68,
+    "slug": "ecran-fumee",
+    "name": "Écran Fumée",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Immunité contre la diminution de [[docs:statistics|statistiques]] du Pokémon imposée par un autre.",
+    "battleEffectLong": "Un Pokémon doté de ce talent est immunisé aux réductions de [[docs:statistics|statistiques]] imposées par son adversaire, que ce soit par des capacités ou un talent.",
+    "fieldEffectCondition": "Avec effet",
+    "fieldEffectLong": "Si un Pokémon avec Écran Fumée est placé en tête d'équipe, le joueur rencontre deux fois moins de Pokémon sauvages.",
+    "description": "Un écran de fumée empêche l'ennemi de baisser les stats du Pokémon."
+  },
+  {
+    "id": 69,
+    "slug": "force-pure",
+    "name": "Force Pure",
+    "battleEffectCondition": "Lorsque le Pokémon est envoyé",
+    "battleEffectShort": "La statistique d'[[docs:statistics|Attaque]] du Pokémon est doublée.",
+    "battleEffectLong": "Un Pokémon doté de ce talent a sa statistique d'[[docs:statistics|Attaque]] doublée.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Force Pure n'a aucun effet hors combat.",
+    "description": "Double l'Attaque du Pokémon."
+  },
+  {
+    "id": 70,
+    "slug": "coque-armure",
+    "name": "Coque Armure",
+    "battleEffectCondition": "Lors d'une capacité adverse",
+    "battleEffectShort": "Les coups critiques sont impossibles pour le Pokémon ennemi.",
+    "battleEffectLong": "Un Pokémon doté de ce talent ne peut pas subir de coups critiques. Dans le cas où la capacité ennemie est censée toujours infliger un coup critique, cet effet disparaît et la capacité inflige des dégâts normaux.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Coque Armure n'a aucun effet hors combat.",
+    "description": "Le Pokémon est protégé des coups critiques par sa carapace."
   },
   {
     "id": 78,
