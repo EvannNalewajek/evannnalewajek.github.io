@@ -1198,9 +1198,8 @@
     "fieldEffectLong": "Téméraire n'a aucun effet hors combat.",
     "description": "Augmente la puissance des capacités occasionnant un contrecoup."
   },
-  
   {
-    "id": 124,
+    "id": 110,
     "slug": "pickpocket",
     "name": "Pickpocket",
     "battleEffectCondition": "Lors d'une capacité adverse",
@@ -1211,7 +1210,29 @@
     "description": "Vole l'objet que tient l'attaquant quand le Pokémon subit une attaque directe."
   },
   {
-    "id": 127,
+    "id": 111,
+    "slug": "sans-limite",
+    "name": "Sans Limite",
+    "battleEffectCondition": "Lors de son attaque",
+    "battleEffectShort": "Augmente la puissance des capacités pouvant avoir un effet secondaire, mais annule ce dernier.",
+    "battleEffectLong": "Si un Pokémon doté de ce talent utilise une capacité ayant des effets secondaires, cette capacité verra sa puissance de base augmenter de 30 %, mais les effets secondaires seront annulés en contrepartie (effets secondaires comme l'augmentation des [[docs:statistics|statistiques]] du lanceur ou la baisse des [[docs:statistics|statistiques]] de la cible, le changement de [[docs:status|statut]], la confusion ou la peur). Le talent ne prend pas en compte les réductions de statistiques du lanceur, le contrecoup, les capacités qui volent des PV, les capacités de switch ou permettant de finir le combat, les capacités en deux tours ou les augmentations de statistiques de la cible. De plus, les capacités amplifiées par Sans Limite n'activent pas les effets d'[[item: |objets]] ou de talents s'activant après cette capacité (Par exemple, l'[[item:orbe vie|Orbe Vie]] boost bien les dégâts de 30%, mais ne fera pas perdre au lanceur 10% de ses PV maximum car cet effet se déclenche après la capacité).",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Sans Limite n'a aucun effet hors combat.",
+    "description": "Les capacités ayant un effet additionnel le perdent, mais leur puissance augmente."
+  },
+  {
+    "id": 112,
+    "slug": "contestation",
+    "name": "Contestation",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Les effets des changements de [[docs:statistics|statistiques]] sont inversés.",
+    "battleEffectLong": "Un Pokémon doté de ce talent voit les effets des modificateurs de [[docs:statistics|statistiques]] sur lui-même inversés. Cette inversion est valable aussi bien pour les bonus que les malus, que la capacité soit lancée par le Pokémon ou par son adversaire.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Contestation n'a aucun effet sur le terrain.",
+    "description": "Inverse les changements de stats : les augmentations de stats se transforment en baisses, et vice-versa."
+  },
+  {
+    "id": 113,
     "slug": "tension",
     "name": "Tension",
     "battleEffectCondition": "En permanence",
@@ -1222,7 +1243,29 @@
     "description": "Fait stresser l'adversaire, ce qui l'empêche de manger des Baies."
   },
   {
-    "id": 131,
+    "id": 114,
+    "slug": "acharné",
+    "name": "Acharné",
+    "battleEffectCondition": "Lors d'une capacité adverse",
+    "battleEffectShort": "La statistique d'[[docs:statistics|Attaque]] du Pokémon augmente de deux niveaux s'il subit une diminution de statistiques par un adversaire.",
+    "battleEffectLong": "Quand un Pokémon doté de ce talent subit une baisse de statistiques, son [[docs:statistics|Attaque]] augmente de deux niveaux. Cet effet se déclenche à chaque baisse de statistique, quelle que soit son importance.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Acharné n'a aucun effet hors combat.",
+    "description": "Augmente beaucoup l'Attaque du Pokémon quand ses stats sont baissées par l'adversaire."
+  },
+  {
+    "id": 115,
+    "slug": "corps-maudit",
+    "name": "Corps Maudit",
+    "battleEffectCondition": "Lors d'une capacité adverse",
+    "battleEffectShort": "Les capacités du Pokémon adverse ont 30 % de chances de s'[[move:entrave|entraver]].",
+    "battleEffectLong": "Quand un Pokémon doté de ce talent subit une attaque, il a 30% de chance de placer une [[move:entrave|Entrave]] sur cette attaque. Ce talent peut s'activer également si un allié touche le Pokémon du joueur. Corps Maudit affecte toute capacité offensive, indépendamment qu'elle soit physique, spéciale, qu'elle fasse contact ou non. Ce talent peut s'activer même si l'attaquant est derrière un [[move:clonage|clone]], mais pas si son possesseur en a un.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Corps Maudit n'a aucun effet hors combat.",
+    "description": "Quand le Pokémon est touché par une capacité, il inflige parfois Entrave sur celle-ci."
+  },
+  {
+    "id": 116,
     "slug": "coeur-soin",
     "name": "Cœur Soin",
     "battleEffectCondition": "Entre chaque tour",
@@ -1233,7 +1276,95 @@
     "description": "Soigne parfois une altération de statut d'un allié proche."
   },
   {
-    "id": 143,
+    "id": 117,
+    "slug": "garde-ami",
+    "name": "Garde-Ami",
+    "battleEffectCondition": "Lors d'une capacité adverse",
+    "battleEffectShort": "Diminue les dégâts subits par les alliés.",
+    "battleEffectLong": "En Combat Multi, un Pokémon doté de ce talent permet de réduire de 25 % les dégâts qui sont infligés aux alliés.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Garde-Ami n'a aucun effet hors combat.",
+    "description": "Diminue les dégâts subis par les alliés."
+  },
+  {
+    "id": 118,
+    "slug": "armurouillee",
+    "name": "Armurouillée",
+    "battleEffectCondition": "Lors d'une capacité adverse",
+    "battleEffectShort": "La statistique de [[docs:statistics|Défense]] du Pokémon diminue d'un niveau et sa [[docs:statistics|Vitesse]] augmente de deux lorsqu'il est touché par une capacité physique.",
+    "battleEffectLong": "Lorsqu'un Pokémon doté d'Armurouillée est touché par une attaque physique, sa [[docs:statistics|Défense]] diminue d'un niveau, alors que sa [[docs:statistics|Vitesse]] en augmente de deux. Lors de capacités à plusieurs coups, ce talent s'active à chaque coup.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Armurouillée n'a aucun effet hors combat.",
+    "description": "Quand le Pokémon est touché par une capacité physique, sa Défense baisse mais sa Vitesse augmente beaucoup."
+  },
+  {
+    "id": 119,
+    "slug": "heavy-metal",
+    "name": "Heavy Metal",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Le poids du Pokémon est doublé.",
+    "battleEffectLong": "Un Pokémon doté de Heavy Metal a une masse multipliée par deux, impactant ainsi la puissance des capacités prenant en compte le poids du Pokémon.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Heavy Metal n'a aucun effet hors combat.",
+    "description": "Double le poids du Pokémon."
+  },
+  {
+    "id": 120,
+    "slug": "light-metal",
+    "name": "Light Metal",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Le poids du Pokémon est divisé par deux.",
+    "battleEffectLong": "Un Pokémon doté de Light Metal a une masse divisée par deux, impactant ainsi la puissance des capacités prenant en compte le poids du Pokémon.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Light Metal n'a aucun effet hors combat.",
+    "description": "Divise par deux le poids du Pokémon."
+  },
+  {
+    "id": 121,
+    "slug": "recolte",
+    "name": "Récolte",
+    "battleEffectCondition": "Entre chaque tour",
+    "battleEffectShort": "La Baie consommée a 50 % de chances d'être récupérée à la fin du tour.",
+    "battleEffectLong": "Une Baie consommée par le Pokémon doté de ce talent a 50 % de chances d'être restaurée à la fin de chaque tour (pas uniquement le tour suivant la consommation, mais également si le Pokémon est renvoyé après un switch). Cet effet ne se déclenche pas s'il perd sa Baie à cause d'effets retirant les objets tenus, comme ceux de [[move:sabotage|Sabotage]], de [[move:tourmagik|Tourmagik]] ou de [[ability:pickpocket|Pickpocket]], et ne fonctionne pas non plus sur les Baies volées à un adversaire puis directement consommées, comme avec les effets de [[move:piqure|Piqûre]] ou de [[move:picore|Picore]].",
+    "fieldEffectCondition": "Avec effet",
+    "fieldEffectLong": "Avec un Pokémon doté du talent Récolte placé en tête d'équipe, le joueur a de plus fortes chances de rencontrer des Pokémon sauvages de type Plante.",
+    "description": "Permet de réutiliser une même Baie plusieurs fois."
+  },
+  {
+    "id": 122,
+    "slug": "telepathe",
+    "name": "Télépathe",
+    "battleEffectCondition": "Lors de son attaque",
+    "battleEffectShort": "Immunité contre les capacités des alliés en Combat Duo ou Trio.",
+    "battleEffectLong": "Un Pokémon doté de ce talent est totalement immunisé aux capacités de ses partenaires en Combat Duo et Trio qui touchent tous les Pokémon adjacents. Par exemple, si un partenaire utilise [[move:surf|Surf]] en Combat Duo, le Pokémon doté du talent Télépathe n'est pas touché par l'attaque.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Télépathe n'a aucun effet hors combat.",
+    "description": "Le Pokémon anticipe et évite les attaques de ses alliés."
+  },
+  {
+    "id": 123,
+    "slug": "lunatique",
+    "name": "Lunatique",
+    "battleEffectCondition": "Entre chaque tour",
+    "battleEffectShort": "Augmente aléatoirement une statistique du Pokémon de deux niveaux et en baisse une autre d'un niveau à chaque tour. À l'exception de la [[docs:statistics|Précision]] et l'[[docs:statistics|Esquive]].",
+    "battleEffectLong": "À la fin de chaque tour, une des statistiques du Pokémon doté du talent Lunatique augmente de deux niveaux, tandis qu'une autre diminue d'un niveau. Le talent ne permet pas de modifier la [[docs:statistics|Précision]] ni l'[[docs:statistics|Esquive]]. Si une statistique est déjà augmentée à son maximum, Lunatique ne tentera pas de l'augmenter davantage. Inversement, une statistique ne peut pas être baissée si elle est déjà au minimum.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Lunatique n'a aucun effet hors combat.",
+    "description": "Augmente beaucoup une stat du Pokémon et en baisse une autre au hasard à chaque tour."
+  },
+  {
+    "id": 124,
+    "slug": "envelocape",
+    "name": "Envelocape",
+    "battleEffectCondition": "Entre chaque tour",
+    "battleEffectShort": "Immunité contre les dégâts de la [[docs:weather|grêle]] et de la [[docs:weather|tempête de sable]]. Immunité contre les capacités poudreuses et le talent [[ability:pose-spore|Pose Spore]].",
+    "battleEffectLong": "Un Pokémon doté de ce talent se voit immunisé aux dégâts provoqués par les climats, donc à la [[docs:weather|tempête de sable]] et à la [[docs:weather|grêle]]. Envelocape protège des capacités de poudre, ainsi que du talent [[ability:pose-spore|Pose Spore]].",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Envelocape n'a aucun effet hors combat.",
+    "description": "Protège des dégâts occasionnés par les tempêtes de sable ou la grêle, et neutralise les attaques à base de poudre."
+  },
+  {
+    "id": 125,
     "slug": "toxitouche",
     "name": "Toxitouche",
     "battleEffectCondition": "Lors de son attaque",
@@ -1244,7 +1375,7 @@
     "description": "Peut empoisonner l'ennemi par simple contact."
   },
   {
-    "id": 144,
+    "id": 126,
     "slug": "rege-force",
     "name": "Régé-Force",
     "battleEffectCondition": "Lorsque le Pokémon est retiré",
@@ -1255,7 +1386,7 @@
     "description": "Restaure un peu de PV si le Pokémon est retiré du combat."
   },
   {
-    "id": 145,
+    "id": 127,
     "slug": "coeur-de-coq",
     "name": "Cœur de Coq",
     "battleEffectCondition": "En permanence",
@@ -1266,7 +1397,7 @@
     "description": "Protège des effets qui baissent la Défense."
   },
   {
-    "id": 146,
+    "id": 128,
     "slug": "baigne-sable",
     "name": "Baigne Sable",
     "battleEffectCondition": "Selon le climat",
@@ -1277,7 +1408,7 @@
     "description": "Augmente la Vitesse lors des tempêtes de sable."
   },
   {
-    "id": 147,
+    "id": 129,
     "slug": "peau-miracle",
     "name": "Peau Miracle",
     "battleEffectCondition": "Lors d'une capacité adverse",
@@ -1288,7 +1419,29 @@
     "description": "Le Pokémon résiste mieux aux capacités de statut."
   },
   {
-    "id": 153,
+    "id": 130,
+    "slug": "analyste",
+    "name": "Analyste",
+    "battleEffectCondition": "Lors de son attaque",
+    "battleEffectShort": "Augmente la puissance des capacités si le Pokémon frappe en dernier durant le tour.",
+    "battleEffectLong": "Si le Pokémon est le dernier à attaquer durant un tour, la puissance de ses capacités est augmentée de 30 %. Cet effet se déclenche quelle que soit l'action adverse effectuée.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Analyste n'a aucun effet hors combat.",
+    "description": "Augmente la puissance des capacités du Pokémon s'il attaque en dernier."
+  },
+  {
+    "id": 131,
+    "slug": "infiltration",
+    "name": "Infiltration",
+    "battleEffectCondition": "Lors de son attaque",
+    "battleEffectShort": "Ignore les capacités de protection adverses, sauf [[move:detection|Détection]] et [[move:abri|Abri]].",
+    "battleEffectLong": "Lorsque le Pokémon détenteur de ce talent utilise une capacité, il ignore les effets de [[move:protection|Protection]], [[move:mur-lumiere||Mur Lumière]], [[move:brume|Brume]], [[move:voile-aurore|Voile Aurore]], [[move:rune-protect|Rune Protect]] et les potentiels [[move:clonage|clones]] protégeant sa cible. Pour autant, ces effets ne disparaissent pas et si le Pokémon avec Infiltration est échangé, ils seront actifs face au nouvel adversaire. Ils restent également actifs sur les capacités lancées par les alliés du Pokémon doté de ce Talent en combat Duo.",
+    "fieldEffectCondition": "Avec effet",
+    "fieldEffectLong": "Avec un Pokémon doté du talent Infiltration en première place dans son équipe, le joueur a de plus faibles chances de rencontrer des Pokémon sauvages.",
+    "description": "Traverse les barrières et les clones adverses pour attaquer directement."
+  },
+  {
+    "id": 132,
     "slug": "impudence",
     "name": "Impudence",
     "battleEffectCondition": "Lors d'un K.O. adverse",
@@ -1297,6 +1450,39 @@
     "fieldEffectCondition": "Aucun effet",
     "fieldEffectLong": "Impudence n'a aucun effet hors combat.",
     "description": "Quand le Pokémon met un ennemi K.O., sa confiance en lui ne connaît plus de limite et son Attaque augmente."
+  },
+  {
+    "id": 133,
+    "slug": "coeur-noble",
+    "name": "Cœur Noble",
+    "battleEffectCondition": "Lors d'une capacité adverse",
+    "battleEffectShort": "La statistique d'[[docs:statistics|Attaque]] du Pokémon augmente d'un niveau s'il est touché par une capacité de type [[type:Ténèbres]].",
+    "battleEffectLong": "Quand un Pokémon doté de ce talent subit une attaque de type [[type:Ténèbres]], sa statistique d'[[docs:statistics|Attaque]] est alors augmentée d'un niveau. Si le Pokémon est frappé par une capacité Ténèbres à coups multiples comme [[move:baston|Baston]], sa statistique d'Attaque augmente à chaque coup.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Cœur Noble n'a aucun effet hors combat.",
+    "description": "Réveille la noblesse du Pokémon lorsqu'il subit une attaque de type Ténèbres, ce qui augmente son Attaque."
+  },
+  {
+    "id": 134,
+    "slug": "phobique",
+    "name": "Phobique",
+    "battleEffectCondition": "Lors d'une capacité adverse",
+    "battleEffectShort": "La statistique de [[docs:statistics|Vitesse]] du Pokémon augmente d'un niveau s'il est touché par une capacité de type [[type:Insecte]], [[type:Spectre]] ou [[type:Ténèbres]].",
+    "battleEffectLong": "Lorsque le Pokémon doté du talent Phobique est touché par une capacité de type [[type:Ténèbres]], [[type:Insecte]] ou [[type:Spectre]], sa [[docs:statistics|Vitesse]] est augmentée d'un niveau. Le talent [[ability:intimidation|Intimidation]] active également Phobique.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Phobique n'a aucun effet hors combat.",
+    "description": "Si le Pokémon est touché par le talent Intimidation ou une capacité de type Ténèbres, Spectre ou Insecte, sa phobie se révèle et sa Vitesse augmente."
+  },
+  {
+    "id": 135,
+    "slug": "miroir-magik",
+    "name": "Miroir Magik",
+    "battleEffectCondition": "Lorsque le Pokémon est envoyé",
+    "battleEffectShort": "Les capacités de [[docs:status|statut]] sont retournées contre le Pokémon adverse.",
+    "battleEffectLong": "Le Pokémon doté de ce talent n'est pas touché par les capacités non-offensives et retourne celles-ci contre son lanceur. Si une capacité non-offensive est utilisée quand deux Pokémon ayant ce talent sont sur le terrain, une même capacité ne pouvant être renvoyée qu'une fois par cet effet, la capacité finit par toucher la cible initiale (à l'exception de la [[move:malediction|Malédiction]]).",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Miroir Magik n'a aucun effet hors combat.",
+    "description": "Annule les effets des capacités de statut subies par le Pokémon et les retourne à l'envoyeur."
   },
   {
     "id": 157,
@@ -1319,6 +1505,28 @@
     "fieldEffectCondition": "Aucun effet",
     "fieldEffectLong": "Farceur n'a aucun effet hors combat.",
     "description": "Rend les capacités de statut prioritaires."
+  },
+  {
+    "id": 159,
+    "slug": "force-sable",
+    "name": "Force Sable",
+    "battleEffectCondition": "Selon le climat",
+    "battleEffectShort": "Sous le climat [[docs:weather|tempête de sable]], la puissance des capacités de type [[type:Acier]], [[type:Roche]] et [[type:Sol]] du Pokémon augmente de 30 %. Immunité contre les dégâts de la tempête de sable.",
+    "battleEffectLong": "Sous une [[docs:weather|tempête de sable]], un Pokémon doté de ce talent voit la puissance de ses capacités de type [[type:Acier]], [[type:Roche]] et [[type:Sol]] augmenter de 30 %. En outre, les Pokémon se retrouvent protégés des dégâts infligés par la tempête de sable, peu importe son type.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Force Sable n'a aucun effet hors combat.",
+    "description": "Augmente la puissance des capacités de type Roche, Sol et Acier en cas de tempête de sable."
+  },
+  {
+    "id": 160,
+    "slug": "epine-de-fer",
+    "name": "Épine de Fer",
+    "battleEffectCondition": "Lors d'une capacité adverse",
+    "battleEffectShort": "Les capacités directes reçues font perdre 1/8 des [[docs:statistics|PV]] maximum du lanceur.",
+    "battleEffectLong": "Quand un Pokémon doté d'Épine de Fer subit une attaque directe, son attaquant perd alors 1/8 de ses [[docs:statistics|PV]] max.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Épine de Fer n'a aucun effet hors combat.",
+    "description": "Inflige des dégâts à l'attaquant lorsque le Pokémon subit une attaque directe."
   },
   {
     "id": 183,
