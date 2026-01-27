@@ -770,7 +770,18 @@
     "description": "Le Pokémon est protégé des coups critiques par sa carapace."
   },
   {
-    "id": 78,
+    "id": 71,
+    "slug": "pied confus",
+    "name": "Pied Confus",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Avec un statut [[docs:status|confus]], l'[[docs:statistics|Esquive]] du Pokémon augmente de 50 %.",
+    "battleEffectLong": "Tant qu'un Pokémon doté de ce talent est [[docs:status|confus]], son [[docs:statistics|Esquive]] est doublée.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Pieds Confus n'a aucun effet hors combat.",
+    "description": "Augmente l'Esquive du Pokémon s'il est confus."
+  },
+  {
+    "id": 72,
     "slug": "motorise",
     "name": "Motorisé",
     "battleEffectCondition": "Entre chaque tour",
@@ -781,7 +792,7 @@
     "description": "Si le Pokémon est touché par une capacité Électrik, il ne subit aucun dég^t et sa Vitesse augmente."
   },
   {
-    "id": 79,
+    "id": 73,
     "slug": "rivalite",
     "name": "Rivalité",
     "battleEffectCondition": "En permanence",
@@ -792,7 +803,51 @@
     "description": "Le Pokémon déteste la concurrence et inflige plus de dégâts si sa cible est du même sexe. Par contre, il en inflige moins si sa cible est du sexe opposé."
   },
   {
-    "id": 84,
+    "id": 74,
+    "slug": "impassible",
+    "name": "Impassible",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Avec un statut [[docs:status|apeuré]], la [[docs:statistics|Vitesse]] du Pokémon augmente d'un niveau.",
+    "battleEffectLong": "Un Pokémon doté de ce talent voit sa statistique de [[docs:statistics|Vitesse]] augmenter d'un niveau lorsqu'il est [[docs:status|apeuré]].",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Impassible n'a aucun effet hors combat.",
+    "description": "Augmente la Vitesse du Pokémon quand il a peur."
+  },
+  {
+    "id": 75,
+    "slug": "rideau-neige",
+    "name": "Reideau Neige",
+    "battleEffectCondition": "Selon le climat",
+    "battleEffectShort": "Sous le climat [[docs:weather|grêle]], l'[[docs:statistics|Esquive]] du Pokémon augmente de 20 %. Immunité contre les dégâts de la grêle.",
+    "battleEffectLong": "Un Pokémon doté de ce talent voit son [[docs:statistics|Esquive]] augmenter de 20 % lorsque le climat est altéré par la [[docs:weather|grêle]].",
+    "fieldEffectCondition": "Avec effet",
+    "fieldEffectLong": "Si le Pokémon avec Rideau Neige est placé en tête d'équipe sous la grêle, le joueur rencontre alors deux fois moins de Pokémon sauvages.",
+    "description": "Augmente l'Esquive du Pokémon quand il neige."
+  },
+  {
+    "id": 76,
+    "slug": "gloutonnerie",
+    "name": "Gloutonnerie",
+    "battleEffectCondition": "Selon les PV restants",
+    "battleEffectShort": "La Baie tenue peut être consommée lorsque les [[docs:statistics|PV]] descendent en dessous de 50 % au lieu de 25 %.",
+    "battleEffectLong": "Les Pokémon avec ce talent utilisent les Baies qu'ils tiennent dès qu'il leur reste moins de 50 % de [[docs:statistics|PV]] (au lieu de 25 % habituellement). Ce talent agit sur les Baies augmentant une statistique si les [[docs:statistics|PV]] du Pokémon sont dans le rouge, la mangeant quand ses [[docs:statistics|PV]] sont dans le jaune à la place.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Gloutonnerie n'a aucun effet hors combat.",
+    "description": "Si le Pokémon tient une Baie à manger en cas de PV bas, il la mange dès qu'il a perdu la moitié de ses PV."
+  },
+  {
+    "id": 77,
+    "slug": "colerique",
+    "name": "Colérique",
+    "battleEffectCondition": "Lors d'une capacité adverse",
+    "battleEffectShort": "La statistique d'[[docs:statistics|Attaque]] du Pokémon augmente de six niveaux s'il est touché par un coup critique.",
+    "battleEffectLong": "Si un Pokémon doté de ce talent subit un coup critique, alors sa statistique d'[[docs:statistics|Attaque]] augmente au maximum, quelque soit son niveau actuel. Le talent s'active aussi si le coup critique est effectué sur un [[move:clonage|clone]].",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Colérique n'a aucun effet sur le terrain.",
+    "description": "Si le Pokémon subit un coup critique, il entre dans une colère noire qui augmente son Attaque au maximum."
+  },
+  {
+    "id": 78,
     "slug": "delestage",
     "name": "Délestage",
     "battleEffectCondition": "Après l'utilisation d'un objet",
@@ -803,7 +858,40 @@
     "description": "Augmente la Vitesse du Pokémon s'il perd ou utilise l'objet qu'il tenait au début du combat."
   },
   {
-    "id": 89,
+    "id": 79,
+    "slug": "ignifuge",
+    "name": "Ignifugé",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Diminue les dégâts subits par les capacités de type [[type:Feu]] et par les effets de [[docs:status|brûlure]].",
+    "battleEffectLong": "Quand un Pokémon doté de ce talent subit des dégâts d'une capacité de type [[type:Feu]] ou d'une [[docs:status|brûlure]], ces dégâts sont divisés par deux.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Ignifugé n'a aucun effet hors combat.",
+    "description": "Diminue de moitié les dégâts infligés au Pokémon par les capacités de type Feu."
+  },
+  {
+    "id": 80,
+    "slug": "simple",
+    "name": "Simple",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Les effets des modifications de [[docs:statistics|statistiques]] du Pokémon sont doublés, qu'ils soient positifs ou négatifs.",
+    "battleEffectLong": "Un Pokémon doté de ce talent voit les effets des modificateurs de statistiques (peu importe qu'il s'agisse d'objets, attaques, etc.) l'affectant doublés, aussi bien les effets positifs que les effets négatifs, dans la limite du -6 et +6.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Simple n'a aucun effet hors combat.",
+    "description": "Les variations de stats sont deux fois plus importantes pour le Pokémon."
+  },
+  {
+    "id": 81,
+    "slug": "peau-seche",
+    "name": "Peau Sèche",
+    "battleEffectCondition": "Selon le climat",
+    "battleEffectShort": "Sous le climat [[docs:weather|soleil]], le Pokémon perd 1/8 de ses [[docs:statistics|PV]] maximum à chaque fin de tour. Sous le climat [[docs:weather|pluie]], le Pokémon régénère 1/8 de ses [[docs:statistics|PV]] maximum à chaque fin de tour. Les capacités de type [[type:Feu]] infligent 25 % de dégâts supplémentaires au Pokémon. Immunité contre les capacités de type [[type:Eau]] : elles soignent jusqu'à 25 % des [[docs:statistics|PV]] maximum du Pokémon.",
+    "battleEffectLong": "Peau Sèche n'a aucun effet hors combat.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Un Pokémon doté du talent Peau Sèche voit ses [[docs:statistics|PV]] influencés par les variations de climat: sous la [[docs:weather|pluie]], le Pokémon récupère 1/8 de ses [[docs:statistics|PV]] à la fin de chaque tour ; sous [[docs:weather|ensoleillement]], le Pokémon perd 1/8 de ses [[docs:statistics|PV]] à la fin de chaque tour. En parallèle, les capacités de type [[type:Feu]] lui infligent 25 % de dégâts en plus, alors que les capacités [[type:Eau]] lui rendent 1/4 de ses [[docs:statistics|PV]] maximum.",
+    "description": "Quand le soleil brille, le Pokémon perd des PV et subit plus de dégâts des capacités Feu, mais il regagne des PV lorsqu'il pleut ou s'il est touché par une capacité Eau."
+  },
+  {
+    "id": 82,
     "slug": "poing-de-fer",
     "name": "Poing de Fer",
     "battleEffectCondition": "Lors de son attaque",
@@ -814,7 +902,18 @@
     "description": "Augmente la puissance des capacités coups de poing."
   },
   {
-    "id": 91,
+    "id": 83,
+    "slug": "soin-poison",
+    "name": "Soin Poison",
+    "battleEffectCondition": "Entre chaque tour",
+    "battleEffectShort": "Avec un statut [[docs:status|empoisonné]] ou [[docs:status|gravement empoisonné]], le Pokémon régénère 1/8 de ses [[docs:statistics|PV]] maximum au lieu d'en perdre.",
+    "battleEffectLong": "Si un Pokémon doté de ce talent est [[docs:status|empoisonné]], aussi bien par poison simple que par empoisonnement grave, il récupère 1/8 de ses [[docs:statistics|PV]] maximums (au lieu d'en perdre) entre chaque tour, tout en étant immunisé au poison.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Soin Poison n'a aucun effet hors combat.",
+    "description": "Quand le Pokémon est empoisonné, il regagne des PV au lieu d'en perdre."
+  },
+  {
+    "id": 84,
     "slug": "adaptabilite",
     "name": "Adaptabilité",
     "battleEffectCondition": "Lors de son attaque",
@@ -825,7 +924,7 @@
     "description": "Quand le Pokémon utilise une capacité du même type que lui, le bonus de puissance qu'elle reçoit est encore plus important que normalement."
   },
   {
-    "id": 92,
+    "id": 85,
     "slug": "multi-coups",
     "name": "Multi-Coups",
     "battleEffectCondition": "En permanence",
@@ -836,7 +935,18 @@
     "description": "Les capacités pouvant frapper plusieurs fois frappent toujours le nombre maximal de coups."
   },
   {
-    "id": 94,
+    "id": 86,
+    "slug": "hydratation",
+    "name": "Hydratation",
+    "battleEffectCondition": "Selon le climat",
+    "battleEffectShort": "Sous le climat [[docs:weather|pluie]], soigne le Pokémon des [[docs:status|altérations de statut]] passées et futures.",
+    "battleEffectLong": "Un Pokémon doté de ce talent voit toutes ses altérations principales de [[docs:status|statut]] (brûlure, gel, paralysie, empoisonnement et sommeil) soignées à la fin de chaque tour de [[docs:weather|pluie]].",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Hydratation n'a aucun effet hors combat.",
+    "description": "Soigne les altérations de statut du Pokémon quand il pleut."
+  },
+  {
+    "id": 87,
     "slug": "force-soleil",
     "name": "Force Soleil",
     "battleEffectCondition": "Selon le climat",
@@ -847,7 +957,40 @@
     "description": "Quand le soleil brille, l'Attaque Spéciale du Pokémon augmente mais il perd des PV à chaque tour."
   },
   {
-    "id": 99,
+    "id": 88,
+    "slug": "pied-veloce",
+    "name": "Pied Véloce",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Avec un [[docs:status|statut altéré]], la [[docs:statistics|Vitesse]] du Pokémon augmente de 50 %. Immunité contre la diminution de la [[docs:statistics|Vitesse]] du Pokémon imposée par le statut [[docs:status|paralysie]].",
+    "battleEffectLong": "Tant qu'un Pokémon doté de ce talent souffre d'une [[docs:status|altération de statut]], sa [[docs:statistics|Vitesse]] est augmentée de 50 %. La perte de [[docs:statistics|Vitesse]] due à la [[docs:status|paralysie]] est également annulée, mais pas son effet.",
+    "fieldEffectCondition": "Avec effet",
+    "fieldEffectLong": "Placé en tête d'équipe, un Pokémon avec Pied Véloce réduit le nombre de rencontres avec des Pokémon sauvages.",
+    "description": "Augmente la Vitesse du Pokémon en cas d'altération de statut."
+  },
+  {
+    "id": 89,
+    "slug": "sniper",
+    "name": "Sniper",
+    "battleEffectCondition": "Lors de son attaque",
+    "battleEffectShort": "Les coups critiques du Pokémon ont une puissance triplée.",
+    "battleEffectLong": "Si un Pokémon doté de ce talent effectue un coup critique, les dégâts provoqués par ce coup critique sont encore multipliés par 1,5. Les dégâts par rapport à une attaque normale sont donc multipliés par 1,5 x 1,5 = 2,25.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Sniper n'a aucun effet sur le terrain.",
+    "description": "Lorsque le Pokémon porte un coup critique, les dégâts infligés augmentent encore plus que d'habitude."
+  },
+  {
+    "id": 90,
+    "slug": "garde-magik",
+    "name": "Garde Magik",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Immunité contre toutes les capacités qui ne sont pas directes.",
+    "battleEffectLong": "Un Pokémon possédant ce talent est immunisé à tous les dégâts qui ne lui sont pas infligés par des capacités offensives : [[docs:status|altérations de statut]], climat, dégâts résiduels des capacités piégeantes ([[move:ligotage|Ligotage]], [[move:harcelement|Harcèlement]], ...), [[move:vampigraine|Vampigraine]], contrecoups, Entry Hazards, sacrifice de PV ([[move:malediction|Malédiction]], [[move:metalaser|Métalaser]]).",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Garde Magik n'a aucun effet hors combat.",
+    "description": "Seules les attaques peuvent blesser le Pokémon."
+  },
+  {
+    "id": 91,
     "slug": "annule-garde",
     "name": "Annule Garde",
     "battleEffectCondition": "En permanence",
@@ -858,7 +1001,40 @@
     "description": "Les capacités du Pokémon touchent leur cible à coup sûr, mais les capacités de l'ennemi le touchent aussi à coup sûr."
   },
   {
-    "id": 104,
+    "id": 92,
+    "slug": "technicien",
+    "name": "Technicien",
+    "battleEffectCondition": "Lors de son attaque",
+    "battleEffectShort": "Augmente la puissance des capacités infligeant 60 dégâts ou moins.",
+    "battleEffectLong": "Si un Pokémon doté de ce talent utilise une capacité dont la puissance de base (sans prise en compte du STAB et autres coefficients multiplicateurs) est inférieure ou égale à 60, alors sa puissance est augmentée de 50 %.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Technicien n'a aucun effet hors combat.",
+    "description": "Augmente la puissance des capacités les plus faibles."
+  },
+  {
+    "id": 93,
+    "slug": "feuille-garde",
+    "name": "Feuille Garde",
+    "battleEffectCondition": "Selon le climat",
+    "battleEffectShort": "Sous le climat [[docs:weather|soleil]], soigne le Pokémon des [[docs:status|altérations de statut]] futures.",
+    "battleEffectLong": "Un Pokémon doté de ce talent est immunisé à toute [[docs:status|altération de statut]] (brûlure, gel, paralysie, poison et sommeil) si le climat est [[docs:weather|ensoleillé]]. Toutefois, ce talent ne soigne pas les altérations de statut déjà en places lorsque le soleil commence à briller, et ne protège pas du sommeil auto-infligé via [[move:repos|Repos]].",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Feuille Garde n'a aucun effet hors combat.",
+    "description": "Protège le Pokémon contre les altérations de statut quand le soleil brille."
+  },
+  {
+    "id": 94,
+    "slug": "maladresse",
+    "name": "Maladresse",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "L'objet tenu ne peut pas être utilisé.",
+    "battleEffectLong": "Un Pokémon doté de ce talent ne profite pas des effets de son objet tenu en combat. Il ne peut donc pas se servir de la capacité [[move:degommage|Dégommage]], mais peut quand même utiliser [[move:passe-passe|Passe-Passe]] et [[move:tourmagik|Tourmagik]]. Les objets gardent cependant toutes leurs propriétés, comme les [[item:piquants|Piquants]] si les dégâts infligés passent sur un autre Pokémon qui le touche avec une capacité directe.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Maladresse n'a aucun effet hors combat.",
+    "description": "Le Pokémon ne peut utiliser aucun objet tenu."
+  },
+  {
+    "id": 95,
     "slug": "brise-moule",
     "name": "Brise Moule",
     "battleEffectCondition": "Lors de son attaque",
@@ -869,7 +1045,7 @@
     "description": "Le Pokémon ignore les talents adverses qui auraient un effet sur ses capacités."
   },
   {
-    "id": 105,
+    "id": 96,
     "slug": "chanceux",
     "name": "Chanceux",
     "battleEffectCondition": "Lors de son attaque",
@@ -880,7 +1056,7 @@
     "description": "Le Pokémon est tellement chanceux qu'il inflige plus fréquemment des coups critiques."
   },
   {
-    "id": 106,
+    "id": 97,
     "slug": "boom-final",
     "name": "Boom Final",
     "battleEffectCondition": "Lors d'une capacité adverse",
@@ -891,7 +1067,40 @@
     "description": "Si le Pokémon est mis K.O. par une attaque directe, il inflige des dégâts à l'attaquant avant de s'évanouir."
   },
   {
-    "id": 110,
+    "id": 98,
+    "slug": "anticipation",
+    "name": "Anticipation",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Détecte si le Pokémon adverse possède des capacités efficaces sur le Pokémon, des capacités OHKO ou les capacités [[move:explosion|Explosion]] et [[move:destruction|Destruction]].",
+    "battleEffectLong": "En arrivant sur le terrain, un Pokémon doté de ce talent est alerté par le message \"Pokémon est tout tremblant !\" lorsqu'il fait face à un Pokémon possédant des capacités qui sont super efficaces sur lui, des OHKO, [[move:destruction|Destruction]] et [[move:explosion|Explosion]]. Toutefois, un Pokémon [[type:Eau]] n'est pas alerté si l'adversaire connaît la capacité [[move:lyophilisation|Lyophilisation]].",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Anticipation n'a aucun effet hors combat.",
+    "description": "Le Pokémon devine si l'adversaire connaît une capacité dangereuse pour lui."
+  },
+  {
+    "id": 99,
+    "slug": "prediction",
+    "name": "Prédiction",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Détecte la capacité la plus puissante du Pokémon adverse.",
+    "battleEffectLong": "En arrivant sur le terrain, un Pokémon doté de ce talent est alerté sur la capacité la plus puissante de l'adversaire, en terme de puissance de base, donc sans application de STAB et autres bonus multiplicateurs. En cas d'égalité de puissance, seule une capacité choisie aléatoirement est indiquée. En Combat Duo, seule la capacité la plus puissante sur l'ensemble des deux Pokémon est indiquée.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Prédiction n'a aucun effet hors combat.",
+    "description": "Révèle l'une des capacités de l'ennemi quand le combat commence."
+  },
+  {
+    "id": 100,
+    "slug": "inconscient",
+    "name": "Inconscient",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Ignore les améliorations de statistiques du Pokémon adverse, à l'exception de sa [[docs:statistics|Vitesse]].",
+    "battleEffectLong": "Un Pokémon doté de ce talent ignore les augmentations et les diminutions de statistiques des autres Pokémon en jeu, sauf celles en [[docs:statistics|Vitesse]]. Ces modifications sont toujours effectives pour les autres Pokémon. Cela ne compte pas les modifications de statistiques dues aux talents (comme [[ability:coloforce|Coloforce]]) ou aux objets (comme le [[item:bandeau-choix|Bandeau Choix]]).",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Inconscient n'a aucun effet hors combat.",
+    "description": "Le Pokémon ignore les changements de stats des autres Pokémon, qu'il attaque ou soit attaqué."
+  },
+  {
+    "id": 101,
     "slug": "lentiteintee",
     "name": "Lentiteintée",
     "battleEffectCondition": "Lors de son attaque",
@@ -902,7 +1111,29 @@
     "description": "Permet à une capacité qui n'est pas très efficace d'infliger des dégâts comme si elle était efficace normalement."
   },
   {
-    "id": 114,
+    "id": 102,
+    "slug": "filtre",
+    "name": "Filtre",
+    "battleEffectCondition": "Lors d'une capacité adverse",
+    "battleEffectShort": "Diminue les dégâts subits par les capacités super efficaces.",
+    "battleEffectLong": "Si un Pokémon doté de ce talent est touché par une capacité super efficace, les dégâts infligés par celle-ci sont réduits d'un quart. Ainsi, au lieu d'appliquer un coefficient multiplicateur de 2, un coefficient de 1,5 est comptabilisé. Pour une double faiblesse, le coefficient multiplicateur passera de 4 à 3.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Filtre n'a aucun effet hors combat.",
+    "description": "Réduit les dégâts subis lorsque le Pokémon est touché par une capacité super efficace."
+  },
+  {
+    "id": 103,
+    "slug": "querelleur",
+    "name": "Querelleur",
+    "battleEffectCondition": "Lors de son attaque",
+    "battleEffectShort": "Ignore les immunités du type [[type:Spectre]] du Pokémon adverse. Il devient donc possible de toucher un Pokémon de ce type avec des capacités de type [[type:Normal]] ou [[type:Combat]].",
+    "battleEffectLong": "Un Pokémon doté de Querelleur peut toucher les Pokémon de type [[type:Spectre]] avec des capacités de type [[type:Normal]] et [[type:Combat]] avec une efficacité normale, et ce, malgré l'inefficacité totale conférée théoriquement par ce type. Il n'est plus non plus affecté par le talent [[ability:intimidation|Intimidation]] du Pokémon ennemi.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Querelleur n'a aucun effet hors combat.",
+    "description": "Permet aux capacités de type Normal ou Combat du Pokémon de toucher les Pokémon de type Spectre. Immunise aussi contre le talent Intimidation."
+  },
+  {
+    "id": 104,
     "slug": "lavabo",
     "name": "Lavabo",
     "battleEffectCondition": "Lors d'une capacité adverse",
@@ -913,7 +1144,40 @@
     "description": "Le Pokémon détourne sur lui les capacités de type Eau et les neutralise, tout en montant son Attaque Spéciale."
   },
   {
-    "id": 119,
+    "id": 105,
+    "slug": "corps-gel",
+    "name": "Corps Gel",
+    "battleEffectCondition": "Selon le climat",
+    "battleEffectShort": "Sous le climat [[docs:weather|grêle]], le Pokémon régénère 1/16 de ses [[docs:statistics|PV]] maximum à chaque fin de tour. Immunité contre les dégâts de la grêle.",
+    "battleEffectLong": "Un Pokémon doté de ce talent récupère 1/16 de ses [[docs:statistics|PV]] maximums à la fin de chaque tour, si le climat est en [[docs:weather|grêle]] ou en [[docs:weather|neige]]. Si ce Pokémon n'est pas de type [[type:Glace]], il est immunisé aux dégâts infligés par la grêle.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Corps Gel n'a aucun effet hors combat.",
+    "description": "Régénère les PV du Pokémon lors des tempêtes de grêle."
+  },
+  {
+    "id": 106,
+    "slug": "solide-roc",
+    "name": "Solide Roc",
+    "battleEffectCondition": "Lors d'une capacité adverse",
+    "battleEffectShort": "Diminue les dégâts subits par les capacités super efficaces.",
+    "battleEffectLong": "Si un Pokémon doté de ce talent est touché par une capacité « super efficace », les dégâts infligés par celle-ci sont réduits d'un quart. Ainsi, au lieu d'appliquer un coefficient multiplicateur de 2, un coefficient de 1,5 est comptabilisé. Pour une double faiblesse, le coefficient multiplicateur passera de 4 à 3.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Solide Roc n'a aucun effet hors combat.",
+    "description": "Réduit les dégâts subis lorsque le Pokémon est touché par une capacité super efficace."
+  },
+  {
+    "id": 107,
+    "slug": "alerte-neige",
+    "name": "Alerte Neige",
+    "battleEffectCondition": "Lorsque le Pokémon est envoyé",
+    "battleEffectShort": "Active le climat [[docs:weather|grêle]] lorsque le Pokémon est envoyé au combat.",
+    "battleEffectLong": "Lorsqu'un Pokémon doté du talent Alerte Neige est envoyé au combat, il modifie immédiatement le climat, provoquant ainsi la [[docs:weather|grêle]]. La grêle dure 5 tours. Si le Pokémon tient une [[item:roche-glace|Roche Glace]], l'effet dure 8 tours.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Alerte Neige n'a aucun effet hors combat.",
+    "description": "Le Pokémon invoque la neige quand il entre au combat."
+  },
+  {
+    "id": 108,
     "slug": "fouille",
     "name": "Fouille",
     "battleEffectCondition": "Lorsque le Pokémon est envoyé",
@@ -924,7 +1188,7 @@
     "description": "Permet de connaître l'objet tenu par l'ennemi quand le combat commence."
   },
   {
-    "id": 120,
+    "id": 109,
     "slug": "temeraire",
     "name": "Téméraire",
     "battleEffectCondition": "Lors de son attaque",
@@ -934,6 +1198,7 @@
     "fieldEffectLong": "Téméraire n'a aucun effet hors combat.",
     "description": "Augmente la puissance des capacités occasionnant un contrecoup."
   },
+  
   {
     "id": 124,
     "slug": "pickpocket",
