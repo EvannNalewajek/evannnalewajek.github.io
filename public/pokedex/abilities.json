@@ -1485,7 +1485,7 @@
     "description": "Annule les effets des capacités de statut subies par le Pokémon et les retourne à l'envoyeur."
   },
   {
-    "id": 157,
+    "id": 136,
     "slug": "herbivore",
     "name": "Herbivore",
     "battleEffectCondition": "Après une capacité adverse",
@@ -1496,7 +1496,7 @@
     "description": "Annule les attaques de type Plante subies par le Pokémon et augmente son Attaque."
   },
   {
-    "id": 158,
+    "id": 137,
     "slug": "farceur",
     "name": "Farceur",
     "battleEffectCondition": "Lors de son attaque",
@@ -1507,7 +1507,7 @@
     "description": "Rend les capacités de statut prioritaires."
   },
   {
-    "id": 159,
+    "id": 138,
     "slug": "force-sable",
     "name": "Force Sable",
     "battleEffectCondition": "Selon le climat",
@@ -1518,7 +1518,7 @@
     "description": "Augmente la puissance des capacités de type Roche, Sol et Acier en cas de tempête de sable."
   },
   {
-    "id": 160,
+    "id": 139,
     "slug": "epine-de-fer",
     "name": "Épine de Fer",
     "battleEffectCondition": "Lors d'une capacité adverse",
@@ -1529,7 +1529,161 @@
     "description": "Inflige des dégâts à l'attaquant lorsque le Pokémon subit une attaque directe."
   },
   {
-    "id": 183,
+    "id": 140,
+    "slug": "aroma-voile",
+    "name": "Aroma-Voile",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Immunité contre les attaques limitant le choix des capacités pour le Pokémon et ses alliés sur le terrain.",
+    "battleEffectLong": "Un Pokémon doté de ce talent est immunisé aux effets des capacités [[move:provoc|Provoc]], [[move:tourmente|Tourmente]], [[move:encore|Encore]], [[move:entrave|Entrave]], [[move:anti-soin|Anti-Soin]], [[move:attraction|Attraction]] et [[move:lien-du-destin|Lien du Destin]], ainsi que du talent [[ability:joli-sourire|Joli Sourire]] et [[ability:corps-maudit|Corps Maudit]]. En Combat Duo, le Pokémon ayant Aroma-Voile immunise également ses alliés.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Aroma-Voile n'a aucun effet sur le terrain.",
+    "description": "Protège le Pokémon et ses alliés des effets limitant le libre arbitre."
+  },
+  {
+    "id": 141,
+    "slug": "flora-voile",
+    "name": "Flora-Voile",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Immunité contre la diminution de [[docs:statistics|statistiques]] du Pokémon et des alliés de type [[type:Plante]] imposée par un autre.",
+    "battleEffectLong": "Tant qu'un Pokémon doté de ce talent est sur le terrain, les Pokémon alliés de type [[type:Plante]] (et le possesseur de Flora-Voile s'il est de type [[type:Plante]]) sont immunisés aux baisses de [[docs:statistics|statistiques]] causées par des capacités ou talents adverses. Flora-Voile immunise également ces mêmes alliés de type [[type:Plante]] contre les problèmes de [[docs:status|statut majeurs]]. Le talent n'a aucun effet sur l'[[item:orbe-toxique|Orbe Toxique]], l'[[item:orbe-flamme|Orbe Flamme]], ou la capacité [[move:repos|Repos]].",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Flora-Voile n'a aucun effet hors combat.",
+    "description": "Empêche les alliés de type Plante de subir des baisses de stats et des altérations de statut."
+  },
+  {
+    "id": 142,
+    "slug": "bajoues",
+    "name": "Bajoues",
+    "battleEffectCondition": "Après l'utilisation d'un objet",
+    "battleEffectShort": "La Baie tenue permet aussi de récupérer 1/3 de ses [[docs:statistics|PV]] totaux.",
+    "battleEffectLong": "Si un Pokémon ayant ce talent mange une Baie, il regagne 1/3 de ses [[docs:statistics|PV]] totaux en plus des bénéfices normaux de celle-ci. Ce talent est également cumulatif avec la [[item:baie-oran|Baie Oran]] et la [[item:baie-sitrus|Baie Sitrus]], qui permettent toutes deux de récupérer des PV.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Bajoues n'a aucun effet hors combat.",
+    "description": "Le Pokémon récupère des PV lorsqu'il consomme n'importe quelle Baie en plus de bénéficier de ses effets habituels."
+  },
+  {
+    "id": 143,
+    "slug": "proteen",
+    "name": "Protéen",
+    "battleEffectCondition": "Lors de son attaque",
+    "battleEffectShort": "Change le [[type:normal|type]] du Pokémon en celui de toute [[move: |capacité]] qu'il utilise.",
+    "battleEffectLong": "Un Pokémon doté de ce talent voit son [[type:normal|type]] remplacé par celui de la [[move: |capacité]] qu'il a choisi, juste avant qu'il ne la lance. Il bénéficie donc du STAB, peu importe le type de la capacité. Le talent ne s'applique que sur la première capacité (à chaque changement de Pokémon, il s'applique une fois de nouveau).",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Protéen n'a aucun effet hors combat.",
+    "description": "Le Pokémon prend le type de la capacité qu'il utilise. Ce talent ne peut se déclencher qu'une fois par entrée au combat du Pokémon."
+  },
+  {
+    "id": 144,
+    "slug": "toison-epaisse",
+    "name": "Toison Épaisse",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "La statistique de [[docs:statistics|Défense]] du Pokémon est doublée.",
+    "battleEffectLong": "Ce talent double la [[docs:statistics|Défense]] du Pokémon. [[move:big-splash|Big Splash]] n'est pas affecté par ce talent.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Toison Épaisse n'a aucun effet hors combat.",
+    "description": "Divise par deux les dégâts des capacités physiques subies par le Pokémon."
+  },
+  {
+    "id": 145,
+    "slug": "magicien",
+    "name": "Magicien",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "L'[[item: |objet]] tenu par le Pokémon adverse est volé lorsque le Pokémon le touche avec une capacité directe.",
+    "battleEffectLong": "Quand un Pokémon doté de ce talent attaque son adversaire, il lui vole son [[item: |objet]] tenu une fois l'attaque effectuée. Ce talent ne fonctionne pas si son possesseur tient déjà un objet, si son adversaire ne tient pas d'objet, ou encore si l'un des deux Pokémon est protégé par un [[move:clonage|Clone]].",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Magicien n'a aucun effet hors combat.",
+    "description": "Les capacités volent aussi l'objet tenu par la cible."
+  },
+  {
+    "id": 146,
+    "slug": "pare-balles",
+    "name": "Pare-Balles",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Immunité contre les capacités à projectiles.",
+    "battleEffectLong": "Un Pokémon doté de ce talent ignore les effets des capacités utilisant des projectiles, soit la plupart des capacités comprenant les mots « Balle », « Bombe », « Boule », « Canon » ou « Sphère ». Les capacités affectées par ce talent sont : [[move:boule-roc|Boule Roc]], [[move:aurasphere|Aurasphère]], [[move:ballmeteo|Ball'Météo]], [[move:ballombre|Ball'Ombre]], [[move:balle-graine|Balle Graine]], [[move:bombe-beurk|Bombe Beurk]], [[move:bombe-acide|Bombe Acide]], [[move:boule-elek|Boule Élek]], [[move:boule-pollen|Boule Pollen]], [[move:canon-graine|Canon Graine]], [[move:eco-sphere|Éco-Sphère]], [[move:elecanon|Élecanon]], [[move:exploforce|Exploforce]], [[move:gyroballe|Gyroballe]] et [[move:roc-boulet|Roc-Boulet]].",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Pare-Balles n'a aucun effet hors combat.",
+    "description": "Protège de certaines capacités lançant des projectiles, comme des bombes et des balles."
+  },
+  {
+    "id": 147,
+    "slug": "battant",
+    "name": "Battant",
+    "battleEffectCondition": "Après une capacité adverse",
+    "battleEffectShort": "La statistique d'[[docs:statistics|Attaque Spéciale]] du Pokémon augmente de deux niveaux s'il subit une diminution de statistiques par un adversaire.",
+    "battleEffectLong": "Quand un Pokémon doté de ce talent subit une baisse de statistiques, son [[docs:statistics|Attaque Spéciale]] augmente de deux niveaux. Cet effet se déclenche à chaque baisse de statistique, quelque soit son importance. Battant ne se déclenche pas si la baisse est provoqué par une capacité utilisé par le possesseur du talent (exemple: l'effet secondaire de [[move:surchauffe|Surchauffe]]) ou par une capacité alliée.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Battant n'a aucun effet hors combat.",
+    "description": "Augmente beaucoup l'Attaque Spéciale du Pokémon quand ses stats ont été baissées par l'adversaire."
+  },
+  {
+    "id": 148,
+    "slug": "prognathe",
+    "name": "Prognathe",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Augmente la puissance des capacités à base de morsures.",
+    "battleEffectLong": "Un Pokémon doté de ce talent voit la puissance de ses attaques à base de morsures augmentée de 50%. Ce talent concerne les capacités suivantes : [[move:morsure|Morsure]], [[move:machouille|Mâchouille]], [[move:crocs-feu|Crocs Feu]], [[move:crocs-givre|Crocs Givre]], [[move:crocs-eclair|Crocs Éclair]], [[move:psycho-croc|Psycho-Croc]], [[move:crochet-venin|Crochet Venin]], [[move:croque-fort|Croque Fort]].",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Prognathe n'a aucun effet hors combat.",
+    "description": "Le Pokémon a une mâchoire robuste qui augmente la puissance de ses capacités à base de morsures."
+  },
+  {
+    "id": 149,
+    "slug": "peau-gelee",
+    "name": "Peau Gelée",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Change le type des capacités de type [[type:Normal]] du Pokémon et les considère comme étant de type [[type:Glace]]. Augmente la puissance de ces capacités.",
+    "battleEffectLong": "Quand un Pokémon doté de ce talent lance une capacité de type [[type:Normal]], celle-ci devient de type [[type:Glace]]. Les attaques affectées par ce talent voient leur puissance augmentée de 20%. Ce bonus s'accumule avec celui du STAB si le Pokémon est de type [[type:Glace]].",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Peau Gelée n'a aucun effet hors combat.",
+    "description": "Les capacités de type Normal deviennent de type Glace. Leur puissance augmente légèrement."
+  },
+  {
+    "id": 150,
+    "slug": "gluco-voile",
+    "name": "Gluco-Voile",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Immunité contre le statut [[docs:status|sommeil]] pour le Pokémon et ses alliés.",
+    "battleEffectLong": "Un Pokémon doté de ce talent ne peut pas [[docs:status|s'endormir]] pendant le combat, pour lui et ses alliés. Par conséquent, il ne peut pas utiliser la capacité [[move:repos|Repos]].",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Gluco-Voile n'a aucun effet hors combat.",
+    "description": "Le Pokémon et ses alliés ne peuvent pas s'endormir."
+  },
+  {
+    "id": 151,
+    "slug": "mega-blaster",
+    "name": "Méga Blaster",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Augmente la puissance des capacités d'aura.",
+    "battleEffectLong": "Si un Pokémon doté de ce talent utilise l'une des sept capacités à aura suivantes, cette dernière voit sa puissance (ou les soins) augmentée de 50 %. Les capacités concernées sont : [[move:aurasphere|Aurasphère]], [[move:champlification|Champlification]], [[move:draco-choc|Draco-Choc]], [[move:vibraqua|Vibraqua]], [[move:vibra-soin|Vibra Soin]] et [[move:vibrobscur|Vibrobscur]].",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Méga Blaster n'a aucun effet hors combat.",
+    "description": "Augmente la puissance des capacités qui projettent une aura."
+  },
+  {
+    "id": 152,
+    "slug": "griffe-dure",
+    "name": "Griffe Dure",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Les capacités directes utilisées par le Pokémon infligent 30 % de dégâts supplémentaires.",
+    "battleEffectLong": "Si un Pokémon doté de ce talent utilise une attaque provoquant un contact physique entre le lanceur et l'adversaire (capacité directe), alors la puissance de cette attaque est augmentée de 30 %.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Griffe Dure n'a aucun effet hors combat.",
+    "description": "Augmente la puissance des attaques directes du Pokémon."
+  },
+  {
+    "id": 153,
+    "slug": "peau-feerique",
+    "name": "Peau Féérique",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Change le type des capacités de type [[type:Normal]] du Pokémon et les considère comme étant de type [[type:Fée]]. Augmente la puissance de ces capacités.",
+    "battleEffectLong": "Quand un Pokémon doté de ce talent lance une capacité de type [[type:Normal]], celle-ci devient de type [[type:Fée]]. Les attaques affectées par ce talent voient leur puissance augmentée de 20%. Ce bonus s'accumule avec celui du STAB si le Pokémon est de type [[type:Fée]].",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Peau Féérique n'a aucun effet hors combat.",
+    "description": "Les capacités de type Normal deviennent de type Fée. Leur puissance augmente légèrement."
+  },
+  {
+    "id": 154,
     "slug": "poisseux",
     "name": "Poisseux",
     "battleEffectCondition": "Lors d'une capacité adverse",
@@ -1538,6 +1692,17 @@
     "fieldEffectCondition": "Aucun effet",
     "fieldEffectLong": "Poisseux n'a aucun effet hors combat.",
     "description": "Baisse la Vitesse de l'attaquant lorsque le Pokémon subit une attaque directe."
+  },
+  {
+    "id": 155,
+    "slug": "peau-celeste",
+    "name": "Peau Céleste",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Change le type des capacités de type [[type:Normal]] du Pokémon et les considère comme étant de type [[type:Vol]]. Augmente la puissance de ces capacités.",
+    "battleEffectLong": "Quand un Pokémon doté de ce talent lance une capacité de type [[type:Normal]], celle-ci devient de type [[type:Vol]]. Les attaques affectées par ce talent voient leur puissance augmentée de 20%. Ce bonus s'accumule avec celui du STAB si le Pokémon est de type [[type:Vol]].",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Peau Céleste n'a aucun effet hors combat.",
+    "description": "Les capacités de type Normal deviennent de type Vol. Leur puissance augmente légèrement."
   },
   {
     "id": 212,
