@@ -1705,7 +1705,73 @@
     "description": "Les capacités de type Normal deviennent de type Vol. Leur puissance augmente légèrement."
   },
   {
-    "id": 212,
+    "id": 156,
+    "slug": "endurance",
+    "name": "Endurance",
+    "battleEffectCondition": "Lors d'une capacité adverse",
+    "battleEffectShort": "La statistique de [[docs:statistics|Défense]] du Pokémon augmente d'un niveau s'il est touché par une capacité offensive.",
+    "battleEffectLong": "Augmente la [[docs:statistics|Défense]] d'un niveau quand le Pokémon subit une attaque. Si le Pokémon subit une capacité à plusieurs coups, sa Défense augmente une fois à chaque coup.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Endurance n'a aucun effet hors combat.",
+    "description": "Augmente la Défense du Pokémon lorsqu'il subit une attaque."
+  },
+  {
+    "id": 157,
+    "slug": "cruauté",
+    "name": "Cruauté",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Les coups critiques sont systémiques contre un ennemi [[docs:status|empoisonné]].",
+    "battleEffectLong": "Un Pokémon doté de ce talent inflige systématiquement des coups critiques si sa cible est [[docs:status|empoisonnée]].",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Cruauté n'a aucun effet hors combat.",
+    "description": "Lorsque le Pokémon attaque un adversaire empoisonné, le coup est forcément critique."
+  },
+  {
+    "id": 158,
+    "slug": "filature",
+    "name": "Filature",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Augmente la puissance des capacités des Pokémon arrivant au milieu d'un combat.",
+    "battleEffectLong": "Un Pokémon doté de ce talent inflige des dégâts doublés s'il attaque un Pokémon arrivant le tour même sur le terrain, via un Switch ou une capacité telle que [[move:demi-tour|Demi-Tour]].",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Filature n'a aucun effet hors combat.",
+    "description": "Lorsque le Pokémon attaque une cible qui vient d'entrer sur le terrain en remplacement d'un autre Pokémon, les dégâts infligés sont doublés."
+  },
+  {
+    "id": 159,
+    "slug": "folle-furie",
+    "name": "Folle Furie",
+    "battleEffectCondition": "Selon les PV restants",
+    "battleEffectShort": "La statistique d'[[docs:statistics|Attaque Spéciale]] du Pokémon augmente d'un niveau s'il passe en dessous de 50 % de ses PV.",
+    "battleEffectLong": "Quand un Pokémon doté de ce talent est amené à moins de la moitié de ses PV max par une capacité adverse, il augmente son [[docs:statistics|Attaque Spéciale]] de 1 niveau. Ce talent peut se déclencher plusieurs fois, tant que le Pokémon fait remonter ses PV au-delà de la moitié.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Folle Furie n'a aucun effet hors combat.",
+    "description": "Augmente l'Attaque Spéciale du Pokémon lorsque ses PV tombent à la moitié à cause d'une attaque de l'adversaire."
+  },
+  {
+    "id": 160,
+    "slug": "chasse-neige",
+    "name": "Chasse-Neige",
+    "battleEffectCondition": "Selon le climat",
+    "battleEffectShort": "Sous le climat [[docs:weather|grêle]], la [[docs:statistics|Vitesse]] du Pokémon est doublée.",
+    "battleEffectLong": "Sous la [[docs:weather|grêle]], un Pokémon doté de Chasse-Neige voit sa statistique de [[docs:statistics|Vitesse]] multipliée par deux.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Chasse-Neige n'a aucun effet hors combat.",
+    "description": "Augmente la Vitesse du Pokémon quand il neige."
+  },
+  {
+    "id": 161,
+    "slug": "peau-electrique",
+    "name": "Peau Électrique",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Change le type des capacités de type [[type:Normal]] du Pokémon et les considère comme étant de type [[type:Électrik]]. Augmente la puissance de ces capacités.",
+    "battleEffectLong": "Quand un Pokémon doté de ce talent lance une capacité de type [[type:Normal]], celle-ci devient de type [[type:Électrik]]. Les attaques affectées par ce talent voient leur puissance augmentée de 20%. Ce bonus s'accumule avec celui du STAB si le Pokémon est de type [[type:Électrik]].",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Peau Électrique n'a aucun effet hors combat.",
+    "description": "Les capacités de type Normal deviennent de type Électrik. Leur puissance augmente légèrement."
+  },
+  {
+    "id": 162,
     "slug": "corrosion",
     "name": "Corrosion",
     "battleEffectCondition": "Lors de son attaque",
@@ -1716,7 +1782,18 @@
     "description": "Permet d'empoisonner les Pokémon de type Acier et Poison."
   },
   {
-    "id": 226,
+    "id": 163,
+    "slug": "boule-de-poils",
+    "name": "Boule de Poils",
+    "battleEffectCondition": "Lors d'une capacité adverse",
+    "battleEffectShort": "Diminue les dégâts subits par les capacités directes qui ne sont pas de type [[type:Feu]]. Augmente les dégâts subits par les capacités de type Feu.",
+    "battleEffectLong": "Un Pokémon doté de ce talent subit des dégâts réduits de moitié lorsqu'il est touché par une capacité directe. En contrepartie, les dégâts qu'il subit d'une capacité de type [[type:Feu]] sont doublés. Si la capacité utilisée est de type [[type:Feu]] tout en étant une capacité directe, (comme [[move:poing-feu|Poing Feu]]), les deux effets s'annulent et cette capacité infligera des dégâts neutres.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Boule de Poils n'a aucun effet sur le terrain.",
+    "description": "Divise par deux les dégâts des attaques directes subies par le Pokémon, mais double les dégâts des capacités de type Feu."
+  },
+  {
+    "id": 164,
     "slug": "crea-elec",
     "name": "Créa-Élec",
     "battleEffectCondition": "Lorsque le Pokémon est envoyé",
@@ -1727,7 +1804,7 @@
     "description": "Le Pokémon crée un Champ Électrifié au moment où il entre au combat."
   },
   {
-    "id": 227,
+    "id": 165,
     "slug": "crea-psy",
     "name": "Créa-Psy",
     "battleEffectCondition": "Lorsque le Pokémon est envoyé",
@@ -1738,7 +1815,7 @@
     "description": "Le Pokémon crée un Champ Psychique au moment où il entre au combat."
   },
   {
-    "id": 228,
+    "id": 166,
     "slug": "crea-brume",
     "name": "Créa-Brume",
     "battleEffectCondition": "Lorsque le Pokémon est envoyé",
@@ -1749,7 +1826,7 @@
     "description": "Le Pokémon crée un Champ Brumeux au moment où il entre au combat."
   },
   {
-    "id": 229,
+    "id": 167,
     "slug": "crea-herbe",
     "name": "Créa-Herbe",
     "battleEffectCondition": "Lorsque le Pokémon est envoyé",
@@ -1760,7 +1837,7 @@
     "description": "Le Pokémon crée un Champ Herbu au moment où il entre au combat."
   },
   {
-    "id": 299,
+    "id": 168,
     "slug": "crea-nectar",
     "name": "Créa-Nectar",
     "battleEffectCondition": "Lorsque le Pokémon est envoyé",
@@ -1771,7 +1848,7 @@
     "description": "Le Pokémon crée un Champ Myrmique au moment où il entre au combat."
   },
   {
-    "id": 300,
+    "id": 169,
     "slug": "crea-miasme",
     "name": "Créa-Miasme",
     "battleEffectCondition": "Lorsque le Pokémon est envoyé",
@@ -1780,6 +1857,94 @@
     "fieldEffectCondition": "Aucun effet",
     "fieldEffectLong": "Créa-Poison n'a aucun effet hors combat.",
     "description": "Le Pokémon crée un Champ Nauséabond au moment où il entre au combat."
+  },
+  {
+    "id": 170,
+    "slug": "armure-miroir",
+    "name": "Armure Miroir",
+    "battleEffectCondition": "Lorsque le Pokémon est envoyé",
+    "battleEffectShort": "Les effets réducteurs de [[docs:statistics|statistiques]] sont renvoyés au Pokémon adverse.",
+    "battleEffectLong": "Le talent Armure Miroir renvoie tous les effets réducteurs de [[docs:statistics|statistiques]]. Par exemple, si l'adversaire utilise la capacité [[move:grozyeux|Groz'Yeux]] sur un Pokémon doté du talent Armure Miroir, ce sera l'adversaire qui verra sa propre [[docs:statistics|Défense]] baisser. Cette effet se déclenche même avec une [[move:toile-gluante|Toile Gluante]].",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Armure Miroir n'a aucun effet hors combat.",
+    "description": "Le Pokémon renvoie les effets réducteurs de stats qu'il reçoit."
+  },
+  {
+    "id": 171,
+    "slug": "nerfs-dacier",
+    "name": "Nerfs d'Acier",
+    "battleEffectCondition": "Lors de son attaque",
+    "battleEffectShort": "Ignore les effets des capacités ou des talents attirant les capacités.",
+    "battleEffectLong": "Quand un Pokémon doté de ce talent utilise une capacité, tous les effets des talents et capacités adverses qui détournent les capacités sont ignorés (comme le talent [[ability:lavabo|Lavabo]] qui attire les attaques [[type:Eau]], par exemple). Aussi, si la cible de la capacité change de place, via la capacité [[move:interversion|Interversion]], le détenteur du talent Nerfs d'Acier ciblera tout de même ce Pokémon.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Nerfs d'Acier n'a aucun effet hors combat.",
+    "description": "Permet d'ignorer l'effet des capacités ou des talents qui attirent les capacités."
+  },
+  {
+    "id": 172,
+    "slug": "expul'sable",
+    "name": "Expul'Sable",
+    "battleEffectCondition": "Lors d'une capacité adverse",
+    "battleEffectShort": "Active le climat [[docs:weather|tempête de sable]] lorsque le Pokémon est touché par une capacité offensive.",
+    "battleEffectLong": "Quand un Pokémon doté de ce talent est touché par une attaque, il crée une [[docs:weather|tempête de sable]] qui dure 5 tours (8 s'il tient une [[item:roche-lisse|Roche Lisse]]).",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Expul'Sable n'a aucun effet hors combat.",
+    "description": "Le Pokémon déclenche une tempête de sable quand il subit une attaque."
+  },
+  {
+    "id": 173,
+    "slug": "ecailles-glacees",
+    "name": "Écailles Glacées",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Diminue les dégâts subits par les capacités spéciales.",
+    "battleEffectLong": "Écailles Glacées permet de diviser par deux les dégâts subis par des capacités spéciales.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Écailles Glacées n'a aucun effet hors combat.",
+    "description": "Le Pokémon est protégé par des écailles de glace. Les dégâts qu'il subit par des capacités spéciales sont divisés par deux."
+  },
+  {
+    "id": 174,
+    "slug": "cercle-denergie",
+    "name": "Cercle d'Énergie",
+    "battleEffectCondition": "Lorsque le Pokémon est envoyé",
+    "battleEffectShort": "Augmente la puissance des capacités des alliés du Pokémon se trouvant sur le terrain.",
+    "battleEffectLong": "En Combat Multi, un Pokémon doté du talent Cercle d'Énergie augmente la puissance des attaques de ses alliés de 30 %",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Cercle d'Énergie n'a aucun effet hors combat.",
+    "description": "Augmente la puissance des capacités des Pokémon qui se trouvent à proximité."
+  },
+  {
+    "id": 175,
+    "slug": "boost-acier",
+    "name": "Boost Acier",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Augmente la puissance des capacités de type [[type:Acier]] du Pokémon et de ses alliés.",
+    "battleEffectLong": "Un Pokémon doté du talent Boost Acier augmente la puissance des capacités de type [[type:Acier]] du porteur et de ses alliés de 50 %.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Boost Acier n'a aucun effet hors combat.",
+    "description": "Augmente la puissance des attaques de type Acier du Pokémon et de ses alliés."
+  },
+  {
+    "id": 176,
+    "slug": "entetement",
+    "name": "Entêtement",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "La statistique d'[[docs:statistics|Attaque]] est augmentée, mais il devient impossible d'utiliser toute autre capacité que celle utilisée en premier par le Pokémon.",
+    "battleEffectLong": "L'effet du talent Entêtement est identique à celui du [[item:bandeau-choix|Bandeau Choix]] : il augmente de 50% l'[[docs:statistics|Attaque]] du Pokémon mais l'oblige à utiliser uniquement la première capacité qu'il utilise lors du combat, jusqu'à ce qu'il quitte le terrain. L'effet de ce talent se cumule à celui des objets Choix.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Entêtement n'a aucun effet hors combat.",
+    "description": "Augmente l'Attaque, mais empêche d'utiliser toute autre capacité que celle utilisée en premier par le Pokémon."
+  },
+  {
+    "id": 177,
+    "slug": "voile-pastel",
+    "name": "Voile Pastel",
+    "battleEffectCondition": "Lorsque le Pokémon est envoyé",
+    "battleEffectShort": "Immunité contre l'[[docs:status|empoisonnement]] pour le Pokémon et ses alliés sur le terrain.",
+    "battleEffectLong": "Un Pokémon doté du talent Voile Pastel est immunisé à l'[[docs:status|empoisonnement]], et cette immunité s'étend à ses alliés en Combat Multi. En combat Multi, les Pokémon en jeu empoisonnés sont guéris de ce statut lorsqu'un détenteur de ce talent entre en jeu.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Voile Pastel n'a aucun effet hors combat.",
+    "description": "Protège le Pokémon et ses alliés contre toutes les altérations de statut liées à l'empoisonnement."
   },
   {
     "id": 301,
