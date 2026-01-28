@@ -361,8 +361,8 @@
     "genderRatio": { "male": 0, "female": 100 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/fourmidon_sprite.png",
+      "artwork": "pokedex/img/pokemon/fourmidon_artwork.png"
     },
     "baseStats": { "hp": 62, "atk": 116, "def": 80, "spa": 52, "spd": 75, "spe": 85 },
     "description": "Ces Pokémon défendent le nid au péril de leur vie. Avec leur tête dure comme la pierre, elles sont capables de bloquer les tunnels du nid.",
