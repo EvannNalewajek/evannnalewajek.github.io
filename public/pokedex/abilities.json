@@ -1947,7 +1947,139 @@
     "description": "Protège le Pokémon et ses alliés contre toutes les altérations de statut liées à l'empoisonnement."
   },
   {
-    "id": 301,
+    "id": 178,
+    "slug": "absorbe-terre",
+    "name": "Absorbe-Terre",
+    "battleEffectCondition": "Lors d'une capacité adverse",
+    "battleEffectShort": "Immunité contre les capacités de type [[type:Sol]] : elles soignent jusqu'à 25 % des [[docs:statistics|PV]] maximum du Pokémon.",
+    "battleEffectLong": "Un Pokémon doté de ce talent récupère 25 % de ses [[docs:statistics|PV]] max s'il est touché par une capacité de type [[type:Sol]] et il ne subit pas les dégâts de ces capacités.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Absorbe-Terre n'a aucun effet hors combat.",
+    "description": "Si le Pokémon est touché par une capacité de type Sol, il regagne des PV au lieu de subir des dégâts."
+  },
+  {
+    "id": 179,
+    "slug": "aeroporte",
+    "name": "Aéroporté",
+    "battleEffectCondition": "Après une capacité adverse",
+    "battleEffectShort": "La statistique d'[[docs:statistics|Attaque]] du Pokémon augmente si un vent arrière souffle ou s'il est touché par une capacité faisant appel au vent. Dans ce dernier cas, il ne subit aucun dégât.",
+    "battleEffectLong": "Quand un Pokémon doté de ce talent subit une capacité faisant appel au vent, son [[docs:statistics|Attaque]] est alors augmentée d'un niveau et le coup reçu ne cause aucun dégât. Les capacités affectées par ce talent sont : [[move:blizzard|Blizzard]], [[move:canicule|Canicule]], [[move:cyclone|Cyclone]], [[move:ouragan|Ouragan]], [[move:tempete-florale|Tempête Florale]], [[move:tornade|Tornade]], [[move:tranchair|Tranch'Air]], [[move:vent-arriere|Vent Arrière]], [[move:vent-feerique|Vent Féérique]], [[move:vent-glace|Vent Glace]] et [[move:vent-violent|Vent Violent]].",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Aéroporté n'a aucun effet hors combat.",
+    "description": "L'Attaque du Pokémon augmente si un vent arrière souffle ou s'il est touché par une capacité faisant appel au vent. Dans ce dernier cas, il ne subit aucun dégât."
+  },
+  {
+    "id": 180,
+    "slug": "armure-caudale",
+    "name": "Armure Caudale",
+    "battleEffectCondition": "Lors d'une capacité adverse",
+    "battleEffectShort": "Immunité contre les capacités prioritaires.",
+    "battleEffectLong": "Un Pokémon doté de ce talent empêche les Pokémon adverses d'utiliser des capacités prioritaires.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Armure Caudale n'a aucun effet hors combat.",
+    "description": "Une étrange queue recouvre la tête du Pokémon, ce qui empêche ce dernier et ses alliés d'être visés par une capacité prioritaire."
+  },
+  {
+    "id": 181,
+    "slug": "collab",
+    "name": "Collab",
+    "battleEffectCondition": "Lorsque le Pokémon est envoyé",
+    "battleEffectShort": "Copie les changements de [[docs:statistics|statistiques]] de l'allié lorsque le Pokémon est envoyé au combat.",
+    "battleEffectLong": "Lorsqu'un Pokémon doté de Collab est envoyé en Combat Duo, il copie toutes les modifications de [[docs:statistics|statistiques]] de son allié.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Collab n'a aucun effet hors combat.",
+    "description": "Quand le Pokémon entre sur le terrain, il copie les changements de stats de son allié."
+  },
+  {
+    "id": 182,
+    "slug": "incisif",
+    "name": "Incisif",
+    "battleEffectCondition": "Lors de son attaque",
+    "battleEffectShort": "Augmente la puissance des capacités tranchantes.",
+    "battleEffectLong": "Si un Pokémon doté de ce talent utilise une capacité tranchante, alors la puissance de cette attaque augmente de 50 %. Les capacités bénéficiant de ce bonus sont : [[move:aeropique|Aéropique]], [[move:tranchair|Tranch'Air]], [[move:lame-dair|Lame d'Air]], [[move:tranchaqua|Tranch'Aqua]], [[move:taillade|Taillade]], [[move:lame-feuille|Lame Feuille]], [[move:tranche-nuit|Tranche-Nuit]], [[move:coupe-psycho|Coupe Psycho]], [[move:coqui-lame|Coqui-Lame]], [[move:lame-sainte|Lame Sainte]], [[move:tranche|Tranche]], [[move:plaie-croix|Plaie Croix]], [[move:poison-croix|Poison Croix]], [[move:tranch-herbe|Tranch'Herbe]] et [[move:lame-solaire|Lame Solaire]].",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Incisif n'a aucun effet hors combat.",
+    "description": "Augmente la puissance des capacités tranchantes."
+  },
+  {
+    "id": 183,
+    "slug": "odeur-tenace",
+    "name": "Odeur Tenance",
+    "battleEffectCondition": "Lors d'une capacité adverse",
+    "battleEffectShort": "Remplace le talent de l'adversaire attaquant par Odeur Tenace lorsque le Pokémon subit une attaque directe.",
+    "battleEffectLong": "Si un Pokémon utilise une capacité directe sur un possesseur d'Odeur Tenace, son talent devient, à son tour, Odeur Tenace. Odeur Tenace n'ayant aucun autre effet, on peut le considérer comme un suppresseur de talent. Seul les talents gimmicks ne peuvent pas être supprimés.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Odeur Tenace n'a aucun effet hors combat.",
+    "description": "Lorsque le Pokémon subit une attaque directe, le talent de l'attaquant est remplacé par Odeur Tenace."
+  },
+  {
+    "id": 184,
+    "slug": "opportuniste",
+    "name": "Opportuniste",
+    "battleEffectCondition": "Après une capacité adverse",
+    "battleEffectShort": "Augmente les [[docs:statistics|statistiques]] du Pokémon de la même manière que le Pokémon adverse.",
+    "battleEffectLong": "Lorsqu'un Pokémon adverse augmente ses [[docs:statistics|statistiques]], le Pokémon doté de ce talent copie cette augmentation.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Opportuniste n'a aucun effet hors combat.",
+    "description": "Quand les stats de l'ennemi augmentent, le Pokémon en profite pour augmenter ses stats de la même manière."
+  },
+  {
+    "id": 185,
+    "slug": "porte-roche",
+    "name": "Porte-Roche",
+    "battleEffectCondition": "En permanence",
+    "battleEffectShort": "Augmente la puissance des capacités de type [[type:Roche]].",
+    "battleEffectLong": "Si un Pokémon doté de ce talent utilise une capacité de type [[type:Roche]], sa statistique d'[[docs:statistics|Attaque]] ou d'[[docs:statistics|Attaque Spéciale]] (selon la catégorie de la capacité utilisée) est multipliée par 1,5 lors du calcul des dégâts, augmentant ainsi les dégâts infligés d'environ 50 %.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Porte-Roche n'a aucun effet hors combat.",
+    "description": "Augmente la puissance des capacités de type Roche."
+  },
+  {
+    "id": 186,
+    "slug": "ruminant",
+    "name": "Ruminant",
+    "battleEffectCondition": "Après l'utilisation d'un objet",
+    "battleEffectShort": "La Baie tenue peut être consommée une deuxième fois à la fin du tour suivant.",
+    "battleEffectLong": "Lorsqu'un Pokémon doté de ce talent mange une Baie et profite de ses effets, il profite de ces mêmes effets une deuxième fois le tour suivant. Dans le cas où le Pokémon quitte le terrain avant de profiter une deuxième fois des effets de la Baie, l'effet de Ruminant ne s'active pas lorsqu'il revient sur le terrain.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Ruminant n'a aucun effet hors combat.",
+    "description": "Quand le Pokémon mange une Baie, il la régurgite à la fin du tour suivant et la mange une nouvelle fois."
+  },
+  {
+    "id": 187,
+    "slug": "ruminant",
+    "name": "Ruminant",
+    "battleEffectCondition": "Lors d'une capacité adverse",
+    "battleEffectShort": "Active un [[docs:weather|Champ Herbu]] lorsque le Pokémon subit une attaque.",
+    "battleEffectLong": "Lorsqu'un Pokémon doté de ce talent subit une capacité offensive, il active un [[docs:weather|Champ Herbu]] pour 5 tours (8 s'il tient un [[item:champduit|Champ'Duit]]).",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Semencier n'a aucun effet hors combat.",
+    "description": "Le Pokémon crée un champ herbu quand il subit une attaque."
+  },
+  {
+    "id": 188,
+    "slug": "thermodynamique",
+    "name": "Thermodynamique",
+    "battleEffectCondition": "Lors d'une capacité adverse",
+    "battleEffectShort": "Immunité contre les capacités de type [[type:Feu]] : elles augmentent l'[[docs:statistics|Attaque]] du Pokémon.",
+    "battleEffectLong": "Quand un Pokémon doté de ce talent subit une capacité de type [[type:Feu]], il subit les dégâts mais son [[docs:statistics|Attaque]] augmente de 1 niveau. Il est également immunisé à la [[docs:status|Brûlure]].",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Thermodynamique n'a aucun effet hors combat.",
+    "description": "Lorsque le Pokémon est touché par une capacité de type Feu, son Attaque augmente. Il ne peut pas être brûlé."
+  },
+  {
+    "id": 189,
+    "slug": "aux-petits-soins",
+    "name": "Aux Petits Soins",
+    "battleEffectCondition": "Lorsque le Pokémon est envoyé",
+    "battleEffectShort": "Lorsqu'il entre en combat, le Pokémon restaure les [[docs:statistics|PV]] d'un allié.",
+    "battleEffectLong": "Lorsqu'il entre au combat, un Pokémon doté de ce talent rend à son allié 1/4 de ses [[docs:statistics|PV]] max. Ce talent est sans effet en Combat Solo.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Aux Petits Soins n'a aucun effet hors combat.",
+    "description": "Quand il rejoint le combat, ce Pokémon est aux petits soins avec son allié et restaure quelques PV."
+  },
+  {
+    "id": 190,
     "slug": "maree-pourpre",
     "name": "Marée Pourpre",
     "battleEffectCondition": "Lors de son attaque",
@@ -1958,7 +2090,7 @@
     "description": "Les capacités de type Eau ont une chance d'apeurer. Soigne le Pokémon en cas de succès."
   },
   {
-    "id": 302,
+    "id": 191,
     "slug": "marecage-brun",
     "name": "Marécage Brun",
     "battleEffectCondition": "Lorsque le Pokémon est envoyé",
@@ -1969,7 +2101,7 @@
     "description": "Les Pokémon au sol ne peuvent pas être soigner, ni quitter le terrain via une capacité tant que le Pokémon est sur le terrain."
   },
   {
-    "id": 303,
+    "id": 192,
     "slug": "nuee-ambree",
     "name": "Nuée Ambrée",
     "battleEffectCondition": "Lors de son attaque",
@@ -1980,7 +2112,7 @@
     "description": "Les capacités de type Insecte ont une chance d'harceler la cible, lui infligeant des dégâts continus et l'empêche de quitter le terrain."
   },
   {
-    "id": 304,
+    "id": 193,
     "slug": "danse-opaline",
     "name": "Danse Opaline",
     "battleEffectCondition": "Lors de son attaque",
@@ -1991,7 +2123,7 @@
     "description": "Les capacités de danse deviennent prioritaires et ont une chance d'apeurer l'ennemi."
   },
   {
-    "id": 305,
+    "id": 194,
     "slug": "peste-mauve",
     "name": "Peste Mauve",
     "battleEffectCondition": "Entre chaque tour",
@@ -2002,7 +2134,7 @@
     "description": "Empoisonne gravement le lanceur à la fin de son premier tour. Lorsqu'il est empoisonné, le Pokémon est guérie d'une partie de ses PV au lieu d'en perdre."
   },
   {
-    "id": 306,
+    "id": 195,
     "slug": "cendre-ocre",
     "name": "Cendre Ocre",
     "battleEffectCondition": "Lors de son attaque",
@@ -2013,7 +2145,7 @@
     "description": "Lorsqu'une capacité de type Feu touche un Pokémon qui résiste à ce type, augmente la statistique offensive correspondant à la catégorie de la capacité."
   },
   {
-    "id": 307,
+    "id": 196,
     "slug": "neige-grise",
     "name": "Neige Grise",
     "battleEffectCondition": "Entre chaque tour",
@@ -2024,7 +2156,7 @@
     "description": "Réduit la vitesse des Pokémon adverses à chaque fin de tour."
   },
   {
-    "id": 308,
+    "id": 197,
     "slug": "moissonneur-vert",
     "name": "Moissonneur Vert",
     "battleEffectCondition": "Lors de son attaque",
@@ -2035,7 +2167,7 @@
     "description": "Résiste aux capacités de type Plante, et toutes les attaques deviennent super efficace contre des Pokémon de type Plante."
   },
   {
-    "id": 309,
+    "id": 198,
     "slug": "eclipse-noire",
     "name": "Éclipse Noire",
     "battleEffectCondition": "Lorsque le Pokémon est envoyé",
@@ -2046,7 +2178,7 @@
     "description": "Absorbe la lumière des capacités ainsi que les rayons du soleil."
   },
   {
-    "id": 310,
+    "id": 199,
     "slug": "deuil-blanc",
     "name": "Deuil Blanc",
     "battleEffectCondition": "Lors d'une capacité adverse",
@@ -2057,7 +2189,7 @@
     "description": "Si le Pokémon est mis K.O. par une attaque, il inflige une malédiction à l'attaquant avant de s'évanouir."
   },
   {
-    "id": 311,
+    "id": 200,
     "slug": "equilibre-absolu",
     "name": "Équilibre Absolu",
     "battleEffectCondition": "Entre chaque tour",
@@ -2068,7 +2200,7 @@
     "description": "Si un Pokémon adverse boost ses stats ou diminue les stats du Pokémon ou d'un Pokémon allié, annule le changement à la fin du tour."
   },
   {
-    "id": 312,
+    "id": 201,
     "slug": "renforcement-adaptatif",
     "name": "Renforcement Adaptatif",
     "battleEffectCondition": "Entre chaque tour",
