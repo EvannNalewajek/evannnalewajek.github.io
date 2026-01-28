@@ -384,8 +384,8 @@
     "genderRatio": { "male": 0, "female": 100 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/myrtiara_sprite.png",
+      "artwork": "pokedex/img/pokemon/myrtiara_artwork.png"
     },
     "baseStats": { "hp": 80, "atk": 55, "def": 100, "spa": 105, "spd": 100, "spe": 45 },
     "description": "Elle émet des phéromones responsables de coordonner les Pokémon de sa colonie. En cas d'attaque, elle privilégiera toujours l'apaisement avant la riposte.",
