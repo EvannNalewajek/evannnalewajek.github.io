@@ -407,8 +407,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 255,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/pisqwack_sprite.png",
+      "artwork": "pokedex/img/pokemon/pisqwack_artwork.png"
     },
     "baseStats": { "hp": 40, "atk": 55, "def": 35, "spa": 41, "spd": 30, "spe": 63 },
     "description": "Il adore se poser sur les toits pour observer les passants. Si une personne tient de la nourriture dans la main, il viendra vers elle dans l'espoir qu'elle lui en donne un morceau.",
