@@ -1437,6 +1437,29 @@
     }
   },
   {
+    "id": 59,
+    "slug": "cecibou",
+    "name": "Cécibou",
+    "types": ["Psy", "Ténèbres"],
+    "category": "Oiseau Aveugle",
+    "abilities": ["[[ability:regard-vif|Regard Vif]]", "[[ability:telepathe|Télépathe]]"],
+    "hiddenAbility": "[[ability:miroir-magik|Miroir Magik]]",
+    "height_m": 0.35,
+    "weight_kg": 0.9,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 90,
+    "images": {
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
+    },
+    "baseStats": { "hp": 75, "atk": 45, "def": 70, "spa": 105, "spd": 110, "spe": 65 },
+    "description": "Aveugle de naissance, ses yeux lui permettent de percevoir le monde grâce aux ondes psychiques. Il aime observer silencieusement les humains en pleine crise de colère, de joie ou de tristesse.",
+    "etymology": {
+      "cécité": "perte ou absence de la vision",
+      "hibou": "oiseau nocturne réputé pour son ouïe et son silence"
+    }
+  },
+  {
     "id": 101,
     "slug": "damarel",
     "name": "Damarel",
