@@ -1460,6 +1460,52 @@
     }
   },
   {
+    "id": 60,
+    "slug": "grimocto",
+    "name": "Grimocto",
+    "types": ["Eau"],
+    "category": "Pieuvre ailée",
+    "abilities": ["[[ability:ventouse|Ventouse]]", "[[ability:infiltration|Infiltration]]"],
+    "hiddenAbility": "[[ability:agitation|Agitation]]",
+    "height_m": 0.4,
+    "weight_kg": 0.96,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 190,
+    "images": {
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
+    },
+    "baseStats": { "hp": 35, "atk": 55, "def": 45, "spa": 65, "spd": 65, "spe": 40 },
+    "description": "Contrairement à ses congénères, ce Pokémon ne se sert pas de ses petites tentacules pour se propulser dans l'eau. Au lieu de ça, il possède deux grands oreilles, dont il s'en sert comme de nageoires.",
+    "etymology": {
+      "Grimpoteuthis": "Nom scientifique de la pieuvre Dumbo",
+      "Octopus": "Nom anglais de la pieuvre"
+    }
+  },
+  {
+    "id": 61,
+    "slug": "thaumicto",
+    "name": "Thaumicto",
+    "types": ["Eau", "Ténèbres"],
+    "category": "Imitateur",
+    "abilities": ["[[ability:ventouse|Ventouse]]", "[[ability:infiltration|Infiltration]]"],
+    "hiddenAbility": "[[ability:proteen|Protéen]]",
+    "height_m": 1.2,
+    "weight_kg": 32.4,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 75,
+    "images": {
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
+    },
+    "baseStats": { "hp": 55, "atk": 90, "def": 65, "spa": 105, "spd": 75, "spe": 85 },
+    "description": "Cette pieuvre a été découverte assez tardivement. En effet, elle est capable d'imiter l'apparence et le comportement de plein d'espèces différentes, en se contorsionnant et en changeant de couleur.",
+    "etymology": {
+      "Thaumoctopus Mimicus": "Nom scientifique de la pieuvre mimétique",
+      "Octopus": "Nom anglais de la pieuvre"
+    }
+  },
+  {
     "id": 101,
     "slug": "damarel",
     "name": "Damarel",
