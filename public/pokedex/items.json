@@ -13,7 +13,214 @@
     }
   },
   {
-    "id": 17,
+    "id": 2,
+    "slug": "hyper-ball",
+    "name": "Hyper Ball",
+    "description": "Une Poké Ball très performante dont le taux de réussite est supérieur à celui de la Super Ball.",
+    "category": "Balls",
+    "usage": "Sur un Pokémon (adversaire)",
+    "effet": "Tout comme la [[item:poke-ball|Poké Ball]] et la [[item:super-ball|Super Ball]], l'Hyper Ball n'a pas d'effet secondaire. Elle a cependant un Bonus Ball de 2, supérieur aux deux autres (celui de la Poké Ball étant de 1, et celui de la Super Ball de 1,5).",
+    "images": {
+      "sprite": "pokedex/img/items/hyper-ball_sprite.png",
+      "artwork": "pokedex/img/items/hyper-ball_artwork.png"
+    },
+    "buy": 800,
+    "sell": 200
+  },
+  {
+    "id": 3,
+    "slug": "super-ball",
+    "name": "Super Ball",
+    "description": "Une Poké Ball performante dont le taux de réussite est supérieur à celui de la Poké Ball.",
+    "category": "Balls",
+    "usage": "Sur un Pokémon (adversaire)",
+    "effet": "Tout comme la [[item:poke-ball|Poké Ball]], la Super Ball n'a pas d'effet secondaire. Elle a cependant un Bonus Ball de 1,5, supérieure à celle-ci, le Bonus Ball de la Poké Ball étant de 1.",
+    "images": {
+      "sprite": "pokedex/img/items/super-ball_sprite.png",
+      "artwork": "pokedex/img/items/super-ball_artwork.png"
+    },
+    "buy": 600,
+    "sell": 150
+  },
+  {
+    "id": 4,
+    "slug": "poke-ball",
+    "name": "Poké Ball",
+    "description": "Un objet semblable à une capsule, qui capture les Pokémon sauvages. Il suffit pour cela de le lancer comme une balle.",
+    "category": "Balls",
+    "usage": "Sur un Pokémon (adversaire)",
+    "effet": "Étant la Ball la plus classique, elle n'a pas d'effet particulier. Ainsi, son Bonus Ball est toujours de 1.",
+    "images": {
+      "sprite": "pokedex/img/items/poke-ball_sprite.png",
+      "artwork": "pokedex/img/items/poke-ball_artwork.png"
+    },
+    "buy": 200,
+    "sell": 50
+  },
+  {
+    "id": 5,
+    "slug": "safari-ball",
+    "name": "Safari Ball",
+    "description": "Une Poké Ball spéciale dont l'usage est réservé au Parc Safari. Elle est décorée d'un motif camouflage.",
+    "category": "Balls",
+    "usage": "Sur un Pokémon (adversaire)",
+    "effet": "La Safari Ball n'a aucun effet particulier. Elle est utilisée pour capturer les Pokémon lors de safaris, et a un Bonus Ball de 1,5.",
+    "images": {
+      "sprite": "pokedex/img/items/safari-ball_sprite.png",
+      "artwork": "pokedex/img/items/safari-ball_artwork.png"
+    }
+  },
+  {
+    "id": 6,
+    "slug": "filet-ball",
+    "name": "Filet Ball",
+    "description": "Une Poké Ball un peu spéciale qui fonctionne particulièrement bien sur les Pokémon [[type:Eau]] ou [[type:Insecte]].",
+    "category": "Balls",
+    "usage": "Sur un Pokémon (adversaire)",
+    "effet": "Lorsque la Filet Ball est utilisée sur un Pokémon de type [[type:Eau]] ou [[type:Insecte]], son Bonus Ball est multiplié par 3,5.",
+    "images": {
+      "sprite": "pokedex/img/items/filet-ball_sprite.png",
+      "artwork": "pokedex/img/items/filet-ball_artwork.png"
+    },
+    "buy": 1000,
+    "sell": 250
+  },
+  {
+    "id": 7,
+    "slug": "scuba-ball",
+    "name": "Scuba Ball",
+    "description": "Une Poké Ball un peu spéciale qui fonctionne particulièrement bien sur les Pokémon sous-marins.",
+    "category": "Balls",
+    "usage": "Sur un Pokémon (adversaire)",
+    "effet": "Son Bonus Ball est multiplié par 3,5 si elle est utilisée sur un Pokémon pêché ou rencontré sur l'eau.",
+    "images": {
+      "sprite": "pokedex/img/items/scuba-ball_sprite.png",
+      "artwork": "pokedex/img/items/scuba-ball_artwork.png"
+    },
+    "buy": 1000,
+    "sell": 250
+  },
+  {
+    "id": 8,
+    "slug": "faiblo-ball",
+    "name": "Faiblo Ball",
+    "description": "Une Poké Ball un peu spéciale qui fonctionne particulièrement bien sur les Pokémon les plus faibles.",
+    "category": "Balls",
+    "usage": "Sur un Pokémon (adversaire)",
+    "effet": "Le Bonus Ball de la Faiblo Ball varie en fonction du niveau du Pokémon sauvage sur lequel elle est utilisée : 3 pour les niveaux inférieurs à 20 non inclu, 2 pour les niveaux entre 20 et 30 non inclu, et 1 à partir du niveau 30.",
+    "images": {
+      "sprite": "pokedex/img/items/faiblo-ball_sprite.png",
+      "artwork": "pokedex/img/items/faiblo-ball_artwork.png"
+    },
+    "buy": 1000,
+    "sell": 250
+  },
+  {
+    "id": 9,
+    "slug": "bis-ball",
+    "name": "Bis Ball",
+    "description": "Une Poké Ball un peu spéciale qui fonctionne particulièrement bien sur les espèces de Pokémon déjà capturées.",
+    "category": "Balls",
+    "usage": "Sur un Pokémon (adversaire)",
+    "effet": "Lorsque la Bis Ball est utilisée sur un Pokémon déjà enregistré dans le Pokédex du joueur, son Bonus Ball est multiplié par 3,5.",
+    "images": {
+      "sprite": "pokedex/img/items/bis-ball_sprite.png",
+      "artwork": "pokedex/img/items/bis-ball_artwork.png"
+    },
+    "buy": 1000,
+    "sell": 250
+  },
+  {
+    "id": 10,
+    "slug": "chrono-ball",
+    "name": "Chrono Ball",
+    "description": "Une Poké Ball un peu spéciale qui fonctionne de mieux en mieux à mesure que le combat s'éternise.",
+    "category": "Balls",
+    "usage": "Sur un Pokémon (adversaire)",
+    "effet": "Le Bonus Ball de la Chrono Ball varie en fonction de nombre de tour passés durant le combat. Il passe de 1 à 2 lors du 4ème tour, puis à 3 au 7ème tour, et enfin à 4 à partir du 10ème tour. Cependant, il ne peut pas excéder 4.",
+    "images": {
+      "sprite": "pokedex/img/items/chrono-ball_sprite.png",
+      "artwork": "pokedex/img/items/chrono-ball_artwork.png"
+    },
+    "buy": 1000,
+    "sell": 250
+  },
+  {
+    "id": 11,
+    "slug": "luxe-ball",
+    "name": "Luxe Ball",
+    "description": "Une Poké Ball pratique qui permet de gagner rapidement l'amitié d'un Pokémon sauvage attrapé.",
+    "category": "Balls",
+    "usage": "Sur un Pokémon (adversaire)",
+    "effet": "Tous les points de bonheur reçus par un Pokémon capturé dans une Luxe Ball sont doublés.",
+    "images": {
+      "sprite": "pokedex/img/items/luxe-ball_sprite.png",
+      "artwork": "pokedex/img/items/luxe-ball_artwork.png"
+    },
+    "buy": 3000,
+    "sell": 750
+  },
+  {
+    "id": 12,
+    "slug": "honor-ball",
+    "name": "Honor Ball",
+    "description": "Une Poké Ball assez rare qui fut créée pour un évènement particulier.",
+    "category": "Balls",
+    "usage": "Sur un Pokémon (adversaire)",
+    "effet": "La Honor Ball est identique à la [[item:poke-ball|Poké Ball]] quant à son fonctionnement, ayant le même Bonus Ball que celle-ci et n'ayant pas d'effet secondaire.",
+    "images": {
+      "sprite": "pokedex/img/items/honor-ball_sprite.png",
+      "artwork": "pokedex/img/items/honor-ball_artwork.png"
+    },
+    "sell": 5
+  },
+  {
+    "id": 13,
+    "slug": "sombre-ball",
+    "name": "Sombre Ball",
+    "description": "Une Poké Ball un peu spéciale qui permet de capturer les Pokémon plus facilement la nuit ou dans les endroits sombres, tels que les grottes.",
+    "category": "Balls",
+    "usage": "Sur un Pokémon (adversaire)",
+    "effet": "Le Bonus Ball de la Sombre Ball est multiplié par 3 si elle est utilisée dans une grotte ou lorsqu'il fait nuit.",
+    "images": {
+      "sprite": "pokedex/img/items/sombre-ball_sprite.png",
+      "artwork": "pokedex/img/items/sombre-ball_artwork.png"
+    },
+    "buy": 1000,
+    "sell": 250
+  },
+  {
+    "id": 14,
+    "slug": "soin-ball",
+    "name": "Soin Ball",
+    "description": "Une Poké Ball de soin qui rend tous ses PV au Pokémon attrapé et qui soigne toutes ses altérations de statut.",
+    "category": "Balls",
+    "usage": "Sur un Pokémon (adversaire)",
+    "effet": "Son Bonus Ball est de 1. Un Pokémon capturé dans une Soin Ball est guéri de ses problèmes de [[docs:status|statut]] et récupère tous ses PV et PP après la capture.",
+    "images": {
+      "sprite": "pokedex/img/items/soin-ball_sprite.png",
+      "artwork": "pokedex/img/items/soin-ball_artwork.png"
+    },
+    "buy": 300,
+    "sell": 75
+  },
+  {
+    "id": 15,
+    "slug": "rapide-ball",
+    "name": "Rapide Ball",
+    "description": "Une Poké Ball un peu spéciale qui permet d'attraper un Pokémon sauvage plus facilement si on l'utilise au début du combat.",
+    "category": "Balls",
+    "usage": "Sur un Pokémon (adversaire)",
+    "effet": "À utiliser en début de combat pour une meilleure efficacité. Elle a un Bonus Ball de 5 si elle est utilisée au premier tour. Sinon, elle a un Bonus Ball de 1.",
+    "images": {
+      "sprite": "pokedex/img/items/rapide-ball_sprite.png",
+      "artwork": "pokedex/img/items/rapide-ball_artwork.png"
+    },
+    "buy": 1000,
+    "sell": 250
+  },
+  {
+    "id": 16,
     "slug": "potion",
     "name": "Potion",
     "description": "Un spray qui soigne les blessures. Restaure 20 PV d'un Pokémon.",
