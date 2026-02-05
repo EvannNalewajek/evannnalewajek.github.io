@@ -235,6 +235,156 @@
     "sell": 50
   },
   {
+    "id": 17,
+    "slug": "antidote",
+    "name": "Antidote",
+    "description": "Un médicament sous forme de spray. Guérit un Pokémon empoisonné.",
+    "category": "Soins",
+    "usage": "Sur un Pokémon",
+    "effet": "Cet objet permet de soigner un Pokémon de l'[[docs:status|empoisonnement]] (ou de l'[[docs:status|empoisonnement grave]]) lorsqu'il est utilisé sur un Pokémon (en combat ou bien en dehors).",
+    "images": {
+      "sprite": "pokedex/img/items/antidote_sprite.png",
+      "artwork": "pokedex/img/items/antidote_artwork.png"
+    },
+    "buy": 200,
+    "sell": 50
+  },
+  {
+    "id": 18,
+    "slug": "anti-brule",
+    "name": "Anti-Brûle",
+    "description": "Un médicament sous forme de spray. Soigne les brûlures d'un Pokémon.",
+    "category": "Soins",
+    "usage": "Sur un Pokémon",
+    "effet": "Cet objet permet de soigner un Pokémon de la [[docs:status|brûlure]] lorsqu'il est utilisé sur un Pokémon (en combat ou bien en dehors).",
+    "images": {
+      "sprite": "pokedex/img/items/anti-brule_sprite.png",
+      "artwork": "pokedex/img/items/anti-brule_artwork.png"
+    },
+    "buy": 200,
+    "sell": 50
+  },
+  {
+    "id": 19,
+    "slug": "antigel",
+    "name": "Antigel",
+    "description": "Un médicament sous forme de spray. Réchauffe un Pokémon gelé.",
+    "category": "Soins",
+    "usage": "Sur un Pokémon",
+    "effet": "Cet objet permet de soigner un Pokémon du [[docs:status|gel]] lorsqu'il est utilisé sur un Pokémon (en combat ou bien en dehors).",
+    "images": {
+      "sprite": "pokedex/img/items/antigel_sprite.png",
+      "artwork": "pokedex/img/items/antigel_artwork.png"
+    },
+    "buy": 200,
+    "sell": 50
+  },
+  {
+    "id": 20,
+    "slug": "reveil",
+    "name": "Réveil",
+    "description": "Un médicament sous forme de spray. Réveille un Pokémon endormi.",
+    "category": "Soins",
+    "usage": "Sur un Pokémon",
+    "effet": "Cet objet permet de soigner un Pokémon du sommeil lorsqu'il est utilisé sur un Pokémon (en combat ou bien en dehors).",
+    "images": {
+      "sprite": "pokedex/img/items/reveil_sprite.png",
+      "artwork": "pokedex/img/items/reveil_artwork.png"
+    },
+    "buy": 200,
+    "sell": 50
+  },
+  {
+    "id": 21,
+    "slug": "anti-para",
+    "name": "Anti-Para",
+    "description": "Un médicament sous forme de spray. Soigne un Pokémon de la paralysie.",
+    "category": "Soins",
+    "usage": "Sur un Pokémon",
+    "effet": "Cet objet permet de soigner un Pokémon de la paralysie lorsqu'il est utilisé sur un Pokémon (en combat ou bien en dehors).",
+    "images": {
+      "sprite": "pokedex/img/items/anti-para_sprite.png",
+      "artwork": "pokedex/img/items/anti-para_artwork.png"
+    },
+    "buy": 200,
+    "sell": 50
+  },
+  {
+    "id": 22,
+    "slug": "guerison",
+    "name": "Guérison",
+    "description": "Un médicament qui restaure tous les PV d'un Pokémon et soigne toutes ses altérations de statut.",
+    "category": "Soins",
+    "usage": "Sur un Pokémon",
+    "effet": "Lorsqu'il est utilisé sur un Pokémon (en combat ou bien en dehors), cet objet permet de soigner n'importe quel [[docs:status|statut majeur]], et de restaurer les [[docs:statistics|PV]] du Pokémon à 100%.",
+    "images": {
+      "sprite": "pokedex/img/items/guerison_sprite.png",
+      "artwork": "pokedex/img/items/guerison_artwork.png"
+    },
+    "buy": 3000,
+    "sell": 750
+  },
+  {
+    "id": 23,
+    "slug": "potion-max",
+    "name": "Potion Max",
+    "description": "Un spray qui soigne les blessures. Restaure tous les PV d'un Pokémon.",
+    "category": "Soins",
+    "usage": "Sur un Pokémon",
+    "effet": "Cet objet permet de rendre la totalité de ses [[docs:statistics|PV]] à un Pokémon (à utiliser en combat ou bien en dehors).",
+    "images": {
+      "sprite": "pokedex/img/items/potion-max_sprite.png",
+      "artwork": "pokedex/img/items/potion-max_artwork.png"
+    },
+    "buy": 2500,
+    "sell": 625
+  },
+  {
+    "id": 24,
+    "slug": "hyper-potion",
+    "name": "Hyper Potion",
+    "description": "Un spray qui soigne les blessures. Restaure 120 PV d'un Pokémon.",
+    "category": "Soins",
+    "usage": "Sur un Pokémon",
+    "effet": "L'Hyper Potion s'utilise sur le terrain aussi bien que durant les combats. Restaure 120 [[docs:statistics|PV]] d'un Pokémon.",
+    "images": {
+      "sprite": "pokedex/img/items/hyper-potion_sprite.png",
+      "artwork": "pokedex/img/items/hyper-potion_artwork.png"
+    },
+    "buy": 1500,
+    "sell": 375
+  },
+  {
+    "id": 25,
+    "slug": "super-potion",
+    "name": "Super Potion",
+    "description": "Un spray qui soigne les blessures. Restaure 60 PV d'un Pokémon.",
+    "category": "Soins",
+    "usage": "Sur un Pokémon",
+    "effet": "La Super Potion s'utilise sur le terrain aussi bien que durant les combats. Restaure 60 [[docs:statistics|PV]] d'un Pokémon.",
+    "images": {
+      "sprite": "pokedex/img/items/super-potion_sprite.png",
+      "artwork": "pokedex/img/items/super-potion_artwork.png"
+    },
+    "buy": 700,
+    "sell": 175
+  },
+  {
+    "id": 26,
+    "slug": "total-soin",
+    "name": "Total Soin",
+    "description": "Un médicament sous forme de spray. Soigne toutes les altérations de statut d'un Pokémon.",
+    "category": "Soins",
+    "usage": "Sur un Pokémon",
+    "effet": "Lorsqu'il est utilisé sur un Pokémon (en combat ou bien en dehors), cet objet permet de soigner n'importe quel [[docs:status|statut majeur]].",
+    "images": {
+      "sprite": "pokedex/img/items/total-soin_sprite.png",
+      "artwork": "pokedex/img/items/total-soin_artwork.png"
+    },
+    "buy": 400,
+    "sell": 100
+  },
+  {
     "id": 220,
     "slug": "bandeau-choix",
     "name": "Bandeau Choix",
