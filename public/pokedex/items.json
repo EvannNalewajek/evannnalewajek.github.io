@@ -385,6 +385,216 @@
     "sell": 100
   },
   {
+    "id": 27,
+    "slug": "rappel",
+    "name": "Rappel",
+    "description": "Un médicament qui ranime un Pokémon K.O. et restaure la moitié de ses PV max.",
+    "category": "Soins",
+    "usage": "Sur un Pokémon",
+    "effet": "Lorsqu'il est utilisé sur un Pokémon [[docs:ko|K.O.]] (en combat ou bien en dehors), cet objet le réanime et restaure la moitié de ses [[docs:statistics|PV]].",
+    "images": {
+      "sprite": "pokedex/img/items/rappel_sprite.png",
+      "artwork": "pokedex/img/items/rappel_artwork.png"
+    },
+    "buy": 2000,
+    "sell": 500
+  },
+  {
+    "id": 28,
+    "slug": "rappel-max",
+    "name": "Rappel Max",
+    "description": "Un médicament qui ranime un Pokémon K.O. et restaure tous ses PV max.",
+    "category": "Soins",
+    "usage": "Sur un Pokémon",
+    "effet": "Lorsqu'il est utilisé sur un Pokémon [[docs:ko|K.O.]] (en combat ou bien en dehors), cet objet le réanime et restaure la totalité de ses [[docs:statistics|PV]].",
+    "images": {
+      "sprite": "pokedex/img/items/rappel-max_sprite.png",
+      "artwork": "pokedex/img/items/rappel-max_artwork.png"
+    },
+    "buy": 4000,
+    "sell": 1000
+  },
+  {
+    "id": 29,
+    "slug": "eau-fraiche",
+    "name": "Eau Fraîche",
+    "description": "Une eau riche en minéraux. Restaure 30 PV d'un Pokémon.",
+    "category": "Soins",
+    "usage": "Sur un Pokémon",
+    "effet": "Cet objet permet de rendre jusqu'à 30 PV à un Pokémon et fait augmenter son Bonheur. (à utiliser en combat ou bien en dehors).",
+    "images": {
+      "sprite": "pokedex/img/items/eau-fraiche_sprite.png",
+      "artwork": "pokedex/img/items/eau-fraiche_artwork.png"
+    },
+    "buy": 200,
+    "sell": 50
+  },
+  {
+    "id": 30,
+    "slug": "soda-cool",
+    "name": "Soda Cool",
+    "description": "Une boisson pétillante. Restaure 50 PV d'un Pokémon.",
+    "category": "Soins",
+    "usage": "Sur un Pokémon",
+    "effet": "Le Soda Cool permet de soigner un Pokémon de 50 PV et fait augmenter son Bonheur.",
+    "images": {
+      "sprite": "pokedex/img/items/soda-cool_sprite.png",
+      "artwork": "pokedex/img/items/soda-cool_artwork.png"
+    },
+    "buy": 300,
+    "sell": 75
+  },
+  {
+    "id": 31,
+    "slug": "limonade",
+    "name": "Limonade",
+    "description": "Une boisson très sucrée. Restaure 70 PV d'un Pokémon.",
+    "category": "Soins",
+    "usage": "Sur un Pokémon",
+    "effet": "Le Soda Cool permet de soigner un Pokémon de 70 PV et fait augmenter son Bonheur.",
+    "images": {
+      "sprite": "pokedex/img/items/limonade_sprite.png",
+      "artwork": "pokedex/img/items/limonade_artwork.png"
+    },
+    "buy": 400,
+    "sell": 100
+  },
+  {
+    "id": 32,
+    "slug": "lait-meumeu",
+    "name": "Lait Meumeu",
+    "description": "Un lait très nourrissant. Restaure 100 PV d'un Pokémon.",
+    "category": "Soins",
+    "usage": "Sur un Pokémon",
+    "effet": "Le Soda Cool permet de soigner un Pokémon de 100 PV et fait augmenter son Bonheur.",
+    "images": {
+      "sprite": "pokedex/img/items/lait-meumeu_sprite.png",
+      "artwork": "pokedex/img/items/lait-meumeu_artwork.png"
+    },
+    "buy": 600,
+    "sell": 150
+  },
+  {
+    "id": 33,
+    "slug": "poudrenergie",
+    "name": "Poudrénergie",
+    "description": "Une poudre médicinale très amère. Restaure 60 PV d'un Pokémon.",
+    "category": "Soins",
+    "usage": "Sur un Pokémon",
+    "effet": "Cet objet permet de rendre 60 PV à un Pokémon (à utiliser en combat ou bien en dehors). Le niveau de bonheur de ce Pokémon diminue.",
+    "images": {
+      "sprite": "pokedex/img/items/poudrenergie_sprite.png",
+      "artwork": "pokedex/img/items/poudrenergie_artwork.png"
+    },
+    "buy": 500,
+    "sell": 125
+  },
+  {
+    "id": 34,
+    "slug": "racinenergie",
+    "name": "Racinénergie",
+    "description": "Une racine très amère. Restaure 120 PV d'un Pokémon.",
+    "category": "Soins",
+    "usage": "Sur un Pokémon",
+    "effet": "Cet objet permet de rendre 120 PV à un Pokémon (à utiliser en combat ou bien en dehors). Le niveau de bonheur de ce Pokémon diminue.",
+    "images": {
+      "sprite": "pokedex/img/items/racinenergie_sprite.png",
+      "artwork": "pokedex/img/items/racinenergie_artwork.png"
+    },
+    "buy": 1200,
+    "sell": 300
+  },
+  {
+    "id": 35,
+    "slug": "poudre-soin",
+    "name": "Poudre Soin",
+    "description": "Une poudre médicinale très amère. Soigne toutes les altérations de statut d'un Pokémon.",
+    "category": "Soins",
+    "usage": "Sur un Pokémon",
+    "effet": "Lorsqu'il est utilisé sur un Pokémon (en combat ou bien en dehors), cet objet permet de soigner n'importe quel [[docs:status|statut majeur]]. Le niveau de bonheur de ce Pokémon diminue.",
+    "images": {
+      "sprite": "pokedex/img/items/poudre-soin_sprite.png",
+      "artwork": "pokedex/img/items/poudre-soin_artwork.png"
+    },
+    "buy": 300,
+    "sell": 75
+  },
+  {
+    "id": 36,
+    "slug": "herbe-rappel",
+    "name": "Herbe Rappel",
+    "description": "Une herbe médicinale très amère. Ranime un Pokémon K.O. et restaure tous ses PV.",
+    "category": "Soins",
+    "usage": "Sur un Pokémon",
+    "effet": "Lorsqu'il est utilisé sur un Pokémon [[docs:ko|K.O.]] (en combat ou bien en dehors), cet objet le réanime et restaure la totalité de ses [[docs:statistics|PV]]. Le niveau de bonheur de ce Pokémon diminue.",
+    "images": {
+      "sprite": "pokedex/img/items/herbe-rappel_sprite.png",
+      "artwork": "pokedex/img/items/herbe-rappel_artwork.png"
+    },
+    "buy": 2800,
+    "sell": 700
+  },
+  {
+    "id": 37,
+    "slug": "huile",
+    "name": "Huile",
+    "description": "Restaure 10 PP d'une capacité sélectionnée.",
+    "category": "Soins",
+    "usage": "Sur un Pokémon",
+    "effet": "Lorsqu'il est utilisé sur un Pokémon, cet objet restaure jusqu'à 10 PP d'une capacité sélectionnée.",
+    "images": {
+      "sprite": "pokedex/img/items/huile_sprite.png",
+      "artwork": "pokedex/img/items/huile_artwork.png"
+    },
+    "buy": 1200,
+    "sell": 300
+  },
+  {
+    "id": 38,
+    "slug": "huile-max",
+    "name": "Huile Max",
+    "description": "Restaure tous les PP d'une capacité sélectionnée.",
+    "category": "Soins",
+    "usage": "Sur un Pokémon",
+    "effet": "Lorsqu'il est utilisé sur un Pokémon, cet objet restaure l'intégralité des PP d'une capacité sélectionnée.",
+    "images": {
+      "sprite": "pokedex/img/items/huile-max_sprite.png",
+      "artwork": "pokedex/img/items/huile-max_artwork.png"
+    },
+    "buy": 2000,
+    "sell": 500
+  },
+  {
+    "id": 39,
+    "slug": "elixir",
+    "name": "Élixir",
+    "description": "Restaure 10 PP de toutes les capacités d'un Pokémon.",
+    "category": "Soins",
+    "usage": "Sur un Pokémon",
+    "effet": "Cet objet permet de restaurer 10 PP de toutes les capacités d'un Pokémon. Il peut s'utiliser en combat et en dehors d'un combat.",
+    "images": {
+      "sprite": "pokedex/img/items/elixir_sprite.png",
+      "artwork": "pokedex/img/items/elixir_artwork.png"
+    },
+    "buy": 3000,
+    "sell": 750
+  },
+  {
+    "id": 40,
+    "slug": "elixir-max",
+    "name": "Élixir Max",
+    "description": "Restaure tous les PP de toutes les capacités d'un Pokémon.",
+    "category": "Soins",
+    "usage": "Sur un Pokémon",
+    "effet": "Cet objet permet de restaurer tous les PP de toutes les capacités d'un Pokémon. Il peut s'utiliser en combat et en dehors d'un combat.",
+    "images": {
+      "sprite": "pokedex/img/items/elixir-max_sprite.png",
+      "artwork": "pokedex/img/items/elixir-max_artwork.png"
+    },
+    "buy": 4500,
+    "sell": 1125
+  },
+  {
     "id": 220,
     "slug": "bandeau-choix",
     "name": "Bandeau Choix",
