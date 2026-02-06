@@ -595,6 +595,125 @@
     "sell": 1125
   },
   {
+    "id": 41,
+    "slug": "pv-plus",
+    "name": "PV Plus",
+    "description": "Une boisson très nutritive qui augmente les PV de base d'un Pokémon.",
+    "category": "Objets",
+    "usage": "Sur un Pokémon",
+    "effet": "Le PV Plus agit sur les PV, en rajoutant 10 EV en PV au Pokémon qui reçoit l'objet.",
+    "images": {
+      "sprite": "pokedex/img/items/pv-plus_sprite.png",
+      "artwork": "pokedex/img/items/pv-plus_artwork.png"
+    },
+    "buy": 10000,
+    "sell": 2500
+  },
+  {
+    "id": 42,
+    "slug": "proteine",
+    "name": "Protéine",
+    "description": "Une boisson très nutritive qui augmente l'Attaque de base d'un Pokémon.",
+    "category": "Objets",
+    "usage": "Sur un Pokémon",
+    "effet": "Cet objet agit sur l'Attaque, en rajoutant 10 EV en Attaque au Pokémon qui reçoit l'objet.",
+    "images": {
+      "sprite": "pokedex/img/items/proteine_sprite.png",
+      "artwork": "pokedex/img/items/proteine_artwork.png"
+    },
+    "buy": 10000,
+    "sell": 2500
+  },
+  {
+    "id": 43,
+    "slug": "fer",
+    "name": "Fer",
+    "description": "Une boisson très nutritive qui augmente la Défense de base d'un Pokémon.",
+    "category": "Objets",
+    "usage": "Sur un Pokémon",
+    "effet": "Cet objet agit sur la Défense, en rajoutant 10 EV en Défense au Pokémon qui reçoit l'objet.",
+    "images": {
+      "sprite": "pokedex/img/items/fer_sprite.png",
+      "artwork": "pokedex/img/items/fer_artwork.png"
+    },
+    "buy": 10000,
+    "sell": 2500
+  },
+  {
+    "id": 44,
+    "slug": "carbone",
+    "name": "Carbone",
+    "description": "Une boisson très nutritive qui augmente la Vitesse de base d'un Pokémon.",
+    "category": "Objets",
+    "usage": "Sur un Pokémon",
+    "effet": "Cet objet agit sur la Vitesse, en rajoutant 10 EV en Vitesse au Pokémon qui reçoit l'objet.",
+    "images": {
+      "sprite": "pokedex/img/items/carbone_sprite.png",
+      "artwork": "pokedex/img/items/carbone_artwork.png"
+    },
+    "buy": 10000,
+    "sell": 2500
+  },
+  {
+    "id": 45,
+    "slug": "calcium",
+    "name": "Calcium",
+    "description": "Une boisson très nutritive qui augmente l'Attaque Spéciale de base d'un Pokémon.",
+    "category": "Objets",
+    "usage": "Sur un Pokémon",
+    "effet": "Cet objet agit sur l'Attaque Spéciale, en rajoutant 10 EV en Attaque Spéciale au Pokémon qui reçoit l'objet.",
+    "images": {
+      "sprite": "pokedex/img/items/calcium_sprite.png",
+      "artwork": "pokedex/img/items/calcium_artwork.png"
+    },
+    "buy": 10000,
+    "sell": 2500
+  },
+  {
+    "id": 46,
+    "slug": "zinc",
+    "name": "Zinc",
+    "description": "Une boisson très nutritive qui augmente la Défense Spéciale de base d'un Pokémon.",
+    "category": "Objets",
+    "usage": "Sur un Pokémon",
+    "effet": "Cet objet agit sur la Défense Spéciale, en rajoutant 10 EV en Défense Spéciale au Pokémon qui reçoit l'objet.",
+    "images": {
+      "sprite": "pokedex/img/items/zinc_sprite.png",
+      "artwork": "pokedex/img/items/zinc_artwork.png"
+    },
+    "buy": 10000,
+    "sell": 2500
+  },
+  {
+    "id": 47,
+    "slug": "super-bonbon",
+    "name": "Super Bonbon",
+    "description": "Un bonbon plein d'énergie. Il permet à un Pokémon de monter d'un niveau.",
+    "category": "Objets",
+    "usage": "Sur un Pokémon",
+    "effet": "Le Super Bonbon fait monter le Pokémon d'un niveau. L'utilisation d'un Super Bonbon sur un Pokémon au niveau 100 et capable d'évoluer par montée de niveau permet de le faire évoluer si ce dernier n'est pas à son stade final d'évolution.",
+    "images": {
+      "sprite": "pokedex/img/items/super-bonbon_sprite.png",
+      "artwork": "pokedex/img/items/super-bonbon_artwork.png"
+    },
+    "sell": 2500
+  },
+  {
+    "id": 48,
+    "slug": "pp-plus",
+    "name": "PP Plus",
+    "description": "Augmente un peu les PP max d'une capacité sélectionnée.",
+    "category": "Objets",
+    "usage": "Sur un Pokémon",
+    "effet": "Un PP Plus augmente de 20 % les PP maximum d'une capacité d'un Pokémon en se basant sur le nombre de PP maximum originel. Il est possible d'utiliser jusqu'à 3 PP Plus par capacité d'un Pokémon, conférant ainsi une hausse de 60 %. Ne fonctionne pas sur les capacités ayant 1 seul PP, comme [[move:second-souffle|Second Souffle]].",
+    "images": {
+      "sprite": "pokedex/img/items/pp-plus_sprite.png",
+      "artwork": "pokedex/img/items/pp-plus_artwork.png"
+    },
+    "buy": 10000,
+    "sell": 2500
+  },
+  {
     "id": 220,
     "slug": "bandeau-choix",
     "name": "Bandeau Choix",
