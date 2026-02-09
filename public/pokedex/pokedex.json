@@ -77,7 +77,7 @@
     "abilities": ["[[ability:brasier|Brasier]]"],
     "hiddenAbility": "[[ability:temeraire|Téméraire]]",
     "height_m": 0.5,
-    "weight_kg": 7.4,
+    "weight_kg": 11.0,
     "genderRatio": { "male": 87.5, "female": 12.5 },
     "captureRate": 45,
     "images": {
@@ -1207,6 +1207,30 @@
   },
   {
     "id": 49,
+    "slug": "fouboubec",
+    "name": "Fouboubec",
+    "types": ["Eau", "Vol"],
+    "category": "Pêcheur",
+    "abilities": ["[[ability:benet|Benêt]]", "[[ability:regard-vif|Regard Vif]]"],
+    "hiddenAbility": "[[ability:multi-coups|Multi-Coups]]",
+    "height_m": 0.3,
+    "weight_kg": 5.2,
+    "genderRatio": { "male": 50, "female": 50 },
+    "captureRate": 190,
+    "images": {
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
+    },
+    "baseStats": { "hp": 50, "atk": 60, "def": 50, "spa": 45, "spd": 60, "spe": 60 },
+    "description": "Il est toujours en quête de chaleur, c'est pour cela qu'il est recouvert d'un duvet blanc et passe la plus grande partie de ses journées blotti contre les jambes de ses parents.",
+    "etymology": {
+      "Fou": "genre d'oiseaux marins appartenant à la famille des Sulidae",
+      "Booby": "version anglaise du Fou",
+      "Bec": "Bouche cornée et saillante des oiseaux, démunie de dents"
+    }
+  },
+  {
+    "id": 50,
     "slug": "sulapagos",
     "name": "Sulapagos",
     "types": ["Eau", "Vol"],
@@ -1229,7 +1253,7 @@
     }
   },
   {
-    "id": 50,
+    "id": 51,
     "slug": "becoquin",
     "name": "Becoquin",
     "types": ["Vol"],
@@ -1252,7 +1276,7 @@
     }
   },
   {
-    "id": 51,
+    "id": 52,
     "slug": "becosto",
     "name": "Becosto",
     "types": ["Vol", "Combat"],
@@ -1275,7 +1299,7 @@
     }
   },
   {
-    "id": 52,
+    "id": 53,
     "slug": "sitanor",
     "name": "Sitanor",
     "types": ["Dragon", "Feu"],
@@ -1298,7 +1322,7 @@
     }
   },
   {
-    "id": 53,
+    "id": 54,
     "slug": "sironille",
     "name": "Sironille",
     "types": ["Insecte", "Fée"],
@@ -1321,7 +1345,7 @@
     }
   },
   {
-    "id": 54,
+    "id": 55,
     "slug": "rubilune",
     "name": "Rubilune",
     "types": ["Insecte", "Fée"],
@@ -1344,7 +1368,7 @@
     }
   },
   {
-    "id": 55,
+    "id": 56,
     "slug": "bovalpin",
     "name": "Bovalpin",
     "types": ["Normal"],
@@ -1367,7 +1391,7 @@
     }
   },
   {
-    "id": 56,
+    "id": 57,
     "slug": "ecorlande",
     "name": "Écorlande",
     "types": ["Normal", "Sol"],
@@ -1391,7 +1415,7 @@
     }
   },
   {
-    "id": 57,
+    "id": 58,
     "slug": "pichidillo",
     "name": "Pichidillo",
     "types": ["Sol", "Fée"],
@@ -1414,7 +1438,7 @@
     }
   },
   {
-    "id": 58,
+    "id": 59,
     "slug": "charmadillo",
     "name": "Charmadillo",
     "types": ["Sol", "Fée"],
@@ -1437,7 +1461,7 @@
     }
   },
   {
-    "id": 59,
+    "id": 60,
     "slug": "cecibou",
     "name": "Cécibou",
     "types": ["Psy", "Ténèbres"],
@@ -1460,7 +1484,7 @@
     }
   },
   {
-    "id": 60,
+    "id": 61,
     "slug": "grimocto",
     "name": "Grimocto",
     "types": ["Eau"],
@@ -1483,7 +1507,7 @@
     }
   },
   {
-    "id": 61,
+    "id": 62,
     "slug": "thaumicto",
     "name": "Thaumicto",
     "types": ["Eau", "Ténèbres"],
