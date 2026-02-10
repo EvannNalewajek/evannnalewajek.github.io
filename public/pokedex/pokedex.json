@@ -430,8 +430,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 120,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/corbonyx_sprite.png",
+      "artwork": "pokedex/img/pokemon/corbonyx_artwork.png"
     },
     "baseStats": { "hp": 52, "atk": 77, "def": 42, "spa": 68, "spd": 42, "spe": 80 },
     "description": "Il est attiré par tout ce qui brille. Son plaisir est de porter des bijoux qui portent le même éclat que son plumage. Les amateurs de mode s'inspirent souvent de ce Pokémon.",
@@ -453,8 +453,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/noarsene_sprite.png",
+      "artwork": "pokedex/img/pokemon/noarsene_artwork.png"
     },
     "baseStats": { "hp": 60, "atk": 115, "def": 50, "spa": 105, "spd": 50, "spe": 113 },
     "description": "Ce Pokémon a perfectionné son vol afin qu'il soit le plus silencieux possible. Il sort la nuit pour traquer ses proies et voler tout ce qui semble avoir de la valeur.",
