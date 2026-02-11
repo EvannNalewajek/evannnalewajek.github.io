@@ -1530,6 +1530,75 @@
     }
   },
   {
+    "id": 63,
+    "slug": "cotoguide",
+    "name": "Cotoguide",
+    "types": ["Psy", "Plante"],
+    "category": "Rêve",
+    "abilities": ["[[ability:garde-magik|Garde Magik]]", "[[ability:levitation|Lévitation]]"],
+    "hiddenAbility": "[[ability:lunatique|Lunatique]]",
+    "height_m": 0.3,
+    "weight_kg": 1.4,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 90,
+    "images": {
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
+    },
+    "baseStats": { "hp": 50, "atk": 25, "def": 57, "spa": 58, "spd": 58, "spe": 32 },
+    "description": "Il flotte silencieusement dans les villes la nuit, à la recherche de personnes en proie aux cauchemars. Lorsqu'il en trouve une, il se pose délicatement sur sa tête et apaise son esprit pour lui offrir de doux rêves.",
+    "etymology": {
+      "Coton": "Filaments soyeux qui entourent les graines du cotonnier",
+      "Guide": "Qui indique le chemin"
+    }
+  },
+  {
+    "id": 64,
+    "slug": "meolit",
+    "name": "Méolit",
+    "types": ["Psy", "Plante"],
+    "category": "Rêve",
+    "abilities": ["[[ability:garde-magik|Garde Magik]]", "[[ability:levitation|Lévitation]]"],
+    "hiddenAbility": "[[ability:lunatique|Lunatique]]",
+    "height_m": 1.2,
+    "weight_kg": 12.2,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 75,
+    "images": {
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
+    },
+    "baseStats": { "hp": 84, "atk": 45, "def": 67, "spa": 73, "spd": 70, "spe": 40 },
+    "description": "Il est constamment fatigué et trouve toujours une occasion de faire une sieste. Ce qu'il adore par-dessus tout, c'est se blottir contre quelqu'un pour se sentir au chaud et en sécurité, afin de dormir paisiblement.",
+    "etymology": {
+      "Mélodie": "Suite musicale agréable",
+      "Lit": "Meuble utilisé pour dormir"
+    }
+  },
+  {
+    "id": 65,
+    "slug": "malavande",
+    "name": "Malavande",
+    "types": ["Psy", "Plante"],
+    "category": "Rêve",
+    "abilities": ["[[ability:garde-magik|Garde Magik]]", "[[ability:levitation|Lévitation]]"],
+    "hiddenAbility": "[[ability:lunatique|Lunatique]]",
+    "height_m": 1.9,
+    "weight_kg": 23.8,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 45,
+    "images": {
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
+    },
+    "baseStats": { "hp": 95, "atk": 60, "def": 85, "spa": 103, "spd": 95, "spe": 52 },
+    "description": "Il émet un parfum capable d'apaiser n'importe quel esprit tourmenté. Son corps et ses bras peuvent servir de lit à quiconque chercherait refuge auprès de lui. Il s'introduit ensuite dans les rêves de ceux qu'il câline afin de les guider vers la sérénité.",
+    "etymology": {
+      "Maman": "Terme affectueux pour la mère",
+      "Lavande": "Plante aromatique à fleurs violacées"
+    }
+  },
+  {
     "id": 101,
     "slug": "damarel",
     "name": "Damarel",
