@@ -1646,6 +1646,75 @@
     }
   },
   {
+    "id": 68,
+    "slug": "podalyptus",
+    "name": "Podalyptus",
+    "types": ["Vol"],
+    "category": "Oiseau Tronc",
+    "abilities": ["[[ability:regard-vif|Regard Vif]]", "[[ability:insomnia|Insomnia]]"],
+    "hiddenAbility": "[[ability:agitation|Agitation]]",
+    "height_m": 0.4,
+    "weight_kg": 2.8,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 190,
+    "images": {
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
+    },
+    "baseStats": { "hp": 50, "atk": 45, "def": 60, "spa": 45, "spd": 60, "spe": 40 },
+    "description": "Il reste immobile pendant des heures, imitant à la perfection un morceau d'écorce. Ses grands yeux observent silencieusement la forêt, même lorsqu'il semble dormir.",
+    "etymology": {
+      "Podarge": "famille d'oiseaux nocturnes",
+      "Eucalyptus": "Arbre originaire d'Australie"
+    }
+  },
+  {
+    "id": 69,
+    "slug": "nyctalyptus",
+    "name": "Nyctalyptus",
+    "types": ["Vol", "Spectre"],
+    "category": "Tronc Fantôme",
+    "abilities": ["[[ability:regard-vif|Regard Vif]]", "[[ability:insomnia|Insomnia]]"],
+    "hiddenAbility": "[[ability:corps-maudit|Corps Maudit]]",
+    "height_m": 0.9,
+    "weight_kg": 6.5,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 75,
+    "images": {
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
+    },
+    "baseStats": { "hp": 70, "atk": 70, "def": 65, "spa": 125, "spd": 85, "spe": 65 },
+    "description": "Son regard vide trouble profondément ceux qui croisent ses yeux. Lorsqu'il reste immobile, même les Pokémon les plus attentifs jurent qu'il n'a jamais été là.",
+    "etymology": {
+      "Nyctibius": "famille d'oiseaux nocturnes",
+      "Eucalyptus": "Arbre originaire d'Australie"
+    }
+  },
+  {
+    "id": 70,
+    "slug": "engoulyptus",
+    "name": "Engoulyptus",
+    "types": ["Vol", "Dragon"],
+    "category": "Tronc Draconique",
+    "abilities": ["[[ability:regard-vif|Regard Vif]]", "[[ability:insomnia|Insomnia]]"],
+    "hiddenAbility": "[[ability:incisif|Incisif]]",
+    "height_m": 1.2,
+    "weight_kg": 14.0,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 45,
+    "images": {
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
+    },
+    "baseStats": { "hp": 74, "atk": 115, "def": 75, "spa": 85, "spd": 35, "spe": 121 },
+    "description": "Sa nouvelle force intérieure lui permet désormais de pouvoir riposter au lieu de se dissimuler. Son chant nocturne résonne comme l'appel d'un dragon ancien.",
+    "etymology": {
+      "Engoulevent": "famille d'oiseaux nocturnes",
+      "Eucalyptus": "Arbre originaire d'Australie"
+    }
+  },
+  {
     "id": 101,
     "slug": "damarel",
     "name": "Damarel",
