@@ -1373,7 +1373,7 @@
     "name": "Bovalpin",
     "types": ["Normal"],
     "category": "Veau",
-    "abilities": ["[[ability:isograisse|Isograisse]]", "[[ability:herbivore|Herbivore]]"],
+    "abilities": ["[[ability:ruminant|Ruminant]]", "[[ability:herbivore|Herbivore]]"],
     "hiddenAbility": "[[ability:baigne-sable|Baigne Sable]]",
     "height_m": 0.8,
     "weight_kg": 120.5,
@@ -1396,7 +1396,7 @@
     "name": "Écorlande",
     "types": ["Normal", "Sol"],
     "category": "Bovin",
-    "abilities": ["[[ability:isograisse|Isograisse]]", "[[ability:herbivore|Herbivore]]"],
+    "abilities": ["[[ability:ruminant|Ruminant]]", "[[ability:herbivore|Herbivore]]"],
     "hiddenAbility": "[[ability:baigne-sable|Baigne Sable]]",
     "height_m": 1.6,
     "weight_kg": 430.0,
@@ -1596,6 +1596,53 @@
     "etymology": {
       "Maman": "Terme affectueux pour la mère",
       "Lavande": "Plante aromatique à fleurs violacées"
+    }
+  },
+  {
+    "id": 66,
+    "slug": "raphragon",
+    "name": "Raphragon",
+    "types": ["Insecte"],
+    "category": "Serpinsecte",
+    "abilities": ["[[ability:essaim|Essaim]]"],
+    "hiddenAbility": "[[ability:sans-limite|Sans Limite]]",
+    "height_m": 0.8,
+    "weight_kg": 12.5,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 90,
+    "images": {
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
+    },
+    "baseStats": { "hp": 55, "atk": 85, "def": 50, "spa": 40, "spd": 45, "spe": 95 },
+    "description": "Son cou étonnamment long lui permet d'atteindre ses proies avec une précision fulgurante. Malgré sa petite taille, son regard perçant suffit à faire hésiter des Pokémon bien plus imposants.",
+    "etymology": {
+      "Raphidia": "Genre d'insectes ailés",
+      "Dragon": "créature mythologique"
+    }
+  },
+  {
+    "id": 67,
+    "slug": "cephragon",
+    "name": "Céphragon",
+    "types": ["Insecte", "Dragon"],
+    "category": "Faux-dragon",
+    "abilities": ["[[ability:intimidation|Intimidation]]"],
+    "hiddenAbility": "[[ability:sans-limite|Sans Limite]]",
+    "height_m": 1.3,
+    "weight_kg": 32.5,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 45,
+    "images": {
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
+    },
+    "baseStats": { "hp": 78, "atk": 105, "def": 70, "spa": 75, "spd": 70, "spe": 102 },
+    "description": "Sa tête imite celle d'un dragon redoutable afin de dissuader les prédateurs. Lorsqu'il déploie ses ailes translucides, il produit un bourdonnement grave qui résonne comme le rugissement d'un dragon.",
+    "etymology": {
+      "Céphal": "tête en grec",
+      "Phrictus": "genre d'insectes",
+      "Dragon": "créature mythologique"
     }
   },
   {

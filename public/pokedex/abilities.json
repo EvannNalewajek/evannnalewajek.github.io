@@ -816,7 +816,7 @@
   {
     "id": 75,
     "slug": "rideau-neige",
-    "name": "Reideau Neige",
+    "name": "Rideau Neige",
     "battleEffectCondition": "Selon le climat",
     "battleEffectShort": "Sous le climat [[docs:weather|grêle]], l'[[docs:statistics|Esquive]] du Pokémon augmente de 20 %. Immunité contre les dégâts de la grêle.",
     "battleEffectLong": "Un Pokémon doté de ce talent voit son [[docs:statistics|Esquive]] augmenter de 20 % lorsque le climat est altéré par la [[docs:weather|grêle]].",
@@ -2047,8 +2047,8 @@
   },
   {
     "id": 187,
-    "slug": "ruminant",
-    "name": "Ruminant",
+    "slug": "semencier",
+    "name": "Semencier",
     "battleEffectCondition": "Lors d'une capacité adverse",
     "battleEffectShort": "Active un [[docs:weather|Champ Herbu]] lorsque le Pokémon subit une attaque.",
     "battleEffectLong": "Lorsqu'un Pokémon doté de ce talent subit une capacité offensive, il active un [[docs:weather|Champ Herbu]] pour 5 tours (8 s'il tient un [[item:champduit|Champ'Duit]]).",
