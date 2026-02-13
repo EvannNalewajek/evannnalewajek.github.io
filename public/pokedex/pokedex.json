@@ -499,8 +499,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 75,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/glauculus_sprite.png",
+      "artwork": "pokedex/img/pokemon/glauculus_artwork.png"
     },
     "baseStats": { "hp": 69, "atk": 63, "def": 78, "spa": 67, "spd": 103, "spe": 95 },
     "description": "Sa peau est couverte de toxines. Il se déplace en gonflant une bulle au niveau de son ventre et flotte à la surface.",
