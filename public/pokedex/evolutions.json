@@ -148,6 +148,12 @@
         { "from": 59, "to": 60, "trigger": { "kind": "item", "item": "Pierre Nuit" } },
         { "from": 59, "to": 61, "trigger": { "kind": "level", "level": 35, "condition": "en apprenant une capacité de type Dragon" } }
       ]
+    },
+    {
+      "species": [62, 63],
+      "links": [
+        { "from": 62, "to": 63, "trigger": { "kind": "item", "item": "Pierre Foudre" } }
+      ]
     }
   ]
 }
