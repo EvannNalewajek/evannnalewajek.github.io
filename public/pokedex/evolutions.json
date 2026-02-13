@@ -78,43 +78,75 @@
       "species": [31, 32, 33],
       "links": [
         { "from": 31, "to": 32, "trigger": { "kind": "level", "level": 22 } },
-        { "from": 32, "to": 33, "trigger": { "kind": "item", "item": "Pierre Feu, Pierre Eau, Pierre Électrik" } }
+        { "from": 32, "to": 33, "trigger": { "kind": "item", "item": "Pierre Feu, Pierre Eau, Pierre Foudre" } }
+      ]
+    },
+    {
+      "species": [36, 37],
+      "links": [
+        { "from": 36, "to": 37, "trigger": { "kind": "level", "level": 40 } }
+      ]
+    },
+    {
+      "species": [38, 39],
+      "links": [
+        { "from": 38, "to": 39, "trigger": { "kind": "level", "level": 40 } }
+      ]
+    },
+    {
+      "species": [40, 41],
+      "links": [
+        { "from": 40, "to": 41, "trigger": { "kind": "level", "level": 25 } }
+      ]
+    },
+    {
+      "species": [42, 43],
+      "links": [
+        { "from": 42, "to": 43, "trigger": { "kind": "level", "level": 30 } }
       ]
     },
     {
       "species": [45, 46],
       "links": [
-        { "from": 45, "to": 46, "trigger": { "kind": "level", "level": 40 } }
+        { "from": 45, "to": 46, "trigger": { "kind": "friendship" } }
       ]
     },
     {
       "species": [47, 48],
       "links": [
-        { "from": 47, "to": 48, "trigger": { "kind": "level", "level": 40 } }
+        { "from": 47, "to": 48, "trigger": { "kind": "level", "level": 34 } }
       ]
     },
     {
-      "species": [50, 51],
+      "species": [49, 50],
       "links": [
-        { "from": 50, "to": 51, "trigger": { "kind": "level", "level": 30 } }
+        { "from": 49, "to": 50, "trigger": { "kind": "level", "level": 21 } }
       ]
     },
     {
-      "species": [53, 54],
+      "species": [52, 53],
       "links": [
-        { "from": 53, "to": 54, "trigger": { "kind": "friendship" } }
+        { "from": 52, "to": 53, "trigger": { "kind": "level", "level": 28 } }
       ]
     },
     {
-      "species": [55, 56],
+      "species": [54, 55, 56],
       "links": [
-        { "from": 55, "to": 56, "trigger": { "kind": "level", "level": 34 } }
+        { "from": 54, "to": 55, "trigger": { "kind": "level", "level": 20 } },
+        { "from": 55, "to": 56, "trigger": { "kind": "level", "level": 35 } }
       ]
     },
     {
       "species": [57, 58],
       "links": [
-        { "from": 57, "to": 58, "trigger": { "kind": "level", "level": 21 } }
+        { "from": 57, "to": 58, "trigger": { "kind": "level", "level": 40 } }
+      ]
+    },
+    {
+      "species": [59, 60, 61],
+      "links": [
+        { "from": 59, "to": 60, "trigger": { "kind": "item", "item": "Pierre Nuit" } },
+        { "from": 59, "to": 61, "trigger": { "kind": "level", "level": 35, "condition": "en apprenant une capacité de type Dragon" } }
       ]
     }
   ]

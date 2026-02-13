@@ -862,213 +862,6 @@
   },
   {
     "id": 34,
-    "slug": "evoli",
-    "name": "Evoli",
-    "types": ["Normal"],
-    "category": "Évolutif",
-    "abilities": ["[[ability:fuite|Fuite]]", "[[ability:adaptabilite|Adaptabilité]]"],
-    "hiddenAbility": "[[ability:anticipation|Anticipation]]",
-    "height_m": 0.3,
-    "weight_kg": 6.5,
-    "genderRatio": { "male": 87.5, "female": 12.5 },
-    "captureRate": 45,
-    "images": {
-      "sprite": "pokedex/img/pokemon/evoli_sprite.png",
-      "artwork": "pokedex/img/pokemon/evoli_artwork.png"
-    },
-    "baseStats": { "hp": 55, "atk": 55, "def": 50, "spa": 45, "spd": 65, "spe": 55 },
-    "description": "Un Pokémon rare qui change d'apparence et d'aptitudes au moment d'évoluer en fonction du milieu hostile auquel il veut s'adapter.",
-    "etymology": {
-      "évolution": "caractérise sa capacité à pouvoir évoluer en plusieurs formes.",
-      "lithe": "pierre en grec ancien"
-    }
-  },
-  {
-    "id": 35,
-    "slug": "aquali",
-    "name": "Aquali",
-    "types": ["Eau"],
-    "category": "Bulleur",
-    "abilities": ["[[ability:absorbe-eau|Absorbe-Eau]]"],
-    "hiddenAbility": "[[ability:hydratation|Hydratation]]",
-    "height_m": 1.0,
-    "weight_kg": 29.0,
-    "genderRatio": { "male": 87.5, "female": 12.5 },
-    "captureRate": 45,
-    "images": {
-      "sprite": "pokedex/img/pokemon/aquali_sprite.png",
-      "artwork": "pokedex/img/pokemon/aquali_artwork.png"
-    },
-    "baseStats": { "hp": 130, "atk": 65, "def": 60, "spa": 110, "spd": 95, "spe": 65 },
-    "description": "Il vit au bord de l'eau. Sa queue semblable à celle d'un poisson lui donne l'apparence d'une sirène.",
-    "etymology": {
-      "aqua": "eau en latin",
-      "lithe": "pierre en grec ancien"
-    }
-  },
-  {
-    "id": 36,
-    "slug": "voltali",
-    "name": "Voltali",
-    "types": ["Électrik"],
-    "category": "Orage",
-    "abilities": ["[[ability:absorbe-volt|Absorbe-Volt]]"],
-    "hiddenAbility": "[[ability:pied-veloce|Pied Véloce]]",
-    "height_m": 0.8,
-    "weight_kg": 24.5,
-    "genderRatio": { "male": 87.5, "female": 12.5 },
-    "captureRate": 45,
-    "images": {
-      "sprite": "pokedex/img/pokemon/voltali_sprite.png",
-      "artwork": "pokedex/img/pokemon/voltali_artwork.png"
-    },
-    "baseStats": { "hp": 65, "atk": 65, "def": 60, "spa": 110, "spd": 95, "spe": 130 },
-    "description": "Quand il est agité, sa fourrure chargée d'électricité se hérisse. Il lance alors des touffes de poils acérés comme des piquants.",
-    "etymology": {
-      "volt": "unité de mesure de la tension électrique",
-      "lithe": "pierre en grec ancien"
-    }
-  },
-  {
-    "id": 37,
-    "slug": "pyroli",
-    "name": "Pyroli",
-    "types": ["Feu"],
-    "category": "Flamme",
-    "abilities": ["[[ability:torche|Torche]]"],
-    "hiddenAbility": "[[ability:cran|Cran]]",
-    "height_m": 0.9,
-    "weight_kg": 25.0,
-    "genderRatio": { "male": 87.5, "female": 12.5 },
-    "captureRate": 45,
-    "images": {
-      "sprite": "pokedex/img/pokemon/pyroli_sprite.png",
-      "artwork": "pokedex/img/pokemon/pyroli_artwork.png"
-    },
-    "baseStats": { "hp": 65, "atk": 130, "def": 60, "spa": 95, "spd": 110, "spe": 65 },
-    "description": "Il ébouriffe sa collerette pour baisser sa température corporelle, qui peut avoisiner les 900°C.",
-    "etymology": {
-      "pyro": "feu en grec ancien",
-      "lithe": "pierre en grec ancien"
-    }
-  },
-  {
-    "id": 38,
-    "slug": "mentali",
-    "name": "Mentali",
-    "types": ["Psy"],
-    "category": "Soleil",
-    "abilities": ["[[ability:synchro|Synchro]]"],
-    "hiddenAbility": "[[ability:miroir-magik|Miroir Magik]]",
-    "height_m": 0.9,
-    "weight_kg": 26.5,
-    "genderRatio": { "male": 87.5, "female": 12.5 },
-    "captureRate": 45,
-    "images": {
-      "sprite": "pokedex/img/pokemon/mentali_sprite.png",
-      "artwork": "pokedex/img/pokemon/mentali_artwork.png"
-    },
-    "baseStats": { "hp": 65, "atk": 65, "def": 60, "spa": 130, "spd": 95, "spe": 110 },
-    "description": "Sa fourrure délicate détecte les vibrations de l'air. Il peut ainsi prédire la météo ou lire les pensées de ses ennemis.",
-    "etymology": {
-      "mental": "rapport avec l'esprit",
-      "lithe": "pierre en grec ancien"
-    }
-  },
-  {
-    "id": 39,
-    "slug": "noctali",
-    "name": "Noctali",
-    "types": ["Ténèbres"],
-    "category": "Lune",
-    "abilities": ["[[ability:synchro|Synchro]]"],
-    "hiddenAbility": "[[ability:attention|Attention]]",
-    "height_m": 1.0,
-    "weight_kg": 27.0,
-    "genderRatio": { "male": 87.5, "female": 12.5 },
-    "captureRate": 45,
-    "images": {
-      "sprite": "pokedex/img/pokemon/noctali_sprite.png",
-      "artwork": "pokedex/img/pokemon/noctali_artwork.png"
-    },
-    "baseStats": { "hp": 95, "atk": 65, "def": 110, "spa": 60, "spd": 130, "spe": 65 },
-    "description": "Quand il s'expose aux ondes lunaires, ses anneaux brillent légèrement et il acquiert un mystérieux pouvoir.",
-    "etymology": {
-      "nocturne": "qui est propre à la nuit",
-      "lithe": "pierre en grec ancien"
-    }
-  },
-  {
-    "id": 40,
-    "slug": "phyllali",
-    "name": "Phyllali",
-    "types": ["Plante"],
-    "category": "Verdoyant",
-    "abilities": ["[[ability:feuille-garde|Feuille Garde]]"],
-    "hiddenAbility": "[[ability:chlorophylle|Chlorophylle]]",
-    "height_m": 1.0,
-    "weight_kg": 25.5,
-    "genderRatio": { "male": 87.5, "female": 12.5 },
-    "captureRate": 45,
-    "images": {
-      "sprite": "pokedex/img/pokemon/phyllali_sprite.png",
-      "artwork": "pokedex/img/pokemon/phyllali_artwork.png"
-    },
-    "baseStats": { "hp": 65, "atk": 110, "def": 130, "spa": 60, "spd": 65, "spe": 95 },
-    "description": "Un Phyllali qui dort par beau temps produit un air frais et pur par photosynthèse.",
-    "etymology": {
-      "phyllon": "feuille en grec ancien",
-      "lithe": "pierre en grec ancien"
-    }
-  },
-  {
-    "id": 41,
-    "slug": "givrali",
-    "name": "Givrali",
-    "types": ["Glace"],
-    "category": "Poudreuse",
-    "abilities": ["[[ability:rideau-neige|Rideau Neige]]"],
-    "hiddenAbility": "[[ability:corps-gel|Corps Gel]]",
-    "height_m": 0.8,
-    "weight_kg": 25.9,
-    "genderRatio": { "male": 87.5, "female": 12.5 },
-    "captureRate": 45,
-    "images": {
-      "sprite": "pokedex/img/pokemon/givrali_sprite.png",
-      "artwork": "pokedex/img/pokemon/givrali_artwork.png"
-    },
-    "baseStats": { "hp": 65, "atk": 60, "def": 110, "spa": 130, "spd": 95, "spe": 65 },
-    "description": "Il abaisse la température de son corps pour transformer ses poils en aiguilles de glace qu'il projette sur l'ennemi.",
-    "etymology": {
-      "givre": "dépôt de glace",
-      "lithe": "pierre en grec ancien"
-    }
-  },
-  {
-    "id": 42,
-    "slug": "nymphali",
-    "name": "Nymphali",
-    "types": ["Fée"],
-    "category": "Attachant",
-    "abilities": ["[[ability:joli-sourire|Joli Sourire]]"],
-    "hiddenAbility": "[[ability:peau-féérique|Peau Féérique]]",
-    "height_m": 1.0,
-    "weight_kg": 23.5,
-    "genderRatio": { "male": 87.5, "female": 12.5 },
-    "captureRate": 45,
-    "images": {
-      "sprite": "pokedex/img/pokemon/nymphali_sprite.png",
-      "artwork": "pokedex/img/pokemon/nymphali_artwork.png"
-    },
-    "baseStats": { "hp": 95, "atk": 65, "def": 65, "spa": 110, "spd": 130, "spe": 60 },
-    "description": "Ses antennes en forme de ruban émettent des ondes apaisantes en direction de ses adversaires et neutralisent toute hostilité.",
-    "etymology": {
-      "nymphe": "divinité de la mythologie grecque",
-      "lithe": "pierre en grec ancien"
-    }
-  },
-  {
-    "id": 43,
     "slug": "dracali",
     "name": "Dracali",
     "types": ["Dragon"],
@@ -1091,7 +884,7 @@
     }
   },
   {
-    "id": 44,
+    "id": 35,
     "slug": "vesperine",
     "name": "Vespérine",
     "types": ["Psy", "Poison"],
@@ -1114,7 +907,7 @@
     }
   },
   {
-    "id": 45,
+    "id": 36,
     "slug": "albydro",
     "name": "Albydro",
     "types": ["Roche", "Eau"],
@@ -1137,7 +930,7 @@
     }
   },
   {
-    "id": 46,
+    "id": 37,
     "slug": "Spinadra",
     "name": "Spinadra",
     "types": ["Roche", "Eau"],
@@ -1160,7 +953,7 @@
     }
   },
   {
-    "id": 47,
+    "id": 38,
     "slug": "vibranite",
     "name": "Vibranite",
     "types": ["Roche", "Normal"],
@@ -1183,7 +976,7 @@
     }
   },
   {
-    "id": 48,
+    "id": 39,
     "slug": "Symphodon",
     "name": "Symphodon",
     "types": ["Roche", "Normal"],
@@ -1206,7 +999,7 @@
     }
   },
   {
-    "id": 49,
+    "id": 40,
     "slug": "fouboubec",
     "name": "Fouboubec",
     "types": ["Eau", "Vol"],
@@ -1230,7 +1023,7 @@
     }
   },
   {
-    "id": 50,
+    "id": 41,
     "slug": "sulapagos",
     "name": "Sulapagos",
     "types": ["Eau", "Vol"],
@@ -1253,7 +1046,7 @@
     }
   },
   {
-    "id": 51,
+    "id": 42,
     "slug": "becoquin",
     "name": "Becoquin",
     "types": ["Vol"],
@@ -1276,7 +1069,7 @@
     }
   },
   {
-    "id": 52,
+    "id": 43,
     "slug": "becosto",
     "name": "Becosto",
     "types": ["Vol", "Combat"],
@@ -1299,7 +1092,7 @@
     }
   },
   {
-    "id": 53,
+    "id": 44,
     "slug": "sitanor",
     "name": "Sitanor",
     "types": ["Dragon", "Feu"],
@@ -1322,7 +1115,7 @@
     }
   },
   {
-    "id": 54,
+    "id": 45,
     "slug": "sironille",
     "name": "Sironille",
     "types": ["Insecte", "Fée"],
@@ -1345,7 +1138,7 @@
     }
   },
   {
-    "id": 55,
+    "id": 46,
     "slug": "rubilune",
     "name": "Rubilune",
     "types": ["Insecte", "Fée"],
@@ -1368,7 +1161,7 @@
     }
   },
   {
-    "id": 56,
+    "id": 47,
     "slug": "bovalpin",
     "name": "Bovalpin",
     "types": ["Normal"],
@@ -1391,7 +1184,7 @@
     }
   },
   {
-    "id": 57,
+    "id": 48,
     "slug": "ecorlande",
     "name": "Écorlande",
     "types": ["Normal", "Sol"],
@@ -1415,7 +1208,7 @@
     }
   },
   {
-    "id": 58,
+    "id": 49,
     "slug": "pichidillo",
     "name": "Pichidillo",
     "types": ["Sol", "Fée"],
@@ -1438,7 +1231,7 @@
     }
   },
   {
-    "id": 59,
+    "id": 50,
     "slug": "charmadillo",
     "name": "Charmadillo",
     "types": ["Sol", "Fée"],
@@ -1461,7 +1254,7 @@
     }
   },
   {
-    "id": 60,
+    "id": 51,
     "slug": "cecibou",
     "name": "Cécibou",
     "types": ["Psy", "Ténèbres"],
@@ -1484,7 +1277,7 @@
     }
   },
   {
-    "id": 61,
+    "id": 52,
     "slug": "grimocto",
     "name": "Grimocto",
     "types": ["Eau"],
@@ -1507,7 +1300,7 @@
     }
   },
   {
-    "id": 62,
+    "id": 53,
     "slug": "thaumicto",
     "name": "Thaumicto",
     "types": ["Eau", "Ténèbres"],
@@ -1530,7 +1323,7 @@
     }
   },
   {
-    "id": 63,
+    "id": 54,
     "slug": "cotoguide",
     "name": "Cotoguide",
     "types": ["Psy", "Plante"],
@@ -1553,7 +1346,7 @@
     }
   },
   {
-    "id": 64,
+    "id": 55,
     "slug": "meolit",
     "name": "Méolit",
     "types": ["Psy", "Plante"],
@@ -1576,7 +1369,7 @@
     }
   },
   {
-    "id": 65,
+    "id": 56,
     "slug": "malavande",
     "name": "Malavande",
     "types": ["Psy", "Plante"],
@@ -1599,7 +1392,7 @@
     }
   },
   {
-    "id": 66,
+    "id": 57,
     "slug": "raphragon",
     "name": "Raphragon",
     "types": ["Insecte"],
@@ -1622,7 +1415,7 @@
     }
   },
   {
-    "id": 67,
+    "id": 58,
     "slug": "cephragon",
     "name": "Céphragon",
     "types": ["Insecte", "Dragon"],
@@ -1646,7 +1439,7 @@
     }
   },
   {
-    "id": 68,
+    "id": 59,
     "slug": "podalyptus",
     "name": "Podalyptus",
     "types": ["Vol"],
@@ -1669,7 +1462,7 @@
     }
   },
   {
-    "id": 69,
+    "id": 60,
     "slug": "nyctalyptus",
     "name": "Nyctalyptus",
     "types": ["Vol", "Spectre"],
@@ -1692,7 +1485,7 @@
     }
   },
   {
-    "id": 70,
+    "id": 61,
     "slug": "engoulyptus",
     "name": "Engoulyptus",
     "types": ["Vol", "Dragon"],
@@ -1707,7 +1500,7 @@
       "sprite": "pokedex/img/pokemon/000_sprite.png",
       "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
-    "baseStats": { "hp": 74, "atk": 115, "def": 75, "spa": 85, "spd": 35, "spe": 121 },
+    "baseStats": { "hp": 74, "atk": 113, "def": 74, "spa": 84, "spd": 34, "spe": 121 },
     "description": "Sa nouvelle force intérieure lui permet désormais de pouvoir riposter au lieu de se dissimuler. Son chant nocturne résonne comme l'appel d'un dragon ancien.",
     "etymology": {
       "Engoulevent": "famille d'oiseaux nocturnes",

@@ -558,7 +558,7 @@
   .evo-rows {
     display: grid;
     gap: 1rem;
-    justify-items: center;
+    justify-items: stretch;
   }
 
   .evo-row {
@@ -566,6 +566,7 @@
     grid-template-columns: repeat(auto-fit, minmax(var(--evo-col-min), 1fr));
     gap: 1rem;
     justify-items: center;
+    width: 100%;
   }
 
   .evo-cell {

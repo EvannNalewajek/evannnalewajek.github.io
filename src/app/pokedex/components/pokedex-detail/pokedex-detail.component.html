@@ -196,14 +196,14 @@
           </div>
 
           <main class="content">
-            <section class="evolutions content-card narrow" *ngIf="family()">
+            <section class="evolutions content-card" *ngIf="family()">
               <h3>Évolutions</h3>
               <p class="evo-summary" *ngIf="evoSummaryHtml() as html"
                 [innerHTML]="html | wikilink:{ kind:'pokemon', id: (pokemon()!.id + '' ) }">
               </p>
               <div class="evo-family" *ngIf="evoRows().length">
                 <h4 class="evo-family__title">
-                  Famille d'évolution de {{ evoRows()[0][0].mon.name || pokemon()!.name }}
+                  Famille d'évolution de {{ pokemon()!.name }}
                 </h4>
 
                 <div class="evo-rows">
@@ -235,14 +235,13 @@
                           </div>
                         </ng-template>
                       </figure>
-
                     </div>
                   </div>
                 </div>
               </div>
             </section>
 
-            <section class="learnsets content-card narrow" *ngIf="resolvedLearnset() as L">
+            <section class="learnsets content-card" *ngIf="resolvedLearnset() as L">
               <h3>Capacités apprises</h3>
 
               <ng-container *ngIf="hasAnyLearnset(); else noLearnset">
