@@ -1554,6 +1554,52 @@
     }
   },
   {
+    "id": 64,
+    "slug": "larvantis",
+    "name": "Larvantis",
+    "types": ["Fée"],
+    "category": "Crevette",
+    "abilities": ["[[ability:luminescence|Luminescence]]"],
+    "hiddenAbility": "[[ability:peau-feerique|Peau Féérique]]",
+    "height_m": 0.4,
+    "weight_kg": 8.7,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 120,
+    "images": {
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
+    },
+    "baseStats": { "hp": 46, "atk": 62, "def": 47, "spa": 40, "spd": 50, "spe": 55 },
+    "description": "Ses petites pattes produisent de la lumière lorsqu'il les agite, ce qui l'amuse beaucoup. C'est pourquoi le fond des mers où il vit est parfois scintillant malgré l'absence de la lumière du soleil.",
+    "etymology": {
+      "Larve": "Stade juvénile des stomatopodes",
+      "Mantis": "Référence à la crevette-mante"
+    }
+  },
+  {
+    "id": 65,
+    "slug": "prismantis",
+    "name": "Prismantis",
+    "types": ["Combat", "Fée"],
+    "category": "Crevette",
+    "abilities": ["[[ability:poing-de-fer|Poing de Fer]]"],
+    "hiddenAbility": "[[ability:peau-feerique|Peau Féérique]]",
+    "height_m": 0.7,
+    "weight_kg": 26.5,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 75,
+    "images": {
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
+    },
+    "baseStats": { "hp": 70, "atk": 95, "def": 85, "spa": 50, "spd": 65, "spe": 70 },
+    "description": "Ses pinces frappent à une vitesse fulgurante, créant de brèves ondes lumineuses sous l'eau. Malgré ses couleurs éclatantes, il est connu pour son tempérament agressif et combatif.",
+    "etymology": {
+      "Prisme": "Élément optique utilisé pour décomposer la lumière",
+      "Mantis": "Référence à la crevette-mante"
+    }
+  },
+  {
     "id": 101,
     "slug": "damarel",
     "name": "Damarel",

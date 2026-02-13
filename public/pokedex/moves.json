@@ -8473,6 +8473,22 @@
   },
   {
     "id": 524,
+    "slug": "poing-fee",
+    "name": "Poing Fée",
+    "type": "Fée",
+    "category": "Physique",
+    "power": 75,
+    "accuracy": 100,
+    "pp": 15,
+    "priority": 0,
+    "effet": "Poing Fée inflige des dégâts et possède 10% de chances de rendre la cible [[docs:status|amoureuse]].",
+    "description": "Un coup de poing féérique vient frapper la cible. Peut aussi la rendre amoureuse.",
+    "makesContact": true,
+    "critRate": 0,
+    "targetPreset": "adjacent-one"
+  },
+  {
+    "id": 525,
     "slug": "siphon-vital",
     "name": "Siphon Vital",
     "type": "Eau",
@@ -8488,7 +8504,7 @@
     "targetPreset": "adjacent-one"
   },
   {
-    "id": 525,
+    "id": 526,
     "slug": "transfert-spectrale",
     "name": "Transfert Spectrale",
     "type": "Spectre",
@@ -8504,7 +8520,7 @@
     "targetPreset": "all-one"
   },
   {
-    "id": 526,
+    "id": 527,
     "slug": "assaut-myriadique",
     "name": "Assaut Myriadique",
     "type": "Insecte",
@@ -8520,7 +8536,7 @@
     "targetPreset": "adjacent-one"
   },
   {
-    "id": 527,
+    "id": 528,
     "slug": "danse-macabre",
     "name": "Danse Macabre",
     "type": "Spectre",
@@ -8536,7 +8552,7 @@
     "targetPreset": "adjacent-one"
   },
   {
-    "id": 528,
+    "id": 529,
     "slug": "contagion",
     "name": "Contagion",
     "type": "Poison",
@@ -8551,7 +8567,7 @@
     "targetPreset": "all-ennemies"
   },
   {
-    "id": 529,
+    "id": 530,
     "slug": "flamme-croissante",
     "name": "Flamme Croissante",
     "type": "Feu",
@@ -8567,7 +8583,7 @@
     "targetPreset": "adjacent-one"
   },
   {
-    "id": 530,
+    "id": 531,
     "slug": "froid-penitent",
     "name": "Froid Pénitent",
     "type": "Glace",
@@ -8583,7 +8599,7 @@
     "targetPreset": "adjacent-one"
   },
   {
-    "id": 531,
+    "id": 532,
     "slug": "pillage-fantome",
     "name": "Pillage Fantôme",
     "type": "Spectre",
@@ -8599,7 +8615,7 @@
     "targetPreset": "adjacent-foes-all"
   },
   {
-    "id": 532,
+    "id": 533,
     "slug": "mirage-obscur",
     "name": "Mirage Obscur",
     "type": "Ténèbres",
@@ -8615,7 +8631,7 @@
     "targetPreset": "adjacent-one"
   },
   {
-    "id": 533,
+    "id": 534,
     "slug": "sanglot-funeste",
     "name": "Sanglot Funeste",
     "type": "Spectre",
@@ -8629,7 +8645,7 @@
     "targetPreset": "adjacent-one"
   },
   {
-    "id": 534,
+    "id": 535,
     "slug": "sanction-divine",
     "name": "Sanction Divine",
     "type": "Fée",
@@ -8645,7 +8661,7 @@
     "targetPreset": "adjacent-one"
   },
   {
-    "id": 535,
+    "id": 536,
     "slug": "charge-competitive",
     "name": "Charge Compétitive",
     "type": "Acier",
