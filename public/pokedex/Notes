@@ -219,24 +219,24 @@ Conservateur : Équilibre Absolu : Si un Pokémon ennemi se boost durant un tour
 
 Compteur de pokémon par type :
 
-Eau      - 17
-Normal   - 13
-Vol      - 13
-Spectre  - 10
+Eau      - 16
+Vol      - 16
+Normal   - 12
+Spectre  - 11
 Insecte  - 9
+Roche    - 9
 Sol      - 8
-Plante   - 8
+Plante   - 7
 Poison   - 7
-Roche    - 7
-Feu      - 7
-Fée      - 7
-Ténèbres - 6
-Psy      - 6
-Glace    - 5
+Feu      - 6
+Fée      - 6
+Électrik - 5
+Ténèbres - 5
+Psy      - 5
 Dragon   - 5
+Glace    - 4
 Combat   - 4
 Acier    - 4
-Électrik - 4
 
 Modification de l'effet hors combat du talent Synchro : Si un Pokémon avec Synchro est placé en tête d'équipe, alors le joueur rencontrera un Pokémon sauvage avec la même nature que lui. Cet effet s'applique également sur les Œufs et les Fossiles.
 

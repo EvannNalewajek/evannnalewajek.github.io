@@ -1508,6 +1508,52 @@
     }
   },
   {
+    "id": 62,
+    "slug": "rocopode",
+    "name": "Rocopode",
+    "types": ["Roche", "Électrik"],
+    "category": "Caillou Piézo",
+    "abilities": ["[[ability:fermete|Fermeté]]", "[[ability:statik|Statik]]"],
+    "hiddenAbility": "[[ability:luminescence|Luminescence]]",
+    "height_m": 0.2,
+    "weight_kg": 9.8,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 180,
+    "images": {
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
+    },
+    "baseStats": { "hp": 50, "atk": 45, "def": 80, "spa": 65, "spd": 40, "spe": 20 },
+    "description": "Lorsqu'il se roule en boule, la pression exercée sur sa carapace minérale génère de petites décharges électriques. Les dresseurs débutants sont souvent surpris par le léger choc qu'il produit.",
+    "etymology": {
+      "Roc": "Matière rocheuse",
+      "Isopode": "Crustacé terrestre au corps segmenté"
+    }
+  },
+  {
+    "id": 63,
+    "slug": "cristerophore",
+    "name": "Cristérophore",
+    "types": ["Roche", "Électrik"],
+    "category": "Cristal Piézo",
+    "abilities": ["[[ability:levitation|Lévitation]]", "[[ability:statik|Statik]]"],
+    "hiddenAbility": "[[ability:turbo|Turbo]]",
+    "height_m": 0.9,
+    "weight_kg": 21.6,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 75,
+    "images": {
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
+    },
+    "baseStats": { "hp": 60, "atk": 65, "def": 70, "spa": 125, "spd": 60, "spe": 93 },
+    "description": "Ses ailes cristallines vibrent à très haute fréquence lorsqu'il s'envole, produisant de l'électricité sur son passage. Il se nourrit en absorbant l'énergie des cristaux présents dans les grottes où il vit.",
+    "etymology": {
+      "Crystal": "Minéral naturel transparent",
+      "Ptérophore": "Espèce de papillons blanc aux ailes d'apparence plumeuse"
+    }
+  },
+  {
     "id": 101,
     "slug": "damarel",
     "name": "Damarel",
