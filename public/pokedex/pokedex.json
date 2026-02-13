@@ -476,11 +476,11 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 190,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/nudilume_sprite.png",
+      "artwork": "pokedex/img/pokemon/nudilume_artwork.png"
     },
     "baseStats": { "hp": 59, "atk": 43, "def": 56, "spa": 47, "spd": 66, "spe": 63 },
-    "description": "Il glisse lentement au fond de l'eau en laissant une traînée luisante et colorée, jolie mais néanmoins toxique.",
+    "description": "Il glisse lentement au fond de l'eau en laissant une traînée luisante et colorée, jolie mais néanmoins toxique. Il est très craintif et n'hésitera pas à se cacher sous sa cape au moindre bruit suspect.",
     "etymology": {
       "nudibranchia": "ordre de mollusques marins appelés nudibranches",
       "lume": "lumière en référence à sa bioluminescence"
