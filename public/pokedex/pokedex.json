@@ -1733,8 +1733,31 @@
     "baseStats": { "hp": 95, "atk": 70, "def": 136, "spa": 50, "spd": 95, "spe": 48 },
     "description": "Ce Pokémon est une menace pour les agriculteurs, il adore se nourrir dans les champs et il est très difficile de l'arrêter lorsqu'il a faim, avançant lentement mais sûrement.",
     "etymology": {
-      "Scarabée": "Insecte coléoptère",
-      "Polyphylla": "Genre d'insectes coléoptères"
+      "Scarabée": "Coléoptère à carapace dure",
+      "Polyphylla": "Genre de coléoptères"
+    }
+  },
+  {
+    "id": 72,
+    "slug": "tenriktrik",
+    "name": "Tenriktrik",
+    "types": ["Ténèbres", "Électrik"],
+    "category": "",
+    "abilities": ["[[ability:epine-de-fer|Épine de Fer]]"],
+    "hiddenAbility": "[[ability:cercle-denergie|Cercle d'Énergie]]",
+    "height_m": 0,
+    "weight_kg": 0,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 90,
+    "images": {
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
+    },
+    "baseStats": { "hp": 75, "atk": 55, "def": 85, "spa": 65, "spd": 95, "spe": 70 },
+    "description": "Il frotte ses piquants pour produire des signaux électriques audibles par ses congénères. Très vigilant, il avertit son groupe du moindre danger avant même qu'il n'apparaisse.",
+    "etymology": {
+      "Tenrec": "Mammifère connu pour ses piquants",
+      "Électrique": "Énergie utilisé par ce Pokémon pour se défendre"
     }
   },
   {
