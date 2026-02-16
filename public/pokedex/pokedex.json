@@ -1646,6 +1646,75 @@
     }
   },
   {
+    "id": 68,
+    "slug": "cotylux",
+    "name": "Cotylux",
+    "types": ["Électrik", "Feu"],
+    "category": "Méduse",
+    "abilities": ["[[ability:urticant|Urticant]]", "[[ability:delestage|Délestage]]"],
+    "hiddenAbility": "[[ability:paratonnerre|Paratonnerre]]",
+    "height_m": 0.2,
+    "weight_kg": 1.2,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 120,
+    "images": {
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
+    },
+    "baseStats": { "hp": 35, "atk": 30, "def": 42, "spa": 83, "spd": 52, "spe": 60 },
+    "description": "Son ombrelle gélatineuse émet une douce lueur chaude dans les eaux peu profondes. Les nageurs ont appris à se méfier des eaux paraissant étonnamment plus chaudes.",
+    "etymology": {
+      "Cotylorhiza tuberculata": "Nom scientifique de la méduse œuf au plat",
+      "Lux": "Unité de mesure de l'intensité d'éclairage"
+    }
+  },
+  {
+    "id": 69,
+    "slug": "voltombrelle",
+    "name": "Voltombrelle",
+    "types": ["Électrik", "Feu"],
+    "category": "Méduse",
+    "abilities": ["[[ability:urticant|Urticant]]", "[[ability:delestage|Délestage]]"],
+    "hiddenAbility": "[[ability:paratonnerre|Paratonnerre]]",
+    "height_m": 0.7,
+    "weight_kg": 6.5,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 90,
+    "images": {
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
+    },
+    "baseStats": { "hp": 53, "atk": 40, "def": 58, "spa": 102, "spd": 68, "spe": 69 },
+    "description": "En pulsant lentement dans l'eau, il diffuse des vagues d'énergie électrique et thermique. Les petits Pokémon marins viennent souvent se réfugier sous son ombrelle lumineuse.",
+    "etymology": {
+      "Volt": "Unité de mesure de la tension électrique",
+      "Ombrelle": "Désigne la partie du corps en forme de cloche des méduses"
+    }
+  },
+  {
+    "id": 70,
+    "slug": "adriastra",
+    "name": "Adriastra",
+    "types": ["Électrik", "Feu"],
+    "category": "Méduse",
+    "abilities": ["[[ability:urticant|Urticant]]", "[[ability:delestage|Délestage]]"],
+    "hiddenAbility": "[[ability:paratonnerre|Paratonnerre]]",
+    "height_m": 1.4,
+    "weight_kg": 18.0,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 45,
+    "images": {
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
+    },
+    "baseStats": { "hp": 65, "atk": 50, "def": 70, "spa": 138, "spd": 95, "spe": 88 },
+    "description": "Certains Pokémon se servent de son ombrelle et ses tentacules pour s'abriter et se cacher des prédateurs. Lorsqu'il se sent menacé, il libère une décharge brûlante dans toute l'eau environnante.",
+    "etymology": {
+      "Mer Adriatique": "mer séparant la péninsule italienne de la péninsule balkanique",
+      "Astra": "Dérivé de l'ancien grec signifiant Étoiles"
+    }
+  },
+  {
     "id": 101,
     "slug": "damarel",
     "name": "Damarel",

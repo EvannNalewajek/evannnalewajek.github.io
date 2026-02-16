@@ -2080,6 +2080,17 @@
   },
   {
     "id": 190,
+    "slug": "urticant",
+    "name": "Urticant",
+    "battleEffectCondition": "Lors d'une capacité adverse",
+    "battleEffectShort": "Les capacités directes reçues ont 30% de chances de donner le [[docs:status|statut paralysie]] ou le [[docs:status|statut brûlure]] à leur lanceur.",
+    "battleEffectLong": "Lorsqu'un Pokémon doté de ce talent subit une capacité directe, il a 30% de chances de [[docs:status|paralyser]] ou [[docs:status|brûler]] son attaquant. Urticant affecte également les Pokémons de [[type:sol|type Sol]].",
+    "fieldEffectCondition": "Avec effet",
+    "fieldEffectLong": "Si un Pokémon avec ce talent est placé en tête d'équipe, le dresseur a 30% de chances d'affronter un Pokémon sauvage ayant déjà le [[docs:status|statut paralysie]] ou le [[docs:status|statut brûlure]].",
+    "description": "Les tentacules du Pokémon sont tellement urticantes qu'elles ont une chance de paralyser, voir de brûler, les Pokémons entrant en contact."
+  },
+  {
+    "id": 191,
     "slug": "maree-pourpre",
     "name": "Marée Pourpre",
     "battleEffectCondition": "Lors de son attaque",
@@ -2090,7 +2101,7 @@
     "description": "Les capacités de type Eau ont une chance d'apeurer. Soigne le Pokémon en cas de succès."
   },
   {
-    "id": 191,
+    "id": 192,
     "slug": "marecage-brun",
     "name": "Marécage Brun",
     "battleEffectCondition": "Lorsque le Pokémon est envoyé",
@@ -2101,7 +2112,7 @@
     "description": "Les Pokémon au sol ne peuvent pas être soigner, ni quitter le terrain via une capacité tant que le Pokémon est sur le terrain."
   },
   {
-    "id": 192,
+    "id": 193,
     "slug": "nuee-ambree",
     "name": "Nuée Ambrée",
     "battleEffectCondition": "Lors de son attaque",
@@ -2112,7 +2123,7 @@
     "description": "Les capacités de type Insecte ont une chance d'harceler la cible, lui infligeant des dégâts continus et l'empêche de quitter le terrain."
   },
   {
-    "id": 193,
+    "id": 194,
     "slug": "danse-opaline",
     "name": "Danse Opaline",
     "battleEffectCondition": "Lors de son attaque",
@@ -2123,7 +2134,7 @@
     "description": "Les capacités de danse deviennent prioritaires et ont une chance d'apeurer l'ennemi."
   },
   {
-    "id": 194,
+    "id": 195,
     "slug": "peste-mauve",
     "name": "Peste Mauve",
     "battleEffectCondition": "Entre chaque tour",
@@ -2134,7 +2145,7 @@
     "description": "Empoisonne gravement le lanceur à la fin de son premier tour. Lorsqu'il est empoisonné, le Pokémon est guérie d'une partie de ses PV au lieu d'en perdre."
   },
   {
-    "id": 195,
+    "id": 196,
     "slug": "cendre-ocre",
     "name": "Cendre Ocre",
     "battleEffectCondition": "Lors de son attaque",
@@ -2145,7 +2156,7 @@
     "description": "Lorsqu'une capacité de type Feu touche un Pokémon qui résiste à ce type, augmente la statistique offensive correspondant à la catégorie de la capacité."
   },
   {
-    "id": 196,
+    "id": 197,
     "slug": "neige-grise",
     "name": "Neige Grise",
     "battleEffectCondition": "Entre chaque tour",
@@ -2156,7 +2167,7 @@
     "description": "Réduit la vitesse des Pokémon adverses à chaque fin de tour."
   },
   {
-    "id": 197,
+    "id": 198,
     "slug": "moissonneur-vert",
     "name": "Moissonneur Vert",
     "battleEffectCondition": "Lors de son attaque",
@@ -2167,7 +2178,7 @@
     "description": "Résiste aux capacités de type Plante, et toutes les attaques deviennent super efficace contre des Pokémon de type Plante."
   },
   {
-    "id": 198,
+    "id": 199,
     "slug": "eclipse-noire",
     "name": "Éclipse Noire",
     "battleEffectCondition": "Lorsque le Pokémon est envoyé",
@@ -2178,7 +2189,7 @@
     "description": "Absorbe la lumière des capacités ainsi que les rayons du soleil."
   },
   {
-    "id": 199,
+    "id": 200,
     "slug": "deuil-blanc",
     "name": "Deuil Blanc",
     "battleEffectCondition": "Lors d'une capacité adverse",
@@ -2189,7 +2200,7 @@
     "description": "Si le Pokémon est mis K.O. par une attaque, il inflige une malédiction à l'attaquant avant de s'évanouir."
   },
   {
-    "id": 200,
+    "id": 201,
     "slug": "equilibre-absolu",
     "name": "Équilibre Absolu",
     "battleEffectCondition": "Entre chaque tour",
@@ -2200,7 +2211,7 @@
     "description": "Si un Pokémon adverse boost ses stats ou diminue les stats du Pokémon ou d'un Pokémon allié, annule le changement à la fin du tour."
   },
   {
-    "id": 201,
+    "id": 202,
     "slug": "renforcement-adaptatif",
     "name": "Renforcement Adaptatif",
     "battleEffectCondition": "Entre chaque tour",

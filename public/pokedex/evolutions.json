@@ -166,6 +166,13 @@
       "links": [
         { "from": 66, "to": 67, "trigger": { "kind": "level", "level": 40 } }
       ]
+    },
+    {
+      "species": [68, 69, 70],
+      "links": [
+        { "from": 68, "to": 69, "trigger": { "kind": "level", "level": 19 } },
+        { "from": 69, "to": 70, "trigger": { "kind": "level", "level": 38 } }
+      ]
     }
   ]
 }
