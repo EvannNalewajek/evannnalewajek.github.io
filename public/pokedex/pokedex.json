@@ -1715,6 +1715,29 @@
     }
   },
   {
+    "id": 71,
+    "slug": "scaraphylla",
+    "name": "Scaraphylla",
+    "types": ["Insecte", "Acier"],
+    "category": "Bastion",
+    "abilities": ["[[ability:envelocape|Envelocape]]", "[[ability:solide-roc|Solide Roc]]"],
+    "hiddenAbility": "[[ability:oeil-compose|Œil Composé]]",
+    "height_m": 1.1,
+    "weight_kg": 70.0,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 75,
+    "images": {
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
+    },
+    "baseStats": { "hp": 95, "atk": 70, "def": 136, "spa": 50, "spd": 95, "spe": 48 },
+    "description": "Ce Pokémon est une menace pour les agriculteurs, il adore se nourrir dans les champs et il est très difficile de l'arrêter lorsqu'il a faim, avançant lentement mais sûrement.",
+    "etymology": {
+      "Scarabée": "Insecte coléoptère",
+      "Polyphylla": "Genre d'insectes coléoptères"
+    }
+  },
+  {
     "id": 101,
     "slug": "damarel",
     "name": "Damarel",
