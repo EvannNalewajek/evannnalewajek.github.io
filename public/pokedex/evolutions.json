@@ -154,6 +154,18 @@
       "links": [
         { "from": 62, "to": 63, "trigger": { "kind": "item", "item": "Pierre Foudre" } }
       ]
+    },
+    {
+      "species": [64, 65],
+      "links": [
+        { "from": 64, "to": 65, "trigger": { "kind": "level", "level": 33 } }
+      ]
+    },
+    {
+      "species": [66, 67],
+      "links": [
+        { "from": 66, "to": 67, "trigger": { "kind": "level", "level": 40 } }
+      ]
     }
   ]
 }

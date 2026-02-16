@@ -2172,7 +2172,7 @@
     "name": "Éclipse Noire",
     "battleEffectCondition": "Lorsque le Pokémon est envoyé",
     "battleEffectShort": "Empêche les capacités de lumière et les effets de l'[[docs:weather|ensoleillement]] tant que le Pokémon est sur le terrain.",
-    "battleEffectLong": "Tant que le Pokémon est sur le terrain, annule toutes les capacités à base de Lumière ([[move:rayon-lune|Rayon Lune]], [[move:aurore|Aurore]], [[move:synthese|Synthèse]], [[move:flash|Flash]], ...). De plus, les effets du climat [[docs:weather|ensoleillement]] sont annulés, bien que le climat soit toujours présent (Les attaques de type [[type:Feu]] et [[type:Eau]] font des dégâts normaux, les attaques en deux tours telles que [[move:lance-soleil|Lance-Soleil]] ne prendront plus qu'un tour, et les talents comme [[ability:chlorophylle|Chlorophylle]] ou [[ability:peau-seche|Peau Sèche]] ne feront plus effet).",
+    "battleEffectLong": "Tant que le Pokémon est sur le terrain, annule toutes les capacités à base de Lumière ([[move:rayon-lune|Rayon Lune]], [[move:aurore|Aurore]], [[move:synthese|Synthèse]], ...). De plus, les effets du climat [[docs:weather|ensoleillement]] sont annulés, bien que le climat soit toujours présent (Les attaques de type [[type:Feu]] et [[type:Eau]] font des dégâts normaux, les attaques en deux tours telles que [[move:lance-soleil|Lance-Soleil]] ne prendront plus qu'un tour, et les talents comme [[ability:chlorophylle|Chlorophylle]] ou [[ability:peau-seche|Peau Sèche]] ne feront plus effet).",
     "fieldEffectCondition": "Aucun effet",
     "fieldEffectLong": "Éclipse Noire n'a aucun effet hors combat.",
     "description": "Absorbe la lumière des capacités ainsi que les rayons du soleil."

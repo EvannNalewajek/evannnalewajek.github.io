@@ -1600,6 +1600,52 @@
     }
   },
   {
+    "id": 66,
+    "slug": "frimacier",
+    "name": "Frimacier",
+    "types": ["Glace", "Acier"],
+    "category": "Tigre",
+    "abilities": ["[[ability:attention|Attention]]", "[[ability:rideau-neige|Rideau Neige]]"],
+    "hiddenAbility": "[[ability:prognathe|Prognathe]]",
+    "height_m": 0.7,
+    "weight_kg": 28.0,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 120,
+    "images": {
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
+    },
+    "baseStats": { "hp": 70, "atk": 95, "def": 55, "spa": 40, "spd": 50, "spe": 75 },
+    "description": "Son pelage givré et ses petits crocs métalliques tintent légèrement lorsqu'il joue dans la neige. Malgré son air adorable, il mord déjà avec une surprenante force.",
+    "etymology": {
+      "Frimas": "Brouillard froid et épais qui forme du givre en se cristallisant",
+      "Acier": "Métal dur et résistant"
+    }
+  },
+  {
+    "id": 67,
+    "slug": "givrodon",
+    "name": "Givrodon",
+    "types": ["Glace", "Acier"],
+    "category": "Tigre",
+    "abilities": ["[[ability:attention|Attention]]", "[[ability:rideau-neige|Rideau Neige]]"],
+    "hiddenAbility": "[[ability:prognathe|Prognathe]]",
+    "height_m": 1.9,
+    "weight_kg": 165.0,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 45,
+    "images": {
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
+    },
+    "baseStats": { "hp": 80, "atk": 120, "def": 73, "spa": 50, "spd": 72, "spe": 105 },
+    "description": "Ses crocs d'acier peuvent broyer la glace la plus épaisse en un seul coup de mâchoire. Bien que ses crocs sont sa plus grande fierté, il ne faut pas sous-estimer ses griffes et sa vitesse.",
+    "etymology": {
+      "Givre": "Dépôt de glace formé par le froid",
+      "Smilodon": "Tigre à dents de sabre préhistorique"
+    }
+  },
+  {
     "id": 101,
     "slug": "damarel",
     "name": "Damarel",
