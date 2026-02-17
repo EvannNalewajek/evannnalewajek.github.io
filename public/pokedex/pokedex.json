@@ -1739,14 +1739,14 @@
   },
   {
     "id": 72,
-    "slug": "tenriktrik",
-    "name": "Tenriktrik",
+    "slug": "tenriktik",
+    "name": "Tenriktik", 
     "types": ["Ténèbres", "Électrik"],
-    "category": "",
+    "category": "Zébré",
     "abilities": ["[[ability:epine-de-fer|Épine de Fer]]"],
     "hiddenAbility": "[[ability:cercle-denergie|Cercle d'Énergie]]",
-    "height_m": 0,
-    "weight_kg": 0,
+    "height_m": 1.0,
+    "weight_kg": 32.1,
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 90,
     "images": {
@@ -1758,6 +1758,27 @@
     "etymology": {
       "Tenrec": "Mammifère connu pour ses piquants",
       "Électrique": "Énergie utilisé par ce Pokémon pour se défendre"
+    }
+  },
+  {
+    "id": 73,
+    "slug": "salpeon",
+    "name": "Salpéon", 
+    "types": ["Eau", "Spectre"],
+    "category": "Cellule",
+    "abilities": ["[[ability:duplication|Duplication]]"],
+    "height_m": 0.2,
+    "weight_kg": 3.0,
+    "captureRate": 120,
+    "images": {
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
+    },
+    "baseStats": { "hp": 45, "atk": 65, "def": 55, "spa": 65, "spd": 55, "spe": 60 },
+    "description": "Son corps gélatineux se divise spontanément pour former de nouveaux individus identiques. Les colonies de Salpéon dérivent silencieusement dans l'océan, reliées par une faible lueur fantomatique.",
+    "etymology": {
+      "Salp": "Animal gélatineux asexué",
+      "Néon": "En référence à certaines espèces de salpidés qui peuvent être bioluminescentes."
     }
   },
   {
