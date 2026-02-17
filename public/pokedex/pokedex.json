@@ -522,8 +522,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 180,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/totadachi_sprite.png",
+      "artwork": "pokedex/img/pokemon/totadachi_artwork.png"
     },
     "baseStats": { "hp": 36, "atk": 64, "def": 35, "spa": 52, "spd": 43, "spe": 90 },
     "description": "Il court en cercles quand il accumule trop d'énergie statique. L'électricité stockée dans ses pattes lui permet de bondir plus haut qu'un humain de taille moyen.",
@@ -1769,6 +1769,7 @@
     "abilities": ["[[ability:duplication|Duplication]]"],
     "height_m": 0.2,
     "weight_kg": 3.0,
+    "genderRatio": "genderless",
     "captureRate": 120,
     "images": {
       "sprite": "pokedex/img/pokemon/000_sprite.png",
@@ -1790,6 +1791,7 @@
     "abilities": ["[[ability:maree-pourpre|Marée Pourpre]]"],
     "height_m": 4.2,
     "weight_kg": 910,
+    "genderRatio": "genderless",
     "captureRate": 6,
     "images": {
       "sprite": "pokedex/img/pokemon/000_sprite.png",
@@ -1811,6 +1813,7 @@
     "abilities": ["[[ability:marecage-brun|Marécage Brun]]"],
     "height_m": 1.1,
     "weight_kg": 18.4,
+    "genderRatio": "genderless",
     "captureRate": 6,
     "images": {
       "sprite": "pokedex/img/pokemon/000_sprite.png",
@@ -1832,6 +1835,7 @@
     "abilities": ["[[ability:nuee-ambree|Nuée Ambrée]]"],
     "height_m": 1.4,
     "weight_kg": 9.7,
+    "genderRatio": "genderless",
     "captureRate": 6,
     "images": {
       "sprite": "pokedex/img/pokemon/000_sprite.png",
@@ -1853,6 +1857,7 @@
     "abilities": ["[[ability:danse-opaline|Danse Opaline]]"],
     "height_m": 1.6,
     "weight_kg": 38.9,
+    "genderRatio": "genderless",
     "captureRate": 6,
     "images": {
       "sprite": "pokedex/img/pokemon/000_sprite.png",
@@ -1874,6 +1879,7 @@
     "abilities": ["[[ability:peste-mauve|Peste Mauve]]"],
     "height_m": 1.8,
     "weight_kg": 82.3,
+    "genderRatio": "genderless",
     "captureRate": 6,
     "images": {
       "sprite": "pokedex/img/pokemon/000_sprite.png",
@@ -1895,6 +1901,7 @@
     "abilities": ["[[ability:cendre-ocre|Cendre Ocre]]"],
     "height_m": 2.0,
     "weight_kg": 100,
+    "genderRatio": "genderless",
     "captureRate": 6,
     "images": {
       "sprite": "pokedex/img/pokemon/000_sprite.png",
@@ -1916,6 +1923,7 @@
     "abilities": ["[[ability:neige-grise|Neige Grise]]"],
     "height_m": 3.1,
     "weight_kg": 6.5,
+    "genderRatio": "genderless",
     "captureRate": 6,
     "images": {
       "sprite": "pokedex/img/pokemon/000_sprite.png",
@@ -1937,6 +1945,7 @@
     "abilities": ["[[ability:moissonneur-vert|Moissonneur Vert]]"],
     "height_m": 1.5,
     "weight_kg": 54.2,
+    "genderRatio": "genderless",
     "captureRate": 6,
     "images": {
       "sprite": "pokedex/img/pokemon/000_sprite.png",
@@ -1958,6 +1967,7 @@
     "abilities": ["[[ability:eclipse-noire|Éclipse Noire]]"],
     "height_m": 2.4,
     "weight_kg": 79.4,
+    "genderRatio": "genderless",
     "captureRate": 6,
     "images": {
       "sprite": "pokedex/img/pokemon/000_sprite.png",
@@ -1979,6 +1989,7 @@
     "abilities": ["[[ability:deuil-blanc|Deuil Blanc]]"],
     "height_m": 2.6,
     "weight_kg": 142.7,
+    "genderRatio": "genderless",
     "captureRate": 6,
     "images": {
       "sprite": "pokedex/img/pokemon/000_sprite.png",
@@ -2000,6 +2011,7 @@
     "abilities": ["[[ability:equilibre-absolu|Équilibre Absolu]]"],
     "height_m": 3.2,
     "weight_kg": 280.0,
+    "genderRatio": "genderless",
     "captureRate": 3,
     "images": {
       "sprite": "pokedex/img/pokemon/000_sprite.png",
@@ -2022,6 +2034,7 @@
     "abilities": ["[[ability:renforcement-adaptatif|Renforcement Adaptatif]]"],
     "height_m": 3.4,
     "weight_kg": 410.0,
+    "genderRatio": "genderless",
     "captureRate": 3,
     "images": {
       "sprite": "pokedex/img/pokemon/000_sprite.png",
