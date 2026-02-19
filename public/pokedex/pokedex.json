@@ -1852,6 +1852,75 @@
     }
   },
   {
+    "id": 77,
+    "slug": "gracicodil",
+    "name": "Gracicodil", 
+    "types": ["Dragon"],
+    "category": "Saurien",
+    "abilities": ["[[ability:peau-dure|Peau Dure]]", "[[ability:fuite|Fuite]]"],
+    "hiddenAbility": "[[ability:cran|Cran]]",
+    "height_m": 0.3,
+    "weight_kg": 6.2,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 45,
+    "images": {
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
+    },
+    "baseStats": { "hp": 35, "atk": 30, "def": 65, "spa": 30, "spd": 35, "spe": 55 },
+    "description": "Ses écailles dorsales sont déjà étonnament résistantes, bien qu'il privilégiera toujours la fuite en cas de danger. Il peut également creuser sous terre pour se cacher, et c'est un très bon nageur.",
+    "etymology": {
+      "Tribolonotus Gracilis": "Espèce de sauriens inspirant ce Pokémon",
+      "Crocodile": "Référence à la scinque crocodile, nom commun pour qualifier l'animal Tribolonotus Gracilis"
+    }
+  },
+  {
+    "id": 78,
+    "slug": "dermaconda",
+    "name": "Dermaconda", 
+    "types": ["Dragon", "Combat"],
+    "category": "Saurien",
+    "abilities": ["[[ability:peau-dure|Peau Dure]]", "[[ability:intimidation|Intimidation]]"],
+    "hiddenAbility": "[[ability:cran|Cran]]",
+    "height_m": 1.7,
+    "weight_kg": 63.0,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 45,
+    "images": {
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
+    },
+    "baseStats": { "hp": 95, "atk": 75, "def": 95, "spa": 45, "spd": 65, "spe": 45 },
+    "description": "Son corps trapu est recouvert d'écailles épaisses semblables à des perles rugueuses. Il immobilise ses adversaires avec sa mâchoire puissante avant de les projeter violemment au sol.",
+    "etymology": {
+      "Heloderma": "lézard perlé servant d'inspiration à ce Pokémon",
+      "Anaconda": "Grand reptile puissant"
+    }
+  },
+  {
+    "id": 79,
+    "slug": "komoloss",
+    "name": "Komoloss", 
+    "types": ["Dragon", "Combat"],
+    "category": "Komodo",
+    "abilities": ["[[ability:peau-dure|Peau Dure]]", "[[ability:intimidation|Intimidation]]"],
+    "hiddenAbility": "[[ability:cran|Cran]]",
+    "height_m": 2.5,
+    "weight_kg": 88.6,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 45,
+    "images": {
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
+    },
+    "baseStats": { "hp": 105, "atk": 125, "def": 115, "spa": 55, "spd": 105, "spe": 35 },
+    "description": "Il avance lentement, mais chacun de ses pas fait trembler le sol. Une fois qu'il a saisi sa proie, il la plaque au sol et ne la relâche qu'une fois totalement épuisée.",
+    "etymology": {
+      "Komodo": "Référence au dragon de Komodo, un grand varan prédateur.",
+      "Colosse": "Créature gigantesque et imposante"
+    }
+  },
+  {
     "id": 101,
     "slug": "damarel",
     "name": "Damarel",

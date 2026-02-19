@@ -180,6 +180,13 @@
         { "from": 74, "to": 75, "trigger": { "kind": "level", "level": 27 } },
         { "from": 75, "to": 76, "trigger": { "kind": "level", "level": 42 } }
       ]
+    },
+    {
+      "species": [77, 78, 79],
+      "links": [
+        { "from": 77, "to": 78, "trigger": { "kind": "level", "level": 32 } },
+        { "from": 78, "to": 79, "trigger": { "kind": "level", "level": 50 } }
+      ]
     }
   ]
 }
