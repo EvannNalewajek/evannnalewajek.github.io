@@ -81,7 +81,7 @@
     "slug": "voile-sable",
     "name": "Voile Sable",
     "battleEffectCondition": "Selon le climat",
-    "battleEffectShort": "Sous le climat [[docs:weather|tempête de sable]], la [[docs:statistics|Esquive]] du Pokémon augmente de 20%, et il est immunisé contre les dégâts de la tempête de sable.",
+    "battleEffectShort": "Sous le climat [[docs:weather|tempête de sable]], l'[[docs:statistics|Esquive]] du Pokémon augmente de 20%, et il est immunisé contre les dégâts de la tempête de sable.",
     "battleEffectLong": "En cas de [[docs:weather|tempête de sable]], Voile Sable augmente l'[[docs:statistics|Esquive]] du Pokémon de 20%, et le rend immunisé contre les dégâts de la tempête de sable.",
     "fieldEffectCondition": "Avec effet",
     "fieldEffectLong": "Sur le terrain, lorsqu'un Pokémon avec Voile Sable est placé en tête d'équipe, et que le joueur se trouve dans un lieu avec une tempête de sable, les chances de rencontrer un Pokémon sauvage sont divisées par deux.",
@@ -1534,7 +1534,7 @@
     "name": "Aroma-Voile",
     "battleEffectCondition": "En permanence",
     "battleEffectShort": "Immunité contre les attaques limitant le choix des capacités pour le Pokémon et ses alliés sur le terrain.",
-    "battleEffectLong": "Un Pokémon doté de ce talent est immunisé aux effets des capacités [[move:provoc|Provoc]], [[move:tourmente|Tourmente]], [[move:encore|Encore]], [[move:entrave|Entrave]], [[move:anti-soin|Anti-Soin]], [[move:attraction|Attraction]] et [[move:lien-du-destin|Lien du Destin]], ainsi que du talent [[ability:joli-sourire|Joli Sourire]] et [[ability:corps-maudit|Corps Maudit]]. En Combat Duo, le Pokémon ayant Aroma-Voile immunise également ses alliés.",
+    "battleEffectLong": "Un Pokémon doté de ce talent est immunisé aux effets des capacités [[move:provoc|Provoc]], [[move:tourmente|Tourmente]], [[move:encore|Encore]], [[move:entrave|Entrave]], [[move:attraction|Attraction]] et [[move:lien-du-destin|Lien du Destin]], ainsi que du talent [[ability:joli-sourire|Joli Sourire]] et [[ability:corps-maudit|Corps Maudit]]. En Combat Duo, le Pokémon ayant Aroma-Voile immunise également ses alliés.",
     "fieldEffectCondition": "Aucun effet",
     "fieldEffectLong": "Aroma-Voile n'a aucun effet sur le terrain.",
     "description": "Protège le Pokémon et ses alliés des effets limitant le libre arbitre."
@@ -2102,6 +2102,17 @@
   },
   {
     "id": 192,
+    "slug": "carnivore",
+    "name": "Carnivore",
+    "battleEffectCondition": "Lors de son attaque",
+    "battleEffectShort": "Le Pokémon draine la moitié des dégâts infligés s'il utilise une attaque de croc.",
+    "battleEffectLong": "Lorsqu'un Pokémon doté de ce talent utilise une capacité de croc ([[move:morsure|Morsure]], [[move:machouille|Mâchouille]], [[move:croque-fort|Croque Fort]], ...), la moitié des dégâts infligés sont convertis en [[docs:statistics|PV]] pour le lanceur. Si la cible a le talent [[ability:suintement|Suintement]], le lanceur perd les PV qu'il aurait récupérés.",
+    "fieldEffectCondition": "Sans effet",
+    "fieldEffectLong": "Carnivore n'a aucun effet hors combat.",
+    "description": "Les attaques utilisant les crocs convertissent la moitié des dégâts infligés en PV pour le lanceur."
+  },
+  {
+    "id": 193,
     "slug": "maree-pourpre",
     "name": "Marée Pourpre",
     "battleEffectCondition": "Lors de son attaque",
@@ -2112,7 +2123,7 @@
     "description": "Les capacités de type Eau ont une chance d'apeurer. Soigne le Pokémon en cas de succès."
   },
   {
-    "id": 193,
+    "id": 194,
     "slug": "marecage-brun",
     "name": "Marécage Brun",
     "battleEffectCondition": "Lorsque le Pokémon est envoyé",
@@ -2123,7 +2134,7 @@
     "description": "Les Pokémon au sol ne peuvent pas être soigner, ni quitter le terrain via une capacité tant que le Pokémon est sur le terrain."
   },
   {
-    "id": 194,
+    "id": 195,
     "slug": "nuee-ambree",
     "name": "Nuée Ambrée",
     "battleEffectCondition": "Lors de son attaque",
@@ -2134,7 +2145,7 @@
     "description": "Les capacités de type Insecte ont une chance d'harceler la cible, lui infligeant des dégâts continus et l'empêche de quitter le terrain."
   },
   {
-    "id": 195,
+    "id": 196,
     "slug": "danse-opaline",
     "name": "Danse Opaline",
     "battleEffectCondition": "Lors de son attaque",
@@ -2145,7 +2156,7 @@
     "description": "Les capacités de danse deviennent prioritaires et ont une chance d'apeurer l'ennemi."
   },
   {
-    "id": 196,
+    "id": 197,
     "slug": "peste-mauve",
     "name": "Peste Mauve",
     "battleEffectCondition": "Entre chaque tour",
@@ -2156,7 +2167,7 @@
     "description": "Empoisonne gravement le lanceur à la fin de son premier tour. Lorsqu'il est empoisonné, le Pokémon est guérie d'une partie de ses PV au lieu d'en perdre."
   },
   {
-    "id": 197,
+    "id": 198,
     "slug": "cendre-ocre",
     "name": "Cendre Ocre",
     "battleEffectCondition": "Lors de son attaque",
@@ -2167,7 +2178,7 @@
     "description": "Lorsqu'une capacité de type Feu touche un Pokémon qui résiste à ce type, augmente la statistique offensive correspondant à la catégorie de la capacité."
   },
   {
-    "id": 198,
+    "id": 199,
     "slug": "neige-grise",
     "name": "Neige Grise",
     "battleEffectCondition": "Entre chaque tour",
@@ -2178,7 +2189,7 @@
     "description": "Réduit la vitesse des Pokémon adverses à chaque fin de tour."
   },
   {
-    "id": 199,
+    "id": 200,
     "slug": "moissonneur-vert",
     "name": "Moissonneur Vert",
     "battleEffectCondition": "Lors de son attaque",
@@ -2189,7 +2200,7 @@
     "description": "Résiste aux capacités de type Plante, et toutes les attaques deviennent super efficace contre des Pokémon de type Plante."
   },
   {
-    "id": 200,
+    "id": 201,
     "slug": "eclipse-noire",
     "name": "Éclipse Noire",
     "battleEffectCondition": "Lorsque le Pokémon est envoyé",
@@ -2200,7 +2211,7 @@
     "description": "Absorbe la lumière des capacités ainsi que les rayons du soleil."
   },
   {
-    "id": 201,
+    "id": 202,
     "slug": "deuil-blanc",
     "name": "Deuil Blanc",
     "battleEffectCondition": "Lors d'une capacité adverse",
@@ -2211,7 +2222,7 @@
     "description": "Si le Pokémon est mis K.O. par une attaque, il inflige une malédiction à l'attaquant avant de s'évanouir."
   },
   {
-    "id": 202,
+    "id": 203,
     "slug": "equilibre-absolu",
     "name": "Équilibre Absolu",
     "battleEffectCondition": "Entre chaque tour",
@@ -2222,7 +2233,7 @@
     "description": "Si un Pokémon adverse boost ses stats ou diminue les stats du Pokémon ou d'un Pokémon allié, annule le changement à la fin du tour."
   },
   {
-    "id": 203,
+    "id": 204,
     "slug": "renforcement-adaptatif",
     "name": "Renforcement Adaptatif",
     "battleEffectCondition": "Entre chaque tour",

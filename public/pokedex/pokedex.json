@@ -1783,6 +1783,75 @@
     }
   },
   {
+    "id": 74,
+    "slug": "crinial",
+    "name": "Crinial", 
+    "types": ["Ténèbres"],
+    "category": "Chacal",
+    "abilities": ["[[ability:impassible|Impassible]]"],
+    "hiddenAbility": "[[ability:carnivore|Carnivore]]",
+    "height_m": 0.5,
+    "weight_kg": 12.6,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 145,
+    "images": {
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
+    },
+    "baseStats": { "hp": 45, "atk": 62, "def": 48, "spa": 39, "spd": 50, "spe": 56 },
+    "description": "Pour compenser sa petite taille, ses poils se hérissent lorsqu'il se sent en danger pour paraître plus gros. Bien que cela fonctionne sur certains prédateurs, les humains trouvent ses aboiements trop mignon pour en avoir peur.",
+    "etymology": {
+      "Crinière": "Touffe de poils longue et hérissée autour du cou",
+      "Chacal": "Canidé opportuniste proche des hyènes par son comportement charognard"
+    }
+  },
+  {
+    "id": 75,
+    "slug": "lycanine",
+    "name": "Lycanine", 
+    "types": ["Ténèbres", "Sol"],
+    "category": "Chacal",
+    "abilities": ["[[ability:impassible|Impassible]]"],
+    "hiddenAbility": "[[ability:carnivore|Carnivore]]",
+    "height_m": 1.1,
+    "weight_kg": 39.2,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 90,
+    "images": {
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
+    },
+    "baseStats": { "hp": 65, "atk": 90, "def": 55, "spa": 50, "spd": 55, "spe": 95 },
+    "description": "Il est très sociable avec les autres Pokémon de son espèce, formant des meutes pouvant rassembler jusqu'à 100 individus. Son extrême sociabilité se traduit par sa capacité à produire beaucoup de sons différents pour s'exprimer.",
+    "etymology": {
+      "Lycaon": "Genre de canidés africains sociaux vivant en meute",
+      "Canine": "Relatif aux chiens et autres canidés"
+    }
+  },
+  {
+    "id": 76,
+    "slug": "sombryène",
+    "name": "Sombryène", 
+    "types": ["Ténèbres", "Sol"],
+    "category": "Hyène",
+    "abilities": ["[[ability:impassible|Impassible]]"],
+    "hiddenAbility": "[[ability:carnivore|Carnivore]]",
+    "height_m": 1.5,
+    "weight_kg": 68.3,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 45,
+    "images": {
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
+    },
+    "baseStats": { "hp": 95, "atk": 110, "def": 78, "spa": 55, "spd": 70, "spe": 110 },
+    "description": "Étant le chef de sa meute, il est très territorial et se montre très agressif quand il s'agit de défendre ses petits. Son long pelage hirsute lui donne un air large et imposant, mais il est en réalité plus léger, et très rapide.",
+    "etymology": {
+      "Sombre": "Référence à son type Ténèbres et à son pelage foncé",
+      "Hyène": "Mammifère charognard connu pour ses puissantes mâchoires"
+    }
+  },
+  {
     "id": 101,
     "slug": "damarel",
     "name": "Damarel",
