@@ -1,52 +1,3 @@
-Nid de phéromones : Talent caché signature de Myrtiara
-Invoque le champ Myrmique.
-
-Effet : Champ Myrmique
-- Les Pokémon au sol perdent des points de vie, à l'exception des types Insecte. Les Pokémon de type Vol ou avec Lévitation ne sont donc pas affectés.
-- Les attaques de type Insecte voient leur puissance augmenter de 30%.
-- Les Pokémon au sol portant une baie voient leur objet se faire détruire.
-- La puissance de la capacité Appel Phéromonal est augmentée de 50%, et peut maintenant convertir la moitié des dégâts infligés en PV pour le lanceur.
-- Force Nature devient Bourdon.
-- Force Cachée prend l'animation de Survinsecte, et peut baisser la Défense Spéciale de la cible.
-- Un pokémon utilisant la capacité Camouflage prendra le type Insecte.
-
-Capacité : Appel Phéromonal
-Type : Insecte
-Catégorie : Spéciale
-PP : 10 (max. 16)
-Puissance : 60
-Précision : 100%
-Cible : Tous les adversaires adjacents au lanceur.
-Particularités : Pas de contact avec le Pokémon adverse / Taux de critiques normal / Priorité normale
-Effet : Appel Phéromonal inflige des dégâts. Si un champ Myrmique est actif et si le lanceur est au sol, la puissance de la capacité augmente de 50% et convertit les dégâts infligés en PV pour le lanceur. Dans le cas d'un Combat Duo, la capacité inflige des dégâts aux deux Pokémon adverses.
-Description : Le lanceur relâche des phéromones pour attirer les insectes aux alentours et frapper les ennemies. La puissance de cette attaque augmente et draine la vie si le lanceur est sur un champ myrmique.
-
-
-Écoulement visqueux : Talent caché signature de Venolutra
-Invoque le champ nauséabond.
-
-Effet : Champ Nauséabond
-- Les Pokémon au sol arrivant sur le terrain perdent 1/16 de leur points de vie, et leur vitesse baisse d'un cran. Ils perdent également 1/16 de leur points de vie s'ils sont retiré pendant le tour. Les Pokémon de type Vol ou avec Lévitation ne sont donc pas affectés.
-- Les attaques de type Poison voient leur puissance augmenter de 30%.
-- Les Pokémon de type Poison récupère 1/16 de leur points de vie à chaque fin de tour.
-- 
-- Force Nature devient Bombe Beurk.
-- Force Cachée prend l'animation de Choc Venin, et peut Empoisonner la cible.
-- Un pokémon utilisant la capacité Camouflage prendra le type Poison.
-
-Capacité : Remous Putrides
-Type : Poison
-Catégorie : Spéciale
-PP : 10 (max. 16)
-Puissance : 70
-Précision : 100%
-Cible : N'importe quel Pokémon adjacent au lanceur.
-Particularités : Pas de contact avec le Pokémon adverse / Taux de critiques normal / Priorité normale
-Effet : Remous Putrides inflige des dégâts, et a 30% de chances d'empoisonner l'adversaire. Si un champ Nauséabond est actif et si le lanceur est au sol, la puissance de la capacité augmente de 50% et inflige un grave empoisonnement au lieu d'un empoisonnement.
-Description : Le lanceur crache une vague de liquide nauséabond, qui a une chance d'empoisonner l'adversaire. La puissance de cette attaque augmente et a une chance d'infliger un grave empoisonnement si le lanceur est sur un champ nauséabond.
-
-
-
 Les dix Anathémas :
 
 Longtemps oubliés, les Anathémas sont dix entités spectrales liées aux forces primitives de la nature.
@@ -223,12 +174,12 @@ Eau      - 17
 Vol      - 16
 Normal   - 12
 Spectre  - 12
+Sol      - 11
 Insecte  - 10
-Sol      - 10
+Ténèbres - 10
 Roche    - 9
 Feu      - 9
 Électrik - 9
-Ténèbres - 9
 Fée      - 8
 Dragon   - 8
 Plante   - 7

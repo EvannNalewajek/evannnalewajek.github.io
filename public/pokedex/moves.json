@@ -8489,6 +8489,38 @@
   },
   {
     "id": 525,
+    "slug": "appel-phéromonal",
+    "name": "Appel Phéromonal",
+    "type": "Insecte",
+    "category": "Spécial",
+    "power": 60,
+    "accuracy": 100,
+    "pp": 10,
+    "priority": 0,
+    "effet": "Appel Phéromonal inflige des dégâts. Si un [[docs:fields|Champ Myrmique]] est actif et si lanceur est au sol, la puissance de la capacité augmente de 50% (en plus des 30% d'augmentation dus au Champ) et convertit les dégâts infligés en [[docs:statistics|PV]] pour le lanceur.",
+    "description": "Le lanceur relâche des phéromones pour attirer les insectes aux alentours et frapper les ennemies. Si un Champ Myrmique est actif, la puissance de cette capacité augmente et soigne le lanceur.",
+    "makesContact": false,
+    "critRate": 0,
+    "targetPreset": "adjacent-foes-all"
+  },
+  {
+    "id": 526,
+    "slug": "remous-putrides",
+    "name": "Remous Putrides",
+    "type": "Poison",
+    "category": "Spécial",
+    "power": 70,
+    "accuracy": 100,
+    "pp": 10,
+    "priority": 0,
+    "effet": "Remous Putrides inflige des dégâts et a 30% de chances d'[[docs:status|empoisonner]] la cible. Si un [[docs:fields|Champ Nauséabond]] est actif et si lanceur est au sol, la puissance de la capacité augmente de 50% (en plus des 30% d'augmentation dus au Champ) et inflige un [[docs:status|grave empoisonnement]] au lieu d'un simple [[docs:status|empoisonnement]].",
+    "description": "Le lanceur crache une vague de liquide nauséabond, qui a une chance d'empoisonner l'adversaire. Si un Champ Nauséabond est actif, la puissance de cette capacité augmente et le poison infligé s'aggrave.",
+    "makesContact": false,
+    "critRate": 0,
+    "targetPreset": "adjacent-one"
+  },
+  {
+    "id": 527,
     "slug": "siphon-vital",
     "name": "Siphon Vital",
     "type": "Eau",
@@ -8504,7 +8536,7 @@
     "targetPreset": "adjacent-one"
   },
   {
-    "id": 526,
+    "id": 528,
     "slug": "transfert-spectrale",
     "name": "Transfert Spectrale",
     "type": "Spectre",
@@ -8520,7 +8552,7 @@
     "targetPreset": "all-one"
   },
   {
-    "id": 527,
+    "id": 529,
     "slug": "assaut-myriadique",
     "name": "Assaut Myriadique",
     "type": "Insecte",
@@ -8536,7 +8568,7 @@
     "targetPreset": "adjacent-one"
   },
   {
-    "id": 528,
+    "id": 530,
     "slug": "danse-macabre",
     "name": "Danse Macabre",
     "type": "Spectre",
@@ -8552,7 +8584,7 @@
     "targetPreset": "adjacent-one"
   },
   {
-    "id": 529,
+    "id": 531,
     "slug": "contagion",
     "name": "Contagion",
     "type": "Poison",
@@ -8567,7 +8599,7 @@
     "targetPreset": "all-ennemies"
   },
   {
-    "id": 530,
+    "id": 532,
     "slug": "flamme-croissante",
     "name": "Flamme Croissante",
     "type": "Feu",
@@ -8583,7 +8615,7 @@
     "targetPreset": "adjacent-one"
   },
   {
-    "id": 531,
+    "id": 533,
     "slug": "froid-penitent",
     "name": "Froid Pénitent",
     "type": "Glace",
@@ -8599,7 +8631,7 @@
     "targetPreset": "adjacent-one"
   },
   {
-    "id": 532,
+    "id": 534,
     "slug": "pillage-fantome",
     "name": "Pillage Fantôme",
     "type": "Spectre",
@@ -8615,7 +8647,7 @@
     "targetPreset": "adjacent-foes-all"
   },
   {
-    "id": 533,
+    "id": 535,
     "slug": "mirage-obscur",
     "name": "Mirage Obscur",
     "type": "Ténèbres",
@@ -8631,7 +8663,7 @@
     "targetPreset": "adjacent-one"
   },
   {
-    "id": 534,
+    "id": 536,
     "slug": "sanglot-funeste",
     "name": "Sanglot Funeste",
     "type": "Spectre",
@@ -8645,7 +8677,7 @@
     "targetPreset": "adjacent-one"
   },
   {
-    "id": 535,
+    "id": 537,
     "slug": "sanction-divine",
     "name": "Sanction Divine",
     "type": "Fée",
@@ -8661,7 +8693,7 @@
     "targetPreset": "adjacent-one"
   },
   {
-    "id": 536,
+    "id": 538,
     "slug": "charge-competitive",
     "name": "Charge Compétitive",
     "type": "Acier",

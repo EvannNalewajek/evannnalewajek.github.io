@@ -1921,6 +1921,39 @@
     }
   },
   {
+    "id": 80,
+    "slug": "mandibunice",
+    "name": "Mandibunice",
+    "types": ["Sol", "Ténèbres"],
+    "category": "Embuscade",
+    "abilities": [
+      "[[ability:piege-sable|Piège Sable]]",
+      "[[ability:hyper-cutter|Hyper Cutter]]"
+    ],
+    "hiddenAbility": "[[ability:force-sable|Force Sable]]",
+    "height_m": 2.8,
+    "weight_kg": 18.0,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 75,
+    "images": {
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
+    },
+    "baseStats": {
+      "hp": 65,
+      "atk": 120,
+      "def": 70,
+      "spa": 35,
+      "spd": 95,
+      "spe": 60
+    },
+    "description": "Il dissimule son long corps sous le sable en ne laissant dépasser que ses mâchoires. Lorsque quelque chose passe à portée, il surgit brutalement pour piéger sa proie avant qu'elle ne puisse pas fuir.",
+    "etymology": {
+    "Mandibule": "appendice buccal tranchant utilisé pour saisir et sectionner leurs proies",
+    "Eunice": "genre de vers marins auquel appartient le bobbit worm (Eunice aphroditois)"
+    }
+  },
+  {
     "id": 101,
     "slug": "damarel",
     "name": "Damarel",
