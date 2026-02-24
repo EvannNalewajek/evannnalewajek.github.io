@@ -30,16 +30,16 @@
           <h2>Les champs</h2>
           <p>
             Les champs sont des altérations du terrain de combat, qui affectent les Pokémon au sol.
-            À l'instar du climat, chaque champ modifie les règles du combat, ajoutant ainsi des bonus
+            À l'instar du <a class="name-link" [routerLink]="['/pokedex/docs/weather']">climat</a>, chaque champ modifie les règles du combat, ajoutant ainsi des bonus
             et des malus. Il peut également activer des talents et altérer des capacités.
           </p>
 
           <h3>Conditions</h3>
           <ul class="effect-list">
-            <li>Tout comme le climat, un seul champ peut être actif à la fois. L'activation d'un champ remplace le précédent en place.</li>
+            <li>Tout comme le <a class="name-link" [routerLink]="['/pokedex/docs/weather']">climat</a>, un seul champ peut être actif à la fois. L'activation d'un champ remplace le précédent en place.</li>
             <li>Un champ dure exactement 5 tours, sauf s'il a été remplacé par un autre champ.</li>
             <li>Un Pokémon ayant activé un champ peut continuer à attaquer durant son activation.</li>
-            <li>Un champ peut être cumulé avec un climat.</li>
+            <li>Un champ peut être cumulé avec un <a class="name-link" [routerLink]="['/pokedex/docs/weather']">climat</a>.</li>
           </ul>
         </section>
 
@@ -47,20 +47,16 @@
           <h2>Champ Électrifié</h2>
           <p>
             Le Champ Électrifié est activable par le biais de la capacité du même nom,
-            ou grâce au talent <strong>Créa-Élec</strong>. Il privilégie les Pokémon de type
-            Électrik. La <strong>Graine Électrik</strong> augmente la Défense du Pokémon la tenant,
+            ou grâce au talent <strong><a class="name-link" [routerLink]="['/pokedex/abilities/crea-elec']">Créa-Élec</a></strong>. Il privilégie les Pokémon de type
+            <a class="name-link" [routerLink]="['/pokedex/types/electrik']">Électrik</a>. La <strong><a class="name-link" [routerLink]="['/pokedex/docs/items/graine-electrik']">Graine Électrik</a></strong> augmente la <a class="name-link" [routerLink]="['/pokedex/docs/statistics']">Défense</a> du Pokémon la tenant,
             si un Champ Électrifié est activé.
           </p>
 
           <h3>Effets :</h3>
           <ul class="effect-list">
-            <li>Les Pokémon au sol ne peuvent pas s'endormir. Les Pokémon de type Vol ou avec Lévitation ne sont donc pas affectés.</li>
-            <li>Les attaques de type Électrik voient leur puissance augmenter de 30%.</li>
-            <li>La puissance de la capacité <em>Monte-Tension</em> double, s'élevant à 140.</li>
-            <li><em>Force Nature</em> devient <em>Tonnerre</em>.</li>
-            <li><em>Force Cachée</em> prend l'animation d'<em>Éclair</em>, et peut paralyser la cible.</li>
-            <li>Un Pokémon utilisant <em>Camouflage</em> prendra le type Électrik.</li>
-            <li>Un Pokémon ayant le talent <em>Surf Caudal</em> verra sa Vitesse doubler.</li>
+            <li>Les Pokémon au sol ne peuvent pas s'<a class="name-link" [routerLink]="['/pokedex/docs/status']">endormir</a>. Les Pokémon de type <a class="name-link" [routerLink]="['/pokedex/types/vol']">Vol</a> ou avec <a class="name-link" [routerLink]="['/pokedex/abilities/levitation']">Lévitation</a> ne sont donc pas affectés.</li>
+            <li>Les attaques de type <a class="name-link" [routerLink]="['/pokedex/types/electrik']">Électrik</a> voient leur puissance augmenter de 30%.</li>
+            <li>La puissance de la capacité <a class="name-link" [routerLink]="['/pokedex/moves/monte-tension']">Monte-Tension</a> double, s'élevant à 140.</li>
           </ul>
         </section>
 
@@ -68,20 +64,17 @@
           <h2>Champ Brumeux</h2>
           <p>
             Le Champ Brumeux est activable par le biais de la capacité du même nom,
-            ou grâce au talent <strong>Créa-Brume</strong>. Il privilégie les Pokémon de type
-            Fée. La <strong>Graine Brume</strong> augmente la Défense Spéciale du Pokémon la tenant,
+            ou grâce au talent <strong><a class="name-link" [routerLink]="['/pokedex/abilities/crea-brume']">Créa-Brume</a></strong>. Il privilégie les Pokémon de type
+            <a class="name-link" [routerLink]="['/pokedex/types/fee']">Fée</a>. La <strong><a class="name-link" [routerLink]="['/pokedex/docs/items/graine-brume']">Graine Brume</a></strong> augmente la <a class="name-link" [routerLink]="['/pokedex/docs/statistics']">Défense Spéciale</a> du Pokémon la tenant,
             si un Champ Brumeux est activé.
           </p>
 
           <h3>Effets :</h3>
           <ul class="effect-list">
-            <li>Les Pokémon au sol ne peuvent pas être affectés par une altération du statut. Les Pokémon de type Vol ou avec Lévitation ne sont donc pas affectés.</li>
-            <li><em>Bâillement</em> échoue, et les Pokémon ayant été affectés par cette capacité un tour avant l'installation du champ ne pourront pas s'endormir.</li>
-            <li>La puissance de la capacité <em>Explo-Brume</em> est multipliée par 1,5 et atteint 150.</li>
-            <li>Les attaques de type Dragon voient leur puissance diminuer de 50%.</li>
-            <li><em>Force Nature</em> devient <em>Pouvoir Lunaire</em>.</li>
-            <li><em>Force Cachée</em> prend l'animation de <em>Vent Féérique</em>, et peut baisser l'Attaque Spéciale de la cible.</li>
-            <li>Un Pokémon utilisant <em>Camouflage</em> prendra le type Fée.</li>
+            <li>Les Pokémon au sol ne peuvent pas être affectés par une <a class="name-link" [routerLink]="['/pokedex/docs/status']">altération de statut</a>. Les Pokémon de type <a class="name-link" [routerLink]="['/pokedex/types/vol']">Vol</a> ou avec <a class="name-link" [routerLink]="['/pokedex/abilities/levitation']">Lévitation</a> ne sont donc pas affectés.</li>
+            <li><a class="name-link" [routerLink]="['/pokedex/moves/baillement']">Bâillement</a> échoue, et les Pokémon ayant été affectés par cette capacité un tour avant l'installation du champ ne pourront pas s'<a class="name-link" [routerLink]="['/pokedex/docs/status']">endormir</a>.</li>
+            <li>La puissance de la capacité <a class="name-link" [routerLink]="['/pokedex/moves/explo-brume']">Explo-Brume</a> est multipliée par 1,5 et atteint 150.</li>
+            <li>Les attaques de type <a class="name-link" [routerLink]="['/pokedex/types/dragon']">Dragon</a> voient leur puissance diminuer de 50%.</li>
           </ul>
         </section>
 
@@ -89,21 +82,17 @@
           <h2>Champ Herbu</h2>
           <p>
             Le Champ Herbu est activable par le biais de la capacité du même nom,
-            ou grâce au talent <strong>Créa-Herbe</strong>. Il privilégie les Pokémon de type
-            Plante. La <strong>Graine Herbe</strong> augmente la Défense du Pokémon la tenant,
+            ou grâce au talent <strong><a class="name-link" [routerLink]="['/pokedex/abilities/crea-herbe']">Créa-Herbe</a></strong>. Il privilégie les Pokémon de type
+            <a class="name-link" [routerLink]="['/pokedex/types/plante']">Plante</a>. La <strong><a class="name-link" [routerLink]="['/pokedex/docs/items/graine-herbe']">Graine Herbe</a></strong> augmente la <a class="name-link" [routerLink]="['/pokedex/docs/statistics']">Défense</a> du Pokémon la tenant,
             si un Champ Herbu est activé.
           </p>
 
           <h3>Effets :</h3>
           <ul class="effect-list">
-            <li>Les Pokémon au sol récupèrent des points de vie. Les Pokémon de type Vol ou avec Lévitation ne sont donc pas affectés.</li>
-            <li>Les attaques de type Plante voient leur puissance augmenter de 30%.</li>
-            <li>Les capacités <em>Séisme</em>, <em>Piétisol</em> et <em>Ampleur</em> voient leur puissance diminuer de 50%.</li>
-            <li>La capacité <em>Gliss'Herbe</em> devient prioritaire.</li>
-            <li><em>Force Nature</em> devient <em>Éco-Sphère</em>.</li>
-            <li><em>Force Cachée</em> prend l'animation de <em>Fouet Liane</em>, et peut endormir la cible.</li>
-            <li>Un Pokémon utilisant <em>Camouflage</em> prendra le type Plante.</li>
-            <li>Le talent <em>Toison Herbu</em> s'active, et augmente la Défense de 50%.</li>
+            <li>Les Pokémon au sol récupèrent des points de vie. Les Pokémon de type <a class="name-link" [routerLink]="['/pokedex/types/vol']">Vol</a> ou avec <a class="name-link" [routerLink]="['/pokedex/abilities/levitation']">Lévitation</a> ne sont donc pas affectés.</li>
+            <li>Les attaques de type <a class="name-link" [routerLink]="['/pokedex/types/plante']">Plante</a> voient leur puissance augmenter de 30%.</li>
+            <li>Les capacités <a class="name-link" [routerLink]="['/pokedex/moves/seisme']">Séisme</a> et <a class="name-link" [routerLink]="['/pokedex/moves/pietisol']">Piétisol</a> voient leur puissance diminuer de 50%.</li>
+            <li>La capacité <a class="name-link" [routerLink]="['/pokedex/moves/glissherbe']">Gliss'Herbe</a> devient prioritaire.</li>
           </ul>
         </section>
 
@@ -111,19 +100,16 @@
           <h2>Champ Psychique</h2>
           <p>
             Le Champ Psychique est activable par le biais de la capacité du même nom,
-            ou grâce au talent <strong>Créa-Psy</strong>. Il privilégie les Pokémon de type
-            Psy. La <strong>Graine Psychique</strong> augmente la Défense Spéciale du Pokémon la tenant,
+            ou grâce au talent <strong><a class="name-link" [routerLink]="['/pokedex/abilities/crea-psy']">Créa-Psy</a></strong>. Il privilégie les Pokémon de type
+            <a class="name-link" [routerLink]="['/pokedex/types/psy']">Psy</a>. La <strong><a class="name-link" [routerLink]="['/pokedex/docs/items/graine-psy']">Graine Psychique</a></strong> augmente la <a class="name-link" [routerLink]="['/pokedex/docs/statistics']">Défense Spéciale</a> du Pokémon la tenant,
             si un Champ Psychique est activé.
           </p>
 
           <h3>Effets :</h3>
           <ul class="effect-list">
-            <li>Les Pokémon au sol ne peuvent plus subir de capacités prioritaires. Les Pokémon de type Vol ou avec Lévitation ne sont donc pas affectés.</li>
-            <li>Les attaques de type Psy voient leur puissance augmenter de 30%.</li>
-            <li>La puissance de la capacité <em>Vaste Pouvoir</em> est augmentée de 50%. Avec le boost de 30% du type Psy, sa puissance passe à 160.</li>
-            <li><em>Force Nature</em> devient <em>Psyko</em>.</li>
-            <li><em>Force Cachée</em> prend l'animation de <em>Choc Mental</em>, et peut baisser la Défense Spéciale de la cible.</li>
-            <li>Un Pokémon utilisant <em>Camouflage</em> prendra le type Psy.</li>
+            <li>Les Pokémon au sol ne peuvent plus subir de capacités prioritaires. Les Pokémon de type <a class="name-link" [routerLink]="['/pokedex/types/vol']">Vol</a> ou avec <a class="name-link" [routerLink]="['/pokedex/abilities/levitation']">Lévitation</a> ne sont donc pas affectés.</li>
+            <li>Les attaques de type <a class="name-link" [routerLink]="['/pokedex/types/psy']">Psy</a> voient leur puissance augmenter de 30%.</li>
+            <li>La puissance de la capacité <a class="name-link" [routerLink]="['/pokedex/moves/vaste-pouvoir']">Vaste Pouvoir</a> est augmentée de 50%. Avec le boost de 30% du type <a class="name-link" [routerLink]="['/pokedex/types/psy']">Psy</a>, sa puissance passe à 160.</li>
           </ul>
         </section>
 
@@ -131,21 +117,18 @@
           <h2>Champ Myrmique</h2>
           <p>
             Le Champ Myrmique est activable par le biais de la capacité du même nom,
-            ou grâce au talent <strong>Créa-Insecte</strong>. Il privilégie les Pokémon de type
-            Insecte. Il affecte les Pokémon au sol de manière délétère,
-            sauf les types Insecte.
+            ou grâce au talent <strong><a class="name-link" [routerLink]="['/pokedex/abilities/crea-nectar']">Créa-Nectar</a></strong>. Il privilégie les Pokémon de type
+            <a class="name-link" [routerLink]="['/pokedex/types/insecte']">Insecte</a>. La <strong><a class="name-link" [routerLink]="['/pokedex/docs/items/graine-insecte']">Graine Insecte</a></strong> augmente la <a class="name-link" [routerLink]="['/pokedex/docs/statistics']">Défense</a> du Pokémon la tenant,
+            si un Champ Myrmique est activé.
           </p>
 
           <h3>Effets :</h3>
           <ul class="effect-list">
-            <li>Les Pokémon au sol perdent des points de vie, à l'exception des Pokémon de type Insecte.
-                Les Pokémon de type Vol ou avec Lévitation ne sont donc pas affectés.</li>
-            <li>Les attaques de type Insecte voient leur puissance augmenter de 30%.</li>
+            <li>Les Pokémon au sol perdent des points de vie, à l'exception des Pokémon de type <a class="name-link" [routerLink]="['/pokedex/types/insecte']">Insecte</a>.
+                Les Pokémon de type <a class="name-link" [routerLink]="['/pokedex/types/vol']">Vol</a> ou avec <a class="name-link" [routerLink]="['/pokedex/abilities/levitation']">Lévitation</a> ne sont donc pas affectés.</li>
+            <li>Les attaques de type <a class="name-link" [routerLink]="['/pokedex/types/insecte']">Insecte</a> voient leur puissance augmenter de 30%.</li>
             <li>Les Pokémon au sol tenant une Baie voient leur objet se faire détruire.</li>
-            <li>La puissance de la capacité <em>Appel Phéromonal</em> est augmentée de 50%, et peut désormais convertir la moitié des dégâts infligés en PV pour le lanceur.</li>
-            <li><em>Force Nature</em> devient <em>Bourdon</em>.</li>
-            <li><em>Force Cachée</em> prend l'animation de <em>Survinsecte</em>, et peut baisser la Défense Spéciale de la cible.</li>
-            <li>Un Pokémon utilisant la capacité <em>Camouflage</em> prendra le type Insecte.</li>
+            <li>La puissance de la capacité <a class="name-link" [routerLink]="['/pokedex/moves/appel-pheromonal']">Appel Phéromonal</a> est augmentée de 50%, et peut désormais convertir la moitié des dégâts infligés en PV pour le lanceur.</li>
           </ul>
         </section>
 
@@ -153,21 +136,19 @@
           <h2>Champ Nauséabond</h2>
           <p>
             Le Champ Nauséabond est activable par le biais de la capacité du même nom,
-            ou grâce au talent <strong>Créa-Poison</strong>. Il privilégie les Pokémon de type
-            Poison. Il affaiblit les Pokémon au sol et favorise la régénération des poisons.
+            ou grâce au talent <strong><a class="name-link" [routerLink]="['/pokedex/abilities/crea-miasme']">Créa-Miasme</a></strong>. Il privilégie les Pokémon de type
+            <a class="name-link" [routerLink]="['/pokedex/types/poison']">Poison</a>. La <strong><a class="name-link" [routerLink]="['/pokedex/docs/items/graine-poison']">Graine Poison</a></strong> augmente la <a class="name-link" [routerLink]="['/pokedex/docs/statistics']">Défense Spéciale</a> du Pokémon la tenant,
+            si un Champ Nauséabond est activé.
           </p>
 
           <h3>Effets :</h3>
           <ul class="effect-list">
             <li>Les Pokémon au sol arrivant sur le terrain perdent 1/16 de leurs points de vie,
-                et leur Vitesse baisse d'un cran. Ils perdent également 1/16 de leurs points de vie
-                s'ils sont retirés pendant le tour. Les Pokémon de type Vol ou avec Lévitation
+                et leur <a class="name-link" [routerLink]="['/pokedex/docs/statistics']">Vitesse</a> baisse d'un cran. Ils perdent également 1/16 de leurs points de vie
+                s'ils sont retirés pendant le tour. Les Pokémon de type <a class="name-link" [routerLink]="['/pokedex/types/vol']">Vol</a> ou avec <a class="name-link" [routerLink]="['/pokedex/abilities/levitation']">Lévitation</a>
                 ne sont donc pas affectés.</li>
-            <li>Les attaques de type Poison voient leur puissance augmenter de 30%.</li>
-            <li>Les Pokémon de type Poison récupèrent 1/16 de leurs points de vie à chaque fin de tour.</li>
-            <li><em>Force Nature</em> devient <em>Bombe Beurk</em>.</li>
-            <li><em>Force Cachée</em> prend l'animation de <em>Choc Venin</em>, et peut empoisonner la cible.</li>
-            <li>Un Pokémon utilisant la capacité <em>Camouflage</em> prendra le type Poison.</li>
+            <li>Les attaques de type <a class="name-link" [routerLink]="['/pokedex/types/poison']">Poison</a> voient leur puissance augmenter de 30%.</li>
+            <li>Les Pokémon de type <a class="name-link" [routerLink]="['/pokedex/types/poison']">Poison</a> récupèrent 1/16 de leurs points de vie à chaque fin de tour.</li>
           </ul>
         </section>
 
