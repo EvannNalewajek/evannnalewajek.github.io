@@ -8521,6 +8521,36 @@
   },
   {
     "id": 527,
+    "slug": "ruee-draconique",
+    "name": "Ruée Draconique",
+    "type": "Dragon",
+    "category": "Physique",
+    "power": 70,
+    "accuracy": 100,
+    "pp": 5,
+    "priority": 1,
+    "effet": "Ruée Draconique inflige des dégâts et possède une priorité de +1. Ne fonctionne que sur les cibles marqué d'une Prime.",
+    "description": "Le lanceur charge sa cible de toutes ses forces avant même qu'elle ne puisse réagir. Frappe en priorité. Ne fonctionne que sur les cibles marquées d'une Prime.",
+    "makesContact": true,
+    "critRate": 0,
+    "targetPreset": "adjacent-one"
+  },
+  {
+    "id": 528,
+    "slug": "ange-des-neiges",
+    "name": "Ange des Neiges",
+    "type": "Glace",
+    "category": "Statut",
+    "pp": 10,
+    "priority": 0,
+    "effet": "Ange des Neiges restaure 1/4 des PV du lanceur et de ses alliés. Sous la [[docs:weather|tempête de neige]], augmente également la [[docs:statistics|Défense Spéciale]] du lanceur et de ses alliés.",
+    "description": "Le lanceur déploie son aura, ressemblant à un ange de neige, qui restaure les PV du lanceur et de ses alliés. Sous la tempête de neige, cela augmente aussi leur Défense Spéciale.",
+    "makesContact": false,
+    "critRate": 0,
+    "targetPreset": "all-allies"
+  },
+  {
+    "id": 529,
     "slug": "siphon-vital",
     "name": "Siphon Vital",
     "type": "Eau",
@@ -8536,7 +8566,7 @@
     "targetPreset": "adjacent-one"
   },
   {
-    "id": 528,
+    "id": 530,
     "slug": "transfert-spectrale",
     "name": "Transfert Spectrale",
     "type": "Spectre",
@@ -8552,7 +8582,7 @@
     "targetPreset": "all-one"
   },
   {
-    "id": 529,
+    "id": 531,
     "slug": "assaut-myriadique",
     "name": "Assaut Myriadique",
     "type": "Insecte",
@@ -8568,7 +8598,7 @@
     "targetPreset": "adjacent-one"
   },
   {
-    "id": 530,
+    "id": 532,
     "slug": "danse-macabre",
     "name": "Danse Macabre",
     "type": "Spectre",
@@ -8584,7 +8614,7 @@
     "targetPreset": "adjacent-one"
   },
   {
-    "id": 531,
+    "id": 533,
     "slug": "contagion",
     "name": "Contagion",
     "type": "Poison",
@@ -8599,7 +8629,7 @@
     "targetPreset": "all-ennemies"
   },
   {
-    "id": 532,
+    "id": 534,
     "slug": "flamme-croissante",
     "name": "Flamme Croissante",
     "type": "Feu",
@@ -8615,7 +8645,7 @@
     "targetPreset": "adjacent-one"
   },
   {
-    "id": 533,
+    "id": 535,
     "slug": "froid-penitent",
     "name": "Froid Pénitent",
     "type": "Glace",
@@ -8631,7 +8661,7 @@
     "targetPreset": "adjacent-one"
   },
   {
-    "id": 534,
+    "id": 536,
     "slug": "pillage-fantome",
     "name": "Pillage Fantôme",
     "type": "Spectre",
@@ -8647,7 +8677,7 @@
     "targetPreset": "adjacent-foes-all"
   },
   {
-    "id": 535,
+    "id": 537,
     "slug": "mirage-obscur",
     "name": "Mirage Obscur",
     "type": "Ténèbres",
@@ -8663,7 +8693,7 @@
     "targetPreset": "adjacent-one"
   },
   {
-    "id": 536,
+    "id": 538,
     "slug": "sanglot-funeste",
     "name": "Sanglot Funeste",
     "type": "Spectre",
@@ -8677,7 +8707,7 @@
     "targetPreset": "adjacent-one"
   },
   {
-    "id": 537,
+    "id": 539,
     "slug": "sanction-divine",
     "name": "Sanction Divine",
     "type": "Fée",
@@ -8693,7 +8723,7 @@
     "targetPreset": "adjacent-one"
   },
   {
-    "id": 538,
+    "id": 540,
     "slug": "charge-competitive",
     "name": "Charge Compétitive",
     "type": "Acier",

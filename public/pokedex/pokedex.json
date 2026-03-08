@@ -1954,6 +1954,50 @@
     }
   },
   {
+    "id": 81,
+    "slug": "fenragon",
+    "name": "Fenragon",
+    "types": ["Dragon", "Ténèbres"],
+    "category": "Prédateur",
+    "abilities": ["[[ability:chasseur-de-prime|Chasseur de Prime]]"],
+    "height_m": 1.9,
+    "weight_kg": 92.0,
+    "genderRatio": "genderless",
+    "captureRate": 12,
+    "images": {
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
+    },
+    "baseStats": { "hp": 85, "atk": 135, "def": 80, "spa": 60, "spd": 85, "spe": 125 },
+    "description": "Il est le prédateur ultime, capable de traquer n'importe quelle proie grâce à son ouïe surdéveloppée et sa vitesse fulgurante. Son rugissement résonne comme un grondement de tonnerre, annonçant sa présence avant même qu'il ne soit visible.",
+    "etymology": {
+      "Fenrir": "loup gigantesque de la mythologie nordique",
+      "Dragon": "créature mythologique"
+    }
+  },
+  {
+    "id": 82,
+    "slug": "boreacal",
+    "name": "Boreacal",
+    "types": ["Glace", "Fée"],
+    "category": "Caracal",
+    "abilities": ["[[ability:prescience-boreale|Prescience Boréale]]"],
+    "height_m": 1.9,
+    "weight_kg": 85.0,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 12,
+    "images": {
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
+    },
+    "baseStats": { "hp": 95, "atk": 70, "def": 90, "spa": 95, "spd": 120, "spe": 85 },
+    "description": "On raconte que Boreacal apparaît lors des tempêtes de neige pour guider les voyageurs perdus. Les plumets glacés de ses oreilles captent les moindres mouvements et lui permettent d'anticiper les attaques de ses adversaires.",
+    "etymology": {
+      "Boréal": "relatif aux régions froides du nord et aux aurores boréales",
+      "Caracal": "félin sauvage reconnaissable à ses longues oreilles ornées de plumets"
+    }
+  },
+  {
     "id": 101,
     "slug": "damarel",
     "name": "Damarel",
