@@ -616,8 +616,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/golerock_sprite.png",
+      "artwork": "pokedex/img/pokemon/golerock_artwork.png"
     },
     "baseStats": { "hp": 113, "atk": 136, "def": 102, "spa": 45, "spd": 74, "spe": 35 },
     "description": "Ses poings peuvent faire trembler le sol et fracturer n'importe quelle armure.",
