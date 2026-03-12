@@ -304,7 +304,7 @@
     "id": 13,
     "slug": "myrmilia",
     "name": "Myrmilia",
-    "formName": "female",
+    "formName": "Femelle",
     "types": ["Insecte", "Sol"],
     "category": "Fourmi ouvrier",
     "abilities": ["[[ability:essaim|Essaim]]"],
@@ -328,7 +328,7 @@
     "id": 13,
     "slug": "myrmilia",
     "name": "Myrmilia",
-    "formName": "male",
+    "formName": "Mâle",
     "types": ["Insecte", "Sol"],
     "category": "Fourmi ouvrier",
     "abilities": ["[[ability:essaim|Essaim]]"],
@@ -639,8 +639,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 190,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/nouganine_sprite.png",
+      "artwork": "pokedex/img/pokemon/nouganine_artwork.png"
     },
     "baseStats": { "hp": 70, "atk": 70, "def": 45, "spa": 35, "spd": 40, "spe": 80 },
     "description": "Il découvre son environnement en mordillant ce qui lui passe sous le museau. Il a un faible pour les sucreries.",
@@ -653,6 +653,7 @@
     "id": 27,
     "slug": "cervident",
     "name": "Cervident",
+    "formName": "Mâle",
     "types": ["Normal"],
     "category": "Canine",
     "abilities": ["[[ability:herbivore|Herbivore]]", "[[ability:fuite|Fuite]]"],
@@ -662,8 +663,32 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 100,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/cervident_m_sprite.png",
+      "artwork": "pokedex/img/pokemon/cervident_m_artwork.png"
+    },
+    "baseStats": { "hp": 92, "atk": 98, "def": 73, "spa": 57, "spd": 60, "spe": 100 },
+    "description": "Seul les mâles possèdent des crocs. Ils s'en servent plutôt pour dissuader que pour se battre avec.",
+    "etymology": {
+      "cervidé": "famille de mammifères herbivores comprenant les cerfs et les daims",
+      "dent": "dentaire en référence aux dents de chien"
+    }
+  },
+  {
+    "id": 27,
+    "slug": "cervident",
+    "name": "Cervident",
+    "formName": "Femelle",
+    "types": ["Normal"],
+    "category": "Canine",
+    "abilities": ["[[ability:herbivore|Herbivore]]", "[[ability:fuite|Fuite]]"],
+    "hiddenAbility": "[[ability:impudence|Impudence]]",
+    "height_m": 1.6,
+    "weight_kg": 74.1,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 100,
+    "images": {
+      "sprite": "pokedex/img/pokemon/cervident_f_sprite.png",
+      "artwork": "pokedex/img/pokemon/cervident_f_artwork.png"
     },
     "baseStats": { "hp": 92, "atk": 98, "def": 73, "spa": 57, "spd": 60, "spe": 100 },
     "description": "Seul les mâles possèdent des crocs. Ils s'en servent plutôt pour dissuader que pour se battre avec.",
