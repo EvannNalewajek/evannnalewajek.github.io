@@ -174,20 +174,20 @@ Eau      - 16
 Vol      - 16
 Normal   - 12
 Spectre  - 12
+Ténèbres - 12
 Sol      - 11
-Ténèbres - 11
 Insecte  - 10
+Feu      - 10
+Électrik - 10
+Fée      - 10
 Roche    - 9
-Feu      - 9
-Électrik - 9
-Fée      - 8
 Dragon   - 8
 Plante   - 7
 Poison   - 7
 Acier    - 7
 Combat   - 7
 Glace    - 6
-Psy      - 5
+Psy      - 6
 
 Modification de l'effet hors combat du talent Synchro : Si un Pokémon avec Synchro est placé en tête d'équipe, alors le joueur rencontrera un Pokémon sauvage avec la même nature que lui. Cet effet s'applique également sur les Œufs et les Fossiles.
 
@@ -252,3 +252,59 @@ Elle demande si l'on allait lui proposer de sortir pour se changer les idées. O
 L'humour derrière cette scène est que le protagoniste est muet, mais le jeu joue sur l'expression "qui ne dit mot consent".
 Alors on passe par plusieurs scènes où l'on passe du temps avec la championne : restaurant, park, attractions,...
 Jusqu'à une scène où elle se confit à nous. On en apprend plus sur son passé, ses parents, etc ...
+
+ 1. Colère (Wrath) — Type : FEU
+   * Pokémon : Igniratel (Inspiré du Ratel/Honey Badger)
+   * Concept : Le ratel est l'animal le plus agressif au monde. Igniratel possède une fourrure qui ne brûle pas, mais
+     qui dégage une chaleur étouffante. Sa capacité spéciale, "Rage Interne", augmente son Attaque à chaque fois qu'il
+     subit un coup critique. C'est l'incarnation de la fureur aveugle qui consume tout.
+
+
+  2. Avarice (Greed) — Type : TÉNÈBRES
+   * Pokémon : Piculat (Inspiré de la Pie-grièche et du Fafnir nordique)
+   * Concept : Cet oiseau empale non pas ses proies, mais des objets brillants sur des épines pour marquer son
+     territoire. Son corps est recouvert de débris métalliques et de gemmes qu'il a volés. Plus il possède d'objets
+     (baies, restes), plus sa Défense augmente, mais sa Vitesse baisse.
+
+
+  3. Envie (Envy) — Type : SPECTRE
+   * Pokémon : Coucouchemar (Inspiré de l'Oiseau-Coucou)
+   * Concept : Le coucou pond dans le nid des autres. Ce Pokémon n'a pas de forme fixe ; il ressemble à une ombre qui
+     essaie désespérément de copier l'apparence de son adversaire pour lui voler sa place. Son talent "Usurpation" lui
+     permet de copier le talent de l'adversaire dès son entrée en jeu.
+
+
+  4. Orgueil (Pride) — Type : FÉE
+   * Pokémon : Majestictine (Inspiré du Paon Blanc et de Narcisse)
+   * Concept : Un paon dont les plumes sont des miroirs de cristal. Il passe son temps à s'admirer. Si un adversaire le
+     regarde trop longtemps (baisse de précision), il est ébloui par la propre image de sa "perfection". Son attaque
+     signature, "Reflet de Gloire", inflige des dégâts basés sur la différence de stats de boost entre lui et
+     l'adversaire.
+
+
+  5. Gourmandise (Gluttony) — Type : PLANTE
+   * Pokémon : Venosuccion (Inspiré de la Népenthès / Plante carnivore)
+   * Concept : Ce Pokémon ressemble à une urne géante pleine d'un nectar irrésistible. Il ne photosynthétise plus ; il a
+     besoin de consommer de la matière organique en permanence. Son talent "Abysse Stomacal" lui permet de regagner des
+     PV à chaque fois qu'il utilise une capacité de type Plante sur une cible affaiblie.
+
+
+  6. Paresse (Sloth) — Type : PSY
+   * Pokémon : Somnilus (Inspiré de la Méduse et du concept de Mélancolie)
+   * Concept : (Parfait pour ta championne dépressive). Une créature quasi transparente qui flotte dans une bulle de
+     temps ralenti. Il ne bouge pas, il laisse les autres s'épuiser contre son champ de force psychique. Son talent
+     "Apathie" force l'adversaire à n'attaquer qu'un tour sur deux (comme paresse, mais imposé à l'autre).
+
+
+  7. Luxure (Lust) — Type : ÉLECTRIK
+   * Pokémon : Néonymphe (Inspiré de la Baudroie abyssale et des Sirenes)
+   * Concept : Elle utilise des impulsions électriques pour stimuler les centres du plaisir ou de la douleur du cerveau.
+     Elle brille de mille couleurs néon pour attirer ses proies dans l'obscurité. Son talent "Charme Statique" a une
+     chance de rendre amoureux ET de paralyser au contact.
+
+
+  8. Vertu (Virtue) — Type : ACIER
+   * Pokémon : Justarmor (Inspiré du Komainu / Lion gardien japonais)
+   * Concept : Le champion de la Vertu représente l'ordre inflexible. Justarmor est une armure de samouraï animée, faite
+     d'un métal qui ne peut être forgé que par une volonté pure. Il ne possède aucune attaque offensive directe (ou très
+     peu) ; il gagne en renvoyant la force de l'adversaire contre lui. C'est le "poids" de la responsabilité.

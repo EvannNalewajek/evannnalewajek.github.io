@@ -2135,6 +2135,17 @@
   },
   {
     "id": 195,
+    "slug": "rage-interieure",
+    "name": "Rage Intérieure",
+    "battleEffectCondition": "Lors d'une capacité adverse",
+    "battleEffectShort": "Si ce Pokémon subit un coup critique, son [[docs:statistics|Attaque]] augmente d'un cran. De plus, il est immunisé contre la [[docs:status|peur]].",
+    "battleEffectLong": "Si lors de son attaque, le Pokémon adverse subit un coup critique, le Pokémon doté de ce talent voit son [[docs:statistics|Attaque]] augmenter d'un cran. De plus, il est immunisé contre la [[docs:status|peur]].",
+    "fieldEffectCondition": "Sans effet",
+    "fieldEffectLong": "Rage Intérieure n'a aucun effet hors combat.",
+    "description": "Sa colère monte à chaque coup critique subi, ce qui augmente son Attaque. Il est également immunisé contre la peur."
+  },
+  {
+    "id": 196,
     "slug": "maree-pourpre",
     "name": "Marée Pourpre",
     "battleEffectCondition": "Lors de son attaque",

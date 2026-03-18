@@ -1952,9 +1952,7 @@
     "types": ["Sol", "Ténèbres"],
     "category": "Embuscade",
     "abilities": [
-      "[[ability:piege-sable|Piège Sable]]",
-      "[[ability:hyper-cutter|Hyper Cutter]]"
-    ],
+      "[[ability:piege-sable|Piège Sable]]", "[[ability:hyper-cutter|Hyper Cutter]]"],
     "hiddenAbility": "[[ability:force-sable|Force Sable]]",
     "height_m": 2.8,
     "weight_kg": 18.0,
@@ -2020,6 +2018,75 @@
     "etymology": {
       "Boréal": "relatif aux régions froides du nord et aux aurores boréales",
       "Caracal": "félin sauvage reconnaissable à ses longues oreilles ornées de plumets"
+    }
+  },
+  {
+    "id": 83,
+    "slug": "courratel",
+    "name": "Courratel",
+    "types": ["Feu", "Ténèbres"],
+    "category": "Fureur",
+    "abilities": ["[[ability:acharne|Acharné]]", "[[ability:querelleur|Querelleur]]"],
+    "hiddenAbility": "[[ability:rage-interieure|Rage Intérieure]]",
+    "height_m": 0.8,
+    "weight_kg": 35.4,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 45,
+    "images": {
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
+    },
+    "baseStats": { "hp": 95, "atk": 130, "def": 105, "spa": 45, "spd": 75, "spe": 80 },
+    "description": "Ce Pokémon ne connaît pas la peur. Sa température corporelle grimpe en flèche dès qu'il se sent menacé, transformant sa sueur en une vapeur brûlante.",
+    "etymology": {
+      "Courroux": "Irritation virulente contre un offenseur",
+      "Ratel": "Blaireau d'Afrique connu pour son agressivité envers ses prédateurs"
+    }
+  },
+  {
+    "id": 84,
+    "slug": "melirene",
+    "name": "Mélirène",
+    "types": ["Électrik", "Fée"],
+    "category": "Passion",
+    "abilities": ["[[ability:joli-sourire|Joli Sourire]]", "[[ability:luminescence|Luminescence]]"],
+    "hiddenAbility": "[[ability:peau-feerique|Peau Féérique]]",
+    "height_m": 1.3,
+    "weight_kg": 28.0,
+    "genderRatio": { "male": 0.0, "female": 100.0 },
+    "captureRate": 45,
+    "images": {
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
+    },
+    "baseStats": { "hp": 85, "atk": 50, "def": 75, "spa": 125, "spd": 95, "spe": 100 },
+    "description": "Ses impulsions électriques stimulent les centres du plaisir de ses proies, les plongeant dans une transe euphorique avant qu'elle ne les paralyse d'un simple contact.",
+    "etymology": {
+      "Melanocetus": "Genre scientifique de la baudroie abyssale",
+      "Sirène": "Créature mythologique attirant les marins par son charme"
+    }
+  },
+  {
+    "id": 85,
+    "slug": "majestine",
+    "name": "Majestine",
+    "types": ["Fée", "Psy"],
+    "category": "Grâce",
+    "abilities": ["[[ability:corps-sain|Corps Sain]]"],
+    "hiddenAbility": "[[ability:miroir-magik|Miroir Magik]]",
+    "height_m": 1.2,
+    "weight_kg": 15.6,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 30,
+    "images": {
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
+    },
+    "baseStats": { "hp": 70, "atk": 60, "def": 80, "spa": 115, "spd": 125, "spe": 80 },
+    "description": "Il passe des heures à contempler son reflet dans les sources d'eau pure. On dit qu'il absorbe la confiance en soi des personnes regardant leur reflet à travers ses plumes de cristal.",
+    "etymology": {
+      "Majesté": "Caractère de ce qui est grand, noble et sacré",
+      "Cristalline": "Qui a la clarté ou la structure du cristal"
     }
   },
   {
