@@ -780,8 +780,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 190,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/bronzillon_sprite.png",
+      "artwork": "pokedex/img/pokemon/bronzillon_artwork.png"
     },
     "baseStats": { "hp": 45, "atk": 55, "def": 40, "spa": 55, "spd": 40, "spe": 75 },
     "description": "Il reste aux côtés de ses parents, qui le nourrissent et lui apprennent à voler, même s'il est très maladroit, que ce soit pour marcher ou pour voler.",
@@ -803,8 +803,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 120,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/plumargent_sprite.png",
+      "artwork": "pokedex/img/pokemon/plumargent_artwork.png"
     },
     "baseStats": { "hp": 60, "atk": 60, "def": 55, "spa": 60, "spd": 55, "spe": 100 },
     "description": "Son plumage présente des reflets sous le soleil. On dit que sa présence est synonyme de richesse et propérité.",
@@ -827,8 +827,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/orfaisan_feu_sprite.png",
+      "artwork": "pokedex/img/pokemon/orfaisan_feu_artwork.png"
     },
     "baseStats": { "hp": 85, "atk": 65, "def": 75, "spa": 125, "spd": 75, "spe": 85 },
     "description": "Selon l'élément qu'il a absorbé, ses plumes changent de couleur et de forme. Sa collerette lui sert de réservoir d'énergie élémentaire.",
@@ -851,8 +851,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/orfaisan_elek_sprite.png",
+      "artwork": "pokedex/img/pokemon/orfaisan_elek_artwork.png"
     },
     "baseStats": { "hp": 75, "atk": 70, "def": 65, "spa": 95, "spd": 80, "spe": 125 },
     "description": "Selon l'élément qu'il a absorbé, ses plumes changent de couleur et de forme. Sa collerette lui sert de réservoir d'énergie élémentaire.",
@@ -875,8 +875,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/orfaisan_eau_sprite.png",
+      "artwork": "pokedex/img/pokemon/orfaisan_eau_artwork.png"
     },
     "baseStats": { "hp": 95, "atk": 70, "def": 75, "spa": 70, "spd": 125, "spe": 75 },
     "description": "Selon l'élément qu'il a absorbé, ses plumes changent de couleur et de forme. Sa collerette lui sert de réservoir d'énergie élémentaire.",
