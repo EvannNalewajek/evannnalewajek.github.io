@@ -921,8 +921,8 @@
     "genderRatio": { "male": 50, "female": 50 },
     "captureRate": 60,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/vesperine_sprite.png",
+      "artwork": "pokedex/img/pokemon/vesperine_artwork.png"
     },
     "baseStats": { "hp": 66, "atk": 87, "def": 75, "spa": 88, "spd": 75, "spe": 75 },
     "description": "Il parcourt la région pour soigner les Pokémon malades. Les récits anciens affirment qu'il aurait jadis protégé humains et Pokémon d'une épidémie qui menaçait de tout anéantir.",
@@ -944,8 +944,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/albydro_sprite.png",
+      "artwork": "pokedex/img/pokemon/albydro_artwork.png"
     },
     "baseStats": { "hp": 65, "atk":80, "def": 64, "spa": 50, "spd": 60, "spe": 40 },
     "description": "Il vivait dans des zones humides et marécageuses, il y a environ 100 millions d'années. Il chasse de petits poissons à l'aide de son museau effilé, parfaitement adapté à l'eau trouble.",
@@ -956,7 +956,7 @@
   },
   {
     "id": 37,
-    "slug": "Spinadra",
+    "slug": "spinadra",
     "name": "Spinadra",
     "types": ["Roche", "Eau"],
     "category": "Spinosaure",
@@ -967,8 +967,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/spinadra_sprite.png",
+      "artwork": "pokedex/img/pokemon/spinadra_artwork.png"
     },
     "baseStats": { "hp": 90, "atk": 110, "def": 100, "spa": 70, "spd": 80, "spe": 55 },
     "description": "Son dos est orné d'une immense voile qu'il utilisait pour réguler sa température et intimider ses proies. On raconte que ses rugissements pouvaient faire vibrer la surface des marécages.",
@@ -990,8 +990,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/vibranite_sprite.png",
+      "artwork": "pokedex/img/pokemon/vibranite_artwork.png"
     },
     "baseStats": { "hp": 62, "atk": 50, "def": 55, "spa": 85, "spd": 60, "spe": 47 },
     "description": "Ce joyeux Pokémon adore utiliser tous les objets qui l'entour pour faire du bruit avec. Sa mélodie préférée est celle de la pluie, mais il déteste le son de l'orage.",
@@ -1002,7 +1002,7 @@
   },
   {
     "id": 39,
-    "slug": "Symphodon",
+    "slug": "symphodon",
     "name": "Symphodon",
     "types": ["Roche", "Normal"],
     "category": "Parasaurolophus",
@@ -1013,8 +1013,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/symphodon_sprite.png",
+      "artwork": "pokedex/img/pokemon/symphodon_artwork.png"
     },
     "baseStats": { "hp": 88, "atk": 70, "def": 75, "spa": 115, "spd": 90, "spe": 67 },
     "description": "Sa crête allongée agit comme une chambre de résonance. Les sons graves qu'il émet pouvaient parcourir des kilomètres à travers le sol. Jadis, ses chants unissaient les troupeaux et apaisaient les prédateurs.",
@@ -1036,8 +1036,8 @@
     "genderRatio": { "male": 50, "female": 50 },
     "captureRate": 190,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/fouboubec_sprite.png",
+      "artwork": "pokedex/img/pokemon/fouboubec_artwork.png"
     },
     "baseStats": { "hp": 50, "atk": 60, "def": 50, "spa": 45, "spd": 60, "spe": 60 },
     "description": "Il est toujours en quête de chaleur, c'est pour cela qu'il est recouvert d'un duvet blanc et passe la plus grande partie de ses journées blotti contre les jambes de ses parents.",
@@ -1060,8 +1060,8 @@
     "genderRatio": { "male": 50, "female": 50 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/sulapagos_sprite.png",
+      "artwork": "pokedex/img/pokemon/sulapagos_artwork.png"
     },
     "baseStats": { "hp": 70, "atk": 90, "def": 60, "spa": 75, "spd": 80, "spe": 100 },
     "description": "La couleur de ses pieds vient de son alimentation riche en poissons et crustacés. Il utilise ses ailes pour plonger dans l'eau à la recherche de nourriture.",
@@ -1083,8 +1083,8 @@
     "genderRatio": { "male": 50, "female": 50 },
     "captureRate": 100,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/becoquin_sprite.png",
+      "artwork": "pokedex/img/pokemon/becoquin_artwork.png"
     },
     "baseStats": { "hp": 70, "atk": 85, "def": 80, "spa": 55, "spd": 75, "spe": 35 },
     "description": "Il communique peu et reste la plupart du temps très silencieux. Les seules sons qu'il est capable de faire sont des petits hoquets, ou des claquements de bec.",
@@ -1106,8 +1106,8 @@
     "genderRatio": { "male": 50, "female": 50 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/becosto_sprite.png",
+      "artwork": "pokedex/img/pokemon/becosto_artwork.png"
     },
     "baseStats": { "hp": 90, "atk": 115, "def": 100, "spa": 75, "spd": 95, "spe": 45 },
     "description": "Il a tendance à préférer bouger peu, et observer les autres Pokémon aux alentours, ce qui les mets souvent mal à l'aise à cause de ses grand yeux immobiles.",
