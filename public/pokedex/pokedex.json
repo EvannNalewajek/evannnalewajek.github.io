@@ -1135,7 +1135,7 @@
     "baseStats": { "hp": 68, "atk": 72, "def": 60, "spa": 115, "spd": 75, "spe": 110 },
     "description": "Il parade en ouvrant son fanon chatoyant. Plus les couleurs sont vives, plus il est respecté par les autres membres de son espèce.",
     "etymology": {
-      "sitana ponticeriana": "nom scientifique du dragon barbu",
+      "sitana ponticeriana": "Espèce de saurien ayant la particularité d'avoir une gorge en forme d'éventail",
       "honor": "honneur en anglais"
     }
   },
@@ -1189,6 +1189,7 @@
     "id": 47,
     "slug": "bovalpin",
     "name": "Bovalpin",
+    "formName": "Trèfle à 3 feuilles",
     "types": ["Normal"],
     "category": "Veau",
     "abilities": ["[[ability:ruminant|Ruminant]]", "[[ability:herbivore|Herbivore]]"],
@@ -1198,8 +1199,32 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 140,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/bovalpin_3_sprite.png",
+      "artwork": "pokedex/img/pokemon/bovalpin_3_artwork.png"
+    },
+    "baseStats": { "hp": 78, "atk": 70, "def": 85, "spa": 25, "spd": 40, "spe": 22 },
+    "description": "Il vit dans des pâturages venteux en montagne. Sa longue fourrure le protège du froid, mais il trébuche souvent quand il essaie de courir.",
+    "etymology": {
+      "bovidé": "famille de mammifères comprenant les vaches, moutons et chèvres",
+      "alpin": "relatif aux Alpes"
+    }
+  },
+  {
+    "id": 47,
+    "slug": "bovalpin",
+    "name": "Bovalpin",
+    "formName": "Trèfle à 4 feuilles",
+    "types": ["Normal"],
+    "category": "Veau",
+    "abilities": ["[[ability:ruminant|Ruminant]]", "[[ability:herbivore|Herbivore]]"],
+    "hiddenAbility": "[[ability:baigne-sable|Baigne Sable]]",
+    "height_m": 0.8,
+    "weight_kg": 120.5,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 140,
+    "images": {
+      "sprite": "pokedex/img/pokemon/bovalpin_4_sprite.png",
+      "artwork": "pokedex/img/pokemon/bovalpin_4_artwork.png"
     },
     "baseStats": { "hp": 78, "atk": 70, "def": 85, "spa": 25, "spd": 40, "spe": 22 },
     "description": "Il vit dans des pâturages venteux en montagne. Sa longue fourrure le protège du froid, mais il trébuche souvent quand il essaie de courir.",
@@ -1212,6 +1237,7 @@
     "id": 48,
     "slug": "ecorlande",
     "name": "Écorlande",
+    "formName": "Trèfle à 3 feuilles",
     "types": ["Normal", "Sol"],
     "category": "Bovin",
     "abilities": ["[[ability:ruminant|Ruminant]]", "[[ability:herbivore|Herbivore]]"],
@@ -1221,8 +1247,33 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 60,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/ecorlande_3_sprite.png",
+      "artwork": "pokedex/img/pokemon/ecorlande_3_artwork.png"
+    },
+    "baseStats": { "hp": 125, "atk": 120, "def": 115, "spa": 45, "spd": 60, "spe": 35 },
+    "description": "Il affronte sans broncher le vent, la neige et la boue. Quand il charge en inclinant ses grandes cornes, il est presque impossible de l'arrêter.",
+    "etymology": {
+      "échorcher": "blesser en arrachant la peau",
+      "corne": "appendice osseux sur la tête de certains animaux",
+      "lande": "étendue de terrain sauvage"
+    }
+  },
+  {
+    "id": 48,
+    "slug": "ecorlande",
+    "name": "Écorlande",
+    "formName": "Trèfle à 4 feuilles",
+    "types": ["Normal", "Sol"],
+    "category": "Bovin",
+    "abilities": ["[[ability:ruminant|Ruminant]]", "[[ability:herbivore|Herbivore]]"],
+    "hiddenAbility": "[[ability:baigne-sable|Baigne Sable]]",
+    "height_m": 1.6,
+    "weight_kg": 430.0,
+    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "captureRate": 60,
+    "images": {
+      "sprite": "pokedex/img/pokemon/ecorlande_4_sprite.png",
+      "artwork": "pokedex/img/pokemon/ecorlande_4_artwork.png"
     },
     "baseStats": { "hp": 125, "atk": 120, "def": 115, "spa": 45, "spd": 60, "spe": 35 },
     "description": "Il affronte sans broncher le vent, la neige et la boue. Quand il charge en inclinant ses grandes cornes, il est presque impossible de l'arrêter.",
@@ -1245,8 +1296,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 120,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/pichidillo_sprite.png",
+      "artwork": "pokedex/img/pokemon/pichidillo_artwork.png"
     },
     "baseStats": { "hp": 62, "atk": 50, "def": 65, "spa": 45, "spd": 75, "spe": 48 },
     "description": "Malgré sa petite taille, sa carapace est l'une des plus résistantes. Lorsqu'il se sent menacé, il se roule en boule et utilise ses pouvoirs féeriques pour repousser les ennemis.",
@@ -1268,8 +1319,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 60,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/charmadillo_sprite.png",
+      "artwork": "pokedex/img/pokemon/charmadillo_artwork.png"
     },
     "baseStats": { "hp": 95, "atk": 70, "def": 115, "spa": 88, "spd": 75, "spe": 55 },
     "description": "Lors de tempêtes, il creuse des tunnels souterrains à l'aide de ses griffes et émet des lueurs féeriques pour guider les autres Pokémon vers un abri sûr.",
@@ -1291,8 +1342,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 90,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/cecibou_sprite.png",
+      "artwork": "pokedex/img/pokemon/cecibou_artwork.png"
     },
     "baseStats": { "hp": 75, "atk": 45, "def": 70, "spa": 105, "spd": 110, "spe": 65 },
     "description": "Aveugle de naissance, ses yeux lui permettent de percevoir le monde grâce aux ondes psychiques. Il aime observer silencieusement les humains en pleine crise de colère, de joie ou de tristesse.",
@@ -1314,8 +1365,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 190,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/grimocto_sprite.png",
+      "artwork": "pokedex/img/pokemon/grimocto_artwork.png"
     },
     "baseStats": { "hp": 35, "atk": 55, "def": 45, "spa": 65, "spd": 65, "spe": 40 },
     "description": "Contrairement à ses congénères, ce Pokémon ne se sert pas de ses petites tentacules pour se propulser dans l'eau. Au lieu de ça, il possède deux grands oreilles, dont il s'en sert comme de nageoires.",
@@ -1337,8 +1388,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 75,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/thaumicto_sprite.png",
+      "artwork": "pokedex/img/pokemon/thaumicto_artwork.png"
     },
     "baseStats": { "hp": 55, "atk": 90, "def": 65, "spa": 105, "spd": 75, "spe": 85 },
     "description": "Cette pieuvre a été découverte assez tardivement. En effet, elle est capable d'imiter l'apparence et le comportement de plein d'espèces différentes, en se contorsionnant et en changeant de couleur.",
