@@ -1044,7 +1044,7 @@
     "etymology": {
       "Fou": "genre d'oiseaux marins appartenant à la famille des Sulidae",
       "Booby": "version anglaise du Fou",
-      "Bec": "Bouche cornée et saillante des oiseaux, démunie de dents"
+      "Bec": "Bouche des oiseaux"
     }
   },
   {
@@ -1411,8 +1411,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 90,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/cotoguide_sprite.png",
+      "artwork": "pokedex/img/pokemon/cotoguide_artwork.png"
     },
     "baseStats": { "hp": 50, "atk": 25, "def": 57, "spa": 58, "spd": 58, "spe": 32 },
     "description": "Il flotte silencieusement dans les villes la nuit, à la recherche de personnes en proie aux cauchemars. Lorsqu'il en trouve une, il se pose délicatement sur sa tête et apaise son esprit pour lui offrir de doux rêves.",
@@ -1434,8 +1434,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 75,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/meolit_sprite.png",
+      "artwork": "pokedex/img/pokemon/meolit_artwork.png"
     },
     "baseStats": { "hp": 84, "atk": 45, "def": 67, "spa": 73, "spd": 70, "spe": 40 },
     "description": "Il est constamment fatigué et trouve toujours une occasion de faire une sieste. Ce qu'il adore par-dessus tout, c'est se blottir contre quelqu'un pour se sentir au chaud et en sécurité, afin de dormir paisiblement.",
@@ -1457,8 +1457,8 @@
     "genderRatio": { "male": 50.0, "female": 50.0 },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/malavande_sprite.png",
+      "artwork": "pokedex/img/pokemon/malavande_artwork.png"
     },
     "baseStats": { "hp": 95, "atk": 60, "def": 85, "spa": 103, "spd": 95, "spe": 52 },
     "description": "Il émet un parfum capable d'apaiser n'importe quel esprit tourmenté. Son corps et ses bras peuvent servir de lit à quiconque chercherait refuge auprès de lui. Il s'introduit ensuite dans les rêves de ceux qu'il câline afin de les guider vers la sérénité.",
@@ -1516,9 +1516,9 @@
   },
   {
     "id": 59,
-    "slug": "podalyptus",
-    "name": "Podalyptus",
-    "types": ["Vol"],
+    "slug": "Becorce",
+    "name": "Becorce",
+    "types": ["Plante"],
     "category": "Oiseau Tronc",
     "abilities": ["[[ability:regard-vif|Regard Vif]]", "[[ability:insomnia|Insomnia]]"],
     "hiddenAbility": "[[ability:agitation|Agitation]]",
@@ -1533,15 +1533,15 @@
     "baseStats": { "hp": 50, "atk": 45, "def": 60, "spa": 45, "spd": 60, "spe": 40 },
     "description": "Il reste immobile pendant des heures, imitant à la perfection un morceau d'écorce. Ses grands yeux observent silencieusement la forêt, même lorsqu'il semble dormir.",
     "etymology": {
-      "Podarge": "famille d'oiseaux nocturnes",
-      "Eucalyptus": "Arbre originaire d'Australie"
+      "Bec": "Bouche des oiseaux",
+      "Écorce": "Partie extérieure d'un arbre"
     }
   },
   {
     "id": 60,
-    "slug": "nyctalyptus",
-    "name": "Nyctalyptus",
-    "types": ["Vol", "Spectre"],
+    "slug": "souchemar",
+    "name": "Souchemar",
+    "types": ["Plante", "Spectre"],
     "category": "Tronc Fantôme",
     "abilities": ["[[ability:regard-vif|Regard Vif]]", "[[ability:insomnia|Insomnia]]"],
     "hiddenAbility": "[[ability:corps-maudit|Corps Maudit]]",
@@ -1556,15 +1556,15 @@
     "baseStats": { "hp": 70, "atk": 70, "def": 65, "spa": 125, "spd": 85, "spe": 65 },
     "description": "Son regard vide trouble profondément ceux qui croisent ses yeux. Lorsqu'il reste immobile, même les Pokémon les plus attentifs jurent qu'il n'a jamais été là.",
     "etymology": {
-      "Nyctibius": "famille d'oiseaux nocturnes",
-      "Eucalyptus": "Arbre originaire d'Australie"
+      "Souche": "Partie d'un arbre coupé ou tombé",
+      "Cauchemar": "Rêve effrayant et angoissant"
     }
   },
   {
     "id": 61,
-    "slug": "engoulyptus",
-    "name": "Engoulyptus",
-    "types": ["Vol", "Dragon"],
+    "slug": "dragoulevent",
+    "name": "Dragoulevent",
+    "types": ["Plante", "Dragon"],
     "category": "Tronc Draconique",
     "abilities": ["[[ability:regard-vif|Regard Vif]]", "[[ability:insomnia|Insomnia]]"],
     "hiddenAbility": "[[ability:incisif|Incisif]]",
@@ -1579,8 +1579,8 @@
     "baseStats": { "hp": 74, "atk": 113, "def": 74, "spa": 84, "spd": 34, "spe": 121 },
     "description": "Sa nouvelle force intérieure lui permet désormais de pouvoir riposter au lieu de se dissimuler. Son chant nocturne résonne comme l'appel d'un dragon ancien.",
     "etymology": {
-      "Engoulevent": "famille d'oiseaux nocturnes",
-      "Eucalyptus": "Arbre originaire d'Australie"
+      "Dragon": "créature mythologique",
+      "Engoulevent": "famille d'oiseaux nocturnes"
     }
   },
   {
@@ -1838,8 +1838,8 @@
   },
   {
     "id": 73,
-    "slug": "salpeon",
-    "name": "Salpéon", 
+    "slug": "salpineon",
+    "name": "Salpinéon", 
     "types": ["Eau", "Spectre"],
     "category": "Cellule",
     "abilities": ["[[ability:duplication|Duplication]]"],
