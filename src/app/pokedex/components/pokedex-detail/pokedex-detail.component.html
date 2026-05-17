@@ -18,36 +18,43 @@
           class="dex-screen detail"
           [attr.data-type1]="pokemon()!.types[0]">
 
+          <nav class="quick-nav">
+            <a class="nav-chip nav-blue" routerLink="/pokedex/pokemons" title="Retour">
+              🔙 <span>Retour</span>
+            </a>
+            <a class="nav-chip nav-red" routerLink="/pokedex/moves" title="Liste des Capacités">
+              ⚡ <span>Capacités</span>
+            </a>
+            <a class="nav-chip nav-yellow" routerLink="/pokedex/abilities" title="Liste des Talents">
+              ✨ <span>Talents</span>
+            </a>
+            <a class="nav-chip nav-green" routerLink="/pokedex/docs" title="Documentations">
+              📘 <span>Docs</span>
+            </a>
+          </nav>
+
           <nav class="dex-toolbar top">
             <div class="toolbar-inner">
               <span class="left">
               @if (prevMon()) {
-                <a [routerLink]="['/pokedex/pokemons', prevMon()!.id]" class="nav-chip">
-                  <img class="mini-sprite" [src]="prevMon()!.images.sprite" [alt]="prevMon()!.name" loading="lazy" />
+                <a [routerLink]="['/pokedex/pokemons', prevMon()!.slug]" class="nav-chip">
+                  <img class="mini-sprite" [src]="prevMon()!.images.sprite" [alt]="prevMon()!.name" loading="lazy"
+                       [appImageFallback]="'/pokedex/img/pokemon/000_sprite.png'" />
                   <span class="num">#{{ prevMon()!.id | number:'2.0-0' }}</span>
                   <span class="name">{{ prevMon()!.name }}</span>
-                </a>
-              } @else if (prevId() >= 1) {
-                <a [routerLink]="['/pokedex/pokemons', prevId()]" class="nav-chip">
-                  <span class="num">← #{{ prevId() | number:'2.0-0' }}</span>
                 </a>
               }
               </span>
 
-              <span class="center">
-                <a [routerLink]="['/pokedex/pokemons']">Retour à la liste</a>
-              </span>
+              <span class="center"></span>
 
               <span class="right">
               @if (nextMon()) {
-                <a [routerLink]="['/pokedex/pokemons', nextMon()!.id]" class="nav-chip">
+                <a [routerLink]="['/pokedex/pokemons', nextMon()!.slug]" class="nav-chip">
                   <span class="name">{{ nextMon()!.name }}</span>
                   <span class="num">#{{ nextMon()!.id | number:'2.0-0' }}</span>
-                  <img class="mini-sprite" [src]="nextMon()!.images.sprite" [alt]="nextMon()!.name" loading="lazy" />
-                </a>
-              } @else if (nextId() <= maxId()) {
-                <a [routerLink]="['/pokedex/pokemons', nextId()]" class="nav-chip">
-                  <span class="num">#{{ nextId() | number:'2.0-0' }} →</span>
+                  <img class="mini-sprite" [src]="nextMon()!.images.sprite" [alt]="nextMon()!.name" loading="lazy"
+                       [appImageFallback]="'/pokedex/img/pokemon/000_sprite.png'" />
                 </a>
               }
               </span>
@@ -84,7 +91,8 @@
                   <img
                     [src]="imgArtwork()"
                     [alt]="pokemon()!.name"
-                    loading="eager" />
+                    loading="eager" 
+                    [appImageFallback]="'/pokedex/img/pokemon/000_artwork.png'" />
                 </figure>
 
                 <div class="quickfacts">
@@ -119,7 +127,8 @@
                 </div>
 
                 <div class="sprite-box">
-                  <img class="sprite" [src]="imgSprite()" [alt]="pokemon()!.name + ' sprite'" loading="lazy" />
+                  <img class="sprite" [src]="imgSprite()" [alt]="pokemon()!.name + ' sprite'" loading="lazy"
+                       [appImageFallback]="'/pokedex/img/pokemon/000_sprite.png'" />
                 </div>
               </div>
             </aside>
@@ -218,7 +227,8 @@
                       <figure class="evo-mon">
                         <ng-container *ngIf="!isCurrent(e.id); else currentStage">
                           <a class="evo-click" [routerLink]="pokemonLink(e.mon)">
-                            <img [src]="e.mon.images.artwork" [alt]="e.mon.name" loading="lazy">
+                            <img [src]="e.mon.images.artwork" [alt]="e.mon.name" loading="lazy"
+                                 [appImageFallback]="'/pokedex/img/pokemon/000_artwork.png'">
                             <figcaption>
                               <span class="evo-name">{{ e.mon.name }}</span>
                               <span class="evo-num">#{{ e.mon.id | number:'2.0-0' }}</span>
@@ -227,7 +237,8 @@
                         </ng-container>
                         <ng-template #currentStage>
                           <div class="evo-click evo-current">
-                            <img [src]="e.mon.images.artwork" [alt]="e.mon.name" loading="lazy">
+                            <img [src]="e.mon.images.artwork" [alt]="e.mon.name" loading="lazy"
+                                 [appImageFallback]="'/pokedex/img/pokemon/000_artwork.png'">
                             <figcaption>
                               <strong class="evo-name">{{ e.mon.name }}</strong>
                               <span class="evo-num">#{{ e.mon.id | number:'2.0-0' }}</span>
@@ -364,32 +375,24 @@
             <div class="toolbar-inner">
               <span class="left">
               @if (prevMon()) {
-                <a [routerLink]="['/pokedex/pokemons', prevMon()!.id]" class="nav-chip">
+                <a [routerLink]="['/pokedex/pokemons', prevMon()!.slug]" class="nav-chip">
                   <img class="mini-sprite" [src]="prevMon()!.images.sprite" [alt]="prevMon()!.name" loading="lazy" />
                   <span class="num">#{{ prevMon()!.id | number:'2.0-0' }}</span>
                   <span class="name">{{ prevMon()!.name }}</span>
-                </a>
-              } @else if (prevId() >= 1) {
-                <a [routerLink]="['/pokedex/pokemons', prevId()]" class="nav-chip">
-                  <span class="num">← #{{ prevId() | number:'2.0-0' }}</span>
                 </a>
               }
               </span>
 
               <span class="center">
-                <a [routerLink]="['/pokedex/pokemons']">Retour à la liste</a>
+                <a routerLink="/pokedex/pokemons">Retour à la liste</a>
               </span>
 
               <span class="right">
               @if (nextMon()) {
-                <a [routerLink]="['/pokedex/pokemons', nextMon()!.id]" class="nav-chip">
+                <a [routerLink]="['/pokedex/pokemons', nextMon()!.slug]" class="nav-chip">
                   <span class="name">{{ nextMon()!.name }}</span>
                   <span class="num">#{{ nextMon()!.id | number:'2.0-0' }}</span>
                   <img class="mini-sprite" [src]="nextMon()!.images.sprite" [alt]="nextMon()!.name" loading="lazy" />
-                </a>
-              } @else if (nextId() <= maxId()) {
-                <a [routerLink]="['/pokedex/pokemons', nextId()]" class="nav-chip">
-                  <span class="num">#{{ nextId() | number:'2.0-0' }} →</span>
                 </a>
               }
               </span>

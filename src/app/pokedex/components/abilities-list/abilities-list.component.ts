@@ -1,5 +1,5 @@
 import { Component, computed, effect, inject, signal } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, Location } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { AbilitiesService } from '../../services/ability.service';
 import { Ability } from '../../models/ability.model';
@@ -16,11 +16,13 @@ type SortKey = 'id' | 'name';
 })
 export class AbilitiesListComponent {
     private svc = inject(AbilitiesService);
+    private location = inject(Location);
 
     loading = signal<boolean>(true);
     raw     = signal<Ability[]>([]);
-    q       = signal<string>('');
-    sortKey = signal<SortKey>('id');
+    
+    q       = this.svc.searchQuery;
+    sortKey = this.svc.sortKey;
 
     list = computed(() => {
         const query = this.q().trim().toLowerCase();
@@ -52,4 +54,6 @@ export class AbilitiesListComponent {
 
     query(v: string) { this.q.set(v ?? ''); }
     selectSort(v: string) { this.sortKey.set((v as SortKey) || 'id'); }
+
+
 }

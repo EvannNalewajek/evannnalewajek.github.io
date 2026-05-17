@@ -2453,8 +2453,8 @@
     },
     "captureRate": 90,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/raphragon_sprite.png",
+      "artwork": "pokedex/img/pokemon/raphragon_artwork.png"
     },
     "baseStats": {
       "hp": 55,
@@ -2491,8 +2491,8 @@
     },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/cephragon_sprite.png",
+      "artwork": "pokedex/img/pokemon/cephragon_artwork.png"
     },
     "baseStats": {
       "hp": 78,
@@ -2530,8 +2530,8 @@
     },
     "captureRate": 190,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/becorce_sprite.png",
+      "artwork": "pokedex/img/pokemon/becorce_artwork.png"
     },
     "baseStats": {
       "hp": 50,
@@ -2569,8 +2569,8 @@
     },
     "captureRate": 75,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/souchemar_sprite.png",
+      "artwork": "pokedex/img/pokemon/souchemar_artwork.png"
     },
     "baseStats": {
       "hp": 70,
@@ -2608,8 +2608,8 @@
     },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/dragoulevent_sprite.png",
+      "artwork": "pokedex/img/pokemon/dragoulevent_artwork.png"
     },
     "baseStats": {
       "hp": 74,
@@ -2647,8 +2647,8 @@
     },
     "captureRate": 180,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/rocopode_sprite.png",
+      "artwork": "pokedex/img/pokemon/rocopode_artwork.png"
     },
     "baseStats": {
       "hp": 50,
@@ -2686,8 +2686,8 @@
     },
     "captureRate": 75,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/cristerophore_sprite.png",
+      "artwork": "pokedex/img/pokemon/cristerophore_artwork.png"
     },
     "baseStats": {
       "hp": 60,
@@ -2723,8 +2723,8 @@
     },
     "captureRate": 120,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/larvantis_sprite.png",
+      "artwork": "pokedex/img/pokemon/larvantis_artwork.png"
     },
     "baseStats": {
       "hp": 46,
@@ -2761,8 +2761,8 @@
     },
     "captureRate": 75,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/prismantis_sprite.png",
+      "artwork": "pokedex/img/pokemon/prismantis_artwork.png"
     },
     "baseStats": {
       "hp": 70,
@@ -2800,8 +2800,8 @@
     },
     "captureRate": 120,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/frimacier_sprite.png",
+      "artwork": "pokedex/img/pokemon/frimacier_artwork.png"
     },
     "baseStats": {
       "hp": 70,
@@ -2839,8 +2839,8 @@
     },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/givrodon_sprite.png",
+      "artwork": "pokedex/img/pokemon/givrodon_artwork.png"
     },
     "baseStats": {
       "hp": 80,
@@ -2878,8 +2878,8 @@
     },
     "captureRate": 120,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/cotylux_sprite.png",
+      "artwork": "pokedex/img/pokemon/cotylux_artwork.png"
     },
     "baseStats": {
       "hp": 35,
@@ -2917,8 +2917,8 @@
     },
     "captureRate": 90,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/voltombrelle_sprite.png",
+      "artwork": "pokedex/img/pokemon/voltombrelle_artwork.png"
     },
     "baseStats": {
       "hp": 53,
@@ -2956,8 +2956,8 @@
     },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/adriastra_sprite.png",
+      "artwork": "pokedex/img/pokemon/adriastra_artwork.png"
     },
     "baseStats": {
       "hp": 65,
@@ -2995,8 +2995,8 @@
     },
     "captureRate": 75,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/scaraphylla_sprite.png",
+      "artwork": "pokedex/img/pokemon/scaraphylla_artwork.png"
     },
     "baseStats": {
       "hp": 95,
@@ -3033,8 +3033,8 @@
     },
     "captureRate": 90,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/tenriktik_sprite.png",
+      "artwork": "pokedex/img/pokemon/tenriktik_artwork.png"
     },
     "baseStats": {
       "hp": 75,
@@ -3067,8 +3067,8 @@
     "genderRatio": "genderless",
     "captureRate": 120,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/salpineon_sprite.png",
+      "artwork": "pokedex/img/pokemon/salpineon_artwork.png"
     },
     "baseStats": {
       "hp": 45,
@@ -3104,8 +3104,8 @@
     },
     "captureRate": 145,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/crinial_sprite.png",
+      "artwork": "pokedex/img/pokemon/crinial_artwork.png"
     },
     "baseStats": {
       "hp": 45,
@@ -3142,8 +3142,8 @@
     },
     "captureRate": 90,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/lycanine_sprite.png",
+      "artwork": "pokedex/img/pokemon/lycanine_artwork.png"
     },
     "baseStats": {
       "hp": 65,
@@ -3180,8 +3180,8 @@
     },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/sombryène_sprite.png",
+      "artwork": "pokedex/img/pokemon/sombryène_artwork.png"
     },
     "baseStats": {
       "hp": 95,
@@ -3218,8 +3218,8 @@
     },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/gracicodil_sprite.png",
+      "artwork": "pokedex/img/pokemon/gracicodil_artwork.png"
     },
     "baseStats": {
       "hp": 35,
@@ -3257,8 +3257,8 @@
     },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/dermaconda_sprite.png",
+      "artwork": "pokedex/img/pokemon/dermaconda_artwork.png"
     },
     "baseStats": {
       "hp": 95,
@@ -3296,8 +3296,8 @@
     },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/komoloss_sprite.png",
+      "artwork": "pokedex/img/pokemon/komoloss_artwork.png"
     },
     "baseStats": {
       "hp": 105,
@@ -3335,8 +3335,8 @@
     },
     "captureRate": 75,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/mandibunice_sprite.png",
+      "artwork": "pokedex/img/pokemon/mandibunice_artwork.png"
     },
     "baseStats": {
       "hp": 65,
@@ -3369,8 +3369,8 @@
     "genderRatio": "genderless",
     "captureRate": 12,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/fenragon_sprite.png",
+      "artwork": "pokedex/img/pokemon/fenragon_artwork.png"
     },
     "baseStats": {
       "hp": 85,
@@ -3406,8 +3406,8 @@
     },
     "captureRate": 12,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/boreacal_sprite.png",
+      "artwork": "pokedex/img/pokemon/boreacal_artwork.png"
     },
     "baseStats": {
       "hp": 95,
@@ -3445,8 +3445,8 @@
     },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/courratel_sprite.png",
+      "artwork": "pokedex/img/pokemon/courratel_artwork.png"
     },
     "baseStats": {
       "hp": 95,
@@ -3484,8 +3484,8 @@
     },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/melirene_sprite.png",
+      "artwork": "pokedex/img/pokemon/melirene_artwork.png"
     },
     "baseStats": {
       "hp": 85,
@@ -3522,8 +3522,8 @@
     },
     "captureRate": 30,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/majestine_sprite.png",
+      "artwork": "pokedex/img/pokemon/majestine_artwork.png"
     },
     "baseStats": {
       "hp": 70,
@@ -3559,8 +3559,8 @@
     },
     "captureRate": 120,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/lyravolt_sprite.png",
+      "artwork": "pokedex/img/pokemon/lyravolt_artwork.png"
     },
     "baseStats": {
       "hp": 65,
@@ -3594,8 +3594,8 @@
     "genderRatio": "genderless",
     "captureRate": 6,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/damarel_sprite.png",
+      "artwork": "pokedex/img/pokemon/damarel_artwork.png"
     },
     "baseStats": {
       "hp": 120,
@@ -3628,8 +3628,8 @@
     "genderRatio": "genderless",
     "captureRate": 6,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/sharazel_sprite.png",
+      "artwork": "pokedex/img/pokemon/sharazel_artwork.png"
     },
     "baseStats": {
       "hp": 90,
@@ -3662,8 +3662,8 @@
     "genderRatio": "genderless",
     "captureRate": 6,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/kinnarel_sprite.png",
+      "artwork": "pokedex/img/pokemon/kinnarel_artwork.png"
     },
     "baseStats": {
       "hp": 75,
@@ -3696,8 +3696,8 @@
     "genderRatio": "genderless",
     "captureRate": 6,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/arovel_sprite.png",
+      "artwork": "pokedex/img/pokemon/arovel_artwork.png"
     },
     "baseStats": {
       "hp": 70,
@@ -3730,8 +3730,8 @@
     "genderRatio": "genderless",
     "captureRate": 6,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/devorel_sprite.png",
+      "artwork": "pokedex/img/pokemon/devorel_artwork.png"
     },
     "baseStats": {
       "hp": 100,
@@ -3764,8 +3764,8 @@
     "genderRatio": "genderless",
     "captureRate": 6,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/shekinel_sprite.png",
+      "artwork": "pokedex/img/pokemon/shekinel_artwork.png"
     },
     "baseStats": {
       "hp": 90,
@@ -3798,8 +3798,8 @@
     "genderRatio": "genderless",
     "captureRate": 6,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/baradiel_sprite.png",
+      "artwork": "pokedex/img/pokemon/baradiel_artwork.png"
     },
     "baseStats": {
       "hp": 130,
@@ -3832,8 +3832,8 @@
     "genderRatio": "genderless",
     "captureRate": 6,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/arborel_sprite.png",
+      "artwork": "pokedex/img/pokemon/arborel_artwork.png"
     },
     "baseStats": {
       "hp": 94,
@@ -3866,8 +3866,8 @@
     "genderRatio": "genderless",
     "captureRate": 6,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/hoshekel_sprite.png",
+      "artwork": "pokedex/img/pokemon/hoshekel_artwork.png"
     },
     "baseStats": {
       "hp": 80,
@@ -3900,8 +3900,8 @@
     "genderRatio": "genderless",
     "captureRate": 6,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/shekhatel_sprite.png",
+      "artwork": "pokedex/img/pokemon/shekhatel_artwork.png"
     },
     "baseStats": {
       "hp": 115,
@@ -3934,8 +3934,8 @@
     "genderRatio": "genderless",
     "captureRate": 3,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/monarcane_sprite.png",
+      "artwork": "pokedex/img/pokemon/monarcane_artwork.png"
     },
     "baseStats": {
       "hp": 100,
@@ -3969,8 +3969,8 @@
     "genderRatio": "genderless",
     "captureRate": 3,
     "images": {
-      "sprite": "pokedex/img/pokemon/000_sprite.png",
-      "artwork": "pokedex/img/pokemon/000_artwork.png"
+      "sprite": "pokedex/img/pokemon/seraperial_sprite.png",
+      "artwork": "pokedex/img/pokemon/seraperial_artwork.png"
     },
     "baseStats": {
       "hp": 90,

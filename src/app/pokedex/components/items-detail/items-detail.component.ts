@@ -1,5 +1,5 @@
 import { Component, computed, inject, signal } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, Location } from '@angular/common';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { ItemService } from '../../services/item.service';
 import { Item } from '../../models/item.model';
@@ -15,6 +15,7 @@ import { WikilinkPipe } from '../../pipes/wikilink.pipe';
 export class ItemsDetailComponent {
     private route = inject(ActivatedRoute);
     private svc   = inject(ItemService);
+    private location = inject(Location);
 
     loading = signal(true);
     list    = signal<Item[]>([]);
@@ -42,6 +43,8 @@ export class ItemsDetailComponent {
 
     imgSprite = () => this.svc.normalizeImg(this.item()!.images.sprite);
     imgArtwork = () => this.svc.normalizeImg(this.item()!.images.artwork);
+
+
 
     constructor() {
         this.route.paramMap.subscribe(pm => {

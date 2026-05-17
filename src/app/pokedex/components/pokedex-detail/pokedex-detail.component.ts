@@ -1,5 +1,5 @@
 import { Component, OnInit, inject, effect, computed, Signal, signal } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, Location } from '@angular/common';
 import { ActivatedRoute, RouterLink, Router } from '@angular/router';
 import { PokedexService } from '../../services/pokedex.service';
 import { TypeSlugPipe } from '../../pipes/type-slug.pipe';
@@ -10,9 +10,11 @@ import { EvolutionService } from '../../services/evolution.service';
 import { EvolutionFamily, EvolutionLink } from '../../models/evolution.model';
 import { MovesService } from '../../services/moves.service';
 import { LearnsetsService, ResolvedLearnset } from '../../services/learnsets.service';
+import { ImageFallbackDirective } from '../../directives/image-fallback.directive';
 
 import { toSignal } from '@angular/core/rxjs-interop';
 import { map } from 'rxjs/operators';
+import { of } from 'rxjs';
 
 interface EvoRowEntry {
   id: number;
@@ -24,7 +26,7 @@ interface EvoRowEntry {
 @Component({
   selector: 'app-pokedex-detail',
   standalone: true,
-  imports: [CommonModule, RouterLink, TypeSlugPipe, WikilinkPipe],
+  imports: [CommonModule, RouterLink, TypeSlugPipe, WikilinkPipe, ImageFallbackDirective],
   templateUrl: "./pokedex-detail.component.html",
   styleUrls: ["./pokedex-detail.component.scss"]
 })
@@ -32,20 +34,27 @@ interface EvoRowEntry {
 export class PokedexDetailComponent implements OnInit {
   private route = inject(ActivatedRoute);
   private router = inject(Router);
+  private location = inject(Location);
   private pokedex = inject(PokedexService);
   private evo = inject(EvolutionService);
   private learnsets = inject(LearnsetsService);
 
-  private id = toSignal(
-    this.route.paramMap.pipe(map(pm => Number(pm.get('id')))),
-    { initialValue: NaN }
+  private slug = toSignal(
+    this.route.paramMap.pipe(map(pm => pm.get('slug') || '')),
+    { initialValue: '' }
   );
   
   readonly resolvedLearnset = signal<ResolvedLearnset | null>(null);
 
-  readonly forms = computed<Pokemon[]>(() =>
-    this.pokedex.getFormsById(this.id()) ?? []
-  );
+  pokemon = computed<Pokemon | null>(() => {
+    const s = this.slug();
+    return this.pokedex.getBySlug(s);
+  });
+
+  readonly forms = computed<Pokemon[]>(() => {
+    const p = this.pokemon();
+    return p ? this.pokedex.getFormsById(p.id) : [];
+  });
 
   readonly formIndex = signal(0);
 
@@ -62,14 +71,7 @@ export class PokedexDetailComponent implements OnInit {
     });
   }
 
-  pokemon = computed<Pokemon | null>(() => {
-    const list = this.forms();
-    if (!list.length) return null;
 
-    const idx = this.formIndex();
-    const clamped = Math.min(Math.max(idx, 0), list.length - 1);
-    return list[clamped];
-  });
 
   setFormIndex(i: number) {
     const list = this.forms();
@@ -82,22 +84,32 @@ export class PokedexDetailComponent implements OnInit {
     document.title = `#${p.id.toString().padStart(2,'0')} — ${p.name} | Pokédex`;
   }
 
-  prevMon: Signal<Pokemon | null> = computed(() => {
-    const id = this.prevId();
-    return id >= 1 ? this.pokedex.getById(id) : null;
+  private currentIndex = computed(() => {
+    const p = this.pokemon();
+    if (!p) return -1;
+    return this.pokedex.uniqueList().findIndex(x => x.id === p.id);
   });
 
-  nextMon: Signal<Pokemon | null> = computed(() => {
-    const id = this.nextId();
-    return id <= this.maxId() ? this.pokedex.getById(id) : null;
+  prevMon = computed<Pokemon | null>(() => {
+    const i = this.currentIndex();
+    if (i <= 0) return null;
+    return this.pokedex.uniqueList()[i - 1];
+  });
+
+  nextMon = computed<Pokemon | null>(() => {
+    const i = this.currentIndex();
+    const list = this.pokedex.uniqueList();
+    if (i === -1 || i >= list.length - 1) return null;
+    return list[i + 1];
   });
 
   imgSprite = () => this.pokedex.normalizeImg(this.pokemon()!.images.sprite);
   imgArtwork = () => this.pokedex.normalizeImg(this.pokemon()!.images.artwork);
 
   maxId = () => this.pokedex.maxId();
-  prevId = () => Math.max(1, (this.id() || 1) - 1);
-  nextId = () => (this.id() || 1) + 1;
+  // Les IDs ne sont plus utilisés pour la navigation directe
+  prevId = () => -1; 
+  nextId = () => -1;
 
   isGenderless(): boolean {
     const g = this.pokemon()?.genderRatio;
@@ -193,11 +205,11 @@ export class PokedexDetailComponent implements OnInit {
     const mon = this.pokedex.getById(id);
     if (!mon) return `#${id}`;
     if (this.isCurrent(id)) return mon.name;
-    return `[[pokemon:${id}|${mon.name}]]`;
+    return `[[pokemon:${mon.slug}|${mon.name}]]`;
   }
 
   pokemonLink(mon: Pokemon): any[] {
-    return ['/pokedex', 'pokemons', mon.id];
+    return ['/pokedex', 'pokemons', mon.slug];
   }
 
   evoLabel(link: EvolutionLink | null | undefined): string {

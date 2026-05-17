@@ -16,8 +16,7 @@
         <div class="dex-screen type-page" [style.--type-color]="cur.color">
 
           <nav class="quick-nav">
-            <a class="nav-chip nav-green"   routerLink="/pokedex/docs"            title="Retour">
-              🔙 <span>Retour</span>
+            <a class="nav-chip nav-green" routerLink="/pokedex/docs" title="Retour">              🔙 <span>Retour</span>
             </a>
             <a class="nav-chip nav-blue"    routerLink="/pokedex/pokemons"      title="Liste des Pokémons">
               🧬 <span>Pokémons</span>
@@ -185,11 +184,12 @@
                         <tr>
                           <td>#{{ p.id.toString().padStart(3,'0') }}</td>
                           <td>
-                            <a [routerLink]="['/pokedex', p.id]" class="sprite-link" title="Voir {{p.name}}">
-                              <img [src]="p.images.sprite" [alt]="p.name" loading="lazy" />
+                            <a [routerLink]="['/pokedex/pokemons', p.slug]" class="sprite-link" title="Voir {{p.name}}">
+                              <img [src]="p.images.sprite" [alt]="p.name" loading="lazy" 
+                                   [appImageFallback]="'/pokedex/img/pokemon/000_sprite.png'" />
                             </a>
                           </td>
-                          <td><a [routerLink]="['/pokedex', p.id]">{{ p.name }}</a></td>
+                          <td><a [routerLink]="['/pokedex/pokemons', p.slug]">{{ p.name }}</a></td>
                           <td>
                             @for (t of typesOf(p); track t) {
                               <a

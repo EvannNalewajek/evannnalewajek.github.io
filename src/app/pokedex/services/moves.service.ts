@@ -1,5 +1,5 @@
 // moves.service.ts
-import { Injectable, inject } from '@angular/core';
+import { Injectable, inject, signal } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map, shareReplay } from 'rxjs';
 import type { Move, TargetPreset, TargetCell, TMInfo } from '../models/move.model';
@@ -90,6 +90,11 @@ export class MovesService {
   private http = inject(HttpClient);
   private movesUrl = '/pokedex/moves.json';
   private tmsUrl   = '/pokedex/tms.json';
+
+  readonly searchQuery = signal<string>('');
+  readonly filterType = signal<string>('');
+  readonly filterCategory = signal<string>('');
+  readonly sortKey = signal<'id'|'name'|'type'|'category'|'power'|'accuracy'|'pp'|'priority'>('id');
 
   private _moves$ = this.http.get<any>(this.movesUrl).pipe(
     map((raw) => {

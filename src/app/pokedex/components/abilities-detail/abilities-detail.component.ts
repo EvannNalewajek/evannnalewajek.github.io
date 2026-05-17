@@ -1,5 +1,5 @@
 import { Component, computed, inject, signal } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, Location } from '@angular/common';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { AbilitiesService } from '../../services/ability.service';
 import { Ability } from '../../models/ability.model';
@@ -15,6 +15,7 @@ import { WikilinkPipe } from '../../pipes/wikilink.pipe';
 export class AbilitiesDetailComponent {
   private route = inject(ActivatedRoute);
   private svc   = inject(AbilitiesService);
+  private location = inject(Location);
 
   loading = signal(true);
   list    = signal<Ability[]>([]);
@@ -49,4 +50,6 @@ export class AbilitiesDetailComponent {
       });
     });
   }
+
+
 }

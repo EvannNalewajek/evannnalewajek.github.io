@@ -1,5 +1,5 @@
 import { Component, computed, inject, signal, DestroyRef, effect } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, Location } from '@angular/common';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { map, switchMap, combineLatest, of } from 'rxjs';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
@@ -31,6 +31,7 @@ interface LearnerRow {
 export class MovesDetailComponent {
   private route = inject(ActivatedRoute);
   private destroyRef = inject(DestroyRef);
+  private location = inject(Location);
 
   private movesSvc = inject(MovesService);
   private learnsets = inject(LearnsetsService);
@@ -74,6 +75,8 @@ export class MovesDetailComponent {
     const arr = this.list();
     return (i >= 0 && i < arr.length - 1) ? arr[i + 1] : undefined;
   });
+
+
 
   constructor() {
     this.movesSvc.getAll()

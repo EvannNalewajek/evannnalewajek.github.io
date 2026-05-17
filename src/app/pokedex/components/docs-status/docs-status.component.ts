@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, inject } from '@angular/core';
+import { CommonModule, Location } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 @Component({
@@ -9,4 +9,8 @@ import { RouterModule } from '@angular/router';
   templateUrl: './docs-status.component.html',
   styleUrls: ['./docs-status.component.scss'],
 })
-export class DocsStatusComponent {}
+export class DocsStatusComponent {
+  private location = inject(Location);
+
+
+}

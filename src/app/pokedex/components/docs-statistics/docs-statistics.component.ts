@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, inject } from '@angular/core';
+import { CommonModule, Location } from '@angular/common';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -9,4 +9,8 @@ import { RouterLink } from '@angular/router';
   templateUrl: './docs-statistics.component.html',
   styleUrls: ['./docs-statistics.component.scss'],
 })
-export class DocsStatisticsComponent {}
+export class DocsStatisticsComponent {
+  private location = inject(Location);
+
+
+}

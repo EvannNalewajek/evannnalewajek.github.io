@@ -27,7 +27,7 @@ export const routes: Routes = [
     { path: '', component: HomeComponent, title: 'Accueil' },
     { path: 'pokedex', component: PokedexMainComponent, title: 'Pokédex' },
     { path: 'pokedex/pokemons', component: PokedexListComponent, title: 'Pokédex - Liste' },
-    { path: 'pokedex/pokemons/:id', component: PokedexDetailComponent, title: 'Pokédex - Détail' },
+    { path: 'pokedex/pokemons/:slug', component: PokedexDetailComponent, title: 'Pokédex - Détail' },
     { path: 'pokedex/moves', component: MovesListComponent, title: 'Pokédex - Capacités' },
     { path: 'pokedex/moves/:slug', component: MovesDetailComponent, title : 'Pokédex - Capacités Détail' },
     { path: 'pokedex/types/:slug', component: TypePageComponent, title: 'Pokédex - Type' },

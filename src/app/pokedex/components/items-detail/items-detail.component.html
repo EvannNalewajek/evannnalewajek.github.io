@@ -13,16 +13,29 @@
         @if (item(); as i) {
             <div class="dex-body">
                 <div class="dex-screen item-detail">
-                    <nav class="dex-toolbar bottom">
+                    <nav class="quick-nav">
+                      <a class="nav-chip nav-green" routerLink="/pokedex/items" title="Retour">
+                        🔙 <span>Retour</span>
+                      </a>
+                      <a class="nav-chip nav-blue" routerLink="/pokedex/pokemons" title="Liste des Pokémons">
+                        🧬 <span>Pokémons</span>
+                      </a>
+                      <a class="nav-chip nav-red" routerLink="/pokedex/moves" title="Liste des Capacités">
+                        ⚡ <span>Capacités</span>
+                      </a>
+                      <a class="nav-chip nav-yellow" routerLink="/pokedex/abilities" title="Liste des Talents">
+                        ✨ <span>Talents</span>
+                      </a>
+                    </nav>
+
+                    <nav class="dex-toolbar top">
                         <div class="toolbar-inner">
                             <span class="left">
                                 @if (prev(); as p) {
                                     <a [routerLink]="['/pokedex/docs/items', p.slug]" class="nav-chip">← Préc.</a>
                                 }
                             </span>
-                            <span class="center">
-                                <a routerLink="/pokedex/docs/items">Retour à la liste</a>
-                            </span>
+                            <span class="center"></span>
                             <span class="right">
                                 @if (next(); as n) {
                                     <a [routerLink]="['/pokedex/docs/items', n.slug]" class="nav-chip">Suiv. →</a>
@@ -94,9 +107,7 @@
                                     <a [routerLink]="['/pokedex/docs/items', p.slug]" class="nav-chip">← Préc.</a>
                                 }
                             </span>
-                            <span class="center">
-                                <a routerLink="/pokedex/docs/items">Retour à la liste</a>
-                            </span>
+                            <span class="center"></span>
                             <span class="right">
                                 @if (next(); as n) {
                                     <a [routerLink]="['/pokedex/docs/items', n.slug]" class="nav-chip">Suiv. →</a>

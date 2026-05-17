@@ -1,4 +1,4 @@
-import { Injectable, inject } from '@angular/core';
+import { Injectable, inject, signal } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs';
 import { Ability } from '../models/ability.model';
@@ -19,6 +19,9 @@ function slugify(input: string): string {
 export class AbilitiesService {
     private http = inject(HttpClient);
     private url  = '/pokedex/abilities.json';
+
+    readonly searchQuery = signal<string>('');
+    readonly sortKey = signal<'id' | 'name'>('id');
 
     getAll() {
         return this.http.get<any>(this.url).pipe(

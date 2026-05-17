@@ -1,5 +1,5 @@
 import { Component, computed, effect, inject, signal } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, Location } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { MovesService } from '../../services/moves.service';
 import { Move } from '../../models/move.model';
@@ -15,12 +15,13 @@ import { TypeSlugPipe } from '../../pipes/type-slug.pipe';
 })
 export class MovesListComponent {
   private svc = inject(MovesService);
+  private location = inject(Location);
 
   private _moves = signal<Move[] | null>(null);
-  private _query = signal<string>('');
-  private _type = signal<string>('');
-  private _category = signal<string>('');
-  private _sort = signal<'id'|'name'|'type'|'category'|'power'|'accuracy'|'pp'|'priority'>('id');
+  private _query = this.svc.searchQuery;
+  private _type = this.svc.filterType;
+  private _category = this.svc.filterCategory;
+  private _sort = this.svc.sortKey;
 
   constructor() {
     this.svc.getAll().subscribe(m => this._moves.set(m));
@@ -56,6 +57,8 @@ export class MovesListComponent {
   selectType(v: string) { this._type.set(v); }
   selectCategory(v: string) { this._category.set(v); }
   selectSort(v: typeof this._sort extends any ? any : never) { this._sort.set(v); }
+
+
 
   types = computed(() => {
     const set = new Set((this._moves() ?? []).map(m => m.type));

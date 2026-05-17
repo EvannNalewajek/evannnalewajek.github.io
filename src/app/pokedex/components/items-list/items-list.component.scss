@@ -166,12 +166,12 @@
   }
 
   @media (max-width: 640px) {
-    thead { display: none; }
-    &, tbody, tr, td { display: block; width: 100%; }
-
     border: 0;
     box-shadow: none;
     background: transparent;
+
+    thead { display: none; }
+    &, tbody, tr, td { display: block; width: 100%; }
 
     tbody { display: grid; gap: .9rem; }
 

@@ -7,31 +7,31 @@
                 <span class="led led-yellow"></span>
                 <span class="led led-green"></span>
             </div>
-            <h1>Pokedex</h1>
+            <h1>Menu Principal</h1>
         </div>
 
         <div class="dex-body">
-            <div class="dex-screen field-page">
-                <div class="actions-pokemon">
-                    <a class="nav-chip" routerLink="/pokedex/pokemons" title="Voir tous les Pokémons">
-                        Liste des Pokémons
-                    </a>
-                </div>
-                <div class="action-moves">
-                    <a class="nav-chip" routerLink="/pokedex/moves" title="Voir toutes les capacités">
-                        Liste des Capacités
-                    </a>
-                </div>
-                <div class="actions-abilities">
-                    <a class="nav-chip" routerLink="/pokedex/abilities" title="Voir tous les Talents">
-                        Liste des Talents
-                    </a>
-                </div>
-                <div class="action-doc">
-                    <a class="nav-chip" routerLink="/pokedex/docs" title="Voir d'autres informations">
-                        Documentations
-                    </a>
-                </div>
+            <div class="dex-screen pokedex-main-menu">
+                <a class="menu-card card-pokemon" routerLink="/pokedex/pokemons">
+                    <span class="icon">🧬</span>
+                    <span class="title">Pokémons</span>
+                    <span class="desc">Consulter le Pokédex complet</span>
+                </a>
+                <a class="menu-card card-moves" routerLink="/pokedex/moves">
+                    <span class="icon">⚡</span>
+                    <span class="title">Capacités</span>
+                    <span class="desc">Liste des attaques et de leurs effets</span>
+                </a>
+                <a class="menu-card card-abilities" routerLink="/pokedex/abilities">
+                    <span class="icon">✨</span>
+                    <span class="title">Talents</span>
+                    <span class="desc">Liste de tous les effets passifs</span>
+                </a>
+                <a class="menu-card card-docs" routerLink="/pokedex/docs">
+                    <span class="icon">📘</span>
+                    <span class="title">Documentations</span>
+                    <span class="desc">Règles, mécaniques et documentations</span>
+                </a>
             </div>
         </div>
     </div>

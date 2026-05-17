@@ -1,17 +1,18 @@
 // pokedex/components/type-page/type-page.component.ts
 import { Component, OnInit, computed, inject, Signal } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, Location } from '@angular/common';
 import { ActivatedRoute, RouterLink, Router } from '@angular/router';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { map } from 'rxjs/operators';
 import { TypesService } from '../../services/type.service';
 import { PokedexService } from '../../services/pokedex.service';
 import { Pokemon, PokemonType } from '../../models/pokemon.model';
+import { ImageFallbackDirective } from '../../directives/image-fallback.directive';
 
 @Component({
     selector: 'app-type-page',
     standalone: true,
-    imports: [CommonModule, RouterLink],
+    imports: [CommonModule, RouterLink, ImageFallbackDirective],
     templateUrl: './pokedex-type.component.html',
     styleUrls: ['./pokedex-type.component.scss']
 })
@@ -20,6 +21,7 @@ export class TypePageComponent implements OnInit {
     private pokedex = inject(PokedexService);
     private route = inject(ActivatedRoute);
     private router = inject(Router);
+    private location = inject(Location);
 
     slug = toSignal(this.route.paramMap.pipe(map(pm => pm.get('slug') ?? '')), { initialValue: '' });
 
@@ -48,6 +50,8 @@ export class TypePageComponent implements OnInit {
         const tt = this.allTypes()?.find(x => x.name === t);
         return tt ? { '--type-color': tt.color } as any : {};
     }
+
+
 
     typesOf(p: Pokemon): PokemonType[] {
         const tuple = p.types as unknown as readonly PokemonType[];

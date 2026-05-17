@@ -1,108 +1,116 @@
 @use '../../styles/dex-shell' as *;
 
-.field-page {
-  min-height: min(70vh, 680px);
+.pokedex-main-menu {
   display: grid;
-  place-items: center;
-  padding: 1rem;
-}
-
-.field-page {
-  grid-template-columns: repeat(2, minmax(240px, 1fr));
-  gap: 1.2rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1.5rem;
+  padding: 2rem;
+  min-height: min(70vh, 680px);
+  align-items: stretch;
+  justify-items: stretch;
 
   @media (max-width: 720px) {
     grid-template-columns: 1fr;
-    gap: 0.9rem;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 1rem;
   }
 }
 
-.field-page .nav-chip {
-  display: grid;
-  place-items: center;
+.menu-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-
-  min-height: 130px;
-  padding: 1.25rem 1rem;
-  border-radius: 16px;
-  font-weight: 900;
-  font-size: clamp(1.05rem, 0.95rem + 0.8vw, 1.6rem);
-  letter-spacing: .2px;
-
+  padding: 2rem 1rem;
+  border-radius: 20px;
   text-decoration: none;
-  color: #15202b;
-
-  background: var(--btn-core);  
-  border: 2px solid rgba(0,0,0,.18);
-  border-color: color-mix(in oklab, var(--btn-core) 45%, #000);
+  background: var(--btn-core);
+  color: color-mix(in oklab, #000 80%, var(--btn-core));
+  
+  border: 2px solid color-mix(in oklab, var(--btn-core) 40%, #000);
   box-shadow:
-    0 12px 24px rgba(0,0,0,.18),
-    0 6px 10px rgba(0,0,0,.12),
+    0 12px 24px rgba(0,0,0,.15),
     inset 0 2px 0 color-mix(in oklab, #ffffff 60%, var(--btn-core)),
-    inset 0 -2px 0 color-mix(in oklab, #000 15%, var(--btn-core));
+    inset 0 -3px 0 color-mix(in oklab, #000 15%, var(--btn-core));
+  
   transform: translateY(0);
-  transition: transform .08s ease, box-shadow .12s ease, filter .12s ease;
-
-  word-break: keep-all;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-
+  transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
   outline: none;
-}
-.field-page .nav-chip:hover {
-  filter: brightness(1.05);
-  box-shadow:
-    0 14px 28px rgba(0,0,0,.20),
-    0 7px 12px rgba(0,0,0,.14),
-    inset 0 1px 0 rgba(255,255,255,.75),
-    inset 0 -1px 0 rgba(0,0,0,.07);
-}
-.field-page .nav-chip:active {
-  transform: translateY(2px);
-  box-shadow:
-    0 8px 16px rgba(0,0,0,.18),
-    0 4px 8px rgba(0,0,0,.12),
-    inset 0 1px 0 rgba(255,255,255,.6),
-    inset 0 -2px 0 rgba(0,0,0,.08);
-}
-.field-page .nav-chip:focus-visible {
-  box-shadow:
-    0 0 0 3px #fff,
-    0 0 0 6px color-mix(in oklab, var(--btn-core, #4a90e2) 65%, #ffffff),
-    0 14px 28px rgba(0,0,0,.20),
-    inset 0 1px 0 rgba(255,255,255,.75);
+
+  .icon {
+    display: block;
+    font-size: 4rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.2));
+  }
+
+  .title {
+    font-size: 1.6rem;
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.5px;
+  }
+
+  .desc {
+    font-size: 1rem;
+    font-weight: 600;
+    opacity: 0.85;
+    line-height: 1.3;
+  }
+
+  &:hover {
+    filter: brightness(1.05);
+    transform: translateY(-4px);
+    box-shadow:
+      0 16px 32px rgba(0,0,0,.2),
+      inset 0 2px 0 color-mix(in oklab, #ffffff 70%, var(--btn-core)),
+      inset 0 -3px 0 color-mix(in oklab, #000 15%, var(--btn-core));
+  }
+
+  &:active {
+    transform: translateY(2px);
+    box-shadow:
+      0 6px 12px rgba(0,0,0,.15),
+      inset 0 2px 0 color-mix(in oklab, #ffffff 40%, var(--btn-core)),
+      inset 0 -2px 0 color-mix(in oklab, #000 20%, var(--btn-core));
+  }
+  
+  &:focus-visible {
+    box-shadow:
+      0 0 0 3px #fff,
+      0 0 0 6px color-mix(in oklab, var(--btn-core, #4a90e2) 65%, #ffffff),
+      0 14px 28px rgba(0,0,0,.20),
+      inset 0 1px 0 rgba(255,255,255,.75);
+  }
 }
 
-.actions-pokemon  .nav-chip { --btn-core:#3b82f6; color:#0b234d; }
-.action-moves     .nav-chip { --btn-core:#ef4444; color:#4b0f0f; }
-.actions-abilities .nav-chip{ --btn-core:#f59e0b; color:#5a3d05; }
-.action-doc       .nav-chip { --btn-core:#22c55e; color:#0d3c24; }
-
-.actions-pokemon  .nav-chip::before { content: "🧬"; }
-.action-moves     .nav-chip::before { content: "⚡"; }
-.actions-abilities .nav-chip::before { content: "✨"; }
-.action-doc       .nav-chip::before { content: "📘"; }
-
-.field-page .nav-chip::before {
-  display: inline-block;
-  margin-right: .6rem;
-  font-size: 1.2em;
-  transform: translateY(1px);
-}
+.card-pokemon { --btn-core: #3b82f6; }
+.card-moves { --btn-core: #ef4444; }
+.card-abilities { --btn-core: #f59e0b; }
+.card-docs { --btn-core: #22c55e; }
 
 @media (max-width: 720px) {
-  .field-page .nav-chip {
-    min-height: 96px;
-    border-radius: 14px;
-    font-size: clamp(1rem, 0.95rem + 0.6vw, 1.25rem);
-    padding: 1rem .85rem;
-  }
-  .field-page .nav-chip::before { margin-right: .5rem; }
-}
-
-@media (max-width: 600px) {
-  .dex-screen.field-page {
-    overflow-x: hidden;
+  .menu-card {
+    padding: 1.5rem 1rem;
+    border-radius: 16px;
+    
+    .icon {
+      display: block;
+      font-size: 2.5rem;
+      line-height: 1;
+      margin-bottom: 0.75rem;
+    }
+    
+    .title {
+      font-size: 1.3rem;
+    }
+    
+    .desc {
+      font-size: 0.9rem;
+    }
   }
 }

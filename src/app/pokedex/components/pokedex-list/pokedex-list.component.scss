@@ -155,16 +155,53 @@ td:last-child { border-right: 0; }
   font-size: clamp(0.9rem, 0.25cqi + 0.65rem, 1.1rem);
 }
 
+.pokedex-toolbar {
+  display: grid;
+  grid-template-columns: 1fr minmax(160px, 220px);
+  gap: .6rem 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+
+  input[type="search"],
+  select {
+    appearance: none;
+    width: 100%;
+    padding: .55rem .7rem;
+    border-radius: .6rem;
+    border: 1px solid rgba(0,0,0,.12);
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,.05), inset 0 1px 0 rgba(255,255,255,.6);
+    font: inherit;
+  }
+}
+
+@media (max-width: 560px) {
+  .pokedex-toolbar { grid-template-columns: 1fr; }
+}
+
+.pokedex-table {
+  width: 100%;
+  border: 2px solid rgb(55, 197, 240);
+  box-shadow: 0 0 0 4px rgb(52, 73, 170);
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  table-layout: fixed;
+  font-size: clamp(0.9rem, 0.85rem + 0.3vw, 1.25rem);
+}
+
 @media (max-width: 640px) {
   .pokedex-table, thead, tbody, th, td, tr { display: block; }
-  thead { display: none; }
-
+  
   .pokedex-table {
     border: 0;
     box-shadow: none;
     background: transparent;
     font-size: 1rem;
   }
+
+  thead { display: none; }
 
   .pokedex-table tbody {
     display: grid;
@@ -345,3 +382,55 @@ td:last-child { border-right: 0; }
     font-size: .95rem;
   }
 }
+
+.type-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.type-checkbox {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.6rem;
+  font-weight: 800;
+  cursor: pointer;
+  background: #f0f0f0;
+  color: #333;
+  border: 2px solid transparent;
+  user-select: none;
+  transition: all 0.15s ease;
+  font-size: 0.9rem;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+
+  &:hover {
+    filter: brightness(0.95);
+  }
+
+  &.selected {
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,.25), 0 2px 4px rgba(0,0,0,.15);
+    border-color: rgba(0,0,0,0.2);
+  }
+}
+
+.type-checkbox[data-type="Feu"].selected       { background: #ee8130; color: #fff; }
+.type-checkbox[data-type="Eau"].selected       { background: #6390f0; color: #fff; }
+.type-checkbox[data-type="Plante"].selected    { background: #7ac74c; color: #fff; }
+.type-checkbox[data-type="Acier"].selected     { background: #b7b7ce; color: #fff; }
+.type-checkbox[data-type="Glace"].selected     { background: #96d9d6; color: #fff; }
+.type-checkbox[data-type="Sol"].selected       { background: #e2bf65; color: #fff; }
+.type-checkbox[data-type="Ténèbres"].selected  { background: #705746; color: #fff; }
+.type-checkbox[data-type="Psy"].selected       { background: #f95587; color: #fff; }
+.type-checkbox[data-type="Vol"].selected       { background: #a98ff3; color: #fff; }
+.type-checkbox[data-type="Roche"].selected     { background: #b6a136; color: #fff; }
+.type-checkbox[data-type="Spectre"].selected   { background: #735797; color: #fff; }
+.type-checkbox[data-type="Combat"].selected    { background: #c22e28; color: #fff; }
+.type-checkbox[data-type="Poison"].selected    { background: #a33ea1; color: #fff; }
+.type-checkbox[data-type="Insecte"].selected   { background: #a6b91a; color: #fff; }
+.type-checkbox[data-type="Fée"].selected       { background: #d685ad; color: #fff; }
+.type-checkbox[data-type="Dragon"].selected    { background: #6f35fc; color: #fff; }
+.type-checkbox[data-type="Électrik"].selected  { background: #f7d02c; color: #fff; }
+.type-checkbox[data-type="Normal"].selected    { background: #a8a77a; color: #fff; }
