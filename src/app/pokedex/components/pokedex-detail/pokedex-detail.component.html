@@ -11,398 +11,395 @@
     </div>
 
     @if (pokemon()) {
-
       <div class="dex-body">
-
         <div
           class="dex-screen detail"
           [attr.data-type1]="pokemon()!.types[0]">
+          
+          <div class="track">
+            <nav class="quick-nav">
+              <a class="nav-chip nav-blue" routerLink="/pokedex/pokemons" title="Retour">
+                🔙 <span>Retour</span>
+              </a>
+              <a class="nav-chip nav-red" routerLink="/pokedex/moves" title="Liste des Capacités">
+                ⚡ <span>Capacités</span>
+              </a>
+              <a class="nav-chip nav-yellow" routerLink="/pokedex/abilities" title="Liste des Talents">
+                ✨ <span>Talents</span>
+              </a>
+              <a class="nav-chip nav-green" routerLink="/pokedex/docs" title="Documentations">
+                📘 <span>Docs</span>
+              </a>
+            </nav>
 
-          <nav class="quick-nav">
-            <a class="nav-chip nav-blue" routerLink="/pokedex/pokemons" title="Retour">
-              🔙 <span>Retour</span>
-            </a>
-            <a class="nav-chip nav-red" routerLink="/pokedex/moves" title="Liste des Capacités">
-              ⚡ <span>Capacités</span>
-            </a>
-            <a class="nav-chip nav-yellow" routerLink="/pokedex/abilities" title="Liste des Talents">
-              ✨ <span>Talents</span>
-            </a>
-            <a class="nav-chip nav-green" routerLink="/pokedex/docs" title="Documentations">
-              📘 <span>Docs</span>
-            </a>
-          </nav>
+            <nav class="dex-toolbar top">
+              <div class="toolbar-inner">
+                <span class="left">
+                @if (prevMon()) {
+                  <a [routerLink]="['/pokedex/pokemons', prevMon()!.slug]" class="nav-chip">
+                    <img class="mini-sprite" [src]="prevMon()!.images.sprite" [alt]="prevMon()!.name" loading="lazy"
+                        [appImageFallback]="'/pokedex/img/pokemon/000_sprite.png'" />
+                    <span class="num">#{{ prevMon()!.id | number:'2.0-0' }}</span>
+                    <span class="name">{{ prevMon()!.name }}</span>
+                  </a>
+                }
+                </span>
 
-          <nav class="dex-toolbar top">
-            <div class="toolbar-inner">
-              <span class="left">
-              @if (prevMon()) {
-                <a [routerLink]="['/pokedex/pokemons', prevMon()!.slug]" class="nav-chip">
-                  <img class="mini-sprite" [src]="prevMon()!.images.sprite" [alt]="prevMon()!.name" loading="lazy"
-                       [appImageFallback]="'/pokedex/img/pokemon/000_sprite.png'" />
-                  <span class="num">#{{ prevMon()!.id | number:'2.0-0' }}</span>
-                  <span class="name">{{ prevMon()!.name }}</span>
-                </a>
-              }
-              </span>
+                <span class="center"></span>
 
-              <span class="center"></span>
+                <span class="right">
+                @if (nextMon()) {
+                  <a [routerLink]="['/pokedex/pokemons', nextMon()!.slug]" class="nav-chip">
+                    <span class="name">{{ nextMon()!.name }}</span>
+                    <span class="num">#{{ nextMon()!.id | number:'2.0-0' }}</span>
+                    <img class="mini-sprite" [src]="nextMon()!.images.sprite" [alt]="nextMon()!.name" loading="lazy"
+                        [appImageFallback]="'/pokedex/img/pokemon/000_sprite.png'" />
+                  </a>
+                }
+                </span>
+              </div>
+            </nav>
 
-              <span class="right">
-              @if (nextMon()) {
-                <a [routerLink]="['/pokedex/pokemons', nextMon()!.slug]" class="nav-chip">
-                  <span class="name">{{ nextMon()!.name }}</span>
-                  <span class="num">#{{ nextMon()!.id | number:'2.0-0' }}</span>
-                  <img class="mini-sprite" [src]="nextMon()!.images.sprite" [alt]="nextMon()!.name" loading="lazy"
-                       [appImageFallback]="'/pokedex/img/pokemon/000_sprite.png'" />
-                </a>
-              }
-              </span>
-            </div>
-          </nav>
+            <header class="title content-card">
+                  <h2>
+                    <small>#{{ pokemon()!.id | number:'2.0-0' }}</small>
+                    {{ pokemon()!.name }}
+                  </h2>
 
-          <header class="title content-card">
-                <h2>
-                  <small>#{{ pokemon()!.id | number:'2.0-0' }}</small>
-                  {{ pokemon()!.name }}
-                </h2>
-
-                <div class="form-switch" *ngIf="forms().length > 1">
-                  <button
-                    type="button"
-                    class="form-pill"
-                    *ngFor="let f of forms(); let i = index"
-                    [class.active]="i === formIndex()"
-                    (click)="setFormIndex(i)">
-                    Forme {{ f.formName }}
-                  </button>
-                </div>
-          </header>
-
-          <div class="layout">
-            <aside
-              class="infobox infobox-frame"
-              [attr.data-type1]="pokemon()!.types[0]"
-              [attr.data-type2]="pokemon()!.types[1] || pokemon()!.types[0]"
-              [class.dual]="pokemon()!.types.length === 2"
-            >
-              <div class="panel primary">
-                <figure class="artwork">
-                  <img
-                    [src]="imgArtwork()"
-                    [alt]="pokemon()!.name"
-                    loading="eager" 
-                    [appImageFallback]="'/pokedex/img/pokemon/000_artwork.png'" />
-                </figure>
-
-                <div class="quickfacts">
-                  <dl class="dl-grid">
-                    <div><dt>N°</dt><dd>#{{ pokemon()!.id | number:'2.0-0' }}</dd></div>
-                    <div><dt>Catégorie</dt><dd>Pokémon {{ pokemon()!.category }}</dd></div>
-                    <div><dt>Taille</dt><dd>{{ pokemon()!.height_m }} m</dd></div>
-                    <div><dt>Poids</dt><dd>{{ pokemon()!.weight_kg }} kg</dd></div>
-                    <div>
-                      <dt>Genre</dt>
-                      <dd>
-                        @if (!isGenderless()) { ♂ {{ malePercent() }}% · ♀ {{ femalePercent() }}% }
-                        @else { Asexué }
-                      </dd>
-                    </div>
-                    <div><dt>Capture</dt><dd>{{ pokemon()!.captureRate }}</dd></div>
-                  </dl>
-                </div>
-
-                <div class="types-box">
-                  <h3>Type</h3>
-                  <div class="types">
-                    @for (t of pokemon()!.types; track t) {
-                      <a class="type-chip"
-                        [attr.data-type]="t"
-                        [routerLink]="['/pokedex/types', (t | typeSlug)]"
-                        title="Voir le type {{ t }}">
-                        {{ t }}
-                      </a>
-                    }
+                  <div class="form-switch" *ngIf="forms().length > 1">
+                    <button
+                      type="button"
+                      class="form-pill"
+                      *ngFor="let f of forms(); let i = index"
+                      [class.active]="i === formIndex()"
+                      (click)="setFormIndex(i)">
+                      Forme {{ f.formName }}
+                    </button>
                   </div>
-                </div>
+            </header>
+
+            <div class="layout">
+              <aside
+                class="infobox infobox-frame"
+                [attr.data-type1]="pokemon()!.types[0]"
+                [attr.data-type2]="pokemon()!.types[1] || pokemon()!.types[0]"
+                [class.dual]="pokemon()!.types.length === 2"
+              >
+                <div class="panel primary">
+                  <figure class="artwork">
+                    <img
+                      [src]="imgArtwork()"
+                      [alt]="pokemon()!.name"
+                      loading="eager" 
+                      [appImageFallback]="'/pokedex/img/pokemon/000_artwork.png'" />
+                  </figure>
+
+                  <div class="quickfacts">
+                    <dl class="dl-grid">
+                      <div><dt>N°</dt><dd>#{{ pokemon()!.id | number:'2.0-0' }}</dd></div>
+                      <div><dt>Catégorie</dt><dd>Pokémon {{ pokemon()!.category }}</dd></div>
+                      <div><dt>Taille</dt><dd>{{ pokemon()!.height_m }} m</dd></div>
+                      <div><dt>Poids</dt><dd>{{ pokemon()!.weight_kg }} kg</dd></div>
+                      <div>
+                        <dt>Genre</dt>
+                        <dd>
+                          @if (!isGenderless()) { ♂ {{ malePercent() }}% · ♀ {{ femalePercent() }}% }
+                          @else { Asexué }
+                        </dd>
+                      </div>
+                      <div><dt>Capture</dt><dd>{{ pokemon()!.captureRate }}</dd></div>
+                    </dl>
+                  </div>
+
+                  <div class="types-box">
+                    <h3>Type</h3>
+                    <div class="types">
+                      @for (t of pokemon()!.types; track t) {
+                        <a class="type-chip"
+                          [attr.data-type]="t"
+                          [routerLink]="['/pokedex/types', (t | typeSlug)]"
+                          title="Voir le type {{ t }}">
+                          {{ t }}
+                        </a>
+                      }
+                    </div>
+                  </div>
 
                 <div class="sprite-box">
                   <img class="sprite" [src]="imgSprite()" [alt]="pokemon()!.name + ' sprite'" loading="lazy"
                        [appImageFallback]="'/pokedex/img/pokemon/000_sprite.png'" />
                 </div>
-              </div>
-            </aside>
+                </div>
+              </aside>
+
+              <main class="content">
+                <section class="abilities content-card">
+                  <h3>Talents</h3>
+                  <ul>
+                    <li><span [innerHTML]="pokemon()!.abilities.join(', ') | wikilink:{ kind:'ability' }"></span></li>
+                    @if (pokemon()!.hiddenAbility) {
+                      <li><span [innerHTML]="pokemon()!.hiddenAbility | wikilink:{ kind:'ability' }"></span><em> (Talent caché)</em></li>
+                    }
+                  </ul>
+                </section>
+
+                <section class="stats content-card">
+                  <h3>Statistiques de base</h3>
+                  <ul class="stats-list">
+                    <li class="hp">
+                      <span class="label">PV</span>
+                      <span class="value">{{ pokemon()!.baseStats.hp }}</span>
+                      <span class="bar"><span class="bar__fill hp" [style.width.%]="(pokemon()!.baseStats.hp/255*100)"></span></span>
+                    </li>
+                    <li class="atk">
+                      <span class="label">Attaque</span>
+                      <span class="value">{{ pokemon()!.baseStats.atk }}</span>
+                      <span class="bar"><span class="bar__fill atk" [style.width.%]="(pokemon()!.baseStats.atk/255*100)"></span></span>
+                    </li>
+                    <li class="def">
+                      <span class="label">Défense</span>
+                      <span class="value">{{ pokemon()!.baseStats.def }}</span>
+                      <span class="bar"><span class="bar__fill def" [style.width.%]="(pokemon()!.baseStats.def/255*100)"></span></span>
+                    </li>
+                    <li class="spa">
+                      <span class="label">Atq. Spé</span>
+                      <span class="value">{{ pokemon()!.baseStats.spa }}</span>
+                      <span class="bar"><span class="bar__fill spa" [style.width.%]="(pokemon()!.baseStats.spa/255*100)"></span></span>
+                    </li>
+                    <li class="spd">
+                      <span class="label">Déf. Spé</span>
+                      <span class="value">{{ pokemon()!.baseStats.spd }}</span>
+                      <span class="bar"><span class="bar__fill spd" [style.width.%]="(pokemon()!.baseStats.spd/255*100)"></span></span>
+                    </li>
+                    <li class="spe">
+                      <span class="label">Vitesse</span>
+                      <span class="value">{{ pokemon()!.baseStats.spe }}</span>
+                      <span class="bar"><span class="bar__fill spe" [style.width.%]="(pokemon()!.baseStats.spe/255*100)"></span></span>
+                    </li>
+                    <li class="total">
+                      <span class="label">Total</span>
+                      <span class="value">{{ totalBaseStats() }}</span>
+                    </li>
+                  </ul>
+                </section>
+
+                <section class="description content-card">
+                  <h3>Description</h3>
+                  <span class="description">{{ pokemon()!.description }}</span>
+                </section>
+
+                <section
+                  class="etymology content-card"
+                  *ngIf="pokemon()?.etymology as ety"
+                >
+                  <h3>Étymologie</h3>
+
+                  <ul class="etymology-list">
+                    <li *ngFor="let e of etymologyEntries()">
+                      <strong>{{ e[0] }}</strong> : {{ e[1] }}
+                    </li>
+                  </ul>
+                </section>
+              </main>
+            </div>
 
             <main class="content">
-              <section class="abilities content-card">
-                <h3>Talents</h3>
-                <ul>
-                  <li><span [innerHTML]="pokemon()!.abilities.join(', ') | wikilink:{ kind:'ability' }"></span></li>
-                  @if (pokemon()!.hiddenAbility) {
-                    <li><span [innerHTML]="pokemon()!.hiddenAbility | wikilink:{ kind:'ability' }"></span><em> (Talent caché)</em></li>
-                  }
-                </ul>
-              </section>
+              <section class="evolutions content-card" *ngIf="family()">
+                <h3>Évolutions</h3>
+                <p class="evo-summary" *ngIf="evoSummaryHtml() as html"
+                  [innerHTML]="html | wikilink:{ kind:'pokemon', id: (pokemon()!.id + '' ) }">
+                </p>
+                <div class="evo-family" *ngIf="evoRows().length">
+                  <h4 class="evo-family__title">
+                    Famille d'évolution de {{ pokemon()!.name }}
+                  </h4>
 
-              <section class="stats content-card">
-                <h3>Statistiques de base</h3>
-                <ul class="stats-list">
-                  <li class="hp">
-                    <span class="label">PV</span>
-                    <span class="value">{{ pokemon()!.baseStats.hp }}</span>
-                    <span class="bar"><span class="bar__fill hp" [style.width.%]="(pokemon()!.baseStats.hp/255*100)"></span></span>
-                  </li>
-                  <li class="atk">
-                    <span class="label">Attaque</span>
-                    <span class="value">{{ pokemon()!.baseStats.atk }}</span>
-                    <span class="bar"><span class="bar__fill atk" [style.width.%]="(pokemon()!.baseStats.atk/255*100)"></span></span>
-                  </li>
-                  <li class="def">
-                    <span class="label">Défense</span>
-                    <span class="value">{{ pokemon()!.baseStats.def }}</span>
-                    <span class="bar"><span class="bar__fill def" [style.width.%]="(pokemon()!.baseStats.def/255*100)"></span></span>
-                  </li>
-                  <li class="spa">
-                    <span class="label">Atq. Spé</span>
-                    <span class="value">{{ pokemon()!.baseStats.spa }}</span>
-                    <span class="bar"><span class="bar__fill spa" [style.width.%]="(pokemon()!.baseStats.spa/255*100)"></span></span>
-                  </li>
-                  <li class="spd">
-                    <span class="label">Déf. Spé</span>
-                    <span class="value">{{ pokemon()!.baseStats.spd }}</span>
-                    <span class="bar"><span class="bar__fill spd" [style.width.%]="(pokemon()!.baseStats.spd/255*100)"></span></span>
-                  </li>
-                  <li class="spe">
-                    <span class="label">Vitesse</span>
-                    <span class="value">{{ pokemon()!.baseStats.spe }}</span>
-                    <span class="bar"><span class="bar__fill spe" [style.width.%]="(pokemon()!.baseStats.spe/255*100)"></span></span>
-                  </li>
-                  <li class="total">
-                    <span class="label">Total</span>
-                    <span class="value">{{ totalBaseStats() }}</span>
-                  </li>
-                </ul>
-              </section>
+                  <div class="evo-rows">
+                    <div class="evo-row" *ngFor="let row of evoRows(); let r = index">
+                      <div class="evo-cell" *ngFor="let e of row">
 
-              <section class="description content-card">
-                <h3>Description</h3>
-                <span class="description">{{ pokemon()!.description }}</span>
-              </section>
+                        <div class="evo-arrow" *ngIf="e.link">
+                          <span class="evo-trigger">{{ evoLabel(e.link) }}</span>
+                          <span class="evo-arrow__icon">↓</span>
+                        </div>
 
-              <section
-                class="etymology content-card"
-                *ngIf="pokemon()?.etymology as ety"
-              >
-                <h3>Étymologie</h3>
-
-                <ul class="etymology-list">
-                  <li *ngFor="let e of etymologyEntries()">
-                    <strong>{{ e[0] }}</strong> : {{ e[1] }}
-                  </li>
-                </ul>
-              </section>
-            </main>
-          </div>
-
-          <main class="content">
-            <section class="evolutions content-card" *ngIf="family()">
-              <h3>Évolutions</h3>
-              <p class="evo-summary" *ngIf="evoSummaryHtml() as html"
-                [innerHTML]="html | wikilink:{ kind:'pokemon', id: (pokemon()!.id + '' ) }">
-              </p>
-              <div class="evo-family" *ngIf="evoRows().length">
-                <h4 class="evo-family__title">
-                  Famille d'évolution de {{ pokemon()!.name }}
-                </h4>
-
-                <div class="evo-rows">
-                  <div class="evo-row" *ngFor="let row of evoRows(); let r = index">
-                    <div class="evo-cell" *ngFor="let e of row">
-
-                      <div class="evo-arrow" *ngIf="e.link">
-                        <span class="evo-trigger">{{ evoLabel(e.link) }}</span>
-                        <span class="evo-arrow__icon">↓</span>
+                        <figure class="evo-mon">
+                          <ng-container *ngIf="!isCurrent(e.id); else currentStage">
+                            <a class="evo-click" [routerLink]="pokemonLink(e.mon)">
+                              <img [src]="e.mon.images.artwork" [alt]="e.mon.name" loading="lazy"
+                                  [appImageFallback]="'/pokedex/img/pokemon/000_artwork.png'">
+                              <figcaption>
+                                <span class="evo-name">{{ e.mon.name }}</span>
+                                <span class="evo-num">#{{ e.mon.id | number:'2.0-0' }}</span>
+                              </figcaption>
+                            </a>
+                          </ng-container>
+                          <ng-template #currentStage>
+                            <div class="evo-click evo-current">
+                              <img [src]="e.mon.images.artwork" [alt]="e.mon.name" loading="lazy"
+                                  [appImageFallback]="'/pokedex/img/pokemon/000_artwork.png'">
+                              <figcaption>
+                                <strong class="evo-name">{{ e.mon.name }}</strong>
+                                <span class="evo-num">#{{ e.mon.id | number:'2.0-0' }}</span>
+                              </figcaption>
+                            </div>
+                          </ng-template>
+                        </figure>
                       </div>
-
-                      <figure class="evo-mon">
-                        <ng-container *ngIf="!isCurrent(e.id); else currentStage">
-                          <a class="evo-click" [routerLink]="pokemonLink(e.mon)">
-                            <img [src]="e.mon.images.artwork" [alt]="e.mon.name" loading="lazy"
-                                 [appImageFallback]="'/pokedex/img/pokemon/000_artwork.png'">
-                            <figcaption>
-                              <span class="evo-name">{{ e.mon.name }}</span>
-                              <span class="evo-num">#{{ e.mon.id | number:'2.0-0' }}</span>
-                            </figcaption>
-                          </a>
-                        </ng-container>
-                        <ng-template #currentStage>
-                          <div class="evo-click evo-current">
-                            <img [src]="e.mon.images.artwork" [alt]="e.mon.name" loading="lazy"
-                                 [appImageFallback]="'/pokedex/img/pokemon/000_artwork.png'">
-                            <figcaption>
-                              <strong class="evo-name">{{ e.mon.name }}</strong>
-                              <span class="evo-num">#{{ e.mon.id | number:'2.0-0' }}</span>
-                            </figcaption>
-                          </div>
-                        </ng-template>
-                      </figure>
                     </div>
                   </div>
                 </div>
+              </section>
+
+              <section class="learnsets content-card" *ngIf="resolvedLearnset() as L">
+                <h3>Capacités apprises</h3>
+
+                <ng-container *ngIf="hasAnyLearnset(); else noLearnset">
+                  <div class="learnset-block" *ngIf="L.levelUp.length">
+                    <h4>Par niveau</h4>
+                    <div class="table-scroll">
+                      <table class="learnset-table">
+                        <thead>
+                          <tr>
+                            <th>Niv.</th>
+                            <th>Capacité</th>
+                            <th>Type</th>
+                            <th>Cat.</th>
+                            <th>Puiss.</th>
+                            <th>Préc.</th>
+                            <th>PP</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          @for (e of L.levelUp; track e.moveSlug + ':' + e.levelSort) {
+                            <tr>
+                              <td class="num">{{ e.level }}</td>
+                              <td>
+                                <a [routerLink]="moveLink(e.moveSlug)">{{ e.moveName }}</a>
+                              </td>
+                              <td>
+                                <a
+                                  class="type-chip"
+                                  [attr.data-type]="e.moveType"
+                                  [routerLink]="['/pokedex/types', ($any(e.moveType) | typeSlug)]"
+                                  title="Voir le type {{ e.moveType }}"
+                                >{{ e.moveType }}</a>
+                              </td>
+                              <td>{{ e.moveCategory }}</td>
+                              <td class="num">{{ e.power ?? '—' }}</td>
+                              <td class="num">{{ e.accuracy ?? '—' }}</td>
+                              <td class="num">{{ e.pp ?? '—' }}</td>
+                            </tr>
+                          }
+                        </tbody>
+
+                      </table>
+                    </div>
+                  </div>
+                  <div class="learnset-block" *ngIf="L.tm.length">
+                    <h4>Par CT</h4>
+                    <div class="table-scroll">
+                      <table class="learnset-table">
+                        <thead>
+                          <tr>
+                            <th>CT</th>
+                            <th>Capacité</th>
+                            <th>Type</th>
+                            <th>Cat.</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          @for (t of L.tm; track t.tm) {
+                            <tr>
+                              <td class="mono">{{ t.tm }}</td>
+                              <td>
+                                <a [routerLink]="moveLink(t.moveSlug)">{{ t.moveName }}</a>
+                              </td>
+                              <td>
+                                <a
+                                  class="type-chip"
+                                  [attr.data-type]="t.moveType"
+                                  [routerLink]="['/pokedex/types', ($any(t.moveType) | typeSlug)]"
+                                  title="Voir le type {{ t.moveType }}"
+                                >{{ t.moveType }}</a>
+                              </td>
+                              <td>{{ t.moveCategory }}</td>
+                            </tr>
+                          }
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="learnset-block" *ngIf="L.egg.length">
+                    <h4>Par reproduction</h4>
+                    <div class="table-scroll">
+                      <table class="learnset-table">
+                        <thead>
+                          <tr>
+                            <th>Capacité</th>
+                            <th>Type</th>
+                            <th>Cat.</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          @for (g of L.egg; track g.moveSlug) {
+                            <tr>
+                              <td>
+                                <a [routerLink]="moveLink(g.moveSlug)">{{ g.moveName }}</a>
+                              </td>
+                              <td>
+                                <a
+                                  class="type-chip"
+                                  [attr.data-type]="g.moveType"
+                                  [routerLink]="['/pokedex/types', ($any(g.moveType) | typeSlug)]"
+                                  title="Voir le type {{ g.moveType }}"
+                                >{{ g.moveType }}</a>
+                              </td>
+                              <td>{{ g.moveCategory }}</td>
+                            </tr>
+                          }
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </ng-container>
+
+                <ng-template #noLearnset>
+                  <p class="muted">Aucune capacité connue pour ce Pokémon.</p>
+                </ng-template>
+              </section>
+            </main>
+
+            <nav class="dex-toolbar bottom">
+              <div class="toolbar-inner">
+                <span class="left">
+                @if (prevMon()) {
+                  <a [routerLink]="['/pokedex/pokemons', prevMon()!.slug]" class="nav-chip">
+                    <img class="mini-sprite" [src]="prevMon()!.images.sprite" [alt]="prevMon()!.name" loading="lazy" />
+                    <span class="num">#{{ prevMon()!.id | number:'2.0-0' }}</span>
+                    <span class="name">{{ prevMon()!.name }}</span>
+                  </a>
+                }
+                </span>
+
+                <span class="center">
+                  <a routerLink="/pokedex/pokemons">Retour à la liste</a>
+                </span>
+
+                <span class="right">
+                @if (nextMon()) {
+                  <a [routerLink]="['/pokedex/pokemons', nextMon()!.slug]" class="nav-chip">
+                    <span class="name">{{ nextMon()!.name }}</span>
+                    <span class="num">#{{ nextMon()!.id | number:'2.0-0' }}</span>
+                    <img class="mini-sprite" [src]="nextMon()!.images.sprite" [alt]="nextMon()!.name" loading="lazy" />
+                  </a>
+                }
+                </span>
               </div>
-            </section>
-
-            <section class="learnsets content-card" *ngIf="resolvedLearnset() as L">
-              <h3>Capacités apprises</h3>
-
-              <ng-container *ngIf="hasAnyLearnset(); else noLearnset">
-                <div class="learnset-block" *ngIf="L.levelUp.length">
-                  <h4>Par niveau</h4>
-                  <div class="table-scroll">
-                    <table class="learnset-table">
-                      <thead>
-                        <tr>
-                          <th>Niv.</th>
-                          <th>Capacité</th>
-                          <th>Type</th>
-                          <th>Cat.</th>
-                          <th>Puiss.</th>
-                          <th>Préc.</th>
-                          <th>PP</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        @for (e of L.levelUp; track e.moveSlug + ':' + e.levelSort) {
-                          <tr>
-                            <td class="num">{{ e.level }}</td>
-                            <td>
-                              <a [routerLink]="moveLink(e.moveSlug)">{{ e.moveName }}</a>
-                            </td>
-                            <td>
-                              <a
-                                class="type-chip"
-                                [attr.data-type]="e.moveType"
-                                [routerLink]="['/pokedex/types', ($any(e.moveType) | typeSlug)]"
-                                title="Voir le type {{ e.moveType }}"
-                              >{{ e.moveType }}</a>
-                            </td>
-                            <td>{{ e.moveCategory }}</td>
-                            <td class="num">{{ e.power ?? '—' }}</td>
-                            <td class="num">{{ e.accuracy ?? '—' }}</td>
-                            <td class="num">{{ e.pp ?? '—' }}</td>
-                          </tr>
-                        }
-                      </tbody>
-
-                    </table>
-                  </div>
-                </div>
-                <div class="learnset-block" *ngIf="L.tm.length">
-                  <h4>Par CT</h4>
-                  <div class="table-scroll">
-                    <table class="learnset-table">
-                      <thead>
-                        <tr>
-                          <th>CT</th>
-                          <th>Capacité</th>
-                          <th>Type</th>
-                          <th>Cat.</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        @for (t of L.tm; track t.tm) {
-                          <tr>
-                            <td class="mono">{{ t.tm }}</td>
-                            <td>
-                              <a [routerLink]="moveLink(t.moveSlug)">{{ t.moveName }}</a>
-                            </td>
-                            <td>
-                              <a
-                                class="type-chip"
-                                [attr.data-type]="t.moveType"
-                                [routerLink]="['/pokedex/types', ($any(t.moveType) | typeSlug)]"
-                                title="Voir le type {{ t.moveType }}"
-                              >{{ t.moveType }}</a>
-                            </td>
-                            <td>{{ t.moveCategory }}</td>
-                          </tr>
-                        }
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-                <div class="learnset-block" *ngIf="L.egg.length">
-                  <h4>Par reproduction</h4>
-                  <div class="table-scroll">
-                    <table class="learnset-table">
-                      <thead>
-                        <tr>
-                          <th>Capacité</th>
-                          <th>Type</th>
-                          <th>Cat.</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        @for (g of L.egg; track g.moveSlug) {
-                          <tr>
-                            <td>
-                              <a [routerLink]="moveLink(g.moveSlug)">{{ g.moveName }}</a>
-                            </td>
-                            <td>
-                              <a
-                                class="type-chip"
-                                [attr.data-type]="g.moveType"
-                                [routerLink]="['/pokedex/types', ($any(g.moveType) | typeSlug)]"
-                                title="Voir le type {{ g.moveType }}"
-                              >{{ g.moveType }}</a>
-                            </td>
-                            <td>{{ g.moveCategory }}</td>
-                          </tr>
-                        }
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </ng-container>
-
-              <ng-template #noLearnset>
-                <p class="muted">Aucune capacité connue pour ce Pokémon.</p>
-              </ng-template>
-            </section>
-          </main>
-
-          <nav class="dex-toolbar bottom">
-            <div class="toolbar-inner">
-              <span class="left">
-              @if (prevMon()) {
-                <a [routerLink]="['/pokedex/pokemons', prevMon()!.slug]" class="nav-chip">
-                  <img class="mini-sprite" [src]="prevMon()!.images.sprite" [alt]="prevMon()!.name" loading="lazy" />
-                  <span class="num">#{{ prevMon()!.id | number:'2.0-0' }}</span>
-                  <span class="name">{{ prevMon()!.name }}</span>
-                </a>
-              }
-              </span>
-
-              <span class="center">
-                <a routerLink="/pokedex/pokemons">Retour à la liste</a>
-              </span>
-
-              <span class="right">
-              @if (nextMon()) {
-                <a [routerLink]="['/pokedex/pokemons', nextMon()!.slug]" class="nav-chip">
-                  <span class="name">{{ nextMon()!.name }}</span>
-                  <span class="num">#{{ nextMon()!.id | number:'2.0-0' }}</span>
-                  <img class="mini-sprite" [src]="nextMon()!.images.sprite" [alt]="nextMon()!.name" loading="lazy" />
-                </a>
-              }
-              </span>
-            </div>
-          </nav>
-
+            </nav>
+          </div>
         </div>
-
       </div>
-
     } @else {
       <div class="dex-body">
         <div class="dex-screen notfound-screen">

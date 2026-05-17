@@ -56,67 +56,71 @@
         </div>
 
         @if (list(); as rows) {
-          <table class="pokedex-table">
-            <thead>
-              <tr>
-                <th class="col-num">Dex #</th>
-                <th class="col-pokemon group-end" colspan="2">Pokémon</th>
-                <th class="col-type-head" colspan="2">Type</th>
-              </tr>
-            </thead>
-
-            <tbody>
-              @for (p of rows; track p.id) {
+          @if (rows.length > 0) {
+            <table class="pokedex-table">
+              <thead>
                 <tr>
-                  <td class="col-num" data-label="Dex #">#{{ p.id | number:'2.0-0' }}</td>
-
-                  <td class="col-sprite" data-label="Sprite">
-                    <a [routerLink]="['/pokedex/pokemons', p.slug]" class="sprite-link" title="Voir {{p.name}}">
-                      <img [src]="p.images.sprite" [alt]="p.name" loading="lazy" 
-                           [appImageFallback]="'/pokedex/img/pokemon/000_sprite.png'" />
-                    </a>
-                  </td>
-
-                  <td class="col-name group-end" data-label="Nom">
-                    <a [routerLink]="['/pokedex/pokemons', p.slug]" class="name-link">{{ p.name }}</a>
-                  </td>
-
-                  @if (p.types.length === 1) {
-                    <td class="col-type group-end"
-                        data-label="Type"
-                        [attr.data-type]="p.types[0]"
-                        colspan="2">
-                      <a class="type-badge"
-                         [attr.data-type]="p.types[0]"
-                         [routerLink]="['/pokedex/types', (p.types[0] | typeSlug)]">
-                        {{ p.types[0] }}
-                      </a>
-                    </td>
-                  } @else {
-                    <td class="col-type"
-                        data-label="Type 1"
-                        [attr.data-type]="p.types[0]">
-                      <a class="type-badge"
-                         [attr.data-type]="p.types[0]"
-                         [routerLink]="['/pokedex/types', (p.types[0] | typeSlug)]">
-                        {{ p.types[0] }}
-                      </a>
-                    </td>
-
-                    <td class="col-type group-end"
-                        data-label="Type 2"
-                        [attr.data-type]="p.types[1]">
-                      <a class="type-badge"
-                         [attr.data-type]="p.types[1]"
-                         [routerLink]="['/pokedex/types', (p.types[1] | typeSlug)]">
-                        {{ p.types[1] }}
-                      </a>
-                    </td>
-                  }
+                  <th class="col-num">Dex #</th>
+                  <th class="col-pokemon group-end" colspan="2">Pokémon</th>
+                  <th class="col-type-head" colspan="2">Type</th>
                 </tr>
-              }
-            </tbody>
-          </table>
+              </thead>
+
+              <tbody>
+                @for (p of rows; track p.id) {
+                  <tr>
+                    <td class="col-num" data-label="Dex #">#{{ p.id | number:'2.0-0' }}</td>
+
+                    <td class="col-sprite" data-label="Sprite">
+                      <a [routerLink]="['/pokedex/pokemons', p.slug]" class="sprite-link" title="Voir {{p.name}}">
+                        <img [src]="p.images.sprite" [alt]="p.name" loading="lazy" 
+                            [appImageFallback]="'/pokedex/img/pokemon/000_sprite.png'" />
+                      </a>
+                    </td>
+
+                    <td class="col-name group-end" data-label="Nom">
+                      <a [routerLink]="['/pokedex/pokemons', p.slug]" class="name-link">{{ p.name }}</a>
+                    </td>
+
+                    @if (p.types.length === 1) {
+                      <td class="col-type group-end"
+                          data-label="Type"
+                          [attr.data-type]="p.types[0]"
+                          colspan="2">
+                        <a class="type-badge"
+                          [attr.data-type]="p.types[0]"
+                          [routerLink]="['/pokedex/types', (p.types[0] | typeSlug)]">
+                          {{ p.types[0] }}
+                        </a>
+                      </td>
+                    } @else {
+                      <td class="col-type"
+                          data-label="Type 1"
+                          [attr.data-type]="p.types[0]">
+                        <a class="type-badge"
+                          [attr.data-type]="p.types[0]"
+                          [routerLink]="['/pokedex/types', (p.types[0] | typeSlug)]">
+                          {{ p.types[0] }}
+                        </a>
+                      </td>
+
+                      <td class="col-type group-end"
+                          data-label="Type 2"
+                          [attr.data-type]="p.types[1]">
+                        <a class="type-badge"
+                          [attr.data-type]="p.types[1]"
+                          [routerLink]="['/pokedex/types', (p.types[1] | typeSlug)]">
+                          {{ p.types[1] }}
+                        </a>
+                      </td>
+                    }
+                  </tr>
+                }
+              </tbody>
+            </table>
+          } @else {
+            <p>Aucun Pokémon ne correspond à la recherche.</p>
+          }
         } @else {
           <p>Chargement du Pokédex…</p>
         }

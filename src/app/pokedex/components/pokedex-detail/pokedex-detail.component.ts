@@ -46,17 +46,29 @@ export class PokedexDetailComponent implements OnInit {
   
   readonly resolvedLearnset = signal<ResolvedLearnset | null>(null);
 
-  pokemon = computed<Pokemon | null>(() => {
+  basePokemon = computed<Pokemon | null>(() => {
     const s = this.slug();
     return this.pokedex.getBySlug(s);
   });
 
   readonly forms = computed<Pokemon[]>(() => {
-    const p = this.pokemon();
+    const p = this.basePokemon();
     return p ? this.pokedex.getFormsById(p.id) : [];
   });
 
   readonly formIndex = signal(0);
+
+  // This ensures that when basePokemon changes (via navigation), we reset to first form
+  private formResetEffect = effect(() => {
+    this.basePokemon(); 
+    this.formIndex.set(0);
+  }, { allowSignalWrites: true });
+
+  readonly pokemon = computed<Pokemon | null>(() => {
+    const list = this.forms();
+    const idx = this.formIndex();
+    return list.length > 0 ? list[idx] : this.basePokemon();
+  });
 
   constructor() {
     effect(() => {
@@ -71,8 +83,6 @@ export class PokedexDetailComponent implements OnInit {
     });
   }
 
-
-
   setFormIndex(i: number) {
     const list = this.forms();
     if (!list.length) return;
@@ -85,7 +95,7 @@ export class PokedexDetailComponent implements OnInit {
   }
 
   private currentIndex = computed(() => {
-    const p = this.pokemon();
+    const p = this.basePokemon();
     if (!p) return -1;
     return this.pokedex.uniqueList().findIndex(x => x.id === p.id);
   });
@@ -103,31 +113,40 @@ export class PokedexDetailComponent implements OnInit {
     return list[i + 1];
   });
 
-  imgSprite = () => this.pokedex.normalizeImg(this.pokemon()!.images.sprite);
-  imgArtwork = () => this.pokedex.normalizeImg(this.pokemon()!.images.artwork);
+  imgSprite = computed(() => {
+    const p = this.pokemon();
+    return p ? this.pokedex.normalizeImg(p.images.sprite) : '';
+  });
+
+  imgArtwork = computed(() => {
+    const p = this.pokemon();
+    return p ? this.pokedex.normalizeImg(p.images.artwork) : '';
+  });
 
   maxId = () => this.pokedex.maxId();
   // Les IDs ne sont plus utilisés pour la navigation directe
   prevId = () => -1; 
   nextId = () => -1;
 
-  isGenderless(): boolean {
+  isGenderless = computed(() => {
     const g = this.pokemon()?.genderRatio;
     return g === 'genderless';
-  }
-  malePercent(): number | null {
+  });
+
+  malePercent = computed(() => {
     const g = this.pokemon()?.genderRatio;
     if (!g || typeof g === 'string') return null;
     return g.male;
-  }
-  femalePercent(): number | null {
+  });
+
+  femalePercent = computed(() => {
     const g = this.pokemon()?.genderRatio;
     if (!g || typeof g === 'string') return null;
     return g.female;
-  }
+  });
 
   family = computed<EvolutionFamily | null>(() => {
-    const p = this.pokemon();
+    const p = this.basePokemon();
     if (!p) return null;
     return this.evo.familyFor(p.id);
   });
@@ -199,7 +218,7 @@ export class PokedexDetailComponent implements OnInit {
   });
 
 
-  isCurrent = (id: number) => this.pokemon()?.id === id;
+  isCurrent = (id: number) => this.basePokemon()?.id === id;
 
   wikiifyName(id: number): string {
     const mon = this.pokedex.getById(id);
@@ -232,7 +251,7 @@ export class PokedexDetailComponent implements OnInit {
   }
 
   evoSummaryHtml = computed<string | null>(() => {
-    const p = this.pokemon();
+    const p = this.basePokemon();
     const fam = this.family();
     if (!p || !fam) return null;
 
@@ -289,17 +308,17 @@ export class PokedexDetailComponent implements OnInit {
       this.evo.ensureLoaded()
     ]);
 
-    if (!this.pokemon()) {
+    if (!this.basePokemon()) {
       this.router.navigate(['/pokedex']);
       return;
     }
 
-    document.title = `#${this.pokemon()!.id.toString().padStart(2,'0')} — ${this.pokemon()!.name} | Pokédex`;
+    document.title = `#${this.basePokemon()!.id.toString().padStart(2,'0')} — ${this.basePokemon()!.name} | Pokédex`;
     window.scrollTo({ top: 0, behavior: 'instant' as ScrollBehavior });
   }
 
-  totalBaseStats(): number {
-    const p = this.pokemon?.();
+  totalBaseStats = computed(() => {
+    const p = this.pokemon();
     if (!p || !p.baseStats) return 0;
 
     const {
@@ -312,7 +331,7 @@ export class PokedexDetailComponent implements OnInit {
     } = p.baseStats;
 
     return hp + atk + def + spa + spd + spe;
-  }
+  });
 
   private triggerInSentence(l: EvolutionLink): string {
     const t: any = l.trigger;

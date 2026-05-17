@@ -17,6 +17,7 @@ export class MovesListComponent {
   private svc = inject(MovesService);
   private location = inject(Location);
 
+  loading = signal<boolean>(true);
   private _moves = signal<Move[] | null>(null);
   private _query = this.svc.searchQuery;
   private _type = this.svc.filterType;
@@ -24,11 +25,16 @@ export class MovesListComponent {
   private _sort = this.svc.sortKey;
 
   constructor() {
-    this.svc.getAll().subscribe(m => this._moves.set(m));
+    this.svc.getAll().subscribe(m => {
+      this._moves.set(m);
+      this.loading.set(false);
+    });
   }
 
   list = computed(() => {
-    const data = this._moves() ?? [];
+    const data = this._moves();
+    if (data === null) return null;
+
     const q = this._query().trim().toLowerCase();
     const t = this._type();
     const c = this._category();
