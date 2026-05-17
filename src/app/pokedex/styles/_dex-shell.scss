@@ -101,11 +101,7 @@
 }
 
 .led-red    { background: #ff5a5a; }
-
-
 .led-yellow { background: #ffd34d; }
-
-
 .led-green  { background: #59d98a; }
 
 
@@ -122,7 +118,30 @@
   position: relative;
 }
 
+@keyframes screenFadeOut {
+  from { opacity: 1; filter: brightness(1) blur(0); }
+  to { opacity: 0; filter: brightness(1.5) blur(3px); }
+}
+
+@keyframes screenFadeIn {
+  from { opacity: 0; filter: brightness(1.5) blur(3px); }
+  to { opacity: 1; filter: brightness(1) blur(0); }
+}
+
+:root {
+  view-transition-name: none;
+}
+
+::view-transition-old(pokedex-screen) {
+  animation: screenFadeOut 0.15s ease-in both;
+}
+
+::view-transition-new(pokedex-screen) {
+  animation: screenFadeIn 0.25s ease-out 0.15s both;
+}
+
 .dex-screen {
+  view-transition-name: pokedex-screen;
   background: radial-gradient(
     circle at 30% 25%,
     #f6fbff 0%,
