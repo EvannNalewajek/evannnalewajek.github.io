@@ -2146,6 +2146,28 @@
   },
   {
     "id": 196,
+    "slug": "resonnance",
+    "name": "Résonnance",
+    "battleEffectCondition": "Lors de son attaque",
+    "battleEffectShort": "Si le Pokémon effectue un coup critique avec une capacité sonore, l'attaque frappe une deuxième fois à 50% de sa puissance.",
+    "battleEffectLong": "Si un Pokémon doté de ce talent inflige un coup critique en utilisant une capacité sonore, la capacité se déclenche une seconde fois consécutive. Cette deuxième frappe a une puissance réduite de moitié et ne peut pas infliger de coup critique.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Résonnance n'a aucun effet hors combat.",
+    "description": "Fait résonner les attaques sonores critiques pour frapper une seconde fois."
+  },
+  {
+    "id": 197,
+    "slug": "chanteuse",
+    "name": "Chanteuse",
+    "battleEffectCondition": "Lors d'une capacité adverse",
+    "battleEffectShort": "Si un autre Pokémon utilise une capacité sonore, le Pokémon la reproduit aussitôt.",
+    "battleEffectLong": "Dès qu'un Pokémon présent sur le terrain utilise une capacité sonore, le Pokémon doté du talent Chanteuse utilise immédiatement la même capacité. Cet effet ne se déclenche pas si c'est le Pokémon lui-même qui a utilisé la capacité initiale.",
+    "fieldEffectCondition": "Aucun effet",
+    "fieldEffectLong": "Chanteuse n'a aucun effet hors combat.",
+    "description": "Reproduit immédiatement les capacités sonores utilisées par les autres Pokémon."
+  },
+  {
+    "id": 198,
     "slug": "maree-pourpre",
     "name": "Marée Pourpre",
     "battleEffectCondition": "Lors de son attaque",
@@ -2156,7 +2178,7 @@
     "description": "Les capacités de type Eau ont une chance d'apeurer. Soigne le Pokémon en cas de succès."
   },
   {
-    "id": 196,
+    "id": 199,
     "slug": "marecage-brun",
     "name": "Marécage Brun",
     "battleEffectCondition": "Lorsque le Pokémon est envoyé",
@@ -2167,7 +2189,7 @@
     "description": "Les Pokémon au sol ne peuvent pas être soigner, ni quitter le terrain via une capacité tant que le Pokémon est sur le terrain."
   },
   {
-    "id": 197,
+    "id": 200,
     "slug": "nuee-ambree",
     "name": "Nuée Ambrée",
     "battleEffectCondition": "Lors de son attaque",
@@ -2178,7 +2200,7 @@
     "description": "Les capacités de type Insecte ont une chance d'harceler la cible, lui infligeant des dégâts continus et l'empêche de quitter le terrain."
   },
   {
-    "id": 198,
+    "id": 201,
     "slug": "danse-opaline",
     "name": "Danse Opaline",
     "battleEffectCondition": "Lors de son attaque",
@@ -2189,7 +2211,7 @@
     "description": "Les capacités de danse deviennent prioritaires et ont une chance d'apeurer l'ennemi."
   },
   {
-    "id": 199,
+    "id": 202,
     "slug": "peste-mauve",
     "name": "Peste Mauve",
     "battleEffectCondition": "Entre chaque tour",
@@ -2200,7 +2222,7 @@
     "description": "Empoisonne gravement le lanceur à la fin de son premier tour. Lorsqu'il est empoisonné, le Pokémon est guérie d'une partie de ses PV au lieu d'en perdre."
   },
   {
-    "id": 200,
+    "id": 203,
     "slug": "cendre-ocre",
     "name": "Cendre Ocre",
     "battleEffectCondition": "Lors de son attaque",
@@ -2211,7 +2233,7 @@
     "description": "Lorsqu'une capacité de type Feu touche un Pokémon qui résiste à ce type, augmente la statistique offensive correspondant à la catégorie de la capacité."
   },
   {
-    "id": 201,
+    "id": 204,
     "slug": "neige-grise",
     "name": "Neige Grise",
     "battleEffectCondition": "Entre chaque tour",
@@ -2222,7 +2244,7 @@
     "description": "Réduit la vitesse des Pokémon adverses à chaque fin de tour."
   },
   {
-    "id": 202,
+    "id": 205,
     "slug": "moissonneur-vert",
     "name": "Moissonneur Vert",
     "battleEffectCondition": "Lors de son attaque",
@@ -2233,7 +2255,7 @@
     "description": "Résiste aux capacités de type Plante, et toutes les attaques deviennent super efficace contre des Pokémon de type Plante."
   },
   {
-    "id": 203,
+    "id": 206,
     "slug": "eclipse-noire",
     "name": "Éclipse Noire",
     "battleEffectCondition": "Lorsque le Pokémon est envoyé",
@@ -2244,7 +2266,7 @@
     "description": "Absorbe la lumière des capacités ainsi que les rayons du soleil."
   },
   {
-    "id": 204,
+    "id": 207,
     "slug": "deuil-blanc",
     "name": "Deuil Blanc",
     "battleEffectCondition": "Lors d'une capacité adverse",
@@ -2255,7 +2277,7 @@
     "description": "Si le Pokémon est mis K.O. par une attaque, il inflige une malédiction à l'attaquant avant de s'évanouir."
   },
   {
-    "id": 205,
+    "id": 208,
     "slug": "equilibre-absolu",
     "name": "Équilibre Absolu",
     "battleEffectCondition": "Entre chaque tour",
@@ -2266,7 +2288,7 @@
     "description": "Si un Pokémon adverse boost ses stats ou diminue les stats du Pokémon ou d'un Pokémon allié, annule le changement à la fin du tour."
   },
   {
-    "id": 206,
+    "id": 209,
     "slug": "renforcement-adaptatif",
     "name": "Renforcement Adaptatif",
     "battleEffectCondition": "Entre chaque tour",

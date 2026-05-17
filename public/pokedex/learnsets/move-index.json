@@ -1,11 +1,645 @@
 {
-  "ecras-face": [
-    { "id": 1,  "method": "level", "level": 6  },
-    { "id": 4,  "method": "tm",    "tm": "CT01" },
-    { "id": 7, "method": "egg" }
+  "charge": [
+    {
+      "id": 1,
+      "method": "level",
+      "level": 1
+    }
   ],
-  "griffe": [
-    { "id": 10,   "method": "level", "level": 9  },
-    { "id": 15,  "method": "level", "level": 10 }
+  "rugissement": [
+    {
+      "id": 1,
+      "method": "level",
+      "level": 5
+    },
+    {
+      "id": 86,
+      "method": "level",
+      "level": 1
+    }
+  ],
+  "feuillage": [
+    {
+      "id": 1,
+      "method": "level",
+      "level": 6
+    }
+  ],
+  "repli": [
+    {
+      "id": 1,
+      "method": "level",
+      "level": 10
+    }
+  ],
+  "tranch-herbe": [
+    {
+      "id": 1,
+      "method": "level",
+      "level": 13
+    }
+  ],
+  "morsure": [
+    {
+      "id": 1,
+      "method": "level",
+      "level": 15
+    }
+  ],
+  "vampigraine": [
+    {
+      "id": 1,
+      "method": "level",
+      "level": 19
+    }
+  ],
+  "mega-sangsue": [
+    {
+      "id": 1,
+      "method": "level",
+      "level": 23
+    }
+  ],
+  "synthese": [
+    {
+      "id": 1,
+      "method": "level",
+      "level": 27
+    }
+  ],
+  "lame-feuille": [
+    {
+      "id": 1,
+      "method": "level",
+      "level": 30
+    }
+  ],
+  "machouille": [
+    {
+      "id": 1,
+      "method": "level",
+      "level": 33
+    },
+    {
+      "id": 1,
+      "method": "tm",
+      "tm": "CT108"
+    }
+  ],
+  "giga-sangsue": [
+    {
+      "id": 1,
+      "method": "level",
+      "level": 37
+    },
+    {
+      "id": 1,
+      "method": "tm",
+      "tm": "CT111"
+    }
+  ],
+  "damocles": [
+    {
+      "id": 1,
+      "method": "level",
+      "level": 41
+    },
+    {
+      "id": 1,
+      "method": "egg"
+    }
+  ],
+  "tempete-verte": [
+    {
+      "id": 1,
+      "method": "level",
+      "level": 45
+    },
+    {
+      "id": 1,
+      "method": "tm",
+      "tm": "CT159"
+    }
+  ],
+  "belier": [
+    {
+      "id": 1,
+      "method": "tm",
+      "tm": "CT01"
+    },
+    {
+      "id": 2,
+      "method": "tm",
+      "tm": "CT01"
+    },
+    {
+      "id": 86,
+      "method": "tm",
+      "tm": "CT01"
+    }
+  ],
+  "coudboue": [
+    {
+      "id": 1,
+      "method": "tm",
+      "tm": "CT05"
+    }
+  ],
+  "abri": [
+    {
+      "id": 1,
+      "method": "tm",
+      "tm": "CT07"
+    }
+  ],
+  "desherbaffe": [
+    {
+      "id": 1,
+      "method": "tm",
+      "tm": "CT20"
+    }
+  ],
+  "facade": [
+    {
+      "id": 1,
+      "method": "tm",
+      "tm": "CT25"
+    }
+  ],
+  "pietisol": [
+    {
+      "id": 1,
+      "method": "tm",
+      "tm": "CT28"
+    },
+    {
+      "id": 1,
+      "method": "egg"
+    }
+  ],
+  "feuille-magik": [
+    {
+      "id": 1,
+      "method": "tm",
+      "tm": "CT33"
+    }
+  ],
+  "tenacite": [
+    {
+      "id": 1,
+      "method": "tm",
+      "tm": "CT47"
+    }
+  ],
+  "balle-graine": [
+    {
+      "id": 1,
+      "method": "tm",
+      "tm": "CT56"
+    }
+  ],
+  "plaquage": [
+    {
+      "id": 1,
+      "method": "tm",
+      "tm": "CT66"
+    },
+    {
+      "id": 1,
+      "method": "egg"
+    }
+  ],
+  "blabla-dodo": [
+    {
+      "id": 1,
+      "method": "tm",
+      "tm": "CT70"
+    }
+  ],
+  "canon-graine": [
+    {
+      "id": 1,
+      "method": "tm",
+      "tm": "CT71"
+    },
+    {
+      "id": 1,
+      "method": "egg"
+    }
+  ],
+  "protection": [
+    {
+      "id": 1,
+      "method": "tm",
+      "tm": "CT74"
+    }
+  ],
+  "mur-lumiere": [
+    {
+      "id": 1,
+      "method": "tm",
+      "tm": "CT75"
+    },
+    {
+      "id": 86,
+      "method": "tm",
+      "tm": "CT75"
+    }
+  ],
+  "noeud-herbe": [
+    {
+      "id": 1,
+      "method": "tm",
+      "tm": "CT81"
+    }
+  ],
+  "repos": [
+    {
+      "id": 1,
+      "method": "tm",
+      "tm": "CT85"
+    }
+  ],
+  "tete-de-fer": [
+    {
+      "id": 1,
+      "method": "tm",
+      "tm": "CT99"
+    }
+  ],
+  "clonage": [
+    {
+      "id": 1,
+      "method": "tm",
+      "tm": "CT103"
+    },
+    {
+      "id": 86,
+      "method": "tm",
+      "tm": "CT103"
+    }
+  ],
+  "piege-de-roc": [
+    {
+      "id": 1,
+      "method": "tm",
+      "tm": "CT116"
+    }
+  ],
+  "eco-sphere": [
+    {
+      "id": 1,
+      "method": "tm",
+      "tm": "CT119"
+    }
+  ],
+  "tacle-lourd": [
+    {
+      "id": 1,
+      "method": "tm",
+      "tm": "CT121"
+    },
+    {
+      "id": 1,
+      "method": "egg"
+    }
+  ],
+  "amnesie": [
+    {
+      "id": 1,
+      "method": "tm",
+      "tm": "CT128"
+    },
+    {
+      "id": 1,
+      "method": "egg"
+    }
+  ],
+  "champ-herbu": [
+    {
+      "id": 1,
+      "method": "tm",
+      "tm": "CT137"
+    },
+    {
+      "id": 1,
+      "method": "egg"
+    }
+  ],
+  "aire-dherbe": [
+    {
+      "id": 1,
+      "method": "tm",
+      "tm": "CT146"
+    }
+  ],
+  "lance-soleil": [
+    {
+      "id": 1,
+      "method": "tm",
+      "tm": "CT168"
+    }
+  ],
+  "chargeur": [
+    {
+      "id": 1,
+      "method": "tm",
+      "tm": "CT172"
+    },
+    {
+      "id": 86,
+      "method": "level",
+      "level": 20
+    }
+  ],
+  "feu-envieux": [
+    {
+      "id": 1,
+      "method": "tm",
+      "tm": "CT194"
+    }
+  ],
+  "effort": [
+    {
+      "id": 1,
+      "method": "tm",
+      "tm": "CT204"
+    }
+  ],
+  "pression-extreme": [
+    {
+      "id": 1,
+      "method": "tm",
+      "tm": "CT224"
+    }
+  ],
+  "croissance": [
+    {
+      "id": 1,
+      "method": "egg"
+    }
+  ],
+  "soucigraine": [
+    {
+      "id": 1,
+      "method": "egg"
+    }
+  ],
+  "garde-large": [
+    {
+      "id": 1,
+      "method": "egg"
+    }
+  ],
+  "ecras-face": [
+    {
+      "id": 2,
+      "method": "level",
+      "level": 1
+    }
+  ],
+  "mimi-queue": [
+    {
+      "id": 2,
+      "method": "level",
+      "level": 1
+    }
+  ],
+  "guillotine": [
+    {
+      "id": 2,
+      "method": "level",
+      "level": 9
+    }
+  ],
+  "charme": [
+    {
+      "id": 2,
+      "method": "tm",
+      "tm": "CT02"
+    }
+  ],
+  "poing-feu": [
+    {
+      "id": 2,
+      "method": "egg"
+    }
+  ],
+  "jackpot": [
+    {
+      "id": 2,
+      "method": "egg"
+    }
+  ],
+  "eclair": [
+    {
+      "id": 86,
+      "method": "level",
+      "level": 1
+    }
+  ],
+  "echo": [
+    {
+      "id": 86,
+      "method": "level",
+      "level": 5
+    }
+  ],
+  "onde-choc": [
+    {
+      "id": 86,
+      "method": "level",
+      "level": 10
+    }
+  ],
+  "chant-canon": [
+    {
+      "id": 86,
+      "method": "level",
+      "level": 15
+    }
+  ],
+  "brouhaha": [
+    {
+      "id": 86,
+      "method": "level",
+      "level": 25
+    },
+    {
+      "id": 86,
+      "method": "tm",
+      "tm": "CT190"
+    }
+  ],
+  "tonnerre": [
+    {
+      "id": 86,
+      "method": "level",
+      "level": 30
+    },
+    {
+      "id": 86,
+      "method": "tm",
+      "tm": "CT126"
+    }
+  ],
+  "megaphone": [
+    {
+      "id": 86,
+      "method": "level",
+      "level": 35
+    },
+    {
+      "id": 86,
+      "method": "tm",
+      "tm": "CT117"
+    }
+  ],
+  "chant-porte": [
+    {
+      "id": 86,
+      "method": "level",
+      "level": 40
+    }
+  ],
+  "danse-plumes": [
+    {
+      "id": 86,
+      "method": "level",
+      "level": 45
+    }
+  ],
+  "fatal-foudre": [
+    {
+      "id": 86,
+      "method": "level",
+      "level": 50
+    },
+    {
+      "id": 86,
+      "method": "tm",
+      "tm": "CT166"
+    }
+  ],
+  "boom-sonique": [
+    {
+      "id": 86,
+      "method": "level",
+      "level": 55
+    }
+  ],
+  "hate": [
+    {
+      "id": 86,
+      "method": "tm",
+      "tm": "CT04"
+    }
+  ],
+  "voix-enjoleuse": [
+    {
+      "id": 86,
+      "method": "tm",
+      "tm": "CT19"
+    }
+  ],
+  "rayon-charge": [
+    {
+      "id": 86,
+      "method": "tm",
+      "tm": "CT23"
+    }
+  ],
+  "aboiement": [
+    {
+      "id": 86,
+      "method": "tm",
+      "tm": "CT30"
+    }
+  ],
+  "meteores": [
+    {
+      "id": 86,
+      "method": "tm",
+      "tm": "CT32"
+    }
+  ],
+  "change-eclair": [
+    {
+      "id": 86,
+      "method": "tm",
+      "tm": "CT48"
+    }
+  ],
+  "poing-eclair": [
+    {
+      "id": 86,
+      "method": "tm",
+      "tm": "CT68"
+    }
+  ],
+  "boule-elek": [
+    {
+      "id": 86,
+      "method": "tm",
+      "tm": "CT72"
+    }
+  ],
+  "cage-eclair": [
+    {
+      "id": 86,
+      "method": "tm",
+      "tm": "CT82"
+    }
+  ],
+  "ondes-etranges": [
+    {
+      "id": 86,
+      "method": "tm",
+      "tm": "CT96"
+    }
+  ],
+  "eclair-fou": [
+    {
+      "id": 86,
+      "method": "tm",
+      "tm": "CT147"
+    }
+  ],
+  "hurlement": [
+    {
+      "id": 86,
+      "method": "tm",
+      "tm": "CT171"
+    }
+  ],
+  "berceuse": [
+    {
+      "id": 86,
+      "method": "egg"
+    }
+  ],
+  "requiem": [
+    {
+      "id": 86,
+      "method": "egg"
+    }
+  ],
+  "seduction": [
+    {
+      "id": 86,
+      "method": "egg"
+    }
+  ],
+  "babil": [
+    {
+      "id": 86,
+      "method": "egg"
+    }
+  ],
+  "strido-son": [
+    {
+      "id": 86,
+      "method": "egg"
+    }
   ]
 }

@@ -1,0 +1,47 @@
+{
+  "id": 86,
+  "slug": "lyravolt",
+  "levelUp": [
+    { "level": "départ", "move": "rugissement" },
+    { "level": "départ", "move": "eclair" },
+    { "level": 5, "move": "echo" },
+    { "level": 10, "move": "onde-choc" },
+    { "level": 15, "move": "chant-canon" },
+    { "level": 20, "move": "chargeur" },
+    { "level": 25, "move": "brouhaha" },
+    { "level": 30, "move": "tonnerre" },
+    { "level": 35, "move": "megaphone" },
+    { "level": 40, "move": "chant-porte" },
+    { "level": 45, "move": "danse-plumes" },
+    { "level": 50, "move": "fatal-foudre" },
+    { "level": 55, "move": "boom-sonique" }
+  ],
+  "tm": [
+    "CT01",
+    "CT04",
+    "CT19",
+    "CT23",
+    "CT30",
+    "CT32",
+    "CT48",
+    "CT68",
+    "CT72",
+    "CT75",
+    "CT82",
+    "CT96",
+    "CT103",
+    "CT117",
+    "CT126",
+    "CT147",
+    "CT166",
+    "CT171",
+    "CT190"
+  ],
+  "egg": [
+    "berceuse",
+    "requiem",
+    "seduction",
+    "babil",
+    "strido-son"
+  ]
+}

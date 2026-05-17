@@ -274,13 +274,13 @@ Jusqu'à une scène où elle se confit à nous. On en apprend plus sur son pass�
      permet de copier le talent de l'adversaire dès son entrée en jeu.
 
 
-  4. Orgueil (Pride) — Type : FÉE
-   * Pokémon : Majestictine (Inspiré du Paon Blanc et de Narcisse)
-   * Concept : Un paon dont les plumes sont des miroirs de cristal. Il passe son temps à s'admirer. Si un adversaire le
-     regarde trop longtemps (baisse de précision), il est ébloui par la propre image de sa "perfection". Son attaque
-     signature, "Reflet de Gloire", inflige des dégâts basés sur la différence de stats de boost entre lui et
-     l'adversaire.
-
+  4. Orgueil (Pride) — Type : FÉE / PSY
+   * Pokémon : Majestine (Inspiré de l'Hermine)
+   * Concept : Ce petit Pokémon à la fourrure d'un blanc pur est l'incarnation même du dédain. Il refuse catégoriquement
+     que ses pattes touchent le sol, utilisant ses pouvoirs psychiques pour léviter à quelques centimètres du sol afin
+     de ne pas se salir. Sa fourrure repousse naturellement la poussière. Son talent "Corps Sain" reflète sa volonté
+     de rester immaculé, empêchant toute altération de ses statistiques par autrui. Sa forme rappelle celle d'une étole
+     royale vivante.
 
   5. Gourmandise (Gluttony) — Type : PLANTE
    * Pokémon : Venosuccion (Inspiré de la Népenthès / Plante carnivore)
@@ -308,3 +308,80 @@ Jusqu'à une scène où elle se confit à nous. On en apprend plus sur son pass�
    * Concept : Le champion de la Vertu représente l'ordre inflexible. Justarmor est une armure de samouraï animée, faite
      d'un métal qui ne peut être forgé que par une volonté pure. Il ne possède aucune attaque offensive directe (ou très
      peu) ; il gagne en renvoyant la force de l'adversaire contre lui. C'est le "poids" de la responsabilité.
+
+
+
+
+     1. L'Oiseau-Lyre (Imitateur de génie) + Synthétiseur / Ingénieur du son
+   * L'animal d'origine : L'Oiseau-Lyre (Lyrebird). Un oiseau australien capable d'imiter à la perfection n'importe quel
+     son de son environnement (tronçonneuses, alarmes de voiture, obturateurs d'appareils photo).
+   * Le Twist Pokémon : Ses cordes vocales génèrent de l'électricité et les grandes plumes de sa queue ressemblent aux
+     barres d'un égaliseur audio (EQ) ou à des câbles jack.
+   * Types : Normal / Électrik
+   * Noms potentiels : Phonolyre (Phonographe + Lyre), Oisillateur (Oisillon + Oscillateur).
+   * Lore écologique : À cause de la déforestation et de l'avancée de l'urbanisation, les bruits de la forêt ont été
+     remplacés par ceux des chantiers et des villes. Ce Pokémon a dû s'adapter : il imite désormais le bruit des
+     machines ou des sirènes d'alarme de manière assourdissante pour effrayer les prédateurs.
+
+  2. Le "Plante Caillou" (Lithops) + Bijou caché
+   * La plante d'origine : Les Lithops (ou plantes-cailloux), des plantes succulentes d'Afrique du Sud qui ressemblent à
+     s'y méprendre à des pierres pour éviter d'être mangées.
+   * Le Twist Pokémon : La plante ressemble à un vulgaire rocher un peu mousseux, mais lorsqu'elle s'ouvre pour attaquer
+     ou capter le soleil, elle révèle une fleur cristalline éblouissante ressemblant à une géode précieuse.
+   * Types : Plante / Roche
+   * Noms potentiels : Lithopousse (Lithops + Pousse), Gemmifol (Gemme + Foliaire).
+   * Lore écologique : Face à des sécheresses de plus en plus longues (peut-être dues au 7e Anathéma, Baradiel, ou
+     simplement au climat), cette plante a ralenti son métabolisme à l'extrême. Les humains les confondent souvent avec
+     des pierres précieuses et les déterrent par erreur, ce qui menace l'espèce.
+
+  3. Le Ver Bobbit (Eunice aphroditois) + Piège à loup / Ferraille
+   * L'animal d'origine : Le Ver Bobbit. Un redoutable ver polychète marin qui s'enterre dans le sable, laissant juste
+     dépasser de grandes antennes. Quand une proie passe, il jaillit avec des mâchoires capables de couper un poisson en
+     deux.
+   * Le Twist Pokémon : Son corps annelé rappelle un tuyau d'aération métallique, et sa mâchoire ressemble à un énorme
+     piège à loup rouillé.
+   * Types : Eau / Acier ou Insecte / Eau
+   * Noms potentiels : Pièjocéan (Piège + Océan), Acierel (Acier + Annelide).
+   * Lore écologique : Ayant élu domicile dans les zones portuaires où les humains rejettent leurs déchets métalliques,
+     il a incorporé de la ferraille dans son exosquelette pour le rendre indestructible. Il représente l'adaptation
+     agressive à la pollution des fonds marins.
+
+  4. L'Aye-aye + Sorcier / Chef d'orchestre
+   * L'animal d'origine : L'Aye-aye. Un lémurien nocturne de Madagascar avec de très grands yeux, et surtout un majeur
+     squelettique extrêmement long dont il se sert pour tapoter les troncs d'arbre afin d'y repérer et extraire des
+     larves.
+   * Le Twist Pokémon : Il se tient comme un petit sorcier. Son doigt démesuré lui sert de "baguette magique", et il
+     s'en sert pour canaliser de l'énergie.
+   * Types : Ténèbres / Fée ou Ténèbres / Psy
+   * Noms potentiels : Baguaye (Baguette + Aye-aye), Malémur (Malédiction/Malin + Lémur).
+   * Lore écologique : À cause de son apparence effrayante et de son doigt pointu, il est considéré à tort comme un
+     porte-malheur par les populations urbaines qui le chassent. En réalité, c'est un esprit protecteur des bois qui
+     utilise sa "baguette" pour soigner les arbres morts en y insufflant de l'énergie féérique.
+
+  5. Le Tardigrade (Ours d'eau) + Astronaute / Survivant
+   * L'animal d'origine : Le Tardigrade. Un animal microscopique (à huit pattes) réputé indestructible : il survit au
+     vide spatial, à des températures extrêmes, aux radiations, et peut entrer en "cryptobiose" (hibernation absolue)
+     pendant des décennies.
+   * Le Twist Pokémon : Un Pokémon de la taille d'un ballon de plage, flottant lentement, avec un corps un peu
+     translucide et rebondi qui rappelle une combinaison de cosmonaute gonflée.
+   * Types : Eau / Psy
+   * Noms potentiels : Tardibul (Tardigrade + Bulle), Cosmours (Cosmos + Ours).
+   * Lore écologique : Incapable de fuir les catastrophes écologiques ou les Anathémas à cause de sa lenteur, ce Pokémon
+     a débloqué des capacités psychiques incommensurables pour isoler son corps de toute menace extérieure. On dit qu'en
+     cas de destruction totale de la planète, il serait le seul survivant.
+
+  6. Le Champignon Dent Sanglante (Hydnellum peckii) + Fiole d'apothicaire
+   * La plante d'origine : Un champignon étrange d'un blanc pur qui, en grandissant, sécrète un épais liquide d'un rouge
+     vif ressemblant à du sang (phénomène de guttation).
+   * Le Twist Pokémon : Il prend la forme d'un petit fantôme/champignon recouvert d'un chapeau blanc percé de trous d'où
+     perle un sirop rouge. Le liquide forme une petite cape gélatineuse autour de lui.
+   * Types : Plante / Poison ou Plante / Spectre
+   * Noms potentiels : Sanguinelle (Sang + Chanterelle), Mycotox (Mycologie + Toxique).
+   * Lore écologique : Ce Pokémon agit comme le foie de la forêt : il absorbe toutes les toxines industrielles du sol et
+     les expulse sous forme de "larmes" rouges. Le liquide est hautement corrosif pour ceux qui le touchent, mais les
+     scientifiques l'étudient pour créer des remèdes (faisant écho au 5e Anathéma, Devorel).
+
+  ---
+  (Mention spéciale : L'antilope Saïga avec son "nez-trompe" qui filtre la poussière du désert, le Glouton/Carcajou si
+  tu as besoin d'un type Glace/Ténèbres vicieux, ou l'oiseau Secrétaire qui a des longues pattes de mannequin et tue les
+  serpents à coups de pied).

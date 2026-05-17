@@ -922,21 +922,44 @@
     "makesContact": true,
     "critRate": 0,
     "targetPreset": "adjacent-one",
-
     "tables": [
       {
         "id": "weight-power",
         "columns": [
-          { "key": "weightRange", "label": "Poids de la cible" },
-          { "key": "power",       "label": "Puissance" }
+          {
+            "key": "weightRange",
+            "label": "Poids de la cible"
+          },
+          {
+            "key": "power",
+            "label": "Puissance"
+          }
         ],
         "rows": [
-          { "weightRange": "moins de 10 kg",   "power": 20  },
-          { "weightRange": "10 à 25 kg",       "power": 40  },
-          { "weightRange": "25 à 50 kg",       "power": 60  },
-          { "weightRange": "50 à 100 kg",      "power": 80  },
-          { "weightRange": "100 à 200 kg",     "power": 100 },
-          { "weightRange": "plus de 200 kg",   "power": 120 }
+          {
+            "weightRange": "moins de 10 kg",
+            "power": 20
+          },
+          {
+            "weightRange": "10 à 25 kg",
+            "power": 40
+          },
+          {
+            "weightRange": "25 à 50 kg",
+            "power": 60
+          },
+          {
+            "weightRange": "50 à 100 kg",
+            "power": 80
+          },
+          {
+            "weightRange": "100 à 200 kg",
+            "power": 100
+          },
+          {
+            "weightRange": "plus de 200 kg",
+            "power": 120
+          }
         ]
       }
     ]
@@ -1634,19 +1657,61 @@
       {
         "id": "metronome-capacity-exclusion",
         "columns": [
-          { "key": "column1"},
-          { "key": "column2"},
-          { "key": "column3"},
-          { "key": "column4"}
+          {
+            "key": "column1"
+          },
+          {
+            "key": "column2"
+          },
+          {
+            "key": "column3"
+          },
+          {
+            "key": "column4"
+          }
         ],
         "rows": [
-          { "column1": "[[move:a-la-queue|À la Queue]]", "column2": "[[move:aboiement|Aboiement]]", "column3": "[[move:abri|Abri]]", "column4": "[[move:après-vous|Après Vous]]" },
-          { "column1": "[[move:blabla-dodo|Blabla Dodo]]", "column2": "[[move:celebration|Célébration]]", "column3": "[[move:copie|Copie]]", "column4": "[[move:coup-dmain|Coup D'Main]]" },
-          { "column1": "[[move:detection|Détection]]", "column2": "[[move:garde-large|Garde Large]]", "column3": "[[move:implore|Implore]]", "column4": "[[move:larcin|Larcin]]" },
-          { "column1": "[[move:lutte|Lutte]]", "column2": "[[move:metronome|Métronome]]", "column3": "[[move:mitra-poing|Mitra-Poing]]", "column4": "[[move:par-ici|Par Ici]]" },
-          { "column1": "[[move:passe-passe|Passe-Passe]]", "column2": "[[move:photocopie|Photocopie]]", "column3": "[[move:pico-defense|Pico-Défense]]", "column4": "[[move:poudre-fureur|Poudre Fureur]]" },
-          { "column1": "[[move:lien-du-destin|Lien du Destin]]", "column2": "[[move:reflet-magik|Reflet Magik]]", "column3": "[[move:riposte|Riposte]]", "column4": "[[move:ronflement|Ronflement]]" },
-          { "column1": "[[move:ruse|Ruse]]", "column2": "[[move:tenacite|Ténacité]]", "column3": "[[move:tour-de-magie|Tour de Magie]]" }
+          {
+            "column1": "[[move:a-la-queue|À la Queue]]",
+            "column2": "[[move:aboiement|Aboiement]]",
+            "column3": "[[move:abri|Abri]]",
+            "column4": "[[move:après-vous|Après Vous]]"
+          },
+          {
+            "column1": "[[move:blabla-dodo|Blabla Dodo]]",
+            "column2": "[[move:celebration|Célébration]]",
+            "column3": "[[move:copie|Copie]]",
+            "column4": "[[move:coup-dmain|Coup D'Main]]"
+          },
+          {
+            "column1": "[[move:detection|Détection]]",
+            "column2": "[[move:garde-large|Garde Large]]",
+            "column3": "[[move:implore|Implore]]",
+            "column4": "[[move:larcin|Larcin]]"
+          },
+          {
+            "column1": "[[move:lutte|Lutte]]",
+            "column2": "[[move:metronome|Métronome]]",
+            "column3": "[[move:mitra-poing|Mitra-Poing]]",
+            "column4": "[[move:par-ici|Par Ici]]"
+          },
+          {
+            "column1": "[[move:passe-passe|Passe-Passe]]",
+            "column2": "[[move:photocopie|Photocopie]]",
+            "column3": "[[move:pico-defense|Pico-Défense]]",
+            "column4": "[[move:poudre-fureur|Poudre Fureur]]"
+          },
+          {
+            "column1": "[[move:lien-du-destin|Lien du Destin]]",
+            "column2": "[[move:reflet-magik|Reflet Magik]]",
+            "column3": "[[move:riposte|Riposte]]",
+            "column4": "[[move:ronflement|Ronflement]]"
+          },
+          {
+            "column1": "[[move:ruse|Ruse]]",
+            "column2": "[[move:tenacite|Ténacité]]",
+            "column3": "[[move:tour-de-magie|Tour de Magie]]"
+          }
         ]
       }
     ]
@@ -2055,15 +2120,38 @@
       {
         "id": "clone-capacity-exclusion",
         "columns": [
-          { "key": "column1"},
-          { "key": "column2"},
-          { "key": "column3"},
-          { "key": "column4"}
+          {
+            "key": "column1"
+          },
+          {
+            "key": "column2"
+          },
+          {
+            "key": "column3"
+          },
+          {
+            "key": "column4"
+          }
         ],
         "rows": [
-          { "column1": "[[move:requiem|Requiem]]", "column2": "[[move:provoc|Provoc]]", "column3": "[[move:entrave|Entrave]]", "column4": "[[move:encore|encore]]" },
-          { "column1": "[[move:tourmente|Tourmente]]", "column2": "[[move:depit|Dépit]]", "column3": "[[move:buee-noire|Buée Noire]]", "column4": "[[move:boost|Boost]]" },
-          { "column1": "[[move:echange|Échange]]", "column2": "[[move:imitation|Imitation]]", "column3": "[[move:cyclone|Cyclone]]", "column4": "[[move:hurlement|Hurlement]]" }
+          {
+            "column1": "[[move:requiem|Requiem]]",
+            "column2": "[[move:provoc|Provoc]]",
+            "column3": "[[move:entrave|Entrave]]",
+            "column4": "[[move:encore|encore]]"
+          },
+          {
+            "column1": "[[move:tourmente|Tourmente]]",
+            "column2": "[[move:depit|Dépit]]",
+            "column3": "[[move:buee-noire|Buée Noire]]",
+            "column4": "[[move:boost|Boost]]"
+          },
+          {
+            "column1": "[[move:echange|Échange]]",
+            "column2": "[[move:imitation|Imitation]]",
+            "column3": "[[move:cyclone|Cyclone]]",
+            "column4": "[[move:hurlement|Hurlement]]"
+          }
         ]
       }
     ]
@@ -2179,17 +2267,50 @@
       {
         "id": "gigotage-power",
         "columns": [
-          { "key": "remainingHealth", "label": "PV restants du lanceur" },
-          { "key": "p",               "label": "P"                      },
-          { "key": "power",           "label": "Puissance"              }
+          {
+            "key": "remainingHealth",
+            "label": "PV restants du lanceur"
+          },
+          {
+            "key": "p",
+            "label": "P"
+          },
+          {
+            "key": "power",
+            "label": "Puissance"
+          }
         ],
         "rows": [
-          { "remainingHealth": "68% - 100%", "p": "P > 32",      "power": 20  },
-          { "remainingHealth": "35% - 67%",  "p": "17 ≤ P ≤ 32", "power": 40  },
-          { "remainingHealth": "20% - 34%",  "p": "10 ≤ P ≤ 16", "power": 80  },
-          { "remainingHealth": "10% - 19%",  "p": "5  ≤ P ≤ 9",  "power": 100 },
-          { "remainingHealth": "4% - 9%",    "p": "2  ≤ P ≤ 4",  "power": 150 },
-          { "remainingHealth": "1 PV - 3%",  "p": "0  ≤ P ≤ 1",  "power": 200 }
+          {
+            "remainingHealth": "68% - 100%",
+            "p": "P > 32",
+            "power": 20
+          },
+          {
+            "remainingHealth": "35% - 67%",
+            "p": "17 ≤ P ≤ 32",
+            "power": 40
+          },
+          {
+            "remainingHealth": "20% - 34%",
+            "p": "10 ≤ P ≤ 16",
+            "power": 80
+          },
+          {
+            "remainingHealth": "10% - 19%",
+            "p": "5  ≤ P ≤ 9",
+            "power": 100
+          },
+          {
+            "remainingHealth": "4% - 9%",
+            "p": "2  ≤ P ≤ 4",
+            "power": 150
+          },
+          {
+            "remainingHealth": "1 PV - 3%",
+            "p": "0  ≤ P ≤ 1",
+            "power": 200
+          }
         ]
       }
     ]
@@ -2227,17 +2348,50 @@
       {
         "id": "gigotage-power",
         "columns": [
-          { "key": "remainingHealth", "label": "PV restants du lanceur" },
-          { "key": "p",               "label": "P"                      },
-          { "key": "power",           "label": "Puissance"              }
+          {
+            "key": "remainingHealth",
+            "label": "PV restants du lanceur"
+          },
+          {
+            "key": "p",
+            "label": "P"
+          },
+          {
+            "key": "power",
+            "label": "Puissance"
+          }
         ],
         "rows": [
-          { "remainingHealth": "68% - 100%", "p": "P > 32",      "power": 20  },
-          { "remainingHealth": "35% - 67%",  "p": "17 ≤ P ≤ 32", "power": 40  },
-          { "remainingHealth": "20% - 34%",  "p": "10 ≤ P ≤ 16", "power": 80  },
-          { "remainingHealth": "10% - 19%",  "p": "5  ≤ P ≤ 9",  "power": 100 },
-          { "remainingHealth": "4% - 9%",    "p": "2  ≤ P ≤ 4",  "power": 150 },
-          { "remainingHealth": "1 PV - 3%",  "p": "0  ≤ P ≤ 1",  "power": 200 }
+          {
+            "remainingHealth": "68% - 100%",
+            "p": "P > 32",
+            "power": 20
+          },
+          {
+            "remainingHealth": "35% - 67%",
+            "p": "17 ≤ P ≤ 32",
+            "power": 40
+          },
+          {
+            "remainingHealth": "20% - 34%",
+            "p": "10 ≤ P ≤ 16",
+            "power": 80
+          },
+          {
+            "remainingHealth": "10% - 19%",
+            "p": "5  ≤ P ≤ 9",
+            "power": 100
+          },
+          {
+            "remainingHealth": "4% - 9%",
+            "p": "2  ≤ P ≤ 4",
+            "power": 150
+          },
+          {
+            "remainingHealth": "1 PV - 3%",
+            "p": "0  ≤ P ≤ 1",
+            "power": 200
+          }
         ]
       }
     ]
@@ -2412,13 +2566,28 @@
       {
         "id": "picots-power",
         "columns": [
-          { "key": "layerNumber", "label": "Nombre de rangées" },
-          { "key": "damage",      "label": "Dégâts"            }
+          {
+            "key": "layerNumber",
+            "label": "Nombre de rangées"
+          },
+          {
+            "key": "damage",
+            "label": "Dégâts"
+          }
         ],
         "rows": [
-          { "layerNumber": "1", "damage": "1/8 des PV max" },
-          { "layerNumber": "2", "damage": "1/6 des PV max" },
-          { "layerNumber": "3", "damage": "1/4 des PV max" }
+          {
+            "layerNumber": "1",
+            "damage": "1/8 des PV max"
+          },
+          {
+            "layerNumber": "2",
+            "damage": "1/6 des PV max"
+          },
+          {
+            "layerNumber": "3",
+            "damage": "1/4 des PV max"
+          }
         ]
       }
     ]
@@ -2744,15 +2913,36 @@
       {
         "id": "sleeptalk-capacity-exclusion",
         "columns": [
-          { "key": "column1"},
-          { "key": "column2"},
-          { "key": "column3"}
+          {
+            "key": "column1"
+          },
+          {
+            "key": "column2"
+          },
+          {
+            "key": "column3"
+          }
         ],
         "rows": [
-          { "column1": "Blabla Dodo", "column2": "[[move:brouhaha|Brouhaha]]", "column3": "[[move:lance-soleil|Lance-Soleil]]" },
-          { "column1": "[[move:metronome|Métronome]]", "column2": "[[move:mitra-poing|Mitra-Poing]]", "column3": "[[move:photocopie|Photocopie]]" },
-          { "column1": "[[move:pique|Piqué]]", "column2": "[[move:Plongée|Plongée]]", "column3": "[[move:rebond|Rebond]]" },
-          { "column1": "[[move:tunnel|Tunnel]]", "column2": "[[move:vol|Vol]]" }
+          {
+            "column1": "Blabla Dodo",
+            "column2": "[[move:brouhaha|Brouhaha]]",
+            "column3": "[[move:lance-soleil|Lance-Soleil]]"
+          },
+          {
+            "column1": "[[move:metronome|Métronome]]",
+            "column2": "[[move:mitra-poing|Mitra-Poing]]",
+            "column3": "[[move:photocopie|Photocopie]]"
+          },
+          {
+            "column1": "[[move:pique|Piqué]]",
+            "column2": "[[move:Plongée|Plongée]]",
+            "column3": "[[move:rebond|Rebond]]"
+          },
+          {
+            "column1": "[[move:tunnel|Tunnel]]",
+            "column2": "[[move:vol|Vol]]"
+          }
         ]
       }
     ]
@@ -2789,14 +2979,32 @@
       {
         "id": "present-probability",
         "columns": [
-          { "key": "effet", "label": "Effets"      },
-          { "key": "proba", "label": "Probabilité" }
+          {
+            "key": "effet",
+            "label": "Effets"
+          },
+          {
+            "key": "proba",
+            "label": "Probabilité"
+          }
         ],
         "rows": [
-          { "effet": "Puissance de 40",          "proba": "40%" },
-          { "effet": "Puissance de 80",          "proba": "30%" },
-          { "effet": "Puissance de 120",         "proba": "10%" },
-          { "effet": "Soigne 80 PV de la cible", "proba": "20%" }
+          {
+            "effet": "Puissance de 40",
+            "proba": "40%"
+          },
+          {
+            "effet": "Puissance de 80",
+            "proba": "30%"
+          },
+          {
+            "effet": "Puissance de 120",
+            "proba": "10%"
+          },
+          {
+            "effet": "Soigne 80 PV de la cible",
+            "proba": "20%"
+          }
         ]
       }
     ]
@@ -3291,13 +3499,28 @@
       {
         "id": "spitup-damage",
         "columns": [
-          { "key": "stockpile", "label": "Nombre d'effets de Stockage" },
-          { "key": "damage",    "label": "Puissance"                   }
+          {
+            "key": "stockpile",
+            "label": "Nombre d'effets de Stockage"
+          },
+          {
+            "key": "damage",
+            "label": "Puissance"
+          }
         ],
         "rows": [
-          { "stockpile": "1", "damage": "100" },
-          { "stockpile": "2", "damage": "200" },
-          { "stockpile": "3", "damage": "300" }
+          {
+            "stockpile": "1",
+            "damage": "100"
+          },
+          {
+            "stockpile": "2",
+            "damage": "200"
+          },
+          {
+            "stockpile": "3",
+            "damage": "300"
+          }
         ]
       }
     ]
@@ -3319,13 +3542,28 @@
       {
         "id": "swallow-heal",
         "columns": [
-          { "key": "stockpile", "label": "Nombre d'effets de Stockage" },
-          { "key": "heal",      "label": "Quantité de soin"            }
+          {
+            "key": "stockpile",
+            "label": "Nombre d'effets de Stockage"
+          },
+          {
+            "key": "heal",
+            "label": "Quantité de soin"
+          }
         ],
         "rows": [
-          { "stockpile": "1", "heal": "25% des PV maximum du lanceur"  },
-          { "stockpile": "2", "heal": "50% des PV maximum du lanceur"  },
-          { "stockpile": "3", "heal": "100% des PV maximum du lanceur" }
+          {
+            "stockpile": "1",
+            "heal": "25% des PV maximum du lanceur"
+          },
+          {
+            "stockpile": "2",
+            "heal": "50% des PV maximum du lanceur"
+          },
+          {
+            "stockpile": "3",
+            "heal": "100% des PV maximum du lanceur"
+          }
         ]
       }
     ]
@@ -3739,7 +3977,7 @@
     "name": "Lumi-Queue",
     "type": "Insecte",
     "category": "Statut",
-    "pp": 20,  
+    "pp": 20,
     "priority": 0,
     "effet": "Lumi-Queue augmente l'[[docs:statistics|Attaque Spéciale]] du lanceur de trois niveaux.",
     "description": "Le lanceur regarde un flash lumineux fixement. Augmente énormément son Attaque Spéciale.",
@@ -3938,15 +4176,36 @@
       {
         "id": "weatherball-type",
         "columns": [
-          { "key": "weather", "label": "Météo"              },
-          { "key": "type",    "label": "Type de Ball'Météo" }
+          {
+            "key": "weather",
+            "label": "Météo"
+          },
+          {
+            "key": "type",
+            "label": "Type de Ball'Météo"
+          }
         ],
         "rows": [
-          { "weather": "Ensoleillement",   "type": "[[type:Feu]]"    },
-          { "weather": "Pluie",            "type": "[[type:Eau]]"    },
-          { "weather": "Grêle / Neige",    "type": "[[type:Glace]]"  },
-          { "weather": "Tempête de Sable", "type": "[[type:Roche]]"  },
-          { "weather": "Brouillard",       "type": "[[type:Normal]]" }
+          {
+            "weather": "Ensoleillement",
+            "type": "[[type:Feu]]"
+          },
+          {
+            "weather": "Pluie",
+            "type": "[[type:Eau]]"
+          },
+          {
+            "weather": "Grêle / Neige",
+            "type": "[[type:Glace]]"
+          },
+          {
+            "weather": "Tempête de Sable",
+            "type": "[[type:Roche]]"
+          },
+          {
+            "weather": "Brouillard",
+            "type": "[[type:Normal]]"
+          }
         ]
       }
     ]
@@ -4717,155 +4976,401 @@
       {
         "id": "base-power",
         "columns": [
-          { "key": "item1", "label": "Puissance 10" },
-          { "key": "item2" },
-          { "key": "item3" }
+          {
+            "key": "item1",
+            "label": "Puissance 10"
+          },
+          {
+            "key": "item2"
+          },
+          {
+            "key": "item3"
+          }
         ],
         "rows": [
-          { "item1": "[[item:herbe-blanche|Herbe Blanche]]", "item2": "[[item:herbe-mental|Herbe Mental]]", "item3": "[[item:herbe-pouvoir|Herbe Pouvoir]]" },
-          { "item1": "[[item:loupe|Loupe]]", "item2": "[[item:lentille-zoom|Lentille Zoom]]", "item3": "[[item:poudre-argentee|Poudre Argentée]]" },
-          { "item1": "[[item:poudre-vite|Poudre Vite]]", "item2": "[[item:poudre-claire|Poudre Claire]]", "item3": "[[item:poudre-metal|Poudre Métal]]" },
-          { "item1": "[[item:sable-doux|Sable Doux]]", "item2": "[[item:point-de-mire|Point de Mire]]", "item3": "[[item:carapace-mue|Carapace Mue]]" },
-          { "item1": "[[item:grelot-zen|Grelot Zen]]", "item2": "[[item:grosse-racine|Grosse Racine]]", "item3": "[[item:noeud-destin|Nœud Destin]]" },
-          { "item1": "[[item:ralentiqueue|Ralentiqueue]]", "item2": "[[item:restes|Restes]]", "item3": "[[item:roche-lisse|Roche Lisse]]" },
-          { "item1": "[[item:tissu-fauche|Tissu Fauche]]", "item2": "[[item:ceinture-force|Ceinture Force]]", "item3": "[[item:ceinture-pro|Ceinture Pro]]" },
-          { "item1": "[[item:lunettes-sages|Lunettes Sages]]", "item2": "[[item:lunettes-choix|Lunettes Choix]]", "item3": "[[item:mouchoir-choix|Mouchoir Choix]]" },
-          { "item1": "[[item:mouchoir-soie|Mouchoir Soie]]", "item2": "[[item:bandeau|Bandeau]]", "item3": "[[item:bandeau-muscle|Bandeau Muscle]]" },
-          { "item1": "[[item:bandeau-choix|Bandeau Choix]]", "item2": "Tous les encens", "item3": "Toutes les Baies" }
+          {
+            "item1": "[[item:herbe-blanche|Herbe Blanche]]",
+            "item2": "[[item:herbe-mental|Herbe Mental]]",
+            "item3": "[[item:herbe-pouvoir|Herbe Pouvoir]]"
+          },
+          {
+            "item1": "[[item:loupe|Loupe]]",
+            "item2": "[[item:lentille-zoom|Lentille Zoom]]",
+            "item3": "[[item:poudre-argentee|Poudre Argentée]]"
+          },
+          {
+            "item1": "[[item:poudre-vite|Poudre Vite]]",
+            "item2": "[[item:poudre-claire|Poudre Claire]]",
+            "item3": "[[item:poudre-metal|Poudre Métal]]"
+          },
+          {
+            "item1": "[[item:sable-doux|Sable Doux]]",
+            "item2": "[[item:point-de-mire|Point de Mire]]",
+            "item3": "[[item:carapace-mue|Carapace Mue]]"
+          },
+          {
+            "item1": "[[item:grelot-zen|Grelot Zen]]",
+            "item2": "[[item:grosse-racine|Grosse Racine]]",
+            "item3": "[[item:noeud-destin|Nœud Destin]]"
+          },
+          {
+            "item1": "[[item:ralentiqueue|Ralentiqueue]]",
+            "item2": "[[item:restes|Restes]]",
+            "item3": "[[item:roche-lisse|Roche Lisse]]"
+          },
+          {
+            "item1": "[[item:tissu-fauche|Tissu Fauche]]",
+            "item2": "[[item:ceinture-force|Ceinture Force]]",
+            "item3": "[[item:ceinture-pro|Ceinture Pro]]"
+          },
+          {
+            "item1": "[[item:lunettes-sages|Lunettes Sages]]",
+            "item2": "[[item:lunettes-choix|Lunettes Choix]]",
+            "item3": "[[item:mouchoir-choix|Mouchoir Choix]]"
+          },
+          {
+            "item1": "[[item:mouchoir-soie|Mouchoir Soie]]",
+            "item2": "[[item:bandeau|Bandeau]]",
+            "item3": "[[item:bandeau-muscle|Bandeau Muscle]]"
+          },
+          {
+            "item1": "[[item:bandeau-choix|Bandeau Choix]]",
+            "item2": "Tous les encens",
+            "item3": "Toutes les Baies"
+          }
         ]
       },
       {
         "id": "base-power",
         "columns": [
-          { "key": "item1", "label": "Puissance 30" },
-          { "key": "item2" },
-          { "key": "item3" }
+          {
+            "key": "item1",
+            "label": "Puissance 30"
+          },
+          {
+            "key": "item2"
+          },
+          {
+            "key": "item3"
+          }
         ],
         "rows": [
-          { "item1": "[[item:rappel|Rappel]]", "item2": "[[item:rappel-max|Rappel Max]]", "item3": "[[item:huile|Huile]]" },
-          { "item1": "[[item:huile-max|Huile Max]]", "item2": "[[item:elixir|Élixir]]", "item3": "[[item:elixir-max|Élixir Max]]" },
-          { "item1": "[[item:lava-cookie|Lava Cookie]]", "item2": "[[item:vieux-gâteau|Vieux Gâteau]]", "item3": "[[item:grelot-coque|Grelot Coque]]" },
-          { "item1": "[[item:boue-noire|Boue Noire]]", "item2": "[[item:miel|Miel]]", "item3": "[[item:rune-purifiante|Rune Purifiante]]" },
-          { "item1": "[[item:poke-poupee|Poké Poupée]]", "item2": "[[item:boule-fumee|Boule Fumée]]", "item3": "[[item:corde-sortie|Corde Sortie]]" },
-          { "item1": "[[item:multi-exp|Multi Exp]]", "item2": "[[item:oeuf-chance|Œuf Chance]]", "item3": "[[item:pierre-soleil|Pierre Soleil]]" },
-          { "item1": "[[item:pierre-lune|Pierre Lune]]", "item2": "[[item:pierre-plante|Pierre Plante]]", "item3": "[[item:pierre-eau|Pierre Eau]]" },
-          { "item1": "[[item:pierre-foudre|Pierre Foudre]]", "item2": "[[item:pierre-feu|Pierre Feu]]", "item3": "[[item:pierre-stase|Pierre Stase]]" },
-          { "item1": "[[item:peau-metal|Peau Métal]]", "item2": "[[item:ecaille-draco|Écaille Draco]]", "item3": "[[item:graine-miracle|Graine Miracle]]" },
-          { "item1": "[[item:lunettes-noires|Lunettes Noires]]", "item2": "[[item:ceinture-noire|Ceinture Noire]]", "item3": "[[item:aimant|Aimant]]" },
-          { "item1": "[[item:eau-mystique|Eau Mystique]]", "item2": "[[item:glace-eternelle|Glace Éternelle]]", "item3": "[[item:rune-sort|Rune Sort]]" },
-          { "item1": "[[item:cuillere-tordue|Cuillère Tordue]]", "item2": "[[item:charbon|Charbon]]", "item3": "[[item:lumargile|Lumargile]]" },
-          { "item1": "[[item:metronome|Métronome]]", "item2": "[[item:lentilscope|Lentilscope]]", "item3": "[[item:piece-rune|Pièce Rune]]" },
-          { "item1": "[[item:orbe-vie|Orbe Vie]]", "item2": "[[item:orbe-flamme|Orbe Flamme]]", "item3": "[[item:orbe-toxique|Orbe Toxique]]" },
-          { "item1": "[[item:balle-lumiere|Balle Lumière]]", "item2": "[[item:roche-royale|Roche Royale]]", "item3": "Toutes les boissons" },
-          { "item1": "Toutes les herbes médicinales", "item2": "Tous les médicaments", "item3": "Tous les objets de combats" },
-          { "item1": "Toutes les potions", "item2": "Tous les accélérateurs" }
+          {
+            "item1": "[[item:rappel|Rappel]]",
+            "item2": "[[item:rappel-max|Rappel Max]]",
+            "item3": "[[item:huile|Huile]]"
+          },
+          {
+            "item1": "[[item:huile-max|Huile Max]]",
+            "item2": "[[item:elixir|Élixir]]",
+            "item3": "[[item:elixir-max|Élixir Max]]"
+          },
+          {
+            "item1": "[[item:lava-cookie|Lava Cookie]]",
+            "item2": "[[item:vieux-gâteau|Vieux Gâteau]]",
+            "item3": "[[item:grelot-coque|Grelot Coque]]"
+          },
+          {
+            "item1": "[[item:boue-noire|Boue Noire]]",
+            "item2": "[[item:miel|Miel]]",
+            "item3": "[[item:rune-purifiante|Rune Purifiante]]"
+          },
+          {
+            "item1": "[[item:poke-poupee|Poké Poupée]]",
+            "item2": "[[item:boule-fumee|Boule Fumée]]",
+            "item3": "[[item:corde-sortie|Corde Sortie]]"
+          },
+          {
+            "item1": "[[item:multi-exp|Multi Exp]]",
+            "item2": "[[item:oeuf-chance|Œuf Chance]]",
+            "item3": "[[item:pierre-soleil|Pierre Soleil]]"
+          },
+          {
+            "item1": "[[item:pierre-lune|Pierre Lune]]",
+            "item2": "[[item:pierre-plante|Pierre Plante]]",
+            "item3": "[[item:pierre-eau|Pierre Eau]]"
+          },
+          {
+            "item1": "[[item:pierre-foudre|Pierre Foudre]]",
+            "item2": "[[item:pierre-feu|Pierre Feu]]",
+            "item3": "[[item:pierre-stase|Pierre Stase]]"
+          },
+          {
+            "item1": "[[item:peau-metal|Peau Métal]]",
+            "item2": "[[item:ecaille-draco|Écaille Draco]]",
+            "item3": "[[item:graine-miracle|Graine Miracle]]"
+          },
+          {
+            "item1": "[[item:lunettes-noires|Lunettes Noires]]",
+            "item2": "[[item:ceinture-noire|Ceinture Noire]]",
+            "item3": "[[item:aimant|Aimant]]"
+          },
+          {
+            "item1": "[[item:eau-mystique|Eau Mystique]]",
+            "item2": "[[item:glace-eternelle|Glace Éternelle]]",
+            "item3": "[[item:rune-sort|Rune Sort]]"
+          },
+          {
+            "item1": "[[item:cuillere-tordue|Cuillère Tordue]]",
+            "item2": "[[item:charbon|Charbon]]",
+            "item3": "[[item:lumargile|Lumargile]]"
+          },
+          {
+            "item1": "[[item:metronome|Métronome]]",
+            "item2": "[[item:lentilscope|Lentilscope]]",
+            "item3": "[[item:piece-rune|Pièce Rune]]"
+          },
+          {
+            "item1": "[[item:orbe-vie|Orbe Vie]]",
+            "item2": "[[item:orbe-flamme|Orbe Flamme]]",
+            "item3": "[[item:orbe-toxique|Orbe Toxique]]"
+          },
+          {
+            "item1": "[[item:balle-lumiere|Balle Lumière]]",
+            "item2": "[[item:roche-royale|Roche Royale]]",
+            "item3": "Toutes les boissons"
+          },
+          {
+            "item1": "Toutes les herbes médicinales",
+            "item2": "Tous les médicaments",
+            "item3": "Tous les objets de combats"
+          },
+          {
+            "item1": "Toutes les potions",
+            "item2": "Tous les accélérateurs"
+          }
         ]
       },
       {
         "id": "base-power",
         "columns": [
-          { "key": "item1", "label": "Puissance 40" },
-          { "key": "item2" },
-          { "key": "item3" }
+          {
+            "key": "item1",
+            "label": "Puissance 40"
+          },
+          {
+            "key": "item2"
+          },
+          {
+            "key": "item3"
+          }
         ],
         "rows": [
-          { "item1": "[[item:roche-glace|Roche Glace]]" }
+          {
+            "item1": "[[item:roche-glace|Roche Glace]]"
+          }
         ]
       },
       {
         "id": "base-power",
         "columns": [
-          { "key": "item1", "label": "Puissance 50" },
-          { "key": "item2" },
-          { "key": "item3" }
+          {
+            "key": "item1",
+            "label": "Puissance 50"
+          },
+          {
+            "key": "item2"
+          },
+          {
+            "key": "item3"
+          }
         ],
         "rows": [
-          { "item1": "[[item:bec-pointu|Bec Pointu]]" }
+          {
+            "item1": "[[item:bec-pointu|Bec Pointu]]"
+          }
         ]
       },
       {
         "id": "base-power",
         "columns": [
-          { "key": "item1", "label": "Puissance 60" },
-          { "key": "item2" },
-          { "key": "item3" }
+          {
+            "key": "item1",
+            "label": "Puissance 60"
+          },
+          {
+            "key": "item2"
+          },
+          {
+            "key": "item3"
+          }
         ],
         "rows": [
-          { "item1": "[[item:roche-chaude|Roche Chaude]]", "item2": "[[item:roche-humide|Roche Humide]]", "item3": "[[item:bracelet-macho|Bracelet Macho]]" }
+          {
+            "item1": "[[item:roche-chaude|Roche Chaude]]",
+            "item2": "[[item:roche-humide|Roche Humide]]",
+            "item3": "[[item:bracelet-macho|Bracelet Macho]]"
+          }
         ]
       },
       {
         "id": "base-power",
         "columns": [
-          { "key": "item1", "label": "Puissance 70" },
-          { "key": "item2" },
-          { "key": "item3" }
+          {
+            "key": "item1",
+            "label": "Puissance 70"
+          },
+          {
+            "key": "item2"
+          },
+          {
+            "key": "item3"
+          }
         ],
         "rows": [
-          { "item1": "[[item:pic-venin|Pic Venin]]", "item2": "[[item:croc-dragon|Croc Dragon]]", "item3": "Tous les objets \"pouvoirs\"" }
+          {
+            "item1": "[[item:pic-venin|Pic Venin]]",
+            "item2": "[[item:croc-dragon|Croc Dragon]]",
+            "item3": "Tous les objets \"pouvoirs\""
+          }
         ]
       },
       {
         "id": "base-power",
         "columns": [
-          { "key": "item1", "label": "Puissance 80" },
-          { "key": "item2" },
-          { "key": "item3" }
+          {
+            "key": "item1",
+            "label": "Puissance 80"
+          },
+          {
+            "key": "item2"
+          },
+          {
+            "key": "item3"
+          }
         ],
         "rows": [
-          { "item1": "[[item:pierre-eclat|Pierre Éclat]]", "item2": "[[item:pierre-nuit|Pierre Nuit]]", "item3": "[[item:pierre-aube|Pierre Aube]]" },
-          { "item1": "[[item:pierre-ovale|Pierre Ovale]]", "item2": "[[item:vive-griffe|Vive Griffe]]", "item3": "[[item:piquants|Piquants]]" }
+          {
+            "item1": "[[item:pierre-eclat|Pierre Éclat]]",
+            "item2": "[[item:pierre-nuit|Pierre Nuit]]",
+            "item3": "[[item:pierre-aube|Pierre Aube]]"
+          },
+          {
+            "item1": "[[item:pierre-ovale|Pierre Ovale]]",
+            "item2": "[[item:vive-griffe|Vive Griffe]]",
+            "item3": "[[item:piquants|Piquants]]"
+          }
         ]
       },
       {
         "id": "base-power",
         "columns": [
-          { "key": "item1", "label": "Puissance 90" },
-          { "key": "item2" },
-          { "key": "item3" }
+          {
+            "key": "item1",
+            "label": "Puissance 90"
+          },
+          {
+            "key": "item2"
+          },
+          {
+            "key": "item3"
+          }
         ],
         "rows": [
-          { "item1": "[[item:accro-griffe|Accro Griffe]]", "item2": "Toutes les plaques" }
+          {
+            "item1": "[[item:accro-griffe|Accro Griffe]]",
+            "item2": "Toutes les plaques"
+          }
         ]
       },
       {
         "id": "base-power",
         "columns": [
-          { "key": "item1", "label": "Puissance 100" },
-          { "key": "item2" },
-          { "key": "item3" }
+          {
+            "key": "item1",
+            "label": "Puissance 100"
+          },
+          {
+            "key": "item2"
+          },
+          {
+            "key": "item3"
+          }
         ],
         "rows": [
-          { "item1": "[[item:chariot-distordu|Chariot Distordu]]", "item2": "[[item:os-rare|Os Rare]]", "item3": "[[item:pierre-dure|Pierre Dure]]" },
-          { "item1": "Tous les fossiles" }
+          {
+            "item1": "[[item:chariot-distordu|Chariot Distordu]]",
+            "item2": "[[item:os-rare|Os Rare]]",
+            "item3": "[[item:pierre-dure|Pierre Dure]]"
+          },
+          {
+            "item1": "Tous les fossiles"
+          }
         ]
       },
       {
         "id": "base-power",
         "columns": [
-          { "key": "item1", "label": "Puissance 130" },
-          { "key": "item2" },
-          { "key": "item3" }
+          {
+            "key": "item1",
+            "label": "Puissance 130"
+          },
+          {
+            "key": "item2"
+          },
+          {
+            "key": "item3"
+          }
         ],
         "rows": [
-          { "item1": "[[item:balle-fer|Balle Fer]]", "item2": "[[item:maxi-pepite|Maxi Pépite]]" }
+          {
+            "item1": "[[item:balle-fer|Balle Fer]]",
+            "item2": "[[item:maxi-pepite|Maxi Pépite]]"
+          }
         ]
       },
       {
         "id": "base-power",
         "columns": [
-          { "key": "item", "label": "Objet" },
-          { "key": "power", "label": "Puissance" },
-          { "key": "effect", "label": "Effets" }
+          {
+            "key": "item",
+            "label": "Objet"
+          },
+          {
+            "key": "power",
+            "label": "Puissance"
+          },
+          {
+            "key": "effect",
+            "label": "Effets"
+          }
         ],
         "rows": [
-          { "item": "[[item:orbe-flamme|Orbe Flamme]]", "power": 30, "effect": "[[docs:status|Brûle]] la cible." },
-          { "item": "[[item:orbe-toxique|Orbe Toxique]]", "power": 30, "effect": "[[docs:status|Empoisonne]] la cible." },
-          { "item": "[[item:balle-lumiere|Balle Lumière]]", "power": 30, "effect": "[[docs:status|Paralyse]] la cible." },
-          { "item": "[[item:herbe-mental|Herbe Mental]]", "power": 10, "effect": "Guérit la cible de l'[[docs:status|attirance]]." },
-          { "item": "[[item:herbe-blanche|Herbe Blanche]]", "power": 10, "effect": "Restaure les [[docs:statistics|Statistiques]]." },
-          { "item": "[[item:pic-venin|Pic Venin]]", "power": 70, "effect": "[[docs:status|Empoisonne]] la cible." },
-          { "item": "[[item:roche-royale|Roche Royale]]", "power": 30, "effect": "[[docs:status|Apeure]] la cible." }
+          {
+            "item": "[[item:orbe-flamme|Orbe Flamme]]",
+            "power": 30,
+            "effect": "[[docs:status|Brûle]] la cible."
+          },
+          {
+            "item": "[[item:orbe-toxique|Orbe Toxique]]",
+            "power": 30,
+            "effect": "[[docs:status|Empoisonne]] la cible."
+          },
+          {
+            "item": "[[item:balle-lumiere|Balle Lumière]]",
+            "power": 30,
+            "effect": "[[docs:status|Paralyse]] la cible."
+          },
+          {
+            "item": "[[item:herbe-mental|Herbe Mental]]",
+            "power": 10,
+            "effect": "Guérit la cible de l'[[docs:status|attirance]]."
+          },
+          {
+            "item": "[[item:herbe-blanche|Herbe Blanche]]",
+            "power": 10,
+            "effect": "Restaure les [[docs:statistics|Statistiques]]."
+          },
+          {
+            "item": "[[item:pic-venin|Pic Venin]]",
+            "power": 70,
+            "effect": "[[docs:status|Empoisonne]] la cible."
+          },
+          {
+            "item": "[[item:roche-royale|Roche Royale]]",
+            "power": 30,
+            "effect": "[[docs:status|Apeure]] la cible."
+          }
         ]
       }
     ]
@@ -5816,21 +6321,44 @@
     "makesContact": true,
     "critRate": 0,
     "targetPreset": "adjacent-one",
-
     "tables": [
       {
         "id": "weight-power",
         "columns": [
-          { "key": "weightRange", "label": "Poids de la cible" },
-          { "key": "power",       "label": "Puissance" }
+          {
+            "key": "weightRange",
+            "label": "Poids de la cible"
+          },
+          {
+            "key": "power",
+            "label": "Puissance"
+          }
         ],
         "rows": [
-          { "weightRange": "moins de 10 kg",   "power": 20  },
-          { "weightRange": "10 à 25 kg",       "power": 40  },
-          { "weightRange": "25 à 50 kg",       "power": 60  },
-          { "weightRange": "50 à 100 kg",      "power": 80  },
-          { "weightRange": "100 à 200 kg",     "power": 100 },
-          { "weightRange": "plus de 200 kg",   "power": 120 }
+          {
+            "weightRange": "moins de 10 kg",
+            "power": 20
+          },
+          {
+            "weightRange": "10 à 25 kg",
+            "power": 40
+          },
+          {
+            "weightRange": "25 à 50 kg",
+            "power": 60
+          },
+          {
+            "weightRange": "50 à 100 kg",
+            "power": 80
+          },
+          {
+            "weightRange": "100 à 200 kg",
+            "power": 100
+          },
+          {
+            "weightRange": "plus de 200 kg",
+            "power": 120
+          }
         ]
       }
     ]
@@ -6125,15 +6653,36 @@
       {
         "id": "weight-compare",
         "columns": [
-          { "key": "weightRange", "label": "Ratio" },
-          { "key": "power",       "label": "Puissance" }
+          {
+            "key": "weightRange",
+            "label": "Ratio"
+          },
+          {
+            "key": "power",
+            "label": "Puissance"
+          }
         ],
         "rows": [
-          { "weightRange": "Au moins 5 fois plus", "power": 120 },
-          { "weightRange": "4 à 5 fois plus",      "power": 100 },
-          { "weightRange": "3 à 4 fois plus",      "power": 80  },
-          { "weightRange": "2 à 3 fois plus",      "power": 60  },
-          { "weightRange": "Moins de 2 fois plus", "power": 40  }
+          {
+            "weightRange": "Au moins 5 fois plus",
+            "power": 120
+          },
+          {
+            "weightRange": "4 à 5 fois plus",
+            "power": 100
+          },
+          {
+            "weightRange": "3 à 4 fois plus",
+            "power": 80
+          },
+          {
+            "weightRange": "2 à 3 fois plus",
+            "power": 60
+          },
+          {
+            "weightRange": "Moins de 2 fois plus",
+            "power": 40
+          }
         ]
       }
     ]
@@ -6156,15 +6705,36 @@
       {
         "id": "speed-compare",
         "columns": [
-          { "key": "speedRange", "label": "Ratio" },
-          { "key": "power",       "label": "Puissance" }
+          {
+            "key": "speedRange",
+            "label": "Ratio"
+          },
+          {
+            "key": "power",
+            "label": "Puissance"
+          }
         ],
         "rows": [
-          { "speedRange": "4 fois plus rapide", "power": 150 },
-          { "speedRange": "3 à 4 fois plus",    "power": 120 },
-          { "speedRange": "2 à 3 fois plus",    "power": 80  },
-          { "speedRange": "1 à 2 fois plus",    "power": 60  },
-          { "speedRange": "moins rapide",       "power": 40  }
+          {
+            "speedRange": "4 fois plus rapide",
+            "power": 150
+          },
+          {
+            "speedRange": "3 à 4 fois plus",
+            "power": 120
+          },
+          {
+            "speedRange": "2 à 3 fois plus",
+            "power": 80
+          },
+          {
+            "speedRange": "1 à 2 fois plus",
+            "power": 60
+          },
+          {
+            "speedRange": "moins rapide",
+            "power": 40
+          }
         ]
       }
     ]
@@ -6851,15 +7421,36 @@
       {
         "id": "weight-compare",
         "columns": [
-          { "key": "weightRange", "label": "Ratio" },
-          { "key": "power",       "label": "Puissance" }
+          {
+            "key": "weightRange",
+            "label": "Ratio"
+          },
+          {
+            "key": "power",
+            "label": "Puissance"
+          }
         ],
         "rows": [
-          { "weightRange": "Au moins 5 fois plus", "power": 120 },
-          { "weightRange": "4 à 5 fois plus",      "power": 100 },
-          { "weightRange": "3 à 4 fois plus",      "power": 80  },
-          { "weightRange": "2 à 3 fois plus",      "power": 60  },
-          { "weightRange": "Moins de 2 fois plus", "power": 40  }
+          {
+            "weightRange": "Au moins 5 fois plus",
+            "power": 120
+          },
+          {
+            "weightRange": "4 à 5 fois plus",
+            "power": 100
+          },
+          {
+            "weightRange": "3 à 4 fois plus",
+            "power": 80
+          },
+          {
+            "weightRange": "2 à 3 fois plus",
+            "power": 60
+          },
+          {
+            "weightRange": "Moins de 2 fois plus",
+            "power": 40
+          }
         ]
       }
     ]
@@ -8551,6 +9142,22 @@
   },
   {
     "id": 529,
+    "slug": "chant-porte",
+    "name": "Chant Porté",
+    "type": "Vol",
+    "category": "Spécial",
+    "power": 80,
+    "accuracy": 100,
+    "pp": 15,
+    "priority": 0,
+    "effet": "Chant Porté inflige des dégâts. C'est une attaque sonore qui possède un haut taux de coups critiques.",
+    "description": "Le lanceur utilise le vent pour transporter son chant avec force. Taux de critiques élevé.",
+    "makesContact": false,
+    "critRate": 1,
+    "targetPreset": "adjacent-one"
+  },
+  {
+    "id": 530,
     "slug": "siphon-vital",
     "name": "Siphon Vital",
     "type": "Eau",
@@ -8566,7 +9173,7 @@
     "targetPreset": "adjacent-one"
   },
   {
-    "id": 530,
+    "id": 531,
     "slug": "transfert-spectrale",
     "name": "Transfert Spectrale",
     "type": "Spectre",
@@ -8582,7 +9189,7 @@
     "targetPreset": "all-one"
   },
   {
-    "id": 531,
+    "id": 532,
     "slug": "assaut-myriadique",
     "name": "Assaut Myriadique",
     "type": "Insecte",
@@ -8598,7 +9205,7 @@
     "targetPreset": "adjacent-one"
   },
   {
-    "id": 532,
+    "id": 533,
     "slug": "danse-macabre",
     "name": "Danse Macabre",
     "type": "Spectre",
@@ -8614,7 +9221,7 @@
     "targetPreset": "adjacent-one"
   },
   {
-    "id": 533,
+    "id": 534,
     "slug": "contagion",
     "name": "Contagion",
     "type": "Poison",
@@ -8629,7 +9236,7 @@
     "targetPreset": "all-ennemies"
   },
   {
-    "id": 534,
+    "id": 535,
     "slug": "flamme-croissante",
     "name": "Flamme Croissante",
     "type": "Feu",
@@ -8645,7 +9252,7 @@
     "targetPreset": "adjacent-one"
   },
   {
-    "id": 535,
+    "id": 536,
     "slug": "froid-penitent",
     "name": "Froid Pénitent",
     "type": "Glace",
@@ -8661,7 +9268,7 @@
     "targetPreset": "adjacent-one"
   },
   {
-    "id": 536,
+    "id": 537,
     "slug": "pillage-fantome",
     "name": "Pillage Fantôme",
     "type": "Spectre",
@@ -8677,7 +9284,7 @@
     "targetPreset": "adjacent-foes-all"
   },
   {
-    "id": 537,
+    "id": 538,
     "slug": "mirage-obscur",
     "name": "Mirage Obscur",
     "type": "Ténèbres",
@@ -8693,7 +9300,7 @@
     "targetPreset": "adjacent-one"
   },
   {
-    "id": 538,
+    "id": 539,
     "slug": "sanglot-funeste",
     "name": "Sanglot Funeste",
     "type": "Spectre",
@@ -8707,7 +9314,7 @@
     "targetPreset": "adjacent-one"
   },
   {
-    "id": 539,
+    "id": 540,
     "slug": "sanction-divine",
     "name": "Sanction Divine",
     "type": "Fée",
@@ -8723,7 +9330,7 @@
     "targetPreset": "adjacent-one"
   },
   {
-    "id": 540,
+    "id": 541,
     "slug": "charge-competitive",
     "name": "Charge Compétitive",
     "type": "Acier",

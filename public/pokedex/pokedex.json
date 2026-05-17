@@ -3,19 +3,33 @@
     "id": 1,
     "slug": "manimous",
     "name": "Manimous",
-    "types": ["Plante"],
+    "types": [
+      "Plante"
+    ],
     "category": "Pangolin feuillu",
-    "abilities": ["[[ability:engrais|Engrais]]"],
+    "abilities": [
+      "[[ability:engrais|Engrais]]"
+    ],
     "hiddenAbility": "[[ability:armurbaston|Armurbaston]]",
     "height_m": 0.4,
     "weight_kg": 9.8,
-    "genderRatio": { "male": 87.5, "female": 12.5 },
+    "genderRatio": {
+      "male": 87.5,
+      "female": 12.5
+    },
     "captureRate": 45,
     "images": {
       "sprite": "pokedex/img/pokemon/manimous_sprite.png",
       "artwork": "pokedex/img/pokemon/manimous_artwork.png"
     },
-    "baseStats": { "hp": 60, "atk": 53, "def": 64, "spa": 40, "spd": 51, "spe": 42 },
+    "baseStats": {
+      "hp": 60,
+      "atk": 53,
+      "def": 64,
+      "spa": 40,
+      "spd": 51,
+      "spe": 42
+    },
     "description": "Il se recroqueville souvent au moindre bruit pour se protéger. Ses écailles sont souples et couvertes de chlorophylle, capable de capter la lumière pour le nourrir.",
     "etymology": {
       "manis": "genre scientifique des pangolins",
@@ -26,19 +40,33 @@
     "id": 2,
     "slug": "florolin",
     "name": "Florolin",
-    "types": ["Plante"],
+    "types": [
+      "Plante"
+    ],
     "category": "Pangolin feuillu",
-    "abilities": ["[[ability:engrais|Engrais]]"],
+    "abilities": [
+      "[[ability:engrais|Engrais]]"
+    ],
     "hiddenAbility": "[[ability:armurbaston|Armurbaston]]",
     "height_m": 0.9,
     "weight_kg": 74.1,
-    "genderRatio": { "male": 87.5, "female": 12.5 },
+    "genderRatio": {
+      "male": 87.5,
+      "female": 12.5
+    },
     "captureRate": 45,
     "images": {
       "sprite": "pokedex/img/pokemon/florolin_sprite.png",
       "artwork": "pokedex/img/pokemon/florolin_artwork.png"
     },
-    "baseStats": { "hp": 84, "atk": 77, "def": 86, "spa": 52, "spd": 61, "spe": 50 },
+    "baseStats": {
+      "hp": 84,
+      "atk": 77,
+      "def": 86,
+      "spa": 52,
+      "spd": 61,
+      "spe": 50
+    },
     "description": "Ses écailles se sont durcies en feuilles denses et coupantes. Les botanistes admirent sa capacité à purifier les sols autour de lui, malgré sa tendance à préférer fuir les régions polluées.",
     "etymology": {
       "flore": "végétation, plantes",
@@ -49,19 +77,34 @@
     "id": 3,
     "slug": "ferrangolin",
     "name": "Ferrangolin",
-    "types": ["Plante", "Acier"],
+    "types": [
+      "Plante",
+      "Acier"
+    ],
     "category": "Bastion",
-    "abilities": ["[[ability:engrais|Engrais]]"],
+    "abilities": [
+      "[[ability:engrais|Engrais]]"
+    ],
     "hiddenAbility": "[[ability:armurbaston|Armurbaston]]",
     "height_m": 1.7,
-    "weight_kg": 155.0,
-    "genderRatio": { "male": 87.5, "female": 12.5 },
+    "weight_kg": 155,
+    "genderRatio": {
+      "male": 87.5,
+      "female": 12.5
+    },
     "captureRate": 45,
     "images": {
       "sprite": "pokedex/img/pokemon/ferrangolin_sprite.png",
       "artwork": "pokedex/img/pokemon/ferrangolin_artwork.png"
     },
-    "baseStats": { "hp": 109, "atk": 107, "def": 111, "spa": 62, "spd": 86, "spe": 55 },
+    "baseStats": {
+      "hp": 109,
+      "atk": 107,
+      "def": 111,
+      "spa": 62,
+      "spd": 86,
+      "spe": 55
+    },
     "description": "On raconte que son métal pousse comme une plante et qu'il se régénère lentement. Il frappe le sol de sa queue pour défendre les forêts qu'il protège.",
     "etymology": {
       "fer": "métal",
@@ -72,19 +115,34 @@
     "id": 4,
     "slug": "fourson",
     "name": "Fourson",
-    "types": ["Feu", "Glace"],
+    "types": [
+      "Feu",
+      "Glace"
+    ],
     "category": "Ourson",
-    "abilities": ["[[ability:brasier|Brasier]]"],
+    "abilities": [
+      "[[ability:brasier|Brasier]]"
+    ],
     "hiddenAbility": "[[ability:temeraire|Téméraire]]",
     "height_m": 0.5,
-    "weight_kg": 11.0,
-    "genderRatio": { "male": 87.5, "female": 12.5 },
+    "weight_kg": 11,
+    "genderRatio": {
+      "male": 87.5,
+      "female": 12.5
+    },
     "captureRate": 45,
     "images": {
       "sprite": "pokedex/img/pokemon/fourson_sprite.png",
       "artwork": "pokedex/img/pokemon/fourson_artwork.png"
     },
-    "baseStats": { "hp": 65, "atk": 58, "def": 48, "spa": 40, "spd": 49, "spe": 50 },
+    "baseStats": {
+      "hp": 65,
+      "atk": 58,
+      "def": 48,
+      "spa": 40,
+      "spd": 49,
+      "spe": 50
+    },
     "description": "Il ne se sent en confiance que lorsqu'il est blotti contre les personnes qu'il aime. Sa fourrure dégage une chaleur douce, ce qui en fait un excellent compagnon de câlin.",
     "etymology": {
       "fournaise": "endroit très chaud",
@@ -95,19 +153,34 @@
     "id": 5,
     "slug": "banquignis",
     "name": "Banquignis",
-    "types": ["Feu", "Glace"],
+    "types": [
+      "Feu",
+      "Glace"
+    ],
     "category": "Croc de feu",
-    "abilities": ["[[ability:brasier|Brasier]]"],
+    "abilities": [
+      "[[ability:brasier|Brasier]]"
+    ],
     "hiddenAbility": "[[ability:temeraire|Téméraire]]",
     "height_m": 1.1,
     "weight_kg": 55.2,
-    "genderRatio": { "male": 87.5, "female": 12.5 },
+    "genderRatio": {
+      "male": 87.5,
+      "female": 12.5
+    },
     "captureRate": 45,
     "images": {
       "sprite": "pokedex/img/pokemon/banquignis_sprite.png",
       "artwork": "pokedex/img/pokemon/banquignis_artwork.png"
     },
-    "baseStats": { "hp": 88, "atk": 88, "def": 60, "spa": 50, "spd": 59, "spe": 65 },
+    "baseStats": {
+      "hp": 88,
+      "atk": 88,
+      "def": 60,
+      "spa": 50,
+      "spd": 59,
+      "spe": 65
+    },
     "description": "On pense que ses caractéristiques étranges sont dû à une adaptation brutale face à son environnement. Il mange énormément pour compenser l'énergie qu'il brûle en permanence pour conserver sa chaleur.",
     "etymology": {
       "banquise": "plage de glace flottante",
@@ -118,19 +191,34 @@
     "id": 6,
     "slug": "pyroarctos",
     "name": "Pyroarctos",
-    "types": ["Feu", "Glace"],
+    "types": [
+      "Feu",
+      "Glace"
+    ],
     "category": "Croc de feu",
-    "abilities": ["[[ability:brasier|Brasier]]"],
+    "abilities": [
+      "[[ability:brasier|Brasier]]"
+    ],
     "hiddenAbility": "[[ability:temeraire|Téméraire]]",
     "height_m": 1.9,
     "weight_kg": 148.3,
-    "genderRatio": { "male": 87.5, "female": 12.5 },
+    "genderRatio": {
+      "male": 87.5,
+      "female": 12.5
+    },
     "captureRate": 45,
     "images": {
       "sprite": "pokedex/img/pokemon/pyroarctos_sprite.png",
       "artwork": "pokedex/img/pokemon/pyroarctos_artwork.png"
     },
-    "baseStats": { "hp": 108, "atk": 117, "def": 70, "spa": 55, "spd": 70, "spe": 110 },
+    "baseStats": {
+      "hp": 108,
+      "atk": 117,
+      "def": 70,
+      "spa": 55,
+      "spd": 70,
+      "spe": 110
+    },
     "description": "La température de son corps peut passer brutalement d'un froid glaciale à un feu brûlant selon son humeur. Dans les régions polaires, son rugissement est confondu avec celui des glaciers qui se brisent.",
     "etymology": {
       "pyro": "feu en grec",
@@ -141,19 +229,33 @@
     "id": 7,
     "slug": "solotl",
     "name": "Solotl",
-    "types": ["Eau"],
+    "types": [
+      "Eau"
+    ],
     "category": "Larve d'eau",
-    "abilities": ["[[ability:torrent|Torrent]]"],
+    "abilities": [
+      "[[ability:torrent|Torrent]]"
+    ],
     "hiddenAbility": "[[ability:rege-force|Régé-Force]]",
     "height_m": 0.3,
     "weight_kg": 4.3,
-    "genderRatio": { "male": 87.5, "female": 12.5 },
+    "genderRatio": {
+      "male": 87.5,
+      "female": 12.5
+    },
     "captureRate": 45,
     "images": {
       "sprite": "pokedex/img/pokemon/solotl_sprite.png",
       "artwork": "pokedex/img/pokemon/solotl_artwork.png"
     },
-    "baseStats": { "hp": 50, "atk": 42, "def": 55, "spa": 63, "spd": 55, "spe": 45 },
+    "baseStats": {
+      "hp": 50,
+      "atk": 42,
+      "def": 55,
+      "spa": 63,
+      "spd": 55,
+      "spe": 45
+    },
     "description": "Des étranges vagues d'eau flotte en permanence autour de sa queue. Il suffit de l'emmener près d'une rivière ou d'un lac pour le rendre heureux : il adore jouer dans l'eau et explorer les fonds marins.",
     "etymology": {
       "sol": "sol en référence au milieu terrestre",
@@ -164,19 +266,34 @@
     "id": 8,
     "slug": "siltotl",
     "name": "Siltotl",
-    "types": ["Eau", "Sol"],
+    "types": [
+      "Eau",
+      "Sol"
+    ],
     "category": "Salamandre",
-    "abilities": ["[[ability:torrent|Torrent]]"],
+    "abilities": [
+      "[[ability:torrent|Torrent]]"
+    ],
     "hiddenAbility": "[[ability:rege-force|Régé-Force]]",
     "height_m": 0.9,
     "weight_kg": 19.1,
-    "genderRatio": { "male": 87.5, "female": 12.5 },
+    "genderRatio": {
+      "male": 87.5,
+      "female": 12.5
+    },
     "captureRate": 45,
     "images": {
       "sprite": "pokedex/img/pokemon/siltotl_sprite.png",
       "artwork": "pokedex/img/pokemon/siltotl_artwork.png"
     },
-    "baseStats": { "hp": 70, "atk": 55, "def": 67, "spa": 85, "spd": 68, "spe": 65 },
+    "baseStats": {
+      "hp": 70,
+      "atk": 55,
+      "def": 67,
+      "spa": 85,
+      "spd": 68,
+      "spe": 65
+    },
     "description": "Pour fuir ses prédateurs, il se cache sous la terre ou la boue. Il est même capable de changer légèrement sa couleur afin de se camoufler.",
     "etymology": {
       "silt": "limon, boue",
@@ -187,19 +304,34 @@
     "id": 9,
     "slug": "aridotl",
     "name": "Aridotl",
-    "types": ["Eau", "Sol"],
+    "types": [
+      "Eau",
+      "Sol"
+    ],
     "category": "Salamandre",
-    "abilities": ["[[ability:torrent|Torrent]]"],
+    "abilities": [
+      "[[ability:torrent|Torrent]]"
+    ],
     "hiddenAbility": "[[ability:rege-force|Régé-Force]]",
     "height_m": 1.5,
     "weight_kg": 54.8,
-    "genderRatio": { "male": 87.5, "female": 12.5 },
+    "genderRatio": {
+      "male": 87.5,
+      "female": 12.5
+    },
     "captureRate": 45,
     "images": {
       "sprite": "pokedex/img/pokemon/aridotl_sprite.png",
       "artwork": "pokedex/img/pokemon/aridotl_artwork.png"
     },
-    "baseStats": { "hp": 83, "atk": 65, "def": 85, "spa": 115, "spd": 80, "spe": 102 },
+    "baseStats": {
+      "hp": 83,
+      "atk": 65,
+      "def": 85,
+      "spa": 115,
+      "spd": 80,
+      "spe": 102
+    },
     "description": "Sa présence dans la nature est signe que l'habitat est sain et pure. Il est capable de voyager pendant des mois dans le but de trouver l'environnement parfait.",
     "etymology": {
       "aride": "sec, désertique",
@@ -210,19 +342,34 @@
     "id": 10,
     "slug": "scavalin",
     "name": "Scavalin",
-    "types": ["Normal"],
+    "types": [
+      "Normal"
+    ],
     "category": "Récupérateur",
-    "abilities": ["[[ability:ramassage|Ramassage]]", "[[ability:fouille|Fouille]]"],
+    "abilities": [
+      "[[ability:ramassage|Ramassage]]",
+      "[[ability:fouille|Fouille]]"
+    ],
     "hiddenAbility": "[[ability:adaptabilite|Adaptabilité]]",
     "height_m": 0.4,
     "weight_kg": 7.5,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 255,
     "images": {
       "sprite": "pokedex/img/pokemon/scavalin_sprite.png",
       "artwork": "pokedex/img/pokemon/scavalin_artwork.png"
     },
-    "baseStats": { "hp": 45, "atk": 55, "def": 50, "spa": 30, "spd": 40, "spe": 70 },
+    "baseStats": {
+      "hp": 45,
+      "atk": 55,
+      "def": 50,
+      "spa": 30,
+      "spd": 40,
+      "spe": 70
+    },
     "description": "Il collectionne les morceaux de métal qu'il trouve dans les ruines. Il s'en sert pour se protéger, mais aussi pour impressionner ses congénères.",
     "etymology": {
       "scavenger": "charognard en anglais, animal qui fouille pour trouver de la nourriture",
@@ -234,19 +381,35 @@
     "slug": "feraccoon",
     "name": "Feraccoon",
     "formName": "Défensive",
-    "types": ["Normal", "Acier"],
+    "types": [
+      "Normal",
+      "Acier"
+    ],
     "category": "Récupérateur",
-    "abilities": ["[[ability:ramassage|Ramassage]]", "[[ability:fouille|Fouille]]"],
+    "abilities": [
+      "[[ability:ramassage|Ramassage]]",
+      "[[ability:fouille|Fouille]]"
+    ],
     "hiddenAbility": "[[ability:adaptabilite|Adaptabilité]]",
     "height_m": 0.8,
-    "weight_kg": 25.0,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "weight_kg": 25,
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 255,
     "images": {
       "sprite": "pokedex/img/pokemon/feraccoon_def_sprite.png",
       "artwork": "pokedex/img/pokemon/feraccoon_def_artwork.png"
     },
-    "baseStats": { "hp": 70, "atk": 90, "def": 110, "spa": 45, "spd": 80, "spe": 65 },
+    "baseStats": {
+      "hp": 70,
+      "atk": 90,
+      "def": 110,
+      "spa": 45,
+      "spd": 80,
+      "spe": 65
+    },
     "description": "Il vit dans les décharges et entrepôts abandonnés. Son intelligence lui a permis de manipuler les débris métalliques qu'il trouve pour s'en faire des outils et armures utiles, en imitant les humains.",
     "etymology": {
       "fer": "métal",
@@ -258,19 +421,35 @@
     "slug": "feraccoon",
     "name": "Feraccoon",
     "formName": "Offensive",
-    "types": ["Normal", "Acier"],
+    "types": [
+      "Normal",
+      "Acier"
+    ],
     "category": "Récupérateur",
-    "abilities": ["[[ability:ramassage|Ramassage]]", "[[ability:fouille|Fouille]]"],
+    "abilities": [
+      "[[ability:ramassage|Ramassage]]",
+      "[[ability:fouille|Fouille]]"
+    ],
     "hiddenAbility": "[[ability:adaptabilite|Adaptabilité]]",
     "height_m": 0.8,
-    "weight_kg": 25.0,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "weight_kg": 25,
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 255,
     "images": {
       "sprite": "pokedex/img/pokemon/feraccoon_atk_sprite.png",
       "artwork": "pokedex/img/pokemon/feraccoon_atk_artwork.png"
     },
-    "baseStats": { "hp": 70, "atk": 105, "def": 70, "spa": 45, "spd": 70, "spe": 100 },
+    "baseStats": {
+      "hp": 70,
+      "atk": 105,
+      "def": 70,
+      "spa": 45,
+      "spd": 70,
+      "spe": 100
+    },
     "description": "Il vit dans les décharges et entrepôts abandonnés. Son intelligence lui a permis de manipuler les débris métalliques qu'il trouve pour s'en faire des outils et armures utiles, en imitant les humains.",
     "etymology": {
       "fer": "métal",
@@ -281,19 +460,33 @@
     "id": 12,
     "slug": "linepille",
     "name": "Linepille",
-    "types": ["Insecte"],
+    "types": [
+      "Insecte"
+    ],
     "category": "Larve",
-    "abilities": ["[[ability:essaim|Essaim]]"],
+    "abilities": [
+      "[[ability:essaim|Essaim]]"
+    ],
     "hiddenAbility": "[[ability:boom-final|Boom Final]]",
     "height_m": 0.15,
     "weight_kg": 1.2,
-    "genderRatio": { "male": 12.5, "female": 87.5 },
+    "genderRatio": {
+      "male": 12.5,
+      "female": 87.5
+    },
     "captureRate": 255,
     "images": {
       "sprite": "pokedex/img/pokemon/linepille_sprite.png",
       "artwork": "pokedex/img/pokemon/linepille_artwork.png"
     },
-    "baseStats": { "hp": 40, "atk": 35, "def": 30, "spa": 35, "spd": 30, "spe": 30 },
+    "baseStats": {
+      "hp": 40,
+      "atk": 35,
+      "def": 30,
+      "spa": 35,
+      "spd": 30,
+      "spe": 30
+    },
     "description": "Ces Pokémon vivent collés les uns aux autres dans des galeries étroites. En fonction de leur alimentation, ces larves peuvent aussi bien devenir une simple ouvrière qu'une grand reine.",
     "etymology": {
       "linepithema": "genre de fourmis",
@@ -305,19 +498,34 @@
     "slug": "myrmilia",
     "name": "Myrmilia",
     "formName": "Femelle",
-    "types": ["Insecte", "Sol"],
+    "types": [
+      "Insecte",
+      "Sol"
+    ],
     "category": "Fourmi ouvrier",
-    "abilities": ["[[ability:essaim|Essaim]]"],
+    "abilities": [
+      "[[ability:essaim|Essaim]]"
+    ],
     "hiddenAbility": "[[ability:boom-final|Boom Final]]",
     "height_m": 0.3,
     "weight_kg": 7.8,
-    "genderRatio": { "male": 12.5, "female": 87.5 },
+    "genderRatio": {
+      "male": 12.5,
+      "female": 87.5
+    },
     "captureRate": 255,
     "images": {
       "sprite": "pokedex/img/pokemon/myrmilia_f_sprite.png",
       "artwork": "pokedex/img/pokemon/myrmilia_f_artwork.png"
     },
-    "baseStats": { "hp": 55, "atk": 65, "def": 55, "spa": 50, "spd": 50, "spe": 65 },
+    "baseStats": {
+      "hp": 55,
+      "atk": 65,
+      "def": 55,
+      "spa": 50,
+      "spd": 50,
+      "spe": 65
+    },
     "description": "Les femelles sont responsables de récupérer de la nourriture et creuser les galeries, tandis que les mâles possèdent des ailes pour se préparer à leur vol nuptial.",
     "etymology": {
       "myrmica": "genre de fourmis",
@@ -329,19 +537,34 @@
     "slug": "myrmilia",
     "name": "Myrmilia",
     "formName": "Mâle",
-    "types": ["Insecte", "Sol"],
+    "types": [
+      "Insecte",
+      "Sol"
+    ],
     "category": "Fourmi ouvrier",
-    "abilities": ["[[ability:essaim|Essaim]]"],
+    "abilities": [
+      "[[ability:essaim|Essaim]]"
+    ],
     "hiddenAbility": "[[ability:boom-final|Boom Final]]",
     "height_m": 0.3,
     "weight_kg": 7.8,
-    "genderRatio": { "male": 12.5, "female": 87.5 },
+    "genderRatio": {
+      "male": 12.5,
+      "female": 87.5
+    },
     "captureRate": 255,
     "images": {
       "sprite": "pokedex/img/pokemon/myrmilia_m_sprite.png",
       "artwork": "pokedex/img/pokemon/myrmilia_m_artwork.png"
     },
-    "baseStats": { "hp": 55, "atk": 65, "def": 55, "spa": 50, "spd": 50, "spe": 65 },
+    "baseStats": {
+      "hp": 55,
+      "atk": 65,
+      "def": 55,
+      "spa": 50,
+      "spd": 50,
+      "spe": 65
+    },
     "description": "Les femelles sont responsables de récupérer de la nourriture et creuser les galeries, tandis que les mâles possèdent des ailes pour se préparer à leur vol nuptial.",
     "etymology": {
       "myrmica": "genre de fourmis",
@@ -352,19 +575,34 @@
     "id": 14,
     "slug": "fourmidon",
     "name": "Fourmidon",
-    "types": ["Insecte", "Sol"],
+    "types": [
+      "Insecte",
+      "Sol"
+    ],
     "category": "Fourmi soldat",
-    "abilities": ["[[ability:essaim|Essaim]]"],
+    "abilities": [
+      "[[ability:essaim|Essaim]]"
+    ],
     "hiddenAbility": "[[ability:boom-final|Boom Final]]",
     "height_m": 0.6,
     "weight_kg": 24.5,
-    "genderRatio": { "male": 0, "female": 100 },
+    "genderRatio": {
+      "male": 0,
+      "female": 100
+    },
     "captureRate": 45,
     "images": {
       "sprite": "pokedex/img/pokemon/fourmidon_sprite.png",
       "artwork": "pokedex/img/pokemon/fourmidon_artwork.png"
     },
-    "baseStats": { "hp": 62, "atk": 116, "def": 80, "spa": 52, "spd": 75, "spe": 85 },
+    "baseStats": {
+      "hp": 62,
+      "atk": 116,
+      "def": 80,
+      "spa": 52,
+      "spd": 75,
+      "spe": 85
+    },
     "description": "Ces Pokémon défendent le nid au péril de leur vie. Avec leur tête dure comme la pierre, elles sont capables de bloquer les tunnels du nid.",
     "etymology": {
       "fourmi": "insecte",
@@ -375,19 +613,34 @@
     "id": 15,
     "slug": "myrtiara",
     "name": "Myrtiara",
-    "types": ["Insecte", "Fée"],
+    "types": [
+      "Insecte",
+      "Fée"
+    ],
     "category": "Reine de colonie",
-    "abilities": ["[[ability:essaim|Essaim]]"],
+    "abilities": [
+      "[[ability:essaim|Essaim]]"
+    ],
     "hiddenAbility": "[[ability:crea-nectar|Créa-Nectar]]",
     "height_m": 0.9,
     "weight_kg": 14.1,
-    "genderRatio": { "male": 0, "female": 100 },
+    "genderRatio": {
+      "male": 0,
+      "female": 100
+    },
     "captureRate": 45,
     "images": {
       "sprite": "pokedex/img/pokemon/myrtiara_sprite.png",
       "artwork": "pokedex/img/pokemon/myrtiara_artwork.png"
     },
-    "baseStats": { "hp": 80, "atk": 55, "def": 100, "spa": 105, "spd": 100, "spe": 45 },
+    "baseStats": {
+      "hp": 80,
+      "atk": 55,
+      "def": 100,
+      "spa": 105,
+      "spd": 100,
+      "spe": 45
+    },
     "description": "Elle émet des phéromones responsables de coordonner les Pokémon de sa colonie. En cas d'attaque, elle privilégiera toujours l'apaisement avant la riposte.",
     "etymology": {
       "myrmica": "genre de fourmis",
@@ -398,19 +651,34 @@
     "id": 16,
     "slug": "pisqwack",
     "name": "Pisqwack",
-    "types": ["Normal", "Vol"],
+    "types": [
+      "Normal",
+      "Vol"
+    ],
     "category": "Opportuniste",
-    "abilities": ["[[ability:pickpocket|Pickpocket]]"],
+    "abilities": [
+      "[[ability:pickpocket|Pickpocket]]"
+    ],
     "hiddenAbility": "[[ability:farceur|Farceur]]",
     "height_m": 0.3,
     "weight_kg": 2.1,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 255,
     "images": {
       "sprite": "pokedex/img/pokemon/pisqwack_sprite.png",
       "artwork": "pokedex/img/pokemon/pisqwack_artwork.png"
     },
-    "baseStats": { "hp": 40, "atk": 55, "def": 35, "spa": 41, "spd": 30, "spe": 63 },
+    "baseStats": {
+      "hp": 40,
+      "atk": 55,
+      "def": 35,
+      "spa": 41,
+      "spd": 30,
+      "spe": 63
+    },
     "description": "Il adore se poser sur les toits pour observer les passants. Si une personne tient de la nourriture dans la main, il viendra vers elle dans l'espoir qu'elle lui en donne un morceau.",
     "etymology": {
       "pie": "oiseau connu pour voler des objets brillants",
@@ -421,19 +689,34 @@
     "id": 17,
     "slug": "corbonyx",
     "name": "Corbonyx",
-    "types": ["Ténèbres", "Vol"],
+    "types": [
+      "Ténèbres",
+      "Vol"
+    ],
     "category": "Fashionista",
-    "abilities": ["[[ability:pickpocket|Pickpocket]]"],
+    "abilities": [
+      "[[ability:pickpocket|Pickpocket]]"
+    ],
     "hiddenAbility": "[[ability:farceur|Farceur]]",
     "height_m": 0.6,
     "weight_kg": 16.2,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 120,
     "images": {
       "sprite": "pokedex/img/pokemon/corbonyx_sprite.png",
       "artwork": "pokedex/img/pokemon/corbonyx_artwork.png"
     },
-    "baseStats": { "hp": 52, "atk": 77, "def": 42, "spa": 68, "spd": 42, "spe": 80 },
+    "baseStats": {
+      "hp": 52,
+      "atk": 77,
+      "def": 42,
+      "spa": 68,
+      "spd": 42,
+      "spe": 80
+    },
     "description": "Il est attiré par tout ce qui brille. Son plaisir est de porter des bijoux qui portent le même éclat que son plumage. Les amateurs de mode s'inspirent souvent de ce Pokémon.",
     "etymology": {
       "corbeau": "oiseau noir connu pour sa ruse",
@@ -444,19 +727,34 @@
     "id": 18,
     "slug": "noarsene",
     "name": "Noarsène",
-    "types": ["Ténèbres", "Vol"],
+    "types": [
+      "Ténèbres",
+      "Vol"
+    ],
     "category": "Maître Voleur",
-    "abilities": ["[[ability:chanceux|Chanceux]]"],
+    "abilities": [
+      "[[ability:chanceux|Chanceux]]"
+    ],
     "hiddenAbility": "[[ability:farceur|Farceur]]",
-    "height_m": 1.0,
+    "height_m": 1,
     "weight_kg": 26.3,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 45,
     "images": {
       "sprite": "pokedex/img/pokemon/noarsene_sprite.png",
       "artwork": "pokedex/img/pokemon/noarsene_artwork.png"
     },
-    "baseStats": { "hp": 60, "atk": 115, "def": 50, "spa": 105, "spd": 50, "spe": 113 },
+    "baseStats": {
+      "hp": 60,
+      "atk": 115,
+      "def": 50,
+      "spa": 105,
+      "spd": 50,
+      "spe": 113
+    },
     "description": "Ce Pokémon a perfectionné son vol afin qu'il soit le plus silencieux possible. Il sort la nuit pour traquer ses proies et voler tout ce qui semble avoir de la valeur.",
     "etymology": {
       "noir": "couleur noire",
@@ -467,19 +765,35 @@
     "id": 19,
     "slug": "nudilume",
     "name": "Nudilume",
-    "types": ["Eau", "Poison"],
+    "types": [
+      "Eau",
+      "Poison"
+    ],
     "category": "Limace",
-    "abilities": ["[[ability:point-poison|Point Poison]]", "[[ability:Lavabo|Lavabo]]"],
+    "abilities": [
+      "[[ability:point-poison|Point Poison]]",
+      "[[ability:Lavabo|Lavabo]]"
+    ],
     "hiddenAbility": "[[ability:peau-miracle|Peau Miracle]]",
     "height_m": 0.1,
-    "weight_kg": 2.0,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "weight_kg": 2,
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 190,
     "images": {
       "sprite": "pokedex/img/pokemon/nudilume_sprite.png",
       "artwork": "pokedex/img/pokemon/nudilume_artwork.png"
     },
-    "baseStats": { "hp": 59, "atk": 43, "def": 56, "spa": 47, "spd": 66, "spe": 63 },
+    "baseStats": {
+      "hp": 59,
+      "atk": 43,
+      "def": 56,
+      "spa": 47,
+      "spd": 66,
+      "spe": 63
+    },
     "description": "Il glisse lentement au fond de l'eau en laissant une traînée luisante et colorée, jolie mais néanmoins toxique. Il est très craintif et n'hésitera pas à se cacher sous sa cape au moindre bruit suspect.",
     "etymology": {
       "nudibranchia": "ordre de mollusques marins appelés nudibranches",
@@ -490,19 +804,35 @@
     "id": 20,
     "slug": "glauculus",
     "name": "Glauculus",
-    "types": ["Eau", "Poison"],
+    "types": [
+      "Eau",
+      "Poison"
+    ],
     "category": "Dragon Bleu",
-    "abilities": ["[[ability:point-poison|Point Poison]]", "[[ability:lavabo|Lavabo]]"],
+    "abilities": [
+      "[[ability:point-poison|Point Poison]]",
+      "[[ability:lavabo|Lavabo]]"
+    ],
     "hiddenAbility": "[[ability:peau-miracle|Peau Miracle]]",
     "height_m": 0.6,
     "weight_kg": 8.7,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 75,
     "images": {
       "sprite": "pokedex/img/pokemon/glauculus_sprite.png",
       "artwork": "pokedex/img/pokemon/glauculus_artwork.png"
     },
-    "baseStats": { "hp": 69, "atk": 63, "def": 78, "spa": 67, "spd": 103, "spe": 95 },
+    "baseStats": {
+      "hp": 69,
+      "atk": 63,
+      "def": 78,
+      "spa": 67,
+      "spd": 103,
+      "spe": 95
+    },
     "description": "Sa peau est couverte de toxines. Il se déplace en gonflant une bulle au niveau de son ventre et flotte à la surface.",
     "etymology": {
       "glaucus": "genre de nudibranches marins, le dragon bleu",
@@ -513,19 +843,34 @@
     "id": 21,
     "slug": "totadachi",
     "name": "Totadachi",
-    "types": ["Électrik"],
+    "types": [
+      "Électrik"
+    ],
     "category": "Gerbélec",
-    "abilities": ["[[ability:statik|Statik]]", "[[ability:motorise|Motorisé]]"],
+    "abilities": [
+      "[[ability:statik|Statik]]",
+      "[[ability:motorise|Motorisé]]"
+    ],
     "hiddenAbility": "[[ability:turbo|Turbo]]",
     "height_m": 0.3,
-    "weight_kg": 2.0,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "weight_kg": 2,
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 180,
     "images": {
       "sprite": "pokedex/img/pokemon/totadachi_sprite.png",
       "artwork": "pokedex/img/pokemon/totadachi_artwork.png"
     },
-    "baseStats": { "hp": 36, "atk": 64, "def": 35, "spa": 52, "spd": 43, "spe": 90 },
+    "baseStats": {
+      "hp": 36,
+      "atk": 64,
+      "def": 35,
+      "spa": 52,
+      "spd": 43,
+      "spe": 90
+    },
     "description": "Il court en cercles quand il accumule trop d'énergie statique. L'électricité stockée dans ses pattes lui permet de bondir plus haut qu'un humain de taille moyen.",
     "etymology": {
       "totata": "onomatopée représentant des petits pas rapides",
@@ -538,19 +883,35 @@
     "id": 22,
     "slug": "pionabachi",
     "name": "Pionabachi",
-    "types": ["Électrik", "Combat"],
+    "types": [
+      "Électrik",
+      "Combat"
+    ],
     "category": "Gerbélec",
-    "abilities": ["[[ability:statik|Statik]]", "[[ability:motorise|Motorisé]]"],
+    "abilities": [
+      "[[ability:statik|Statik]]",
+      "[[ability:motorise|Motorisé]]"
+    ],
     "hiddenAbility": "[[ability:turbo|Turbo]]",
     "height_m": 0.6,
     "weight_kg": 7.4,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 95,
     "images": {
       "sprite": "pokedex/img/pokemon/pionabachi_sprite.png",
       "artwork": "pokedex/img/pokemon/pionabachi_artwork.png"
     },
-    "baseStats": { "hp": 65, "atk": 105, "def": 47, "spa": 60, "spd": 90, "spe": 123 },
+    "baseStats": {
+      "hp": 65,
+      "atk": 105,
+      "def": 47,
+      "spa": 60,
+      "spd": 90,
+      "spe": 123
+    },
     "description": "Il canalise son énergie dans ses pattes pour frapper plus vite que l'éclair, laissant une marque de brûlure à l'endroit d'où il a sauté. Chaque duel est pour lui comme une danse.",
     "etymology": {
       "pyon-pyon": "onomatopée représentant des bonds légers",
@@ -561,19 +922,34 @@
     "id": 23,
     "slug": "golebin",
     "name": "Golebin",
-    "types": ["Roche"],
+    "types": [
+      "Roche"
+    ],
     "category": "Caillou",
-    "abilities": ["[[ability:fermete|Fermeté]]", "[[ability:poing-de-fer|Poing de Fer]]"],
+    "abilities": [
+      "[[ability:fermete|Fermeté]]",
+      "[[ability:poing-de-fer|Poing de Fer]]"
+    ],
     "hiddenAbility": "[[ability:tete-de-roc|Tête de Roc]]",
     "height_m": 0.6,
     "weight_kg": 28.4,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 190,
     "images": {
       "sprite": "pokedex/img/pokemon/golebin_sprite.png",
       "artwork": "pokedex/img/pokemon/golebin_artwork.png"
     },
-    "baseStats": { "hp": 72, "atk": 75, "def": 63, "spa": 25, "spd": 40, "spe": 30 },
+    "baseStats": {
+      "hp": 72,
+      "atk": 75,
+      "def": 63,
+      "spa": 25,
+      "spd": 40,
+      "spe": 30
+    },
     "description": "Il frappe les pierres pour endurcir ses poings. Malgré son air grincheux, il cherche surtout à s'entraîner.",
     "etymology": {
       "golem": "créature de pierre animée dans la mythologie juive",
@@ -584,19 +960,35 @@
     "id": 24,
     "slug": "golepoing",
     "name": "Golepoing",
-    "types": ["Roche", "Combat"],
+    "types": [
+      "Roche",
+      "Combat"
+    ],
     "category": "Frappeur",
-    "abilities": ["[[ability:fermete|Fermeté]]", "[[ability:poing-de-fer|Poing de Fer]]"],
+    "abilities": [
+      "[[ability:fermete|Fermeté]]",
+      "[[ability:poing-de-fer|Poing de Fer]]"
+    ],
     "hiddenAbility": "[[ability:tete-de-roc|Tête de Roc]]",
     "height_m": 1.3,
     "weight_kg": 110.2,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 95,
     "images": {
       "sprite": "pokedex/img/pokemon/golepoing_sprite.png",
       "artwork": "pokedex/img/pokemon/golepoing_artwork.png"
     },
-    "baseStats": { "hp": 90, "atk": 105, "def": 85, "spa": 35, "spd": 52, "spe": 38 },
+    "baseStats": {
+      "hp": 90,
+      "atk": 105,
+      "def": 85,
+      "spa": 35,
+      "spd": 52,
+      "spe": 38
+    },
     "description": "Son corps se polit à force d'entraînement. Il peut briser un rocher d'un seul coup de poing.",
     "etymology": {
       "golem": "créature de pierre animée dans la mythologie juive",
@@ -607,19 +999,35 @@
     "id": 25,
     "slug": "golerock",
     "name": "Golerock",
-    "types": ["Roche", "Combat"],
+    "types": [
+      "Roche",
+      "Combat"
+    ],
     "category": "Golem",
-    "abilities": ["[[ability:fermete|Fermeté]]", "[[ability:poing-de-fer|Poing de Fer]]"],
+    "abilities": [
+      "[[ability:fermete|Fermeté]]",
+      "[[ability:poing-de-fer|Poing de Fer]]"
+    ],
     "hiddenAbility": "[[ability:tete-de-roc|Tête de Roc]]",
     "height_m": 2.2,
     "weight_kg": 310.5,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 45,
     "images": {
       "sprite": "pokedex/img/pokemon/golerock_sprite.png",
       "artwork": "pokedex/img/pokemon/golerock_artwork.png"
     },
-    "baseStats": { "hp": 113, "atk": 136, "def": 102, "spa": 45, "spd": 74, "spe": 35 },
+    "baseStats": {
+      "hp": 113,
+      "atk": 136,
+      "def": 102,
+      "spa": 45,
+      "spd": 74,
+      "spe": 35
+    },
     "description": "Ses poings peuvent faire trembler le sol et fracturer n'importe quelle armure.",
     "etymology": {
       "golem": "créature de pierre animée dans la mythologie juive",
@@ -630,19 +1038,34 @@
     "id": 26,
     "slug": "nouganine",
     "name": "Nouganine",
-    "types": ["Normal"],
+    "types": [
+      "Normal"
+    ],
     "category": "Dent de Lait",
-    "abilities": ["[[ability:herbivore|Herbivore]]", "[[ability:fuite|Fuite]]"],
+    "abilities": [
+      "[[ability:herbivore|Herbivore]]",
+      "[[ability:fuite|Fuite]]"
+    ],
     "hiddenAbility": "[[ability:impudence|Impudence]]",
     "height_m": 0.6,
     "weight_kg": 17.4,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 190,
     "images": {
       "sprite": "pokedex/img/pokemon/nouganine_sprite.png",
       "artwork": "pokedex/img/pokemon/nouganine_artwork.png"
     },
-    "baseStats": { "hp": 70, "atk": 70, "def": 45, "spa": 35, "spd": 40, "spe": 80 },
+    "baseStats": {
+      "hp": 70,
+      "atk": 70,
+      "def": 45,
+      "spa": 35,
+      "spd": 40,
+      "spe": 80
+    },
     "description": "Il découvre son environnement en mordillant ce qui lui passe sous le museau. Il a un faible pour les sucreries.",
     "etymology": {
       "nougat": "confiserie sucrée",
@@ -654,19 +1077,34 @@
     "slug": "cervident",
     "name": "Cervident",
     "formName": "Mâle",
-    "types": ["Normal"],
+    "types": [
+      "Normal"
+    ],
     "category": "Canine",
-    "abilities": ["[[ability:herbivore|Herbivore]]", "[[ability:fuite|Fuite]]"],
+    "abilities": [
+      "[[ability:herbivore|Herbivore]]",
+      "[[ability:fuite|Fuite]]"
+    ],
     "hiddenAbility": "[[ability:impudence|Impudence]]",
     "height_m": 1.6,
     "weight_kg": 74.1,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 100,
     "images": {
       "sprite": "pokedex/img/pokemon/cervident_m_sprite.png",
       "artwork": "pokedex/img/pokemon/cervident_m_artwork.png"
     },
-    "baseStats": { "hp": 92, "atk": 98, "def": 73, "spa": 57, "spd": 60, "spe": 100 },
+    "baseStats": {
+      "hp": 92,
+      "atk": 98,
+      "def": 73,
+      "spa": 57,
+      "spd": 60,
+      "spe": 100
+    },
     "description": "Seul les mâles possèdent des crocs. Ils s'en servent plutôt pour dissuader que pour se battre avec.",
     "etymology": {
       "cervidé": "famille de mammifères herbivores comprenant les cerfs et les daims",
@@ -678,19 +1116,34 @@
     "slug": "cervident",
     "name": "Cervident",
     "formName": "Femelle",
-    "types": ["Normal"],
+    "types": [
+      "Normal"
+    ],
     "category": "Canine",
-    "abilities": ["[[ability:herbivore|Herbivore]]", "[[ability:fuite|Fuite]]"],
+    "abilities": [
+      "[[ability:herbivore|Herbivore]]",
+      "[[ability:fuite|Fuite]]"
+    ],
     "hiddenAbility": "[[ability:impudence|Impudence]]",
     "height_m": 1.6,
     "weight_kg": 74.1,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 100,
     "images": {
       "sprite": "pokedex/img/pokemon/cervident_f_sprite.png",
       "artwork": "pokedex/img/pokemon/cervident_f_artwork.png"
     },
-    "baseStats": { "hp": 92, "atk": 98, "def": 73, "spa": 57, "spd": 60, "spe": 100 },
+    "baseStats": {
+      "hp": 92,
+      "atk": 98,
+      "def": 73,
+      "spa": 57,
+      "spd": 60,
+      "spe": 100
+    },
     "description": "Seul les mâles possèdent des crocs. Ils s'en servent plutôt pour dissuader que pour se battre avec.",
     "etymology": {
       "cervidé": "famille de mammifères herbivores comprenant les cerfs et les daims",
@@ -701,19 +1154,35 @@
     "id": 28,
     "slug": "gloutron",
     "name": "Gloutron",
-    "types": ["Poison", "Eau"],
+    "types": [
+      "Poison",
+      "Eau"
+    ],
     "category": "Loutre visqueuse",
-    "abilities": ["[[ability:glissade|Glissade]]", "[[ability:poisseux|Poisseux]]"],
+    "abilities": [
+      "[[ability:glissade|Glissade]]",
+      "[[ability:poisseux|Poisseux]]"
+    ],
     "hiddenAbility": "[[ability:suintement|Suintement]]",
     "height_m": 0.3,
     "weight_kg": 3.9,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 240,
     "images": {
       "sprite": "pokedex/img/pokemon/gloutron_sprite.png",
       "artwork": "pokedex/img/pokemon/gloutron_artwork.png"
     },
-    "baseStats": { "hp": 45, "atk": 40, "def": 45, "spa": 55, "spd": 40, "spe": 50 },
+    "baseStats": {
+      "hp": 45,
+      "atk": 40,
+      "def": 45,
+      "spa": 55,
+      "spd": 40,
+      "spe": 50
+    },
     "description": "Il joue dans les flaques d'eau boueuses. Son pelage sécrète une fine couche huileuse qui l'empêche de trop se salir et le protège des prédateurs.",
     "etymology": {
       "glouton": "personne qui mange avec avidité",
@@ -724,19 +1193,35 @@
     "id": 29,
     "slug": "nemustine",
     "name": "Nemustine",
-    "types": ["Poison", "Eau"],
+    "types": [
+      "Poison",
+      "Eau"
+    ],
     "category": "Loutre visqueuse",
-    "abilities": ["[[ability:glissade|Glissade]]", "[[ability:poisseux|Poisseux]]"],
+    "abilities": [
+      "[[ability:glissade|Glissade]]",
+      "[[ability:poisseux|Poisseux]]"
+    ],
     "hiddenAbility": "[[ability:suintement|Suintement]]",
     "height_m": 0.8,
     "weight_kg": 17.8,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 190,
     "images": {
       "sprite": "pokedex/img/pokemon/nemustine_sprite.png",
       "artwork": "pokedex/img/pokemon/nemustine_artwork.png"
     },
-    "baseStats": { "hp": 70, "atk": 55, "def": 65, "spa": 80, "spd": 70, "spe": 65 },
+    "baseStats": {
+      "hp": 70,
+      "atk": 55,
+      "def": 65,
+      "spa": 80,
+      "spd": 70,
+      "spe": 65
+    },
     "description": "Il nage dans les marées polluées sans jamais tomber malade. La substance visqueuse qui recouvre son corps est toxique mais fascinante à regarder.",
     "etymology": {
       "nemas": "dormir en japonais",
@@ -748,19 +1233,35 @@
     "id": 30,
     "slug": "venolutra",
     "name": "Venolutra",
-    "types": ["Poison", "Ténèbres"],
+    "types": [
+      "Poison",
+      "Ténèbres"
+    ],
     "category": "Loutre visqueuse",
-    "abilities": ["[[ability:glissade|Glissade]]", "[[ability:poisseux|Poisseux]]"],
+    "abilities": [
+      "[[ability:glissade|Glissade]]",
+      "[[ability:poisseux|Poisseux]]"
+    ],
     "hiddenAbility": "[[ability:crea-miasme|Créa-Miasme]]",
     "height_m": 1.6,
     "weight_kg": 38.5,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 75,
     "images": {
       "sprite": "pokedex/img/pokemon/venolutra_sprite.png",
       "artwork": "pokedex/img/pokemon/venolutra_artwork.png"
     },
-    "baseStats": { "hp": 95, "atk": 65, "def": 85, "spa": 110, "spd": 95, "spe": 80 },
+    "baseStats": {
+      "hp": 95,
+      "atk": 65,
+      "def": 85,
+      "spa": 110,
+      "spd": 95,
+      "spe": 80
+    },
     "description": "Où qu'il passe, l'eau se teinte d'un violet scintillant. Son corps sécrète en permanence une huile toxique : il transforme les courants en poisons et les utilise pour chasser.",
     "etymology": {
       "venom": "venin en anglais",
@@ -771,19 +1272,34 @@
     "id": 31,
     "slug": "bronzillon",
     "name": "Bronzillon",
-    "types": ["Vol", "Normal"],
+    "types": [
+      "Vol",
+      "Normal"
+    ],
     "category": "Becoloré",
-    "abilities": ["[[ability:coeur-de-coq|Cœur de Coq]]"],
+    "abilities": [
+      "[[ability:coeur-de-coq|Cœur de Coq]]"
+    ],
     "hiddenAbility": "[[ability:delestage|Délestage]]",
     "height_m": 0.3,
     "weight_kg": 3.3,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 190,
     "images": {
       "sprite": "pokedex/img/pokemon/bronzillon_sprite.png",
       "artwork": "pokedex/img/pokemon/bronzillon_artwork.png"
     },
-    "baseStats": { "hp": 45, "atk": 55, "def": 40, "spa": 55, "spd": 40, "spe": 75 },
+    "baseStats": {
+      "hp": 45,
+      "atk": 55,
+      "def": 40,
+      "spa": 55,
+      "spd": 40,
+      "spe": 75
+    },
     "description": "Il reste aux côtés de ses parents, qui le nourrissent et lui apprennent à voler, même s'il est très maladroit, que ce soit pour marcher ou pour voler.",
     "etymology": {
       "bronze": "alliage métallique",
@@ -794,19 +1310,34 @@
     "id": 32,
     "slug": "plumargent",
     "name": "Plumargent",
-    "types": ["Vol", "Normal"],
+    "types": [
+      "Vol",
+      "Normal"
+    ],
     "category": "Becoloré",
-    "abilities": ["[[ability:coeur-de-coq|Cœur de Coq]]"],
+    "abilities": [
+      "[[ability:coeur-de-coq|Cœur de Coq]]"
+    ],
     "hiddenAbility": "[[ability:delestage|Délestage]]",
     "height_m": 0.5,
     "weight_kg": 15.6,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 120,
     "images": {
       "sprite": "pokedex/img/pokemon/plumargent_sprite.png",
       "artwork": "pokedex/img/pokemon/plumargent_artwork.png"
     },
-    "baseStats": { "hp": 60, "atk": 60, "def": 55, "spa": 60, "spd": 55, "spe": 100 },
+    "baseStats": {
+      "hp": 60,
+      "atk": 60,
+      "def": 55,
+      "spa": 60,
+      "spd": 55,
+      "spe": 100
+    },
     "description": "Son plumage présente des reflets sous le soleil. On dit que sa présence est synonyme de richesse et propérité.",
     "etymology": {
       "plume": "partie du plumage d'un oiseau",
@@ -818,19 +1349,34 @@
     "slug": "orfaisan",
     "name": "Orfaisan",
     "formName": "Flamboyante",
-    "types": ["Vol", "Feu"],
+    "types": [
+      "Vol",
+      "Feu"
+    ],
     "category": "Plumage",
-    "abilities": ["[[ability:torche|Torche]]"],
+    "abilities": [
+      "[[ability:torche|Torche]]"
+    ],
     "hiddenAbility": "[[ability:delestage|Délestage]]",
     "height_m": 1.2,
     "weight_kg": 28.9,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 45,
     "images": {
       "sprite": "pokedex/img/pokemon/orfaisan_feu_sprite.png",
       "artwork": "pokedex/img/pokemon/orfaisan_feu_artwork.png"
     },
-    "baseStats": { "hp": 85, "atk": 65, "def": 75, "spa": 125, "spd": 75, "spe": 85 },
+    "baseStats": {
+      "hp": 85,
+      "atk": 65,
+      "def": 75,
+      "spa": 125,
+      "spd": 75,
+      "spe": 85
+    },
     "description": "Selon l'élément qu'il a absorbé, ses plumes changent de couleur et de forme. Sa collerette lui sert de réservoir d'énergie élémentaire.",
     "etymology": {
       "or": "métal précieux",
@@ -842,19 +1388,34 @@
     "slug": "orfaisan",
     "name": "Orfaisan",
     "formName": "Étincelante",
-    "types": ["Vol", "Électrik"],
+    "types": [
+      "Vol",
+      "Électrik"
+    ],
     "category": "Plumage",
-    "abilities": ["[[ability:paratonnerre|Paratonnerre]]"],
+    "abilities": [
+      "[[ability:paratonnerre|Paratonnerre]]"
+    ],
     "hiddenAbility": "[[ability:delestage|Délestage]]",
     "height_m": 1.2,
     "weight_kg": 28.9,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 45,
     "images": {
       "sprite": "pokedex/img/pokemon/orfaisan_elek_sprite.png",
       "artwork": "pokedex/img/pokemon/orfaisan_elek_artwork.png"
     },
-    "baseStats": { "hp": 75, "atk": 70, "def": 65, "spa": 95, "spd": 80, "spe": 125 },
+    "baseStats": {
+      "hp": 75,
+      "atk": 70,
+      "def": 65,
+      "spa": 95,
+      "spd": 80,
+      "spe": 125
+    },
     "description": "Selon l'élément qu'il a absorbé, ses plumes changent de couleur et de forme. Sa collerette lui sert de réservoir d'énergie élémentaire.",
     "etymology": {
       "or": "métal précieux",
@@ -866,19 +1427,34 @@
     "slug": "orfaisan",
     "name": "Orfaisan",
     "formName": "Ondulante",
-    "types": ["Vol", "Eau"],
+    "types": [
+      "Vol",
+      "Eau"
+    ],
     "category": "Plumage",
-    "abilities": ["[[ability:lavabo|Lavabo]]"],
+    "abilities": [
+      "[[ability:lavabo|Lavabo]]"
+    ],
     "hiddenAbility": "[[ability:delestage|Délestage]]",
     "height_m": 1.2,
     "weight_kg": 28.9,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 45,
     "images": {
       "sprite": "pokedex/img/pokemon/orfaisan_eau_sprite.png",
       "artwork": "pokedex/img/pokemon/orfaisan_eau_artwork.png"
     },
-    "baseStats": { "hp": 95, "atk": 70, "def": 75, "spa": 70, "spd": 125, "spe": 75 },
+    "baseStats": {
+      "hp": 95,
+      "atk": 70,
+      "def": 75,
+      "spa": 70,
+      "spd": 125,
+      "spe": 75
+    },
     "description": "Selon l'élément qu'il a absorbé, ses plumes changent de couleur et de forme. Sa collerette lui sert de réservoir d'énergie élémentaire.",
     "etymology": {
       "or": "métal précieux",
@@ -889,19 +1465,33 @@
     "id": 34,
     "slug": "dracali",
     "name": "Dracali",
-    "types": ["Dragon"],
+    "types": [
+      "Dragon"
+    ],
     "category": "Rugissant",
-    "abilities": ["[[ability:brise-moule|Brise Moule]]"],
+    "abilities": [
+      "[[ability:brise-moule|Brise Moule]]"
+    ],
     "hiddenAbility": "[[ability:peau-dure|Peau Dure]]",
-    "height_m": 1.0,
-    "weight_kg": 28.0,
-    "genderRatio": { "male": 87.5, "female": 12.5 },
+    "height_m": 1,
+    "weight_kg": 28,
+    "genderRatio": {
+      "male": 87.5,
+      "female": 12.5
+    },
     "captureRate": 45,
     "images": {
       "sprite": "pokedex/img/pokemon/dracali_sprite.png",
       "artwork": "pokedex/img/pokemon/dracali_artwork.png"
     },
-    "baseStats": { "hp": 65, "atk": 130, "def": 95, "spa": 65, "spd": 60, "spe": 110 },
+    "baseStats": {
+      "hp": 65,
+      "atk": 130,
+      "def": 95,
+      "spa": 65,
+      "spd": 60,
+      "spe": 110
+    },
     "description": "Son corps est couvert d'écailles cristallines d'une grande beauté. Jadis braconné pour ces gemmes rares, son espèce a presque disparu. On pensait l'espèce éteinte jusqu'à ce que quelques individus soient observés dans des vallées reculées.",
     "etymology": {
       "draco": "dragon en latin",
@@ -912,19 +1502,35 @@
     "id": 35,
     "slug": "vesperine",
     "name": "Vespérine",
-    "types": ["Psy", "Poison"],
+    "types": [
+      "Psy",
+      "Poison"
+    ],
     "category": "Médecin",
-    "abilities": ["[[ability:coeur-soin|Cœur Soin]]", "[[ability:toxitouche|Toxitouche]]"],
+    "abilities": [
+      "[[ability:coeur-soin|Cœur Soin]]",
+      "[[ability:toxitouche|Toxitouche]]"
+    ],
     "hiddenAbility": "[[ability:lentiteintee|Lentiteintée]]",
     "height_m": 1.5,
     "weight_kg": 45.2,
-    "genderRatio": { "male": 50, "female": 50 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 60,
     "images": {
       "sprite": "pokedex/img/pokemon/vesperine_sprite.png",
       "artwork": "pokedex/img/pokemon/vesperine_artwork.png"
     },
-    "baseStats": { "hp": 66, "atk": 87, "def": 75, "spa": 88, "spd": 75, "spe": 75 },
+    "baseStats": {
+      "hp": 66,
+      "atk": 87,
+      "def": 75,
+      "spa": 88,
+      "spd": 75,
+      "spe": 75
+    },
     "description": "Il parcourt la région pour soigner les Pokémon malades. Les récits anciens affirment qu'il aurait jadis protégé humains et Pokémon d'une épidémie qui menaçait de tout anéantir.",
     "etymology": {
       "vesper": "soir en latin, en référence à son activité nocturne",
@@ -935,19 +1541,35 @@
     "id": 36,
     "slug": "albydro",
     "name": "Albydro",
-    "types": ["Roche", "Eau"],
+    "types": [
+      "Roche",
+      "Eau"
+    ],
     "category": "Spinosaure",
-    "abilities": ["[[ability:glissade|Glissade]]", "[[ability:fermete|Fermeté]]"],
+    "abilities": [
+      "[[ability:glissade|Glissade]]",
+      "[[ability:fermete|Fermeté]]"
+    ],
     "hiddenAbility": "[[ability:prognathe|Prognathe]]",
     "height_m": 0.9,
     "weight_kg": 42.5,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 45,
     "images": {
       "sprite": "pokedex/img/pokemon/albydro_sprite.png",
       "artwork": "pokedex/img/pokemon/albydro_artwork.png"
     },
-    "baseStats": { "hp": 65, "atk":80, "def": 64, "spa": 50, "spd": 60, "spe": 40 },
+    "baseStats": {
+      "hp": 65,
+      "atk": 80,
+      "def": 64,
+      "spa": 50,
+      "spd": 60,
+      "spe": 40
+    },
     "description": "Il vivait dans des zones humides et marécageuses, il y a environ 100 millions d'années. Il chasse de petits poissons à l'aide de son museau effilé, parfaitement adapté à l'eau trouble.",
     "etymology": {
       "Albien": "période géologique du Crétacé",
@@ -958,19 +1580,35 @@
     "id": 37,
     "slug": "spinadra",
     "name": "Spinadra",
-    "types": ["Roche", "Eau"],
+    "types": [
+      "Roche",
+      "Eau"
+    ],
     "category": "Spinosaure",
-    "abilities": ["[[ability:glissade|Glissade]]", "[[ability:fermete|Fermeté]]"],
+    "abilities": [
+      "[[ability:glissade|Glissade]]",
+      "[[ability:fermete|Fermeté]]"
+    ],
     "hiddenAbility": "[[ability:prognathe|Prognathe]]",
     "height_m": 2.1,
     "weight_kg": 238,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 45,
     "images": {
       "sprite": "pokedex/img/pokemon/spinadra_sprite.png",
       "artwork": "pokedex/img/pokemon/spinadra_artwork.png"
     },
-    "baseStats": { "hp": 90, "atk": 110, "def": 100, "spa": 70, "spd": 80, "spe": 55 },
+    "baseStats": {
+      "hp": 90,
+      "atk": 110,
+      "def": 100,
+      "spa": 70,
+      "spd": 80,
+      "spe": 55
+    },
     "description": "Son dos est orné d'une immense voile qu'il utilisait pour réguler sa température et intimider ses proies. On raconte que ses rugissements pouvaient faire vibrer la surface des marécages.",
     "etymology": {
       "spinosaurus": "genre de dinosaure carnivore du Crétacé",
@@ -981,19 +1619,35 @@
     "id": 38,
     "slug": "vibranite",
     "name": "Vibranite",
-    "types": ["Roche", "Normal"],
+    "types": [
+      "Roche",
+      "Normal"
+    ],
     "category": "Parasaurolophus",
-    "abilities": ["[[ability:anti-bruit|Anti-Bruit]]", "[[ability:herbivore|Herbivore]]"],
+    "abilities": [
+      "[[ability:anti-bruit|Anti-Bruit]]",
+      "[[ability:herbivore|Herbivore]]"
+    ],
     "hiddenAbility": "[[ability:inconscient|Inconscient]]",
     "height_m": 0.8,
     "weight_kg": 36.7,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 45,
     "images": {
       "sprite": "pokedex/img/pokemon/vibranite_sprite.png",
       "artwork": "pokedex/img/pokemon/vibranite_artwork.png"
     },
-    "baseStats": { "hp": 62, "atk": 50, "def": 55, "spa": 85, "spd": 60, "spe": 47 },
+    "baseStats": {
+      "hp": 62,
+      "atk": 50,
+      "def": 55,
+      "spa": 85,
+      "spd": 60,
+      "spe": 47
+    },
     "description": "Ce joyeux Pokémon adore utiliser tous les objets qui l'entour pour faire du bruit avec. Sa mélodie préférée est celle de la pluie, mais il déteste le son de l'orage.",
     "etymology": {
       "vibration": "mouvement oscillatoire",
@@ -1004,19 +1658,35 @@
     "id": 39,
     "slug": "symphodon",
     "name": "Symphodon",
-    "types": ["Roche", "Normal"],
+    "types": [
+      "Roche",
+      "Normal"
+    ],
     "category": "Parasaurolophus",
-    "abilities": ["[[ability:anti-bruit|Anti-Bruit]]", "[[ability:herbivore|Herbivore]]"],
+    "abilities": [
+      "[[ability:anti-bruit|Anti-Bruit]]",
+      "[[ability:herbivore|Herbivore]]"
+    ],
     "hiddenAbility": "[[ability:inconscient|Inconscient]]",
     "height_m": 2.3,
     "weight_kg": 256.4,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 45,
     "images": {
       "sprite": "pokedex/img/pokemon/symphodon_sprite.png",
       "artwork": "pokedex/img/pokemon/symphodon_artwork.png"
     },
-    "baseStats": { "hp": 88, "atk": 70, "def": 75, "spa": 115, "spd": 90, "spe": 67 },
+    "baseStats": {
+      "hp": 88,
+      "atk": 70,
+      "def": 75,
+      "spa": 115,
+      "spd": 90,
+      "spe": 67
+    },
     "description": "Sa crête allongée agit comme une chambre de résonance. Les sons graves qu'il émet pouvaient parcourir des kilomètres à travers le sol. Jadis, ses chants unissaient les troupeaux et apaisaient les prédateurs.",
     "etymology": {
       "symphonie": "composition musicale harmonieuse",
@@ -1027,19 +1697,35 @@
     "id": 40,
     "slug": "fouboubec",
     "name": "Fouboubec",
-    "types": ["Eau", "Vol"],
+    "types": [
+      "Eau",
+      "Vol"
+    ],
     "category": "Pêcheur",
-    "abilities": ["[[ability:benet|Benêt]]", "[[ability:regard-vif|Regard Vif]]"],
+    "abilities": [
+      "[[ability:benet|Benêt]]",
+      "[[ability:regard-vif|Regard Vif]]"
+    ],
     "hiddenAbility": "[[ability:multi-coups|Multi-Coups]]",
     "height_m": 0.3,
     "weight_kg": 5.2,
-    "genderRatio": { "male": 50, "female": 50 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 190,
     "images": {
       "sprite": "pokedex/img/pokemon/fouboubec_sprite.png",
       "artwork": "pokedex/img/pokemon/fouboubec_artwork.png"
     },
-    "baseStats": { "hp": 50, "atk": 60, "def": 50, "spa": 45, "spd": 60, "spe": 60 },
+    "baseStats": {
+      "hp": 50,
+      "atk": 60,
+      "def": 50,
+      "spa": 45,
+      "spd": 60,
+      "spe": 60
+    },
     "description": "Il est toujours en quête de chaleur, c'est pour cela qu'il est recouvert d'un duvet blanc et passe la plus grande partie de ses journées blotti contre les jambes de ses parents.",
     "etymology": {
       "Fou": "genre d'oiseaux marins appartenant à la famille des Sulidae",
@@ -1051,19 +1737,35 @@
     "id": 41,
     "slug": "sulapagos",
     "name": "Sulapagos",
-    "types": ["Eau", "Vol"],
+    "types": [
+      "Eau",
+      "Vol"
+    ],
     "category": "Pêcheur",
-    "abilities": ["[[ability:benet|Benêt]]", "[[ability:regard-vif|Regard Vif]]"],
+    "abilities": [
+      "[[ability:benet|Benêt]]",
+      "[[ability:regard-vif|Regard Vif]]"
+    ],
     "hiddenAbility": "[[ability:multi-coups|Multi-Coups]]",
     "height_m": 0.8,
     "weight_kg": 16,
-    "genderRatio": { "male": 50, "female": 50 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 45,
     "images": {
       "sprite": "pokedex/img/pokemon/sulapagos_sprite.png",
       "artwork": "pokedex/img/pokemon/sulapagos_artwork.png"
     },
-    "baseStats": { "hp": 70, "atk": 90, "def": 60, "spa": 75, "spd": 80, "spe": 100 },
+    "baseStats": {
+      "hp": 70,
+      "atk": 90,
+      "def": 60,
+      "spa": 75,
+      "spd": 80,
+      "spe": 100
+    },
     "description": "La couleur de ses pieds vient de son alimentation riche en poissons et crustacés. Il utilise ses ailes pour plonger dans l'eau à la recherche de nourriture.",
     "etymology": {
       "sula": "genre d'oiseaux marins dont le fou à pieds bleus fait partie",
@@ -1074,19 +1776,34 @@
     "id": 42,
     "slug": "becoquin",
     "name": "Becoquin",
-    "types": ["Vol"],
+    "types": [
+      "Vol"
+    ],
     "category": "Bec-en-sabot",
-    "abilities": ["[[ability:tension|Tension]]", "[[ability:pression|Pression]]"],
+    "abilities": [
+      "[[ability:tension|Tension]]",
+      "[[ability:pression|Pression]]"
+    ],
     "hiddenAbility": "[[ability:annule-garde|Annule Garde]]",
     "height_m": 0.6,
     "weight_kg": 15,
-    "genderRatio": { "male": 50, "female": 50 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 100,
     "images": {
       "sprite": "pokedex/img/pokemon/becoquin_sprite.png",
       "artwork": "pokedex/img/pokemon/becoquin_artwork.png"
     },
-    "baseStats": { "hp": 70, "atk": 85, "def": 80, "spa": 55, "spd": 75, "spe": 35 },
+    "baseStats": {
+      "hp": 70,
+      "atk": 85,
+      "def": 80,
+      "spa": 55,
+      "spd": 75,
+      "spe": 35
+    },
     "description": "Il communique peu et reste la plupart du temps très silencieux. Les seules sons qu'il est capable de faire sont des petits hoquets, ou des claquements de bec.",
     "etymology": {
       "bec": "partie dure et cornée située à l'avant du visage des oiseaux",
@@ -1097,19 +1814,35 @@
     "id": 43,
     "slug": "becosto",
     "name": "Becosto",
-    "types": ["Vol", "Combat"],
+    "types": [
+      "Vol",
+      "Combat"
+    ],
     "category": "Bec-en-sabot",
-    "abilities": ["[[ability:tension|Tension]]", "[[ability:pression|Pression]]"],
+    "abilities": [
+      "[[ability:tension|Tension]]",
+      "[[ability:pression|Pression]]"
+    ],
     "hiddenAbility": "[[ability:annule-garde|Annule Garde]]",
     "height_m": 1.8,
     "weight_kg": 33.8,
-    "genderRatio": { "male": 50, "female": 50 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 45,
     "images": {
       "sprite": "pokedex/img/pokemon/becosto_sprite.png",
       "artwork": "pokedex/img/pokemon/becosto_artwork.png"
     },
-    "baseStats": { "hp": 90, "atk": 115, "def": 100, "spa": 75, "spd": 95, "spe": 45 },
+    "baseStats": {
+      "hp": 90,
+      "atk": 115,
+      "def": 100,
+      "spa": 75,
+      "spd": 95,
+      "spe": 45
+    },
     "description": "Il a tendance à préférer bouger peu, et observer les autres Pokémon aux alentours, ce qui les mets souvent mal à l'aise à cause de ses grand yeux immobiles.",
     "etymology": {
       "bec": "partie dure et cornée située à l'avant du visage des oiseaux",
@@ -1120,19 +1853,35 @@
     "id": 44,
     "slug": "sitanor",
     "name": "Sitanor",
-    "types": ["Dragon", "Feu"],
+    "types": [
+      "Dragon",
+      "Feu"
+    ],
     "category": "Parade",
-    "abilities": ["[[ability:attention|Attention]]", "[[ability:rivalite|Rivalité]]"],
+    "abilities": [
+      "[[ability:attention|Attention]]",
+      "[[ability:rivalite|Rivalité]]"
+    ],
     "hiddenAbility": "[[ability:force-soleil|Force Soleil]]",
     "height_m": 1.2,
     "weight_kg": 32.4,
-    "genderRatio": { "male": 50, "female": 50 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 90,
     "images": {
       "sprite": "pokedex/img/pokemon/sitanor_sprite.png",
       "artwork": "pokedex/img/pokemon/sitanor_artwork.png"
     },
-    "baseStats": { "hp": 68, "atk": 72, "def": 60, "spa": 115, "spd": 75, "spe": 110 },
+    "baseStats": {
+      "hp": 68,
+      "atk": 72,
+      "def": 60,
+      "spa": 115,
+      "spd": 75,
+      "spe": 110
+    },
     "description": "Il parade en ouvrant son fanon chatoyant. Plus les couleurs sont vives, plus il est respecté par les autres membres de son espèce.",
     "etymology": {
       "sitana ponticeriana": "Espèce de saurien ayant la particularité d'avoir une gorge en forme d'éventail",
@@ -1143,19 +1892,34 @@
     "id": 45,
     "slug": "sironille",
     "name": "Sironille",
-    "types": ["Insecte", "Fée"],
+    "types": [
+      "Insecte",
+      "Fée"
+    ],
     "category": "Érable",
-    "abilities": ["[[ability:oeil-compose|Œil Composé]]"],
+    "abilities": [
+      "[[ability:oeil-compose|Œil Composé]]"
+    ],
     "hiddenAbility": "[[ability:serenite|Sérénité]]",
     "height_m": 0.6,
     "weight_kg": 15.5,
-    "genderRatio": { "male": 50, "female": 50 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 190,
     "images": {
       "sprite": "pokedex/img/pokemon/sironille_sprite.png",
       "artwork": "pokedex/img/pokemon/sironille_artwork.png"
     },
-    "baseStats": { "hp": 52, "atk": 35, "def": 45, "spa": 60, "spd": 55, "spe": 48 },
+    "baseStats": {
+      "hp": 52,
+      "atk": 35,
+      "def": 45,
+      "spa": 60,
+      "spd": 55,
+      "spe": 48
+    },
     "description": "Il passe ses journées à grignoter les feuilles des arbres, surtout celles des érables. Son corps duveteux et coloré attire les enfants, mais son pollen féerique peut les endormir sans qu'ils s'en rendent compte.",
     "etymology": {
       "sirop": "liquide sucré extrait de certaines plantes, comme l'érable",
@@ -1166,19 +1930,34 @@
     "id": 46,
     "slug": "rubilune",
     "name": "Rubilune",
-    "types": ["Insecte", "Fée"],
+    "types": [
+      "Insecte",
+      "Fée"
+    ],
     "category": "Érable",
-    "abilities": ["[[ability:oeil-compose|Œil Composé]]"],
+    "abilities": [
+      "[[ability:oeil-compose|Œil Composé]]"
+    ],
     "hiddenAbility": "[[ability:serenite|Sérénité]]",
     "height_m": 1.5,
     "weight_kg": 44,
-    "genderRatio": { "male": 50, "female": 50 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 75,
     "images": {
       "sprite": "pokedex/img/pokemon/rubilune_sprite.png",
       "artwork": "pokedex/img/pokemon/rubilune_artwork.png"
     },
-    "baseStats": { "hp": 98, "atk": 55, "def": 70, "spa": 115, "spd": 105, "spe": 67 },
+    "baseStats": {
+      "hp": 98,
+      "atk": 55,
+      "def": 70,
+      "spa": 115,
+      "spd": 105,
+      "spe": 67
+    },
     "description": "Ses ailes rappellent les feuilles d'érable teintées de rose et de jaune. On dit que la poudre qu'elles dégagent adoucit les cœurs et apaise les disputes, tant qu'on ne le dérange pas en plein festin de nectar.",
     "etymology": {
       "dryocampa rubicunda": "nom scientifique de l'anisote de l'érable",
@@ -1190,19 +1969,34 @@
     "slug": "bovalpin",
     "name": "Bovalpin",
     "formName": "Trèfle à 3 feuilles",
-    "types": ["Normal"],
+    "types": [
+      "Normal"
+    ],
     "category": "Veau",
-    "abilities": ["[[ability:ruminant|Ruminant]]", "[[ability:herbivore|Herbivore]]"],
+    "abilities": [
+      "[[ability:ruminant|Ruminant]]",
+      "[[ability:herbivore|Herbivore]]"
+    ],
     "hiddenAbility": "[[ability:baigne-sable|Baigne Sable]]",
     "height_m": 0.8,
     "weight_kg": 120.5,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 140,
     "images": {
       "sprite": "pokedex/img/pokemon/bovalpin_3_sprite.png",
       "artwork": "pokedex/img/pokemon/bovalpin_3_artwork.png"
     },
-    "baseStats": { "hp": 78, "atk": 70, "def": 85, "spa": 25, "spd": 40, "spe": 22 },
+    "baseStats": {
+      "hp": 78,
+      "atk": 70,
+      "def": 85,
+      "spa": 25,
+      "spd": 40,
+      "spe": 22
+    },
     "description": "Il vit dans des pâturages venteux en montagne. Sa longue fourrure le protège du froid, mais il trébuche souvent quand il essaie de courir.",
     "etymology": {
       "bovidé": "famille de mammifères comprenant les vaches, moutons et chèvres",
@@ -1214,19 +2008,34 @@
     "slug": "bovalpin",
     "name": "Bovalpin",
     "formName": "Trèfle à 4 feuilles",
-    "types": ["Normal"],
+    "types": [
+      "Normal"
+    ],
     "category": "Veau",
-    "abilities": ["[[ability:ruminant|Ruminant]]", "[[ability:herbivore|Herbivore]]"],
+    "abilities": [
+      "[[ability:ruminant|Ruminant]]",
+      "[[ability:herbivore|Herbivore]]"
+    ],
     "hiddenAbility": "[[ability:baigne-sable|Baigne Sable]]",
     "height_m": 0.8,
     "weight_kg": 120.5,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 140,
     "images": {
       "sprite": "pokedex/img/pokemon/bovalpin_4_sprite.png",
       "artwork": "pokedex/img/pokemon/bovalpin_4_artwork.png"
     },
-    "baseStats": { "hp": 78, "atk": 70, "def": 85, "spa": 25, "spd": 40, "spe": 22 },
+    "baseStats": {
+      "hp": 78,
+      "atk": 70,
+      "def": 85,
+      "spa": 25,
+      "spd": 40,
+      "spe": 22
+    },
     "description": "Il vit dans des pâturages venteux en montagne. Sa longue fourrure le protège du froid, mais il trébuche souvent quand il essaie de courir.",
     "etymology": {
       "bovidé": "famille de mammifères comprenant les vaches, moutons et chèvres",
@@ -1238,19 +2047,35 @@
     "slug": "ecorlande",
     "name": "Écorlande",
     "formName": "Trèfle à 3 feuilles",
-    "types": ["Normal", "Sol"],
+    "types": [
+      "Normal",
+      "Sol"
+    ],
     "category": "Bovin",
-    "abilities": ["[[ability:ruminant|Ruminant]]", "[[ability:herbivore|Herbivore]]"],
+    "abilities": [
+      "[[ability:ruminant|Ruminant]]",
+      "[[ability:herbivore|Herbivore]]"
+    ],
     "hiddenAbility": "[[ability:baigne-sable|Baigne Sable]]",
     "height_m": 1.6,
-    "weight_kg": 430.0,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "weight_kg": 430,
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 60,
     "images": {
       "sprite": "pokedex/img/pokemon/ecorlande_3_sprite.png",
       "artwork": "pokedex/img/pokemon/ecorlande_3_artwork.png"
     },
-    "baseStats": { "hp": 125, "atk": 120, "def": 115, "spa": 45, "spd": 60, "spe": 35 },
+    "baseStats": {
+      "hp": 125,
+      "atk": 120,
+      "def": 115,
+      "spa": 45,
+      "spd": 60,
+      "spe": 35
+    },
     "description": "Il affronte sans broncher le vent, la neige et la boue. Quand il charge en inclinant ses grandes cornes, il est presque impossible de l'arrêter.",
     "etymology": {
       "échorcher": "blesser en arrachant la peau",
@@ -1263,19 +2088,35 @@
     "slug": "ecorlande",
     "name": "Écorlande",
     "formName": "Trèfle à 4 feuilles",
-    "types": ["Normal", "Sol"],
+    "types": [
+      "Normal",
+      "Sol"
+    ],
     "category": "Bovin",
-    "abilities": ["[[ability:ruminant|Ruminant]]", "[[ability:herbivore|Herbivore]]"],
+    "abilities": [
+      "[[ability:ruminant|Ruminant]]",
+      "[[ability:herbivore|Herbivore]]"
+    ],
     "hiddenAbility": "[[ability:baigne-sable|Baigne Sable]]",
     "height_m": 1.6,
-    "weight_kg": 430.0,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "weight_kg": 430,
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 60,
     "images": {
       "sprite": "pokedex/img/pokemon/ecorlande_4_sprite.png",
       "artwork": "pokedex/img/pokemon/ecorlande_4_artwork.png"
     },
-    "baseStats": { "hp": 125, "atk": 120, "def": 115, "spa": 45, "spd": 60, "spe": 35 },
+    "baseStats": {
+      "hp": 125,
+      "atk": 120,
+      "def": 115,
+      "spa": 45,
+      "spd": 60,
+      "spe": 35
+    },
     "description": "Il affronte sans broncher le vent, la neige et la boue. Quand il charge en inclinant ses grandes cornes, il est presque impossible de l'arrêter.",
     "etymology": {
       "échorcher": "blesser en arrachant la peau",
@@ -1287,19 +2128,34 @@
     "id": 49,
     "slug": "pichidillo",
     "name": "Pichidillo",
-    "types": ["Sol", "Fée"],
+    "types": [
+      "Sol",
+      "Fée"
+    ],
     "category": "Tatou",
-    "abilities": ["[[ability:fermete|Fermeté]]"],
+    "abilities": [
+      "[[ability:fermete|Fermeté]]"
+    ],
     "hiddenAbility": "[[ability:voile-sable|Voile Sable]]",
     "height_m": 0.4,
     "weight_kg": 4.8,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 120,
     "images": {
       "sprite": "pokedex/img/pokemon/pichidillo_sprite.png",
       "artwork": "pokedex/img/pokemon/pichidillo_artwork.png"
     },
-    "baseStats": { "hp": 62, "atk": 50, "def": 65, "spa": 45, "spd": 75, "spe": 48 },
+    "baseStats": {
+      "hp": 62,
+      "atk": 50,
+      "def": 65,
+      "spa": 45,
+      "spd": 75,
+      "spe": 48
+    },
     "description": "Malgré sa petite taille, sa carapace est l'une des plus résistantes. Lorsqu'il se sent menacé, il se roule en boule et utilise ses pouvoirs féeriques pour repousser les ennemis.",
     "etymology": {
       "pichi": "petit en guarani, langue indigène d'Amérique du Sud",
@@ -1310,19 +2166,34 @@
     "id": 50,
     "slug": "charmadillo",
     "name": "Charmadillo",
-    "types": ["Sol", "Fée"],
+    "types": [
+      "Sol",
+      "Fée"
+    ],
     "category": "Tatou",
-    "abilities": ["[[ability:fermete|Fermeté]]"],
+    "abilities": [
+      "[[ability:fermete|Fermeté]]"
+    ],
     "hiddenAbility": "[[ability:voile-sable|Voile Sable]]",
     "height_m": 0.8,
     "weight_kg": 32.5,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 60,
     "images": {
       "sprite": "pokedex/img/pokemon/charmadillo_sprite.png",
       "artwork": "pokedex/img/pokemon/charmadillo_artwork.png"
     },
-    "baseStats": { "hp": 95, "atk": 70, "def": 115, "spa": 88, "spd": 75, "spe": 55 },
+    "baseStats": {
+      "hp": 95,
+      "atk": 70,
+      "def": 115,
+      "spa": 88,
+      "spd": 75,
+      "spe": 55
+    },
     "description": "Lors de tempêtes, il creuse des tunnels souterrains à l'aide de ses griffes et émet des lueurs féeriques pour guider les autres Pokémon vers un abri sûr.",
     "etymology": {
       "charma": "charme en référence à ses pouvoirs féeriques",
@@ -1333,19 +2204,35 @@
     "id": 51,
     "slug": "cecibou",
     "name": "Cécibou",
-    "types": ["Psy", "Ténèbres"],
+    "types": [
+      "Psy",
+      "Ténèbres"
+    ],
     "category": "Oiseau Aveugle",
-    "abilities": ["[[ability:regard-vif|Regard Vif]]", "[[ability:telepathe|Télépathe]]"],
+    "abilities": [
+      "[[ability:regard-vif|Regard Vif]]",
+      "[[ability:telepathe|Télépathe]]"
+    ],
     "hiddenAbility": "[[ability:miroir-magik|Miroir Magik]]",
     "height_m": 0.35,
     "weight_kg": 0.9,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 90,
     "images": {
       "sprite": "pokedex/img/pokemon/cecibou_sprite.png",
       "artwork": "pokedex/img/pokemon/cecibou_artwork.png"
     },
-    "baseStats": { "hp": 75, "atk": 45, "def": 70, "spa": 105, "spd": 110, "spe": 65 },
+    "baseStats": {
+      "hp": 75,
+      "atk": 45,
+      "def": 70,
+      "spa": 105,
+      "spd": 110,
+      "spe": 65
+    },
     "description": "Aveugle de naissance, ses yeux lui permettent de percevoir le monde grâce aux ondes psychiques. Il aime observer silencieusement les humains en pleine crise de colère, de joie ou de tristesse.",
     "etymology": {
       "cécité": "perte ou absence de la vision",
@@ -1356,19 +2243,34 @@
     "id": 52,
     "slug": "grimocto",
     "name": "Grimocto",
-    "types": ["Eau"],
+    "types": [
+      "Eau"
+    ],
     "category": "Pieuvre ailée",
-    "abilities": ["[[ability:ventouse|Ventouse]]", "[[ability:infiltration|Infiltration]]"],
+    "abilities": [
+      "[[ability:ventouse|Ventouse]]",
+      "[[ability:infiltration|Infiltration]]"
+    ],
     "hiddenAbility": "[[ability:agitation|Agitation]]",
     "height_m": 0.4,
     "weight_kg": 0.96,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 190,
     "images": {
       "sprite": "pokedex/img/pokemon/grimocto_sprite.png",
       "artwork": "pokedex/img/pokemon/grimocto_artwork.png"
     },
-    "baseStats": { "hp": 35, "atk": 55, "def": 45, "spa": 65, "spd": 65, "spe": 40 },
+    "baseStats": {
+      "hp": 35,
+      "atk": 55,
+      "def": 45,
+      "spa": 65,
+      "spd": 65,
+      "spe": 40
+    },
     "description": "Contrairement à ses congénères, ce Pokémon ne se sert pas de ses petites tentacules pour se propulser dans l'eau. Au lieu de ça, il possède deux grands oreilles, dont il s'en sert comme de nageoires.",
     "etymology": {
       "Grimpoteuthis": "Nom scientifique de la pieuvre Dumbo",
@@ -1379,19 +2281,35 @@
     "id": 53,
     "slug": "thaumicto",
     "name": "Thaumicto",
-    "types": ["Eau", "Ténèbres"],
+    "types": [
+      "Eau",
+      "Ténèbres"
+    ],
     "category": "Imitateur",
-    "abilities": ["[[ability:ventouse|Ventouse]]", "[[ability:infiltration|Infiltration]]"],
+    "abilities": [
+      "[[ability:ventouse|Ventouse]]",
+      "[[ability:infiltration|Infiltration]]"
+    ],
     "hiddenAbility": "[[ability:proteen|Protéen]]",
     "height_m": 1.2,
     "weight_kg": 32.4,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 75,
     "images": {
       "sprite": "pokedex/img/pokemon/thaumicto_sprite.png",
       "artwork": "pokedex/img/pokemon/thaumicto_artwork.png"
     },
-    "baseStats": { "hp": 55, "atk": 90, "def": 65, "spa": 105, "spd": 75, "spe": 85 },
+    "baseStats": {
+      "hp": 55,
+      "atk": 90,
+      "def": 65,
+      "spa": 105,
+      "spd": 75,
+      "spe": 85
+    },
     "description": "Cette pieuvre a été découverte assez tardivement. En effet, elle est capable d'imiter l'apparence et le comportement de plein d'espèces différentes, en se contorsionnant et en changeant de couleur.",
     "etymology": {
       "Thaumoctopus Mimicus": "Nom scientifique de la pieuvre mimétique",
@@ -1402,19 +2320,35 @@
     "id": 54,
     "slug": "cotoguide",
     "name": "Cotoguide",
-    "types": ["Psy", "Plante"],
+    "types": [
+      "Psy",
+      "Plante"
+    ],
     "category": "Rêve",
-    "abilities": ["[[ability:garde-magik|Garde Magik]]", "[[ability:levitation|Lévitation]]"],
+    "abilities": [
+      "[[ability:garde-magik|Garde Magik]]",
+      "[[ability:levitation|Lévitation]]"
+    ],
     "hiddenAbility": "[[ability:lunatique|Lunatique]]",
     "height_m": 0.3,
     "weight_kg": 1.4,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 90,
     "images": {
       "sprite": "pokedex/img/pokemon/cotoguide_sprite.png",
       "artwork": "pokedex/img/pokemon/cotoguide_artwork.png"
     },
-    "baseStats": { "hp": 50, "atk": 25, "def": 57, "spa": 58, "spd": 58, "spe": 32 },
+    "baseStats": {
+      "hp": 50,
+      "atk": 25,
+      "def": 57,
+      "spa": 58,
+      "spd": 58,
+      "spe": 32
+    },
     "description": "Il flotte silencieusement dans les villes la nuit, à la recherche de personnes en proie aux cauchemars. Lorsqu'il en trouve une, il se pose délicatement sur sa tête et apaise son esprit pour lui offrir de doux rêves.",
     "etymology": {
       "Coton": "Filaments soyeux qui entourent les graines du cotonnier",
@@ -1425,19 +2359,35 @@
     "id": 55,
     "slug": "meolit",
     "name": "Méolit",
-    "types": ["Psy", "Plante"],
+    "types": [
+      "Psy",
+      "Plante"
+    ],
     "category": "Rêve",
-    "abilities": ["[[ability:garde-magik|Garde Magik]]", "[[ability:levitation|Lévitation]]"],
+    "abilities": [
+      "[[ability:garde-magik|Garde Magik]]",
+      "[[ability:levitation|Lévitation]]"
+    ],
     "hiddenAbility": "[[ability:lunatique|Lunatique]]",
     "height_m": 1.2,
     "weight_kg": 12.2,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 75,
     "images": {
       "sprite": "pokedex/img/pokemon/meolit_sprite.png",
       "artwork": "pokedex/img/pokemon/meolit_artwork.png"
     },
-    "baseStats": { "hp": 84, "atk": 45, "def": 67, "spa": 73, "spd": 70, "spe": 40 },
+    "baseStats": {
+      "hp": 84,
+      "atk": 45,
+      "def": 67,
+      "spa": 73,
+      "spd": 70,
+      "spe": 40
+    },
     "description": "Il est constamment fatigué et trouve toujours une occasion de faire une sieste. Ce qu'il adore par-dessus tout, c'est se blottir contre quelqu'un pour se sentir au chaud et en sécurité, afin de dormir paisiblement.",
     "etymology": {
       "Mélodie": "Suite musicale agréable",
@@ -1448,19 +2398,35 @@
     "id": 56,
     "slug": "malavande",
     "name": "Malavande",
-    "types": ["Psy", "Plante"],
+    "types": [
+      "Psy",
+      "Plante"
+    ],
     "category": "Rêve",
-    "abilities": ["[[ability:garde-magik|Garde Magik]]", "[[ability:levitation|Lévitation]]"],
+    "abilities": [
+      "[[ability:garde-magik|Garde Magik]]",
+      "[[ability:levitation|Lévitation]]"
+    ],
     "hiddenAbility": "[[ability:lunatique|Lunatique]]",
     "height_m": 1.9,
     "weight_kg": 23.8,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 45,
     "images": {
       "sprite": "pokedex/img/pokemon/malavande_sprite.png",
       "artwork": "pokedex/img/pokemon/malavande_artwork.png"
     },
-    "baseStats": { "hp": 95, "atk": 60, "def": 85, "spa": 103, "spd": 95, "spe": 52 },
+    "baseStats": {
+      "hp": 95,
+      "atk": 60,
+      "def": 85,
+      "spa": 103,
+      "spd": 95,
+      "spe": 52
+    },
     "description": "Il émet un parfum capable d'apaiser n'importe quel esprit tourmenté. Son corps et ses bras peuvent servir de lit à quiconque chercherait refuge auprès de lui. Il s'introduit ensuite dans les rêves de ceux qu'il câline afin de les guider vers la sérénité.",
     "etymology": {
       "Maman": "Terme affectueux pour la mère",
@@ -1471,19 +2437,33 @@
     "id": 57,
     "slug": "raphragon",
     "name": "Raphragon",
-    "types": ["Insecte"],
+    "types": [
+      "Insecte"
+    ],
     "category": "Serpinsecte",
-    "abilities": ["[[ability:essaim|Essaim]]"],
+    "abilities": [
+      "[[ability:essaim|Essaim]]"
+    ],
     "hiddenAbility": "[[ability:sans-limite|Sans Limite]]",
     "height_m": 0.8,
     "weight_kg": 12.5,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 90,
     "images": {
       "sprite": "pokedex/img/pokemon/000_sprite.png",
       "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
-    "baseStats": { "hp": 55, "atk": 85, "def": 50, "spa": 40, "spd": 45, "spe": 95 },
+    "baseStats": {
+      "hp": 55,
+      "atk": 85,
+      "def": 50,
+      "spa": 40,
+      "spd": 45,
+      "spe": 95
+    },
     "description": "Son cou étonnamment long lui permet d'atteindre ses proies avec une précision fulgurante. Malgré sa petite taille, son regard perçant suffit à faire hésiter des Pokémon bien plus imposants.",
     "etymology": {
       "Raphidia": "Genre d'insectes ailés",
@@ -1494,19 +2474,34 @@
     "id": 58,
     "slug": "cephragon",
     "name": "Céphragon",
-    "types": ["Insecte", "Dragon"],
+    "types": [
+      "Insecte",
+      "Dragon"
+    ],
     "category": "Faux-dragon",
-    "abilities": ["[[ability:intimidation|Intimidation]]"],
+    "abilities": [
+      "[[ability:intimidation|Intimidation]]"
+    ],
     "hiddenAbility": "[[ability:sans-limite|Sans Limite]]",
     "height_m": 1.3,
     "weight_kg": 32.5,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 45,
     "images": {
       "sprite": "pokedex/img/pokemon/000_sprite.png",
       "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
-    "baseStats": { "hp": 78, "atk": 105, "def": 70, "spa": 75, "spd": 70, "spe": 102 },
+    "baseStats": {
+      "hp": 78,
+      "atk": 105,
+      "def": 70,
+      "spa": 75,
+      "spd": 70,
+      "spe": 102
+    },
     "description": "Sa tête imite celle d'un dragon redoutable afin de dissuader les prédateurs. Lorsqu'il déploie ses ailes translucides, il produit un bourdonnement grave qui résonne comme le rugissement d'un dragon.",
     "etymology": {
       "Céphal": "tête en grec",
@@ -1518,19 +2513,34 @@
     "id": 59,
     "slug": "Becorce",
     "name": "Becorce",
-    "types": ["Plante"],
+    "types": [
+      "Plante"
+    ],
     "category": "Oiseau Tronc",
-    "abilities": ["[[ability:regard-vif|Regard Vif]]", "[[ability:insomnia|Insomnia]]"],
+    "abilities": [
+      "[[ability:regard-vif|Regard Vif]]",
+      "[[ability:insomnia|Insomnia]]"
+    ],
     "hiddenAbility": "[[ability:agitation|Agitation]]",
     "height_m": 0.4,
     "weight_kg": 2.8,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 190,
     "images": {
       "sprite": "pokedex/img/pokemon/000_sprite.png",
       "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
-    "baseStats": { "hp": 50, "atk": 45, "def": 60, "spa": 45, "spd": 60, "spe": 40 },
+    "baseStats": {
+      "hp": 50,
+      "atk": 45,
+      "def": 60,
+      "spa": 45,
+      "spd": 60,
+      "spe": 40
+    },
     "description": "Il reste immobile pendant des heures, imitant à la perfection un morceau d'écorce. Ses grands yeux observent silencieusement la forêt, même lorsqu'il semble dormir.",
     "etymology": {
       "Bec": "Bouche des oiseaux",
@@ -1541,19 +2551,35 @@
     "id": 60,
     "slug": "souchemar",
     "name": "Souchemar",
-    "types": ["Plante", "Spectre"],
+    "types": [
+      "Plante",
+      "Spectre"
+    ],
     "category": "Tronc Fantôme",
-    "abilities": ["[[ability:regard-vif|Regard Vif]]", "[[ability:insomnia|Insomnia]]"],
+    "abilities": [
+      "[[ability:regard-vif|Regard Vif]]",
+      "[[ability:insomnia|Insomnia]]"
+    ],
     "hiddenAbility": "[[ability:corps-maudit|Corps Maudit]]",
     "height_m": 0.9,
     "weight_kg": 6.5,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 75,
     "images": {
       "sprite": "pokedex/img/pokemon/000_sprite.png",
       "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
-    "baseStats": { "hp": 70, "atk": 70, "def": 65, "spa": 125, "spd": 85, "spe": 65 },
+    "baseStats": {
+      "hp": 70,
+      "atk": 70,
+      "def": 65,
+      "spa": 125,
+      "spd": 85,
+      "spe": 65
+    },
     "description": "Son regard vide trouble profondément ceux qui croisent ses yeux. Lorsqu'il reste immobile, même les Pokémon les plus attentifs jurent qu'il n'a jamais été là.",
     "etymology": {
       "Souche": "Partie d'un arbre coupé ou tombé",
@@ -1564,19 +2590,35 @@
     "id": 61,
     "slug": "dragoulevent",
     "name": "Dragoulevent",
-    "types": ["Plante", "Dragon"],
+    "types": [
+      "Plante",
+      "Dragon"
+    ],
     "category": "Tronc Draconique",
-    "abilities": ["[[ability:regard-vif|Regard Vif]]", "[[ability:insomnia|Insomnia]]"],
+    "abilities": [
+      "[[ability:regard-vif|Regard Vif]]",
+      "[[ability:insomnia|Insomnia]]"
+    ],
     "hiddenAbility": "[[ability:incisif|Incisif]]",
     "height_m": 1.2,
-    "weight_kg": 14.0,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "weight_kg": 14,
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 45,
     "images": {
       "sprite": "pokedex/img/pokemon/000_sprite.png",
       "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
-    "baseStats": { "hp": 74, "atk": 113, "def": 74, "spa": 84, "spd": 34, "spe": 121 },
+    "baseStats": {
+      "hp": 74,
+      "atk": 113,
+      "def": 74,
+      "spa": 84,
+      "spd": 34,
+      "spe": 121
+    },
     "description": "Sa nouvelle force intérieure lui permet désormais de pouvoir riposter au lieu de se dissimuler. Son chant nocturne résonne comme l'appel d'un dragon ancien.",
     "etymology": {
       "Dragon": "créature mythologique",
@@ -1587,19 +2629,35 @@
     "id": 62,
     "slug": "rocopode",
     "name": "Rocopode",
-    "types": ["Roche", "Électrik"],
+    "types": [
+      "Roche",
+      "Électrik"
+    ],
     "category": "Caillou Piézo",
-    "abilities": ["[[ability:fermete|Fermeté]]", "[[ability:statik|Statik]]"],
+    "abilities": [
+      "[[ability:fermete|Fermeté]]",
+      "[[ability:statik|Statik]]"
+    ],
     "hiddenAbility": "[[ability:luminescence|Luminescence]]",
     "height_m": 0.2,
     "weight_kg": 9.8,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 180,
     "images": {
       "sprite": "pokedex/img/pokemon/000_sprite.png",
       "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
-    "baseStats": { "hp": 50, "atk": 45, "def": 80, "spa": 65, "spd": 40, "spe": 20 },
+    "baseStats": {
+      "hp": 50,
+      "atk": 45,
+      "def": 80,
+      "spa": 65,
+      "spd": 40,
+      "spe": 20
+    },
     "description": "Lorsqu'il se roule en boule, la pression exercée sur sa carapace minérale génère de petites décharges électriques. Les dresseurs débutants sont souvent surpris par le léger choc qu'il produit.",
     "etymology": {
       "Roc": "Matière rocheuse",
@@ -1610,19 +2668,35 @@
     "id": 63,
     "slug": "cristerophore",
     "name": "Cristérophore",
-    "types": ["Roche", "Électrik"],
+    "types": [
+      "Roche",
+      "Électrik"
+    ],
     "category": "Cristal Piézo",
-    "abilities": ["[[ability:levitation|Lévitation]]", "[[ability:statik|Statik]]"],
+    "abilities": [
+      "[[ability:levitation|Lévitation]]",
+      "[[ability:statik|Statik]]"
+    ],
     "hiddenAbility": "[[ability:turbo|Turbo]]",
     "height_m": 0.9,
     "weight_kg": 21.6,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 75,
     "images": {
       "sprite": "pokedex/img/pokemon/000_sprite.png",
       "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
-    "baseStats": { "hp": 60, "atk": 65, "def": 70, "spa": 125, "spd": 60, "spe": 93 },
+    "baseStats": {
+      "hp": 60,
+      "atk": 65,
+      "def": 70,
+      "spa": 125,
+      "spd": 60,
+      "spe": 93
+    },
     "description": "Ses ailes cristallines vibrent à très haute fréquence lorsqu'il s'envole, produisant de l'électricité sur son passage. Il se nourrit en absorbant l'énergie des cristaux présents dans les grottes où il vit.",
     "etymology": {
       "Crystal": "Minéral naturel transparent",
@@ -1633,19 +2707,33 @@
     "id": 64,
     "slug": "larvantis",
     "name": "Larvantis",
-    "types": ["Fée"],
+    "types": [
+      "Fée"
+    ],
     "category": "Crevette",
-    "abilities": ["[[ability:luminescence|Luminescence]]"],
+    "abilities": [
+      "[[ability:luminescence|Luminescence]]"
+    ],
     "hiddenAbility": "[[ability:peau-feerique|Peau Féérique]]",
     "height_m": 0.4,
     "weight_kg": 8.7,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 120,
     "images": {
       "sprite": "pokedex/img/pokemon/000_sprite.png",
       "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
-    "baseStats": { "hp": 46, "atk": 62, "def": 47, "spa": 40, "spd": 50, "spe": 55 },
+    "baseStats": {
+      "hp": 46,
+      "atk": 62,
+      "def": 47,
+      "spa": 40,
+      "spd": 50,
+      "spe": 55
+    },
     "description": "Ses petites pattes produisent de la lumière lorsqu'il les agite, ce qui l'amuse beaucoup. C'est pourquoi le fond des mers où il vit est parfois scintillant malgré l'absence de la lumière du soleil.",
     "etymology": {
       "Larve": "Stade juvénile des stomatopodes",
@@ -1656,19 +2744,34 @@
     "id": 65,
     "slug": "prismantis",
     "name": "Prismantis",
-    "types": ["Combat", "Fée"],
+    "types": [
+      "Combat",
+      "Fée"
+    ],
     "category": "Crevette",
-    "abilities": ["[[ability:poing-de-fer|Poing de Fer]]"],
+    "abilities": [
+      "[[ability:poing-de-fer|Poing de Fer]]"
+    ],
     "hiddenAbility": "[[ability:peau-feerique|Peau Féérique]]",
     "height_m": 0.7,
     "weight_kg": 26.5,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 75,
     "images": {
       "sprite": "pokedex/img/pokemon/000_sprite.png",
       "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
-    "baseStats": { "hp": 70, "atk": 95, "def": 85, "spa": 50, "spd": 65, "spe": 70 },
+    "baseStats": {
+      "hp": 70,
+      "atk": 95,
+      "def": 85,
+      "spa": 50,
+      "spd": 65,
+      "spe": 70
+    },
     "description": "Ses pinces frappent à une vitesse fulgurante, créant de brèves ondes lumineuses sous l'eau. Malgré ses couleurs éclatantes, il est connu pour son tempérament agressif et combatif.",
     "etymology": {
       "Prisme": "Élément optique utilisé pour décomposer la lumière",
@@ -1679,19 +2782,35 @@
     "id": 66,
     "slug": "frimacier",
     "name": "Frimacier",
-    "types": ["Glace", "Acier"],
+    "types": [
+      "Glace",
+      "Acier"
+    ],
     "category": "Tigre",
-    "abilities": ["[[ability:attention|Attention]]", "[[ability:rideau-neige|Rideau Neige]]"],
+    "abilities": [
+      "[[ability:attention|Attention]]",
+      "[[ability:rideau-neige|Rideau Neige]]"
+    ],
     "hiddenAbility": "[[ability:prognathe|Prognathe]]",
     "height_m": 0.7,
-    "weight_kg": 28.0,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "weight_kg": 28,
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 120,
     "images": {
       "sprite": "pokedex/img/pokemon/000_sprite.png",
       "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
-    "baseStats": { "hp": 70, "atk": 95, "def": 55, "spa": 40, "spd": 50, "spe": 75 },
+    "baseStats": {
+      "hp": 70,
+      "atk": 95,
+      "def": 55,
+      "spa": 40,
+      "spd": 50,
+      "spe": 75
+    },
     "description": "Son pelage givré et ses petits crocs métalliques tintent légèrement lorsqu'il joue dans la neige. Malgré son air adorable, il mord déjà avec une surprenante force.",
     "etymology": {
       "Frimas": "Brouillard froid et épais qui forme du givre en se cristallisant",
@@ -1702,19 +2821,35 @@
     "id": 67,
     "slug": "givrodon",
     "name": "Givrodon",
-    "types": ["Glace", "Acier"],
+    "types": [
+      "Glace",
+      "Acier"
+    ],
     "category": "Tigre",
-    "abilities": ["[[ability:attention|Attention]]", "[[ability:rideau-neige|Rideau Neige]]"],
+    "abilities": [
+      "[[ability:attention|Attention]]",
+      "[[ability:rideau-neige|Rideau Neige]]"
+    ],
     "hiddenAbility": "[[ability:prognathe|Prognathe]]",
     "height_m": 1.9,
-    "weight_kg": 165.0,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "weight_kg": 165,
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 45,
     "images": {
       "sprite": "pokedex/img/pokemon/000_sprite.png",
       "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
-    "baseStats": { "hp": 80, "atk": 120, "def": 73, "spa": 50, "spd": 72, "spe": 105 },
+    "baseStats": {
+      "hp": 80,
+      "atk": 120,
+      "def": 73,
+      "spa": 50,
+      "spd": 72,
+      "spe": 105
+    },
     "description": "Ses crocs d'acier peuvent broyer la glace la plus épaisse en un seul coup de mâchoire. Bien que ses crocs sont sa plus grande fierté, il ne faut pas sous-estimer ses griffes et sa vitesse.",
     "etymology": {
       "Givre": "Dépôt de glace formé par le froid",
@@ -1725,19 +2860,35 @@
     "id": 68,
     "slug": "cotylux",
     "name": "Cotylux",
-    "types": ["Électrik", "Feu"],
+    "types": [
+      "Électrik",
+      "Feu"
+    ],
     "category": "Méduse",
-    "abilities": ["[[ability:urticant|Urticant]]", "[[ability:delestage|Délestage]]"],
+    "abilities": [
+      "[[ability:urticant|Urticant]]",
+      "[[ability:delestage|Délestage]]"
+    ],
     "hiddenAbility": "[[ability:paratonnerre|Paratonnerre]]",
     "height_m": 0.2,
     "weight_kg": 1.2,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 120,
     "images": {
       "sprite": "pokedex/img/pokemon/000_sprite.png",
       "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
-    "baseStats": { "hp": 35, "atk": 30, "def": 42, "spa": 83, "spd": 52, "spe": 60 },
+    "baseStats": {
+      "hp": 35,
+      "atk": 30,
+      "def": 42,
+      "spa": 83,
+      "spd": 52,
+      "spe": 60
+    },
     "description": "Son ombrelle gélatineuse émet une douce lueur chaude dans les eaux peu profondes. Les nageurs ont appris à se méfier des eaux paraissant étonnamment plus chaudes.",
     "etymology": {
       "Cotylorhiza tuberculata": "Nom scientifique de la méduse œuf au plat",
@@ -1748,19 +2899,35 @@
     "id": 69,
     "slug": "voltombrelle",
     "name": "Voltombrelle",
-    "types": ["Électrik", "Feu"],
+    "types": [
+      "Électrik",
+      "Feu"
+    ],
     "category": "Méduse",
-    "abilities": ["[[ability:urticant|Urticant]]", "[[ability:delestage|Délestage]]"],
+    "abilities": [
+      "[[ability:urticant|Urticant]]",
+      "[[ability:delestage|Délestage]]"
+    ],
     "hiddenAbility": "[[ability:paratonnerre|Paratonnerre]]",
     "height_m": 0.7,
     "weight_kg": 6.5,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 90,
     "images": {
       "sprite": "pokedex/img/pokemon/000_sprite.png",
       "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
-    "baseStats": { "hp": 53, "atk": 40, "def": 58, "spa": 102, "spd": 68, "spe": 69 },
+    "baseStats": {
+      "hp": 53,
+      "atk": 40,
+      "def": 58,
+      "spa": 102,
+      "spd": 68,
+      "spe": 69
+    },
     "description": "En pulsant lentement dans l'eau, il diffuse des vagues d'énergie électrique et thermique. Les petits Pokémon marins viennent souvent se réfugier sous son ombrelle lumineuse.",
     "etymology": {
       "Volt": "Unité de mesure de la tension électrique",
@@ -1771,19 +2938,35 @@
     "id": 70,
     "slug": "adriastra",
     "name": "Adriastra",
-    "types": ["Électrik", "Feu"],
+    "types": [
+      "Électrik",
+      "Feu"
+    ],
     "category": "Méduse",
-    "abilities": ["[[ability:urticant|Urticant]]", "[[ability:delestage|Délestage]]"],
+    "abilities": [
+      "[[ability:urticant|Urticant]]",
+      "[[ability:delestage|Délestage]]"
+    ],
     "hiddenAbility": "[[ability:paratonnerre|Paratonnerre]]",
     "height_m": 1.4,
-    "weight_kg": 18.0,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "weight_kg": 18,
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 45,
     "images": {
       "sprite": "pokedex/img/pokemon/000_sprite.png",
       "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
-    "baseStats": { "hp": 65, "atk": 50, "def": 70, "spa": 138, "spd": 95, "spe": 88 },
+    "baseStats": {
+      "hp": 65,
+      "atk": 50,
+      "def": 70,
+      "spa": 138,
+      "spd": 95,
+      "spe": 88
+    },
     "description": "Certains Pokémon se servent de son ombrelle et ses tentacules pour s'abriter et se cacher des prédateurs. Lorsqu'il se sent menacé, il libère une décharge brûlante dans toute l'eau environnante.",
     "etymology": {
       "Mer Adriatique": "mer séparant la péninsule italienne de la péninsule balkanique",
@@ -1794,19 +2977,35 @@
     "id": 71,
     "slug": "scaraphylla",
     "name": "Scaraphylla",
-    "types": ["Insecte", "Acier"],
+    "types": [
+      "Insecte",
+      "Acier"
+    ],
     "category": "Bastion",
-    "abilities": ["[[ability:envelocape|Envelocape]]", "[[ability:solide-roc|Solide Roc]]"],
+    "abilities": [
+      "[[ability:envelocape|Envelocape]]",
+      "[[ability:solide-roc|Solide Roc]]"
+    ],
     "hiddenAbility": "[[ability:oeil-compose|Œil Composé]]",
     "height_m": 1.1,
-    "weight_kg": 70.0,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "weight_kg": 70,
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 75,
     "images": {
       "sprite": "pokedex/img/pokemon/000_sprite.png",
       "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
-    "baseStats": { "hp": 95, "atk": 70, "def": 136, "spa": 50, "spd": 95, "spe": 48 },
+    "baseStats": {
+      "hp": 95,
+      "atk": 70,
+      "def": 136,
+      "spa": 50,
+      "spd": 95,
+      "spe": 48
+    },
     "description": "Ce Pokémon est une menace pour les agriculteurs, il adore se nourrir dans les champs et il est très difficile de l'arrêter lorsqu'il a faim, avançant lentement mais sûrement.",
     "etymology": {
       "Scarabée": "Coléoptère à carapace dure",
@@ -1816,20 +3015,35 @@
   {
     "id": 72,
     "slug": "tenriktik",
-    "name": "Tenriktik", 
-    "types": ["Ténèbres", "Électrik"],
+    "name": "Tenriktik",
+    "types": [
+      "Ténèbres",
+      "Électrik"
+    ],
     "category": "Zébré",
-    "abilities": ["[[ability:epine-de-fer|Épine de Fer]]"],
+    "abilities": [
+      "[[ability:epine-de-fer|Épine de Fer]]"
+    ],
     "hiddenAbility": "[[ability:cercle-denergie|Cercle d'Énergie]]",
-    "height_m": 1.0,
+    "height_m": 1,
     "weight_kg": 32.1,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 90,
     "images": {
       "sprite": "pokedex/img/pokemon/000_sprite.png",
       "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
-    "baseStats": { "hp": 75, "atk": 55, "def": 85, "spa": 65, "spd": 95, "spe": 70 },
+    "baseStats": {
+      "hp": 75,
+      "atk": 55,
+      "def": 85,
+      "spa": 65,
+      "spd": 95,
+      "spe": 70
+    },
     "description": "Il frotte ses piquants pour produire des signaux électriques audibles par ses congénères. Très vigilant, il avertit son groupe du moindre danger avant même qu'il n'apparaisse.",
     "etymology": {
       "Tenrec": "Mammifère connu pour ses piquants",
@@ -1839,19 +3053,31 @@
   {
     "id": 73,
     "slug": "salpineon",
-    "name": "Salpinéon", 
-    "types": ["Eau", "Spectre"],
+    "name": "Salpinéon",
+    "types": [
+      "Eau",
+      "Spectre"
+    ],
     "category": "Cellule",
-    "abilities": ["[[ability:duplication|Duplication]]"],
+    "abilities": [
+      "[[ability:duplication|Duplication]]"
+    ],
     "height_m": 0.2,
-    "weight_kg": 3.0,
+    "weight_kg": 3,
     "genderRatio": "genderless",
     "captureRate": 120,
     "images": {
       "sprite": "pokedex/img/pokemon/000_sprite.png",
       "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
-    "baseStats": { "hp": 45, "atk": 65, "def": 55, "spa": 65, "spd": 55, "spe": 60 },
+    "baseStats": {
+      "hp": 45,
+      "atk": 65,
+      "def": 55,
+      "spa": 65,
+      "spd": 55,
+      "spe": 60
+    },
     "description": "Son corps gélatineux se divise spontanément pour former de nouveaux individus identiques. Les colonies de Salpéon dérivent silencieusement dans l'océan, reliées par une faible lueur fantomatique.",
     "etymology": {
       "Salp": "Animal gélatineux asexué",
@@ -1861,20 +3087,34 @@
   {
     "id": 74,
     "slug": "crinial",
-    "name": "Crinial", 
-    "types": ["Ténèbres"],
+    "name": "Crinial",
+    "types": [
+      "Ténèbres"
+    ],
     "category": "Chacal",
-    "abilities": ["[[ability:impassible|Impassible]]"],
+    "abilities": [
+      "[[ability:impassible|Impassible]]"
+    ],
     "hiddenAbility": "[[ability:carnivore|Carnivore]]",
     "height_m": 0.5,
     "weight_kg": 12.6,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 145,
     "images": {
       "sprite": "pokedex/img/pokemon/000_sprite.png",
       "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
-    "baseStats": { "hp": 45, "atk": 62, "def": 48, "spa": 39, "spd": 50, "spe": 56 },
+    "baseStats": {
+      "hp": 45,
+      "atk": 62,
+      "def": 48,
+      "spa": 39,
+      "spd": 50,
+      "spe": 56
+    },
     "description": "Pour compenser sa petite taille, ses poils se hérissent lorsqu'il se sent en danger pour paraître plus gros. Bien que cela fonctionne sur certains prédateurs, les humains trouvent ses aboiements trop mignon pour en avoir peur.",
     "etymology": {
       "Crinière": "Touffe de poils longue et hérissée autour du cou",
@@ -1884,20 +3124,35 @@
   {
     "id": 75,
     "slug": "lycanine",
-    "name": "Lycanine", 
-    "types": ["Ténèbres", "Sol"],
+    "name": "Lycanine",
+    "types": [
+      "Ténèbres",
+      "Sol"
+    ],
     "category": "Chacal",
-    "abilities": ["[[ability:impassible|Impassible]]"],
+    "abilities": [
+      "[[ability:impassible|Impassible]]"
+    ],
     "hiddenAbility": "[[ability:carnivore|Carnivore]]",
     "height_m": 1.1,
     "weight_kg": 39.2,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 90,
     "images": {
       "sprite": "pokedex/img/pokemon/000_sprite.png",
       "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
-    "baseStats": { "hp": 65, "atk": 90, "def": 55, "spa": 50, "spd": 55, "spe": 95 },
+    "baseStats": {
+      "hp": 65,
+      "atk": 90,
+      "def": 55,
+      "spa": 50,
+      "spd": 55,
+      "spe": 95
+    },
     "description": "Il est très sociable avec les autres Pokémon de son espèce, formant des meutes pouvant rassembler jusqu'à 100 individus. Son extrême sociabilité se traduit par sa capacité à produire beaucoup de sons différents pour s'exprimer.",
     "etymology": {
       "Lycaon": "Genre de canidés africains sociaux vivant en meute",
@@ -1907,20 +3162,35 @@
   {
     "id": 76,
     "slug": "sombryène",
-    "name": "Sombryène", 
-    "types": ["Ténèbres", "Sol"],
+    "name": "Sombryène",
+    "types": [
+      "Ténèbres",
+      "Sol"
+    ],
     "category": "Hyène",
-    "abilities": ["[[ability:impassible|Impassible]]"],
+    "abilities": [
+      "[[ability:impassible|Impassible]]"
+    ],
     "hiddenAbility": "[[ability:carnivore|Carnivore]]",
     "height_m": 1.5,
     "weight_kg": 68.3,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 45,
     "images": {
       "sprite": "pokedex/img/pokemon/000_sprite.png",
       "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
-    "baseStats": { "hp": 95, "atk": 110, "def": 78, "spa": 55, "spd": 70, "spe": 110 },
+    "baseStats": {
+      "hp": 95,
+      "atk": 110,
+      "def": 78,
+      "spa": 55,
+      "spd": 70,
+      "spe": 110
+    },
     "description": "Étant le chef de sa meute, il est très territorial et se montre très agressif quand il s'agit de défendre ses petits. Son long pelage hirsute lui donne un air large et imposant, mais il est en réalité plus léger, et très rapide.",
     "etymology": {
       "Sombre": "Référence à son type Ténèbres et à son pelage foncé",
@@ -1930,20 +3200,35 @@
   {
     "id": 77,
     "slug": "gracicodil",
-    "name": "Gracicodil", 
-    "types": ["Dragon"],
+    "name": "Gracicodil",
+    "types": [
+      "Dragon"
+    ],
     "category": "Saurien",
-    "abilities": ["[[ability:peau-dure|Peau Dure]]", "[[ability:fuite|Fuite]]"],
+    "abilities": [
+      "[[ability:peau-dure|Peau Dure]]",
+      "[[ability:fuite|Fuite]]"
+    ],
     "hiddenAbility": "[[ability:cran|Cran]]",
     "height_m": 0.3,
     "weight_kg": 6.2,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 45,
     "images": {
       "sprite": "pokedex/img/pokemon/000_sprite.png",
       "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
-    "baseStats": { "hp": 35, "atk": 30, "def": 65, "spa": 30, "spd": 35, "spe": 55 },
+    "baseStats": {
+      "hp": 35,
+      "atk": 30,
+      "def": 65,
+      "spa": 30,
+      "spd": 35,
+      "spe": 55
+    },
     "description": "Ses écailles dorsales sont déjà étonnament résistantes, bien qu'il privilégiera toujours la fuite en cas de danger. Il peut également creuser sous terre pour se cacher, et c'est un très bon nageur.",
     "etymology": {
       "Tribolonotus Gracilis": "Espèce de sauriens inspirant ce Pokémon",
@@ -1953,20 +3238,36 @@
   {
     "id": 78,
     "slug": "dermaconda",
-    "name": "Dermaconda", 
-    "types": ["Dragon", "Combat"],
+    "name": "Dermaconda",
+    "types": [
+      "Dragon",
+      "Combat"
+    ],
     "category": "Saurien",
-    "abilities": ["[[ability:peau-dure|Peau Dure]]", "[[ability:intimidation|Intimidation]]"],
+    "abilities": [
+      "[[ability:peau-dure|Peau Dure]]",
+      "[[ability:intimidation|Intimidation]]"
+    ],
     "hiddenAbility": "[[ability:cran|Cran]]",
     "height_m": 1.7,
-    "weight_kg": 63.0,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "weight_kg": 63,
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 45,
     "images": {
       "sprite": "pokedex/img/pokemon/000_sprite.png",
       "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
-    "baseStats": { "hp": 95, "atk": 75, "def": 95, "spa": 45, "spd": 65, "spe": 45 },
+    "baseStats": {
+      "hp": 95,
+      "atk": 75,
+      "def": 95,
+      "spa": 45,
+      "spd": 65,
+      "spe": 45
+    },
     "description": "Son corps trapu est recouvert d'écailles épaisses semblables à des perles rugueuses. Il immobilise ses adversaires avec sa mâchoire puissante avant de les projeter violemment au sol.",
     "etymology": {
       "Heloderma": "lézard perlé servant d'inspiration à ce Pokémon",
@@ -1976,20 +3277,36 @@
   {
     "id": 79,
     "slug": "komoloss",
-    "name": "Komoloss", 
-    "types": ["Dragon", "Combat"],
+    "name": "Komoloss",
+    "types": [
+      "Dragon",
+      "Combat"
+    ],
     "category": "Komodo",
-    "abilities": ["[[ability:peau-dure|Peau Dure]]", "[[ability:intimidation|Intimidation]]"],
+    "abilities": [
+      "[[ability:peau-dure|Peau Dure]]",
+      "[[ability:intimidation|Intimidation]]"
+    ],
     "hiddenAbility": "[[ability:cran|Cran]]",
     "height_m": 2.5,
     "weight_kg": 88.6,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 45,
     "images": {
       "sprite": "pokedex/img/pokemon/000_sprite.png",
       "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
-    "baseStats": { "hp": 105, "atk": 125, "def": 115, "spa": 55, "spd": 105, "spe": 35 },
+    "baseStats": {
+      "hp": 105,
+      "atk": 125,
+      "def": 115,
+      "spa": 55,
+      "spd": 105,
+      "spe": 35
+    },
     "description": "Il avance lentement, mais chacun de ses pas fait trembler le sol. Une fois qu'il a saisi sa proie, il la plaque au sol et ne la relâche qu'une fois totalement épuisée.",
     "etymology": {
       "Komodo": "Référence au dragon de Komodo, un grand varan prédateur.",
@@ -2000,14 +3317,22 @@
     "id": 80,
     "slug": "mandibunice",
     "name": "Mandibunice",
-    "types": ["Sol", "Ténèbres"],
+    "types": [
+      "Sol",
+      "Ténèbres"
+    ],
     "category": "Embuscade",
     "abilities": [
-      "[[ability:piege-sable|Piège Sable]]", "[[ability:hyper-cutter|Hyper Cutter]]"],
+      "[[ability:piege-sable|Piège Sable]]",
+      "[[ability:hyper-cutter|Hyper Cutter]]"
+    ],
     "hiddenAbility": "[[ability:force-sable|Force Sable]]",
     "height_m": 2.8,
-    "weight_kg": 18.0,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "weight_kg": 18,
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 75,
     "images": {
       "sprite": "pokedex/img/pokemon/000_sprite.png",
@@ -2023,26 +3348,38 @@
     },
     "description": "Il dissimule son long corps sous le sable en ne laissant dépasser que ses mâchoires. Lorsque quelque chose passe à portée, il surgit brutalement pour piéger sa proie avant qu'elle ne puisse pas fuir.",
     "etymology": {
-    "Mandibule": "appendice buccal tranchant utilisé pour saisir et sectionner leurs proies",
-    "Eunice": "genre de vers marins auquel appartient le bobbit worm (Eunice aphroditois)"
+      "Mandibule": "appendice buccal tranchant utilisé pour saisir et sectionner leurs proies",
+      "Eunice": "genre de vers marins auquel appartient le bobbit worm (Eunice aphroditois)"
     }
   },
   {
     "id": 81,
     "slug": "fenragon",
     "name": "Fenragon",
-    "types": ["Dragon", "Ténèbres"],
+    "types": [
+      "Dragon",
+      "Ténèbres"
+    ],
     "category": "Prédateur",
-    "abilities": ["[[ability:chasseur-de-prime|Chasseur de Prime]]"],
+    "abilities": [
+      "[[ability:chasseur-de-prime|Chasseur de Prime]]"
+    ],
     "height_m": 1.9,
-    "weight_kg": 92.0,
+    "weight_kg": 92,
     "genderRatio": "genderless",
     "captureRate": 12,
     "images": {
       "sprite": "pokedex/img/pokemon/000_sprite.png",
       "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
-    "baseStats": { "hp": 85, "atk": 135, "def": 80, "spa": 60, "spd": 85, "spe": 125 },
+    "baseStats": {
+      "hp": 85,
+      "atk": 135,
+      "def": 80,
+      "spa": 60,
+      "spd": 85,
+      "spe": 125
+    },
     "description": "Il est le prédateur ultime, capable de traquer n'importe quelle proie grâce à son ouïe surdéveloppée et sa vitesse fulgurante. Son rugissement résonne comme un grondement de tonnerre, annonçant sa présence avant même qu'il ne soit visible.",
     "etymology": {
       "Fenrir": "loup gigantesque de la mythologie nordique",
@@ -2053,18 +3390,33 @@
     "id": 82,
     "slug": "boreacal",
     "name": "Boreacal",
-    "types": ["Glace", "Fée"],
+    "types": [
+      "Glace",
+      "Fée"
+    ],
     "category": "Caracal",
-    "abilities": ["[[ability:prescience-boreale|Prescience Boréale]]"],
+    "abilities": [
+      "[[ability:prescience-boreale|Prescience Boréale]]"
+    ],
     "height_m": 1.9,
-    "weight_kg": 85.0,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "weight_kg": 85,
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 12,
     "images": {
       "sprite": "pokedex/img/pokemon/000_sprite.png",
       "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
-    "baseStats": { "hp": 95, "atk": 70, "def": 90, "spa": 95, "spd": 120, "spe": 85 },
+    "baseStats": {
+      "hp": 95,
+      "atk": 70,
+      "def": 90,
+      "spa": 95,
+      "spd": 120,
+      "spe": 85
+    },
     "description": "On raconte que Boreacal apparaît lors des tempêtes de neige pour guider les voyageurs perdus. Les plumets glacés de ses oreilles captent les moindres mouvements et lui permettent d'anticiper les attaques de ses adversaires.",
     "etymology": {
       "Boréal": "relatif aux régions froides du nord et aux aurores boréales",
@@ -2075,19 +3427,35 @@
     "id": 83,
     "slug": "courratel",
     "name": "Courratel",
-    "types": ["Feu", "Ténèbres"],
+    "types": [
+      "Feu",
+      "Ténèbres"
+    ],
     "category": "Fureur",
-    "abilities": ["[[ability:acharne|Acharné]]", "[[ability:querelleur|Querelleur]]"],
+    "abilities": [
+      "[[ability:acharne|Acharné]]",
+      "[[ability:querelleur|Querelleur]]"
+    ],
     "hiddenAbility": "[[ability:rage-interieure|Rage Intérieure]]",
     "height_m": 0.8,
     "weight_kg": 35.4,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 45,
     "images": {
       "sprite": "pokedex/img/pokemon/000_sprite.png",
       "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
-    "baseStats": { "hp": 95, "atk": 130, "def": 105, "spa": 45, "spd": 75, "spe": 80 },
+    "baseStats": {
+      "hp": 95,
+      "atk": 130,
+      "def": 105,
+      "spa": 45,
+      "spd": 75,
+      "spe": 80
+    },
     "description": "Ce Pokémon ne connaît pas la peur. Sa température corporelle grimpe en flèche dès qu'il se sent menacé, transformant sa sueur en une vapeur brûlante.",
     "etymology": {
       "Courroux": "Irritation virulente contre un offenseur",
@@ -2098,19 +3466,35 @@
     "id": 84,
     "slug": "melirene",
     "name": "Mélirène",
-    "types": ["Électrik", "Fée"],
+    "types": [
+      "Électrik",
+      "Fée"
+    ],
     "category": "Passion",
-    "abilities": ["[[ability:joli-sourire|Joli Sourire]]", "[[ability:luminescence|Luminescence]]"],
+    "abilities": [
+      "[[ability:joli-sourire|Joli Sourire]]",
+      "[[ability:luminescence|Luminescence]]"
+    ],
     "hiddenAbility": "[[ability:peau-feerique|Peau Féérique]]",
     "height_m": 1.3,
-    "weight_kg": 28.0,
-    "genderRatio": { "male": 0.0, "female": 100.0 },
+    "weight_kg": 28,
+    "genderRatio": {
+      "male": 0,
+      "female": 100
+    },
     "captureRate": 45,
     "images": {
       "sprite": "pokedex/img/pokemon/000_sprite.png",
       "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
-    "baseStats": { "hp": 85, "atk": 50, "def": 75, "spa": 125, "spd": 95, "spe": 100 },
+    "baseStats": {
+      "hp": 85,
+      "atk": 50,
+      "def": 75,
+      "spa": 125,
+      "spd": 95,
+      "spe": 100
+    },
     "description": "Ses impulsions électriques stimulent les centres du plaisir de ses proies, les plongeant dans une transe euphorique avant qu'elle ne les paralyse d'un simple contact.",
     "etymology": {
       "Melanocetus": "Genre scientifique de la baudroie abyssale",
@@ -2121,32 +3505,90 @@
     "id": 85,
     "slug": "majestine",
     "name": "Majestine",
-    "types": ["Fée", "Psy"],
-    "category": "Grâce",
-    "abilities": ["[[ability:corps-sain|Corps Sain]]"],
+    "types": [
+      "Fée",
+      "Psy"
+    ],
+    "category": "Altesse",
+    "abilities": [
+      "[[ability:corps-sain|Corps Sain]]"
+    ],
     "hiddenAbility": "[[ability:miroir-magik|Miroir Magik]]",
-    "height_m": 1.2,
-    "weight_kg": 15.6,
-    "genderRatio": { "male": 50.0, "female": 50.0 },
+    "height_m": 0.8,
+    "weight_kg": 8.5,
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
     "captureRate": 30,
     "images": {
       "sprite": "pokedex/img/pokemon/000_sprite.png",
       "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
-    "baseStats": { "hp": 70, "atk": 60, "def": 80, "spa": 115, "spd": 125, "spe": 80 },
-    "description": "Il passe des heures à contempler son reflet dans les sources d'eau pure. On dit qu'il absorbe la confiance en soi des personnes regardant leur reflet à travers ses plumes de cristal.",
+    "baseStats": {
+      "hp": 70,
+      "atk": 70,
+      "def": 70,
+      "spa": 115,
+      "spd": 70,
+      "spe": 80
+    },
+    "description": "D'un tempérament extrêmement hautain, il refuse de poser ses pattes sur un sol qu'il juge impur. Sa fourrure d'un blanc immaculé semble repousser la saleté par pure vanité.",
     "etymology": {
       "Majesté": "Caractère de ce qui est grand, noble et sacré",
-      "Cristalline": "Qui a la clarté ou la structure du cristal"
+      "Hermine": "Petit mammifère à la fourrure blanche, symbole de pureté et de royauté"
     }
+  },
+  {
+    "id": 86,
+    "slug": "lyravolt",
+    "name": "Lyravolt",
+    "types": [
+      "Normal",
+      "Électrik"
+    ],
+    "category": "Chanteur",
+    "abilities": [
+      "[[ability:chanteuse|Chanteuse]]"
+    ],
+    "height_m": 0.9,
+    "weight_kg": 5.2,
+    "genderRatio": {
+      "male": 50,
+      "female": 50
+    },
+    "captureRate": 120,
+    "images": {
+      "sprite": "pokedex/img/pokemon/000_sprite.png",
+      "artwork": "pokedex/img/pokemon/000_artwork.png"
+    },
+    "baseStats": {
+      "hp": 65,
+      "atk": 52,
+      "def": 77,
+      "spa": 111,
+      "spd": 65,
+      "spe": 90
+    },
+    "description": "Il accumule l'électricité statique dans les plumes dorées de sa queue en forme de lyre, qu'il est capable d'utiliser pour amplifier la puissance de ses chants.",
+    "etymology": {
+      "Lyre": "Fait référence à l'oiseau-lyre, et la forme des plumes de sa queue ressemblant à l'instrument.",
+      "Volt": "Unité de mesure de la tension électrique, soulignant sa capacité à générer et manipuler l'électricité."
+    },
+    "hiddenAbility": "[[ability:resonnance|Résonnance]]"
   },
   {
     "id": 101,
     "slug": "damarel",
     "name": "Damarel",
-    "types": ["Spectre", "Eau"],
+    "types": [
+      "Spectre",
+      "Eau"
+    ],
     "category": "Plaie",
-    "abilities": ["[[ability:maree-pourpre|Marée Pourpre]]"],
+    "abilities": [
+      "[[ability:maree-pourpre|Marée Pourpre]]"
+    ],
     "height_m": 4.2,
     "weight_kg": 910,
     "genderRatio": "genderless",
@@ -2155,7 +3597,14 @@
       "sprite": "pokedex/img/pokemon/000_sprite.png",
       "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
-    "baseStats": { "hp": 120, "atk": 70, "def": 110, "spa": 105, "spd": 110, "spe": 55 },
+    "baseStats": {
+      "hp": 120,
+      "atk": 70,
+      "def": 110,
+      "spa": 105,
+      "spd": 110,
+      "spe": 55
+    },
     "description": "Il est la conséquence des rivières polluées par les industries. Lorsque les eaux deviennent trop toxiques, il se venge et détruit les responsables via ses raz-de-marées surpuissants.",
     "etymology": {
       "dam": "sang en hébreu",
@@ -2166,9 +3615,14 @@
     "id": 102,
     "slug": "sharazel",
     "name": "Sharazel",
-    "types": ["Spectre", "Sol"],
+    "types": [
+      "Spectre",
+      "Sol"
+    ],
     "category": "Plaie",
-    "abilities": ["[[ability:marecage-brun|Marécage Brun]]"],
+    "abilities": [
+      "[[ability:marecage-brun|Marécage Brun]]"
+    ],
     "height_m": 1.1,
     "weight_kg": 18.4,
     "genderRatio": "genderless",
@@ -2177,7 +3631,14 @@
       "sprite": "pokedex/img/pokemon/000_sprite.png",
       "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
-    "baseStats": { "hp": 90, "atk": 65, "def": 75, "spa": 115, "spd": 105, "spe": 120 },
+    "baseStats": {
+      "hp": 90,
+      "atk": 65,
+      "def": 75,
+      "spa": 115,
+      "spd": 105,
+      "spe": 120
+    },
     "description": "Il est la conséquence de la faune forcée de migrer à cause de la destruction de leurs habitats. Il sert de guide aux Pokémon cherchant un nouveau refuge, quitte à détruire ce qu'ont bâti les hommes.",
     "etymology": {
       "Sharats": "grouiller/pulluler en hébreu",
@@ -2188,9 +3649,14 @@
     "id": 103,
     "slug": "kinnarel",
     "name": "Kinnarel",
-    "types": ["Spectre", "Insecte"],
+    "types": [
+      "Spectre",
+      "Insecte"
+    ],
     "category": "Plaie",
-    "abilities": ["[[ability:nuee-ambree|Nuée Ambrée]]"],
+    "abilities": [
+      "[[ability:nuee-ambree|Nuée Ambrée]]"
+    ],
     "height_m": 1.4,
     "weight_kg": 9.7,
     "genderRatio": "genderless",
@@ -2199,7 +3665,14 @@
       "sprite": "pokedex/img/pokemon/000_sprite.png",
       "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
-    "baseStats": { "hp": 75, "atk": 120, "def": 80, "spa": 80, "spd": 70, "spe": 145 },
+    "baseStats": {
+      "hp": 75,
+      "atk": 120,
+      "def": 80,
+      "spa": 80,
+      "spd": 70,
+      "spe": 145
+    },
     "description": "Il est la conséquence de la prolifération de certains nuisibles, à cause du changement d'habitat. Lorsqu'un Pokémon se retrouve dans un nouvel environnement qu'il ne connait pas, il l'aide à s'adapter.",
     "etymology": {
       "kinnim": "moustique en hébreu",
@@ -2210,9 +3683,14 @@
     "id": 104,
     "slug": "arovel",
     "name": "Arovel",
-    "types": ["Spectre", "Vol"],
+    "types": [
+      "Spectre",
+      "Vol"
+    ],
     "category": "Plaie",
-    "abilities": ["[[ability:danse-opaline|Danse Opaline]]"],
+    "abilities": [
+      "[[ability:danse-opaline|Danse Opaline]]"
+    ],
     "height_m": 1.6,
     "weight_kg": 38.9,
     "genderRatio": "genderless",
@@ -2221,7 +3699,14 @@
       "sprite": "pokedex/img/pokemon/000_sprite.png",
       "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
-    "baseStats": { "hp": 70, "atk": 115, "def": 70, "spa": 115, "spd": 70, "spe": 130 },
+    "baseStats": {
+      "hp": 70,
+      "atk": 115,
+      "def": 70,
+      "spa": 115,
+      "spd": 70,
+      "spe": 130
+    },
     "description": "Il est la conséquence de l'insalubrité dûe aux déchets humains provoqués par leur mode de consommation. Si les terres deviennent trop polluées, il intervient pour repousser les hommes et détruire les déchets.",
     "etymology": {
       "arov": "nuée d'insectes en hébreu",
@@ -2232,9 +3717,14 @@
     "id": 105,
     "slug": "devorel",
     "name": "Devorel",
-    "types": ["Spectre", "Poison"],
+    "types": [
+      "Spectre",
+      "Poison"
+    ],
     "category": "Plaie",
-    "abilities": ["[[ability:peste-mauve|Peste Mauve]]"],
+    "abilities": [
+      "[[ability:peste-mauve|Peste Mauve]]"
+    ],
     "height_m": 1.8,
     "weight_kg": 82.3,
     "genderRatio": "genderless",
@@ -2243,7 +3733,14 @@
       "sprite": "pokedex/img/pokemon/000_sprite.png",
       "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
-    "baseStats": { "hp": 100, "atk": 95, "def": 120, "spa": 70, "spd": 120, "spe": 65 },
+    "baseStats": {
+      "hp": 100,
+      "atk": 95,
+      "def": 120,
+      "spa": 70,
+      "spd": 120,
+      "spe": 65
+    },
     "description": "Il est la conséquence de l'élevage intensif et abusif. Il libère les Pokémon exploités et punis et humains responsables de leurs maux.",
     "etymology": {
       "dever": "peste/épidémie en hébreu",
@@ -2254,10 +3751,15 @@
     "id": 106,
     "slug": "shekinel",
     "name": "Shekinel",
-    "types": ["Spectre", "Feu"],
+    "types": [
+      "Spectre",
+      "Feu"
+    ],
     "category": "Plaie",
-    "abilities": ["[[ability:cendre-ocre|Cendre Ocre]]"],
-    "height_m": 2.0,
+    "abilities": [
+      "[[ability:cendre-ocre|Cendre Ocre]]"
+    ],
+    "height_m": 2,
     "weight_kg": 100,
     "genderRatio": "genderless",
     "captureRate": 6,
@@ -2265,7 +3767,14 @@
       "sprite": "pokedex/img/pokemon/000_sprite.png",
       "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
-    "baseStats": { "hp": 90, "atk": 70, "def": 100, "spa": 125, "spd": 95, "spe": 90 },
+    "baseStats": {
+      "hp": 90,
+      "atk": 70,
+      "def": 100,
+      "spa": 125,
+      "spd": 95,
+      "spe": 90
+    },
     "description": "Il est la conséquence de la pollution toxique sur les populations. Il s'attaque aux industries polluantes et les détruit suffisamment pour s'assurer qu'ils ne refonctionnent plus jamais.",
     "etymology": {
       "shekhin": "ulcère en hébreu",
@@ -2276,9 +3785,14 @@
     "id": 107,
     "slug": "baradiel",
     "name": "Baradiel",
-    "types": ["Spectre", "Glace"],
+    "types": [
+      "Spectre",
+      "Glace"
+    ],
     "category": "Plaie",
-    "abilities": ["[[ability:neige-grise|Neige Grise]]"],
+    "abilities": [
+      "[[ability:neige-grise|Neige Grise]]"
+    ],
     "height_m": 3.1,
     "weight_kg": 6.5,
     "genderRatio": "genderless",
@@ -2287,7 +3801,14 @@
       "sprite": "pokedex/img/pokemon/000_sprite.png",
       "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
-    "baseStats": { "hp": 130, "atk": 130, "def": 105, "spa": 60, "spd": 85, "spe": 60 },
+    "baseStats": {
+      "hp": 130,
+      "atk": 130,
+      "def": 105,
+      "spa": 60,
+      "spd": 85,
+      "spe": 60
+    },
     "description": "Il est la conséquence du dérèglement climatique provoqué par l'effet de serre. Il redirige les vagues de chaleur et de froid pour tenter de reéquilibrer les environnements.",
     "etymology": {
       "barad": "grêle en hébreu",
@@ -2298,9 +3819,14 @@
     "id": 108,
     "slug": "arborel",
     "name": "Arborel",
-    "types": ["Spectre", "Plante"],
+    "types": [
+      "Spectre",
+      "Plante"
+    ],
     "category": "Plaie",
-    "abilities": ["[[ability:moissonneur-vert|Moissonneur Vert]]"],
+    "abilities": [
+      "[[ability:moissonneur-vert|Moissonneur Vert]]"
+    ],
     "height_m": 1.5,
     "weight_kg": 54.2,
     "genderRatio": "genderless",
@@ -2309,7 +3835,14 @@
       "sprite": "pokedex/img/pokemon/000_sprite.png",
       "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
-    "baseStats": { "hp": 94, "atk": 125, "def": 85, "spa": 73, "spd": 81, "spe": 112 },
+    "baseStats": {
+      "hp": 94,
+      "atk": 125,
+      "def": 85,
+      "spa": 73,
+      "spd": 81,
+      "spe": 112
+    },
     "description": "Il est la conséquence de la monoculture intensive. Lorsque les terres perdent leur fertilité à cause de l'agriculture, il apparaît pour dévorer les récoltes.",
     "etymology": {
       "arbeh": "sauterelle en hébreu",
@@ -2320,9 +3853,14 @@
     "id": 109,
     "slug": "Hoshekel",
     "name": "Hoshekel",
-    "types": ["Spectre", "Ténèbres"],
+    "types": [
+      "Spectre",
+      "Ténèbres"
+    ],
     "category": "Plaie",
-    "abilities": ["[[ability:eclipse-noire|Éclipse Noire]]"],
+    "abilities": [
+      "[[ability:eclipse-noire|Éclipse Noire]]"
+    ],
     "height_m": 2.4,
     "weight_kg": 79.4,
     "genderRatio": "genderless",
@@ -2331,7 +3869,14 @@
       "sprite": "pokedex/img/pokemon/000_sprite.png",
       "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
-    "baseStats": { "hp": 80, "atk": 90, "def": 80, "spa": 135, "spd": 110, "spe": 75 },
+    "baseStats": {
+      "hp": 80,
+      "atk": 90,
+      "def": 80,
+      "spa": 135,
+      "spd": 110,
+      "spe": 75
+    },
     "description": "Il est la conséquence de l'urbanisation grandissante, qui remplace la nature et efface les étoiles du ciel. Si la lumière artificielle dérègle trop la faune locale, il l'absorbe, plongeant la ville dans le noir.",
     "etymology": {
       "hoshekh": "obscurité/ténèbres en hébreu",
@@ -2342,9 +3887,14 @@
     "id": 110,
     "slug": "shekhatel",
     "name": "Shekhatel",
-    "types": ["Spectre", "Normal"],
+    "types": [
+      "Spectre",
+      "Normal"
+    ],
     "category": "Plaie",
-    "abilities": ["[[ability:deuil-blanc|Deuil Blanc]]"],
+    "abilities": [
+      "[[ability:deuil-blanc|Deuil Blanc]]"
+    ],
     "height_m": 2.6,
     "weight_kg": 142.7,
     "genderRatio": "genderless",
@@ -2353,7 +3903,14 @@
       "sprite": "pokedex/img/pokemon/000_sprite.png",
       "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
-    "baseStats": { "hp": 115, "atk": 75, "def": 125, "spa": 110, "spd": 75, "spe": 70 },
+    "baseStats": {
+      "hp": 115,
+      "atk": 75,
+      "def": 125,
+      "spa": 110,
+      "spd": 75,
+      "spe": 70
+    },
     "description": "Il est la conséquence de l'extinction de nombreux espèces dû aux humains. Lorsque les derniers représentant d'une espèce s'éteignent, il apparaît pour les pleurer.",
     "etymology": {
       "Shakhat": "détruire en hébreu",
@@ -2364,18 +3921,30 @@
     "id": 111,
     "slug": "monarcane",
     "name": "Monarcane",
-    "types": ["Dragon", "Fée"],
+    "types": [
+      "Dragon",
+      "Fée"
+    ],
     "category": "Gardien",
-    "abilities": ["[[ability:equilibre-absolu|Équilibre Absolu]]"],
+    "abilities": [
+      "[[ability:equilibre-absolu|Équilibre Absolu]]"
+    ],
     "height_m": 3.2,
-    "weight_kg": 280.0,
+    "weight_kg": 280,
     "genderRatio": "genderless",
     "captureRate": 3,
     "images": {
       "sprite": "pokedex/img/pokemon/000_sprite.png",
       "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
-    "baseStats": { "hp": 100, "atk": 95, "def": 108, "spa": 125, "spd": 152, "spe": 90 },
+    "baseStats": {
+      "hp": 100,
+      "atk": 95,
+      "def": 108,
+      "spa": 125,
+      "spd": 152,
+      "spe": 90
+    },
     "description": "Gardien du Pacte Originel, il veille à ce qu'aucune espèce ne prenne un ascendant définitif sur une autre. On raconte que sa simple présence suffit à ramener les forces du monde à l'équilibre.",
     "etymology": {
       "monarque": "souverain régnant sur un royaume",
@@ -2387,18 +3956,30 @@
     "id": 112,
     "slug": "seraperial",
     "name": "Sérapérial",
-    "types": ["Dragon", "Acier"],
+    "types": [
+      "Dragon",
+      "Acier"
+    ],
     "category": "Gardien",
-    "abilities": ["[[ability:renforcement-adaptatif|Renforcement Adaptatif]]"],
+    "abilities": [
+      "[[ability:renforcement-adaptatif|Renforcement Adaptatif]]"
+    ],
     "height_m": 3.4,
-    "weight_kg": 410.0,
+    "weight_kg": 410,
     "genderRatio": "genderless",
     "captureRate": 3,
     "images": {
       "sprite": "pokedex/img/pokemon/000_sprite.png",
       "artwork": "pokedex/img/pokemon/000_artwork.png"
     },
-    "baseStats": { "hp": 90, "atk": 145, "def": 100, "spa": 90, "spd": 100, "spe": 145 },
+    "baseStats": {
+      "hp": 90,
+      "atk": 145,
+      "def": 100,
+      "spa": 90,
+      "spd": 100,
+      "spe": 145
+    },
     "description": "Il incarne le potentiel de toutes les espèces et les pousse à dépasser leurs limites. Là où il passe, les Pokémon découvrent des forces insoupçonnées, pour le meilleur comme pour le pire.",
     "etymology": {
       "séraphin": "ange de haut rang dans la hiérarchie céleste",
