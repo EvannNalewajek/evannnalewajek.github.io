@@ -23,8 +23,11 @@ import { DocsStatusComponent } from './pokedex/components/docs-status/docs-statu
 import { DocsWeatherComponent } from './pokedex/components/docs-weather/docs-weather.component';
 import { DocsKOComponent } from './pokedex/components/docs-ko/docs-ko.component';
 
+import { DetectiveMainComponent } from './detective-game/components/detective-main.component';
+
 export const routes: Routes = [
     { path: '', component: HomeComponent, title: 'Accueil' },
+    { path: 'detective', component: DetectiveMainComponent, title: 'Détective - Film Noir' },
     { path: 'pokedex', component: PokedexMainComponent, title: 'Pokédex' },
     { path: 'pokedex/pokemons', component: PokedexListComponent, title: 'Pokédex - Liste' },
     { path: 'pokedex/pokemons/:slug', component: PokedexDetailComponent, title: 'Pokédex - Détail' },
