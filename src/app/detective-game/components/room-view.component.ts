@@ -12,6 +12,12 @@ import { DetectiveService } from '../services/detective.service';
         <h2>{{ room.name }}</h2>
         <p class="description">{{ room.description }}</p>
 
+        <div class="room-actions">
+           <button class="examine-btn" (click)="service.examineCurrentRoom()">
+             🔍 Examiner la pièce
+           </button>
+        </div>
+
         <div class="section">
           <h3>Personnes présentes</h3>
           @if (service.charactersInCurrentRoom().length > 0) {
@@ -65,7 +71,22 @@ import { DetectiveService } from '../services/detective.service';
     .description {
       font-style: italic;
       color: #aaa;
+      margin-bottom: 1rem;
+    }
+    .room-actions {
       margin-bottom: 2rem;
+    }
+    .examine-btn {
+      background: #444;
+      color: white;
+      border: 1px solid #666;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .examine-btn:hover {
+      background: #555;
+      border-color: #00bcd4;
     }
     .section h3 {
       font-size: 0.9rem;
@@ -147,7 +168,7 @@ export class RoomViewComponent {
         this.service.discoverClue({
             id: `discovered_${item.id}`,
             name: item.name,
-            description: item.description,
+            description: this.service.getItemDescription(item.id),
             type: 'physical'
         });
     }

@@ -1,4 +1,4 @@
-import { Character, Room, Item, Personality, RelationshipType } from '../models/detective.model';
+import { Character, Room, Item, Personality, RelationshipType, SuspicionLevel } from '../models/detective.model';
 
 export const NOIR_CHARACTERS: Character[] = [
   { id: 'tony', name: 'Tony "Le Balafré"', profession: 'Garde du corps', description: 'Un homme imposant au regard froid.', portrait: 'tony.png' },
@@ -54,19 +54,115 @@ export const DIALOGUE_TEMPLATES: Record<string, Record<string, string[]>> = {
 };
 
 export const NOIR_ROOMS: Room[] = [
-  { id: 'office', name: 'Bureau du Patron', shortName: 'Bureau du Patron', preposition: 'dans le', description: 'Un bureau luxueux avec une odeur de cigare.', x: 10, y: 10, width: 30, height: 30 },
-  { id: 'bar', name: 'Le Speakeasy', shortName: 'Speakeasy', preposition: 'au', description: "L'ambiance est tamisée, la musique de jazz remplit l'air.", x: 40, y: 10, width: 50, height: 40 },
-  { id: 'alley', name: 'Ruelle Sombre', shortName: 'Ruelle Sombre', preposition: 'dans la', description: "Il pleut, et l'odeur des poubelles est forte.", x: 10, y: 40, width: 30, height: 50 },
-  { id: 'backstage', name: 'Les Loges', shortName: 'Loges', preposition: 'dans les', description: "Des costumes et du maquillage traînent partout.", x: 60, y: 50, width: 30, height: 40 },
-  { id: 'kitchen', name: 'La Cuisine', shortName: 'Cuisine', preposition: 'dans la', description: 'Couteaux bien aiguisés et casseroles en cuivre.', x: 40, y: 50, width: 20, height: 30 }
+  { 
+    id: 'office', 
+    name: 'Bureau du Patron', 
+    shortName: 'Bureau du Patron', 
+    preposition: 'dans le', 
+    description: 'Un bureau luxueux avec une odeur de cigare.',
+    x: 10, y: 10, width: 30, height: 30,
+    descriptions: {
+        normal: ['Le bureau est parfaitement rangé. Une lampe de bureau éclaire faiblement quelques dossiers.'],
+        strange: ['Quelques tiroirs ont été laissés entrouverts. Rien ne semble manquer, mais c\'est inhabituel.'],
+        suspect: ['Le bureau est en désordre. Des papiers sont éparpillés au sol et une chaise est renversée.']
+    }
+  },
+  { 
+    id: 'bar', 
+    name: 'Le Speakeasy', 
+    shortName: 'Speakeasy', 
+    preposition: 'au', 
+    description: "L'ambiance est tamisée, la musique de jazz remplit l'air.",
+    x: 40, y: 10, width: 50, height: 40,
+    descriptions: {
+        normal: ['Les clients discutent à voix basse. Le barman essuie un verre proprement.'],
+        strange: ['Une bouteille de whisky coûteuse est restée ouverte sur une table vide.'],
+        suspect: ['Il y a des éclats de verre derrière le comptoir et une tache sombre sur le tapis qui ne ressemble pas à du vin.']
+    }
+  },
+  { 
+    id: 'alley', 
+    name: 'Ruelle Sombre', 
+    shortName: 'Ruelle Sombre', 
+    preposition: 'dans la', 
+    description: "Il pleut, et l'odeur des poubelles est forte.",
+    x: 10, y: 40, width: 30, height: 50,
+    descriptions: {
+        normal: ['Quelques cartons mouillés s\'entassent dans un coin. La pluie tambourine sur le métal.'],
+        strange: ['Une ombre s\'enfuit à votre approche. Probablement juste un rat.'],
+        suspect: ['Des traces de lutte sont visibles dans la boue. Une poubelle a été violemment déplacée.']
+    }
+  },
+  { 
+    id: 'backstage', 
+    name: 'Les Loges', 
+    shortName: 'Loges', 
+    preposition: 'dans les', 
+    description: "Des costumes et du maquillage traînent partout.",
+    x: 60, y: 50, width: 30, height: 40,
+    descriptions: {
+        normal: ['L\'odeur du parfum et de la poudre est entêtante. Les miroirs reflètent la lumière des ampoules.'],
+        strange: ['Une robe de scène a été jetée à la hâte sur un paravent.'],
+        suspect: ['Un miroir est fêlé. De la poudre de maquillage recouvre une trace de pas suspecte.']
+    }
+  },
+  { 
+    id: 'kitchen', 
+    name: 'La Cuisine', 
+    shortName: 'Cuisine', 
+    preposition: 'dans la', 
+    description: 'Couteaux bien aiguisés et casseroles en cuivre.',
+    x: 40, y: 50, width: 20, height: 30,
+    descriptions: {
+        normal: ['Les cuivres brillent sur les murs. Une odeur de sauce tomate s\'échappe d\'une marmite.'],
+        strange: ['Le frigo ronronne bruyamment. Quelqu\'un a laissé une flaque d\'eau au sol.'],
+        suspect: ['De l\'eau bout encore dans une casserole oubliée. Un couteau manque au râtelier mural.']
+    }
+  }
 ];
 
 export const NOIR_ITEMS: Item[] = [
-  { id: 'revolver', name: 'Revolver .38', description: 'Un classique du genre.', isWeapon: true, canBeMurderWeapon: true },
-  { id: 'knife', name: 'Couteau de cuisine', description: 'Tranchant et efficace.', isWeapon: true, canBeMurderWeapon: true },
-  { id: 'poison', name: 'Fiole de Cyanure', description: 'Discret mais mortel.', isWeapon: true, canBeMurderWeapon: true },
-  { id: 'lighter', name: 'Briquet en argent', description: "Gravé avec des initiales.", isWeapon: false, canBeMurderWeapon: false },
-  { id: 'letter', name: 'Lettre de chantage', description: "Des menaces à peine voilées.", isWeapon: false, canBeMurderWeapon: false }
+  { 
+    id: 'revolver', name: 'Revolver .38', isWeapon: true, canBeMurderWeapon: true,
+    description: 'Un classique du genre.',
+    descriptions: {
+        normal: ['L\'arme est bien entretenue et le canon est froid.'],
+        strange: ['Le cran de sûreté n\'est pas enclenché. C\'est imprudent.'],
+        suspect: ['L\'odeur de la poudre est encore fraîche. Une balle manque dans le barillet.']
+    }
+  },
+  { 
+    id: 'knife', name: 'Couteau de cuisine', isWeapon: true, canBeMurderWeapon: true,
+    description: 'Tranchant et efficace.',
+    descriptions: {
+        normal: ['Un simple couteau de cuisine, utile pour couper les oignons.'],
+        strange: ['Le couteau semble avoir été utilisé récemment pour autre chose que de la cuisine.'],
+        suspect: ['La lame est propre, trop propre. Comme si elle venait d\'être récurée.']
+    }
+  },
+  { 
+    id: 'poison', name: 'Fiole de Cyanure', isWeapon: true, canBeMurderWeapon: true,
+    description: 'Discret mais mortel.',
+    descriptions: {
+        normal: ['Une petite fiole étiquetée "Poison", scellée par la pharmacie.'],
+        strange: ['L\'étiquette de la fiole est légèrement déchirée.'],
+        suspect: ['Le bouchon n\'est pas bien scellé. Quelques gouttes de liquide incolore perlent sur le verre.']
+    }
+  },
+  { id: 'lighter', name: 'Briquet en argent', description: "Gravé avec des initiales.", isWeapon: false, canBeMurderWeapon: false, 
+    descriptions: {
+        normal: ['Un briquet élégant qui fonctionne parfaitement.'],
+        strange: ['Le briquet est chaud au toucher.'],
+        suspect: ['Le briquet porte des traces de sang séché sur le capot.']
+    }
+  },
+  { id: 'letter', name: 'Lettre de chantage', description: "Des menaces à peine voilées.", isWeapon: false, canBeMurderWeapon: false,
+    descriptions: {
+        normal: ['Une lettre écrite à la main, demandant une rançon.'],
+        strange: ['Le papier est froissé et semble avoir été arraché à un carnet.'],
+        suspect: ['La lettre mentionne explicitement le nom du tueur par erreur.']
+    }
+  }
 ];
 
 export const NOIR_MOTIVES: string[] = [

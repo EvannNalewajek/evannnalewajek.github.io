@@ -1,5 +1,5 @@
 import { Injectable, signal, computed } from '@angular/core';
-import { Character, Room, Item, Clue, Alibi, Mystery, GameState, Personality, RelationshipType } from '../models/detective.model';
+import { Character, Room, Item, Clue, Alibi, Mystery, GameState, Personality, RelationshipType, SuspicionLevel } from '../models/detective.model';
 import { NOIR_CHARACTERS, NOIR_ROOMS, NOIR_ITEMS, NOIR_MOTIVES, HENDERSON, PERSONALITIES, DIALOGUE_TEMPLATES } from '../data/noir-data';
 
 @Injectable({
@@ -10,12 +10,19 @@ export class DetectiveService {
     mystery: null,
     discoveredClues: [],
     interrogationHistory: {},
+    playerDeductions: { killerId: '', weaponId: '', roomId: '', motive: '' },
     currentRoomId: null,
     isGameOver: false,
     gameResult: null
   });
 
   interrogatingCharacterId = signal<string | null>(null);
+
+  // Internal state to track assigned description levels per game
+  private assignedSuspicionLevels = {
+    rooms: {} as Record<string, SuspicionLevel>,
+    items: {} as Record<string, SuspicionLevel>
+  };
 
   // Selectors
   state = computed(() => this._state());
@@ -36,17 +43,14 @@ export class DetectiveService {
     const state = this._state();
     if (!state.mystery || !state.currentRoomId) return [];
     
-    // Suspects at their alibi location
     const suspects = state.mystery.suspects.filter(s => {
       const alibi = state.mystery?.alibis.find(a => a.characterId === s.id);
       return alibi?.locationId === state.currentRoomId;
     });
 
-    // Add Henderson if he is in the current room (let's say he follows the player or stays at the bar)
     if (state.currentRoomId === 'bar') {
         return [...suspects, HENDERSON];
     }
-
     return suspects;
   });
 
@@ -54,65 +58,43 @@ export class DetectiveService {
     const state = this._state();
     if (!state.mystery || !state.currentRoomId) return [];
     
-    // For now, let's just place the murder weapon in the murder room as a clue
-    if (state.currentRoomId === state.mystery.murderRoom.id) {
-        return [state.mystery.murderWeapon];
-    }
-    return [];
+    const items = state.mystery.items.filter(i => {
+        const itemLocation = (state.mystery as any).itemsLocations?.[i.id];
+        return itemLocation === state.currentRoomId;
+    });
+    return items;
   });
 
   constructor() {}
 
-  /**
-   * Generates a new procedural mystery.
-   */
   generateNewGame() {
-    // 1. Selection (Henderson is NEVER victim or killer)
     const baseCharacters = this.shuffle([...NOIR_CHARACTERS]);
-    const numSuspects = Math.floor(Math.random() * 3) + 4; // 4 to 6 suspects
+    const numSuspects = Math.floor(Math.random() * 3) + 4;
     const selectedCharacters = baseCharacters.slice(0, numSuspects + 1);
 
     const victim = selectedCharacters[0];
     const killer = selectedCharacters[1];
     const suspects = selectedCharacters.slice(1);
     
-    // Assign Personalities
-    suspects.forEach(s => {
-      s.personality = PERSONALITIES[Math.floor(Math.random() * PERSONALITIES.length)];
-    });
+    suspects.forEach(s => s.personality = PERSONALITIES[Math.floor(Math.random() * PERSONALITIES.length)]);
     victim.personality = PERSONALITIES[Math.floor(Math.random() * PERSONALITIES.length)];
 
-    // Assign Relationships (Symmetrical)
     suspects.forEach(s => s.relationships = []);
-    
     const relTypes: RelationshipType[] = ['friend', 'enemy', 'lover', 'colleague', 'rival', 'debtor'];
 
     for (let i = 0; i < suspects.length; i++) {
       const s1 = suspects[i];
-      
-      // Mandatory relationship with victim
       const vRel = relTypes[Math.floor(Math.random() * relTypes.length)];
       s1.relationships!.push({ targetId: victim.id, type: vRel, description: '' });
 
-      // Relationship with other suspects (ensure symmetry)
       for (let j = i + 1; j < suspects.length; j++) {
         const s2 = suspects[j];
-        
-        // 60% chance of having a link, otherwise 'stranger'
         if (Math.random() > 0.4) {
           const type = relTypes[Math.floor(Math.random() * relTypes.length)];
-          
           s1.relationships!.push({ targetId: s2.id, type: type, description: '' });
-          
-          // Symmetrical link for s2
           if (!s2.relationships) s2.relationships = [];
-          
-          // Basic logic for symmetry: 
-          // lover <-> lover, friend <-> friend, enemy <-> enemy, etc.
-          // debtor <-> creditor (rival for simplicity)
           let s2Type = type;
           if (type === 'debtor') s2Type = 'rival'; 
-          
           s2.relationships.push({ targetId: s1.id, type: s2Type, description: '' });
         }
       }
@@ -126,44 +108,47 @@ export class DetectiveService {
     const murderWeapon = items.find(i => i.canBeMurderWeapon) || items[0];
     const motive = motives[Math.floor(Math.random() * motives.length)];
 
-    // 2. Generate Alibis
+    const itemsLocations: Record<string, string> = {};
+    items.forEach(item => {
+        const randomRoom = rooms[Math.floor(Math.random() * rooms.length)];
+        itemsLocations[item.id] = randomRoom.id;
+    });
+
     const alibis: Alibi[] = [];
     suspects.forEach((suspect) => {
       const isKiller = suspect.id === killer.id;
       const room = rooms[Math.floor(Math.random() * rooms.length)];
-      
-      alibis.push({
-        characterId: suspect.id,
-        locationId: room.id,
-        isFake: isKiller,
-        timeSlot: '21:00'
-      });
+      alibis.push({ characterId: suspect.id, locationId: room.id, isFake: isKiller, timeSlot: '21:00' });
     });
 
-    const clues: Clue[] = [{
-      id: 'clue_weapon',
-      name: `Traces de ${murderWeapon.name}`,
-      description: `Des traces suspectes indiquent que le crime a été commis avec ${murderWeapon.name}.`,
-      type: 'physical'
-    }];
+    // Assign suspicion levels
+    this.assignedSuspicionLevels.rooms = {};
+    rooms.forEach(r => {
+      if (r.id === murderRoom.id) {
+        this.assignedSuspicionLevels.rooms[r.id] = 'suspect';
+      } else {
+        this.assignedSuspicionLevels.rooms[r.id] = Math.random() > 0.6 ? 'strange' : 'normal';
+      }
+    });
 
-    const mystery: Mystery = {
-      victim,
-      killer,
-      murderWeapon,
-      murderRoom,
-      motive,
-      suspects,
-      rooms,
-      items,
-      clues,
-      alibis
+    this.assignedSuspicionLevels.items = {};
+    items.forEach(i => {
+      if (i.id === murderWeapon.id) {
+        this.assignedSuspicionLevels.items[i.id] = 'suspect';
+      } else {
+        this.assignedSuspicionLevels.items[i.id] = Math.random() > 0.6 ? 'strange' : 'normal';
+      }
+    });
+
+    const mystery: Mystery & { itemsLocations: Record<string, string> } = {
+      victim, killer, murderWeapon, murderRoom, motive, suspects, rooms, items, clues: [], alibis, itemsLocations
     };
 
     this._state.set({
       mystery,
       discoveredClues: [],
       interrogationHistory: {},
+      playerDeductions: { killerId: '', weaponId: '', roomId: '', motive: '' },
       currentRoomId: rooms[0].id,
       isGameOver: false,
       gameResult: null
@@ -172,6 +157,31 @@ export class DetectiveService {
 
   setCurrentRoom(roomId: string) {
     this._state.update(s => ({ ...s, currentRoomId: roomId }));
+  }
+
+  examineCurrentRoom() {
+    const state = this._state();
+    const mystery = state.mystery;
+    const room = this.currentRoom();
+    if (!mystery || !room) return;
+
+    const level = this.assignedSuspicionLevels.rooms[room.id] || 'normal';
+    const descOptions = room.descriptions[level];
+    const desc = descOptions[Math.floor(Math.random() * descOptions.length)];
+    
+    this.discoverClue({
+        id: `examine_${room.id}`,
+        name: `Observation : ${room.name}`,
+        description: desc,
+        type: 'physical'
+    });
+  }
+
+  updatePlayerDeduction(field: keyof GameState['playerDeductions'], value: string) {
+    this._state.update(s => ({
+        ...s,
+        playerDeductions: { ...s.playerDeductions, [field]: value }
+    }));
   }
 
   discoverClue(clue: Clue) {
@@ -184,70 +194,40 @@ export class DetectiveService {
   private updateInterrogationHistory(characterId: string, topic: string) {
     this._state.update(s => {
       const history = { ...s.interrogationHistory };
-      if (!history[characterId]) {
-        history[characterId] = [];
-      }
-      if (!history[characterId].includes(topic)) {
-        history[characterId] = [...history[characterId], topic];
-      }
+      if (!history[characterId]) history[characterId] = [];
+      if (!history[characterId].includes(topic)) history[characterId] = [...history[characterId], topic];
       return { ...s, interrogationHistory: history };
     });
   }
 
   askAboutAlibi(characterId: string): string {
-    if (characterId === HENDERSON.id) {
-        return "Moi ? J'étais au poste, à remplir de la paperasse. Comme d'habitude.";
-    }
-
+    if (characterId === HENDERSON.id) return "Moi ? J'étais au poste, à remplir de la paperasse. Comme d'habitude.";
     const mystery = this.mystery();
-    if (!mystery) return "...";
-    
-    const char = mystery.suspects.find(s => s.id === characterId);
-    const alibi = mystery.alibis.find(a => a.characterId === characterId);
-    const room = mystery.rooms.find(r => r.id === alibi?.locationId);
-    
+    const char = mystery?.suspects.find(s => s.id === characterId);
+    const alibi = mystery?.alibis.find(a => a.characterId === characterId);
+    const room = mystery?.rooms.find(r => r.id === alibi?.locationId);
     if (!char || !alibi || !room) return "Je ne sais plus.";
 
-    // Track in history
     this.updateInterrogationHistory(characterId, 'alibi');
-
     const templates = DIALOGUE_TEMPLATES['alibi'][char.personality || 'friendly'];
     const template = templates[Math.floor(Math.random() * templates.length)];
-    
     let text = template.replace(/{room}/g, room.shortName || room.name);
     text = text.replace(/{room_at}/g, room.preposition);
     text = text.replace(/{room_at_cap}/g, room.preposition.charAt(0).toUpperCase() + room.preposition.slice(1));
-    
-    // For specific cases like "Les ombres de la cuisine" vs "Les ombres du Speakeasy"
-    let dePrep = 'de la';
-    if (room.preposition === 'au') dePrep = 'du';
-    if (room.preposition === 'dans le') dePrep = 'du';
-    if (room.preposition === 'dans les') dePrep = 'des';
+    let dePrep = room.preposition === 'au' || room.preposition === 'dans le' ? 'du' : room.preposition === 'dans les' ? 'des' : 'de la';
     text = text.replace(/{room_at_de}/g, dePrep);
-
     return text;
   }
 
   askAboutPerson(subjectId: string, targetId: string): string {
-    if (subjectId === HENDERSON.id) {
-        if (targetId === HENDERSON.id) return "C'est moi, petit malin.";
-        return "Un sacré dossier sur cette personne. Soyez prudent.";
-    }
-
+    if (subjectId === HENDERSON.id) return targetId === HENDERSON.id ? "C'est moi, petit malin." : "Un sacré dossier sur cette personne. Soyez prudent.";
     const mystery = this.mystery();
-    if (!mystery) return "...";
-    
-    const subject = mystery.suspects.find(s => s.id === subjectId);
-    if (!subject) return "...";
-
-    // Track in history
+    const subject = mystery?.suspects.find(s => s.id === subjectId);
+    if (!mystery || !subject) return "...";
     this.updateInterrogationHistory(subjectId, `person_${targetId}`);
-
     if (subjectId === targetId) return "C'est moi. Vous avez besoin de lunettes ?";
-
     const target = mystery.suspects.find(s => s.id === targetId) || (mystery.victim.id === targetId ? mystery.victim : null);
     if (!target) return "Je ne connais pas cette personne.";
-
     const relationship = subject.relationships?.find(r => r.targetId === targetId);
     const relType = relationship?.type || 'stranger';
 
@@ -256,41 +236,29 @@ export class DetectiveService {
         const template = templates[Math.floor(Math.random() * templates.length)];
         return template.replace(/{victim}/g, target.name);
     }
-    
     const templates = DIALOGUE_TEMPLATES['suspect'][relType];
     const template = templates[Math.floor(Math.random() * templates.length)];
     return template.replace(/{target}/g, target.name);
   }
 
   askHendersonSpecial(type: 'family' | 'drink'): string {
-    if (type === 'family') {
-        return "Ma femme ? Toujours en train de se plaindre de mes heures sup', mais elle m'attend avec un bon ragoût. Merci de demander, gamin.";
-    }
-    return "Un verre ? Après avoir bouclé cette affaire, c'est moi qui régale au bar d'en face !";
+    return type === 'family' ? "Ma femme ? Toujours en train de se plaindre de mes heures sup', mais elle m'attend avec un bon ragoût. Merci de demander, gamin." : "Un verre ? Après avoir bouclé cette affaire, c'est moi qui régale au bar d'en face !";
   }
 
   accuse(killerId: string, weaponId: string, roomId: string, motive: string) {
     const mystery = this.mystery();
     if (!mystery) return;
-
-    const isKillerCorrect = killerId === mystery.killer.id;
-    const isWeaponCorrect = weaponId === mystery.murderWeapon.id;
-    const isRoomCorrect = roomId === mystery.murderRoom.id;
-    
-    // Motive is harder to check exactly if it's string-based, 
-    // but in a simple version we just check if it matches the one we picked.
-    const isMotiveCorrect = motive === mystery.motive;
-
-    const isWin = isKillerCorrect && isWeaponCorrect && isRoomCorrect && isMotiveCorrect;
-
-    this._state.update(s => ({
-      ...s,
-      isGameOver: true,
-      gameResult: isWin ? 'win' : 'loss'
-    }));
+    const isWin = killerId === mystery.killer.id && weaponId === mystery.murderWeapon.id && roomId === mystery.murderRoom.id && motive === mystery.motive;
+    this._state.update(s => ({ ...s, isGameOver: true, gameResult: isWin ? 'win' : 'loss' }));
   }
 
-  private shuffle<T>(array: T[]): T[] {
-    return array.sort(() => Math.random() - 0.5);
+  getItemDescription(itemId: string): string {
+    const item = this.mystery()?.items.find(i => i.id === itemId);
+    if (!item) return '';
+    const level = this.assignedSuspicionLevels.items[itemId] || 'normal';
+    const options = item.descriptions[level];
+    return options[Math.floor(Math.random() * options.length)];
   }
+
+  private shuffle<T>(array: T[]): T[] { return array.sort(() => Math.random() - 0.5); }
 }

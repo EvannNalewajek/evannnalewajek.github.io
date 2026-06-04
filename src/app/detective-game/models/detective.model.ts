@@ -19,17 +19,21 @@ export interface Character {
   secret?: string; // Information hidden by the character (red herring)
 }
 
+export type SuspicionLevel = 'normal' | 'strange' | 'suspect';
+
 export interface Room {
   id: string;
   name: string;
-  shortName?: string; // e.g., "Speakeasy" instead of "Le Speakeasy"
+  shortName?: string;
   description: string;
-  preposition: string; // e.g., "dans les", "au", "à la", "dans la"
-  svgPath?: string; // For the interactive map
+  preposition: string;
+  svgPath?: string;
   x?: number;
   y?: number;
   width?: number;
   height?: number;
+  // Tiered descriptions
+  descriptions: Record<SuspicionLevel, string[]>;
 }
 
 export interface Item {
@@ -38,6 +42,8 @@ export interface Item {
   description: string;
   isWeapon: boolean;
   canBeMurderWeapon: boolean;
+  // Tiered descriptions
+  descriptions: Record<SuspicionLevel, string[]>;
 }
 
 export interface Clue {
@@ -73,6 +79,15 @@ export interface GameState {
   mystery: Mystery | null;
   discoveredClues: Clue[];
   interrogationHistory: { [characterId: string]: string[] }; // characterId -> topics asked
+  
+  // Player's manual notes/deductions
+  playerDeductions: {
+    killerId: string;
+    weaponId: string;
+    roomId: string;
+    motive: string;
+  };
+
   currentRoomId: string | null;
   isGameOver: boolean;
   gameResult: 'win' | 'loss' | null;
