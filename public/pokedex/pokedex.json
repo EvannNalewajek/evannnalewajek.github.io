@@ -151,8 +151,8 @@
   },
   {
     "id": 5,
-    "slug": "banquignis",
-    "name": "Banquignis",
+    "slug": "ursignis",
+    "name": "Ursignis",
     "types": [
       "Feu",
       "Glace"
@@ -170,8 +170,8 @@
     },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/pokemon/banquignis_sprite.png",
-      "artwork": "pokedex/img/pokemon/banquignis_artwork.png"
+      "sprite": "pokedex/img/pokemon/ursignis_sprite.png",
+      "artwork": "pokedex/img/pokemon/ursignis_artwork.png"
     },
     "baseStats": {
       "hp": 88,
@@ -183,7 +183,7 @@
     },
     "description": "On pense que ses caractéristiques étranges sont dû à une adaptation brutale face à son environnement. Il mange énormément pour compenser l'énergie qu'il brûle en permanence pour conserver sa chaleur.",
     "etymology": {
-      "banquise": "plage de glace flottante",
+      "ursidae": "famille des ours en latin",
       "ignis": "feu en latin"
     }
   },
@@ -264,8 +264,8 @@
   },
   {
     "id": 8,
-    "slug": "siltotl",
-    "name": "Siltotl",
+    "slug": "torridotl",
+    "name": "Torridotl",
     "types": [
       "Eau",
       "Sol"
@@ -283,8 +283,8 @@
     },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/pokemon/siltotl_sprite.png",
-      "artwork": "pokedex/img/pokemon/siltotl_artwork.png"
+      "sprite": "pokedex/img/pokemon/torridotl_sprite.png",
+      "artwork": "pokedex/img/pokemon/torridotl_artwork.png"
     },
     "baseStats": {
       "hp": 70,
@@ -296,7 +296,7 @@
     },
     "description": "Pour fuir ses prédateurs, il se cache sous la terre ou la boue. Il est même capable de changer légèrement sa couleur afin de se camoufler.",
     "etymology": {
-      "silt": "limon, boue",
+      "torride": "chaud, brûlant",
       "axolotl": "amphibien aquatique mexicain"
     }
   },
@@ -340,8 +340,8 @@
   },
   {
     "id": 10,
-    "slug": "scavalin",
-    "name": "Scavalin",
+    "slug": "scrapvalin",
+    "name": "Scrapvalin",
     "types": [
       "Normal"
     ],
@@ -359,8 +359,8 @@
     },
     "captureRate": 255,
     "images": {
-      "sprite": "pokedex/img/pokemon/scavalin_sprite.png",
-      "artwork": "pokedex/img/pokemon/scavalin_artwork.png"
+      "sprite": "pokedex/img/pokemon/scrapvalin_sprite.png",
+      "artwork": "pokedex/img/pokemon/scrapvalin_artwork.png"
     },
     "baseStats": {
       "hp": 45,
@@ -372,14 +372,14 @@
     },
     "description": "Il collectionne les morceaux de métal qu'il trouve dans les ruines. Il s'en sert pour se protéger, mais aussi pour impressionner ses congénères.",
     "etymology": {
-      "scavenger": "charognard en anglais, animal qui fouille pour trouver de la nourriture",
+      "scrap": "morceau de feraille",
       "malin": "personne rusée et débrouillarde"
     }
   },
   {
     "id": 11,
-    "slug": "feraccoon",
-    "name": "Feraccoon",
+    "slug": "brigacier",
+    "name": "Brigacier",
     "formName": "Défensive",
     "types": [
       "Normal",
@@ -399,8 +399,8 @@
     },
     "captureRate": 255,
     "images": {
-      "sprite": "pokedex/img/pokemon/feraccoon_def_sprite.png",
-      "artwork": "pokedex/img/pokemon/feraccoon_def_artwork.png"
+      "sprite": "pokedex/img/pokemon/brigacier_def_sprite.png",
+      "artwork": "pokedex/img/pokemon/brigacier_def_artwork.png"
     },
     "baseStats": {
       "hp": 70,
@@ -412,14 +412,14 @@
     },
     "description": "Il vit dans les décharges et entrepôts abandonnés. Son intelligence lui a permis de manipuler les débris métalliques qu'il trouve pour s'en faire des outils et armures utiles, en imitant les humains.",
     "etymology": {
-      "fer": "métal",
-      "raccoon": "raton laveur en anglais"
+      "Brigand": "personne qui vole ou pille",
+      "Acier": "métal dur et résistant"
     }
   },
   {
     "id": 11,
-    "slug": "feraccoon",
-    "name": "Feraccoon",
+    "slug": "brigacier",
+    "name": "Brigacier",
     "formName": "Offensive",
     "types": [
       "Normal",
@@ -439,8 +439,8 @@
     },
     "captureRate": 255,
     "images": {
-      "sprite": "pokedex/img/pokemon/feraccoon_atk_sprite.png",
-      "artwork": "pokedex/img/pokemon/feraccoon_atk_artwork.png"
+      "sprite": "pokedex/img/pokemon/brigacier_atk_sprite.png",
+      "artwork": "pokedex/img/pokemon/brigacier_atk_artwork.png"
     },
     "baseStats": {
       "hp": 70,
@@ -452,8 +452,8 @@
     },
     "description": "Il vit dans les décharges et entrepôts abandonnés. Son intelligence lui a permis de manipuler les débris métalliques qu'il trouve pour s'en faire des outils et armures utiles, en imitant les humains.",
     "etymology": {
-      "fer": "métal",
-      "raccoon": "raton laveur en anglais"
+      "Brigand": "personne qui vole ou pille",
+      "Acier": "métal dur et résistant"
     }
   },
   {
@@ -920,8 +920,8 @@
   },
   {
     "id": 23,
-    "slug": "golebin",
-    "name": "Golebin",
+    "slug": "minitrine",
+    "name": "Minitrine",
     "types": [
       "Roche"
     ],
@@ -939,8 +939,8 @@
     },
     "captureRate": 190,
     "images": {
-      "sprite": "pokedex/img/pokemon/golebin_sprite.png",
-      "artwork": "pokedex/img/pokemon/golebin_artwork.png"
+      "sprite": "pokedex/img/pokemon/minitrine_sprite.png",
+      "artwork": "pokedex/img/pokemon/minitrine_artwork.png"
     },
     "baseStats": {
       "hp": 72,
@@ -952,14 +952,14 @@
     },
     "description": "Il frappe les pierres pour endurcir ses poings. Malgré son air grincheux, il cherche surtout à s'entraîner.",
     "etymology": {
-      "golem": "créature de pierre animée dans la mythologie juive",
-      "bambin": "jeune enfant"
+      "Mini": "petit en anglais",
+      "Citrine": "pierre précieuse jaune"
     }
   },
   {
     "id": 24,
-    "slug": "golepoing",
-    "name": "Golepoing",
+    "slug": "montargile",
+    "name": "Montargile",
     "types": [
       "Roche",
       "Combat"
@@ -978,8 +978,8 @@
     },
     "captureRate": 95,
     "images": {
-      "sprite": "pokedex/img/pokemon/golepoing_sprite.png",
-      "artwork": "pokedex/img/pokemon/golepoing_artwork.png"
+      "sprite": "pokedex/img/pokemon/montargile_sprite.png",
+      "artwork": "pokedex/img/pokemon/montargile_artwork.png"
     },
     "baseStats": {
       "hp": 90,
@@ -991,14 +991,14 @@
     },
     "description": "Son corps se polit à force d'entraînement. Il peut briser un rocher d'un seul coup de poing.",
     "etymology": {
-      "golem": "créature de pierre animée dans la mythologie juive",
-      "poing": "main fermée utilisée pour frapper"
+      "Montagne": "élévation naturelle du terrain",
+      "Argile": "terre fine et malléable"
     }
   },
   {
     "id": 25,
-    "slug": "golerock",
-    "name": "Golerock",
+    "slug": "pangeode",
+    "name": "Pangéode",
     "types": [
       "Roche",
       "Combat"
@@ -1017,8 +1017,8 @@
     },
     "captureRate": 45,
     "images": {
-      "sprite": "pokedex/img/pokemon/golerock_sprite.png",
-      "artwork": "pokedex/img/pokemon/golerock_artwork.png"
+      "sprite": "pokedex/img/pokemon/pangeode_sprite.png",
+      "artwork": "pokedex/img/pokemon/pangeode_artwork.png"
     },
     "baseStats": {
       "hp": 113,
@@ -1030,8 +1030,8 @@
     },
     "description": "Ses poings peuvent faire trembler le sol et fracturer n'importe quelle armure.",
     "etymology": {
-      "golem": "créature de pierre animée dans la mythologie juive",
-      "rock": "roche en anglais"
+      "Pangée": "supercontinent qui regroupait toutes les terres émergées",
+      "Géode": "roche creuse contenant des cristaux"
     }
   },
   {
@@ -1308,8 +1308,8 @@
   },
   {
     "id": 32,
-    "slug": "plumargent",
-    "name": "Plumargent",
+    "slug": "baptargent",
+    "name": "Baptargent",
     "types": [
       "Vol",
       "Normal"
@@ -1327,8 +1327,8 @@
     },
     "captureRate": 120,
     "images": {
-      "sprite": "pokedex/img/pokemon/plumargent_sprite.png",
-      "artwork": "pokedex/img/pokemon/plumargent_artwork.png"
+      "sprite": "pokedex/img/pokemon/baptargent_sprite.png",
+      "artwork": "pokedex/img/pokemon/baptargent_artwork.png"
     },
     "baseStats": {
       "hp": 60,
@@ -1340,7 +1340,7 @@
     },
     "description": "Son plumage présente des reflets sous le soleil. On dit que sa présence est synonyme de richesse et propérité.",
     "etymology": {
-      "plume": "partie du plumage d'un oiseau",
+      "Baptème": "En réference au premier envol d'un oiseau",
       "argent": "métal précieux"
     }
   },
