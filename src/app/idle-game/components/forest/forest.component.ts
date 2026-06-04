@@ -23,6 +23,8 @@ export class ForestComponent {
   currentToast = signal<ToastItem | null>(null);
   private processingToast = false;
 
+  isShaking = signal(false);
+
   // Prevent repetition
   private lastLevelUpTick = 0;
   private lastQuestTick = 0;
@@ -89,12 +91,25 @@ export class ForestComponent {
     });
   }
 
+  playerHpPct = computed(() => {
+    const p = this.game.player();
+    if (!p) return 0;
+    return Math.max(0, Math.min(100, (p.currentHealth / p.stats.vitality) * 100));
+  });
 
+  enemyHpPct = computed(() => {
+    const e = this.game.currentEnemy();
+    if (!e) return 0;
+    return Math.max(0, Math.min(100, (e.currentHealth / e.baseHealth) * 100));
+  });
 
-  playerHpPct = computed(() =>
-    Math.max(0, Math.min(
-      100,
-      (this.game.player().currentHealth / this.game.player().stats.vitality) * 100
-    ))
-  );
+  clickAttack() {
+    this.game.clickAttack();
+    this.triggerShake();
+  }
+
+  private triggerShake() {
+    this.isShaking.set(true);
+    setTimeout(() => this.isShaking.set(false), 100);
+  }
 }

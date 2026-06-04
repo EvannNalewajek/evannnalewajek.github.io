@@ -1,45 +1,58 @@
 <section class="panel">
     <header class="row header">
-        <h2>Forest</h2>
-        <button class="link" (click)="game.leaveForest()">Quitter</button>
+        <h2>Forêt Interdite</h2>
+        <button class="link" (click)="game.leaveForest()">Abandonner</button>
     </header>
+
     <div class="stats">
-        <div>Or: <b>{{ game.player().gold | number:'1.0-0'}}</b></div>
-        <div>Niv: <b>{{ game.player().level }}</b></div>
-        <div>PV: <b>{{ game.player().currentHealth | number:'1.0-0' }}</b> / {{ game.player().stats.vitality }}</div>
+        <div>OR: <b class="gold">{{ game.player().gold | number:'1.0-0'}}</b></div>
+        <div>NIV: <b>{{ game.player().level }}</b></div>
         <div>DPS: <b>{{ game.playerDPS() | number:'1.1-1' }}</b></div>
+        <div>BASE ATK: <b>{{ game.player().stats.strength }}</b></div>
     </div>
 
-    <div class="bar hp">
-        <div class="fill" [style.width.%]="game.playerHealthPercent()"></div>
+    <div class="hp-section">
+        <div class="label">HÉROS PV: {{ game.player().currentHealth | number:'1.0-0' }} / {{ game.player().stats.vitality }}</div>
+        <div class="bar hp">
+            <div class="fill" [style.width.%]="playerHpPct()"></div>
+        </div>
     </div>
 
-      <div class="xp-bar">
-        <div class="fill" [style.width.%]="game.experiencePercent()"></div>
+    <div class="xp-section">
+        <div class="xp-bar">
+            <div class="fill" [style.width.%]="game.experiencePercent()"></div>
+        </div>
+        <div class="xp-label">
+            EXP: {{ game.player().experience }} / {{ game.getExperienceForLevel(game.player().level || 1) }}
+            ({{ game.experiencePercent() | number:'1.0-0' }}%)
+        </div>
     </div>
-    <div class="xp-label">
-        XP: {{ game.player().experience }} / {{ game.getExperienceForLevel(game.player().level || 1) }}
-        ({{ game.experiencePercent() | number:'1.0-0' }}%)
-    </div>
+
+    <hr style="border: 1px solid #fff; margin: 1rem 0;">
 
     <ng-container *ngIf="game.currentEnemy() as e; else loading">
-        <div class="enemy-card">
+        <div class="enemy-card" [class.shake]="isShaking()">
             <h3>{{ e.name }}</h3>
-            <p>HP: {{ e.currentHealth | number:'1.0-0' }} / {{ e.baseHealth }}</p>
-            <div class="bar hp">
-                <div class="fill" [style.width.%]="game.enemyHealthPercent()"></div>
+            <div class="enemy-hp-container">
+                <div class="label">ENNEMI PV: {{ e.currentHealth | number:'1.0-0' }} / {{ e.baseHealth }}</div>
+                <div class="bar hp mob">
+                    <div class="fill" [style.width.%]="enemyHpPct()"></div>
+                </div>
             </div>
-            <p>ATK: {{ e.baseDamage }} - SPD: {{ e.attackSpeed }}</p>
-            <p>Butin: {{ e.baseGoldReward }}</p>
+            
+            <div class="enemy-details">
+                <span>ATK: {{ e.baseDamage }}</span>
+                <span>VIT: {{ e.attackSpeed }}s</span>
+            </div>
 
-            <button class="primary" (click)="game.clickAttack()">
-                Attaquer ({{ game.player().stats.strength }})
+            <button class="primary" (click)="clickAttack()">
+                FRAPPER ! ({{ game.player().stats.strength }})
             </button>
         </div>
     </ng-container>
 
     <ng-template #loading>
-        <p>Un ennemi arrive...</p>
+        <div class="loading-msg">Un monstre approche des ombres...</div>
     </ng-template>
 
     <div class="popup"

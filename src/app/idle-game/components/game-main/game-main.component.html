@@ -20,7 +20,7 @@
       <button [class.active]="isForest()" (click)="go('forest')">Forêt</button>
     </nav>
 
-    <section class="view">
+    <section class="view jrpg-box">
       <app-guild *ngIf="isGuild()"></app-guild>
       <app-forest *ngIf="isForest()"></app-forest>
       <app-recruits *ngIf="isRecruit()"></app-recruits>
