@@ -1,4 +1,18 @@
 <div class="home-container">
+  
+  <!-- Background Decor -->
+  <div class="synthwave-bg">
+    <div class="sun"></div>
+    <div class="particles">
+        @for (p of [].constructor(20); track $index) {
+            <div class="particle"></div>
+        }
+    </div>
+    <div class="grid-container">
+      <div class="grid"></div>
+    </div>
+    <div class="scanlines"></div>
+  </div>
 
   <!-- Navbar -->
   <mat-toolbar color="primary" class="navbar">
@@ -15,7 +29,7 @@
   <div class="container">
     <swiper-container
   class="mySwiper"
-  slides-per-view="1.1"
+  slides-per-view="auto"
   centered-slides="true"
   effect="coverflow"
   autoplay-delay="3000"
@@ -28,7 +42,7 @@
   navigation="true"
 >
   <swiper-slide>
-    <div class="carousel-item">
+    <div class="carousel-item theme-idle">
       <h2>Idle Game</h2>
       <a [routerLink]="['/guilde']" mat-raised-button>
         Jouer
@@ -36,7 +50,7 @@
     </div>
   </swiper-slide>
   <swiper-slide>
-    <div class="carousel-item">
+    <div class="carousel-item theme-enigme">
       <h2>Énigme</h2>
       <a [routerLink]="['/enigmemain']" mat-raised-button>
         Jouer
@@ -44,10 +58,18 @@
     </div>
   </swiper-slide>
   <swiper-slide>
-    <div class="carousel-item">
+    <div class="carousel-item theme-pokedex">
       <h2>Pokédex</h2>
       <a [routerLink]="['/pokedex']" mat-raised-button>
         Consulter
+      </a>
+    </div>
+  </swiper-slide>
+  <swiper-slide>
+    <div class="carousel-item theme-detective">
+      <h2>Détective</h2>
+      <a [routerLink]="['/detective']" mat-raised-button>
+        Enquêter
       </a>
     </div>
   </swiper-slide>
