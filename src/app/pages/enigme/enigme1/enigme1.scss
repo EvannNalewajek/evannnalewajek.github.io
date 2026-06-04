@@ -1,137 +1,157 @@
-.riddle{
-    max-width:780px;margin-inline:auto
+.riddle {
+  max-width: 780px;
+  margin-inline: auto;
+  padding: 2rem;
+  background: #050505;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .key {
-  color: #fff;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: #0a0a0a; // Almost invisible
+  font-family: 'Press Start 2P', cursive;
+  font-size: 8px;
   user-select: text;
   cursor: default;
-}
+  transition: color 0.5s;
 
-.stage {
-  display: grid;
-  width: min(560px, 92vw);
-  margin: 0 auto;
-  place-items: center;
+  &:hover {
+    color: #003300; // Still subtle but readable
+  }
 }
 
 .pad {
-  width: 100%;
-  background: #fff;
-  border-radius: 20px;
-  box-shadow: 0 14px 40px rgba(0,0,0,.12);
-  padding: 18px;
+  width: min(400px, 92vw);
+  background: rgba(0, 20, 0, 0.8);
+  border: 3px solid #00ff41;
+  box-shadow: 0 0 20px rgba(0, 255, 65, 0.2), inset 0 0 10px rgba(0, 255, 65, 0.2);
+  padding: 24px;
   display: grid;
-  gap: 14px;
+  gap: 20px;
+  position: relative;
+  
+  &::before {
+    content: "SECURE ACCESS TERMINAL";
+    position: absolute;
+    top: -12px;
+    left: 20px;
+    background: #050505;
+    padding: 0 10px;
+    color: #00ff41;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+  }
 }
-@keyframes fadeIn {
-  from { opacity: 0; transform: scale(0.95); }
-  to   { opacity: 1; transform: scale(1); }
-}
-.pad.fade-in {
-  animation: fadeIn 0.6s ease forwards;
-}
-@keyframes successPulse {
-  0%   { box-shadow: 0 0 0 0 rgba(0, 200, 83, .7); }
-  70%  { box-shadow: 0 0 0 16px rgba(0, 200, 83, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(0, 200, 83, 0); }
-}
-.pad.success {
-  animation: successPulse 0.8s ease forwards;
-  border: 2px solid #00c853;
-}
-@keyframes fadeOut {
-  from { opacity: 1; transform: scale(1); }
-  to   { opacity: 0; transform: scale(0.95); }
-}
-.pad.fade-out {
-  animation: fadeOut 0.6s ease forwards;
-}
-
-@keyframes shake {
-  0%, 100% { transform: translateX(0); }
-  20% { transform: translateX(-8px); }
-  40% { transform: translateX(8px); }
-  60% { transform: translateX(-6px); }
-  80% { transform: translateX(6px); }
-}
-.pad.shake { animation: shake .4s ease; }
 
 .display {
-  height: 64px;
-  border-radius: 14px;
-  background: #f6f6f7;
-  display: grid;
-  align-content: center;
-  justify-items: center;
-  gap: 6px;
-  padding: 6px 10px;
+  height: 80px;
+  background: #000;
+  border: 2px solid #00ff41;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00ff41;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.5rem;
+  text-shadow: 0 0 10px #00ff41;
+  letter-spacing: 10px;
 }
-.dots {
-  font-size: 1.6rem;
-  letter-spacing: 6px;
-  user-select: none;
-}
+
 .slots {
   display: grid;
   grid-auto-flow: column;
-  gap: 10px;
+  gap: 15px;
   justify-content: center;
 }
+
 .slot {
-  width: 16px; 
-  height: 4px;
-  border-radius: 2px;
-  background: #d7d7db;
-  opacity: .6;
-}
-.slot.filled { 
-    background: #111; 
-    opacity: .9; 
+  width: 20px;
+  height: 20px;
+  border: 2px solid #003300;
+  background: transparent;
+  
+  &.filled {
+    background: #00ff41;
+    box-shadow: 0 0 10px #00ff41;
+    border-color: #00ff41;
+  }
 }
 
 .buttons {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  width: 100%;
+  gap: 15px;
 }
+
 .buttons > button {
-  height: 64px;
-  border-radius: 14px;
-  border: 0;
-  background: #111;
-  color: #fff;
-  font-size: 1.25rem;
-  font-weight: 700;
-  box-shadow: 0 8px 20px rgba(0,0,0,.12);
+  height: 60px;
+  background: #000;
+  border: 2px solid #00ff41;
+  color: #00ff41;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1rem;
   cursor: pointer;
-  transition: transform .06s ease, filter .15s ease;
+  transition: all 0.1s;
+
+  &:hover {
+    background: #00ff41;
+    color: #000;
+    box-shadow: 0 0 15px #00ff41;
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
 }
-.buttons > button:active { transform: translateY(1px); }
-.buttons > button.muted { background: #e9e9ec; color: #222; }
 
 .submit {
-  height: 56px;
-  border-radius: 14px;
-  border: 0;
-  background: #1a73e8;
-  color: #fff;
-  font-weight: 800;
-  font-size: 1.05rem;
+  height: 60px;
+  background: #00ff41;
+  color: #000;
+  border: none;
+  font-family: 'Press Start 2P', cursive;
+  font-weight: bold;
+  font-size: 1rem;
   cursor: pointer;
-  box-shadow: 0 10px 22px rgba(26, 115, 232, .25);
-  transition: opacity .15s ease, transform .06s ease;
+  text-transform: uppercase;
+  transition: all 0.2s;
+  
+  &:disabled {
+    background: #003300;
+    color: #006600;
+    cursor: not-allowed;
+  }
+
+  &:not(:disabled):hover {
+    box-shadow: 0 0 25px #00ff41;
+    transform: scale(1.02);
+  }
 }
-.submit:disabled {
-  opacity: .5;
-  cursor: not-allowed;
-}
-.submit:active { transform: translateY(1px); }
 
 .error {
-  margin: 0;
-  color: #d00;
+  color: #ff0000;
   text-align: center;
-  font-size: .95rem;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+  text-transform: uppercase;
+  min-height: 20px;
+  animation: flicker 0.1s infinite;
 }
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  75% { transform: translateX(10px); }
+}
+.pad.shake { animation: shake 0.2s ease-in-out 2; border-color: #ff0000; }
+
+@keyframes successPulse {
+  0% { box-shadow: 0 0 0 0 rgba(0, 255, 65, 0.7); }
+  100% { box-shadow: 0 0 30px 20px rgba(0, 255, 65, 0); }
+}
+.pad.success { animation: successPulse 1s ease-out; }

@@ -1,7 +1,49 @@
 .layout {
-    min-height: 100dvh;
+    min-height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
+    background: #050505;
+    color: #00ff41;
+    font-family: 'Press Start 2P', cursive;
+    position: relative;
+    overflow: hidden;
+
+    // Scanlines
+    &::before {
+        content: " ";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+        z-index: 200;
+        background-size: 100% 2px, 3px 100%;
+        pointer-events: none;
+    }
+
+    // Flicker
+    &::after {
+        content: " ";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: rgba(18, 16, 16, 0.1);
+        opacity: 0;
+        z-index: 201;
+        pointer-events: none;
+        animation: flicker 0.15s infinite;
+    }
+}
+
+@keyframes flicker {
+  0% { opacity: 0.1; }
+  50% { opacity: 0.2; }
+  100% { opacity: 0.1; }
 }
 
 .header {
@@ -9,40 +51,58 @@
     align-items: center;
     justify-content: space-between;
     gap: 12px;
-    padding: clamp(12px, 2vw, 24px);
+    padding: 2rem;
     position: relative;
     z-index: 10;
+    border-bottom: 2px solid #00ff41;
+    background: rgba(0, 20, 0, 0.5);
 }
 
 .title {
-    margin: 0 0 4px 0;
-    font-size: clamp(1.4rem, 2.8vw, 2rem);
+    margin: 0 0 8px 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px #00ff41;
 }
 
 .desc {
     margin: 0;
+    font-size: 8px;
+    line-height: 1.6;
+    color: #006600;
 }
 
 .quit {
-  background: #e53935;
-  color: #fff;
-  font-weight: 600;
+  background: transparent;
+  color: #ff0000;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 8px;
   padding: 8px 16px;
-  border: none;
-  border-radius: 8px;
+  border: 2px solid #ff0000;
   cursor: pointer;
-  box-shadow: 0 2px 6px rgba(0,0,0,.2);
-  transition: background 0.2s ease, transform 0.1s ease;
+  text-transform: uppercase;
+  transition: all 0.2s;
+  
+  &:hover {
+    background: #ff0000;
+    color: #000;
+    box-shadow: 0 0 15px #ff0000;
+  }
 }
 
-.quit:hover { background: #c62828; }
-.quit:active { transform: scale(0.95); }
+.content {
+    position: relative;
+    z-index: 5;
+}
 
 .tools {
-    border-top: 1px solid #eee;
-    min-height: 56px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 8px 12px;
+    border-top: 1px solid #003300;
+    min-height: 40px;
+    padding: 10px;
+    background: rgba(0, 10, 0, 0.8);
+    font-size: 8px;
+    color: #003300;
+    text-align: right;
+    position: relative;
+    z-index: 10;
 }

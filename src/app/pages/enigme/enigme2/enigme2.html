@@ -16,6 +16,7 @@
                 type="button"
                 class="key-btn"
                 [class.muted]="key.label === 'C' || key.label === '←'"
+                [class.correct]="['4','9','0','3'].includes(key.label)"
                 [style.--dx.px]="key.dx()"
                 [style.--dy.px]="key.dy()"
                 (pointerdown)="onKeyPointerDown(i, $event)"

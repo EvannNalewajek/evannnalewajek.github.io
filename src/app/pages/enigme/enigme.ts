@@ -11,9 +11,10 @@ import { Router } from "@angular/router"
 })
 export class EnigmeComponent implements OnInit, OnDestroy {
   private messages = [
-    'Bienvenue',
-    'Les énigmes classiques sont un peu ennuyeuses...',
-    "Il n'y a pas moyen de les rendre plus intéressantes ?",
+    'CONNEXION ÉTABLIE...',
+    'ILS CROIENT QUE TOUT EST SOUS CONTRÔLE.',
+    'MAIS LES FAILLES SONT PARTOUT.',
+    'TROUVEZ LA BRÈCHE.',
   ];
 
   private router = inject(Router);
@@ -91,30 +92,17 @@ export class EnigmeComponent implements OnInit, OnDestroy {
     await this.sleep(this.startDelayMs);
     if (this.destroyed) return;
 
-    // "Bienvenue"
-    await this.typeText(this.messages[0]);
-    await this.sleep(this.betweenMsgsMs);
-    if (this.destroyed) return;
+    for (const msg of this.messages) {
+      await this.typeText(msg);
+      await this.sleep(this.betweenMsgsMs);
+      if (this.destroyed) return;
 
-    // Effacement
-    await this.eraseAll();
-    await this.sleep(this.afterEraseMs);
-    if (this.destroyed) return;
-
-    // 2eme phrase
-    await this.typeText(this.messages[1]);
-    await this.sleep(this.betweenMsgsMs);
-    if (this.destroyed) return;
-
-    // Effacement
-    await this.eraseAll();
-    await this.sleep(this.afterEraseMs);
-    if (this.destroyed) return;
-
-    // 3eme phrase
-    await this.typeText(this.messages[2]);
-    await this.sleep(this.betweenMsgsMs);
-    if (this.destroyed) return;
+      if (this.messages.indexOf(msg) < this.messages.length - 1) {
+        await this.eraseAll();
+        await this.sleep(this.afterEraseMs);
+        if (this.destroyed) return;
+      }
+    }
 
     // Afficher la zone du bouton
     this.showContainer.set(true);
