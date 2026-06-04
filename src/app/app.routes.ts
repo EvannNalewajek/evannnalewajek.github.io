@@ -4,6 +4,7 @@ import { EnigmeComponent } from './pages/enigme/enigme';
 import { EnigmeLayoutComponent } from './layout/enigme-layout';
 import { Enigme1Component } from './pages/enigme/enigme1/enigme1';
 import { Enigme2Component } from './pages/enigme/enigme2/enigme2';
+import { Enigme3Component } from './pages/enigme/enigme3/enigme3';
 import { GuildeGameComponent } from './idle-game/components/game-main/game-main.component';
 import { PokedexMainComponent } from './pokedex/components/pokedex-main/pokedex-main.component';
 import { PokedexListComponent } from './pokedex/components/pokedex-list/pokedex-list.component';
@@ -68,6 +69,14 @@ export const routes: Routes = [
                 data: {
                     title: 'Énigme 2 : Encore un digicode ?', 
                     description: "J'ai envie de le casser ce digicode..." 
+                }
+            },
+            {   path: '3', 
+                component: Enigme3Component, 
+                title: 'Énigme3',
+                data: {
+                    title: 'Énigme 3 : Accès Terminal', 
+                    description: "Vous avez franchi la brèche. Maintenant, infiltrez le système." 
                 }
             },
         ]

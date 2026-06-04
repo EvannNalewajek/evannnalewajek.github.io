@@ -1,0 +1,40 @@
+<div class="terminal-page">
+    <div class="terminal-wrapper" [class.success]="success()">
+        <div class="terminal-scroll" #scrollContainer>
+            <div class="history">
+                @for (line of history(); track $index) {
+                    <div class="line" [ngClass]="line.type">
+                        @if (line.type === 'cmd') {
+                            <span class="prompt">guest@system:{{ getPathString() }}$</span>
+                        }
+                        <span class="text">{{ line.text }}</span>
+                    </div>
+                }
+            </div>
+
+            @if (!success()) {
+                <form class="input-line" (submit)="handleInput($event)">
+                    <span class="prompt">guest@system:{{ getPathString() }}$</span>
+                    <div class="input-wrapper">
+                        <span class="visible-text">{{ currentInput() }}</span>
+                        <span class="cursor"></span>
+                        <input 
+                            type="text" 
+                            name="cmd" 
+                            [(ngModel)]="currentInput" 
+                            autocomplete="off" 
+                            autofocus 
+                            (blur)="$event.target.focus()"
+                        >
+                    </div>
+                </form>
+            }
+ @else {
+                <div class="victory-message">
+                    <h2>SYSTEM CRACKED</h2>
+                    <p>Vous avez infiltré le noyau avec succès.</p>
+                </div>
+            }
+        </div>
+    </div>
+</div>
