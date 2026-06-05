@@ -1308,8 +1308,8 @@
   },
   {
     "id": 32,
-    "slug": "baptargent",
-    "name": "Baptargent",
+    "slug": "plumargent",
+    "name": "Plumargent",
     "types": [
       "Vol",
       "Normal"
@@ -1327,8 +1327,8 @@
     },
     "captureRate": 120,
     "images": {
-      "sprite": "pokedex/img/pokemon/baptargent_sprite.png",
-      "artwork": "pokedex/img/pokemon/baptargent_artwork.png"
+      "sprite": "pokedex/img/pokemon/plumargent_sprite.png",
+      "artwork": "pokedex/img/pokemon/plumargent_artwork.png"
     },
     "baseStats": {
       "hp": 60,
@@ -1340,7 +1340,7 @@
     },
     "description": "Son plumage présente des reflets sous le soleil. On dit que sa présence est synonyme de richesse et propérité.",
     "etymology": {
-      "Baptème": "En réference au premier envol d'un oiseau",
+      "Plume": "Partie du plumage d'un oiseau",
       "argent": "métal précieux"
     }
   },
