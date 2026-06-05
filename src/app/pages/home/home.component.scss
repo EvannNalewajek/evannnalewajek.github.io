@@ -6,7 +6,7 @@
     background: #050110;
     color: #fff;
     font-family: 'Orbitron', sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .synthwave-bg {
@@ -197,9 +197,10 @@
 .welcome {
   text-align: center;
   margin: 3rem 0;
+  padding: 0 1rem;
 
   h1 {
-    font-size: 4rem;
+    font-size: clamp(1.8rem, 8vw, 4rem);
     color: #fff;
     text-shadow: 
         0 0 5px #fff,
@@ -211,8 +212,11 @@
         0 0 75px #ff0080;
     font-family: 'Orbitron', sans-serif;
     text-transform: uppercase;
-    letter-spacing: 10px;
+    letter-spacing: clamp(2px, 1.5vw, 10px);
     animation: glitch 3s infinite alternate;
+    margin: 0;
+    width: 100%;
+    word-wrap: break-word;
     
     &::before, &::after {
         content: "Bibliothèque";
@@ -245,6 +249,33 @@
     font-size: 0.8rem;
     margin-top: 1rem;
     text-shadow: 0 0 5px rgba(0, 255, 224, 0.5);
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome {
+    margin: 2rem 0;
+  }
+  
+  .sun {
+    width: 280px;
+    height: 280px;
+  }
+
+  swiper-slide {
+    width: 290px !important;
+  }
+
+  .carousel-item {
+    padding: 1.5rem;
+    
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .logo {
+    font-size: 1rem;
   }
 }
 

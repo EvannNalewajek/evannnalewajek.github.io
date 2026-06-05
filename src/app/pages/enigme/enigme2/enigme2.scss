@@ -7,6 +7,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 600px) {
+    padding: 1rem;
+  }
 }
 
 .pad {
@@ -14,9 +18,9 @@
   background: rgba(0, 20, 0, 0.8);
   border: 3px solid #00ff41;
   box-shadow: 0 0 20px rgba(0, 255, 65, 0.2), inset 0 0 10px rgba(0, 255, 65, 0.2);
-  padding: 24px;
+  padding: clamp(12px, 5vw, 24px);
   display: grid;
-  gap: 20px;
+  gap: clamp(10px, 4vw, 20px);
   position: relative;
   
   &::before {
@@ -28,13 +32,13 @@
     padding: 0 10px;
     color: #ff0000;
     font-family: 'Press Start 2P', cursive;
-    font-size: 8px;
+    font-size: clamp(6px, 1.5vw, 8px);
     animation: flicker 0.2s infinite;
   }
 }
 
 .display {
-  height: 80px;
+  height: clamp(60px, 10vh, 80px);
   background: #000;
   border: 2px solid #00ff41;
   display: flex;
@@ -42,21 +46,21 @@
   justify-content: center;
   color: #00ff41;
   font-family: 'Press Start 2P', cursive;
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 5vw, 1.5rem);
   text-shadow: 0 0 10px #00ff41;
-  letter-spacing: 10px;
+  letter-spacing: clamp(4px, 3vw, 10px);
 }
 
 .slots {
   display: grid;
   grid-auto-flow: column;
-  gap: 15px;
+  gap: clamp(8px, 3vw, 15px);
   justify-content: center;
 }
 
 .slot {
-  width: 20px;
-  height: 20px;
+  width: clamp(12px, 4vw, 20px);
+  height: clamp(12px, 4vw, 20px);
   border: 2px solid #003300;
   background: transparent;
   
@@ -70,19 +74,19 @@
 .buttons {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
+  gap: clamp(8px, 3vw, 15px);
   position: relative;
 }
 
 .key-btn {
   position: relative;
   transform: translate(var(--dx, 0px), var(--dy, 0px));
-  height: 60px;
+  height: clamp(45px, 10vh, 60px);
   background: #000;
   border: 2px solid #00ff41;
   color: #00ff41;
   font-family: 'Press Start 2P', cursive;
-  font-size: 1rem;
+  font-size: clamp(0.7rem, 4vw, 1rem);
   cursor: pointer;
   transition: transform .06s ease, border-color 0.3s;
   touch-action: none;

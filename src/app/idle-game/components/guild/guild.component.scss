@@ -1,4 +1,13 @@
+.stats-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 1rem;
+    border: 1px solid #444;
+}
+
 .stats-table {
+    min-width: 300px; // Ensure table doesn't compress too much
     width: 100%;
     border-collapse: separate;
     border-spacing: 0 0.5rem;
@@ -112,16 +121,20 @@
     }
 }
 
-.info-btn {
-    background: #00ffe0;
-    color: #000;
-    border: 1px solid #fff;
-    border-radius: 50%;
-    width: 15px;
-    height: 15px;
-    font-family: serif;
-    font-weight: bold;
-    cursor: help;
-    font-size: 10px;
-    line-height: 1;
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 8px;
+
+    @media (max-width: 400px) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.2rem;
+    }
 }
+
+.muted { color: #888; font-style: italic; }
+.gold { color: var(--gold-color, #ffd700); }

@@ -79,8 +79,10 @@ import { DetectiveService } from '../services/detective.service';
     .interrogation-box {
       background: #1a1a1a;
       border: 2px solid #444;
-      width: 90%;
+      width: 95%;
       max-width: 600px;
+      max-height: 90vh;
+      overflow-y: auto;
       display: flex;
       flex-direction: column;
       box-shadow: 0 0 30px rgba(0,0,0,1);

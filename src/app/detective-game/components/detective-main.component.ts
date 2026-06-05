@@ -58,7 +58,7 @@ import { EndScreenComponent } from './end-screen.component';
   `,
   styles: [`
     .detective-container {
-      padding: 2rem;
+      padding: clamp(1rem, 5vw, 2rem);
       color: #e0e0e0;
       background: #121212;
       min-height: 100vh;
@@ -71,11 +71,14 @@ import { EndScreenComponent } from './end-screen.component';
       border-bottom: 2px solid #444;
       margin-bottom: 2rem;
       padding-bottom: 1rem;
+      gap: 1rem;
+      flex-wrap: wrap;
     }
     h1 {
       margin: 0;
       text-transform: uppercase;
       letter-spacing: 2px;
+      font-size: clamp(1rem, 4vw, 2rem);
     }
     button {
       background: #333;
@@ -84,6 +87,7 @@ import { EndScreenComponent } from './end-screen.component';
       padding: 0.5rem 1rem;
       cursor: pointer;
       transition: background 0.3s;
+      font-size: 0.8rem;
     }
     button:hover {
       background: #555;

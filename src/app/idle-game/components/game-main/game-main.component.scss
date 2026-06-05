@@ -10,10 +10,11 @@
     position: fixed; // Fix to entire screen
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     overflow-y: auto; // Allow scroll if content is long
-    padding: 1rem;
+    overflow-x: hidden;
+    padding: clamp(0.5rem, 3vw, 1rem);
     font-family: var(--font-pixel);
     font-size: 10px;
     line-height: 1.5;
@@ -40,6 +41,7 @@
     border: 4px solid var(--jrpg-border);
     padding: 1rem;
     box-shadow: inset -4px -4px 0 #5d4037;
+    gap: 10px;
 
     h1 {
         font-size: 12px;
@@ -47,12 +49,39 @@
         text-transform: uppercase;
         color: #fff;
     }
+
+    @media (max-width: 600px) {
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        h1 {
+            width: 100%;
+            text-align: center;
+            order: -1;
+            font-size: 10px;
+        }
+
+        .exit-btn, .gold, .icon-btn {
+            font-size: 8px;
+        }
+    }
 }
 
 .tabs {
     display:flex;
     gap: .5rem;
     margin-bottom: 1.5rem;
+
+    @media (max-width: 600px) {
+        flex-wrap: wrap;
+        justify-content: stretch;
+        
+        button {
+            flex: 1 1 40%;
+            padding: 0.6rem;
+            font-size: 8px;
+        }
+    }
 }
 
 .tabs button {
