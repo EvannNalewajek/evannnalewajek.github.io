@@ -340,8 +340,8 @@
   },
   {
     "id": 10,
-    "slug": "scrapvalin",
-    "name": "Scrapvalin",
+    "slug": "scrapalin",
+    "name": "Scrapalin",
     "types": [
       "Normal"
     ],
@@ -359,8 +359,8 @@
     },
     "captureRate": 255,
     "images": {
-      "sprite": "pokedex/img/pokemon/scrapvalin_sprite.png",
-      "artwork": "pokedex/img/pokemon/scrapvalin_artwork.png"
+      "sprite": "pokedex/img/pokemon/scrapalin_sprite.png",
+      "artwork": "pokedex/img/pokemon/scrapalin_artwork.png"
     },
     "baseStats": {
       "hp": 45,
@@ -458,8 +458,8 @@
   },
   {
     "id": 12,
-    "slug": "linepille",
-    "name": "Linepille",
+    "slug": "larmimille",
+    "name": "Larmimille",
     "types": [
       "Insecte"
     ],
@@ -476,8 +476,8 @@
     },
     "captureRate": 255,
     "images": {
-      "sprite": "pokedex/img/pokemon/linepille_sprite.png",
-      "artwork": "pokedex/img/pokemon/linepille_artwork.png"
+      "sprite": "pokedex/img/pokemon/larmimille_sprite.png",
+      "artwork": "pokedex/img/pokemon/larmimille_artwork.png"
     },
     "baseStats": {
       "hp": 40,
@@ -489,7 +489,8 @@
     },
     "description": "Ces Pokémon vivent collés les uns aux autres dans des galeries étroites. En fonction de leur alimentation, ces larves peuvent aussi bien devenir une simple ouvrière qu'une grand reine.",
     "etymology": {
-      "linepithema": "genre de fourmis",
+      "larve": "stade immature d'un insecte",
+      "mimi": "mignon en référence à son apparence adorable",
       "fourmille": "action de fourmiller"
     }
   },
@@ -961,10 +962,9 @@
     "slug": "montargile",
     "name": "Montargile",
     "types": [
-      "Roche",
-      "Combat"
+      "Roche"
     ],
-    "category": "Frappeur",
+    "category": "Montagne",
     "abilities": [
       "[[ability:fermete|Fermeté]]",
       "[[ability:poing-de-fer|Poing de Fer]]"
@@ -1000,8 +1000,7 @@
     "slug": "pangeode",
     "name": "Pangéode",
     "types": [
-      "Roche",
-      "Combat"
+      "Roche"
     ],
     "category": "Golem",
     "abilities": [
@@ -1155,8 +1154,7 @@
     "slug": "gloutron",
     "name": "Gloutron",
     "types": [
-      "Poison",
-      "Eau"
+      "Poison"
     ],
     "category": "Loutre visqueuse",
     "abilities": [
@@ -1194,8 +1192,7 @@
     "slug": "nemustine",
     "name": "Nemustine",
     "types": [
-      "Poison",
-      "Eau"
+      "Poison"
     ],
     "category": "Loutre visqueuse",
     "abilities": [
@@ -2705,8 +2702,8 @@
   },
   {
     "id": 64,
-    "slug": "larvantis",
-    "name": "Larvantis",
+    "slug": "lumantis",
+    "name": "Lumantis",
     "types": [
       "Fée"
     ],
@@ -2723,8 +2720,8 @@
     },
     "captureRate": 120,
     "images": {
-      "sprite": "pokedex/img/pokemon/larvantis_sprite.png",
-      "artwork": "pokedex/img/pokemon/larvantis_artwork.png"
+      "sprite": "pokedex/img/pokemon/lumantis_sprite.png",
+      "artwork": "pokedex/img/pokemon/lumantis_artwork.png"
     },
     "baseStats": {
       "hp": 46,
@@ -2736,7 +2733,7 @@
     },
     "description": "Ses petites pattes produisent de la lumière lorsqu'il les agite, ce qui l'amuse beaucoup. C'est pourquoi le fond des mers où il vit est parfois scintillant malgré l'absence de la lumière du soleil.",
     "etymology": {
-      "Larve": "Stade juvénile des stomatopodes",
+      "Lumen": "Unité de mesure de la lumière",
       "Mantis": "Référence à la crevette-mante"
     }
   },
