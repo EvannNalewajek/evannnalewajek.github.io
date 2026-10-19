@@ -1,5 +1,4 @@
-import { Component, Input } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
 import { TargetPreset, TargetCell as Cell } from '../../models/move.model';
 
 const PRESETS: Record<TargetPreset, Cell[]> = {
@@ -20,7 +19,6 @@ const PRESETS: Record<TargetPreset, Cell[]> = {
 @Component({
   selector: 'app-move-target-diagram',
   standalone: true,
-  imports: [CommonModule],
   template: `
   <div class="target-diagram">
     <div class="row">
@@ -34,35 +32,41 @@ const PRESETS: Record<TargetPreset, Cell[]> = {
       <div class="cell ally" [class.hit]="isHit('ALLY_R')">Allié</div>
     </div>
   </div>
-  <p class="target-caption">{{ caption || defaultCaption }}</p>
+  <p class="target-caption">{{ caption() || defaultCaption() }}</p>
   `,
-  styleUrls: ['./move-target-diagram.component.scss']
+  styleUrls: ['./move-target-diagram.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class MoveTargetDiagramComponent {
-  @Input() preset?: TargetPreset;
-  @Input() pattern?: Cell[];
-  @Input() caption?: string;
+  readonly preset = input<TargetPreset | undefined>();
+  readonly pattern = input<Cell[] | undefined>();
+  readonly caption = input<string | undefined>();
 
-  get active(): Set<Cell> {
-    const cells = this.pattern ?? (this.preset ? PRESETS[this.preset] : []);
+  readonly active = computed<Set<Cell>>(() => {
+    const p = this.preset();
+    const cells = this.pattern() ?? (p ? PRESETS[p] : []);
     return new Set(cells);
+  });
+
+  isHit(c: Cell): boolean {
+    return this.active().has(c);
   }
 
-  isHit(c: Cell) { return this.active.has(c); }
-
-  get defaultCaption(): string {
-    if (this.preset === 'adjacent-one') return "N'importe quel Pokémon adjacent au lanceur";
-    if (this.preset === 'adjacent-foes-all') return 'Tous les adversaires adjacents au lanceur';
-    if (this.preset === 'adjacent-all') return 'Tous les Pokémon adjacents au lanceur';
-    if (this.preset === 'all-one') return "N'importe quel Pokémon à l'exception du lanceur";
-    if (this.preset === 'ally-one') return "Un Pokémon allié adjacent au lanceur";
-    if (this.preset === 'all-allies') return "Tous les alliés";
-    if (this.preset === 'all-allies-but-self') return "Tous les alliés à l'exception du lanceur";
-    if (this.preset === 'self-or-ally') return "Le Pokémon lançant la capacité ou un allié adjacent";
-    if (this.preset === 'all-ennemies') return "Tous les adversaires";
-    if (this.preset === 'variable') return "Variable";
-    if (this.preset === 'all') return "Tous les Pokémon en combat";
-    if (this.preset === 'self') return "Le Pokémon lançant la capacité";
-    return '';
-  }
+  readonly defaultCaption = computed<string>(() => {
+    switch (this.preset()) {
+      case 'adjacent-one': return "N'importe quel Pokémon adjacent au lanceur";
+      case 'adjacent-foes-all': return 'Tous les adversaires adjacents au lanceur';
+      case 'adjacent-all': return 'Tous les Pokémon adjacents au lanceur';
+      case 'all-one': return "N'importe quel Pokémon à l'exception du lanceur";
+      case 'ally-one': return 'Un Pokémon allié adjacent au lanceur';
+      case 'all-allies': return 'Tous les alliés';
+      case 'all-allies-but-self': return "Tous les alliés à l'exception du lanceur";
+      case 'self-or-ally': return 'Le Pokémon lançant la capacité ou un allié adjacent';
+      case 'all-ennemies': return 'Tous les adversaires';
+      case 'variable': return 'Variable';
+      case 'all': return 'Tous les Pokémon en combat';
+      case 'self': return 'Le Pokémon lançant la capacité';
+      default: return '';
+    }
+  });
 }

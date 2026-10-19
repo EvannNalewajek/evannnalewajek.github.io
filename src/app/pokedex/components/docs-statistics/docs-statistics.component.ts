@@ -1,16 +1,19 @@
-import { Component, inject } from '@angular/core';
-import { CommonModule, Location } from '@angular/common';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-docs-statistics',
   standalone: true,
-  imports: [CommonModule, RouterLink],
+  imports: [RouterLink],
   templateUrl: './docs-statistics.component.html',
   styleUrls: ['./docs-statistics.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class DocsStatisticsComponent {
-  private location = inject(Location);
+  private readonly title = inject(Title);
 
-
+  constructor() {
+    this.title.setTitle('Pokédex — Statistiques');
+  }
 }

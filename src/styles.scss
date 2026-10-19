@@ -46,3 +46,21 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 *, *::before, *::after {
   box-sizing: border-box;
 }
+
+@keyframes pokedexScreenFadeOut {
+  from { opacity: 1; filter: brightness(1) blur(0); }
+  to { opacity: 0; filter: brightness(1.5) blur(3px); }
+}
+
+@keyframes pokedexScreenFadeIn {
+  from { opacity: 0; filter: brightness(1.5) blur(3px); }
+  to { opacity: 1; filter: brightness(1) blur(0); }
+}
+
+::view-transition-old(pokedex-screen) {
+  animation: pokedexScreenFadeOut 0.15s ease-in both;
+}
+
+::view-transition-new(pokedex-screen) {
+  animation: pokedexScreenFadeIn 0.25s ease-out 0.15s both;
+}

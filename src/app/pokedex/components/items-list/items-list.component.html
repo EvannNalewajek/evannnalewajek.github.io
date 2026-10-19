@@ -11,7 +11,7 @@
         </div>
 
         <div class="dex-body">
-            <div class="dex-screen">
+            <div class="dex-screen" appRouterizedContent>
                 <nav class="quick-nav">
                     <a class="nav-chip nav-green" routerLink="/pokedex/docs" title="Retour">
                         🔙 <span>Retour</span>
@@ -30,9 +30,10 @@
                 <div class="items-toolbar">
                     <input type="search"
                             placeholder="Rechercher un objet…"
+                            [value]="q()"
                             (input)="query(($any($event.target).value))" />
 
-                    <select (change)="selectSort(($any($event.target).value))">
+                    <select [value]="sortKey()" (change)="selectSort(($any($event.target).value))">
                         <option value="id">Trier par #</option>
                         <option value="name">Trier par nom</option>
                     </select>
@@ -64,7 +65,9 @@
                                     <td class="col-num" data-label="#">#{{ i.id | number:'2.0-0' }}</td>
 
                                     <td class="col-name group-end" data-label="Objet">
-                                        <img class="sprite" [routerLink]="['/pokedex/docs/items', i.slug]" [src]="i.images.sprite" [alt]="i.name + ' sprite'" loading="lazy" />
+                                        <a [routerLink]="['/pokedex/docs/items', i.slug]" [title]="i.name">
+                                            <img class="sprite" [src]="i.images.sprite" [alt]="i.name + ' sprite'" [appImageFallback]="'/pokedex/img/items/default_sprite.png'" loading="lazy" />
+                                        </a>
                                         <a class="item-name" [routerLink]="['/pokedex/docs/items', i.slug]">
                                             {{ i.name }}
                                         </a>

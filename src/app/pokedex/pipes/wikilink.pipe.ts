@@ -1,5 +1,6 @@
 import { Pipe, PipeTransform, inject } from '@angular/core';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { slugify } from '../utils/slugify';
 
 type Kind = 'move' | 'ability' | 'type' | 'pokemon' | 'item' | 'docs';
 
@@ -30,13 +31,17 @@ export class WikilinkPipe implements PipeTransform {
         if (!kind) return escapeHtml(_m);
 
         const key = rawKey.trim();
+        const normalizedSlug = slugify(key);
         const label = (rawLabel ?? rawKey).trim();
 
-        if (ctx?.kind === kind && (ctx.slug === key || ctx.id === key)) {
+        if (
+          ctx?.kind === kind &&
+          (ctx.slug === key || ctx.slug === normalizedSlug || ctx.id === key)
+        ) {
           return escapeHtml(label);
         }
 
-        const href = routeFor(kind, key);
+        const href = routeFor(kind, normalizedSlug);
         return `<a class="autolink" data-kind="${kind}" href="${href}">${escapeHtml(label)}</a>`;
       }
     );
@@ -47,32 +52,42 @@ export class WikilinkPipe implements PipeTransform {
 
 function normalizeKind(k: string): Kind | null {
   const s = k.toLowerCase();
-  if (s === 'move' || s === 'ability' || s === 'type' || s === 'pokemon' || s === 'item' || s === 'docs') return s;
+  if (s === 'does') return 'docs';
+  if (
+    s === 'move' ||
+    s === 'ability' ||
+    s === 'type' ||
+    s === 'pokemon' ||
+    s === 'item' ||
+    s === 'docs'
+  ) {
+    return s;
+  }
   return null;
 }
-function routeFor(kind: Kind, key: string): string {
+
+function routeFor(kind: Kind, slug: string): string {
   switch (kind) {
-    case 'move':     return `/pokedex/moves/${key}`;
-    case 'ability':  return `/pokedex/abilities/${key}`;
-    case 'type':     return `/pokedex/types/${slugify(key)}`;
-    case 'pokemon':  return `/pokedex/pokemons/${key}`;
-    case 'item':     return `/pokedex/docs/items/${key}`;
-    case 'docs':     return `/pokedex/docs/${key}`;
+    case 'move':
+      return `/pokedex/moves/${slug}`;
+    case 'ability':
+      return `/pokedex/abilities/${slug}`;
+    case 'type':
+      return `/pokedex/types/${slug}`;
+    case 'pokemon':
+      return `/pokedex/pokemons/${slug}`;
+    case 'item':
+      return `/pokedex/docs/items/${slug}`;
+    case 'docs':
+      return `/pokedex/docs/${slug}`;
   }
 }
-function slugify(input: string): string {
-  return input.toLowerCase().normalize('NFD')
-    .replace(/\p{Diacritic}/gu, '')
-    .replace(/\s+/g, '-')
-    .replace(/[^a-z0-9-]/g, '')
-    .replace(/--+/g, '-')
-    .replace(/^-|-$/g, '');
-}
-function escapeHtml(s: string) {
+
+function escapeHtml(s: string): string {
   return s
-    .replaceAll('&','&amp;')
-    .replaceAll('<','&lt;')
-    .replaceAll('>','&gt;')
-    .replaceAll('"','&quot;')
-    .replaceAll("'",'&#39;');
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;')
+    .replaceAll('"', '&quot;')
+    .replaceAll("'", '&#39;');
 }

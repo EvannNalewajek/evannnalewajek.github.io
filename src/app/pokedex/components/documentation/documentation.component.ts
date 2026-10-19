@@ -1,16 +1,19 @@
-import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { RouterLink } from '@angular/router';
+import { Title } from '@angular/platform-browser';
 
 @Component({
-    selector: 'app-pokedex-field',
+    selector: 'app-documentation',
     standalone: true,
-    imports: [RouterModule],
+    imports: [RouterLink],
     templateUrl: './documentation.component.html',
-    styleUrls: ['./documentation.component.scss']
+    styleUrls: ['./documentation.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class DocumentationComponent {
+    private readonly title = inject(Title);
 
-    constructor() {}
-
-    ngOnInit(): void {}
+    constructor() {
+        this.title.setTitle('Pokédex — Documentations');
+    }
 }

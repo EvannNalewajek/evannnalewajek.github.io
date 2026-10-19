@@ -1,43 +1,43 @@
-import { Component, computed, effect, inject, signal } from '@angular/core';
-import { CommonModule, Location } from '@angular/common';
+import { ChangeDetectionStrategy, Component, computed, inject } from '@angular/core';
+import { DecimalPipe } from '@angular/common';
 import { RouterLink } from '@angular/router';
+import { Title } from '@angular/platform-browser';
+import { toSignal } from '@angular/core/rxjs-interop';
 import { MovesService } from '../../services/moves.service';
 import { Move } from '../../models/move.model';
-
 import { TypeSlugPipe } from '../../pipes/type-slug.pipe';
 
 @Component({
   selector: 'app-moves-list',
   standalone: true,
-  imports: [CommonModule, RouterLink, TypeSlugPipe],
+  imports: [DecimalPipe, RouterLink, TypeSlugPipe],
   templateUrl: './moves-list.component.html',
-  styleUrls: ['./moves-list.component.scss']
+  styleUrls: ['./moves-list.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class MovesListComponent {
-  private svc = inject(MovesService);
-  private location = inject(Location);
+  private readonly svc = inject(MovesService);
+  private readonly title = inject(Title);
 
-  loading = signal<boolean>(true);
-  private _moves = signal<Move[] | null>(null);
-  private _query = this.svc.searchQuery;
-  private _type = this.svc.filterType;
-  private _category = this.svc.filterCategory;
-  private _sort = this.svc.sortKey;
+  private readonly _moves = toSignal<Move[] | null>(this.svc.getAll(), { initialValue: null });
+  readonly loading = computed(() => this._moves() === null);
+
+  readonly queryVal = this.svc.searchQuery;
+  readonly typeVal = this.svc.filterType;
+  readonly categoryVal = this.svc.filterCategory;
+  readonly sortVal = this.svc.sortKey;
 
   constructor() {
-    this.svc.getAll().subscribe(m => {
-      this._moves.set(m);
-      this.loading.set(false);
-    });
+    this.title.setTitle('Pokédex — Capacités');
   }
 
-  list = computed(() => {
+  readonly list = computed(() => {
     const data = this._moves();
     if (data === null) return null;
 
-    const q = this._query().trim().toLowerCase();
-    const t = this._type();
-    const c = this._category();
+    const q = this.queryVal().trim().toLowerCase();
+    const t = this.typeVal();
+    const c = this.categoryVal();
 
     let out = data.filter(m => {
       const matchQ = !q || m.name.toLowerCase().includes(q) || (m.desc?.toLowerCase().includes(q) ?? false);
@@ -46,7 +46,7 @@ export class MovesListComponent {
       return matchQ && matchT && matchC;
     });
 
-    const sorting = this._sort();
+    const sorting = this.sortVal();
     out = [...out].sort((a, b) => {
       const va = valueFor(a, sorting);
       const vb = valueFor(b, sorting);
@@ -59,25 +59,25 @@ export class MovesListComponent {
     return out;
   });
 
-  query(v: string) { this._query.set(v); }
-  selectType(v: string) { this._type.set(v); }
-  selectCategory(v: string) { this._category.set(v); }
-  selectSort(v: typeof this._sort extends any ? any : never) { this._sort.set(v); }
+  query(v: string) { this.queryVal.set(v); }
+  selectType(v: string) { this.typeVal.set(v); }
+  selectCategory(v: string) { this.categoryVal.set(v); }
+  selectSort(v: 'id' | 'name' | 'type' | 'category' | 'power' | 'accuracy' | 'pp' | 'priority') {
+    this.sortVal.set(v);
+  }
 
-
-
-  types = computed(() => {
+  readonly types = computed(() => {
     const set = new Set((this._moves() ?? []).map(m => m.type));
     return Array.from(set).sort();
   });
 
-  categories = [
+  readonly categories = [
     { key: 'Physique', label: 'Physique' },
-    { key: 'Spéciale', label: 'Spéciale' },
+    { key: 'Spécial',  label: 'Spéciale' },
     { key: 'Statut',   label: 'Statut'   },
   ];
 
-  sortKeys = [
+  readonly sortKeys = [
     { key: 'id', label: 'ID' },
     { key: 'name', label: 'Nom' },
     { key: 'type', label: 'Type' },

@@ -14,6 +14,7 @@
             <div class="dex-body">
                 <div
                 class="dex-screen move-detail"
+                appRouterizedContent
                 [attr.data-type1]="m.type">
                     <div class="track">
                         <nav class="quick-nav">
@@ -65,7 +66,7 @@
                                         <div class="types">
                                             <a class="type-chip"
                                             [attr.data-type]="m.type"
-                                            [routerLink]="['/pokedex/types', ($any(m.type) | typeSlug)]"
+                                            [routerLink]="['/pokedex/types', (m.type | typeSlug)]"
                                             title="Voir le type {{ m.type }}">
                                             {{ m.type }}
                                             </a>
@@ -113,14 +114,16 @@
                                         </dl>
                                     </div>
 
-                                    <section class="target-card content-card" *ngIf="m.targetPreset || m.targetPattern">
-                                        <h3>Cible</h3>
-                                        <app-move-target-diagram
-                                            class="diagram"
-                                            [preset]="m.targetPreset"
-                                            [pattern]="m.targetPattern">
-                                        </app-move-target-diagram>
-                                    </section>
+                                    @if (m.targetPreset || m.targetPattern) {
+                                        <section class="target-card content-card">
+                                            <h3>Cible</h3>
+                                            <app-move-target-diagram
+                                                class="diagram"
+                                                [preset]="m.targetPreset"
+                                                [pattern]="m.targetPattern">
+                                            </app-move-target-diagram>
+                                        </section>
+                                    }
 
                                 </div>
                             </aside>
@@ -132,31 +135,39 @@
                                         [innerHTML]="m.effect | wikilink:{ kind:'move', slug:m.slug}">
                                     </p>
 
-                                    <div class="move-extra learners" *ngIf="m.tables?.length">
-                                        <ng-container *ngFor="let t of m.tables">
-                                            <h4 *ngIf="t.title" class="move-extra-title">{{ t.title }}</h4>
+                                    @if (m.tables?.length) {
+                                        <div class="move-extra learners">
+                                            @for (t of m.tables; track $index) {
+                                                @if (t.title) {
+                                                    <h4 class="move-extra-title">{{ t.title }}</h4>
+                                                }
 
-                                            <div class="table-scroll move-extra-table-frame">
-                                                <table class="learners-table move-extra-table">
-                                                    <caption *ngIf="t.caption">{{ t.caption }}</caption>
-                                                    <thead>
-                                                        <tr>
-                                                            <th *ngFor="let col of t.columns">
-                                                            {{ col.label }}
-                                                            </th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr *ngFor="let row of t.rows">
-                                                            <td *ngFor="let col of t.columns"
-                                                                [innerHTML]="row[col.key] | wikilink:{ kind:'move', slug:m.slug }">
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </ng-container>
-                                    </div>
+                                                <div class="table-scroll move-extra-table-frame">
+                                                    <table class="learners-table move-extra-table">
+                                                        @if (t.caption) {
+                                                            <caption>{{ t.caption }}</caption>
+                                                        }
+                                                        <thead>
+                                                            <tr>
+                                                                @for (col of t.columns; track col.key) {
+                                                                    <th>{{ col.label }}</th>
+                                                                }
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            @for (row of t.rows; track $index) {
+                                                                <tr>
+                                                                    @for (col of t.columns; track col.key) {
+                                                                        <td [innerHTML]="row[col.key] | wikilink:{ kind:'move', slug:m.slug }"></td>
+                                                                    }
+                                                                </tr>
+                                                            }
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            }
+                                        </div>
+                                    }
                                 </section>
 
 
@@ -165,11 +176,13 @@
                                     <p class="move-desc">{{ m.shortDesc || m.desc || '—' }}</p>
                                 </section>
 
-                                <section class="content-card narrow learners" *ngIf="hasAnyLearners()">
+                                @if (hasAnyLearners()) {
+                                <section class="content-card narrow learners">
                                 <h3>Appris par</h3>
 
                                 <!-- Par niveau -->
-                                <div class="learners-block" *ngIf="learnersLevel().length">
+                                @if (learnersLevel().length) {
+                                <div class="learners-block">
                                     <h4>Par niveau</h4>
                                     <div class="table-scroll">
                                         <table class="learners-table">
@@ -188,16 +201,16 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                @for (r of learnersLevel(); track r.id; let i = $index) {
+                                                @for (r of learnersLevel(); track r.id + '-' + r.level + '-' + $index; let i = $index) {
                                                 <tr>
                                                     <td class="num">{{ i + 1 }}</td>
                                                     <td class="sprite-cell center">
-                                                    <a [routerLink]="pokemonLink(r.id)" title="Voir #{{ r.id }}">
-                                                        <img class="mini-sprite" [src]="r.sprite" [alt]="r.name" loading="lazy">
+                                                    <a [routerLink]="pokemonLink(r.slug)" title="Voir #{{ r.id }}">
+                                                        <img class="mini-sprite" [src]="r.sprite" [alt]="r.name" appImageFallback loading="lazy">
                                                     </a>
                                                     </td>
                                                     <td>
-                                                    <a [routerLink]="pokemonLink(r.id)">{{ r.name }}</a>
+                                                    <a [routerLink]="pokemonLink(r.slug)">{{ r.name }}</a>
                                                     </td>
                                                     <td class="num">{{ r.level }}</td>
                                                 </tr>
@@ -206,10 +219,12 @@
                                         </table>
                                     </div>
                                 </div>
+                                }
 
 
                                 <!-- Par CT -->
-                                <div class="learners-block" *ngIf="learnersTM().length">
+                                @if (learnersTM().length) {
+                                <div class="learners-block">
                                     <h4>Par CT</h4>
                                     <div class="table-scroll">
                                         <table class="learners-table">
@@ -230,12 +245,12 @@
                                                 <tr>
                                                     <td class="num">{{ i + 1 }}</td>
                                                     <td class="sprite-cell center">
-                                                    <a [routerLink]="pokemonLink(r.id)" title="Voir #{{ r.id }}">
-                                                        <img class="mini-sprite" [src]="r.sprite" [alt]="r.name" loading="lazy">
+                                                    <a [routerLink]="pokemonLink(r.slug)" title="Voir #{{ r.id }}">
+                                                        <img class="mini-sprite" [src]="r.sprite" [alt]="r.name" appImageFallback loading="lazy">
                                                     </a>
                                                     </td>
                                                     <td>
-                                                    <a [routerLink]="pokemonLink(r.id)">{{ r.name }}</a>
+                                                    <a [routerLink]="pokemonLink(r.slug)">{{ r.name }}</a>
                                                     </td>
                                                 </tr>
                                                 }
@@ -243,10 +258,12 @@
                                         </table>
                                     </div>
                                 </div>
+                                }
 
 
                                 <!-- Par reproduction -->
-                                <div class="learners-block" *ngIf="learnersEgg().length">
+                                @if (learnersEgg().length) {
+                                <div class="learners-block">
                                     <h4>Par reproduction</h4>
                                     <div class="table-scroll">
                                         <table class="learners-table">
@@ -267,12 +284,12 @@
                                                 <tr>
                                                     <td class="num">{{ i + 1 }}</td>
                                                     <td class="sprite-cell center">
-                                                    <a [routerLink]="pokemonLink(r.id)" title="Voir #{{ r.id }}">
-                                                        <img class="mini-sprite" [src]="r.sprite" [alt]="r.name" loading="lazy">
+                                                    <a [routerLink]="pokemonLink(r.slug)" title="Voir #{{ r.id }}">
+                                                        <img class="mini-sprite" [src]="r.sprite" [alt]="r.name" appImageFallback loading="lazy">
                                                     </a>
                                                     </td>
                                                     <td>
-                                                    <a [routerLink]="pokemonLink(r.id)">{{ r.name }}</a>
+                                                    <a [routerLink]="pokemonLink(r.slug)">{{ r.name }}</a>
                                                     </td>
                                                 </tr>
                                                 }
@@ -280,7 +297,9 @@
                                         </table>
                                     </div>
                                 </div>
+                                }
                             </section>
+                            }
                             </main>
                         </div>
 
@@ -300,6 +319,17 @@
                             </div>
                         </nav>
                     </div>
+                </div>
+            </div>
+        } @else if (!loading()) {
+            <div class="dex-body">
+                <div class="dex-screen">
+                    <nav class="quick-nav">
+                      <a class="nav-chip nav-red" routerLink="/pokedex/moves" title="Retour">
+                        🔙 <span>Retour</span>
+                      </a>
+                    </nav>
+                    <p>Capacité introuvable.</p>
                 </div>
             </div>
         } @else {

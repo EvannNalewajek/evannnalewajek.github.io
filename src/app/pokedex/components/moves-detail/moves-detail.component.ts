@@ -1,8 +1,9 @@
-import { Component, computed, inject, signal, DestroyRef, effect } from '@angular/core';
-import { CommonModule, Location } from '@angular/common';
+import { ChangeDetectionStrategy, Component, computed, effect, inject, signal } from '@angular/core';
+import { DecimalPipe } from '@angular/common';
 import { ActivatedRoute, RouterLink } from '@angular/router';
-import { map, switchMap, combineLatest, of } from 'rxjs';
-import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+import { Title } from '@angular/platform-browser';
+import { toSignal } from '@angular/core/rxjs-interop';
+import { map, Subscription } from 'rxjs';
 
 import { MovesService } from '../../services/moves.service';
 import { LearnsetsService } from '../../services/learnsets.service';
@@ -11,11 +12,13 @@ import { PokedexService } from '../../services/pokedex.service';
 import { TypeSlugPipe } from '../../pipes/type-slug.pipe';
 import { Move } from '../../models/move.model';
 import { MoveTargetDiagramComponent } from '../move-target-diagram/move-target-diagram.component';
-
 import { WikilinkPipe } from '../../pipes/wikilink.pipe';
+import { RouterizedContentDirective } from '../../routerized-content.directive';
+import { ImageFallbackDirective } from '../../directives/image-fallback.directive';
 
 interface LearnerRow {
   id: number;
+  slug: string;
   name: string;
   sprite: string;
   level?: number;
@@ -24,31 +27,42 @@ interface LearnerRow {
 @Component({
   selector: 'app-moves-detail',
   standalone: true,
-  imports: [CommonModule, RouterLink, TypeSlugPipe, MoveTargetDiagramComponent, WikilinkPipe],
+  imports: [
+    DecimalPipe,
+    RouterLink,
+    TypeSlugPipe,
+    MoveTargetDiagramComponent,
+    WikilinkPipe,
+    RouterizedContentDirective,
+    ImageFallbackDirective
+  ],
   templateUrl: './moves-detail.component.html',
   styleUrls: ['./moves-detail.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class MovesDetailComponent {
-  private route = inject(ActivatedRoute);
-  private destroyRef = inject(DestroyRef);
-  private location = inject(Location);
+  private readonly route = inject(ActivatedRoute);
+  private readonly title = inject(Title);
+  private readonly movesSvc = inject(MovesService);
+  private readonly learnsets = inject(LearnsetsService);
+  private readonly pokedex = inject(PokedexService);
 
-  private movesSvc = inject(MovesService);
-  private learnsets = inject(LearnsetsService);
-  private pokedex  = inject(PokedexService);
+  private readonly _list = toSignal<Move[] | null>(this.movesSvc.getAll(), { initialValue: null });
+  readonly loading = computed(() => this._list() === null);
+  readonly list = computed(() => this._list() ?? []);
 
-  loading = signal(true);
-
-  list = signal<Move[]>([]);
-  currentSlug = signal<string>('');
+  readonly currentSlug = toSignal(
+    this.route.paramMap.pipe(map(pm => pm.get('slug') ?? pm.get('id') ?? '')),
+    { initialValue: '' }
+  );
 
   readonly learnersLevel = signal<LearnerRow[]>([]);
-  readonly learnersTM    = signal<LearnerRow[]>([]);
-  readonly learnersEgg   = signal<LearnerRow[]>([]);
+  readonly learnersTM = signal<LearnerRow[]>([]);
+  readonly learnersEgg = signal<LearnerRow[]>([]);
 
-  move = computed<Move | null>(() => {
+  readonly move = computed<Move | null>(() => {
     const slug = this.currentSlug();
-    const arr  = this.list();
+    const arr = this.list();
     if (!slug || !arr.length) return null;
     return (
       arr.find(m => m.slug === slug) ??
@@ -57,43 +71,27 @@ export class MovesDetailComponent {
     );
   });
 
-  index = computed(() => {
+  readonly index = computed(() => {
     const m = this.move();
     const arr = this.list();
     if (!m || !arr.length) return -1;
     return arr.findIndex(x => x.slug === m.slug);
   });
 
-  prev = computed<Move | undefined>(() => {
+  readonly prev = computed<Move | undefined>(() => {
     const i = this.index();
     const arr = this.list();
     return i > 0 ? arr[i - 1] : undefined;
   });
 
-  next = computed<Move | undefined>(() => {
+  readonly next = computed<Move | undefined>(() => {
     const i = this.index();
     const arr = this.list();
     return (i >= 0 && i < arr.length - 1) ? arr[i + 1] : undefined;
   });
 
-
-
   constructor() {
-    this.movesSvc.getAll()
-      .pipe(takeUntilDestroyed(this.destroyRef))
-      .subscribe(list => {
-        this.list.set(list);
-        this.loading.set(false);
-      });
-
-    this.route.paramMap
-      .pipe(takeUntilDestroyed(this.destroyRef))
-      .subscribe(pm => {
-        const slugOrId = pm.get('slug') ?? pm.get('id') ?? '';
-        this.currentSlug.set(slugOrId);
-      });
-
-    effect(() => {
+    effect(onCleanup => {
       const m = this.move();
       if (!m) {
         this.learnersLevel.set([]);
@@ -101,68 +99,76 @@ export class MovesDetailComponent {
         this.learnersEgg.set([]);
         return;
       }
-      (async () => {
-        await this.pokedex.ensureLoaded();
 
-        this.learnsets.getPokemonByMove$(m.slug)
-          .pipe(
-            switchMap(entries => {
-              if (!entries?.length) return of({ level: [], tm: [], egg: [] as LearnerRow[] });
+      this.title.setTitle(`Pokédex — ${m.name}`);
 
-              const rowsLevel: LearnerRow[] = [];
-              const rowsTM:    LearnerRow[] = [];
-              const rowsEgg:   LearnerRow[] = [];
+      let cancelled = false;
+      let sub: Subscription | null = null;
 
-              for (const e of entries) {
-                const p = this.pokedex.getById(e.id);
-                if (!p) continue;
+      onCleanup(() => {
+        cancelled = true;
+        sub?.unsubscribe();
+      });
 
-                const sprite = p.images?.sprite ? this.pokedex.normalizeImg(p.images.sprite) : '';
-                const row: LearnerRow = {
-                  id: p.id,
-                  name: p.name,
-                  sprite
-                };
+      this.pokedex.ensureLoaded().then(() => {
+        if (cancelled) return;
+        sub = this.learnsets.getPokemonByMove$(m.slug).subscribe(entries => {
+          if (cancelled) return;
+          if (!entries?.length) {
+            this.learnersLevel.set([]);
+            this.learnersTM.set([]);
+            this.learnersEgg.set([]);
+            return;
+          }
 
-                if (e.method === 'level') {
-                  rowsLevel.push({ ...row, level: e.level ?? undefined });
-                } else if (e.method === 'tm') {
-                  rowsTM.push(row);
-                } else {
-                  rowsEgg.push(row);
-                }
-              }
+          const rowsLevel: LearnerRow[] = [];
+          const rowsTM: LearnerRow[] = [];
+          const rowsEgg: LearnerRow[] = [];
 
-              rowsLevel.sort((a, b) => (a.level ?? 0) - (b.level ?? 0) || a.id - b.id);
-              rowsTM.sort((a, b)    => a.id - b.id);
-              rowsEgg.sort((a, b)   => a.id - b.id);
+          for (const e of entries) {
+            const p = this.pokedex.getById(e.id);
+            if (!p) continue;
 
-              return of({ level: rowsLevel, tm: rowsTM, egg: rowsEgg });
-            }),
-            takeUntilDestroyed(this.destroyRef)
-          )
-          .subscribe(({ level, tm, egg }) => {
-            this.learnersLevel.set(level);
-            this.learnersTM.set(tm);
-            this.learnersEgg.set(egg);
-          });
-      })();
+            const sprite = p.images?.sprite ? this.pokedex.normalizeImg(p.images.sprite) : '';
+            const row: LearnerRow = {
+              id: p.id,
+              slug: p.slug,
+              name: p.name,
+              sprite
+            };
+
+            if (e.method === 'level') {
+              rowsLevel.push({ ...row, level: e.level ?? undefined });
+            } else if (e.method === 'tm') {
+              rowsTM.push(row);
+            } else {
+              rowsEgg.push(row);
+            }
+          }
+
+          rowsLevel.sort((a, b) => (a.level ?? 0) - (b.level ?? 0) || a.id - b.id);
+          rowsTM.sort((a, b) => a.id - b.id);
+          rowsEgg.sort((a, b) => a.id - b.id);
+
+          this.learnersLevel.set(rowsLevel);
+          this.learnersTM.set(rowsTM);
+          this.learnersEgg.set(rowsEgg);
+        });
+      });
     });
   }
 
-  pokemonLink(id: number) {
-    return ['/pokedex/pokemons', id];
+  pokemonLink(slug: string) {
+    return ['/pokedex/pokemons', slug];
   }
 
-  hasAnyLearners() {
+  hasAnyLearners(): boolean {
     return (
       this.learnersLevel().length +
       this.learnersTM().length +
       this.learnersEgg().length
     ) > 0;
   }
-
-  trackId = (_: number, r: LearnerRow) => r.id;
 
   critLabel(rate: Move['critRate'] | null): string {
     if (!rate || rate === 'normal') return 'Normal';

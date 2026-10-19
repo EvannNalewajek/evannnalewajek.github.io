@@ -663,22 +663,6 @@
     }
   }
 
-  .evo-ladder {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  .evo-stage {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: .5rem 0;
-  }
-  .evo-ladder .evo-arrow {
-    margin: .45rem 0 0;
-  }
-
   @media (max-width: 520px) {
     --evo-img-rel: 92%;
     --evo-col-min: 140px;

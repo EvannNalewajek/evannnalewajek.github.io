@@ -1,16 +1,19 @@
-import { Component, inject } from '@angular/core';
-import { CommonModule, Location } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { RouterLink } from '@angular/router';
+import { Title } from '@angular/platform-browser';
 
 @Component({
     selector: 'app-docs-weather',
     standalone: true,
-    imports: [CommonModule, RouterModule],
+    imports: [RouterLink],
     templateUrl: './docs-weather.component.html',
-    styleUrls: ['./docs-weather.component.scss']
+    styleUrls: ['./docs-weather.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class DocsWeatherComponent {
-    private location = inject(Location);
+    private readonly title = inject(Title);
 
-
+    constructor() {
+        this.title.setTitle('Pokédex — Météo');
+    }
 }

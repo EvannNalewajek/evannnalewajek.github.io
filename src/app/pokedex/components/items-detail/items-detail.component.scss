@@ -152,9 +152,10 @@ a:hover {
 .artwork {
   box-sizing: border-box;
   width: 100%;
+  max-width: 313px;
+  aspect-ratio: 1;
   border-radius: 14px;
   background: linear-gradient(180deg, #9ef8ff 0%, #6ddde4 80%);
-  width:313px; height:313px;
   border: 2.5px solid #b5b7ba;
   box-shadow:
     inset 0 2px 4px rgba(0, 0, 0, 0.25),
@@ -163,7 +164,7 @@ a:hover {
   position: relative;
   overflow: hidden;
   padding: 8px;
-  margin: 0;
+  margin: 0 auto;
   animation: screenOn .6s ease-out;
 
   &::before {

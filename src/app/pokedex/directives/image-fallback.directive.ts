@@ -1,20 +1,24 @@
-import { Directive, Input, HostListener, ElementRef } from '@angular/core';
+import { Directive, ElementRef, HostListener, inject, input } from '@angular/core';
 
 @Directive({
   selector: 'img[appImageFallback]',
-  standalone: true
+  standalone: true,
 })
 export class ImageFallbackDirective {
-  @Input('appImageFallback') fallbackUrl: string = '';
+  private el = inject<ElementRef<HTMLImageElement>>(ElementRef);
 
-  constructor(private el: ElementRef<HTMLImageElement>) {}
+  readonly fallbackUrl = input<string>('', { alias: 'appImageFallback' });
 
   @HostListener('error')
   onError() {
     const img = this.el.nativeElement;
-    // Prevent infinite loop if fallback also fails
-    if (img.src !== this.fallbackUrl) {
-      img.src = this.fallbackUrl || '/pokedex/img/pokemon/000_sprite.png';
+    const fallback = this.fallbackUrl() || '/pokedex/img/pokemon/000_sprite.png';
+
+    // Avoid infinite error loops when comparing relative fallback path against absolute img.src
+    if (img.dataset['fallbackApplied'] === fallback || img.getAttribute('src') === fallback) {
+      return;
     }
+    img.dataset['fallbackApplied'] = fallback;
+    img.src = fallback;
   }
 }

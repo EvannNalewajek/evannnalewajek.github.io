@@ -1,30 +1,18 @@
-// moves.service.ts
 import { Injectable, inject, signal } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map, shareReplay } from 'rxjs';
 import type { Move, TargetPreset, TargetCell, TMInfo } from '../models/move.model';
+import { slugify } from '../utils/slugify';
 
-const VALID_CELLS: TargetCell[] = ['FOE_L','FOE_C','FOE_R','SELF','ALLY_L','ALLY_R'];
+const VALID_CELLS: TargetCell[] = ['FOE_L', 'FOE_C', 'FOE_R', 'SELF', 'ALLY_L', 'ALLY_R'];
 
-function slugify(input: string): string {
-  return input
-    .toString()
-    .toLowerCase()
-    .normalize('NFD')
-    .replace(/\p{Diacritic}/gu, '')
-    .replace(/\s+/g, '-')
-    .replace(/[^a-z0-9-]/g, '')
-    .replace(/--+/g, '-')
-    .replace(/^-|-$/g, '');
-}
-
-function asNumber(v: any): number | null {
+function asNumber(v: unknown): number | null {
   if (v === null || v === undefined || v === '') return null;
   const n = +v;
   return Number.isFinite(n) ? n : null;
 }
 
-function normalizeCritRate(val: any): Move['critRate'] {
+function normalizeCritRate(val: unknown): Move['critRate'] {
   if (val === null || val === undefined) return null;
 
   if (typeof val === 'number') {
@@ -42,14 +30,14 @@ function normalizeCritRate(val: any): Move['critRate'] {
   return null;
 }
 
-function normalizeTarget(m: any): { preset?: TargetPreset; pattern?: TargetCell[] } {
-  const presetRaw  = m.targetPreset ?? m.preset ?? m.target?.preset ?? m.target;
-  const patternRaw = m.targetPattern ?? m.pattern ?? m.target?.pattern;
+function normalizeTarget(m: Record<string, any>): { preset?: TargetPreset; pattern?: TargetCell[] } {
+  const presetRaw  = m['targetPreset'] ?? m['preset'] ?? m['target']?.preset ?? m['target'];
+  const patternRaw = m['targetPattern'] ?? m['pattern'] ?? m['target']?.pattern;
 
   if (Array.isArray(patternRaw)) {
-    const pattern = (patternRaw as any[])
+    const pattern = patternRaw
       .map(x => String(x).toUpperCase())
-      .filter(x => VALID_CELLS.includes(x as TargetCell)) as TargetCell[];
+      .filter((x): x is TargetCell => VALID_CELLS.includes(x as TargetCell));
     if (pattern.length) return { pattern };
   }
 
@@ -72,16 +60,15 @@ function normalizeTarget(m: any): { preset?: TargetPreset; pattern?: TargetCell[
 
   const txt = typeof presetRaw === 'string' ? slugify(presetRaw) : '';
 
-  if (txt === 'adjacentone')        return { preset: 'adjacent-one' };
-  if (txt === 'adjacentfoesall' ||
-      txt === 'adjacentfoes')       return { preset: 'adjacent-foes-all' };
-  if (txt === 'adjacentall')        return { preset: 'adjacent-all' };
-  if (txt === 'allone')             return { preset: 'all-one' };
-  if (txt === 'allyone')            return { preset: 'ally-one' };
-  if (txt === 'allennemies')        return { preset: 'all-ennemies' };
-  if (txt === 'allallies')          return { preset: 'all-allies' };
-  if (txt === 'allalliesbutself')   return { preset: 'all-allies-but-self' };
-  if (txt === 'selforally')         return { preset: 'self-or-ally' };
+  if (txt === 'adjacentone')      return { preset: 'adjacent-one' };
+  if (txt === 'adjacentfoesall' || txt === 'adjacentfoes') return { preset: 'adjacent-foes-all' };
+  if (txt === 'adjacentall')      return { preset: 'adjacent-all' };
+  if (txt === 'allone')           return { preset: 'all-one' };
+  if (txt === 'allyone')          return { preset: 'ally-one' };
+  if (txt === 'allennemies')      return { preset: 'all-ennemies' };
+  if (txt === 'allallies')        return { preset: 'all-allies' };
+  if (txt === 'allalliesbutself') return { preset: 'all-allies-but-self' };
+  if (txt === 'selforally')       return { preset: 'self-or-ally' };
   return {};
 }
 
@@ -94,18 +81,20 @@ export class MovesService {
   readonly searchQuery = signal<string>('');
   readonly filterType = signal<string>('');
   readonly filterCategory = signal<string>('');
-  readonly sortKey = signal<'id'|'name'|'type'|'category'|'power'|'accuracy'|'pp'|'priority'>('id');
+  readonly sortKey = signal<'id' | 'name' | 'type' | 'category' | 'power' | 'accuracy' | 'pp' | 'priority'>('id');
 
-  private _moves$ = this.http.get<any>(this.movesUrl).pipe(
-    map((raw) => {
-      const list: any[] = Array.isArray(raw) ? raw : Object.values(raw || {});
+  private _moves$ = this.http.get<unknown>(this.movesUrl).pipe(
+    map(raw => {
+      const list: Record<string, any>[] = Array.isArray(raw)
+        ? raw
+        : Object.values((raw as Record<string, any>) || {});
       return list
         .map((m, i): Move => {
           const id: number =
-            typeof m.id === 'number' ? m.id : (parseInt(String(m.id), 10) || i + 1);
+            typeof m['id'] === 'number' ? m['id'] : (parseInt(String(m['id']), 10) || i + 1);
 
           const slug: string = slugify(
-            m.slug ?? m.url ?? m.name ?? m.nom ?? m.id ?? `move-${id}`
+            m['slug'] ?? m['url'] ?? m['name'] ?? m['nom'] ?? m['id'] ?? `move-${id}`
           );
 
           const { preset, pattern } = normalizeTarget(m);
@@ -113,25 +102,25 @@ export class MovesService {
           return {
             id,
             slug,
-            name: m.name ?? m.nom ?? m.move ?? `Capacité ${id}`,
-            type: m.type ?? m.typ ?? 'Normal',
-            category: (m.category ?? m.cat ?? 'Statut') as Move['category'],
-            power: asNumber(m.power ?? m.puissance),
-            accuracy: asNumber(m.accuracy ?? m.precision),
-            pp: asNumber(m.pp ?? m.PP),
-            priority: asNumber(m.priority ?? m.prio) ?? 0,
+            name: m['name'] ?? m['nom'] ?? m['move'] ?? `Capacité ${id}`,
+            type: m['type'] ?? m['typ'] ?? 'Normal',
+            category: (m['category'] ?? m['cat'] ?? 'Statut') as Move['category'],
+            power: asNumber(m['power'] ?? m['puissance']),
+            accuracy: asNumber(m['accuracy'] ?? m['precision']),
+            pp: asNumber(m['pp'] ?? m['PP']),
+            priority: asNumber(m['priority'] ?? m['prio']) ?? 0,
 
-            shortDesc: m.shortDesc ?? m.short_description ?? m.short ?? null,
-            desc: m.desc ?? m.description ?? null,
-            effect: m.effect ?? m.effet ?? null,
+            shortDesc: m['shortDesc'] ?? m['short_description'] ?? m['short'] ?? null,
+            desc: m['desc'] ?? m['description'] ?? null,
+            effect: m['effect'] ?? m['effet'] ?? null,
 
-            makesContact: Boolean(m.makesContact ?? m.contact ?? false),
-            critRate: normalizeCritRate(m.critRate ?? m.crit ?? m.tauxCrit),
+            makesContact: Boolean(m['makesContact'] ?? m['contact'] ?? false),
+            critRate: normalizeCritRate(m['critRate'] ?? m['crit'] ?? m['tauxCrit']),
 
             targetPreset: preset,
             targetPattern: pattern,
 
-            tables: Array.isArray(m.tables) ? (m.tables as Move['tables']) : undefined
+            tables: Array.isArray(m['tables']) ? (m['tables'] as Move['tables']) : undefined,
           };
         })
         .sort((a, b) => a.id - b.id);
@@ -141,6 +130,31 @@ export class MovesService {
 
   private _tms$ = this.http.get<TMInfo[]>(this.tmsUrl).pipe(
     map(arr => (Array.isArray(arr) ? arr : [])),
+    shareReplay(1)
+  );
+
+  private _tmToMoveMap$ = this._tms$.pipe(
+    map(list => {
+      const mp = new Map<string, string>();
+      for (const t of list) {
+        if (t.tm && t.move) mp.set(String(t.tm), String(t.move));
+      }
+      return mp;
+    }),
+    shareReplay(1)
+  );
+
+  private _moveToTMsMap$ = this._tms$.pipe(
+    map(list => {
+      const mp = new Map<string, string[]>();
+      for (const t of list) {
+        const m = String(t.move);
+        const arr = mp.get(m) ?? [];
+        arr.push(String(t.tm));
+        mp.set(m, arr);
+      }
+      return mp;
+    }),
     shareReplay(1)
   );
 
@@ -159,31 +173,10 @@ export class MovesService {
   }
 
   getTMtoMoveMap$() {
-    return this._tms$.pipe(
-      map(list => {
-        const mp = new Map<string, string>();
-        for (const t of list) {
-          if (t.tm && t.move) mp.set(String(t.tm), String(t.move));
-        }
-        return mp;
-      }),
-      shareReplay(1)
-    );
+    return this._tmToMoveMap$;
   }
 
   getMoveToTMsMap$() {
-    return this._tms$.pipe(
-      map(list => {
-        const mp = new Map<string, string[]>();
-        for (const t of list) {
-          const m = String(t.move);
-          const arr = mp.get(m) ?? [];
-          arr.push(String(t.tm));
-          mp.set(m, arr);
-        }
-        return mp;
-      }),
-      shareReplay(1)
-    );
+    return this._moveToTMsMap$;
   }
 }

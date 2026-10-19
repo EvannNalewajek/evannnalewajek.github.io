@@ -1,8 +1,7 @@
-// learnsets.service.ts
 import { Injectable, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { combineLatest, map, of, shareReplay, switchMap } from 'rxjs';
-import type { Move, TMInfo, PokemonLearnset, MoveIndex } from '../models/move.model';
+import { Observable, catchError, combineLatest, map, of, shareReplay } from 'rxjs';
+import type { Move, PokemonLearnset, MoveIndex } from '../models/move.model';
 import { MovesService } from './moves.service';
 
 export interface ResolvedLevelUp {
@@ -53,21 +52,32 @@ export class LearnsetsService {
   private moves = inject(MovesService);
 
   private base = '/pokedex/learnsets';
+  private _resolvedCache = new Map<number, Observable<ResolvedLearnset>>();
 
   private _moveIndex$ = this.http.get<MoveIndex>(`${this.base}/move-index.json`).pipe(
     map(idx => idx ?? {}),
+    catchError(() => of({} as MoveIndex)),
     shareReplay(1)
   );
 
-  getPokemonLearnset$(id: number) {
+  getPokemonLearnset$(id: number): Observable<PokemonLearnset> {
     return this.http.get<PokemonLearnset>(`${this.base}/pokemon/${id}.json`).pipe(
       map(ls => ({
         id: Number(ls.id),
         slug: String(ls.slug ?? ''),
         levelUp: Array.isArray(ls.levelUp) ? ls.levelUp : [],
         tm: Array.isArray(ls.tm) ? ls.tm : [],
-        egg: Array.isArray(ls.egg) ? ls.egg : []
-      }))
+        egg: Array.isArray(ls.egg) ? ls.egg : [],
+      })),
+      catchError(() =>
+        of({
+          id,
+          slug: '',
+          levelUp: [],
+          tm: [],
+          egg: [],
+        })
+      )
     );
   }
 
@@ -81,41 +91,42 @@ export class LearnsetsService {
     );
   }
 
-  getResolvedLearnsetForPokemon$(id: number) {
-    return combineLatest([
+  getResolvedLearnsetForPokemon$(id: number): Observable<ResolvedLearnset> {
+    const cached = this._resolvedCache.get(id);
+    if (cached) return cached;
+
+    const stream$ = combineLatest([
       this.getPokemonLearnset$(id),
       this.moves.getAll(),
-      this.moves.getTMtoMoveMap$()
+      this.moves.getTMtoMoveMap$(),
     ]).pipe(
       map(([ls, moves, tmToMove]) => {
         const bySlug = new Map<string, Move>(moves.map(m => [m.slug, m]));
 
         const levelUp: ResolvedLevelUp[] = (ls.levelUp ?? [])
-        .map(e => {
-          const mv = bySlug.get(e.move);
+          .map(e => {
+            const mv = bySlug.get(e.move);
+            const raw = e.level;
 
-          const raw = (e as any).level;
+            const isStart =
+              typeof raw === 'string' && raw.trim().toLowerCase() === 'départ';
 
-          const isStart =
-            typeof raw === 'string' && raw.trim().toLowerCase() === 'départ';
+            const level: number | 'Départ' = isStart ? 'Départ' : Number(raw);
+            const levelSort = isStart ? 0 : (Number.isFinite(Number(raw)) ? Number(raw) : 9999);
 
-          const level: number | 'Départ' = isStart ? 'Départ' : Number(raw);
-
-          const levelSort = isStart ? 0 : (Number.isFinite(Number(raw)) ? Number(raw) : 9999);
-
-          return {
-            level,
-            levelSort,
-            moveSlug: e.move,
-            moveName: mv?.name ?? e.move,
-            moveType: mv?.type ?? 'Normal',
-            moveCategory: (mv?.category ?? 'Statut') as Move['category'],
-            power: mv?.power ?? null,
-            accuracy: mv?.accuracy ?? null,
-            pp: mv?.pp ?? null
-          };
-        })
-        .sort((a, b) => a.levelSort - b.levelSort);
+            return {
+              level,
+              levelSort,
+              moveSlug: e.move,
+              moveName: mv?.name ?? e.move,
+              moveType: mv?.type ?? 'Normal',
+              moveCategory: (mv?.category ?? 'Statut') as Move['category'],
+              power: mv?.power ?? null,
+              accuracy: mv?.accuracy ?? null,
+              pp: mv?.pp ?? null,
+            };
+          })
+          .sort((a, b) => a.levelSort - b.levelSort);
 
         const tm: ResolvedTM[] = (ls.tm ?? [])
           .map(code => {
@@ -126,7 +137,7 @@ export class LearnsetsService {
               moveSlug: slug ?? '',
               moveName: mv?.name ?? (slug ?? ''),
               moveType: mv?.type ?? 'Normal',
-              moveCategory: (mv?.category ?? 'Statut') as Move['category']
+              moveCategory: (mv?.category ?? 'Statut') as Move['category'],
             };
           })
           .sort((a, b) => a.tm.localeCompare(b.tm, 'fr'));
@@ -138,21 +149,23 @@ export class LearnsetsService {
               moveSlug: slug,
               moveName: mv?.name ?? slug,
               moveType: mv?.type ?? 'Normal',
-              moveCategory: (mv?.category ?? 'Statut') as Move['category']
+              moveCategory: (mv?.category ?? 'Statut') as Move['category'],
             };
           })
           .sort((a, b) => a.moveName.localeCompare(b.moveName, 'fr'));
 
-        const resolved: ResolvedLearnset = {
+        return {
           id: ls.id,
           slug: ls.slug,
           levelUp,
           tm,
-          egg
+          egg,
         };
-        return resolved;
       }),
       shareReplay(1)
     );
+
+    this._resolvedCache.set(id, stream$);
+    return stream$;
   }
 }

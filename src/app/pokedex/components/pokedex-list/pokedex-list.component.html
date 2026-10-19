@@ -35,21 +35,21 @@
             placeholder="Rechercher un Pokémon (Nom, #, Type)…"
             (input)="query($any($event.target).value)" />
 
-          <select (change)="selectSort(($any($event.target).value))">
-            <option value="id" [selected]="sortKey() === 'id'">Trier par #</option>
-            <option value="name" [selected]="sortKey() === 'name'">Trier par nom</option>
-            <option value="type" [selected]="sortKey() === 'type'">Trier par type</option>
+          <select [value]="sortKey()" (change)="selectSort($any($event.target).value)">
+            <option value="id">Trier par #</option>
+            <option value="name">Trier par nom</option>
+            <option value="type">Trier par type</option>
           </select>
         </div>
 
-        <div class="type-filters">
+        <div class="type-filters" role="group" aria-label="Filtrer par type">
           @for (type of availableTypes(); track type) {
             <label class="type-checkbox" [attr.data-type]="type" [class.selected]="isTypeSelected(type)">
-              <input 
-                type="checkbox" 
+              <input
+                type="checkbox"
+                class="sr-only-input"
                 [checked]="isTypeSelected(type)"
-                (change)="toggleType(type)"
-                style="display: none;" />
+                (change)="toggleType(type)" />
               {{ type }}
             </label>
           }

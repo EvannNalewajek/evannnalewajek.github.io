@@ -11,7 +11,7 @@
         </div>
 
         <div class="dex-body">
-            <div class="dex-screen">
+            <div class="dex-screen" appRouterizedContent>
                 <nav class="quick-nav">
                     <a class="nav-chip nav-yellow" routerLink="/pokedex" title="Retour">
                         🔙 <span>Retour</span>
@@ -30,9 +30,10 @@
                 <div class="abilities-toolbar">
                     <input type="search"
                             placeholder="Rechercher un talent…"
+                            [value]="q()"
                             (input)="query(($any($event.target).value))" />
 
-                    <select (change)="selectSort(($any($event.target).value))">
+                    <select [value]="sortKey()" (change)="selectSort(($any($event.target).value))">
                         <option value="id">Trier par #</option>
                         <option value="name">Trier par nom</option>
                     </select>

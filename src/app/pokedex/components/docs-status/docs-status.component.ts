@@ -1,16 +1,19 @@
-import { Component, inject } from '@angular/core';
-import { CommonModule, Location } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { RouterLink } from '@angular/router';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-docs-status',
   standalone: true,
-  imports: [CommonModule, RouterModule],
+  imports: [RouterLink],
   templateUrl: './docs-status.component.html',
   styleUrls: ['./docs-status.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class DocsStatusComponent {
-  private location = inject(Location);
+  private readonly title = inject(Title);
 
-
+  constructor() {
+    this.title.setTitle('Pokédex — Statuts');
+  }
 }

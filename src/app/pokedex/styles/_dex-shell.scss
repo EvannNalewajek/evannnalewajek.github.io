@@ -1,14 +1,4 @@
 /* Shared Pokédex shell (frame) */
-:root {
-  --dex-red:   #ef5350;
-  --dex-black: #1f1f1f;
-  --dex-white: #ffffff;
-
-  --grid-fine: #cfd3d8;
-  --grid-bold: #8e9aa7;
-  --muted:     #f6f7f9;
-}
-
 .dex-scene {
   min-height: 100dvh;
   display: flex;
@@ -37,9 +27,6 @@
   overflow: hidden;
 }
 
-
-
-
 .dex-card::after {
   content: "";
   position: absolute;
@@ -58,11 +45,6 @@
   position: relative;
   min-height: 64px;
   padding: 1rem 1.25rem 0.75rem;
-  background:
-    linear-gradient(to bottom,
-      var(--dex-red) 0 64%,
-      var(--dex-black) 64% 68%,
-      var(--dex-white) 68% 100%);
 }
 .dex-header h1 {
   margin: 0;
@@ -85,7 +67,6 @@
   border-radius: 50%;
   background:
     radial-gradient(circle at 50% 50%, #eaf4ff 0 30%, #c8d6ea 31% 60%, #95a5bd 61% 100%);
-  border: 4px solid var(--dex-black);
   box-shadow: inset 0 2px 6px rgba(0,0,0,.25), 0 2px 6px rgba(0,0,0,.25);
 }
 
@@ -116,28 +97,6 @@
     inset 0 2px 4px rgba(255,255,255,.2),
     inset 0 -4px 8px rgba(0,0,0,.6);
   position: relative;
-}
-
-@keyframes screenFadeOut {
-  from { opacity: 1; filter: brightness(1) blur(0); }
-  to { opacity: 0; filter: brightness(1.5) blur(3px); }
-}
-
-@keyframes screenFadeIn {
-  from { opacity: 0; filter: brightness(1.5) blur(3px); }
-  to { opacity: 1; filter: brightness(1) blur(0); }
-}
-
-:root {
-  view-transition-name: none;
-}
-
-::view-transition-old(pokedex-screen) {
-  animation: screenFadeOut 0.15s ease-in both;
-}
-
-::view-transition-new(pokedex-screen) {
-  animation: screenFadeIn 0.25s ease-out 0.15s both;
 }
 
 .dex-screen {
@@ -186,11 +145,6 @@
   .dex-header {
     min-height: auto;
     padding: .75rem .75rem .5rem;
-    background:
-      linear-gradient(to bottom,
-        var(--dex-red) 0 60%,
-        var(--dex-black) 60% 66%,
-        var(--dex-white) 66% 100%);
   }
 
   .dex-header h1 {
@@ -204,7 +158,6 @@
     left: 12px;
     width: 42px;
     height: 42px;
-    border-width: 3px;
   }
 
   .dex-lights {

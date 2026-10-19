@@ -1,22 +1,22 @@
 <div class="dex-scene">
   <div class="dex-card">
+    <div class="dex-header">
+      <div class="dex-button" aria-hidden="true"></div>
+      <div class="dex-lights" aria-hidden="true">
+        <span class="led led-red"></span>
+        <span class="led led-yellow"></span>
+        <span class="led led-green"></span>
+      </div>
+      <h1 [style.color]="current()?.color">{{ current()?.name || 'Type' }}</h1>
+    </div>
 
     @if (current(); as cur) {
-      <div class="dex-header">
-        <div class="dex-button" aria-hidden="true"></div>
-        <div class="dex-lights" aria-hidden="true">
-          <span class="led led-red"></span>
-          <span class="led led-yellow"></span>
-          <span class="led led-green"></span>
-        </div>
-        <h1 [style.color]="cur.color">{{ cur.name }}</h1>
-      </div>
-
       <div class="dex-body">
         <div class="dex-screen type-page" [style.--type-color]="cur.color">
 
           <nav class="quick-nav">
-            <a class="nav-chip nav-green" routerLink="/pokedex/docs" title="Retour">              🔙 <span>Retour</span>
+            <a class="nav-chip nav-green" routerLink="/pokedex/docs" title="Retour">
+              🔙 <span>Retour</span>
             </a>
             <a class="nav-chip nav-blue"    routerLink="/pokedex/pokemons"      title="Liste des Pokémons">
               🧬 <span>Pokémons</span>
@@ -53,7 +53,7 @@
                 <div class="meta-block">
                   <div class="meta-title">Forces défensives</div>
                   <div class="meta-chips">
-                    @for (x of defense()?.half; track x) {
+                    @for (x of defensiveStrengths(); track x) {
                       <span class="chip tiny" [ngStyle]="styleFor(x)">{{ x }}</span>
                     }
                   </div>
@@ -180,7 +180,7 @@
                       </tr>
                     </thead>
                     <tbody>
-                      @for (p of list; track p.id) {
+                      @for (p of list; track p.slug) {
                         <tr>
                           <td>#{{ p.id.toString().padStart(3,'0') }}</td>
                           <td>
@@ -194,7 +194,7 @@
                             @for (t of typesOf(p); track t) {
                               <a
                                 class="chip chip--small chip-link"
-                                [routerLink]="['/pokedex/types', t.toLowerCase()]"
+                                [routerLink]="['/pokedex/types', (t | typeSlug)]"
                                 [ngStyle]="styleFor(t)"
                                 title="Voir le type {{ t }}"
                               >

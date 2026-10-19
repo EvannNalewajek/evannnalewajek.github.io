@@ -1,57 +1,70 @@
-// pokedex/components/type-page/type-page.component.ts
-import { Component, OnInit, computed, inject, Signal } from '@angular/core';
-import { CommonModule, Location } from '@angular/common';
+import { ChangeDetectionStrategy, Component, OnInit, computed, effect, inject, Signal } from '@angular/core';
+import { NgStyle } from '@angular/common';
 import { ActivatedRoute, RouterLink, Router } from '@angular/router';
+import { Title } from '@angular/platform-browser';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { map } from 'rxjs/operators';
 import { TypesService } from '../../services/type.service';
 import { PokedexService } from '../../services/pokedex.service';
 import { Pokemon, PokemonType } from '../../models/pokemon.model';
 import { ImageFallbackDirective } from '../../directives/image-fallback.directive';
+import { TypeSlugPipe } from '../../pipes/type-slug.pipe';
 
 @Component({
     selector: 'app-type-page',
     standalone: true,
-    imports: [CommonModule, RouterLink, ImageFallbackDirective],
+    imports: [NgStyle, RouterLink, ImageFallbackDirective, TypeSlugPipe],
     templateUrl: './pokedex-type.component.html',
-    styleUrls: ['./pokedex-type.component.scss']
+    styleUrls: ['./pokedex-type.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TypePageComponent implements OnInit {
-    private types = inject(TypesService);
-    private pokedex = inject(PokedexService);
-    private route = inject(ActivatedRoute);
-    private router = inject(Router);
-    private location = inject(Location);
+    private readonly types = inject(TypesService);
+    private readonly pokedex = inject(PokedexService);
+    private readonly route = inject(ActivatedRoute);
+    private readonly router = inject(Router);
+    private readonly title = inject(Title);
 
-    slug = toSignal(this.route.paramMap.pipe(map(pm => pm.get('slug') ?? '')), { initialValue: '' });
+    readonly slug = toSignal(this.route.paramMap.pipe(map(pm => pm.get('slug') ?? '')), { initialValue: '' });
 
-    allTypes = computed(() => this.types.types());
-    current = computed(() => this.types.getBySlug(this.slug() ?? ''));
+    readonly allTypes = computed(() => this.types.types());
+    readonly current = computed(() => this.types.getBySlug(this.slug() ?? ''));
 
-    defense = computed(() => this.current() ? this.types.defenseBuckets(this.current()!.name) : null);
-    attack  = computed(() => this.current() ? this.types.attackBuckets(this.current()!.name)  : null);
+    readonly defense = computed(() => this.current() ? this.types.defenseBuckets(this.current()!.name) : null);
+    readonly attack  = computed(() => this.current() ? this.types.attackBuckets(this.current()!.name)  : null);
 
-    pokemonsOfType: Signal<Pokemon[] | null> = computed(() => {
-        const all = this.pokedex.all();
-        const c = this.current();
-        if (!all || !c) return null;
-        return all.filter(p => p.types.includes(c.name as PokemonType));
+    readonly defensiveStrengths = computed<PokemonType[]>(() => {
+        const d = this.defense();
+        if (!d) return [];
+        return [...d.zero, ...d.half];
     });
+
+    readonly pokemonsOfType: Signal<Pokemon[] | null> = computed(() => {
+        if (!this.pokedex.loaded()) return null;
+        const c = this.current();
+        if (!c) return null;
+        return this.pokedex.uniqueList().filter(p => p.types.includes(c.name as PokemonType));
+    });
+
+    constructor() {
+        effect(() => {
+            const c = this.current();
+            if (c) {
+                this.title.setTitle(`${c.name} — Types | Pokédex`);
+            } else if (this.types.loaded() && this.slug()) {
+                this.router.navigate(['/pokedex']);
+            }
+        });
+    }
 
     async ngOnInit() {
         await Promise.all([this.types.ensureLoaded(), this.pokedex.ensureLoaded()]);
-        const c = this.current();
-        if (!c) { this.router.navigate(['/pokedex']); return; }
-        document.title = `${c.name} — Types | Pokédex`;
-        window.scrollTo({ top: 0, behavior: 'instant' as ScrollBehavior });
     }
 
-    styleFor(t: PokemonType | undefined) {
+    styleFor(t: PokemonType | undefined): Record<string, string> {
         const tt = this.allTypes()?.find(x => x.name === t);
-        return tt ? { '--type-color': tt.color } as any : {};
+        return tt ? { '--type-color': tt.color } : {};
     }
-
-
 
     typesOf(p: Pokemon): PokemonType[] {
         const tuple = p.types as unknown as readonly PokemonType[];

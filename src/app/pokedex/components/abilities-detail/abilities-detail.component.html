@@ -12,7 +12,7 @@
 
     @if (ability(); as a) {
       <div class="dex-body">
-        <div class="dex-screen ability-detail">
+        <div class="dex-screen ability-detail" appRouterizedContent>
 
           <nav class="quick-nav">
             <a class="nav-chip nav-yellow" routerLink="/pokedex/abilities" title="Retour">
@@ -63,13 +63,19 @@
                     <div><dt>Nom</dt><dd class="pill">{{ a.name }}</dd></div>
                   </dl>
                 </div>
-                <h2>Effets</h2>
-                <div class="tips">
-                  <h3>En combat</h3>
-                  <p class="lead" *ngIf="a.battleEffectCondition as s">{{ s }}</p>
-                  <h3>Terrain</h3>
-                  <p class="lead" *ngIf="a.fieldEffectCondition as s">{{ s }}</p>
-                </div>
+                @if (a.battleEffectCondition || a.fieldEffectCondition) {
+                  <h2>Effets</h2>
+                  <div class="tips">
+                    @if (a.battleEffectCondition; as s) {
+                      <h3>En combat</h3>
+                      <p class="lead">{{ s }}</p>
+                    }
+                    @if (a.fieldEffectCondition; as s) {
+                      <h3>Terrain</h3>
+                      <p class="lead">{{ s }}</p>
+                    }
+                  </div>
+                }
 
               </div>
             </aside>
@@ -107,6 +113,17 @@
               </span>
             </div>
           </nav>
+        </div>
+      </div>
+    } @else if (!loading()) {
+      <div class="dex-body">
+        <div class="dex-screen">
+          <nav class="quick-nav">
+            <a class="nav-chip nav-yellow" routerLink="/pokedex/abilities" title="Retour">
+              🔙 <span>Retour</span>
+            </a>
+          </nav>
+          <p>Talent introuvable.</p>
         </div>
       </div>
     } @else {

@@ -1,16 +1,19 @@
-import { Component, inject } from '@angular/core';
-import { CommonModule, Location } from '@angular/common';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-docs-introduction',
   standalone: true,
-  imports: [CommonModule, RouterLink],
+  imports: [RouterLink],
   templateUrl: './docs-introduction.component.html',
   styleUrls: ['./docs-introduction.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class DocsIntroductionComponent {
-  private location = inject(Location);
+  private readonly title = inject(Title);
 
-
+  constructor() {
+    this.title.setTitle('Pokédex — Introduction');
+  }
 }

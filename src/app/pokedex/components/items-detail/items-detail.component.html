@@ -12,7 +12,7 @@
 
         @if (item(); as i) {
             <div class="dex-body">
-                <div class="dex-screen item-detail">
+                <div class="dex-screen item-detail" appRouterizedContent>
                     <nav class="quick-nav">
                       <a class="nav-chip nav-green" routerLink="/pokedex/docs/items" title="Retour">
                         🔙 <span>Retour</span>
@@ -57,32 +57,38 @@
                                 <figure class="artwork">
                                     <img
                                         [src]="imgArtwork()"
-                                        [alt]="item()!.name"
+                                        [alt]="i.name"
+                                        [appImageFallback]="'/pokedex/img/items/default_artwork.png'"
                                         loading="eager" />
                                 </figure>
 
                                 <div class="quickfacts">
                                     <dl class="dl-grid">
-                                        <div><dt>N°</dt><dd>#{{ item()!.id | number:'2.0-0' }}</dd></div>
+                                        <div><dt>N°</dt><dd>#{{ i.id | number:'2.0-0' }}</dd></div>
                                     </dl>
                                 </div>
                                 <div class="quickfacts">
                                     <h2>Utilisation</h2>
                                     <dl class="dl-grid">
-                                        <div><dt>Rangement</dt><dd>{{ item()!.category }}</dd></div>
-                                        <div><dt>Fonctionnement</dt><dd>{{ item()!.usage }}</dd></div>
+                                        <div><dt>Rangement</dt><dd>{{ i.category }}</dd></div>
+                                        <div><dt>Fonctionnement</dt><dd>{{ i.usage }}</dd></div>
                                     </dl>
                                 </div>
                                 <div class="quickfacts">
                                     <h2>Commerce</h2>
                                     <dl class="dl-grid">
-                                        <div><dt>Achat</dt><dd>{{ item()!.buy }} ₽</dd></div>
-                                        <div><dt>Revente</dt><dd>{{ item()!.sell }} ₽</dd></div>
+                                        <div><dt>Achat</dt><dd>{{ i.buy !== null ? (i.buy + ' ₽') : 'Non achetable' }}</dd></div>
+                                        <div><dt>Revente</dt><dd>{{ i.sell !== null ? (i.sell + ' ₽') : 'Non revendable' }}</dd></div>
                                     </dl>
                                 </div>
 
                                 <div class="sprite-box">
-                                    <img class="sprite" [src]="imgSprite()" [alt]="item()!.name + ' sprite'" loading="lazy" />
+                                    <img
+                                        class="sprite"
+                                        [src]="imgSprite()"
+                                        [alt]="i.name + ' sprite'"
+                                        [appImageFallback]="'/pokedex/img/items/default_sprite.png'"
+                                        loading="lazy" />
                                 </div>
                             </div>
                         </aside>
@@ -117,7 +123,18 @@
                     </nav>
                 </div>
             </div>
-            } @else {
+        } @else if (!loading()) {
+            <div class="dex-body">
+                <div class="dex-screen">
+                    <nav class="quick-nav">
+                      <a class="nav-chip nav-green" routerLink="/pokedex/docs/items" title="Retour">
+                        🔙 <span>Retour</span>
+                      </a>
+                    </nav>
+                    <p>Objet introuvable.</p>
+                </div>
+            </div>
+        } @else {
             <div class="dex-body">
                 <div class="dex-screen">
                     <p>Chargement…</p>

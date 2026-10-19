@@ -6,46 +6,96 @@ import { Enigme1Component } from './pages/enigme/enigme1/enigme1';
 import { Enigme2Component } from './pages/enigme/enigme2/enigme2';
 import { Enigme3Component } from './pages/enigme/enigme3/enigme3';
 import { GuildeGameComponent } from './idle-game/components/game-main/game-main.component';
-import { PokedexMainComponent } from './pokedex/components/pokedex-main/pokedex-main.component';
-import { PokedexListComponent } from './pokedex/components/pokedex-list/pokedex-list.component';
-import { PokedexDetailComponent } from './pokedex/components/pokedex-detail/pokedex-detail.component';
-import { TypePageComponent } from './pokedex/components/pokedex-type/pokedex-type.component';
-import { PokedexFieldComponent } from './pokedex/components/pokedex-field/pokedex-field.component';
-import { MovesListComponent } from './pokedex/components/moves-list/moves-list.component';
-import { MovesDetailComponent } from './pokedex/components/moves-detail/moves-detail.component';
-import { AbilitiesListComponent } from './pokedex/components/abilities-list/abilities-list.component';
-import { AbilitiesDetailComponent } from './pokedex/components/abilities-detail/abilities-detail.component';
-import { ItemsListComponent } from './pokedex/components/items-list/items-list.component';
-import { ItemsDetailComponent } from './pokedex/components/items-detail/items-detail.component';
-import { DocumentationComponent } from './pokedex/components/documentation/documentation.component';
-import { DocsIntroductionComponent } from './pokedex/components/docs-introduction/docs-introduction.component';
-import { DocsStatisticsComponent } from './pokedex/components/docs-statistics/docs-statistics.component';
-import { DocsStatusComponent } from './pokedex/components/docs-status/docs-status.component';
-import { DocsWeatherComponent } from './pokedex/components/docs-weather/docs-weather.component';
-import { DocsKOComponent } from './pokedex/components/docs-ko/docs-ko.component';
-
 import { DetectiveMainComponent } from './detective-game/components/detective-main.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent, title: 'Accueil' },
     { path: 'detective', component: DetectiveMainComponent, title: 'Détective - Film Noir' },
-    { path: 'pokedex', component: PokedexMainComponent, title: 'Pokédex' },
-    { path: 'pokedex/pokemons', component: PokedexListComponent, title: 'Pokédex - Liste' },
-    { path: 'pokedex/pokemons/:slug', component: PokedexDetailComponent, title: 'Pokédex - Détail' },
-    { path: 'pokedex/moves', component: MovesListComponent, title: 'Pokédex - Capacités' },
-    { path: 'pokedex/moves/:slug', component: MovesDetailComponent, title : 'Pokédex - Capacités Détail' },
-    { path: 'pokedex/types/:slug', component: TypePageComponent, title: 'Pokédex - Type' },
-    { path: 'pokedex/abilities', component: AbilitiesListComponent, title: 'Pokédex - Talents' },
-    { path: 'pokedex/abilities/:slug', component: AbilitiesDetailComponent, title: 'Pokédex - Talents Détail' },
-    { path: 'pokedex/docs', component: DocumentationComponent, title: 'Pokédex - Documentation' },
-    { path: 'pokedex/docs/introduction', component: DocsIntroductionComponent, title: 'Pokédex - Introduction' },
-    { path: 'pokedex/docs/statistics', component: DocsStatisticsComponent, title: 'Pokédex - Statistiques' },
-    { path: 'pokedex/docs/fields', component: PokedexFieldComponent, title: 'Pokédex - Champ' },
-    { path: 'pokedex/docs/weather', component: DocsWeatherComponent, title: 'Pokédex - Météo' },
-    { path: 'pokedex/docs/status', component: DocsStatusComponent, title: 'Pokédex - Statut' },
-    { path: 'pokedex/docs/items', component: ItemsListComponent, title: 'Pokédex - Objets' },
-    { path: 'pokedex/docs/items/:slug', component: ItemsDetailComponent, title: 'Pokédex - Objets Détail' },
-    { path: 'pokedex/docs/ko', component: DocsKOComponent, title: 'Pokédex - K.O.' },
+    {
+        path: 'pokedex',
+        loadComponent: () => import('./pokedex/components/pokedex-main/pokedex-main.component').then(m => m.PokedexMainComponent),
+        title: 'Pokédex'
+    },
+    {
+        path: 'pokedex/pokemons',
+        loadComponent: () => import('./pokedex/components/pokedex-list/pokedex-list.component').then(m => m.PokedexListComponent),
+        title: 'Pokédex - Liste'
+    },
+    {
+        path: 'pokedex/pokemons/:slug',
+        loadComponent: () => import('./pokedex/components/pokedex-detail/pokedex-detail.component').then(m => m.PokedexDetailComponent),
+        title: 'Pokédex - Détail'
+    },
+    {
+        path: 'pokedex/moves',
+        loadComponent: () => import('./pokedex/components/moves-list/moves-list.component').then(m => m.MovesListComponent),
+        title: 'Pokédex - Capacités'
+    },
+    {
+        path: 'pokedex/moves/:slug',
+        loadComponent: () => import('./pokedex/components/moves-detail/moves-detail.component').then(m => m.MovesDetailComponent),
+        title: 'Pokédex - Capacités Détail'
+    },
+    {
+        path: 'pokedex/types/:slug',
+        loadComponent: () => import('./pokedex/components/pokedex-type/pokedex-type.component').then(m => m.TypePageComponent),
+        title: 'Pokédex - Type'
+    },
+    {
+        path: 'pokedex/abilities',
+        loadComponent: () => import('./pokedex/components/abilities-list/abilities-list.component').then(m => m.AbilitiesListComponent),
+        title: 'Pokédex - Talents'
+    },
+    {
+        path: 'pokedex/abilities/:slug',
+        loadComponent: () => import('./pokedex/components/abilities-detail/abilities-detail.component').then(m => m.AbilitiesDetailComponent),
+        title: 'Pokédex - Talents Détail'
+    },
+    {
+        path: 'pokedex/docs',
+        loadComponent: () => import('./pokedex/components/documentation/documentation.component').then(m => m.DocumentationComponent),
+        title: 'Pokédex - Documentation'
+    },
+    {
+        path: 'pokedex/docs/introduction',
+        loadComponent: () => import('./pokedex/components/docs-introduction/docs-introduction.component').then(m => m.DocsIntroductionComponent),
+        title: 'Pokédex - Introduction'
+    },
+    {
+        path: 'pokedex/docs/statistics',
+        loadComponent: () => import('./pokedex/components/docs-statistics/docs-statistics.component').then(m => m.DocsStatisticsComponent),
+        title: 'Pokédex - Statistiques'
+    },
+    {
+        path: 'pokedex/docs/fields',
+        loadComponent: () => import('./pokedex/components/pokedex-field/pokedex-field.component').then(m => m.PokedexFieldComponent),
+        title: 'Pokédex - Champ'
+    },
+    {
+        path: 'pokedex/docs/weather',
+        loadComponent: () => import('./pokedex/components/docs-weather/docs-weather.component').then(m => m.DocsWeatherComponent),
+        title: 'Pokédex - Météo'
+    },
+    {
+        path: 'pokedex/docs/status',
+        loadComponent: () => import('./pokedex/components/docs-status/docs-status.component').then(m => m.DocsStatusComponent),
+        title: 'Pokédex - Statut'
+    },
+    {
+        path: 'pokedex/docs/items',
+        loadComponent: () => import('./pokedex/components/items-list/items-list.component').then(m => m.ItemsListComponent),
+        title: 'Pokédex - Objets'
+    },
+    {
+        path: 'pokedex/docs/items/:slug',
+        loadComponent: () => import('./pokedex/components/items-detail/items-detail.component').then(m => m.ItemsDetailComponent),
+        title: 'Pokédex - Objets Détail'
+    },
+    {
+        path: 'pokedex/docs/ko',
+        loadComponent: () => import('./pokedex/components/docs-ko/docs-ko.component').then(m => m.DocsKOComponent),
+        title: 'Pokédex - K.O.'
+    },
     { path: 'enigmemain',
         component: EnigmeComponent,
         title: 'Énigme Main',

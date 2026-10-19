@@ -1,4 +1,4 @@
-import { Directive, HostListener, Input, inject } from '@angular/core';
+import { Directive, HostListener, inject, input } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Directive({
@@ -8,12 +8,26 @@ import { Router } from '@angular/router';
 export class RouterizedContentDirective {
   private router = inject(Router);
 
-  @Input() sameOriginOnly = true;
+  readonly sameOriginOnly = input(true);
 
   @HostListener('click', ['$event'])
   onClick(ev: MouseEvent) {
-    const a = (ev.target as HTMLElement).closest('a') as HTMLAnchorElement | null;
+    if (
+      ev.defaultPrevented ||
+      ev.button !== 0 ||
+      ev.ctrlKey ||
+      ev.metaKey ||
+      ev.shiftKey ||
+      ev.altKey
+    ) {
+      return;
+    }
+
+    const target = ev.target as HTMLElement | null;
+    const a = target?.closest('a') as HTMLAnchorElement | null;
     if (!a) return;
+
+    if (a.target && a.target !== '_self') return;
 
     const href = a.getAttribute('href') || '';
     if (!href.startsWith('/')) return;

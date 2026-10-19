@@ -1,16 +1,19 @@
-import { Component, inject } from '@angular/core';
-import { CommonModule, Location } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { RouterLink } from '@angular/router';
+import { Title } from '@angular/platform-browser';
 
 @Component({
     selector: 'app-pokedex-field',
     standalone: true,
-    imports: [CommonModule, RouterModule],
+    imports: [RouterLink],
     templateUrl: './pokedex-field.component.html',
-    styleUrls: ['./pokedex-field.component.scss']
+    styleUrls: ['./pokedex-field.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class PokedexFieldComponent {
-    private location = inject(Location);
+    private readonly title = inject(Title);
 
-
+    constructor() {
+        this.title.setTitle('Pokédex — Champs');
+    }
 }

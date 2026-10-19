@@ -32,23 +32,24 @@
           <input
             type="search"
             placeholder="Rechercher une capacité…"
+            [value]="queryVal()"
             (input)="query($any($event.target).value)" />
 
-          <select (change)="selectType($any($event.target).value)">
+          <select [value]="typeVal()" (change)="selectType($any($event.target).value)">
             <option value="">Tous les types</option>
             @for (t of types(); track t) {
               <option [value]="t">{{ t }}</option>
             }
           </select>
 
-          <select (change)="selectCategory($any($event.target).value)">
+          <select [value]="categoryVal()" (change)="selectCategory($any($event.target).value)">
             <option value="">Toutes catégories</option>
             @for (c of categories; track c.key) {
               <option [value]="c.key">{{ c.label }}</option>
             }
           </select>
 
-          <select (change)="selectSort($any($event.target).value)">
+          <select [value]="sortVal()" (change)="selectSort($any($event.target).value)">
             @for (s of sortKeys; track s.key) {
               <option [value]="s.key">{{ s.label }}</option>
             }
@@ -83,7 +84,7 @@
               </thead>
 
               <tbody>
-                @for (m of rows; track m.id; let i = $index) {
+                @for (m of rows; track m.id) {
                   <tr>
                       <td class="col-num" data-label="#">#{{ m.id | number:'2.0-0' }}</td>
 
@@ -96,7 +97,7 @@
                       <td class="col-type" data-label="Type" [attr.data-type]="m.type">
                           <a class="type-badge"
                               [attr.data-type]="m.type"
-                              [routerLink]="['/pokedex/types', ($any(m.type) | typeSlug)]">
+                              [routerLink]="['/pokedex/types', (m.type | typeSlug)]">
                               {{ m.type }}
                           </a>
                       </td>
