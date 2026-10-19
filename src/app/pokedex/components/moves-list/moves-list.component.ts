@@ -6,11 +6,12 @@ import { toSignal } from '@angular/core/rxjs-interop';
 import { MovesService } from '../../services/moves.service';
 import { Move } from '../../models/move.model';
 import { TypeSlugPipe } from '../../pipes/type-slug.pipe';
+import { BackButtonDirective } from '../../directives/back-button.directive';
 
 @Component({
   selector: 'app-moves-list',
   standalone: true,
-  imports: [DecimalPipe, RouterLink, TypeSlugPipe],
+  imports: [DecimalPipe, RouterLink, TypeSlugPipe, BackButtonDirective],
   templateUrl: './moves-list.component.html',
   styleUrls: ['./moves-list.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush

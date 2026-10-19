@@ -1,5 +1,6 @@
 import { Directive, HostListener, inject, input } from '@angular/core';
 import { Router } from '@angular/router';
+import { isSameDetailGroup } from './directives/back-button.directive';
 
 @Directive({
   selector: '[appRouterizedContent]',
@@ -33,6 +34,7 @@ export class RouterizedContentDirective {
     if (!href.startsWith('/')) return;
 
     ev.preventDefault();
-    this.router.navigateByUrl(href);
+    const replaceUrl = isSameDetailGroup(this.router.url, href);
+    void this.router.navigateByUrl(href, { replaceUrl });
   }
 }

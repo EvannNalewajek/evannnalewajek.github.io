@@ -8,11 +8,12 @@ import { AbilitiesService } from '../../services/ability.service';
 import { Ability } from '../../models/ability.model';
 import { WikilinkPipe } from '../../pipes/wikilink.pipe';
 import { RouterizedContentDirective } from '../../routerized-content.directive';
+import { BackButtonDirective } from '../../directives/back-button.directive';
 
 @Component({
   selector: 'app-ability-detail',
   standalone: true,
-  imports: [DecimalPipe, RouterLink, WikilinkPipe, RouterizedContentDirective],
+  imports: [DecimalPipe, RouterLink, WikilinkPipe, RouterizedContentDirective, BackButtonDirective],
   templateUrl: './abilities-detail.component.html',
   styleUrls: ['./abilities-detail.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush

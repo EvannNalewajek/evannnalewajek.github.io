@@ -5,11 +5,12 @@ import { PokedexService } from '../../services/pokedex.service';
 import { Pokemon, PokemonType } from '../../models/pokemon.model';
 import { TypeSlugPipe } from '../../pipes/type-slug.pipe';
 import { ImageFallbackDirective } from '../../directives/image-fallback.directive';
+import { BackButtonDirective } from '../../directives/back-button.directive';
 
 @Component({
   selector: 'app-pokedex-list',
   standalone: true,
-  imports: [DecimalPipe, RouterLink, TypeSlugPipe, ImageFallbackDirective],
+  imports: [DecimalPipe, RouterLink, TypeSlugPipe, ImageFallbackDirective, BackButtonDirective],
   templateUrl: './pokedex-list.component.html',
   styleUrl: './pokedex-list.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

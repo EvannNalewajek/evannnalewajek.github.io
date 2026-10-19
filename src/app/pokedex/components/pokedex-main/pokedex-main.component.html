@@ -1,38 +1,129 @@
 <div class="dex-scene">
-    <div class="dex-card">
-        <div class="dex-header">
-            <div class="dex-button" aria-hidden="true"></div>
-            <div class="dex-lights" aria-hidden="true">
-                <span class="led led-red"></span>
-                <span class="led led-yellow"></span>
-                <span class="led led-green"></span>
+  <div class="dex-card">
+    <div class="dex-header">
+      <div class="dex-button" aria-hidden="true"></div>
+      <div class="dex-lights" aria-hidden="true">
+        <span class="led led-red"></span>
+        <span class="led led-yellow"></span>
+        <span class="led led-green"></span>
+      </div>
+      <h1>Menu Principal</h1>
+    </div>
+
+    <div class="dex-body">
+      <div class="dex-screen pokedex-dashboard">
+        <header class="dashboard-banner">
+          <div class="banner-status">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span class="status-code">POKÉDEX</span>
+          </div>
+          <p class="banner-subtitle">
+            Retrouvez ici toutes les fiches des Pokémon ainsi que le fonctionnement des attaques, des talents et des combats.
+          </p>
+        </header>
+
+        <div class="pokedex-main-menu">
+          <a class="menu-card card-pokemon" routerLink="/pokedex/pokemons">
+            <svg class="pokeball-bg" viewBox="0 0 100 100" aria-hidden="true">
+              <circle cx="50" cy="50" r="44" fill="none" stroke="currentColor" stroke-width="8" />
+              <line x1="6" y1="50" x2="34" y2="50" stroke="currentColor" stroke-width="8" />
+              <line x1="66" y1="50" x2="94" y2="50" stroke="currentColor" stroke-width="8" />
+              <circle cx="50" cy="50" r="15" fill="none" stroke="currentColor" stroke-width="8" />
+            </svg>
+            <div class="card-head">
+              <div class="icon-medallion" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <circle cx="12" cy="12" r="3" />
+                  <line x1="2" y1="12" x2="9" y2="12" />
+                  <line x1="15" y1="12" x2="22" y2="12" />
+                </svg>
+              </div>
+              <span class="title">Pokémons</span>
             </div>
-            <h1>Menu Principal</h1>
+            <p class="desc">
+              Toutes les créatures du Pokédex, avec leurs statistiques, leurs évolutions et les attaques qu'elles apprennent.
+            </p>
+            <span class="card-cta">Voir la liste <span class="arrow">→</span></span>
+          </a>
+
+          <a class="menu-card card-moves" routerLink="/pokedex/moves">
+            <svg class="pokeball-bg" viewBox="0 0 100 100" aria-hidden="true">
+              <circle cx="50" cy="50" r="44" fill="none" stroke="currentColor" stroke-width="8" />
+              <line x1="6" y1="50" x2="34" y2="50" stroke="currentColor" stroke-width="8" />
+              <line x1="66" y1="50" x2="94" y2="50" stroke="currentColor" stroke-width="8" />
+              <circle cx="50" cy="50" r="15" fill="none" stroke="currentColor" stroke-width="8" />
+            </svg>
+            <div class="card-head">
+              <div class="icon-medallion" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                </svg>
+              </div>
+              <span class="title">Capacités</span>
+            </div>
+            <p class="desc">
+              La liste de toutes les attaques, leurs effets en combat, leur zone de ciblage et les Pokémon qui peuvent les utiliser.
+            </p>
+            <span class="card-cta">Voir la liste <span class="arrow">→</span></span>
+          </a>
+
+          <a class="menu-card card-abilities" routerLink="/pokedex/abilities">
+            <svg class="pokeball-bg" viewBox="0 0 100 100" aria-hidden="true">
+              <circle cx="50" cy="50" r="44" fill="none" stroke="currentColor" stroke-width="8" />
+              <line x1="6" y1="50" x2="34" y2="50" stroke="currentColor" stroke-width="8" />
+              <line x1="66" y1="50" x2="94" y2="50" stroke="currentColor" stroke-width="8" />
+              <circle cx="50" cy="50" r="15" fill="none" stroke="currentColor" stroke-width="8" />
+            </svg>
+            <div class="card-head">
+              <div class="icon-medallion" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 3l1.9 5.8a2 2 0 0 0 1.3 1.3L21 12l-5.8 1.9a2 2 0 0 0-1.3 1.3L12 21l-1.9-5.8a2 2 0 0 0-1.3-1.3L3 12l5.8-1.9a2 2 0 0 0 1.3-1.3L12 3z" />
+                </svg>
+              </div>
+              <span class="title">Talents</span>
+            </div>
+            <p class="desc">
+              Les différents talents des Pokémon et ce qu'ils changent en plein combat ou directement sur le terrain.
+            </p>
+            <span class="card-cta">Voir la liste <span class="arrow">→</span></span>
+          </a>
+
+          <a class="menu-card card-docs" routerLink="/pokedex/docs">
+            <svg class="pokeball-bg" viewBox="0 0 100 100" aria-hidden="true">
+              <circle cx="50" cy="50" r="44" fill="none" stroke="currentColor" stroke-width="8" />
+              <line x1="6" y1="50" x2="34" y2="50" stroke="currentColor" stroke-width="8" />
+              <line x1="66" y1="50" x2="94" y2="50" stroke="currentColor" stroke-width="8" />
+              <circle cx="50" cy="50" r="15" fill="none" stroke="currentColor" stroke-width="8" />
+            </svg>
+            <div class="card-head">
+              <div class="icon-medallion" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+                </svg>
+              </div>
+              <span class="title">Documentations</span>
+            </div>
+            <p class="desc">
+              Des pages d'explication pour comprendre l'univers, la table des types, la météo, les champs, les statuts et les objets.
+            </p>
+            <span class="card-cta">Lire les pages <span class="arrow">→</span></span>
+          </a>
         </div>
 
-        <div class="dex-body">
-            <div class="dex-screen pokedex-main-menu">
-                <a class="menu-card card-pokemon" routerLink="/pokedex/pokemons">
-                    <span class="icon">🧬</span>
-                    <span class="title">Pokémons</span>
-                    <span class="desc">Consulter le Pokédex complet</span>
-                </a>
-                <a class="menu-card card-moves" routerLink="/pokedex/moves">
-                    <span class="icon">⚡</span>
-                    <span class="title">Capacités</span>
-                    <span class="desc">Liste des attaques et de leurs effets</span>
-                </a>
-                <a class="menu-card card-abilities" routerLink="/pokedex/abilities">
-                    <span class="icon">✨</span>
-                    <span class="title">Talents</span>
-                    <span class="desc">Liste de tous les effets passifs</span>
-                </a>
-                <a class="menu-card card-docs" routerLink="/pokedex/docs">
-                    <span class="icon">📘</span>
-                    <span class="title">Documentations</span>
-                    <span class="desc">Règles, mécaniques et documentations</span>
-                </a>
-            </div>
-        </div>
+        <footer class="quick-shortcuts" aria-label="Accès directs">
+          <span class="shortcuts-label">Accès direct :</span>
+          <div class="shortcuts-list">
+            <a class="shortcut-pill" routerLink="/pokedex/docs/items">🎒 Objets</a>
+            <a class="shortcut-pill" routerLink="/pokedex/types/normal">🔷 Table des Types</a>
+            <a class="shortcut-pill" routerLink="/pokedex/docs/weather">🌦️ Météo</a>
+            <a class="shortcut-pill" routerLink="/pokedex/docs/fields">🫧 Champs</a>
+            <a class="shortcut-pill" routerLink="/pokedex/docs/status">🔥 Statuts</a>
+            <a class="shortcut-pill" routerLink="/pokedex/docs/statistics">⚔️ Statistiques</a>
+          </div>
+        </footer>
+      </div>
     </div>
+  </div>
 </div>

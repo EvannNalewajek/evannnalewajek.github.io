@@ -15,6 +15,7 @@ import { MoveTargetDiagramComponent } from '../move-target-diagram/move-target-d
 import { WikilinkPipe } from '../../pipes/wikilink.pipe';
 import { RouterizedContentDirective } from '../../routerized-content.directive';
 import { ImageFallbackDirective } from '../../directives/image-fallback.directive';
+import { BackButtonDirective } from '../../directives/back-button.directive';
 
 interface LearnerRow {
   id: number;
@@ -34,7 +35,8 @@ interface LearnerRow {
     MoveTargetDiagramComponent,
     WikilinkPipe,
     RouterizedContentDirective,
-    ImageFallbackDirective
+    ImageFallbackDirective,
+    BackButtonDirective,
   ],
   templateUrl: './moves-detail.component.html',
   styleUrls: ['./moves-detail.component.scss'],

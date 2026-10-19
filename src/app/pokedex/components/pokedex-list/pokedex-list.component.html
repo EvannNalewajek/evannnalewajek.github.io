@@ -1,7 +1,7 @@
 <div class="dex-scene">
   <div class="dex-card">
     <div class="dex-header">
-      <div class="dex-button" aria-hidden="true"></div>
+      <a class="dex-button" routerLink="/pokedex" title="Menu principal du Pokédex" aria-label="Menu principal du Pokédex"></a>
       <div class="dex-lights" aria-hidden="true">
         <span class="led led-red"></span>
         <span class="led led-yellow"></span>
@@ -14,7 +14,7 @@
       <div class="dex-screen pokedex-list-page">
 
         <nav class="quick-nav">
-          <a class="nav-chip nav-blue" routerLink="/pokedex" title="Retour">
+          <a class="nav-chip nav-blue" appBack="/pokedex" title="Retour">
             🔙 <span>Retour</span>
           </a>
           <a class="nav-chip nav-red"    routerLink="/pokedex/moves"      title="Liste des Capacités">

@@ -7,13 +7,14 @@ import { AbilitiesService } from '../../services/ability.service';
 import { Ability } from '../../models/ability.model';
 import { WikilinkPipe } from '../../pipes/wikilink.pipe';
 import { RouterizedContentDirective } from '../../routerized-content.directive';
+import { BackButtonDirective } from '../../directives/back-button.directive';
 
 type SortKey = 'id' | 'name';
 
 @Component({
     selector: 'app-abilities-list',
     standalone: true,
-    imports: [DecimalPipe, RouterLink, WikilinkPipe, RouterizedContentDirective],
+    imports: [DecimalPipe, RouterLink, WikilinkPipe, RouterizedContentDirective, BackButtonDirective],
     templateUrl: './abilities-list.component.html',
     styleUrls: ['./abilities-list.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush

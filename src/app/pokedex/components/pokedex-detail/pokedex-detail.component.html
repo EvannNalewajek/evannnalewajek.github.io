@@ -1,7 +1,7 @@
 <div class="dex-scene">
   <div class="dex-card">
     <div class="dex-header">
-      <div class="dex-button" aria-hidden="true"></div>
+      <a class="dex-button" routerLink="/pokedex" title="Menu principal du Pokédex" aria-label="Menu principal du Pokédex"></a>
       <div class="dex-lights" aria-hidden="true">
         <span class="led led-red"></span>
         <span class="led led-yellow"></span>
@@ -19,7 +19,7 @@
 
           <div class="track">
             <nav class="quick-nav">
-              <a class="nav-chip nav-blue" routerLink="/pokedex/pokemons" title="Retour">
+              <a class="nav-chip nav-blue" appBack="/pokedex/pokemons" title="Retour">
                 🔙 <span>Retour</span>
               </a>
               <a class="nav-chip nav-red" routerLink="/pokedex/moves" title="Liste des Capacités">
@@ -37,7 +37,7 @@
               <div class="toolbar-inner">
                 <span class="left">
                   @if (prevMon(); as prev) {
-                    <a [routerLink]="['/pokedex/pokemons', prev.slug]" class="nav-chip">
+                    <a [routerLink]="['/pokedex/pokemons', prev.slug]" [replaceUrl]="true" class="nav-chip">
                       <img class="mini-sprite" [src]="prev.images.sprite" [alt]="prev.name" loading="lazy"
                           [appImageFallback]="'/pokedex/img/pokemon/000_sprite.png'" />
                       <span class="num">#{{ prev.id | number:'2.0-0' }}</span>
@@ -50,7 +50,7 @@
 
                 <span class="right">
                   @if (nextMon(); as next) {
-                    <a [routerLink]="['/pokedex/pokemons', next.slug]" class="nav-chip">
+                    <a [routerLink]="['/pokedex/pokemons', next.slug]" [replaceUrl]="true" class="nav-chip">
                       <span class="name">{{ next.name }}</span>
                       <span class="num">#{{ next.id | number:'2.0-0' }}</span>
                       <img class="mini-sprite" [src]="next.images.sprite" [alt]="next.name" loading="lazy"
@@ -91,11 +91,13 @@
               >
                 <div class="panel primary">
                   <figure class="artwork">
-                    <img
-                      [src]="imgArtwork()"
-                      [alt]="mon.name"
-                      loading="eager"
-                      [appImageFallback]="'/pokedex/img/pokemon/000_artwork.png'" />
+                    @for (art of [imgArtwork()]; track art) {
+                      <img
+                        [src]="art"
+                        [alt]="mon.name"
+                        loading="eager"
+                        [appImageFallback]="'/pokedex/img/pokemon/000_artwork.png'" />
+                    }
                   </figure>
 
                   <div class="quickfacts">
@@ -236,7 +238,7 @@
 
                                 <figure class="evo-mon">
                                   @if (!isCurrent(e.id)) {
-                                    <a class="evo-click" [routerLink]="pokemonLink(e.mon)">
+                                    <a class="evo-click" [routerLink]="pokemonLink(e.mon)" [replaceUrl]="true">
                                       <img [src]="e.mon.images.artwork" [alt]="e.mon.name" loading="lazy"
                                           [appImageFallback]="'/pokedex/img/pokemon/000_artwork.png'">
                                       <figcaption>
@@ -395,7 +397,7 @@
               <div class="toolbar-inner">
                 <span class="left">
                   @if (prevMon(); as prev) {
-                    <a [routerLink]="['/pokedex/pokemons', prev.slug]" class="nav-chip">
+                    <a [routerLink]="['/pokedex/pokemons', prev.slug]" [replaceUrl]="true" class="nav-chip">
                       <img class="mini-sprite" [src]="prev.images.sprite" [alt]="prev.name" loading="lazy"
                           [appImageFallback]="'/pokedex/img/pokemon/000_sprite.png'" />
                       <span class="num">#{{ prev.id | number:'2.0-0' }}</span>
@@ -410,7 +412,7 @@
 
                 <span class="right">
                   @if (nextMon(); as next) {
-                    <a [routerLink]="['/pokedex/pokemons', next.slug]" class="nav-chip">
+                    <a [routerLink]="['/pokedex/pokemons', next.slug]" [replaceUrl]="true" class="nav-chip">
                       <span class="name">{{ next.name }}</span>
                       <span class="num">#{{ next.id | number:'2.0-0' }}</span>
                       <img class="mini-sprite" [src]="next.images.sprite" [alt]="next.name" loading="lazy"

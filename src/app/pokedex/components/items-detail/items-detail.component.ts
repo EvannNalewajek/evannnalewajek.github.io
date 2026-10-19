@@ -9,11 +9,12 @@ import { Item } from '../../models/item.model';
 import { WikilinkPipe } from '../../pipes/wikilink.pipe';
 import { RouterizedContentDirective } from '../../routerized-content.directive';
 import { ImageFallbackDirective } from '../../directives/image-fallback.directive';
+import { BackButtonDirective } from '../../directives/back-button.directive';
 
 @Component({
     selector: 'app-item-detail',
     standalone: true,
-    imports: [DecimalPipe, RouterLink, WikilinkPipe, RouterizedContentDirective, ImageFallbackDirective],
+    imports: [DecimalPipe, RouterLink, WikilinkPipe, RouterizedContentDirective, ImageFallbackDirective, BackButtonDirective],
     templateUrl: './items-detail.component.html',
     styleUrls: ['./items-detail.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush

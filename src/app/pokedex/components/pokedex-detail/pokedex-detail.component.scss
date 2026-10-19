@@ -145,13 +145,25 @@
     background: linear-gradient(120deg, rgba(255,255,255,.4) 0%, rgba(255,255,255,.05) 40%, transparent 60%);
     pointer-events: none;
   }
-  img { display:block; width:100%; height:auto; }
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    animation: screenOn 0.35s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
 }
 
 @keyframes screenOn {
-  0% { filter: brightness(0) blur(4px); }
-  60% { filter: brightness(1.4); }
-  100% { filter: brightness(1) blur(0); }
+  0% {
+    opacity: 0;
+    transform: scale(0.96);
+    filter: brightness(1.35) drop-shadow(0 0 12px rgba(56, 189, 248, 0.6));
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    filter: brightness(1) drop-shadow(0 0 0 transparent);
+  }
 }
 
 .types { display:flex; flex-wrap:wrap; gap:.5rem; }
@@ -311,7 +323,7 @@
   transition: width .4s ease-out;
 }
 
-.nav-chip{
+.dex-toolbar .nav-chip{
   display:inline-flex; align-items:center; gap:.45rem;
   padding:.25rem .55rem; border-radius: 999px;
   background: #fff; border:1px solid rgba(0,0,0,.12);
@@ -319,12 +331,12 @@
   text-decoration:none; color: inherit; font-weight: 800;
 }
 
-.nav-chip .mini-sprite{
+.dex-toolbar .nav-chip .mini-sprite{
   width: 28px; height: 28px; display:block;
 }
 
-.nav-chip .num{ opacity:.7; font-weight:900; }
-.nav-chip .name{ max-width: 11ch; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.dex-toolbar .nav-chip .num{ opacity:.7; font-weight:900; }
+.dex-toolbar .nav-chip .name{ max-width: 11ch; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
 
 @media (max-width: 900px) {
   .detail .layout { grid-template-columns: 320px 1fr; }
@@ -337,7 +349,7 @@
   .dl-grid > div { grid-template-columns: 7rem 1fr; }
   .stats-list li { grid-template-columns: 7rem 3rem 1fr; }
   .dex-toolbar .toolbar-inner { border-radius: 12px; }
-  .nav-chip .name{ display:none; }
+  .dex-toolbar .nav-chip .name{ display:none; }
 }
 
 @media (max-width: 600px) {
@@ -419,26 +431,25 @@
     text-align: center;
   }
 
-  .nav-chip {
-    max-width: 5.5rem;
+  .dex-toolbar .nav-chip {
     flex-shrink: 1;
-    padding: .25rem .4rem;
-    font-size: .75rem;
+    padding: .25rem .5rem;
+    font-size: .8rem;
     line-height: 1.1;
   }
 
-  .nav-chip .mini-sprite {
-    width: 20px;
-    height: 20px;
+  .dex-toolbar .nav-chip .mini-sprite {
+    width: 22px;
+    height: 22px;
   }
 
-  .nav-chip .name {
-    max-width: 6ch;
+  .dex-toolbar .nav-chip .name {
+    max-width: 8ch;
     font-size: .75rem;
   }
 
-  .nav-chip .num {
-    font-size: .7rem;
+  .dex-toolbar .nav-chip .num {
+    font-size: .75rem;
   }
 
   .dex-toolbar .center a {

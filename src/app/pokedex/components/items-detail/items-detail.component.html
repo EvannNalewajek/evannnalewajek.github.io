@@ -1,7 +1,7 @@
 <div class="dex-scene">
     <div class="dex-card">
         <div class="dex-header">
-        <div class="dex-button" aria-hidden="true"></div>
+        <a class="dex-button" routerLink="/pokedex" title="Menu principal du Pokédex" aria-label="Menu principal du Pokédex"></a>
         <div class="dex-lights" aria-hidden="true">
             <span class="led led-red"></span>
             <span class="led led-yellow"></span>
@@ -14,7 +14,7 @@
             <div class="dex-body">
                 <div class="dex-screen item-detail" appRouterizedContent>
                     <nav class="quick-nav">
-                      <a class="nav-chip nav-green" routerLink="/pokedex/docs/items" title="Retour">
+                      <a class="nav-chip nav-green" appBack="/pokedex/docs/items" title="Retour">
                         🔙 <span>Retour</span>
                       </a>
                       <a class="nav-chip nav-blue" routerLink="/pokedex/pokemons" title="Liste des Pokémons">
@@ -32,13 +32,13 @@
                         <div class="toolbar-inner">
                             <span class="left">
                                 @if (prev(); as p) {
-                                    <a [routerLink]="['/pokedex/docs/items', p.slug]" class="nav-chip">← Préc.</a>
+                                    <a [routerLink]="['/pokedex/docs/items', p.slug]" [replaceUrl]="true" class="nav-chip">← Préc.</a>
                                 }
                             </span>
                             <span class="center"></span>
                             <span class="right">
                                 @if (next(); as n) {
-                                    <a [routerLink]="['/pokedex/docs/items', n.slug]" class="nav-chip">Suiv. →</a>
+                                    <a [routerLink]="['/pokedex/docs/items', n.slug]" [replaceUrl]="true" class="nav-chip">Suiv. →</a>
                                 }
                             </span>
                         </div>
@@ -110,13 +110,13 @@
                         <div class="toolbar-inner">
                             <span class="left">
                                 @if (prev(); as p) {
-                                    <a [routerLink]="['/pokedex/docs/items', p.slug]" class="nav-chip">← Préc.</a>
+                                    <a [routerLink]="['/pokedex/docs/items', p.slug]" [replaceUrl]="true" class="nav-chip">← Préc.</a>
                                 }
                             </span>
                             <span class="center"></span>
                             <span class="right">
                                 @if (next(); as n) {
-                                    <a [routerLink]="['/pokedex/docs/items', n.slug]" class="nav-chip">Suiv. →</a>
+                                    <a [routerLink]="['/pokedex/docs/items', n.slug]" [replaceUrl]="true" class="nav-chip">Suiv. →</a>
                                 }
                             </span>
                         </div>

@@ -34,7 +34,7 @@ body {
   margin: 0;
 }
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700;800&family=Outfit:wght@400;500;600;700;800;900&family=Press+Start+2P&display=swap');
 
 html, body {
   height: 100%;
@@ -47,20 +47,56 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   box-sizing: border-box;
 }
 
-@keyframes pokedexScreenFadeOut {
-  from { opacity: 1; filter: brightness(1) blur(0); }
-  to { opacity: 0; filter: brightness(1.5) blur(3px); }
+@keyframes dexBgGlide {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-120px, -120px, 0);
+  }
 }
 
-@keyframes pokedexScreenFadeIn {
-  from { opacity: 0; filter: brightness(1.5) blur(3px); }
-  to { opacity: 1; filter: brightness(1) blur(0); }
+@keyframes dexAuroraPulse {
+  0%, 100% {
+    transform: scale(1) translate3d(0, 0, 0);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.08) translate3d(24px, -18px, 0);
+    opacity: 1;
+  }
 }
 
-::view-transition-old(pokedex-screen) {
-  animation: pokedexScreenFadeOut 0.15s ease-in both;
-}
+body:has(.dex-scene) {
+  background: linear-gradient(135deg, #bae6fd 0%, #dbeafe 30%, #ede9fe 50%, #fecdd3 72%, #fda4af 100%);
+  background-attachment: fixed;
+  background-color: #dbeafe;
+  overflow-x: hidden;
 
-::view-transition-new(pokedex-screen) {
-  animation: pokedexScreenFadeIn 0.25s ease-out 0.15s both;
+  &::before {
+    content: "";
+    position: fixed;
+    inset: -160px;
+    z-index: 0;
+    pointer-events: none;
+    will-change: transform;
+    background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cpath d='M60 0v120M120 0v120M0 60h120M0 120h120' stroke='%23475569' stroke-opacity='0.17' stroke-width='1'/%3E%3Ccircle cx='90' cy='30' r='2' fill='%23475569' fill-opacity='0.22'/%3E%3Ccircle cx='30' cy='90' r='2' fill='%23475569' fill-opacity='0.22'/%3E%3Cg transform='translate(30,30) rotate(-16)' fill='none' stroke='%23e11d48' stroke-opacity='0.24' stroke-width='2'%3E%3Ccircle r='16'/%3E%3Ccircle r='5'/%3E%3Cline x1='-16' y1='0' x2='-5' y2='0'/%3E%3Cline x1='5' y1='0' x2='16' y2='0'/%3E%3C/g%3E%3Cg transform='translate(90,90) rotate(16)' fill='none' stroke='%230284c7' stroke-opacity='0.24' stroke-width='2'%3E%3Ccircle r='16'/%3E%3Ccircle r='5'/%3E%3Cline x1='-16' y1='0' x2='-5' y2='0'/%3E%3Cline x1='5' y1='0' x2='16' y2='0'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: 120px 120px;
+    animation: dexBgGlide 18s linear infinite;
+  }
+
+  &::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    will-change: transform, opacity;
+    background:
+      radial-gradient(circle at 12% 18%, rgba(14, 165, 233, 0.42) 0%, rgba(59, 130, 246, 0.18) 32%, transparent 58%),
+      radial-gradient(circle at 88% 82%, rgba(225, 29, 72, 0.38) 0%, rgba(244, 63, 94, 0.18) 32%, transparent 58%),
+      radial-gradient(circle at 82% 16%, rgba(99, 102, 241, 0.16) 0%, transparent 45%);
+    animation: dexAuroraPulse 9s ease-in-out infinite;
+  }
 }

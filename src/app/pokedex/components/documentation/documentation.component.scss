@@ -16,86 +16,102 @@
 }
 
 .doc-card {
-  --core: #7aa0c8;
+  --core: #6366f1;
   position: relative;
-  display: grid;
-  gap: .4rem;
-  padding: .9rem 1rem;
-  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.55rem;
+  padding: 1.15rem 1.2rem;
+  border-radius: 16px;
   text-decoration: none;
-  color: inherit;
+  color: #0f172a;
   background:
-    linear-gradient(180deg,
-      color-mix(in oklab, #fff 70%, var(--core)) 0%,
-      color-mix(in oklab, #fff 20%, var(--core)) 100%);
-  border: 1px solid color-mix(in oklab, var(--core) 45%, #000);
+    linear-gradient(
+      160deg,
+      #ffffff 0%,
+      color-mix(in oklab, #ffffff 82%, var(--core)) 100%
+    );
+  border: 1.5px solid color-mix(in oklab, var(--core) 38%, #cbd5e1);
   box-shadow:
-    0 10px 20px rgba(0,0,0,.15),
-    0 4px 10px rgba(0,0,0,.10),
-    inset 0 2px 0 color-mix(in oklab, #ffffff 65%, var(--core)),
-    inset 0 -2px 0 color-mix(in oklab, #000000 10%, var(--core));
-  transition: transform .08s ease, box-shadow .12s ease, filter .12s ease;
+    0 10px 22px -6px color-mix(in oklab, var(--core) 22%, rgba(15, 23, 42, 0.08)),
+    0 2px 6px rgba(15, 23, 42, 0.06),
+    inset 0 1px 0 #ffffff;
+  transition:
+    transform 0.18s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.18s ease,
+    border-color 0.18s ease;
 
-  &:hover { transform: translateY(-1px); filter: brightness(1.02); }
+  &:hover {
+    transform: translateY(-3px);
+    border-color: color-mix(in oklab, var(--core) 70%, #0f172a);
+    box-shadow:
+      0 16px 28px -6px color-mix(in oklab, var(--core) 32%, rgba(15, 23, 42, 0.12)),
+      0 4px 10px rgba(15, 23, 42, 0.08),
+      inset 0 1px 0 #ffffff;
+  }
+
   &:active {
     transform: translateY(0);
-    box-shadow:
-      0 6px 12px rgba(0,0,0,.22),
-      0 3px 6px rgba(0,0,0,.16),
-      inset 0 1px 0 color-mix(in oklab, #ffffff 55%, var(--core)),
-      inset 0 -1px 0 color-mix(in oklab, #000000 14%, var(--core));
   }
 
   h3 {
-    margin: .1rem 0 .1rem;
-    font-weight: 900;
-    font-size: clamp(1.05rem, 0.9rem + .5vw, 1.35rem);
-    text-shadow: 0 1px 0 rgba(255,255,255,.45);
+    margin: 0.15rem 0 0.1rem;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    font-size: clamp(1.08rem, 0.95rem + 0.35vw, 1.28rem);
+    color: #0f172a;
   }
 
   p {
     margin: 0;
-    line-height: 1.35;
-    font-size: clamp(.9rem, .85rem + .2vw, 1rem);
-    color: color-mix(in oklab, #000 75%, var(--core));
+    line-height: 1.45;
+    font-size: clamp(0.9rem, 0.85rem + 0.15vw, 0.98rem);
+    color: #334155;
+    flex: 1;
   }
 
   .doc-cta {
-    margin-top: .3rem;
-    font-weight: 900;
-    display: inline-block;
-    padding: .2rem .5rem;
-    border-radius: .5rem;
-    border: 2px solid color-mix(in oklab, var(--core) 45%, #000);
-    background: #fff;
-    color: color-mix(in oklab, #000 75%, var(--core));
-    box-shadow: inset 0 1px 0 rgba(255,255,255,.65);
+    margin-top: 0.45rem;
+    font-weight: 800;
+    font-size: 0.86rem;
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.32rem 0.75rem;
+    border-radius: 999px;
+    border: 1.5px solid color-mix(in oklab, var(--core) 45%, #cbd5e1);
+    background: #ffffff;
+    color: color-mix(in oklab, #0f172a 55%, var(--core));
+    box-shadow: 0 2px 4px rgba(15, 23, 42, 0.05);
   }
 
   .doc-card__head {
     display: flex;
     align-items: center;
-    gap: .5rem;
+    gap: 0.5rem;
   }
 
   .doc-chip {
-    display: inline-block;
-    font-weight: 900;
-    padding: .15rem .55rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.82rem;
+    font-weight: 800;
+    padding: 0.25rem 0.65rem;
     border-radius: 999px;
-    background: #fff;
-    border: 2px solid color-mix(in oklab, var(--core) 45%, #000);
-    box-shadow: 0 1px 0 rgba(255,255,255,.65), inset 0 -1px 0 rgba(0,0,0,.06);
-    color: color-mix(in oklab, #000 70%, var(--core));
+    background: color-mix(in oklab, var(--core) 16%, #ffffff);
+    border: 1px solid color-mix(in oklab, var(--core) 42%, transparent);
+    color: color-mix(in oklab, #0f172a 65%, var(--core));
     white-space: nowrap;
   }
 }
 
-.doc-card.doc-intro        { --core: #8f85ff; }
-.doc-card.doc-stats        { --core: #7ed85b; }
-.doc-card.doc-type-normal  { --core: #d8605b; }
-.doc-card.doc-status       { --core: #fff239; }
-.doc-card.doc-ko           { --core: #64748b; }
-.doc-card.doc-weather      { --core: #00ffff; }
-.doc-card.doc-fields       { --core: #c58c22; }
-.doc-card.doc-items        { --core: #e14cff; }
+.doc-card.doc-intro        { --core: #6366f1; }
+.doc-card.doc-stats        { --core: #16a34a; }
+.doc-card.doc-type-normal  { --core: #e11d48; }
+.doc-card.doc-status       { --core: #d97706; }
+.doc-card.doc-ko           { --core: #475569; }
+.doc-card.doc-weather      { --core: #0284c7; }
+.doc-card.doc-fields       { --core: #9333ea; }
+.doc-card.doc-items        { --core: #db2777; }

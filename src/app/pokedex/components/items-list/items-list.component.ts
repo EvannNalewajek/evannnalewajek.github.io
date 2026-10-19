@@ -8,13 +8,14 @@ import { Item } from '../../models/item.model';
 import { WikilinkPipe } from '../../pipes/wikilink.pipe';
 import { RouterizedContentDirective } from '../../routerized-content.directive';
 import { ImageFallbackDirective } from '../../directives/image-fallback.directive';
+import { BackButtonDirective } from '../../directives/back-button.directive';
 
 type SortKey = 'id' | 'name';
 
 @Component({
     selector: 'app-items-list',
     standalone: true,
-    imports: [DecimalPipe, RouterLink, WikilinkPipe, RouterizedContentDirective, ImageFallbackDirective],
+    imports: [DecimalPipe, RouterLink, WikilinkPipe, RouterizedContentDirective, ImageFallbackDirective, BackButtonDirective],
     templateUrl: './items-list.component.html',
     styleUrls: ['./items-list.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush

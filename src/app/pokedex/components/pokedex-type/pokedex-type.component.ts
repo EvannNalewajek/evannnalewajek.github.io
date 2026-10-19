@@ -8,12 +8,13 @@ import { TypesService } from '../../services/type.service';
 import { PokedexService } from '../../services/pokedex.service';
 import { Pokemon, PokemonType } from '../../models/pokemon.model';
 import { ImageFallbackDirective } from '../../directives/image-fallback.directive';
+import { BackButtonDirective } from '../../directives/back-button.directive';
 import { TypeSlugPipe } from '../../pipes/type-slug.pipe';
 
 @Component({
     selector: 'app-type-page',
     standalone: true,
-    imports: [NgStyle, RouterLink, ImageFallbackDirective, TypeSlugPipe],
+    imports: [NgStyle, RouterLink, ImageFallbackDirective, BackButtonDirective, TypeSlugPipe],
     templateUrl: './pokedex-type.component.html',
     styleUrls: ['./pokedex-type.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush

@@ -20,6 +20,7 @@ import { LearnsetsService, ResolvedLearnset } from '../../services/learnsets.ser
 import { TypeSlugPipe } from '../../pipes/type-slug.pipe';
 import { WikilinkPipe } from '../../pipes/wikilink.pipe';
 import { ImageFallbackDirective } from '../../directives/image-fallback.directive';
+import { BackButtonDirective } from '../../directives/back-button.directive';
 import { RouterizedContentDirective } from '../../routerized-content.directive';
 import { Pokemon } from '../../models/pokemon.model';
 import { EvolutionFamily, EvolutionLink } from '../../models/evolution.model';
@@ -40,6 +41,7 @@ interface EvoRowEntry {
     TypeSlugPipe,
     WikilinkPipe,
     ImageFallbackDirective,
+    BackButtonDirective,
     RouterizedContentDirective,
   ],
   templateUrl: './pokedex-detail.component.html',

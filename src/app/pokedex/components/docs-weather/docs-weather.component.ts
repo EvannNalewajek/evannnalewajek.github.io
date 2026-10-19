@@ -1,11 +1,12 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { Title } from '@angular/platform-browser';
+import { BackButtonDirective } from '../../directives/back-button.directive';
 
 @Component({
     selector: 'app-docs-weather',
     standalone: true,
-    imports: [RouterLink],
+    imports: [RouterLink, BackButtonDirective],
     templateUrl: './docs-weather.component.html',
     styleUrls: ['./docs-weather.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush
